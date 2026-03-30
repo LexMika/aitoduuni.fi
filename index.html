@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitoduuni Data | Satakunta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes cleanFade {
+            0%, 2% { opacity: 0; transform: translateY(5px); }
+            5%, 20% { opacity: 1; transform: translateY(0); }
+            23%, 25% { opacity: 0; transform: translateY(-5px); }
+            100% { opacity: 0; }
+        }
+        .ticker-item {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0;
+            animation: cleanFade 20s infinite;
+            display: flex; align-items: center;
+        }
+        .item-1 { animation-delay: 0s; }
+        .item-2 { animation-delay: 5s; }
+        .item-3 { animation-delay: 10s; }
+        .item-4 { animation-delay: 15s; }
+
+        .hidden-flow { display: none; }
+        #auditBox { 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+            min-height: 140px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        body { line-height: 1.6; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 pb-32">
+
+    <div class="min-h-screen">
+        <header class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-left">
+            <h1 class="text-6xl md:text-9xl font-black tracking-tighter text-white mb-8 leading-none">
+                Aitoduuni <span class="text-blue-600 tracking-tighter text-3xl md:text-8xl block md:inline">Data</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mb-12 leading-relaxed font-light">
+                Teemme yrityksellesi digitaalisen <strong>katsastuksen ja näkyvyystestin</strong>. Korjaamme virheet, jotka kääntävät asiakkaat oveltasi.
+            </p>
+            
+            <div id="auditBox" class="max-w-2xl bg-slate-900 border-2 border-slate-800 rounded-3xl shadow-2xl shadow-blue-900/20 overflow-hidden">
+                <div id="step1" class="p-5 flex flex-col sm:flex-row gap-3 items-center">
+                    <input id="bizInput" type="text" placeholder="" 
+                        class="flex-grow w-full bg-slate-950 border border-slate-800 p-5 rounded-2xl outline-none text-white text-lg placeholder:text-slate-700 focus:border-blue-600 transition-all text-left">
+                    <button id="auditBtn" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-black px-10 py-5 rounded-2xl transition-all active:scale-95 whitespace-nowrap shadow-lg text-lg text-center uppercase tracking-tight">
+                        Aloita katsastus
+                    </button>
+                </div>
+
+                <div id="step2" class="hidden-flow p-6 md:p-10 border-t border-slate-800 bg-slate-900/50">
+                    <div id="formContent" class="min-h-[300px] flex flex-col justify-center text-left">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full animate-ping text-left"></div>
+                            <h3 class="text-blue-500 font-bold uppercase text-sm tracking-[0.2em]">Kohde tunnistettu</h3>
+                        </div>
+                        <form id="liidiForm" action="https://formspree.io/f/mjgpwgnw" method="POST" class="space-y-5 text-left w-full text-left">
+                            <input type="hidden" id="hiddenBizName" name="Yritys">
+                            <input type="text" name="Nimi" placeholder="Yhteyshenkilö" required class="w-full bg-slate-950 border border-slate-800 p-5 rounded-2xl text-lg outline-none focus:border-blue-600 transition-all">
+                            <input type="email" name="Email" placeholder="Sähköpostiosoite tuloksia varten" required class="w-full bg-slate-950 border border-slate-800 p-5 rounded-2xl text-lg outline-none focus:border-blue-600 transition-all">
+                            <button type="submit" id="submitBtn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-6 rounded-2xl text-lg tracking-widest shadow-lg shadow-blue-900/40 transition-all active:scale-95 uppercase">
+                                Tilaa näkyvyystesti
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="max-w-6xl mx-auto px-6 py-24 border-t border-slate-900">
+            <div class="grid lg:grid-cols-2 gap-20 items-start text-left text-left">
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-8">Moro, olen Mika. <br><span class="text-blue-600 tracking-tighter text-3xl font-light">Koodari Eurajoelta.</span></h2>
+                        <p class="text-slate-300 text-xl leading-relaxed mb-10 italic">
+                            "Laitan yrityksesi tiedot kuntoon samalla tarkkuudella kuin ammattilainen katsoo omaa työnjälkeään."
+                        </p>
+                        <div class="space-y-8">
+                            <div class="flex gap-6 p-6 rounded-3xl bg-slate-900/40 border border-slate-800">
+                                <div class="text-blue-500 font-black text-2xl text-left">01</div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg uppercase tracking-tight text-left">Ilmainen tarkistus</h4>
+                                    <p class="text-slate-400 text-base mt-2 text-left text-left">Teen analyysin koneellani. Jos kaikki on jiirissä, sanon sen suoraan. 0 €.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 p-6 rounded-3xl bg-slate-900/40 border border-slate-800">
+                                <div class="text-blue-500 font-black text-2xl text-left">02</div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg uppercase tracking-tight text-left">Laitetaan kuntoon</h4>
+                                    <p class="text-slate-400 text-base mt-2 text-left text-left">Jos löydän kriittisiä vikoja, korjaan ne puolestasi. Tasasataset (100 €). Ei muuta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-600/10 border-2 border-blue-600/20 p-10 rounded-[2rem] space-y-8">
+                        <h3 class="text-blue-400 font-bold text-2xl tracking-tight italic uppercase text-left">Haluatko säästää satasen?</h3>
+                        <p class="text-lg text-slate-300 font-bold underline decoration-blue-600 underline-offset-4 text-left">Tarkista nämä 3 asiaa heti:</p>
+                        <ul class="space-y-6 text-base md:text-lg leading-relaxed text-left">
+                            <li class="flex gap-4 text-left"><span class="text-blue-500 font-bold text-xl text-left">●</span><span><strong>Hae itseäsi Incognito-tilassa:</strong> Näetkö "Sivusto ei ole suojattu" -varoituksen? Google rankaisee tästä heti.</span></li>
+                            <li class="flex gap-4 text-left"><span class="text-blue-500 font-bold text-xl text-left">●</span><span><strong>Testaa Maps-napit:</strong> Kokeile soittaa yrityksellesi Mapsista. Jos numero ei aukea heti, asiakas katoaa.</span></li>
+                            <li class="flex gap-4 text-left"><span class="text-blue-500 font-bold text-xl text-left">●</span><span><strong>Vahvista omistajuus:</strong> Jos profiili on vahvistamatta, kuka tahansa voi muuttaa tietojasi luvatta.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 border border-slate-800 rounded-[2.5rem] sticky top-24 overflow-hidden text-left">
+                    <div class="p-10 md:p-14 text-left">
+                        <h3 class="text-white font-bold mb-10 text-2xl tracking-tight text-left">Mitä katsastuksessa tarkistetaan?</h3>
+                        <ul class="text-lg text-slate-300 font-medium text-left text-left">
+                            <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left">
+                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span><strong>Google Maps:</strong> Aukioloajat ja omistajuus.</span>
+                            </li>
+                            <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left">
+                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span><strong>Turvallisuus:</strong> SSL-lukko ja suojaus.</span>
+                            </li>
+                            <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left text-left">
+                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span><strong>Löydettävyys:</strong> SEO-otsikot ja näkyvyys.</span>
+                            </li>
+                            <li class="flex items-start gap-4 py-6 text-left text-left">
+                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span><strong>Mobiili:</strong> Käytettävyys kännykällä.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-950/50 p-10 border-t border-slate-800 text-left">
+                        <p class="text-white text-xl md:text-2xl font-black italic leading-tight uppercase tracking-tight text-left text-left">
+                            "RIITTÄÄ KUN SANOT:<br>MIKA, LAITA KUNTOON."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-24 text-center border-t border-slate-900">
+            <p class="text-xs text-slate-800 font-mono uppercase tracking-[0.6em] text-center">© 2026 Aitoduuni Data | Satakunta v5.12</p>
+        </footer>
+    </div>
+
+    <div id="footerTicker" class="fixed bottom-0 w-full bg-slate-900 border-t border-slate-800 h-20 md:h-16 flex items-center z-[100] px-4 md:px-6 transition-all shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+        <div id="statusIndicator" class="flex items-center gap-2 md:gap-3 mr-4 md:mr-6 border-r border-slate-800 pr-4 md:pr-6 shrink-0 h-8">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></div>
+            <span id="statusLabel" class="text-slate-400 font-bold uppercase text-[9px] md:text-[10px] tracking-widest text-left">Syöte</span>
+        </div>
+        
+        <div id="tickerContainer" class="relative flex-grow h-full overflow-hidden text-xs md:text-base text-slate-100 font-medium">
+            <div id="autoMessages" class="h-full relative text-left">
+                <div class="ticker-item item-1 flex gap-2">
+                    <span class="font-bold">SATAKUNTA DATA:</span>
+                    <span>842</span>
+                    <span class="hidden sm:inline text-slate-400">yritystä katsastettu.</span>
+                </div>
+                <div class="ticker-item item-2 flex gap-2">
+                    <span class="font-bold">[JONO]</span>
+                    <span id="queueCount"></span>
+                    <span class="hidden sm:inline text-slate-400">analyysia odottaa käsittelyä.</span>
+                </div>
+                <div class="ticker-item item-3 flex gap-2">
+                    <span class="font-bold">[VINKKI]</span>
+                    <span class="sm:hidden text-slate-400">Otsikoi sivut oikein.</span>
+                    <span class="hidden sm:inline text-slate-400">Jos sivuillasi lukee vain "Etusivu", asiakas ei löydä sinua.</span>
+                </div>
+                <div class="ticker-item item-4 flex gap-2">
+                    <span class="font-bold">[HUOMIO]</span>
+                    <span class="sm:hidden text-slate-400">Google-profiili uupuu.</span>
+                    <span class="hidden sm:inline text-slate-400">Joka toisella yrityksellä Google-profiili on vahvistamatta.</span>
+                </div>
+            </div>
+            <div id="interactiveMessage" class="hidden h-full items-center text-blue-400 font-bold italic animate-pulse">
+                Yhteys... <span id="liveInputText" class="ml-2 text-white not-italic underline decoration-blue-600 underline-offset-4 truncate max-w-[150px] sm:max-w-none text-left"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const currentQueue = Math.floor(Math.random() * 5) + 3;
+        document.getElementById('queueCount').innerText = currentQueue;
+
+        const examples = [
+            "Esim. Eurajoen Sähkö ja Kone",
+            "Esim. Porin Putkiasennus Oy",
+            "Esim. Rauman Puutyö ja Remontti",
+            "Esim. Satakunnan Kiinteistöhuolto",
+            "Esim. Luvian Metalli ja Asennus",
+            "Esim. Ulvilan Maalauspalvelu"
+        ];
+        document.getElementById('bizInput').placeholder = examples[Math.floor(Math.random() * examples.length)];
+
+        const bizInput = document.getElementById('bizInput');
+        const autoMessages = document.getElementById('autoMessages');
+        const interactiveMessage = document.getElementById('interactiveMessage');
+        const liveInputText = document.getElementById('liveInputText');
+        const statusLabel = document.getElementById('statusLabel');
+
+        bizInput.addEventListener('focus', () => {
+            autoMessages.classList.add('hidden');
+            interactiveMessage.classList.remove('hidden'); interactiveMessage.classList.add('flex');
+            statusLabel.innerText = "YHTEYS";
+            liveInputText.innerText = "Kirjoita nimi...";
+        });
+
+        bizInput.addEventListener('input', (e) => {
+            const val = e.target.value;
+            liveInputText.innerText = val.length > 0 ? `Skannataan: ${val}` : "Kirjoita nimi...";
+        });
+
+        const auditBtn = document.getElementById('auditBtn');
+        const step1 = document.getElementById('step1');
+        const step2 = document.getElementById('step2');
+        const hiddenBiz = document.getElementById('hiddenBizName');
+
+        auditBtn.addEventListener('click', () => {
+            const bizName = bizInput.value.trim();
+            if(bizName.length < 2) return;
+            liveInputText.innerText = `LUKITAAN...`;
+            auditBtn.innerText = "HAKEE...";
+            auditBtn.disabled = true;
+            setTimeout(() => {
+                hiddenBiz.value = bizName;
+                step1.style.display = 'none';
+                step2.classList.remove('hidden-flow');
+                const y = step2.getBoundingClientRect().top + window.pageYOffset - 120;
+                window.scrollTo({top: y, behavior: 'smooth'});
+                liveInputText.innerText = `Kohde tunnistettu.`;
+            }, 1200);
+        });
+
+        const form = document.getElementById('liidiForm');
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            const yourPosition = currentQueue + 1;
+            submitBtn.innerText = "KÄYNNISTETÄÄN...";
+            submitBtn.disabled = true;
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    document.getElementById('formContent').innerHTML = `
+                        <div class="py-8 md:py-12 text-left w-full text-left">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="bg-blue-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full uppercase text-left">Sija jonossa: #${yourPosition}</div>
+                            </div>
+                            <h3 class="text-white font-black text-4xl md:text-6xl mb-6 uppercase tracking-tighter leading-none text-left">Vastaanotettu</h3>
+                            <p class="text-slate-300 text-xl md:text-2xl leading-relaxed w-full text-left">Analyysi on käynnistetty. Mika toimittaa raportin sähköpostiisi <strong>mahdollisimman pian</strong>.</p>
+                        </div>`;
+                    liveInputText.innerText = `Sija #${yourPosition} jonossa.`;
+                }
+            } catch (error) { alert("Virhe."); }
+        };
+    </script>
+</body>
+</html>
