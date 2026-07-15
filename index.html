@@ -8,26 +8,27 @@
     <style>
         @keyframes cleanFade {
             0%, 2% { opacity: 0; transform: translateY(5px); }
-            5%, 20% { opacity: 1; transform: translateY(0); }
-            23%, 25% { opacity: 0; transform: translateY(-5px); }
+            5%, 18% { opacity: 1; transform: translateY(0); }
+            21%, 25% { opacity: 0; transform: translateY(-5px); }
             100% { opacity: 0; }
         }
         .ticker-item {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
             opacity: 0;
-            animation: cleanFade 20s infinite;
+            animation: cleanFade 25s infinite;
             display: flex; align-items: center;
         }
         .item-1 { animation-delay: 0s; }
         .item-2 { animation-delay: 5s; }
         .item-3 { animation-delay: 10s; }
         .item-4 { animation-delay: 15s; }
+        .item-5 { animation-delay: 20s; }
 
         .hidden-flow { display: none; }
-        #auditBox { 
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
-            min-height: 140px; 
+        #auditBox {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 140px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -45,10 +46,10 @@
             <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mb-12 leading-relaxed font-light">
                 Teemme yrityksellesi digitaalisen <strong>katsastuksen ja näkyvyystestin</strong>. Korjaamme virheet, jotka kääntävät asiakkaat oveltasi.
             </p>
-            
+
             <div id="auditBox" class="max-w-2xl bg-slate-900 border-2 border-slate-800 rounded-3xl shadow-2xl shadow-blue-900/20 overflow-hidden">
                 <div id="step1" class="p-5 flex flex-col sm:flex-row gap-3 items-center">
-                    <input id="bizInput" type="text" placeholder="" 
+                    <input id="bizInput" type="text" placeholder=""
                         class="flex-grow w-full bg-slate-950 border border-slate-800 p-5 rounded-2xl outline-none text-white text-lg placeholder:text-slate-700 focus:border-blue-600 transition-all text-left">
                     <button id="auditBtn" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-black px-10 py-5 rounded-2xl transition-all active:scale-95 whitespace-nowrap shadow-lg text-lg text-center uppercase tracking-tight">
                         Aloita katsastus
@@ -116,19 +117,19 @@
                         <h3 class="text-white font-bold mb-10 text-2xl tracking-tight text-left">Mitä katsastuksessa tarkistetaan?</h3>
                         <ul class="text-lg text-slate-300 font-medium text-left text-left">
                             <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left">
-                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span class="text-blue-500 text-xl font-bold">✔</span>
                                 <span><strong>Google Maps:</strong> Aukioloajat ja omistajuus.</span>
                             </li>
                             <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left">
-                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span class="text-blue-500 text-xl font-bold">✔</span>
                                 <span><strong>Turvallisuus:</strong> SSL-lukko ja suojaus.</span>
                             </li>
                             <li class="flex items-start gap-4 py-6 border-b border-slate-800 text-left text-left">
-                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span class="text-blue-500 text-xl font-bold">✔</span>
                                 <span><strong>Löydettävyys:</strong> SEO-otsikot ja näkyvyys.</span>
                             </li>
                             <li class="flex items-start gap-4 py-6 text-left text-left">
-                                <span class="text-blue-500 text-xl font-bold">✔</span> 
+                                <span class="text-blue-500 text-xl font-bold">✔</span>
                                 <span><strong>Mobiili:</strong> Käytettävyys kännykällä.</span>
                             </li>
                         </ul>
@@ -137,43 +138,51 @@
                         <p class="text-white text-xl md:text-2xl font-black italic leading-tight uppercase tracking-tight text-left text-left">
                             "RIITTÄÄ KUN SANOT:<br>MIKA, LAITA KUNTOON."
                         </p>
+                        <p class="text-slate-400 text-sm mt-6 text-left">
+                            mika@aitoduuni.fi · 040 911 4988 · <a href="https://wa.me/358409114988" class="text-blue-400 hover:text-blue-300">WhatsApp</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer class="py-24 text-center border-t border-slate-900">
-            <p class="text-xs text-slate-800 font-mono uppercase tracking-[0.6em] text-center">© 2026 Aitoduuni Data | Satakunta v5.12</p>
+            <p class="text-xs text-slate-800 font-mono uppercase tracking-[0.6em] text-center">© 2026 Aitoduuni Data | Satakunta v5.13</p>
         </footer>
     </div>
 
     <div id="footerTicker" class="fixed bottom-0 w-full bg-slate-900 border-t border-slate-800 h-20 md:h-16 flex items-center z-[100] px-4 md:px-6 transition-all shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
         <div id="statusIndicator" class="flex items-center gap-2 md:gap-3 mr-4 md:mr-6 border-r border-slate-800 pr-4 md:pr-6 shrink-0 h-8">
             <div class="w-2 h-2 md:w-2.5 md:h-2.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></div>
-            <span id="statusLabel" class="text-slate-400 font-bold uppercase text-[9px] md:text-[10px] tracking-widest text-left">Syöte</span>
+            <span id="statusLabel" class="text-slate-400 font-bold uppercase text-[9px] md:text-[10px] tracking-widest text-left">VINKKI</span>
         </div>
-        
+
         <div id="tickerContainer" class="relative flex-grow h-full overflow-hidden text-xs md:text-base text-slate-100 font-medium">
             <div id="autoMessages" class="h-full relative text-left">
                 <div class="ticker-item item-1 flex gap-2">
-                    <span class="font-bold">SATAKUNTA DATA:</span>
-                    <span>842</span>
-                    <span class="hidden sm:inline text-slate-400">yritystä katsastettu.</span>
+                    <span class="font-bold text-blue-400 shrink-0">[SSL]</span>
+                    <span class="hidden sm:inline text-slate-300">Hae yritystäsi Incognito-tilassa — jos näet "ei suojattu", Google rankaisee heti.</span>
+                    <span class="sm:hidden text-slate-300">Tarkista SSL Incognito-haulla.</span>
                 </div>
                 <div class="ticker-item item-2 flex gap-2">
-                    <span class="font-bold">[JONO]</span>
-                    <span id="queueCount"></span>
-                    <span class="hidden sm:inline text-slate-400">analyysia odottaa käsittelyä.</span>
+                    <span class="font-bold text-blue-400 shrink-0">[MAPS]</span>
+                    <span class="hidden sm:inline text-slate-300">Soita itsellesi Google Mapsista — jos numero ei aukea heti, asiakas katoaa.</span>
+                    <span class="sm:hidden text-slate-300">Testaa Maps-soitto mobiilissa.</span>
                 </div>
                 <div class="ticker-item item-3 flex gap-2">
-                    <span class="font-bold">[VINKKI]</span>
-                    <span class="sm:hidden text-slate-400">Otsikoi sivut oikein.</span>
-                    <span class="hidden sm:inline text-slate-400">Jos sivuillasi lukee vain "Etusivu", asiakas ei löydä sinua.</span>
+                    <span class="font-bold text-blue-400 shrink-0">[PROFIILI]</span>
+                    <span class="hidden sm:inline text-slate-300">Vahvista Google-profiilin omistajuus — muuten kuka tahansa voi muokata tietoja.</span>
+                    <span class="sm:hidden text-slate-300">Vahvista Maps-omistajuus.</span>
                 </div>
                 <div class="ticker-item item-4 flex gap-2">
-                    <span class="font-bold">[HUOMIO]</span>
-                    <span class="sm:hidden text-slate-400">Google-profiili uupuu.</span>
-                    <span class="hidden sm:inline text-slate-400">Joka toisella yrityksellä Google-profiili on vahvistamatta.</span>
+                    <span class="font-bold text-blue-400 shrink-0">[SEO]</span>
+                    <span class="hidden sm:inline text-slate-300">Jos sivulla lukee vain "Etusivu", asiakas ei löydä sinua hakukoneella.</span>
+                    <span class="sm:hidden text-slate-300">Otsikoi sivut oikein — ei vain "Etusivu".</span>
+                </div>
+                <div class="ticker-item item-5 flex gap-2">
+                    <span class="font-bold text-blue-400 shrink-0">[MOBIILI]</span>
+                    <span class="hidden sm:inline text-slate-300">Puhelinnumero pitää olla klikattavissa mobiilissa — osa asiakkaista soittaa sieltä.</span>
+                    <span class="sm:hidden text-slate-300">Puhelin klikattavaksi mobiilissa.</span>
                 </div>
             </div>
             <div id="interactiveMessage" class="hidden h-full items-center text-blue-400 font-bold italic animate-pulse">
@@ -183,9 +192,6 @@
     </div>
 
     <script>
-        const currentQueue = Math.floor(Math.random() * 5) + 3;
-        document.getElementById('queueCount').innerText = currentQueue;
-
         const examples = [
             "Esim. Eurajoen Sähkö ja Kone",
             "Esim. Porin Putkiasennus Oy",
@@ -207,6 +213,14 @@
             interactiveMessage.classList.remove('hidden'); interactiveMessage.classList.add('flex');
             statusLabel.innerText = "YHTEYS";
             liveInputText.innerText = "Kirjoita nimi...";
+        });
+
+        bizInput.addEventListener('blur', () => {
+            if (bizInput.value.trim().length === 0 && step2.classList.contains('hidden-flow')) {
+                autoMessages.classList.remove('hidden');
+                interactiveMessage.classList.add('hidden'); interactiveMessage.classList.remove('flex');
+                statusLabel.innerText = "VINKKI";
+            }
         });
 
         bizInput.addEventListener('input', (e) => {
@@ -239,8 +253,7 @@
         form.onsubmit = async (e) => {
             e.preventDefault();
             const submitBtn = document.getElementById('submitBtn');
-            const yourPosition = currentQueue + 1;
-            submitBtn.innerText = "KÄYNNISTETÄÄN...";
+            submitBtn.innerText = "LÄHETETÄÄN...";
             submitBtn.disabled = true;
             try {
                 const response = await fetch(form.action, {
@@ -251,13 +264,11 @@
                 if (response.ok) {
                     document.getElementById('formContent').innerHTML = `
                         <div class="py-8 md:py-12 text-left w-full text-left">
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="bg-blue-600 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full uppercase text-left">Sija jonossa: #${yourPosition}</div>
-                            </div>
                             <h3 class="text-white font-black text-4xl md:text-6xl mb-6 uppercase tracking-tighter leading-none text-left">Vastaanotettu</h3>
-                            <p class="text-slate-300 text-xl md:text-2xl leading-relaxed w-full text-left">Analyysi on käynnistetty. Mika toimittaa raportin sähköpostiisi <strong>mahdollisimman pian</strong>.</p>
+                            <p class="text-slate-300 text-xl md:text-2xl leading-relaxed w-full text-left">Kiitos — Mika vastaa sähköpostilla <strong>1–2 arkipäivässä</strong>. Jos kaikki on jo kunnossa, sanon sen suoraan.</p>
                         </div>`;
-                    liveInputText.innerText = `Sija #${yourPosition} jonossa.`;
+                    liveInputText.innerText = `Vastaanotettu.`;
+                    statusLabel.innerText = "OK";
                 }
             } catch (error) { alert("Virhe."); }
         };
