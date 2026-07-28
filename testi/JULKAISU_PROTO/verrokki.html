@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verrokki — AitoData proto</title>
+<style>:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --card-2: #020617;
+  --edge: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --blue: #2563eb;
+  --blue-hot: #3b82f6;
+  --blue-dim: rgba(37, 99, 235, 0.12);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem; line-height: 1.6; color: var(--text); background: var(--bg);
+}
+::selection { background: rgba(37, 99, 235, 0.45); color: #fff; }
+.topbar { border-bottom: 1px solid var(--edge); background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 20; }
+.topbar-inner { max-width: 72rem; margin: 0 auto; padding: 1rem 1.5rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.wordmark { font-size: 1.05rem; font-weight: 900; letter-spacing: -0.04em;
+  color: #fff; margin: 0; line-height: 1.1; text-decoration: none; }
+.wordmark span { font-weight: 300; color: var(--blue); letter-spacing: -0.03em; }
+.badge { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--blue-hot); background: var(--blue-dim);
+  border: 1px solid rgba(37, 99, 235, 0.35); padding: 0.3rem 0.65rem; border-radius: 999px;
+  white-space: nowrap; }
+nav.site { display: flex; gap: 1rem; flex-wrap: wrap; }
+nav.site a {
+  color: var(--muted); text-decoration: none; font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+nav.site a:hover, nav.site a.active { color: #fff; }
+header, main, footer { max-width: 72rem; margin: 0 auto; padding: 1.5rem 1.5rem; }
+header.hero { padding-top: 3.5rem; padding-bottom: 2rem; }
+header.hero h1 {
+  font-size: clamp(2.6rem, 9vw, 5.5rem); font-weight: 900; margin: 0 0 1rem;
+  letter-spacing: -0.06em; line-height: 0.95; color: #fff;
+}
+header.hero h1 span.brand-tail {
+  color: var(--blue); font-weight: 300; letter-spacing: -0.04em;
+  display: inline; font-size: 0.72em;
+}
+header.hero h1 .sub {
+  display: block; font-size: clamp(1.05rem, 2.4vw, 1.35rem); font-weight: 300;
+  color: #cbd5e1; letter-spacing: -0.01em; line-height: 1.4; margin-top: 1rem;
+  max-width: 36rem;
+}
+header:not(.hero) h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; margin: 0 0 0.4rem;
+  letter-spacing: -0.04em; color: #fff;
+}
+header:not(.hero) h1 .sub {
+  display: block; font-size: 1.05rem; font-weight: 300; color: var(--muted);
+  margin-top: 0.35rem; letter-spacing: 0;
+}
+h2 { font-size: 1.35rem; font-weight: 800; margin: 0 0 0.35rem; letter-spacing: -0.03em; color: #fff; }
+.lead { color: #cbd5e1; font-size: 1.15rem; font-weight: 300; max-width: 36rem; margin: 0; }
+.meta, .note { color: var(--muted); }
+.meta { font-size: 0.9rem; margin: 0.35rem 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.75rem 0 0.5rem; }
+.btn {
+  display: inline-block; padding: 0.95rem 1.4rem; border-radius: 1rem; text-decoration: none;
+  font-weight: 900; font-size: 1rem; border: none; color: #fff; background: var(--blue);
+  text-transform: uppercase; letter-spacing: -0.02em;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+.btn:hover { background: var(--blue-hot); }
+.btn.ghost {
+  background: transparent; color: #e2e8f0; border: 1px solid var(--edge); box-shadow: none;
+  text-transform: none; font-weight: 700;
+}
+.btn.ghost:hover { border-color: #475569; background: rgba(15, 23, 42, 0.6); }
+.grid { display: grid; gap: 0.85rem; margin: 1.5rem 0; }
+@media (min-width: 720px) {
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) { .grid.cols-4 { grid-template-columns: repeat(4, 1fr); } }
+.section-label {
+  font-size: 0.7rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--blue-hot); margin: 1.75rem 0 0.55rem;
+}
+.frame {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.25rem;
+  padding: 1.1rem 1.2rem 1.2rem; margin: 0;
+}
+.frame h3 { font-size: 1.05rem; margin: 0 0 0.35rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+.frame p { margin: 0 0 0.65rem; color: var(--muted); font-size: 0.95rem; }
+.frame .tag {
+  display: inline-block; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--blue-hot); margin-bottom: 0.45rem;
+}
+.frame a { font-weight: 700; text-decoration: none; }
+.frame a:hover { text-decoration: underline; }
+.tile {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.25rem;
+  padding: 1.2rem 1.25rem; text-decoration: none; color: inherit; display: block;
+  transition: border-color 0.15s, transform 0.1s;
+}
+.tile:hover { border-color: var(--blue); transform: translateY(-1px); }
+.tile h2 { font-size: 1.15rem; margin: 0 0 0.4rem; color: #fff; }
+.tile p { margin: 0; color: var(--muted); font-size: 0.95rem; font-weight: 400; }
+.metrics { display: grid; gap: 0.75rem; margin: 0 0 1.5rem; }
+@media (min-width: 640px) { .metrics { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .metrics { grid-template-columns: repeat(4, 1fr); } }
+a.stat {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.25rem;
+  padding: 1.1rem 1.15rem 1.15rem; transition: border-color 0.15s, transform 0.1s;
+}
+a.stat:hover { border-color: var(--blue); transform: translateY(-1px); }
+.stat .num {
+  font-size: clamp(1.85rem, 4vw, 2.45rem); font-weight: 900; letter-spacing: -0.05em;
+  color: #fff; line-height: 1.05; margin: 0 0 0.35rem;
+}
+.stat .lbl {
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--blue-hot); margin: 0 0 0.35rem;
+}
+.stat .hint { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.35; }
+.now-case {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.5rem;
+  padding: 1.25rem 1.3rem 1.35rem; margin: 0 0 1.5rem;
+}
+.now-case h2 { margin: 0 0 0.45rem; }
+.now-case .row { color: #cbd5e1; font-size: 0.98rem; margin: 0.25rem 0; }
+.now-case .actions { margin-top: 0.85rem; }
+.card {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.5rem;
+  padding: 1.35rem 1.35rem 1.45rem; margin: 1.15rem 0;
+  box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.18);
+}
+.block {
+  margin: 0.9rem 0 1.1rem; padding: 0.95rem 1rem; background: var(--card-2);
+  border: 1px solid var(--edge); border-radius: 1rem;
+}
+.block h3 { font-size: 1.05rem; margin: 0 0 0.35rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+.block .quiet { display: block; font-size: 0.88rem; font-weight: 400;
+  color: var(--muted); margin-top: 0.2rem; }
+.block .names { font-size: 0.9rem; color: var(--muted); margin: 0.35rem 0 0.55rem; }
+.block table { font-size: 0.88rem; background: rgba(15, 23, 42, 0.65); margin: 0.5rem 0 0; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0; }
+th, td {
+  border: 1px solid var(--edge); padding: 0.45rem 0.55rem; text-align: left; vertical-align: top;
+}
+th { background: rgba(37, 99, 235, 0.12); color: var(--blue-hot); font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 0.04em; text-transform: uppercase; }
+td { color: #e2e8f0; }
+code { font-size: 0.85em; color: #93c5fd; }
+a { color: var(--blue-hot); }
+ul { margin: 0.4rem 0 0.55rem 1.15rem; padding: 0; color: #cbd5e1; }
+li { margin: 0.25rem 0; }
+footer {
+  color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--edge);
+  margin-top: 2.5rem; padding-bottom: 2.5rem;
+}
+footer .wordmark { font-size: 0.95rem; display: inline; }
+footer code { color: #64748b; }
+.callout {
+  background: var(--blue-dim); border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: 1rem; padding: 0.95rem 1.1rem; margin: 1.25rem 0;
+  color: #93c5fd; font-size: 0.98rem;
+}</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<a class="wordmark" href="index.html">Aito<span>Data</span></a>
+<nav class="site"><a href="index.html" class="">Etusivu</a> <a href="ketju.html" class="">Ketju</a> <a href="verrokki.html" class="active">Verrokki</a> <a href="peito.html" class="">Peitto</a> <a href="pohja.html" class="">Pohja</a></nav>
+<span class="badge">Proto</span>
+</div></div>
+<header>
+<h1>Verrokki<span class="sub">Sama aihe, eri päätökset — €/yksikkö, ei tuomiota</span></h1>
+</header>
+<main>
+<p class="note">Sama aihe, eri päätökset — €/yksikkö (tai €/urakka) taulukossa. Ei väitettä että tuotteet ovat identtisiä tai hinta ‘väärä’.</p>
+<section class="block">
+<h3>Kuukausimaksu<span class="quiet">4 päätöstä · 700.00–4 670.00 · suhde 6.67</span></h3>
+<table><thead><tr><th>Kunta</th><th>€/yksikkö</th><th>Päätös</th><th></th></tr></thead><tbody>
+<tr><td>Rovaniemi</td><td>4 670.00 €/kk</td><td>Hankintapäätös, Option käyttö taloushallintojärjestelmä SaaS-palveluna…</td><td><a href="https://rovaniemi.cloudnc.fi/fi-FI/content/272329/21574" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Rovaniemi</td><td>2 000.00 €/kk</td><td>Muutos hankintapäätökseen, Option käyttö taloushallintojärjestelmä SaaS…</td><td><a href="https://rovaniemi.cloudnc.fi/fi-FI/content/277038/21574" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Tampere</td><td>850.00 €/kk</td><td>Liikkumisen hiilijalanjälkilaskurin hankinta</td><td><a href="https://tampere.cloudnc.fi/fi-FI/content/433899/13395" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Rovaniemi</td><td>700.00 €/kk</td><td>Senaatti-kiinteistöjen Kuntatila-palveluportaalin Johtamisen koontirapo…</td><td><a href="https://rovaniemi.cloudnc.fi/fi-FI/content/263750/21574" rel="noopener noreferrer">Avaa</a></td></tr>
+</tbody></table></section>
+<section class="block">
+<h3>Purku-urakka<span class="quiet">3 päätöstä · 85 094.00–584 360.00 · suhde 6.87</span></h3>
+<table><thead><tr><th>Kunta</th><th>€/yksikkö</th><th>Päätös</th><th></th></tr></thead><tbody>
+<tr><td>Rovaniemi</td><td>584 360.00 €/urakka</td><td>Näsmäntie 17 purku-urakka</td><td><a href="https://rovaniemi.cloudnc.fi/fi-FI/content/286157/21574" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Jyväskylä</td><td>91 000.00 €/urakka</td><td>Hankintapäätös rakennusten ja laiturirakenteiden purku-urakasta, Pesula…</td><td><a href="https://jyvaskyla.cloudnc.fi/fi-FI/content/9608/12364" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Jyväskylä</td><td>85 094.00 €/urakka</td><td>Hankintapäätös rakennusten purku-urakasta, Viitaniementie 2 ja Nisulank…</td><td><a href="https://jyvaskyla.cloudnc.fi/fi-FI/content/2628/12364" rel="noopener noreferrer">Avaa</a></td></tr>
+</tbody></table></section>
+<section class="block">
+<h3>Lumensyvyys<span class="quiet">2 päätöstä · 1 379.96–12 659.03 · suhde 9.17</span></h3>
+<table><thead><tr><th>Kunta</th><th>€/yksikkö</th><th>Päätös</th><th></th></tr></thead><tbody>
+<tr><td>Jyväskylä</td><td>12 659.03 €/mittari</td><td>Lasersensoreihin perustuvien lumensyvyysmittareiden hankinta Kadut ja p…</td><td><a href="https://jyvaskyla.cloudnc.fi/fi-FI/content/5736/12350" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Jyväskylä</td><td>1 379.96 €/piste</td><td>Snower One Road lumensyvyysmittauspisteiden suorahankinta Kadut ja puis…</td><td><a href="https://jyvaskyla.cloudnc.fi/fi-FI/content/6028/12350" rel="noopener noreferrer">Avaa</a></td></tr>
+</tbody></table></section>
+<section class="block">
+<h3>Unipussi<span class="quiet">2 päätöstä · 180 000.00–1 000 000.00 · suhde 5.56</span></h3>
+<table><thead><tr><th>Kunta</th><th>€/yksikkö</th><th>Päätös</th><th></th></tr></thead><tbody>
+<tr><td>Helsinki</td><td>1 000 000.00 €/sopimus</td><td>Hankinta, Unipussien hankinta kokonaispalveluna varhaiskasvatuksen yksi…</td><td><a href="https://paatokset.hel.fi/fi/asia/hel-2024-000709?paatos=2039a4e3-0695-4c8e-b196-25a088a82fba" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Helsinki</td><td>180 000.00 €/sopimus</td><td>Unipussien kokonaispalvelun hankinta kasvatuksen ja koulutuksen toimial…</td><td><a href="https://paatokset.hel.fi/fi/asia/hel-2021-009442?paatos=c6dbc4a4-17f0-4332-9751-d4fbbb7de274" rel="noopener noreferrer">Avaa</a></td></tr>
+</tbody></table></section>
+<section class="block">
+<h3>Asfaltointi<span class="quiet">2 päätöstä · 37 846.20–51 600.00 · suhde 1.36</span></h3>
+<table><thead><tr><th>Kunta</th><th>€/yksikkö</th><th>Päätös</th><th></th></tr></thead><tbody>
+<tr><td>Jyväskylä</td><td>51 600.00 €/urakka</td><td>Valuasfaltointitöiden hankinta kadut ja puistot -palvelualueelle</td><td><a href="https://jyvaskyla.cloudnc.fi/fi-FI/content/895/12350" rel="noopener noreferrer">Avaa</a></td></tr>
+<tr><td>Helsinki</td><td>37 846.20 €/urakka</td><td>Teollisuuskadun tunnelin puuttuva asfaltointi, 37 846,20 euroa</td><td><a href="https://paatokset.hel.fi/fi/asia/hel-2017-005117?paatos=a2eb8333-75cd-4001-b270-397dd8234ffa" rel="noopener noreferrer">Avaa</a></td></tr>
+</tbody></table></section>
+</main>
+<footer>
+<p><span class="wordmark">Aito<span>Data</span></span> · Vallanvahtikoira</p>
+<p class="meta">Generoitu 2026-07-27T13:57:55.415482+00:00 · ei tuotantopalvelu</p>
+<p>Uusinta: <code>.venv/bin/python -m scraper --mode julkaisu-proto</code></p>
+</footer>
+</body></html>

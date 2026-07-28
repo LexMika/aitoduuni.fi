@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AitoData · verkosto-demo (esikatselu)</title>
+<style>
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --edge: #1e293b;
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --blue: #2563eb;
+  --blue-hot: #3b82f6;
+  --blue-dim: rgba(37, 99, 235, 0.12);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text); background: var(--bg);
+}
+.topbar {
+  border-bottom: 1px solid var(--edge);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 20;
+}
+.topbar-inner {
+  max-width: 80rem; margin: 0 auto; padding: 1rem 1.25rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+}
+.wordmark {
+  font-size: 1.05rem; font-weight: 900; letter-spacing: -0.04em;
+  color: #fff; text-decoration: none;
+}
+.wordmark span { font-weight: 300; color: var(--blue); }
+.badge {
+  font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--blue-hot); background: var(--blue-dim);
+  border: 1px solid rgba(37, 99, 235, 0.35); padding: 0.3rem 0.65rem; border-radius: 999px;
+}
+.wrap {
+  max-width: 80rem; margin: 0 auto; padding: 1.25rem 1.25rem 2.5rem;
+  display: grid; gap: 1rem;
+}
+@media (min-width: 960px) {
+  .wrap { grid-template-columns: 1fr 21rem; align-items: start; }
+}
+header h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 900; letter-spacing: -0.04em;
+  margin: 0 0 0.35rem; color: #fff;
+}
+header p { margin: 0; color: var(--muted); max-width: 42rem; line-height: 1.5; font-size: 0.98rem; }
+.callout {
+  margin-top: 0.85rem; padding: 0.8rem 1rem; border-radius: 1rem;
+  background: var(--blue-dim); border: 1px solid rgba(37, 99, 235, 0.25);
+  color: #93c5fd; font-size: 0.92rem;
+}
+.row-tabs { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0.85rem 0 0; }
+.row-tabs .lbl {
+  width: 100%; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; color: #64748b; margin-bottom: -0.15rem;
+}
+.row-tabs button {
+  border: 1px solid var(--edge); background: transparent; color: var(--muted);
+  padding: 0.45rem 0.75rem; border-radius: 999px; font-weight: 700; font-size: 0.75rem;
+  letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer;
+}
+.row-tabs button.active { color: #fff; border-color: var(--blue); background: var(--blue-dim); }
+.mini-note {
+  margin-top: 0.75rem; color: #93c5fd; font-size: 0.86rem; line-height: 1.45;
+}
+.tools {
+  display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.85rem;
+}
+.tools button {
+  border: 1px solid var(--edge); background: rgba(15, 23, 42, 0.72); color: #cbd5e1;
+  padding: 0.5rem 0.75rem; border-radius: 0.8rem; font-weight: 700; font-size: 0.78rem;
+  cursor: pointer;
+}
+.tools button.active { color: #fff; border-color: var(--blue); background: var(--blue-dim); }
+.tools .hint {
+  width: 100%; color: #64748b; font-size: 0.78rem; line-height: 1.35;
+}
+.stage {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.5rem;
+  overflow: hidden; position: relative; margin-top: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.2);
+}
+canvas { display: block; width: 100%; height: min(68vh, 540px); cursor: grab; touch-action: none; }
+canvas.dragging { cursor: grabbing; }
+.legend {
+  position: absolute; left: 0.85rem; bottom: 0.85rem;
+  display: flex; flex-wrap: wrap; gap: 0.4rem; max-width: 92%;
+}
+.stage-note {
+  position: absolute; right: 0.85rem; top: 0.85rem;
+  max-width: 15rem; padding: 0.6rem 0.75rem; border-radius: 0.9rem;
+  background: rgba(2, 6, 23, 0.78); border: 1px solid var(--edge);
+  color: #cbd5e1; font-size: 0.8rem; line-height: 1.4;
+}
+.stage-note strong { display: block; color: #fff; margin-bottom: 0.18rem; }
+.chip {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em;
+  padding: 0.22rem 0.5rem; border-radius: 999px;
+  background: rgba(2, 6, 23, 0.8); border: 1px solid var(--edge); color: var(--muted);
+}
+.chip i { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.3rem; vertical-align: middle; }
+.chip.priority i { width: 0.7rem; height: 0.7rem; background: transparent; border: 2px solid #93c5fd; }
+.chip.priority i.small { width: 0.45rem; height: 0.45rem; }
+.chip.priority i.medium { width: 0.6rem; height: 0.6rem; }
+.chip.priority i.large { width: 0.78rem; height: 0.78rem; }
+.side {
+  background: var(--card); border: 1px solid var(--edge); border-radius: 1.5rem;
+  padding: 1.1rem 1.15rem 1.25rem; position: sticky; top: 4.5rem;
+}
+.side h2 { margin: 0 0 0.35rem; font-size: 1.05rem; letter-spacing: -0.02em; }
+.side .kind {
+  font-size: 0.66rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--blue-hot); margin-bottom: 0.5rem;
+}
+.side .meta { color: var(--muted); font-size: 0.9rem; margin: 0.3rem 0; line-height: 1.45; }
+.side a.btn {
+  display: inline-block; margin-top: 0.8rem; padding: 0.65rem 1rem; border-radius: 0.9rem;
+  background: var(--blue); color: #fff; font-weight: 800; text-decoration: none;
+  text-transform: uppercase; letter-spacing: -0.01em; font-size: 0.82rem;
+}
+.side a.btn:hover { background: var(--blue-hot); }
+.side .hint { margin-top: 0.9rem; font-size: 0.8rem; color: #64748b; line-height: 1.4; }
+.side .style-note {
+  margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--edge);
+  font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;
+}
+.pick-list {
+  margin-top: 1rem; padding-top: 0.85rem; border-top: 1px solid var(--edge);
+  display: grid; gap: 0.55rem;
+}
+.pick {
+  padding: 0.75rem 0.8rem; border-radius: 1rem;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  background: rgba(2, 6, 23, 0.35);
+}
+.pick strong { display: block; color: #fff; margin-bottom: 0.18rem; }
+.pick span { color: var(--muted); font-size: 0.82rem; line-height: 1.35; }
+.source-links {
+  margin-top: 0.9rem; display: grid; gap: 0.55rem;
+}
+.source-link {
+  display: block; padding: 0.72rem 0.8rem; border-radius: 0.9rem;
+  border: 1px solid rgba(129,140,248,0.18); background: rgba(2, 6, 23, 0.36);
+  color: #e2e8f0; text-decoration: none;
+}
+.source-link strong { display: block; color: #fff; margin-bottom: 0.15rem; }
+.source-link span { color: var(--muted); font-size: 0.82rem; display: block; }
+.source-link:hover { border-color: rgba(129,140,248,0.38); background: rgba(30, 41, 59, 0.55); }
+.source-link .k {
+  margin-top: 0.18rem; color: #94a3b8; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em;
+}
+footer {
+  max-width: 80rem; margin: 0 auto; padding: 1.25rem 1.25rem 2.5rem;
+  color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--edge);
+}
+footer a { color: var(--blue-hot); }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+  <a class="wordmark" href="JULKAISU_PROTO/index.html">Aito<span>Data</span></a>
+  <span class="badge">Visio-demo · esikatselu · ei tuotanto</span>
+</div></div>
+
+<div class="wrap">
+  <div>
+    <header>
+      <h1>Miltä Stage 2 voisi näyttää?</h1>
+      <p>Sama demo-data, nyt kolme jatkoon valittua näkymää. Case avautuu oletuksena siihen muotoon, joka tuntuu sille luontevimmalta.</p>
+      <div class="callout">Linja: case-kohtainen 2D. Ei globaalia 3D-atlasta Stage 1:ssä.</div>
+      <div class="mini-note">ADHD-testikysymys: jos vilkaiset vain nopeasti, näetko heti <strong>kuka on keskellä</strong>, <strong>mistä tieto tulee</strong> ja <strong>mitä ketjussa tapahtuu</strong>?</div>
+
+      <div class="row-tabs">
+        <div class="lbl">Case</div>
+        <button type="button" class="active" data-case="ketju">Ketju · Senaatti</button>
+        <button type="button" data-case="raha">Rahavirta · vaali</button>
+        <button type="button" data-case="suora">Suorahankinta · verrokki</button>
+      </div>
+      <div class="row-tabs" id="style-tabs">
+        <div class="lbl">Stage 2 -vaihtoehto</div>
+        <button type="button" data-style="force">1 · Verkosto</button>
+        <button type="button" data-style="focus">2 · Fokus-tähti</button>
+        <button type="button" class="active" data-style="flow">4 · Virtaus</button>
+      </div>
+      <div class="tools">
+        <button type="button" id="edit-toggle" class="active">Muokkaustila päällä</button>
+        <button type="button" id="reset-layout">Palauta asettelu</button>
+        <button type="button" id="copy-layout">Kopioi asettelu</button>
+        <div class="hint">Vedä solmuja hiirellä. Kopioi asettelu ja liitä se minulle, jos haluat että jatkan juuri testihenkilön rakentamasta muodosta.</div>
+      </div>
+    </header>
+
+    <div class="stage">
+      <canvas id="g" width="900" height="520" aria-label="2D visualisointi"></canvas>
+      <div class="stage-note" id="stage-note"></div>
+      <div class="legend">
+        <span class="chip"><i style="background:#38bdf8"></i>Toimija</span>
+        <span class="chip"><i style="background:#818cf8"></i>Lähde</span>
+        <span class="chip"><i style="background:#34d399"></i>Raha</span>
+        <span class="chip"><i style="background:#fbbf24"></i>Päätös</span>
+        <span class="chip priority"><i class="large"></i>Aloita tästä</span>
+        <span class="chip priority"><i class="medium"></i>Ydin</span>
+        <span class="chip priority"><i class="small"></i>Tuki</span>
+      </div>
+    </div>
+  </div>
+
+  <aside class="side" id="panel"></aside>
+</div>
+
+<footer>
+  <p>Aito<span style="color:var(--blue)">Data</span> · Vallanvahtikoira · visio-demo · /testi · ei linkitetty etusivulle</p>
+  <p>Taulukkomuoto: <a href="JULKAISU_PROTO/ketju.html">ketju.html</a></p>
+</footer>
+
+<script>
+const COLORS = { actor: "#38bdf8", source: "#818cf8", money: "#34d399", doc: "#fbbf24" };
+const PRIORITY = {
+  lead: { radius: 25, halo: 10, labelOffset: 18, title: "Aloituspiste" },
+  core: { radius: 19, halo: 8, labelOffset: 17, title: "Ydinhavainto" },
+  support: { radius: 14, halo: 6, labelOffset: 15, title: "Tukisolmu" },
+};
+
+const STYLE_INFO = {
+  force: {
+    name: "Verkosto (force)",
+    good: "Tutkiva näkymä. Hyvä kun halutaan nähdä että yksi toimija kytkeytyy moneen suuntaan.",
+    risk: "Ensivilkaisulla vaikein. Ulkopuolinen ei aina tiedä mistä aloittaa.",
+    fit: "Paras jos tämä on 'avaa lisää' tai median lisänäkymä, ei välttämättä oletusnäkymä.",
+  },
+  focus: {
+    name: "Fokus-tähti",
+    good: "Kansalaiselle vahva oletus: päätoimija keskellä, lähteet kaarella ympärillä, tärkein dokumentti eroteltu oikealle.",
+    risk: "Toimii huonommin jos casessa on kaksi yhtä tärkeää keskusta.",
+    fit: "Oma suosikki Stage 2 oletukseksi.",
+  },
+  cluster: {
+    name: "Ryhmitelty tähti",
+    good: "Lähteet niputetaan roolin mukaan. Silmä erottaa heti toimijan, lähteet ja yksittäisen todisteen.",
+    risk: "Vaatii pienen legendan jotta ryhmien logiikka aukeaa ensikertalaiselle.",
+    fit: "Hyvä kompromissi selkeyden ja verkostotunnun välillä.",
+  },
+  flow: {
+    name: "Virtaus (sarakkeet)",
+    good: "Paras jos halutaan näyttää vaihe tai raha vasemmalta oikealle.",
+    risk: "Verkkomainen ristiinkytkentä näyttää kömpelöltä.",
+    fit: "Todella hyvä rahavirroille, heikompi monilähdecaseen.",
+  },
+};
+
+const CASES = {
+  ketju: {
+    title: "Senaatti-kiinteistöt",
+    defaultStyle: "flow",
+    summary: "Monikerroscase: päävirta kertoo kuka päätyy mihin ilmoitukseen, ja lähteet on niputettu omaksi perustelublokikseen eivätkä kilpaile lopputuloksen kanssa.",
+    readHint: "Päävirta: Y -> Ilmoitus. Lähteet = yksi taustablokki.",
+    nodes: [
+      { id: "y", label: "Y 1503388-4", sub: "Senaatti", kind: "actor", priority: "lead",
+        blurb: "Sama Y-tunnus monessa julkisessa lähteessä.",
+        url: "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4",
+        linkMeta: "suora API-haku",
+        linkTarget: "companies?businessId=1503388-4",
+        linkHint: "kenttä businessId = 1503388-4" },
+      { id: "sourceblock", label: "Lähteet", sub: "Hilma · PRH · Tutkihankintoja · Virasto", kind: "source", priority: "core",
+        blurb: "Sama toimija toistuu useassa julkisessa lähteessä, jotka on niputettu yhdeksi perustelublokiksi.",
+        url: "https://www.hankintailmoitukset.fi/fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Lähdeblokin oletuslinkki",
+        linkHint: "katso lista alla — jokainen lähde omalla tyypillään",
+        sourceItems: [
+          { label: "Hilma", kind: "portaali / haku", target: "Hilma-haku", locate: "hae ilmoitusnumerolla 2020-039483", url: "https://www.hankintailmoitukset.fi/fi/" },
+          { label: "PRH YTJ", kind: "suora API-haku", target: "companies?businessId=1503388-4", locate: "kenttä businessId = 1503388-4", url: "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4" },
+          { label: "Tutkihankintoja", kind: "datasetti / lista", target: "2024 hankinta-aineisto", locate: "etsi Senaatti tai 1503388-4", url: "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9" },
+          { label: "Virasto", kind: "suora tiedosto", target: "Yhdistelmaluettelo.xlsx", locate: "sheet Liite 2 · Senaatti / 1503388-4", url: "https://cdn.valtiokonttori.fi/wordpress/2025/12/Liite_2_Yhdistelmaluettelo.xlsx" },
+        ] },
+      { id: "notice", label: "Ilmoitus", sub: "2020-039483", kind: "doc", priority: "core",
+        blurb: "Yksi konkreettinen Hilma-ilmoitus.",
+        url: "https://www.hankintailmoitukset.fi/fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-ilmoitus 2020-039483",
+        linkHint: "syvälinkki 404 → hae ilmoitusnumerolla 2020-039483" },
+    ],
+    edges: [
+      { from: "y", to: "sourceblock", label: "lähteet" },
+      { from: "y", to: "notice", label: "ilmoitus" },
+    ],
+    flowCols: [["y"], ["sourceblock"], ["notice"]],
+    starCenter: "y",
+  },
+  raha: {
+    title: "Vaalirahoitus-esimerkki",
+    defaultStyle: "flow",
+    summary: "Suuntacase: euromäärä toimii tapahtumakeskuksena, josta erkanee oma lähdehaara ja erillinen tuloshaara saajaan.",
+    readHint: "Tukija -> lahjoitus -> lähdehaara + saaja.",
+    nodes: [
+      { id: "from", label: "Tukija", sub: "SFP · 0215325-4", kind: "actor", priority: "core",
+        blurb: "Tukija vaaliaineistossa.",
+        url: "https://www.vaalirahoitusvalvonta.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Vaalirahoitusvalvonta-etusivu",
+        linkHint: "ei erillistä toimijasivua demossa → paikanna CSV:stä Y 0215325-4 / SFP" },
+      { id: "eur", label: "21 543 €", sub: "Aluevaalit 2022", kind: "money", priority: "lead",
+        blurb: "Euromäärä + vaali — ei tulkintaa.",
+        url: "https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja/aluevaalit2022/RAHOITUSRIVIT_E_VI_aluevaalit2022.csv?dl=20230417_091125",
+        linkMeta: "suora tiedosto",
+        linkTarget: "RAHOITUSRIVIT_E_VI_aluevaalit2022.csv",
+        linkHint: "etsi rivi: Rehn-Kivi / 21 543 EUR / SFP" },
+      { id: "to", label: "Ehdokas", sub: "Rehn-Kivi", kind: "actor", priority: "core",
+        blurb: "Saaja samassa aineistossa.",
+        url: "https://www.vaalirahoitusvalvonta.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Vaalirahoitusvalvonta-etusivu",
+        linkHint: "ei erillistä ehdokassivua demossa → paikanna CSV:stä Rehn-Kivi" },
+      { id: "src", label: "VTV CSV", sub: "lähde", kind: "source", priority: "support",
+        blurb: "Julkinen rahoitusriviaineisto.",
+        url: "https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja/aluevaalit2022/RAHOITUSRIVIT_E_VI_aluevaalit2022.csv?dl=20230417_091125",
+        linkMeta: "suora tiedosto",
+        linkTarget: "RAHOITUSRIVIT_E_VI_aluevaalit2022.csv",
+        linkHint: "etsi Rehn-Kivi / 21 543 EUR / SFP" },
+    ],
+    edges: [
+      { from: "from", to: "eur", label: "maksaa" },
+      { from: "eur", to: "src", label: "lähde" },
+      { from: "eur", to: "to", label: "saa" },
+    ],
+    flowCols: [["from"], ["eur"], ["to", "src"]],
+    starCenter: "eur",
+  },
+  suora: {
+    title: "Suorahankinta + verrokki",
+    defaultStyle: "flow",
+    summary: "Poikkeamacase: suorahankinnasta erkanee oma lähdehaara ja erillinen tuloshaara, jossa sopimus ja verrokit vertautuvat rinnakkain ennen toimittajaa.",
+    readHint: "Kunta -> Suorahankinta -> lähdehaara + tulosfaani -> Toimittaja.",
+    nodes: [
+      { id: "buyer", label: "Kunta X", sub: "ostaja", kind: "actor", priority: "core",
+        blurb: "Julkinen ostaja, josta havainto lähtee.",
+        url: "https://www.hankintailmoitukset.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-etusivu",
+        linkHint: "demo-ostaja ilman syvälinkkiä → hae kunnan nimellä" },
+      { id: "proc", label: "Suorahankinta", sub: "menettely", kind: "doc", priority: "core",
+        blurb: "Menettely tekee havainnosta heti kiinnostavamman.",
+        url: "https://www.hankintailmoitukset.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-ilmoitushaku",
+        linkHint: "tarkka ilmoitus puuttuu demosta → hae menettely = suorahankinta" },
+      { id: "amount", label: "214 000 €", sub: "sopimus", kind: "money", priority: "lead",
+        blurb: "Varsinainen havainto: summa, johon vertaaminen kohdistuu.",
+        url: "https://www.hankintailmoitukset.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-ilmoitushaku",
+        linkHint: "tarkka ilmoitus puuttuu demosta → hae summa ~214 000 €" },
+      { id: "medianLow", label: "51 000 €", sub: "verrokki A", kind: "money", priority: "support",
+        blurb: "Yksi saman tyyppisen hankinnan verrokki.",
+        url: "JULKAISU_PROTO/verrokki.html",
+        linkMeta: "paikallinen raportti",
+        linkTarget: "verrokki.html",
+        linkHint: "etsi verrokki A / matala pää" },
+      { id: "median", label: "68 000 €", sub: "verrokki mediaani", kind: "money", priority: "core",
+        blurb: "Verrokkitaso, johon havaintoa peilataan.",
+        url: "JULKAISU_PROTO/verrokki.html",
+        linkMeta: "paikallinen raportti",
+        linkTarget: "verrokki.html",
+        linkHint: "etsi mediaanirivi / CPV-ryhmä" },
+      { id: "medianHigh", label: "74 000 €", sub: "verrokki B", kind: "money", priority: "support",
+        blurb: "Toinen saman tyyppisen hankinnan verrokki.",
+        url: "JULKAISU_PROTO/verrokki.html",
+        linkMeta: "paikallinen raportti",
+        linkTarget: "verrokki.html",
+        linkHint: "etsi verrokki B / korkea pää" },
+      { id: "vendor", label: "Toimittaja Oy", sub: "voittaja", kind: "actor", priority: "core",
+        blurb: "Toimittaja tulee vasta vertailun jälkeen lukujärjestyksessä.",
+        url: "https://www.hankintailmoitukset.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-etusivu",
+        linkHint: "demo-toimittaja ilman Y-tunnusta → ei syvälinkkiä" },
+      { id: "hilma2", label: "Hilma", sub: "lähde", kind: "source", priority: "support",
+        blurb: "Menettely ja sopimussumma tulevat ilmoituslähteestä.",
+        url: "https://www.hankintailmoitukset.fi/",
+        linkMeta: "portaali / haku",
+        linkTarget: "Hilma-palvelu",
+        linkHint: "tarkka ilmoitus puuttuu demosta → hae menettely ja summa" },
+      { id: "bench", label: "Verrokit", sub: "CPV/ryhmä", kind: "source", priority: "support",
+        blurb: "Verrokkijoukko tekee havainnosta perustellun eikä vain mielipidettä.",
+        url: "JULKAISU_PROTO/verrokki.html",
+        linkMeta: "paikallinen raportti",
+        linkTarget: "verrokki.html",
+        linkHint: "etsi CPV-ryhmä ja mediaanirivi" },
+    ],
+    edges: [
+      { from: "buyer", to: "proc", label: "ostaa" },
+      { from: "proc", to: "hilma2", label: "lähde" },
+      { from: "proc", to: "amount", label: "sopimus" },
+      { from: "proc", to: "medianLow", label: "verrokki" },
+      { from: "proc", to: "median", label: "mediaani" },
+      { from: "proc", to: "medianHigh", label: "verrokki" },
+      { from: "proc", to: "bench", label: "verrokki" },
+      { from: "amount", to: "vendor", label: "voittaja" },
+    ],
+    flowCols: [["buyer"], ["proc"], ["medianLow", "median", "amount", "medianHigh", "bench"], ["vendor", "hilma2"]],
+    starCenter: "amount",
+  },
+};
+
+const canvas = document.getElementById("g");
+const ctx = canvas.getContext("2d");
+const panel = document.getElementById("panel");
+const stageNote = document.getElementById("stage-note");
+const editToggle = document.getElementById("edit-toggle");
+const resetLayoutBtn = document.getElementById("reset-layout");
+const copyLayoutBtn = document.getElementById("copy-layout");
+
+let caseKey = "ketju";
+let styleKey = "flow";
+let nodes = [];
+let edges = [];
+let selected = null;
+let dragNode = null;
+let pan = { x: 0, y: 0 };
+let panning = false;
+let last = null;
+let w = 900, h = 520;
+let physics = true;
+let editMode = true;
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => (
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]
+  ));
+}
+function byId(id) { return nodes.find((n) => n.id === id); }
+function setActiveStyleButton() {
+  document.querySelectorAll("[data-style]").forEach((b) => {
+    b.classList.toggle("active", b.dataset.style === styleKey);
+  });
+}
+function renderStageNote() {
+  const c = CASES[caseKey];
+  stageNote.innerHTML = `
+    <strong>${esc(c.title)}</strong>
+    ${esc(c.readHint || "")}<br><br>
+    <span style="color:#93c5fd">${editMode ? "Muokkaustila: vedä solmuja ja rakenna oma versio." : "Selaustila: klikkaa solmuja ja vertaa näkymiä."}</span>
+  `;
+}
+function renderEditState() {
+  editToggle.textContent = editMode ? "Muokkaustila päällä" : "Muokkaustila pois";
+  editToggle.classList.toggle("active", editMode);
+  renderStageNote();
+}
+function exportLayout() {
+  return {
+    case: caseKey,
+    style: styleKey,
+    nodes: nodes.map((n) => ({
+      id: n.id,
+      x: Math.round(n.x),
+      y: Math.round(n.y),
+      priority: n.priority || "support",
+    })),
+  };
+}
+
+function resize() {
+  const rect = canvas.getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  w = Math.max(320, Math.floor(rect.width));
+  h = Math.max(360, Math.floor(rect.height));
+  canvas.width = Math.floor(w * dpr);
+  canvas.height = Math.floor(h * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  layout();
+}
+
+function load() {
+  const c = CASES[caseKey];
+  nodes = c.nodes.map((n) => ({ ...n, x: 0, y: 0, vx: 0, vy: 0, fixed: false }));
+  edges = c.edges.map((e) => ({ ...e }));
+  selected = null;
+  pan = { x: 0, y: 0 };
+  layout();
+  renderStageNote();
+  renderPanel();
+}
+
+function layout() {
+  if (!nodes.length) return;
+  physics = styleKey === "force";
+  const c = CASES[caseKey];
+  if (styleKey === "force") layoutForceSeed();
+  else if (styleKey === "focus") layoutFocus(c.starCenter);
+  else if (styleKey === "cluster") layoutCluster(c.starCenter);
+  else if (styleKey === "star") layoutStar(c.starCenter);
+  else if (styleKey === "flow") layoutFlow(c.flowCols);
+  else if (styleKey === "arcs") layoutArcs();
+}
+
+function layoutForceSeed() {
+  const cx = w / 2, cy = h / 2, r = Math.min(w, h) * 0.36;
+  nodes.forEach((n, i) => {
+    const a = (i / Math.max(nodes.length, 1)) * Math.PI * 2 - Math.PI / 2;
+    const stretch = n.priority === "lead" ? 0.45 : (n.priority === "core" ? 0.8 : 1);
+    n.x = cx + Math.cos(a) * r * stretch;
+    n.y = cy + Math.sin(a) * r;
+    n.vx = 0; n.vy = 0; n.fixed = false;
+  });
+}
+
+function layoutStar(centerId) {
+  const cx = w / 2, cy = h / 2;
+  const center = byId(centerId) || nodes[0];
+  const others = nodes.filter((n) => n.id !== center.id);
+  center.x = cx; center.y = cy; center.fixed = true;
+  const r = Math.min(w, h) * 0.32;
+  others.forEach((n, i) => {
+    const a = (i / Math.max(others.length, 1)) * Math.PI * 2 - Math.PI / 2;
+    n.x = cx + Math.cos(a) * r;
+    n.y = cy + Math.sin(a) * r;
+    n.fixed = true;
+  });
+}
+
+function layoutFocus(centerId) {
+  const center = byId(centerId) || nodes[0];
+  const others = nodes.filter((n) => n.id !== center.id);
+  const docs = others.filter((n) => n.kind === "doc" || n.kind === "money");
+  const sources = others.filter((n) => n.kind === "source");
+  const actors = others.filter((n) => n.kind === "actor" && n.id !== center.id);
+  center.x = w * 0.34; center.y = h * 0.5; center.fixed = true;
+
+  const placeArc = (arr, cx, cy, rx, start, end) => {
+    arr.forEach((n, i) => {
+      const t = arr.length === 1 ? 0.5 : i / Math.max(arr.length - 1, 1);
+      const a = start + (end - start) * t;
+      n.x = cx + Math.cos(a) * rx;
+      n.y = cy + Math.sin(a) * rx;
+      n.fixed = true;
+    });
+  };
+
+  placeArc(sources, center.x + 60, center.y, Math.min(w, h) * 0.28, -Math.PI * 0.75, Math.PI * 0.15);
+  placeArc(actors, w * 0.72, h * 0.3, Math.min(w, h) * 0.11, -Math.PI * 0.2, Math.PI * 0.2);
+  docs.forEach((n, i) => {
+    n.x = w * 0.76;
+    n.y = h * (0.52 + i * 0.18);
+    n.fixed = true;
+  });
+}
+
+function layoutCluster(centerId) {
+  const center = byId(centerId) || nodes[0];
+  const sources = nodes.filter((n) => n.kind === "source");
+  const docs = nodes.filter((n) => n.kind === "doc" || n.kind === "money");
+  const actors = nodes.filter((n) => n.kind === "actor" && n.id !== center.id);
+  center.x = w * 0.5; center.y = h * 0.43; center.fixed = true;
+
+  const leftX = w * 0.23, rightX = w * 0.77, bottomY = h * 0.78;
+  sources.forEach((n, i) => {
+    const span = Math.max(sources.length - 1, 1);
+    n.x = leftX;
+    n.y = h * 0.22 + (h * 0.46) * (sources.length === 1 ? 0.5 : i / span);
+    n.fixed = true;
+  });
+  actors.forEach((n, i) => {
+    n.x = rightX;
+    n.y = h * (0.3 + i * 0.22);
+    n.fixed = true;
+  });
+  docs.forEach((n, i) => {
+    n.x = w * (0.4 + i * 0.2);
+    n.y = bottomY;
+    n.fixed = true;
+  });
+}
+
+function layoutFlow(cols) {
+  if (caseKey === "ketju") {
+    const colX = [
+      100,
+      w * 0.28,
+      w * 0.76,
+    ];
+    const manual = {
+      y: { x: colX[0], y: h * 0.62 },
+      sourceblock: { x: w * 0.42, y: h * 0.2 },
+      notice: { x: colX[2], y: h * 0.54 },
+    };
+    Object.entries(manual).forEach(([id, pos]) => {
+      const n = byId(id);
+      if (!n) return;
+      n.x = pos.x;
+      n.y = pos.y;
+      n.fixed = true;
+    });
+    return;
+  }
+
+  if (caseKey === "suora") {
+    const colX = [
+      90,
+      w * 0.26,
+      w * 0.5,
+      w * 0.77,
+    ];
+    const manual = {
+      buyer: { x: colX[0], y: h * 0.5 },
+      proc: { x: colX[1], y: h * 0.5 },
+      hilma2: { x: colX[1], y: h * 0.22 },
+      medianLow: { x: colX[2], y: h * 0.24 },
+      median: { x: colX[2], y: h * 0.4 },
+      amount: { x: colX[2], y: h * 0.56 },
+      medianHigh: { x: colX[2], y: h * 0.72 },
+      bench: { x: colX[2], y: h * 0.86 },
+      vendor: { x: colX[3], y: h * 0.44 },
+    };
+    Object.entries(manual).forEach(([id, pos]) => {
+      const n = byId(id);
+      if (!n) return;
+      n.x = pos.x;
+      n.y = pos.y;
+      n.fixed = true;
+    });
+    return;
+  }
+
+  if (caseKey === "raha") {
+    const colX = [
+      100,
+      w * 0.42,
+      w * 0.76,
+    ];
+    const manual = {
+      from: { x: colX[0], y: h * 0.54 },
+      eur: { x: colX[1], y: h * 0.54 },
+      src: { x: colX[1], y: h * 0.24 },
+      to: { x: colX[2], y: h * 0.54 },
+    };
+    Object.entries(manual).forEach(([id, pos]) => {
+      const n = byId(id);
+      if (!n) return;
+      n.x = pos.x;
+      n.y = pos.y;
+      n.fixed = true;
+    });
+    return;
+  }
+
+  const padX = 70, padY = 70;
+  const usableW = w - padX * 2;
+  const colW = usableW / Math.max(cols.length - 1, 1);
+  cols.forEach((col, ci) => {
+    const x = padX + (cols.length === 1 ? usableW / 2 : ci * colW);
+    col.forEach((id, ri) => {
+      const n = byId(id);
+      if (!n) return;
+      const span = Math.max(col.length - 1, 1);
+      const y = padY + (h - padY * 2) * (col.length === 1 ? 0.5 : ri / span);
+      n.x = x;
+      n.y = y;
+      n.fixed = true;
+    });
+  });
+}
+
+function layoutArcs() {
+  const pad = 70;
+  const y = h * 0.62;
+  nodes.forEach((n, i) => {
+    n.x = pad + (i / Math.max(nodes.length - 1, 1)) * (w - pad * 2);
+    n.y = y;
+    n.fixed = true;
+  });
+}
+
+function tick() {
+  if (!physics) return;
+  const cx = w / 2, cy = h / 2;
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const a = nodes[i], b = nodes[j];
+      let dx = a.x - b.x, dy = a.y - b.y;
+      let d2 = dx * dx + dy * dy || 1;
+      const f = 1400 / d2;
+      const d = Math.sqrt(d2);
+      dx /= d; dy /= d;
+      a.vx += dx * f; a.vy += dy * f;
+      b.vx -= dx * f; b.vy -= dy * f;
+    }
+  }
+  for (const e of edges) {
+    const a = byId(e.from), b = byId(e.to);
+    if (!a || !b) continue;
+    let dx = b.x - a.x, dy = b.y - a.y;
+    const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+    const f = (dist - 180) * 0.018;
+    dx /= dist; dy /= dist;
+    a.vx += dx * f; a.vy += dy * f;
+    b.vx -= dx * f; b.vy -= dy * f;
+  }
+  for (const n of nodes) {
+    if (n.fixed && !(dragNode && dragNode.id === n.id)) continue;
+    n.vx += (cx - n.x) * 0.0035;
+    n.vy += (cy - n.y) * 0.0035;
+    if (dragNode && dragNode.id === n.id) { n.vx = 0; n.vy = 0; continue; }
+    n.vx *= 0.84; n.vy *= 0.84;
+    n.x += n.vx; n.y += n.vy;
+    n.x = Math.max(40, Math.min(w - 40, n.x));
+    n.y = Math.max(36, Math.min(h - 36, n.y));
+  }
+}
+
+function drawGrid() {
+  ctx.strokeStyle = "rgba(30,41,59,0.5)";
+  ctx.lineWidth = 1;
+  for (let x = 0; x < w; x += 40) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke(); }
+  for (let y = 0; y < h; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke(); }
+}
+
+function drawEdgeLabel(x, y, text) {
+  if (!text) return;
+  ctx.fillStyle = "rgba(148,163,184,0.8)";
+  ctx.font = "600 10px ui-sans-serif, system-ui, sans-serif";
+  ctx.textAlign = "center";
+  ctx.fillText(text, x, y);
+}
+function drawArrowHead(x, y, angle, color) {
+  const len = 8;
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(x - Math.cos(angle - Math.PI / 6) * len, y - Math.sin(angle - Math.PI / 6) * len);
+  ctx.lineTo(x - Math.cos(angle + Math.PI / 6) * len, y - Math.sin(angle + Math.PI / 6) * len);
+  ctx.closePath();
+  ctx.fillStyle = color;
+  ctx.fill();
+}
+
+function drawEdges() {
+  if (styleKey === "arcs") {
+    for (const e of edges) {
+      const a = byId(e.from), b = byId(e.to);
+      if (!a || !b) continue;
+      const x1 = a.x, x2 = b.x;
+      const mid = (x1 + x2) / 2;
+      const span = Math.abs(x2 - x1);
+      const y = a.y;
+      const rise = Math.min(160, 40 + span * 0.35);
+      ctx.beginPath();
+      ctx.moveTo(x1, y);
+      ctx.quadraticCurveTo(mid, y - rise, x2, y);
+      ctx.strokeStyle = "rgba(96,165,250,0.55)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      drawEdgeLabel(mid, y - rise + 14, e.label);
+    }
+    return;
+  }
+
+  if (styleKey === "flow") {
+    for (const e of edges) {
+      const a = byId(e.from), b = byId(e.to);
+      if (!a || !b) continue;
+      const mx = (a.x + b.x) / 2;
+      const isSourceLink = a.kind === "source" || b.kind === "source";
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.bezierCurveTo(mx, a.y, mx, b.y, b.x, b.y);
+      ctx.strokeStyle = isSourceLink ? "rgba(129,140,248,0.28)" : "rgba(52,211,153,0.45)";
+      ctx.lineWidth = isSourceLink ? 1.5 : 2.5;
+      ctx.stroke();
+      drawArrowHead(
+        b.x,
+        b.y,
+        Math.atan2(b.y - a.y, b.x - a.x),
+        isSourceLink ? "rgba(129,140,248,0.7)" : "rgba(52,211,153,0.9)"
+      );
+      drawEdgeLabel(mx, (a.y + b.y) / 2 - 8, e.label);
+    }
+    return;
+  }
+
+  if (styleKey === "focus") {
+    for (const e of edges) {
+      const a = byId(e.from), b = byId(e.to);
+      if (!a || !b) continue;
+      const active = a.kind === "doc" || b.kind === "doc" || a.kind === "money" || b.kind === "money";
+      const mx = (a.x + b.x) / 2;
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.bezierCurveTo(mx, a.y, mx, b.y, b.x, b.y);
+      ctx.strokeStyle = active ? "rgba(59,130,246,0.65)" : "rgba(148,163,184,0.28)";
+      ctx.lineWidth = active ? 2.5 : 1.6;
+      ctx.stroke();
+      drawArrowHead(b.x, b.y, Math.atan2(b.y - a.y, b.x - a.x), active ? "rgba(59,130,246,0.9)" : "rgba(148,163,184,0.75)");
+      drawEdgeLabel(mx, (a.y + b.y) / 2 - 8, e.label);
+    }
+    return;
+  }
+
+  if (styleKey === "cluster") {
+    for (const e of edges) {
+      const a = byId(e.from), b = byId(e.to);
+      if (!a || !b) continue;
+      const mx = (a.x + b.x) / 2;
+      const cy = Math.min(a.y, b.y) - 36;
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.quadraticCurveTo(mx, cy, b.x, b.y);
+      ctx.strokeStyle = "rgba(129,140,248,0.45)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      drawEdgeLabel(mx, cy - 6, e.label);
+    }
+    return;
+  }
+
+  // force + star: straight
+  for (const e of edges) {
+    const a = byId(e.from), b = byId(e.to);
+    if (!a || !b) continue;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.strokeStyle = styleKey === "star" ? "rgba(129,140,248,0.45)" : "rgba(148,163,184,0.35)";
+    ctx.lineWidth = styleKey === "star" ? 2 : 1.5;
+    ctx.stroke();
+    drawArrowHead(b.x, b.y, Math.atan2(b.y - a.y, b.x - a.x), styleKey === "star" ? "rgba(129,140,248,0.9)" : "rgba(148,163,184,0.75)");
+    drawEdgeLabel((a.x + b.x) / 2, (a.y + b.y) / 2 - 6, e.label);
+  }
+}
+
+function drawNodes() {
+  for (const n of nodes) {
+    const col = COLORS[n.kind] || "#94a3b8";
+    const active = selected === n.id;
+    const isCenter = styleKey !== "force" && CASES[caseKey].starCenter === n.id;
+    const tier = PRIORITY[n.priority || "support"] || PRIORITY.support;
+    const r = active ? tier.radius + 2 : tier.radius;
+    const halo = active || isCenter ? tier.halo + 2 : tier.halo;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r + halo, 0, Math.PI * 2);
+    ctx.fillStyle = active || isCenter ? "rgba(37,99,235,0.28)" : "rgba(15,23,42,0.15)";
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = col;
+    ctx.fill();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = active || isCenter ? "#fff" : "rgba(2,6,23,0.7)";
+    ctx.stroke();
+
+    const labelY = styleKey === "arcs" ? n.y + r + tier.labelOffset + 2 : n.y + r + tier.labelOffset;
+    ctx.fillStyle = "#e2e8f0";
+    ctx.font = "800 12px ui-sans-serif, system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(n.label, n.x, labelY);
+    if (n.sub) {
+      ctx.fillStyle = "#64748b";
+      ctx.font = "600 10px ui-sans-serif, system-ui, sans-serif";
+      ctx.fillText(n.sub, n.x, labelY + 12);
+    }
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, w, h);
+  ctx.save();
+  ctx.translate(pan.x, pan.y);
+  drawGrid();
+  drawEdges();
+  drawNodes();
+  ctx.restore();
+}
+
+function loop() {
+  tick();
+  draw();
+  requestAnimationFrame(loop);
+}
+
+function renderPanel(node) {
+  const info = STYLE_INFO[styleKey];
+  const c = CASES[caseKey];
+  if (!node) {
+    panel.innerHTML = `
+      <div class="kind">Tyyli</div>
+      <h2>${esc(info.name)}</h2>
+      <p class="meta"><strong>Case:</strong> ${esc(c.title)}</p>
+      <p class="meta">${esc(c.summary || "")}</p>
+      <p class="meta"><strong>Suositus tälle caselle:</strong> ${esc(STYLE_INFO[c.defaultStyle]?.name || info.name)}</p>
+      <p class="meta">${esc(info.good)}</p>
+      <p class="meta"><em>Riski:</em> ${esc(info.risk)}</p>
+      <p class="meta"><strong>Stage 2 -arvio:</strong> ${esc(info.fit || "")}</p>
+      <p class="hint">Klikkaa solmua · vaihda tyyliä ylhäältä · sama data kaikissa.</p>
+      <div class="style-note">Ideointi: yksi case, yksi luonteva oletusnäkymä. Valitse luettavuus animaation sijaan.</div>
+      <div class="pick-list">
+        <div class="pick"><strong>1. Verkosto</strong><span>Monikerroslöytöihin, kun sama toimija kytkeytyy moneen julkiseen lähteeseen.</span></div>
+        <div class="pick"><strong>2. Fokus-tähti</strong><span>Sama logiikka pehmeammin ohjattuna, kun halutaan kansalaiselle helpompi sisäänmeno.</span></div>
+        <div class="pick"><strong>4. Virtaus</strong><span>Rahavirta- ja suunnatuille caseille: raha tulee tuolta ja menee tonne.</span></div>
+      </div>`;
+    return;
+  }
+  const meta = node.linkMeta || "";
+  const nodeButtonLabel = meta.includes("portaali")
+    ? "Avaa portaali"
+    : meta.includes("datasetti")
+      ? "Avaa datasetti"
+      : meta.includes("tiedosto")
+        ? "Avaa tiedosto"
+        : meta.includes("API")
+          ? "Avaa API-haku"
+          : meta.includes("raportti")
+            ? "Avaa raportti"
+            : "Avaa lähde";
+  selected = node.id;
+  const sourceLinks = Array.isArray(node.sourceItems) && node.sourceItems.length
+    ? `<div class="source-links">${node.sourceItems.map((item) => `
+        <a class="source-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+          <strong>${esc(item.label)}</strong>
+          ${item.kind ? `<span><span class="k">Linkkityyppi</span>${esc(item.kind)}</span>` : ""}
+          ${item.target ? `<span><span class="k">Kohde</span>${esc(item.target)}</span>` : ""}
+          ${item.locate ? `<span><span class="k">Paikannus</span>${esc(item.locate)}</span>` : ""}
+        </a>
+      `).join("")}</div>`
+    : "";
+  const tier = PRIORITY[node.priority || "support"] || PRIORITY.support;
+  const missingLinkMeta = node.url && !node.linkMeta
+    ? `<p class="meta"><em>Linkkimeta puuttuu (demo-virhe).</em></p>`
+    : "";
+  panel.innerHTML = `
+    <div class="kind">${esc(node.kind)}</div>
+    <h2>${esc(node.label)}</h2>
+    <p class="meta"><strong>${esc(node.sub || "")}</strong></p>
+    <p class="meta"><strong>Prioriteetti:</strong> ${esc(tier.title)}</p>
+    <p class="meta">${esc(node.blurb || "")}</p>
+    ${node.linkMeta ? `<p class="meta"><strong>Linkkityyppi:</strong> ${esc(node.linkMeta)}</p>` : ""}
+    ${node.linkTarget ? `<p class="meta"><strong>Kohde:</strong> ${esc(node.linkTarget)}</p>` : ""}
+    ${node.linkHint ? `<p class="meta"><strong>Paikannus:</strong> ${esc(node.linkHint)}</p>` : ""}
+    ${missingLinkMeta}
+    ${node.url ? `<a class="btn" href="${esc(node.url)}" target="_blank" rel="noopener noreferrer">${esc(nodeButtonLabel)}</a>` : ""}
+    ${sourceLinks}
+    <div class="style-note"><strong>${esc(info.name)}</strong><br>${esc(info.good)}<br><br><em>${esc(info.fit || "")}</em></div>`;
+}
+
+function pos(ev) {
+  const rect = canvas.getBoundingClientRect();
+  return { x: ev.clientX - rect.left - pan.x, y: ev.clientY - rect.top - pan.y };
+}
+function hit(p) {
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    const n = nodes[i];
+    const dx = p.x - n.x, dy = p.y - n.y;
+    if (dx * dx + dy * dy <= 22 * 22) return n;
+  }
+  return null;
+}
+
+canvas.addEventListener("pointerdown", (ev) => {
+  canvas.setPointerCapture(ev.pointerId);
+  const p = pos(ev);
+  const n = hit(p);
+  if (n && editMode) {
+    dragNode = n;
+    renderPanel(n);
+  } else if (n) {
+    renderPanel(n);
+  } else {
+    panning = true;
+    last = { x: ev.clientX, y: ev.clientY };
+    canvas.classList.add("dragging");
+  }
+});
+canvas.addEventListener("pointermove", (ev) => {
+  if (dragNode) {
+    const p = pos(ev);
+    dragNode.x = p.x; dragNode.y = p.y;
+  } else if (panning && last) {
+    pan.x += ev.clientX - last.x;
+    pan.y += ev.clientY - last.y;
+    last = { x: ev.clientX, y: ev.clientY };
+  }
+});
+canvas.addEventListener("pointerup", () => {
+  dragNode = null; panning = false; last = null;
+  canvas.classList.remove("dragging");
+});
+
+document.querySelectorAll("[data-case]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-case]").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    caseKey = btn.dataset.case;
+    styleKey = CASES[caseKey].defaultStyle || "focus";
+    setActiveStyleButton();
+    load();
+  });
+});
+document.querySelectorAll("[data-style]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-style]").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    styleKey = btn.dataset.style;
+    layout();
+    renderPanel(selected ? byId(selected) : null);
+    renderStageNote();
+  });
+});
+
+editToggle.addEventListener("click", () => {
+  editMode = !editMode;
+  renderEditState();
+});
+
+resetLayoutBtn.addEventListener("click", () => {
+  pan = { x: 0, y: 0 };
+  layout();
+  renderPanel(selected ? byId(selected) : null);
+  renderStageNote();
+});
+
+copyLayoutBtn.addEventListener("click", async () => {
+  const payload = JSON.stringify(exportLayout(), null, 2);
+  try {
+    await navigator.clipboard.writeText(payload);
+    copyLayoutBtn.textContent = "Asettelu kopioitu";
+    setTimeout(() => { copyLayoutBtn.textContent = "Kopioi asettelu"; }, 1400);
+  } catch {
+    copyLayoutBtn.textContent = "Kopiointi epäonnistui";
+    setTimeout(() => { copyLayoutBtn.textContent = "Kopioi asettelu"; }, 1800);
+  }
+});
+
+window.addEventListener("resize", resize);
+load();
+renderEditState();
+resize();
+loop();
+</script>
+</body>
+</html>
