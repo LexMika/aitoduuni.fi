@@ -164,6 +164,37 @@ footer {
   color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--edge);
 }
 footer a { color: var(--blue-hot); }
+.tools .hint strong { color: #cbd5e1; }
+#feedback-btn { border-color: rgba(52, 211, 153, 0.35); color: #6ee7b7; }
+#feedback-btn.active, #feedback-btn:hover { border-color: #34d399; color: #fff; background: rgba(52, 211, 153, 0.12); }
+.fb-overlay {
+  display: none; position: fixed; inset: 0; z-index: 40;
+  background: rgba(2, 6, 23, 0.72); align-items: center; justify-content: center;
+  padding: 1rem;
+}
+.fb-overlay.open { display: flex; }
+.fb-modal {
+  width: min(32rem, 100%); background: var(--card); border: 1px solid var(--edge);
+  border-radius: 1.25rem; padding: 1.15rem 1.2rem 1.25rem; box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+.fb-modal h2 { margin: 0 0 0.35rem; font-size: 1.1rem; letter-spacing: -0.02em; }
+.fb-modal p { margin: 0 0 0.85rem; color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+.fb-modal label { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #64748b; margin: 0.65rem 0 0.28rem; }
+.fb-modal input, .fb-modal textarea {
+  width: 100%; box-sizing: border-box; border-radius: 0.8rem; border: 1px solid var(--edge);
+  background: #020617; color: var(--text); padding: 0.7rem 0.8rem; font: inherit;
+}
+.fb-modal textarea { min-height: 7rem; resize: vertical; }
+.fb-modal .row { display: flex; gap: 0.55rem; flex-wrap: wrap; margin-top: 0.95rem; align-items: center; }
+.fb-modal .check {
+  display: flex; gap: 0.45rem; align-items: flex-start; margin-top: 0.75rem;
+  color: var(--muted); font-size: 0.84rem; line-height: 1.35;
+  text-transform: none; letter-spacing: 0; font-weight: 500;
+}
+.fb-modal .check input { width: auto; margin-top: 0.15rem; }
+.fb-modal .status { min-height: 1.2rem; margin-top: 0.55rem; font-size: 0.84rem; color: #6ee7b7; }
+.fb-modal .status.err { color: #fca5a5; }
+.visitor-chip { font-size: 0.68rem; color: #64748b; margin-top: 0.35rem; }
 </style>
 </head>
 <body>
@@ -196,7 +227,9 @@ footer a { color: var(--blue-hot); }
         <button type="button" id="edit-toggle" class="active">Muokkaustila päällä</button>
         <button type="button" id="reset-layout">Palauta asettelu</button>
         <button type="button" id="copy-layout">Kopioi asettelu</button>
-        <div class="hint">Vedä solmuja hiirellä. Kopioi asettelu ja liitä se minulle, jos haluat että jatkan juuri testihenkilön rakentamasta muodosta.</div>
+        <button type="button" id="feedback-btn">Anna palaute</button>
+        <div class="hint"><strong>Asettelusi on vain tässä selaimessa</strong> — eri henkilöt eivät ylikirjoita toisiaan. Halutessasi lähetä palaute + asettelu napista; se tulee suoraan tarkistettavaksi.</div>
+        <div class="visitor-chip" id="visitor-chip"></div>
       </div>
     </header>
 
@@ -223,8 +256,29 @@ footer a { color: var(--blue-hot); }
   <p>Taulukkomuoto: <a href="JULKAISU_PROTO/ketju.html">ketju.html</a></p>
 </footer>
 
+
+<div class="fb-overlay" id="fb-overlay" role="dialog" aria-modal="true" aria-labelledby="fb-title">
+  <div class="fb-modal">
+    <h2 id="fb-title">Anna palaute</h2>
+    <p>Kommentti + valinnainen asettelu lähtee Formspreeen (sama kanava kuin aitoduuni.fi-lomake). Asettelu sisältää vierailija-id:n, jotta vastaukset erottuvat.</p>
+    <label for="fb-name">Nimi tai merkki (valinnainen)</label>
+    <input id="fb-name" type="text" maxlength="80" placeholder="esim. Maija / toimittaja" autocomplete="nickname">
+    <label for="fb-msg">Palaute</label>
+    <textarea id="fb-msg" maxlength="4000" placeholder="Mikä oli selkeää? Mikä hämärää? Miten nodet kannattaisi asetella?"></textarea>
+    <label class="check"><input id="fb-include-layout" type="checkbox" checked> Liitä nykyinen asettelu (case + solmujen paikat)</label>
+    <div class="row">
+      <button type="button" class="active" id="fb-send">Lähetä palaute</button>
+      <button type="button" id="fb-cancel">Sulje</button>
+    </div>
+    <div class="status" id="fb-status" aria-live="polite"></div>
+  </div>
+</div>
+
 <script>
 const COLORS = { actor: "#38bdf8", source: "#818cf8", money: "#34d399", doc: "#fbbf24" };
+const FEEDBACK_ENDPOINT = "https://formspree.io/f/mjgpwgnw";
+const VISITOR_KEY = "aitodata_demo_visitor_v1";
+const LAYOUT_PREFIX = "aitodata_demo_layout_v1";
 const PRIORITY = {
   lead: { radius: 25, halo: 10, labelOffset: 18, title: "Aloituspiste" },
   core: { radius: 19, halo: 8, labelOffset: 17, title: "Ydinhavainto" },
@@ -419,6 +473,12 @@ const stageNote = document.getElementById("stage-note");
 const editToggle = document.getElementById("edit-toggle");
 const resetLayoutBtn = document.getElementById("reset-layout");
 const copyLayoutBtn = document.getElementById("copy-layout");
+const feedbackBtn = document.getElementById("feedback-btn");
+const fbOverlay = document.getElementById("fb-overlay");
+const fbSend = document.getElementById("fb-send");
+const fbCancel = document.getElementById("fb-cancel");
+const fbStatus = document.getElementById("fb-status");
+const visitorChip = document.getElementById("visitor-chip");
 
 let caseKey = "ketju";
 let styleKey = "flow";
@@ -432,6 +492,127 @@ let last = null;
 let w = 900, h = 520;
 let physics = true;
 let editMode = true;
+let suppressSave = false;
+
+function getVisitorId() {
+  try {
+    let id = localStorage.getItem(VISITOR_KEY);
+    if (!id) {
+      id = (crypto.randomUUID && crypto.randomUUID()) ||
+        (`v-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`);
+      localStorage.setItem(VISITOR_KEY, id);
+    }
+    return id;
+  } catch {
+    return `session-${Date.now().toString(36)}`;
+  }
+}
+
+const visitorId = getVisitorId();
+if (visitorChip) visitorChip.textContent = `Vierailija-id: ${visitorId.slice(0, 8)}… (vain tämä selain)`;
+
+function layoutStorageKey(c = caseKey, s = styleKey) {
+  return `${LAYOUT_PREFIX}:${visitorId}:${c}:${s}`;
+}
+
+function exportLayout() {
+  return {
+    visitor_id: visitorId,
+    saved_at: new Date().toISOString(),
+    case: caseKey,
+    style: styleKey,
+    nodes: nodes.map((n) => ({
+      id: n.id,
+      x: Math.round(n.x),
+      y: Math.round(n.y),
+      priority: n.priority || "support",
+    })),
+  };
+}
+
+function saveLayoutLocal() {
+  if (suppressSave || !nodes.length) return;
+  try {
+    localStorage.setItem(layoutStorageKey(), JSON.stringify(exportLayout()));
+  } catch (_) { /* private mode / quota */ }
+}
+
+function clearLayoutLocal(c = caseKey, s = styleKey) {
+  try { localStorage.removeItem(layoutStorageKey(c, s)); } catch (_) {}
+}
+
+function applySavedLayout() {
+  let raw;
+  try { raw = localStorage.getItem(layoutStorageKey()); } catch { return false; }
+  if (!raw) return false;
+  let data;
+  try { data = JSON.parse(raw); } catch { return false; }
+  if (!data || !Array.isArray(data.nodes)) return false;
+  const bySaved = Object.fromEntries(data.nodes.map((n) => [n.id, n]));
+  let applied = 0;
+  nodes.forEach((n) => {
+    const s = bySaved[n.id];
+    if (!s || !Number.isFinite(s.x) || !Number.isFinite(s.y)) return;
+    n.x = s.x; n.y = s.y; n.vx = 0; n.vy = 0; n.fixed = true;
+    applied += 1;
+  });
+  if (applied) physics = false;
+  return applied > 0;
+}
+
+function openFeedback() {
+  fbStatus.textContent = "";
+  fbStatus.classList.remove("err");
+  fbOverlay.classList.add("open");
+  document.getElementById("fb-msg").focus();
+}
+function closeFeedback() {
+  fbOverlay.classList.remove("open");
+}
+
+async function sendFeedback() {
+  const msg = (document.getElementById("fb-msg").value || "").trim();
+  const name = (document.getElementById("fb-name").value || "").trim();
+  const includeLayout = document.getElementById("fb-include-layout").checked;
+  if (!msg) {
+    fbStatus.classList.add("err");
+    fbStatus.textContent = "Kirjoita ensin palaute.";
+    return;
+  }
+  fbSend.disabled = true;
+  fbStatus.classList.remove("err");
+  fbStatus.textContent = "Lähetetään…";
+  const payload = {
+    _subject: "AitoData /testi palaute",
+    form_type: "aitodata_testi_feedback",
+    name: name || "(nimetön)",
+    message: msg,
+    visitor_id: visitorId,
+    case: caseKey,
+    style: styleKey,
+    page: location.href,
+  };
+  if (includeLayout) {
+    payload.layout_json = JSON.stringify(exportLayout());
+  }
+  try {
+    const res = await fetch(FEEDBACK_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    fbStatus.classList.remove("err");
+    fbStatus.textContent = "Kiitos — palaute vastaanotettu.";
+    document.getElementById("fb-msg").value = "";
+    setTimeout(closeFeedback, 1200);
+  } catch (err) {
+    fbStatus.classList.add("err");
+    fbStatus.textContent = "Lähetys epäonnistui. Voit myös kertoa suoraan Mikalle.";
+  } finally {
+    fbSend.disabled = false;
+  }
+}
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => (
@@ -457,18 +638,6 @@ function renderEditState() {
   editToggle.classList.toggle("active", editMode);
   renderStageNote();
 }
-function exportLayout() {
-  return {
-    case: caseKey,
-    style: styleKey,
-    nodes: nodes.map((n) => ({
-      id: n.id,
-      x: Math.round(n.x),
-      y: Math.round(n.y),
-      priority: n.priority || "support",
-    })),
-  };
-}
 
 function resize() {
   const rect = canvas.getBoundingClientRect();
@@ -478,7 +647,10 @@ function resize() {
   canvas.width = Math.floor(w * dpr);
   canvas.height = Math.floor(h * dpr);
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  suppressSave = true;
   layout();
+  applySavedLayout();
+  suppressSave = false;
 }
 
 function load() {
@@ -487,7 +659,10 @@ function load() {
   edges = c.edges.map((e) => ({ ...e }));
   selected = null;
   pan = { x: 0, y: 0 };
+  suppressSave = true;
   layout();
+  applySavedLayout();
+  suppressSave = false;
   renderStageNote();
   renderPanel();
 }
@@ -989,6 +1164,7 @@ canvas.addEventListener("pointermove", (ev) => {
   }
 });
 canvas.addEventListener("pointerup", () => {
+  if (dragNode) saveLayoutLocal();
   dragNode = null; panning = false; last = null;
   canvas.classList.remove("dragging");
 });
@@ -1008,7 +1184,10 @@ document.querySelectorAll("[data-style]").forEach((btn) => {
     document.querySelectorAll("[data-style]").forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
     styleKey = btn.dataset.style;
+    suppressSave = true;
     layout();
+    applySavedLayout();
+    suppressSave = false;
     renderPanel(selected ? byId(selected) : null);
     renderStageNote();
   });
@@ -1021,7 +1200,10 @@ editToggle.addEventListener("click", () => {
 
 resetLayoutBtn.addEventListener("click", () => {
   pan = { x: 0, y: 0 };
+  clearLayoutLocal();
+  suppressSave = true;
   layout();
+  suppressSave = false;
   renderPanel(selected ? byId(selected) : null);
   renderStageNote();
 });
@@ -1036,6 +1218,14 @@ copyLayoutBtn.addEventListener("click", async () => {
     copyLayoutBtn.textContent = "Kopiointi epäonnistui";
     setTimeout(() => { copyLayoutBtn.textContent = "Kopioi asettelu"; }, 1800);
   }
+});
+
+feedbackBtn.addEventListener("click", openFeedback);
+fbCancel.addEventListener("click", closeFeedback);
+fbOverlay.addEventListener("click", (ev) => { if (ev.target === fbOverlay) closeFeedback(); });
+fbSend.addEventListener("click", sendFeedback);
+document.addEventListener("keydown", (ev) => {
+  if (ev.key === "Escape" && fbOverlay.classList.contains("open")) closeFeedback();
 });
 
 window.addEventListener("resize", resize);
