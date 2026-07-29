@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>AitoData — julkisen tiedon lähdeketju</title>
+<title>AitoData — julkinen tieto, lähteineen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -15,8 +15,10 @@
   <a class="wordmark" href="index.html">Aito<span>Data</span></a>
   <nav class="site">
     <a href="index.html" class="active">Etusivu</a>
+    <a href="tietosivu_pohja.html">Tietosivu</a>
     <a href="esimerkki.html">Esimerkki</a>
-    <a href="miten.html">Miten luetaan</a>
+    <a href="kaiva.html">Kaiva syvemmälle</a>
+    <a href="perusteet.html">Perusteet</a>
     <a href="tietoa.html">Tietoa</a>
   </nav>
   <span class="badge">Esikatselu</span>
@@ -25,38 +27,70 @@
 <div class="wrap">
   <header class="hero">
     <p class="brand">Aito<span>Data</span></p>
-    <h1>Julkinen tieto, ketjutettuna niin että sen voi tarkistaa.</h1>
-    <p class="lead">Keräämme Suomen julkisista lähteistä faktoja, yhdistämme saman toimijan eri rekistereihin ja näytämme jokaisen väitteen takaa URL:n. Emme tuomitse — lukija tekee johtopäätökset.</p>
+    <h1>Julkinen tieto, lähteineen.</h1>
+    <p class="lead">Näet julkisia päätöksiä ja rahaa faktoina — ei tuomioita. Jokaisen väitteen voi avata alkuperäisestä lähteestä. Tulkinta kuuluu kansalle.</p>
     <div class="hero-actions">
       <a class="btn" href="esimerkki.html">Katso esimerkki</a>
-      <a class="btn ghost" href="miten.html">Miten sivua luetaan</a>
+      <a class="btn ghost" href="tietosivu_pohja.html">Avaa tietosivu</a>
+      <a class="btn ghost" href="tietoa.html">Mikä AitoData on</a>
     </div>
     <div class="hooks">
-      <span><i></i>Ketjuttaa saman Y-tunnuksen</span>
-      <span><i></i>Näyttää lähteen</span>
-      <span><i></i>Ei tuomitse</span>
+      <span><i></i>Toimijat &amp; ketjut</span>
+      <span><i></i>Hankinnat &amp; verrokit</span>
+      <span><i></i>Julkinen rahoitus</span>
+      <span><i></i>Puuttuva tieto</span>
     </div>
   </header>
 
   <section class="section">
-    <p class="section-label">Miten asiat näytetään</p>
-    <h2>Kolme askelta, ei dashboardia</h2>
-    <p class="intro">Sivu on tehty lukemiselle. Ensin ymmärrät mitä täällä tehdään, sitten katsot yhden esimerkin, sitten voit seurata lähteisiin.</p>
+    <p class="section-label">Miten tämä sivusto toimii</p>
+    <h2>Lyhyt polku</h2>
+    <p class="intro">Julkinen tieto on hajallaan. Me kokoamme siitä jälkiä joita voi seurata. Aloita näin:</p>
     <div class="steps">
       <article class="step">
-        <div class="n">1 · Havainto</div>
-        <h3>Mikä toistuu?</h3>
-        <p>Sama yritys, sama päätös tai sama rahavirta näkyy useassa julkisessa paikassa.</p>
+        <div class="n">1</div>
+        <h3>Esimerkki</h3>
+        <p>Näin tietosivua luetaan — ohjeet ja demodata samalla sivulla.</p>
       </article>
       <article class="step">
-        <div class="n">2 · Ketju</div>
-        <h3>Mistä se tulee?</h3>
-        <p>Jokainen lenkki on julkinen lähde: ilmoitus, rekisteri, tiedosto tai datasetti.</p>
+        <div class="n">2</div>
+        <h3>Tietosivu</h3>
+        <p>Malli siitä, miltä yksittäinen löytö näyttää: tiivistelmä, lähteet, kokonaiskuva.</p>
       </article>
       <article class="step">
-        <div class="n">3 · Tarkistus</div>
-        <h3>Avaa itse</h3>
-        <p>Linkki kertoo rehellisesti, onko kyseessä suora tiedosto vai portaalin haku.</p>
+        <div class="n">3</div>
+        <h3>Kaiva syvemmälle</h3>
+        <p>Avaimet jatkamiseen — sinä pureskelet, me emme päättele puolestasi.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section-label">Mitä AitoData kaivaa</p>
+    <h2>Neljä aluetta</h2>
+    <p class="intro">Kaivamme laajasti julkisista lähteistä: kuka tekee mitä, miten ostetaan, mihin raha menee, ja mitä aineistosta puuttuu.</p>
+    <div class="steps">
+      <article class="step">
+        <div class="n">1 · Toimijat</div>
+        <h3>Sama toimija monessa paikassa</h3>
+        <p>Yritys, virasto tai päätös eri lähteissä yhdessä näkymässä. Irrallinen sivu ei kerro kokonaisuutta.</p>
+      </article>
+      <article class="step">
+        <div class="n">2 · Hankinnat</div>
+        <h3>Miten julkinen ostaa</h3>
+        <p>Menettely (esim. suorahankinta), hinta ja verrokki kun data riittää. Faktat esillä, ei tuomiota.</p>
+      </article>
+      <article class="step">
+        <div class="n">3 · Rahoitus</div>
+        <h3>Mistä raha tulee ja menee</h3>
+        <p>Tukija → summa → saaja julkisesta aineistosta, kun se on auki.</p>
+      </article>
+    </div>
+    <div class="steps" style="margin-top:0.85rem">
+      <article class="step">
+        <div class="n">4 · Puuttuva tieto</div>
+        <h3>Mitä ei löydy</h3>
+        <p>Puuttuva hinta, tyhjä haku, rikkinäinen linkki. Aukko on löytö — tietää mitä ei vielä voi päätellä.</p>
       </article>
     </div>
   </section>
@@ -64,23 +98,24 @@
   <section class="section">
     <p class="section-label">Nosto</p>
     <div class="spotlight">
-      <h3>Senaatti-kiinteistöt · Y 1503388-4</h3>
-      <p>Sama Y-tunnus esiintyy neljässä julkisessa lähteessä: hankintailmoitus, kaupparekisteri, hankinta-aineisto ja viraston lista.</p>
-      <p>Ei väitettä väärinkäytöstä — vain jälki siitä, missä julkinen tieto on.</p>
+      <h3>Esimerkkitietosivu: Jyväskylä · lumensyvyys</h3>
+      <p>Kaksi julkista päätöstä samasta aiheesta. Menettelyt, summat ja lähteet esillä — ohjeet osioiden alla.</p>
       <div class="actions">
         <a class="btn" href="esimerkki.html">Avaa esimerkki</a>
+        <a class="btn ghost" href="perusteet.html">Mihin tämä perustuu</a>
+        <a class="btn ghost" href="kaiva.html">Kaiva syvemmälle</a>
       </div>
     </div>
   </section>
 
   <div class="disclaimer">
-    Tämä on AitoDatan <strong>esikatselu</strong>: oikea aineisto ja B-ääni, ei vielä kattava tuotantopalvelu. Palaute auttaa muotoilemaan julkaisua.
+    Tämä on <strong>esikatselu</strong>, ei vielä valmis palvelu. Taustalla on jo toimiva tiedonkeruu — julkaisukuorta rakennetaan nyt. Aineisto on julkista; sivusto ei ole kattava indeksi.
   </div>
 </div>
 
 <footer>
   <p><a class="wordmark" href="index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-  <p>Faktaketju + URL · ei skandaaliotsikoita</p>
+  <p>Julkinen data · faktat + lähde · tulkinta kuuluu kansalle</p>
 </footer>
 </body>
 </html>

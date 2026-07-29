@@ -7,7 +7,7 @@
 <title>Tietoa · AitoData</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -15,8 +15,10 @@
   <a class="wordmark" href="index.html">Aito<span>Data</span></a>
   <nav class="site">
     <a href="index.html">Etusivu</a>
+    <a href="tietosivu_pohja.html">Tietosivu</a>
     <a href="esimerkki.html">Esimerkki</a>
-    <a href="miten.html">Miten luetaan</a>
+    <a href="kaiva.html">Kaiva syvemmälle</a>
+    <a href="perusteet.html">Perusteet</a>
     <a href="tietoa.html" class="active">Tietoa</a>
   </nav>
   <span class="badge">Esikatselu</span>
@@ -26,14 +28,43 @@
   <header class="page-head">
     <h1>Mikä AitoData on</h1>
     <p>Virallinen nimi <strong>AitoData</strong>. Kansanomainen työnimi <strong>Vallanvahtikoira</strong> — “AitoDatan Vallanvahtikoira”.</p>
+    <p style="margin-top:0.75rem">Kaivamme Suomen julkisista lähteistä tietoa, yhdistämme saman toimijan jäljet ja julkaisemme ne niin, että jokainen väite on tarkistettavissa. Emme tuomitse — näytämme mitä aineisto näyttää.</p>
   </header>
 
-  <section class="panel">
-    <h2>Mitä teemme</h2>
+  <div class="callout">
+    <strong>Lyhyesti</strong>
     <ul>
-      <li>Kaivamme Suomen julkisista lähteistä tietoa — myös sieltä missä se on hajallaan tai vaikeasti auki</li>
-      <li>Yhdistämme saman toimijan / päätöksen / rahavirran eri lähteisiin</li>
-      <li>Julkaisemme faktaketjun + URL:n, ilman skandaaliotsikoita</li>
+      <li>Ongelma: julkinen tieto on hajallaan ja vaikeasti seurattavaa.</li>
+      <li>Rooli: tiedon tuoja — kansa tulkitsee.</li>
+      <li>Ääni: faktat + lähde, ei skandaaliotsikkoa oletuksena.</li>
+    </ul>
+  </div>
+
+  <section class="panel">
+    <h2>Miksi tämä on olemassa</h2>
+    <p>Julkista tietoa on Suomessa monessa paikassa (hankinnat, yritysaineistot, päätökset, rahoitusaineistot…). Se on kuitenkin usein hajallaan, erimuotoista ja vaikeasti yhdistettävää. Keskustelua läpinäkyvyydestä on paljon; välineitä, jotka tekevät julkisesta tiedosta seurattavaa, on vähän.</p>
+    <p>AitoData tekee näkyväksi myös sen, mihin “julkiseen” oikeasti pääsee — jos kenttä puuttuu tai haku on tyhjä, sekin on tietoa, ei peitettävä häpeä.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Mitä kaivamme</h2>
+    <ul>
+      <li><strong>Toimijaketjut</strong> — sama yritys, virasto tai päätös eri lähteissä (esim. Y-tunnuksella). Jokainen lenkki saa linkin alkuperäiseen.</li>
+      <li><strong>Hankinnat</strong> — menettely (esim. suorahankinta), hinta ja verrokki kun data riittää. Faktat esillä, ei tuomiota.</li>
+      <li><strong>Vaali- ja muu julkinen rahoitus</strong> — tukija → summa → saaja, kun aineisto on auki.</li>
+      <li><strong>Puuttuva tieto</strong> — tyhjä haku, rikkinäinen linkki, vajaa ilmoitus. Aukko itsessään on löytö.</li>
+      <li><strong>Muuta julkista</strong> — päätökset, sidonnaisuudet, lobbausaineistot ym. lain sallimissa rajoissa, sitä mukaa kun putki laajenee.</li>
+    </ul>
+    <p>Kaivamme laajasti julkisista lähteistä — myös yksittäisiä hankintoja: hinta ja kilpailutus suhteessa verrokkeihin, kun data riittää.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Miten julkaisemme</h2>
+    <ul>
+      <li><strong>Helppo lukutapa kansalle</strong> — tiivistelmä, lähteet, kokonaiskuva (<a href="esimerkki.html">katso esimerkki</a>)</li>
+      <li><strong>Lähdeketju auki</strong> — URL, mitä tarkistaa, mistä löytyy</li>
+      <li><strong>Faktat ensin</strong> — ei tuomiota oletuksena</li>
+      <li><strong>Perusteet näkyviin</strong> — miksi juuri nämä asiat: <a href="perusteet.html">mihin tämä perustuu</a></li>
     </ul>
   </section>
 
@@ -42,23 +73,36 @@
     <ul>
       <li>Emme tuomitse “rikolliseksi” tai “laittomaksi” oletuksena</li>
       <li>Emme kaiva yksityiselämää tai ei-julkista somea</li>
-      <li>Emme ole vielä kattava kansallinen indeksi — tämä sivu on esikatselu</li>
+      <li>Emme täytä puuttuvia kenttiä arvauksella</li>
+      <li>Emme ole kenenkään puolella — sama sääntö kaikelle julkiselle aineistolle</li>
+      <li>Emme ole vielä kattava kansallinen indeksi — tämä on esikatselu</li>
     </ul>
   </section>
 
   <section class="panel">
     <h2>Kenelle</h2>
-    <p>Kansalaiselle selkeänä lukemisena. Medialle ja vakavalle lukijalle lähdeketjuna, jonka voi toistaa.</p>
+    <p><strong>Kansalaiselle:</strong> mitä julkinen valta ja julkinen raha tekevät, yhdessä paikassa, lähteineen.</p>
+    <p><strong>Medialle ja vakavalle lukijalle:</strong> toistettava ketju — voit avata alkuperäisen ja jatkaa itse (<a href="kaiva.html">kaiva syvemmälle</a>).</p>
+  </section>
+
+  <section class="panel">
+    <h2>Kuka tekee</h2>
+    <p>Hanketta kehittää Mika “Lex” Metsänen Eurajoelta (yksityinen elinkeinonharjoittaja). Työ tehdään yksin AI-avusteisesti. Ajattelun juuri oli käytännöllinen: auttaa kansalaista viranomaispäätösten kanssa. Matkalla kävi selväksi, että ensin tarvitaan kerros, joka tekee julkisesta tiedosta ylipäätään käytettävää.</p>
   </section>
 
   <section class="panel">
     <h2>Tämän esikatselun status</h2>
-    <p>Mallinnamme julkaisualustan vastaanottoa: etusivu → esimerkki → lukutapa. Verkostovisualisointi on erikseen parkissa eikä ole tämän sivuston oletussisäänkäynti. <a href="verkosto/">Avaa verkosto-parkki</a>.</p>
-    <p>Palaute: kerro suoraan Mikalle, tai käytä aiempaa Formspree-kanavaa jos se on auki verkosto-demossa.</p>
+    <p>Tämä on esikatselu, ei vielä valmis palvelu. Taustalla on jo toimiva tiedonkeruu — julkaisukuorta rakennetaan nyt niin, että kansalainen ja media saavat siitä selvän.</p>
+    <p>Tavoite myöhemmin: koodi ja lähteet auki julkaisun jälkeen. Ennen sitä: teaser ok, kohdeaineisto hallitusti.</p>
   </section>
+
+  <div class="disclaimer">
+    Alkuvedos. Teksti jalostuu keskustelun ja palautteen mukaan. Ei tuotantopalvelu.
+  </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
     <a class="btn" href="esimerkki.html">Katso esimerkki</a>
+    <a class="btn ghost" href="perusteet.html">Mihin tämä perustuu</a>
     <a class="btn ghost" href="index.html">Etusivulle</a>
   </div>
 </div>
