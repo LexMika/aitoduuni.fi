@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /esikatselu/
 Disallow: /testi/
+Disallow: /aitoduuni-landing/
