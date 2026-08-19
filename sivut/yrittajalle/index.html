@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Oma sivu yrityksellesi · Aitoduuni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #4890a8;
+  --teal-deep: #3a7a92;
+  --lilac: #9070b8;
+  --bg: #f0f4f6;
+  --ink: #2c2430;
+  --muted: #5e5660;
+  --paper: #fff8f2;
+  --line: rgba(74, 143, 166, 0.18);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+  --max: 52rem;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: linear-gradient(180deg, #e7eef0 0%, #f0f4f6 40%, #efe6df 100%);
+  line-height: 1.6;
+}
+a { color: var(--teal-deep); }
+.wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+.hero .lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+section { padding: 2.5rem 0; }
+section + section { border-top: 1px solid var(--line); }
+
+h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.story {
+  background: var(--paper);
+  border-radius: 1.25rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 32px rgba(44, 36, 48, 0.06);
+}
+.story p { margin: 0 0 1rem; font-size: 1.05rem; }
+.story p:last-child { margin-bottom: 0; }
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+}
+.features .icon {
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--teal) 15%, white);
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+}
+.features .text strong { display: block; margin-bottom: 0.15rem; }
+.features .text span { color: var(--muted); font-size: 0.92rem; }
+
+.price-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(44, 36, 48, 0.05);
+}
+.price-box .amount {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+}
+.price-box .note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-top: 0.5rem;
+}
+
+.who {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.who-text { flex: 1; min-width: 14rem; }
+.who-text p { margin: 0 0 0.5rem; }
+
+.cta-section { text-align: center; padding: 3rem 0 4rem; }
+.cta-section h2 { margin-bottom: 0.75rem; }
+.cta-section p { color: var(--muted); margin: 0 0 1.5rem; font-size: 1.05rem; }
+.cta-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(72, 144, 168, 0.3);
+}
+.btn-line {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(44, 36, 48, 0.06);
+}
+.btn-phone {
+  background: #1a73e8;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(26, 115, 232, 0.3);
+}
+.btn-wa {
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+}
+
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.ideas-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.7rem); }
+.ideas-sub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 1rem;
+}
+.ideas {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+.ideas li { padding-left: 0.25rem; }
+.ideas-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .story { padding: 1.5rem 1.25rem; }
+  .who { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <h1>Oma sivu yrityksellesi</h1>
+  <p class="lead">Teen sinulle valmiin sivun, josta asiakas näkee heti oleellisen. Sinun ei tarvitse tehdä mitään ylimääräistä.</p>
+</header>
+
+<section class="wrap">
+  <div class="story">
+    <p><strong>Tilanne:</strong> Asiakas googlailee paikkakunnallasi ja löytää sut Mapsista. Mutta klikkaa kilpailijaa, koska sillä on oma sivu.</p>
+    <p>Toinen paikka saa klikkauksen, koska siellä on kuva, aukiolo ja puhelinnumero valmiina.</p>
+    <p>Entä jos sullakin olisi sivu, joka näyttää hyvältä ja pysyy ajan tasalla ilman vaivaa?</p>
+    <p><strong>Tein jo muutaman esimerkin.</strong> Katso miltä se voisi näyttää sinunkin kohdalla.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Mitä sivuusi kuuluu</h2>
+  <ul class="features">
+    <li>
+      <div class="icon">🕐</div>
+      <div class="text">
+        <strong>Aukiolo päivittyy automaattisesti</strong>
+        <span>Asiakas näkee heti onko auki. Ei vanhentunutta tietoa.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">📋</div>
+      <div class="text">
+        <strong>Menu, palvelut tai hinnasto somesta</strong>
+        <span>Päivität tarjonnan someen kuten ennenkin, sivu päivittyy taustalla.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">📍</div>
+      <div class="text">
+        <strong>Kartta, reitti ja puhelin</strong>
+        <span>Yksi nappi: "Soita" tai "Näytä reitti". Toimii puhelimella.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">⭐</div>
+      <div class="text">
+        <strong>Arvostelut näkyvissä</strong>
+        <span>Google-tähdet ja parhaat sitaatit suoraan sivulla.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">📱</div>
+      <div class="text">
+        <strong>Toimii kaikilla laitteilla</strong>
+        <span>Puhelin, tabletti, tietokone. Sama siisti näkymä.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">🙌</div>
+      <div class="text">
+        <strong>Ei tarvitse itse ylläpitää</strong>
+        <span>Pidän sivun ajan tasalla. Sinun ei tarvitse osata koodia.</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <h2>Hinta</h2>
+  <div class="price-box">
+    <div class="amount">~500 €</div>
+    <p class="note">Valmis sivu sinun sisällölläsi. Ylläpidosta sovitaan erikseen.</p>
+  </div>
+</section>
+
+<section class="wrap ideas-section">
+  <h2>Mitä muuta sivulle voi laittaa</h2>
+  <p class="ideas-sub">Nämä ovat vain esimerkkejä. Kerro mitä teillä olisi tarve, niin katsotaan.</p>
+  <ul class="ideas">
+    <li>WhatsApp-nappi tai yhteydenottolomake</li>
+    <li>Ajanvarauslinkki (Timma, Varaamo, oma kalenteri)</li>
+    <li>Sesonkitarjous tai kampanja joka vaihtuu</li>
+    <li>Kuvagalleria töistä (ennen/jälkeen, tuotteet, tila)</li>
+    <li>Lahjakortti- tai sarjakorttimaininta</li>
+    <li>Referenssit tai suosittelut asiakkailta</li>
+  </ul>
+  <p class="ideas-note">Sivun ulkoasu tehdään sun toiveiden mukaan. Värit, fontit, tunnelma: kaikki muokattavissa.</p>
+</section>
+
+<section class="wrap">
+  <h2>Kuka tekee</h2>
+  <div class="who">
+    <div class="who-text">
+      <p><strong>Mika / Aitoduuni</strong></p>
+      <p>Paikallinen tekijä Eurajoelta. Teen sivuja pienille yrityksille, jotka haluavat näkyä netissä ilman tuhannen euron projektia.</p>
+      <p>Jokainen sivu on tehty käsin sun tietojen pohjalta, ei valmispohjia joihin vaihdetaan logo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section wrap">
+  <h2>Kiinnostuitko?</h2>
+  <p>Ota yhteyttä, niin katsotaan yhdessä miltä sun sivu voisi näyttää.</p>
+  <div class="cta-buttons">
+    <a class="btn btn-primary" href="mailto:mika@aitoduuni.fi">Lähetä maili</a>
+    <a class="btn btn-phone" href="tel:+358409114988">Soita 040 911 4988</a>
+    <a class="btn btn-wa" href="https://wa.me/358409114988?text=Hei%2C%20kiinnostuin%20demosivusta">WhatsApp</a>
+  </div>
+</section>
+
+<footer>Aitoduuni · Eurajoki, Satakunta · mika@aitoduuni.fi · 040 911 4988</footer>
+
+</body>
+</html>

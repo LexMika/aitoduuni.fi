@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fi" data-mood="soft_vintage" data-layout="offer">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Paratiisi Cafe · Pori · malli offer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --teal: #f0a890;
+    --teal-deep: #f0c090;
+    --lilac: #f0c0a8;
+    --bg: #e7eef0;
+    --ink: #2c2430;
+    --muted: #5e5660;
+    --paper: #fff8f2;
+    --line: rgba(74, 143, 166, 0.22);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Nunito", system-ui, sans-serif;
+    --max: 68rem;
+    --hero-scrim-bottom: 0.91;
+    --hero-scrim-mid: 0.55;
+    --hero-scrim-high: 0.20;
+    --hero-scrim-mid-stop: 55%;
+    --hero-scrim-high-stop: 82%;
+    --hero-text-shadow: 0 2px 16px rgba(12, 10, 14, 0.50), 0 1px 4px rgba(12, 10, 14, 0.40);
+    --hero-inner-bg: transparent;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--ink);
+    background:
+      radial-gradient(ellipse 90% 55% at 10% -5%, color-mix(in srgb, var(--lilac) 28%, #e7eef0), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 100% 0%, color-mix(in srgb, var(--teal) 22%, #e7eef0), transparent 50%),
+      linear-gradient(180deg, #dfe9ec 0%, #e7eef0 35%, #efe6df 100%);
+    line-height: 1.55;
+  }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  .wrap { width: min(100% - 2.25rem, var(--max)); margin-inline: auto; }
+
+  .demo-bar {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.75rem;
+    z-index: 5;
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: rgba(255,248,242,0.55);
+    pointer-events: none;
+  }
+  .demo-incomplete {
+    position: relative;
+    z-index: 3;
+    margin: 0.65rem auto 0;
+    padding: 0.55rem 0.85rem;
+    max-width: min(100% - 2rem, var(--max));
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #3d2020;
+    background: rgba(255, 220, 210, 0.92);
+    border: 1px solid rgba(120, 40, 40, 0.35);
+    border-radius: 0.45rem;
+  }
+
+  /* —— HERO: vain kuva + tarina (ei logoa) —— */
+  .hero {
+    position: relative;
+    min-height: min(88vh, 46rem);
+    display: grid;
+    align-items: end;
+    color: #fff8f2;
+    overflow: hidden;
+    background: #2c2430 url("assets/maps_01.jpg") center / cover no-repeat;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(28, 22, 30, var(--hero-scrim-bottom)) 0%,
+      rgba(28, 22, 30, var(--hero-scrim-mid)) var(--hero-scrim-mid-stop),
+      rgba(28, 22, 30, var(--hero-scrim-high)) var(--hero-scrim-high-stop),
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+  /* paper wave into cafe world */
+  .hero::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -1px;
+    height: 3.2rem;
+    z-index: 2;
+    background:
+      radial-gradient(120% 80% at 50% -10%, transparent 60%, var(--bg) 61%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 4.2rem;
+    max-width: 36rem;
+    animation: rise 1s ease-out both;
+    text-shadow: var(--hero-text-shadow);
+  }
+  .hero-inner::before {
+    content: "";
+    position: absolute;
+    inset: -0.75rem -1.25rem -0.35rem;
+    background: var(--hero-inner-bg);
+    border-radius: 0.45rem;
+    z-index: -1;
+    pointer-events: none;
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(0.75rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero .kicker {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.55rem;
+    color: color-mix(in srgb, var(--lilac) 55%, white);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-size: clamp(3.15rem, 8.5vw, 4.85rem);
+    font-weight: 700;
+    line-height: 0.95;
+    margin: 0 0 0.45rem;
+  }
+  .lede {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+    margin: 0 0 1.5rem;
+    max-width: 22rem;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 2.9rem; padding: 0.65rem 1.45rem;
+    font-family: var(--font-body);
+    font-weight: 700; font-size: 0.92rem;
+    text-decoration: none;
+    border: 1.5px solid transparent;
+    border-radius: 999px;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+    color: #fff;
+    box-shadow: 0 8px 22px rgba(47, 101, 120, 0.35);
+  }
+  .btn-ghost {
+    background: rgba(255,248,242,0.1);
+    color: #fff8f2;
+    border-color: color-mix(in srgb, var(--lilac) 50%, white);
+  }
+  .btn-ink {
+    background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+    color: #fff;
+  }
+  .btn-line {
+    background: var(--paper);
+    color: var(--teal-deep);
+    border-color: color-mix(in srgb, var(--lilac) 55%, var(--teal));
+  }
+
+  /* —— Logo + essentials: sama wrap → sama keskiakseli —— */
+  .logo-strip-inner {
+    display: flex;
+    justify-content: center;
+    margin-top: -2.75rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 3;
+  }
+  .logo-mark {
+    width: min(22rem, 78vw);
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+    padding: 0.85rem 1.1rem;
+    border-radius: 1.15rem;
+    border: 1px solid color-mix(in srgb, var(--teal) 22%, white);
+    box-shadow: 0 16px 36px rgba(44, 36, 48, 0.12);
+  }
+  .hand {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--teal-deep);
+    margin: 0 0 0.35rem;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.2vw, 2.2rem);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  /* —— Essentials: aukiolo + menu vierekkäin (tasaleveät → väli = logoakseli) —— */
+  .essentials { padding: 0 0 1rem; }
+  .essentials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .hours-panel, .menu-panel {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    padding: 1.35rem 1.45rem 1.25rem;
+    box-shadow: 0 14px 36px rgba(44, 36, 48, 0.07);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .panel-head { margin-bottom: 0.85rem; }
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    margin-bottom: 0.55rem;
+  }
+  .live-badge .dot {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  .live-badge.unknown {
+    color: var(--muted);
+    background: color-mix(in srgb, var(--paper) 70%, #ccc);
+  }
+  .live-badge.open {
+    color: #1d6b42;
+    background: color-mix(in srgb, #3cb371 18%, white);
+  }
+  .live-badge.closed {
+    color: #8b3040;
+    background: color-mix(in srgb, var(--lilac) 22%, white);
+  }
+  .hours-live-sub {
+    margin: 0.35rem 0 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+  .hours-week {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+  }
+  .hours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.48rem 0;
+    border-bottom: 1px dashed color-mix(in srgb, var(--lilac) 35%, transparent);
+    font-size: 0.92rem;
+  }
+  .hours-row span:last-child {
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-align: right;
+  }
+  .hours-row.closed-day span:last-child { color: var(--muted); font-weight: 600; }
+  .hours-row.today {
+    background: color-mix(in srgb, var(--teal) 8%, transparent);
+    margin-inline: -0.45rem;
+    padding-inline: 0.45rem;
+    border-radius: 0.45rem;
+  }
+  .hours-row.today span:first-child { font-weight: 800; }
+  .hours-foot {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--line);
+  }
+  .hours-addr {
+    margin: 0 0 0.75rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .hours-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .btn-sm {
+    min-height: 2.35rem;
+    padding: 0.45rem 1rem;
+    font-size: 0.82rem;
+  }
+
+  /* —— Menu panel —— */
+  .menu-panel .menu-head { margin-bottom: 0.85rem; }
+  .menu-breakfast {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--muted);
+  }
+  .menu-week {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.15rem;
+  }
+  .menu-week li {
+    font-family: var(--font-display);
+    font-size: 1.18rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px dashed color-mix(in srgb, var(--lilac) 40%, transparent);
+  }
+  .menu-week li:last-child { border-bottom: 0; }
+  .menu-week em {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .menu-foot {
+    margin-top: auto;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-staples {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .menu-link {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--lilac) 50%, transparent);
+  }
+
+  /* —— Galleria: 2 kuvaa täyteen —— */
+  .gallery { padding: 1.5rem 0 2.5rem; }
+  .gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+  .gallery.single .grid { grid-template-columns: 1fr; }
+  .gallery.single img { height: min(42vw, 22rem); }
+  .gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1.1rem;
+    border: 1px solid color-mix(in srgb, var(--lilac) 28%, white);
+    box-shadow: 0 10px 28px rgba(44, 36, 48, 0.08);
+  }
+  .gallery img {
+    width: 100%;
+    height: min(38vw, 17rem);
+    object-fit: cover;
+    transition: transform 0.55s ease;
+  }
+  .gallery figure:hover img { transform: scale(1.03); }
+
+  blockquote {
+    margin: 0.75rem 0 0;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-style: italic;
+    line-height: 1.35;
+  }
+  .reviews-block .rating-hero {
+    margin: 0.25rem 0 0.65rem;
+    font-size: clamp(1.5rem, 3vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .reviews-block .hand { margin-bottom: 0.1rem; }
+  .reviews-block .fb-recommend {
+    margin: 0.35rem 0 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* —— Visit: yksi kompakti rivi —— */
+  .visit {
+    padding: 2rem 0 3rem;
+    background:
+      radial-gradient(ellipse 60% 80% at 0% 50%, color-mix(in srgb, var(--lilac) 16%, transparent), transparent),
+      color-mix(in srgb, var(--paper) 92%, var(--lilac));
+    border-top: 1px solid var(--line);
+  }
+  .visit-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .visit-info {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.4;
+    max-width: 36rem;
+  }
+  .visit-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+
+  footer {
+    padding: 1rem 0 1.6rem;
+    text-align: center;
+    color: color-mix(in srgb, var(--teal-deep) 55%, #9a9096);
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 760px) {
+    .essentials-grid { grid-template-columns: 1fr; }
+    .logo-mark { width: min(18rem, 82vw); }
+    .logo-strip-inner { margin-top: -2rem; margin-bottom: 1rem; }
+    .gallery .grid { grid-template-columns: 1fr; }
+    .gallery img { height: 14rem; }
+    .visit-row { flex-direction: column; align-items: stretch; }
+    .hero::before { height: 2.2rem; }
+    .hero-inner { padding-bottom: 3.2rem; }
+  }
+
+  /* —— mood: photo_first (Lotus-testi — ei Linda-klooni) —— */
+  html[data-mood="photo_first"] body {
+    background:
+      linear-gradient(180deg, #1a1816 0%, #2a2622 18%, #ece7e1 18%, #ece7e1 100%);
+    color: #1a1816;
+  }
+  html[data-mood="photo_first"] {
+    --teal: #2f4a3c;
+    --teal-deep: #1e3329;
+    --lilac: #8a6f4d;
+    --bg: #ece7e1;
+    --paper: #f7f4ef;
+    --ink: #1a1816;
+    --muted: #5c564e;
+    --line: rgba(47, 74, 60, 0.18);
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Nunito", system-ui, sans-serif;
+  }
+  html[data-mood="photo_first"] .hero {
+    min-height: min(92vh, 52rem);
+  }
+  html[data-mood="photo_first"] .hero::after {
+    background: linear-gradient(
+      to top,
+      rgba(18, 16, 14, var(--hero-scrim-bottom)) 0%,
+      rgba(18, 16, 14, var(--hero-scrim-mid)) var(--hero-scrim-mid-stop),
+      rgba(18, 16, 14, var(--hero-scrim-high)) var(--hero-scrim-high-stop),
+      transparent 100%
+    );
+  }
+  html[data-mood="photo_first"] .hero::before {
+    background: radial-gradient(120% 80% at 50% -10%, transparent 60%, #ece7e1 61%);
+  }
+  html[data-mood="photo_first"] .hero .kicker {
+    color: rgba(247, 244, 239, 0.75);
+    font-style: normal;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+  }
+  html[data-mood="photo_first"] .lede {
+    font-style: normal;
+    max-width: 26rem;
+  }
+  html[data-mood="photo_first"] .logo-mark {
+    width: min(11rem, 48vw);
+    border-radius: 0.55rem;
+    padding: 0.45rem;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+  }
+  html[data-mood="photo_first"] .hours-panel,
+  html[data-mood="photo_first"] .menu-panel {
+    border-radius: 0.65rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+  html[data-mood="photo_first"] .live-badge.closed {
+    color: #6b3030;
+    background: #f0e4e0;
+  }
+  html[data-mood="photo_first"] .live-badge.open {
+    color: #1e3329;
+    background: #d7e6dc;
+  }
+  html[data-mood="photo_first"] .hand {
+    font-style: normal;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  html[data-mood="photo_first"] .gallery figure {
+    border-radius: 0.55rem;
+  }
+  html[data-mood="photo_first"] .visit {
+    background: #e5dfd6;
+  }
+  html[data-mood="photo_first"] .btn {
+    border-radius: 0.45rem;
+  }
+
+  /* —— mood: harbor (Syli — satama / lämmin viini) —— */
+  html[data-mood="harbor"] body {
+    background:
+      radial-gradient(ellipse 80% 50% at 100% 0%, rgba(192,144,144,0.35), transparent 55%),
+      linear-gradient(180deg, #f3ebe6 0%, #efe6df 40%, #e7ddd4 100%);
+  }
+  html[data-mood="harbor"] {
+    --teal: #783048;
+    --teal-deep: #5a2438;
+    --lilac: #c09090;
+    --bg: #efe6df;
+    --paper: #fff9f5;
+    --ink: #2a1c22;
+    --muted: #6a5560;
+    --line: rgba(120, 48, 72, 0.2);
+  }
+  html[data-mood="harbor"] .hero {
+    min-height: min(86vh, 44rem);
+  }
+  html[data-mood="harbor"] .hero::after {
+    background: linear-gradient(
+      to top,
+      rgba(42, 28, 34, 0.85) 0%,
+      rgba(42, 28, 34, 0.3) 45%,
+      transparent 100%
+    );
+  }
+  html[data-mood="harbor"] .hero::before {
+    background: radial-gradient(120% 80% at 50% -10%, transparent 60%, #efe6df 61%);
+  }
+  html[data-mood="harbor"] .btn-primary,
+  html[data-mood="harbor"] .btn-ink {
+    background: linear-gradient(135deg, #783048, #5a2438);
+    box-shadow: 0 8px 22px rgba(90, 36, 56, 0.3);
+  }
+  html[data-mood="harbor"] .live-badge.open {
+    color: #5a2438;
+    background: #f0d8e0;
+  }
+  html[data-mood="harbor"] .hours-panel,
+  html[data-mood="harbor"] .menu-panel {
+    border-radius: 1rem;
+  }
+  html[data-mood="harbor"] .visit {
+    background: color-mix(in srgb, #fff9f5 88%, #c09090);
+  }
+
+
+  .layout-pick {
+    display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center;
+    padding: 0.65rem 0 0.35rem; font-size: 0.82rem;
+  }
+  .layout-pick-label { color: var(--muted); margin-right: 0.25rem; }
+  .layout-chip {
+    text-decoration: none; padding: 0.28rem 0.65rem; border-radius: 999px;
+    border: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 80%, white);
+    color: var(--ink);
+  }
+  .layout-chip.is-on {
+    background: var(--teal); color: #fff8f2; border-color: transparent;
+  }
+</style>
+</head>
+<body>
+
+<nav class="layout-pick wrap" aria-label="Mallivaihtoehdot">
+  <span class="layout-pick-label">Mallit:</span>
+  <a class="layout-chip is-on" href="index.html">1 Tarjonta</a>
+  <a class="layout-chip" href="malli_trust.html">2 Luottamus</a>
+  <a class="layout-chip" href="malli_contact.html">3 Yhteys</a>
+  <a class="layout-chip" href="valitse.html">Kaikki</a>
+</nav>
+
+<header class="hero" data-hero-lum="bright" data-hero-mean="82.1" data-hero-p90="149.4">
+  <div class="demo-bar">demo · offer</div>
+  <div class="wrap hero-inner">
+    <p class="kicker">4,8 ★ · 63 arvostelua</p>
+    <h1 class="brand">Paratiisi Cafe</h1>
+    <p class="lede">🌷Aukioloajat Ma: suljettu Ti: suljettu ke-su 10:00-19:00 ... lisää</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#tule">Tule käymään</a>
+    </div>
+  </div>
+</header>
+
+<section class="essentials wrap">
+
+  <div class="logo-strip-inner">
+    <img src="assets/ig_avatar.jpg" alt="Paratiisi Cafe" class="logo-mark">
+  </div>
+  <div class="essentials-grid">
+    
+<article class="hours-panel">
+  <header class="panel-head">
+    <div class="live-badge open"><span class="dot"></span>Avoinna</div>
+    <h2 class="section-title">Avoinna nyt</h2>
+    <p class="hours-live-sub">Suljetaan klo 19.00</p>
+  </header>
+  <ul class="hours-week"><li class="hours-row closed-day"><span>Maanantai</span><span>Suljettu</span></li><li class="hours-row closed-day"><span>Tiistai</span><span>Suljettu</span></li><li class="hours-row today"><span>Keskiviikko</span><span>10–19</span></li><li class="hours-row"><span>Torstai</span><span>10–19</span></li><li class="hours-row"><span>Perjantai</span><span>10–19</span></li><li class="hours-row"><span>Lauantai</span><span>10–19</span></li><li class="hours-row"><span>Sunnuntai</span><span>10–19</span></li></ul>
+  <footer class="hours-foot">
+    <p class="hours-addr">Liinaharjantie 57, 28610 Pori</p>
+    <div class="hours-actions">
+      
+      <a class="btn btn-line btn-sm" href="https://www.google.com/maps/place/Paratiisi+Cafe/@61.4784881,21.7337693,17z/data=!3m1!4b1!4m6!3m5!1s0x46890b10c0eb1009:0xbc2dbeec9f4ad556!8m2!3d61.4784881!4d21.7337693!16s%2Fg%2F11yfs7xh7c?entry=ttu&amp;g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D" rel="noopener">Kartta</a>
+    </div>
+  </footer>
+</article>
+    
+<article class="menu-panel">
+  <header class="menu-head">
+    <h2 class="section-title">Tarjolla</h2>
+  </header>
+  <ul class="menu-week">
+    <li>Kahvit &amp; teet <em>talon mukaan</em></li><li>Leivonnaiset <em>päivän valikoima</em></li><li>Suolaiset <em>kysy tiskiltä</em></li>
+  </ul>
+</article>
+  </div>
+</section>
+<section class="gallery wrap"><div class="grid"><figure><img src="assets/maps_02.jpg" alt="" loading="lazy"></figure><figure><img src="assets/maps_03.jpg" alt="" loading="lazy"></figure></div></section>
+<section class="wrap reviews-block"><p class="hand">Asiakkailta · Google</p><p class="rating-hero">4,8 ★ · 63 arvostelua</p><blockquote>“Pieni tunnelmainen grillikahvila. Henkilökunta ystävällistä. Tilasin auraburgerin ja poika juustosmashin. Molempien lautaset olivat tyhjiä aterioituamme. Tulemme uudestaan, erittäin hyvät burgerit!”</blockquote><blockquote>“Siis aivan ihana uus kahvila vanhan Paratiisi-grillin paikalla. Tukekaa pientä yrittäjää ketjujen sijaan! Otin jääkahvin ja vohvelin. Jopa makusiirappi ja kinuskikastike oli itsetehtyjä. Kahvi läheltä pienpaahtimosta. Keittolounasta tarjolla jopa neljään saakka!”</blockquote></section>
+
+<section class="visit" id="tule">
+  <div class="wrap visit-row">
+    <p class="visit-info">Paratiisi Cafe · 4.8★ · <a href="https://www.facebook.com/people/Paratiisi-Cafe/61577805170003/" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/paratiisicafe/" rel="noopener">Instagram</a> · Viimeisin some/arvostelu: 3 viikkoa sitten (WARM)</p>
+    <div class="visit-actions">
+      <a class="btn btn-line" href="https://www.google.com/maps/place/Paratiisi+Cafe/@61.4784881,21.7337693,17z/data=!3m1!4b1!4m6!3m5!1s0x46890b10c0eb1009:0xbc2dbeec9f4ad556!8m2!3d61.4784881!4d21.7337693!16s%2Fg%2F11yfs7xh7c?entry=ttu&amp;g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D" rel="noopener">Google Maps</a>
+      <a class="btn btn-line" href="https://www.instagram.com/paratiisicafe/" rel="noopener">Instagram</a>
+      <a class="btn btn-line" href="https://www.facebook.com/people/Paratiisi-Cafe/61577805170003/" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+<footer>Aitoduuni · paratiisi_cafe · soft_vintage · offer</footer>
+</body>
+</html>
