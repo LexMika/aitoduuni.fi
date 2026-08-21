@@ -1,7 +1,205 @@
 {
-  "generated_at": "2026-08-21T13:00:00+03:00",
+  "generated_at": "2026-08-21T14:00:00+03:00",
   "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10).",
   "findings": [
+    {
+      "id": "verohallinto-it-outlier-2023-126101",
+      "slug": "verohallinto-it-hankinta-verrokki",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Verohallinto: IT-asiantuntijapalvelut, arvio noin 150 M€",
+      "teaser": "Hilma-ilmoituksen arvioitu arvo on noin 231× saman CPV-ryhmän mediaania (n=95). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-126101 (Verohallinto): IT-asiantuntijapalvelujen hankinta. Arvioitu arvo 150 000 000 €. Saman CPV-ryhmän (72000000) mediaani tässä otoksessa on 650 000 € (n=95). Suhde mediaaniin noin 231×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä: lukija tarkistaa ilmoituksen.",
+      "actors": [
+        "Verohallinto"
+      ],
+      "y_tunnus": "0245458-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-126101"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Verohallinto (Y 0245458-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "150 000 000 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "650 000 € (n=95)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 231×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-126101",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126101/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "kainuu-mri-arvo-puuttuu-2021-088776",
+      "slug": "kainuu-mri-arvo-puuttuu",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Kainuun sote: hankintailmoitus ilman arvioitua arvoa",
+      "teaser": "Hilma-ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.",
+      "summary": "Hilma-ilmoitus 2021-088776 (Kainuun sosiaali- ja terveydenhuollon kuntayhtymä): MRI-laitteen sydänohjelmisto. Aineistossa arvioitu arvo ei ole käyttökelpoinen. Kortti merkitsee aukon; jos arvo myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Kainuun sosiaali- ja terveydenhuollon kuntayhtymä"
+      ],
+      "y_tunnus": "2496986-0",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-088776"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Kainuun sote (Y 2496986-0)"
+        },
+        {
+          "label": "Arvioitu hankinnan arvo",
+          "value": "Puuttuu (aineistossa ei käyttökelpoista lukua)"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Arvioitua hankinnan arvoa ei ole käyttökelpoisena tässä ilmoituksessa."
+      ],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-088776",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/demo_nayte.json#kortti_4_peito_f.example"
+    },
+    {
+      "id": "tampere-esteettomyys-hinta-puuttuu",
+      "slug": "tampere-esteettomyys-hinta-puuttuu",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Tampere: esteettömyyskartoituksen päätöksessä ei irtoa hintaa",
+      "teaser": "Kunnan päätöstekstistä ei poimittu määrää eikä summaa. Puuttuva tieto merkitään auki.",
+      "summary": "Tampereen päätös 490336 (esteettömyyskartoituksen hankinta). Jalostus ei saanut tekstistä määrää eikä euromäärää. Ei väitettä peittelystä: merkitään mitä tästä päätöksestä ei voi vielä päätellä.",
+      "actors": [
+        "Tampereen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tampereen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "490336"
+        },
+        {
+          "label": "Aihe",
+          "value": "Esteettömyyskartoituksen hankinta"
+        },
+        {
+          "label": "Hinta / määrä tekstissä",
+          "value": "Ei poimittu"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Euromäärää tai määrää ei irronnut päätöstekstistä."
+      ],
+      "sources": [
+        {
+          "label": "Tampere · päätös 490336",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/490336/13031",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_peitoaukko"
+    },
+    {
+      "id": "hilma-haku-eduskunnan-kanslia-tyhja",
+      "slug": "hilma-haku-eduskunnan-kanslia-tyhja",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Hilma-haku “Eduskunnan kanslia” ei tuottanut ilmoituksia",
+      "teaser": "Haku tehtiin Hilmaan. Osumia ei tullut. Tyhjä tulos on havainto, ei virheilmoitus.",
+      "summary": "Seed-haku Hilmaan organisaationimellä “Eduskunnan kanslia” palautti tyhjän tuloksen. Haku tehtiin; ilmoituksia ei irronnut tällä haulla. Jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Eduskunnan kanslia"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Hakusana",
+          "value": "Eduskunnan kanslia"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt hankintailmoituksia."
+      ],
+      "sources": [
+        {
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito.html",
+          "kind": "Tyhjä haku"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/fail_data.json#examples"
+    },
     {
       "id": "vayla-hilma-arvo-puuttuu-2020-044126",
       "slug": "vayla-hilma-arvo-puuttuu",
