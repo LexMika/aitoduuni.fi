@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Haku · UI-demo · AitoData</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css?v=20260821d">
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#020617">
+<style>
+  /* Staattinen hakudemo — vain paikallinen UI-veto */
+  .search-shell {
+    margin: 1.1rem 0 0;
+    padding: 1.25rem 1.3rem 1.4rem;
+    border: 1px solid var(--edge);
+    border-radius: 1.25rem;
+    background: var(--card);
+  }
+  .search-shell .hint {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 40rem;
+  }
+  .search-grid {
+    display: grid;
+    gap: 0.85rem;
+  }
+  @media (min-width: 720px) {
+    .search-grid { grid-template-columns: 1fr 1fr; }
+    .search-grid .span-2 { grid-column: 1 / -1; }
+  }
+  .field label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue-hot);
+    margin-bottom: 0.35rem;
+  }
+  .field input,
+  .field select {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.85rem;
+    border: 1px solid var(--edge);
+    background: rgba(2, 6, 23, 0.55);
+    color: #fff;
+    font: inherit;
+    font-size: 0.98rem;
+  }
+  .field input::placeholder { color: #64748b; }
+  .field input:focus,
+  .field select:focus {
+    outline: none;
+    border-color: rgba(96, 165, 250, 0.55);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  }
+  .search-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+    margin-top: 1.1rem;
+  }
+  .search-actions button.btn {
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .deep-toggle {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(30, 41, 59, 0.9);
+    padding-top: 0.85rem;
+  }
+  .deep-toggle summary {
+    cursor: pointer;
+    color: #e2e8f0;
+    font-weight: 700;
+    font-size: 0.92rem;
+    list-style: none;
+  }
+  .deep-toggle summary::-webkit-details-marker { display: none; }
+  .deep-toggle summary::before {
+    content: "＋ ";
+    color: var(--blue-hot);
+    font-weight: 800;
+  }
+  .deep-toggle[open] summary::before { content: "− "; }
+  .deep-toggle .search-grid { margin-top: 0.9rem; }
+  .sort-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    align-items: end;
+    margin: 1.25rem 0 0.75rem;
+  }
+  .sort-row .field { min-width: 11rem; }
+  .result-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0 0.85rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .view-switch {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .view-switch button {
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--edge);
+    background: transparent;
+    color: var(--muted);
+  }
+  .view-switch button.active {
+    color: #fff;
+    border-color: rgba(37, 99, 235, 0.45);
+    background: var(--blue-dim);
+  }
+  .result-card {
+    display: block;
+    padding: 1rem 1.1rem 1.15rem;
+    border-radius: 1.1rem;
+    border: 1px solid rgba(96, 165, 250, 0.22);
+    background: rgba(2, 6, 23, 0.5);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  }
+  .result-card:hover {
+    border-color: rgba(96, 165, 250, 0.5);
+    background: rgba(30, 41, 59, 0.55);
+    transform: translateY(-1px);
+  }
+  .result-card .kind {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blue-hot);
+    margin-bottom: 0.35rem;
+  }
+  .result-card h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.08rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  .result-card .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+  }
+  .result-card .meta li span {
+    color: #64748b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-right: 0.35rem;
+  }
+  .result-card .foot {
+    margin: 0.7rem 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .empty-box {
+    padding: 1.5rem 1.25rem;
+    border-radius: 1.15rem;
+    border: 1px dashed rgba(148, 163, 184, 0.35);
+    background: rgba(2, 6, 23, 0.35);
+    text-align: left;
+  }
+  .empty-box h3 {
+    margin: 0 0 0.45rem;
+    color: #fff;
+    font-size: 1.15rem;
+  }
+  .empty-box p { margin: 0.35rem 0; color: #cbd5e1; }
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 0.85rem 0 0;
+  }
+  .chip {
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    border: 1px solid var(--edge);
+    border-radius: 999px;
+    padding: 0.28rem 0.65rem;
+    background: rgba(15, 23, 42, 0.5);
+  }
+  .demo-note {
+    margin: 0.75rem 0 0;
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<a class="wordmark" href="../../">Aito<span>Data</span></a>
+  <span class="badge">UI-demo</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
+    <a href="../../sivut/loydot/" class="active">Löydöt</a>
+    <a href="../../sivut/peito/">Puuttuva tieto</a>
+    <a href="../../kaiva/">Tutki lisää</a>
+    <a href="../../nain-luet/">Näin luet</a>
+    <a href="../../tietoa/">Info</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+<header class="page-head">
+<h1>Haku</h1>
+<p>Staattinen ulkoasudemo. Ei hae vielä — kentät ja tuloskortit näyttävät suunnan (pikahaku + syvä haku).</p>
+</header>
+
+<div class="disclaimer">
+Data on vielä vajaata ja sitä kerätään parhaillaan. Tämä on rajoitettu otos — tyhjä tulos ei tarkoita, että asiaa ei ole olemassa muualla.
+</div>
+
+<section class="search-shell" aria-label="Hakudemo">
+<p class="hint">Muistat yleensä 2–3 asiaa. Täytä ne — ei tarvitse täydellistä lausetta.</p>
+
+<form id="haku-form" action="#" method="get" onsubmit="return false;">
+  <div class="search-grid">
+    <div class="field">
+      <label for="q-paikka">Paikkakunta</label>
+      <input id="q-paikka" name="paikkakunta" type="text" value="Helsinki" placeholder="esim. Eurajoki" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="q-nimi">Nimi / vapaa sana</label>
+      <input id="q-nimi" name="q" type="text" value="Senaatti" placeholder="2–3 sanaa aivoista" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="q-y">Y-tunnus</label>
+      <input id="q-y" name="y" type="text" placeholder="1234567-8" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="q-aika">Aika</label>
+      <select id="q-aika" name="aika">
+        <option>Kaikki ajat</option>
+        <option selected>2024–2026</option>
+        <option>2020–2023</option>
+        <option>Ennen 2020</option>
+      </select>
+    </div>
+  </div>
+
+  <details class="deep-toggle">
+    <summary>Lisää ehtoja · syvä haku</summary>
+    <div class="search-grid">
+      <div class="field">
+        <label for="q-virasto">Virasto / organisaatio</label>
+        <input id="q-virasto" type="text" placeholder="esim. Senaatti-kiinteistöt" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="q-alue">Alue (lähellä)</label>
+        <select id="q-alue">
+          <option selected>Ei aluerajausta</option>
+          <option>Uusimaa (maakunta)</option>
+          <option>Naapurikunnat (demo)</option>
+          <option>Koko Suomi</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="q-laji">Lähdelaji</label>
+        <select id="q-laji">
+          <option selected>Kaikki</option>
+          <option>Hilma</option>
+          <option>PRH / YTJ</option>
+          <option>Tutkihankintoja</option>
+          <option>Vaalirahoitus</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="q-arvo">Arvo (€)</label>
+        <select id="q-arvo">
+          <option selected>Ei rajaa</option>
+          <option>Yli 60 000 €</option>
+          <option>Yli 250 000 €</option>
+        </select>
+      </div>
+    </div>
+  </details>
+
+  <div class="search-actions">
+    <button type="button" class="btn" id="btn-fake-search">Hae (demo)</button>
+    <button type="button" class="btn ghost" id="btn-clear">Tyhjennä kentät</button>
+    <span class="demo-note">Nappi ei hae dataa — vaihtaa vain näkymää.</span>
+  </div>
+</form>
+</section>
+
+<div class="sort-row">
+  <div class="field">
+    <label for="sort-time">Järjestys · aika</label>
+    <select id="sort-time">
+      <option selected>Uudempi → vanhempi</option>
+      <option>Vanhempi → uudempi</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="sort-size">Järjestys · koko</label>
+    <select id="sort-size">
+      <option selected>Ei arvosorttia</option>
+      <option>Isompi → pienempi</option>
+      <option>Pienempi → isompi</option>
+    </select>
+  </div>
+</div>
+
+<div class="result-meta">
+  <div id="result-count">3 osumaa · indeksi 5.8.2026 <span style="color:#64748b">(fake)</span></div>
+  <div class="view-switch" role="group" aria-label="Näkymä">
+    <button type="button" class="active" data-view="hits" id="tab-hits">Osumat</button>
+    <button type="button" data-view="empty" id="tab-empty">Tyhjä tulos</button>
+  </div>
+</div>
+
+<div id="view-hits" class="source-list" aria-live="polite">
+  <a class="result-card" href="../ketju/">
+    <div class="kind">Tuloskortti · ketju</div>
+    <h3>Senaatti-kiinteistöt</h3>
+    <ul class="meta">
+      <li><span>Paikka</span>Helsinki</li>
+      <li><span>Y</span>1503388-4</li>
+      <li><span>Päiväys</span>2024</li>
+    </ul>
+    <p class="foot">Indeksi · ei live-tarkistusta vielä · avaa tietosivu →</p>
+  </a>
+  <a class="result-card" href="../verrokki/">
+    <div class="kind">Tuloskortti · verrokki</div>
+    <h3>Hankinta · sama aihe, eri päätökset</h3>
+    <ul class="meta">
+      <li><span>Paikka</span>Helsinki</li>
+      <li><span>Aihe</span>kiinteistöpalvelut</li>
+      <li><span>Päiväys</span>2023–2024</li>
+    </ul>
+    <p class="foot">Indeksi · lähteet auki tietosivulla →</p>
+  </a>
+  <a class="result-card" href="../peito/">
+    <div class="kind">Tuloskortti · peitto</div>
+    <h3>Puuttuva tieto · hinta-arvio</h3>
+    <ul class="meta">
+      <li><span>Paikka</span>Suomi</li>
+      <li><span>Lähde</span>Hilma</li>
+      <li><span>Status</span>peittoaukko dokumentoitu</li>
+    </ul>
+    <p class="foot">Ei väitettä peittelystä — mittari näkyviin →</p>
+  </a>
+</div>
+
+<div id="view-empty" class="empty-box" hidden>
+  <h3>Ei osumia tässä otoksessa</h3>
+  <p>Haku ei löytänyt rivejä <strong>AitoData-indeksistä</strong>. Se ei tarkoita, että asiaa ei ole olemassa muissa lähteissä — data on vielä vajaata ja keruu jatkuu.</p>
+  <p>Tyhjä tulos voi olla hyödyllinen: esim. ehdokas tai toimija ilman jälkeä nykyisessä otoksessa.</p>
+  <div class="chip-row">
+    <span class="chip">Paikkakunta: Helsinki</span>
+    <span class="chip">Nimi: esimerkki-ehdokas</span>
+    <span class="chip">Aika: 2024–2026</span>
+  </div>
+  <p class="demo-note" style="margin-top:1rem">Myöhemmin: “Tarkista live” yksittäisellä kortilla — ei koko haulle.</p>
+</div>
+
+<div class="hero-actions" style="margin-top:1.75rem">
+  <a class="btn ghost" href="../">Tietosivut</a>
+  <a class="btn ghost" href="../../">Etusivu</a>
+</div>
+</div>
+
+<footer>
+<p><a class="wordmark" href="../../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
+<p>UI-demo · staattinen · ei hakuindeksiä · 2026-08-06</p>
+</footer>
+
+<script>
+(function () {
+  var hits = document.getElementById("view-hits");
+  var empty = document.getElementById("view-empty");
+  var count = document.getElementById("result-count");
+  var tabHits = document.getElementById("tab-hits");
+  var tabEmpty = document.getElementById("tab-empty");
+
+  function show(view) {
+    var isEmpty = view === "empty";
+    hits.hidden = isEmpty;
+    empty.hidden = !isEmpty;
+    tabHits.classList.toggle("active", !isEmpty);
+    tabEmpty.classList.toggle("active", isEmpty);
+    count.innerHTML = isEmpty
+      ? "0 osumaa · indeksi 5.8.2026 <span style=\"color:#64748b\">(fake tyhjä)</span>"
+      : "3 osumaa · indeksi 5.8.2026 <span style=\"color:#64748b\">(fake)</span>";
+  }
+
+  tabHits.addEventListener("click", function () { show("hits"); });
+  tabEmpty.addEventListener("click", function () { show("empty"); });
+  document.getElementById("btn-fake-search").addEventListener("click", function () {
+    show("hits");
+  });
+  document.getElementById("btn-clear").addEventListener("click", function () {
+    ["q-paikka", "q-nimi", "q-y", "q-virasto"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.value = "";
+    });
+    show("empty");
+  });
+})();
+</script>
+<script src="../../assets/nav.js?v=20260821d" defer></script>
+</body>
+</html>
