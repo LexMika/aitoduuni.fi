@@ -8,19 +8,37 @@
       "found_at": "2026-08-20",
       "kind": "raha",
       "title": "Valtori → Crayon Oy, noin 783 000 € (2024)",
-      "teaser": "Tutkihankintoja-ostolasku: ICT-hankinnat. Toimittajan Y 2096054-3. Ostajan Y peittoaukko.",
+      "teaser": "Tutkihankintoja-ostolasku: ICT-hankinnat. Toimittajan Y 2096054-3. Ostajan Y-tunnus puuttuu.",
       "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu Valtion tieto- ja viestintätekniikkakeskus Valtorilta Crayon Oy:lle. Summa 782 563,11 €. Kategoria: ICT-hankinnat. Ostajan Y-tunnus puuttuu tästä rivistä.",
-      "actors": ["Valtion tieto- ja viestintätekniikkakeskus Valtori", "Crayon Oy"],
+      "actors": [
+        "Valtion tieto- ja viestintätekniikkakeskus Valtori",
+        "Crayon Oy"
+      ],
       "y_tunnus": "2096054-3",
       "facts": [
-        {"label": "Vuosi", "value": "2024"},
-        {"label": "Mistä", "value": "Valtori (yksikkökoodi 320)"},
-        {"label": "Mihin", "value": "Crayon Oy (Y 2096054-3)"},
-        {"label": "Summa", "value": "782 563,11 €"},
-        {"label": "Kategoria", "value": "ICT-hankinnat (tavarat, palvelut ja ohjelmistot)"}
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Valtori (yksikkökoodi 320)"
+        },
+        {
+          "label": "Mihin",
+          "value": "Crayon Oy (Y 2096054-3)"
+        },
+        {
+          "label": "Summa",
+          "value": "782 563,11 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "ICT-hankinnat (tavarat, palvelut ja ohjelmistot)"
+        }
       ],
       "gaps": [
-        "Ostajan Y-tunnus ei ole tällä rivillä (peittoaukko)."
+        "Ostajan Y-tunnus ei ole tällä rivillä."
       ],
       "sources": [
         {
@@ -37,20 +55,41 @@
       "found_at": "2026-08-20",
       "kind": "raha",
       "title": "Väylävirasto → NRC Group Finland Oy, noin 493 000 € (2024)",
-      "teaser": "Tutkihankintoja-ostolasku: rakentaminen. Toimittajan Y 1007822-3. Ostajan Y peittoaukko.",
+      "teaser": "Tutkihankintoja-ostolasku: rakentaminen. Toimittajan Y 1007822-3. Ostajan Y-tunnus puuttuu.",
       "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu Väylävirastolta NRC Group Finland Oy:lle. Summa 493 353,10 €. Kategoria: rakentaminen. Ostajan Y-tunnus puuttuu tästä rivistä.",
-      "actors": ["Väylävirasto", "NRC Group Finland Oy"],
+      "actors": [
+        "Väylävirasto",
+        "NRC Group Finland Oy"
+      ],
       "y_tunnus": "1007822-3",
       "facts": [
-        {"label": "Vuosi", "value": "2024"},
-        {"label": "Mistä", "value": "Väylävirasto (yksikkökoodi 456)"},
-        {"label": "Mihin", "value": "NRC Group Finland Oy (Y 1007822-3)"},
-        {"label": "Summa", "value": "493 353,10 €"},
-        {"label": "Kategoria", "value": "Rakentaminen"},
-        {"label": "Päivä aineistossa", "value": "2024-02-05"}
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Väylävirasto (yksikkökoodi 456)"
+        },
+        {
+          "label": "Mihin",
+          "value": "NRC Group Finland Oy (Y 1007822-3)"
+        },
+        {
+          "label": "Summa",
+          "value": "493 353,10 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Rakentaminen"
+        },
+        {
+          "label": "Päivä aineistossa",
+          "value": "2024-02-05"
+        }
       ],
       "gaps": [
-        "Ostajan Y-tunnus ei ole tällä rivillä (peittoaukko)."
+        "Ostajan Y-tunnus ei ole tällä rivillä."
       ],
       "sources": [
         {
@@ -67,20 +106,37 @@
       "found_at": "2026-08-20",
       "kind": "hankinta",
       "title": "Tampere: joukkoliikennevertailu, enintään 38 000 €",
-      "teaser": "2 kpl · 19 000 €/kpl. Menettely: kilpailutus. Toimittaja peittoaukko.",
-      "summary": "Tampereen CloudNC-päätös joukkoliikennejärjestelmän strategisen vertailun hankinnasta. Tekstissä 2 kappaletta, enintään 38 000 € → 19 000 €/kpl. Menettely: kilpailutus. Toimittajaa ei poimittu tähän korttiin.",
-      "actors": ["Tampereen kaupunki"],
+      "teaser": "2 kpl · 19 000 €/kpl. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.",
+      "summary": "Tampereen CloudNC-päätös joukkoliikennejärjestelmän strategisen vertailun hankinnasta. Tekstissä 2 kappaletta, enintään 38 000 € → 19 000 €/kpl. Menettely: kilpailutus. Toimittajaa ei ole vielä tässä kortissa.",
+      "actors": [
+        "Tampereen kaupunki"
+      ],
       "y_tunnus": null,
       "facts": [
-        {"label": "Kaupunki", "value": "Tampere"},
-        {"label": "Menettely", "value": "kilpailutus"},
-        {"label": "Yksikköhinta", "value": "19 000 €/kpl"},
-        {"label": "Summa", "value": "enintään 38 000 €"},
-        {"label": "Määrä", "value": "2 kpl"}
+        {
+          "label": "Kaupunki",
+          "value": "Tampere"
+        },
+        {
+          "label": "Menettely",
+          "value": "kilpailutus"
+        },
+        {
+          "label": "Yksikköhinta",
+          "value": "19 000 €/kpl"
+        },
+        {
+          "label": "Summa",
+          "value": "enintään 38 000 €"
+        },
+        {
+          "label": "Määrä",
+          "value": "2 kpl"
+        }
       ],
       "gaps": [
-        "Toimittajan nimi tai Y-tunnus puuttuu tästä jalostusotoksesta (peittoaukko).",
-        "Sama-yksikkö-verrokkeja ei syntynyt (n=1)."
+        "Toimittajan nimi tai Y-tunnus puuttuu tästä otoksesta.",
+        "Vertailukohteita samasta aiheesta ei löytynyt vielä."
       ],
       "sources": [
         {
@@ -99,17 +155,35 @@
       "title": "Maahanmuuttovirasto → Suomen Punainen Risti Länsi-Suomen, noin 931 000 € (2024)",
       "teaser": "Tutkihankintoja-ostolaskuaineisto: hallinnolliset palvelut. Toimittajan Y 0209403-9.",
       "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu Maahanmuuttovirastolta Suomen Punainen Risti Länsi-Suomen -toimittajalle. Summa noin 930 639,83 €. Kategoria: hallinnolliset palvelut. Ostajan Y-tunnus puuttuu tästä rivistä.",
-      "actors": ["Maahanmuuttovirasto", "Suomen Punainen Risti Länsi-Suomen"],
+      "actors": [
+        "Maahanmuuttovirasto",
+        "Suomen Punainen Risti Länsi-Suomen"
+      ],
       "y_tunnus": "0209403-9",
       "facts": [
-        {"label": "Vuosi", "value": "2024"},
-        {"label": "Mistä", "value": "Maahanmuuttovirasto"},
-        {"label": "Mihin", "value": "Suomen Punainen Risti Länsi-Suomen (Y 0209403-9)"},
-        {"label": "Summa", "value": "930 639,83 €"},
-        {"label": "Kategoria", "value": "Hallinnolliset palvelut"}
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Maahanmuuttovirasto"
+        },
+        {
+          "label": "Mihin",
+          "value": "Suomen Punainen Risti Länsi-Suomen (Y 0209403-9)"
+        },
+        {
+          "label": "Summa",
+          "value": "930 639,83 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Hallinnolliset palvelut"
+        }
       ],
       "gaps": [
-        "Ostajan Y-tunnus ei ole tällä rivillä (peittoaukko)."
+        "Ostajan Y-tunnus ei ole tällä rivillä."
       ],
       "sources": [
         {
@@ -126,18 +200,32 @@
       "found_at": "2026-08-20",
       "kind": "hankinta",
       "title": "Helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 €",
-      "teaser": "Rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. Menettely: kilpailutus. Toimittaja peittoaukko.",
-      "summary": "Helsingin päätös maankäytön yleissuunnittelun rakenne- ja kallioteknisen puitejärjestelyn jatkamisesta optiokaudelle. Tekstissä kilpailutusmaininta ja arvo 2 500 000 euroa. Toimittajaa ei poimittu tähän korttiin.",
-      "actors": ["Helsingin kaupunki"],
+      "teaser": "Rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.",
+      "summary": "Helsingin päätös maankäytön yleissuunnittelun rakenne- ja kallioteknisen puitejärjestelyn jatkamisesta optiokaudelle. Tekstissä kilpailutusmaininta ja arvo 2 500 000 euroa. Toimittajaa ei ole vielä tässä kortissa.",
+      "actors": [
+        "Helsingin kaupunki"
+      ],
       "y_tunnus": null,
       "facts": [
-        {"label": "Kaupunki", "value": "Helsinki"},
-        {"label": "Menettely", "value": "kilpailutus"},
-        {"label": "Arvo", "value": "2 500 000 €"},
-        {"label": "Optiokausi", "value": "1.2.2024–31.1.2026"}
+        {
+          "label": "Kaupunki",
+          "value": "Helsinki"
+        },
+        {
+          "label": "Menettely",
+          "value": "kilpailutus"
+        },
+        {
+          "label": "Arvo",
+          "value": "2 500 000 €"
+        },
+        {
+          "label": "Optiokausi",
+          "value": "1.2.2024–31.1.2026"
+        }
       ],
       "gaps": [
-        "Toimittajan nimi tai Y-tunnus puuttuu tästä jalostusotoksesta (peittoaukko)."
+        "Toimittajan nimi tai Y-tunnus puuttuu tästä otoksesta."
       ],
       "sources": [
         {
@@ -159,12 +247,21 @@
       "actors": [],
       "y_tunnus": null,
       "facts": [
-        {"label": "Tunnus", "value": "MAO:748/2025"},
-        {"label": "Päivä", "value": "19.12.2025"},
-        {"label": "Aihe", "value": "julkinen hankinta · sopimuksen muutos · suorahankinta"}
+        {
+          "label": "Tunnus",
+          "value": "MAO:748/2025"
+        },
+        {
+          "label": "Päivä",
+          "value": "19.12.2025"
+        },
+        {
+          "label": "Aihe",
+          "value": "julkinen hankinta · sopimuksen muutos · suorahankinta"
+        }
       ],
       "gaps": [
-        "Asianomaiset ja diaarinumerot puuttuvat vielä (listaotanta, ei detail-sivua)."
+        "Asianomaiset ja diaarinumerot puuttuvat vielä (vain listaus, ei koko päätöstekstiä)."
       ],
       "sources": [
         {
@@ -188,12 +285,23 @@
       "title": "Senaatti-kiinteistöt samassa Y-tunnuksessa useassa lähteessä",
       "teaser": "Y 1503388-4 esiintyy Hilmassa, PRH:ssa ja Valtiokonttorin virastolistassa.",
       "summary": "Sama Y-tunnus löytyy useasta julkisesta lähteestä. Nimet kuten lähteessä. Ei väitettä väärinkäytöstä: vain ketju lähteeseen.",
-      "actors": ["Senaatti-kiinteistöt"],
+      "actors": [
+        "Senaatti-kiinteistöt"
+      ],
       "y_tunnus": "1503388-4",
       "facts": [
-        {"label": "Y-tunnus", "value": "1503388-4"},
-        {"label": "Lähdelajeja", "value": "3 (Hilma, PRH, virasto)"},
-        {"label": "Status", "value": "löytyy kaikista kolmesta"}
+        {
+          "label": "Y-tunnus",
+          "value": "1503388-4"
+        },
+        {
+          "label": "Lähdelajeja",
+          "value": "3 (Hilma, PRH, virasto)"
+        },
+        {
+          "label": "Status",
+          "value": "löytyy kaikista kolmesta"
+        }
       ],
       "gaps": [],
       "sources": [
@@ -221,18 +329,33 @@
       "found_at": "2026-08-20",
       "kind": "hankinta",
       "title": "Helsinki: maa-alueen vuokra Varte Oy:lle 459 €/kk",
-      "teaser": "Naurunkuja, Länsisatama. Päätöksessä yksikköhinta 459 €/kk. Toimittaja-kenttä peittoaukko jalostuksessa.",
-      "summary": "Helsingin päätös maa-alueen (n. 540 m²) vuokraamisesta Varte Oy:lle työmaatukikohdaksi. Julkisesta tekstistä irtoaa 459 €/kk. Toimittajan Y-tunnusta ei poimittu tähän korttiin (peittoaukko).",
-      "actors": ["Helsingin kaupunki", "Varte Oy"],
+      "teaser": "Naurunkuja, Länsisatama. Päätöksessä yksikköhinta 459 €/kk. Toimittajan Y-tunnus puuttuu vielä.",
+      "summary": "Helsingin päätös maa-alueen (n. 540 m²) vuokraamisesta Varte Oy:lle työmaatukikohdaksi. Julkisesta tekstistä irtoaa 459 €/kk. Toimittajan Y-tunnusta ei ole vielä tässä kortissa.",
+      "actors": [
+        "Helsingin kaupunki",
+        "Varte Oy"
+      ],
       "y_tunnus": null,
       "facts": [
-        {"label": "Kaupunki", "value": "Helsinki"},
-        {"label": "Yksikköhinta", "value": "459 €/kk"},
-        {"label": "Aihe", "value": "maa-alueen vuokra (työmaatukikohta)"},
-        {"label": "Jakso", "value": "19.06.2023 – 30.4.2025"}
+        {
+          "label": "Kaupunki",
+          "value": "Helsinki"
+        },
+        {
+          "label": "Yksikköhinta",
+          "value": "459 €/kk"
+        },
+        {
+          "label": "Aihe",
+          "value": "maa-alueen vuokra (työmaatukikohta)"
+        },
+        {
+          "label": "Jakso",
+          "value": "19.06.2023 – 30.4.2025"
+        }
       ],
       "gaps": [
-        "Toimittajan Y-tunnus ei ole tässä jalostusotoksessa (peittoaukko)."
+        "Toimittajan Y-tunnus ei ole tässä otoksessa."
       ],
       "sources": [
         {
@@ -249,18 +372,32 @@
       "found_at": "2026-08-20",
       "kind": "hankinta",
       "title": "Helsinki: Villa Granvik suorahankinta, enintään 500 000 €",
-      "teaser": "Suojellun puutalon purku, siirto ja suunnittelu. Menettely: suorahankinta. Toimittaja peittoaukko.",
+      "teaser": "Suojellun puutalon purku, siirto ja suunnittelu. Menettely: suorahankinta. Toimittaja ei näy tässä otoksessa.",
       "summary": "Helsingin päätös Villa Granvikista (suojellun puutalon purku, siirto, rakennuslupa; pää- ja projektisuunnittelu). Tekstissä suorahankinta ja enintään 500 000 euroa. Toimittajaa ei ole poimittu tähän korttiin.",
-      "actors": ["Helsingin kaupunki"],
+      "actors": [
+        "Helsingin kaupunki"
+      ],
       "y_tunnus": null,
       "facts": [
-        {"label": "Kaupunki", "value": "Helsinki"},
-        {"label": "Menettely", "value": "suorahankinta"},
-        {"label": "Summa", "value": "enintään 500 000 €"},
-        {"label": "Kohde", "value": "Villa Granvik (suunnittelu / siirto)"}
+        {
+          "label": "Kaupunki",
+          "value": "Helsinki"
+        },
+        {
+          "label": "Menettely",
+          "value": "suorahankinta"
+        },
+        {
+          "label": "Summa",
+          "value": "enintään 500 000 €"
+        },
+        {
+          "label": "Kohde",
+          "value": "Villa Granvik (suunnittelu / siirto)"
+        }
       ],
       "gaps": [
-        "Toimittajan nimi tai Y-tunnus puuttuu tästä jalostusotoksesta (peittoaukko)."
+        "Toimittajan nimi tai Y-tunnus puuttuu tästä otoksesta."
       ],
       "sources": [
         {
