@@ -1,7 +1,853 @@
 {
-  "generated_at": "2026-08-21T14:10:00+03:00",
+  "generated_at": "2026-08-21T15:00:00+03:00",
   "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10).",
   "findings": [
+    {
+      "id": "vayla-neste-ostolasku-2024",
+      "slug": "vayla-neste-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Väylävirasto → Neste Markkinointi Oy, noin 252 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: Aineet, tarvikkeet ja tavarat. Toimittajan Y 1626490-8.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: Väylävirasto → Neste Markkinointi Oy. Summa 251 501,91 €. Kategoria: Aineet, tarvikkeet ja tavarat.",
+      "actors": [
+        "Väylävirasto",
+        "Neste Markkinointi Oy"
+      ],
+      "y_tunnus": "1626490-8",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Väylävirasto"
+        },
+        {
+          "label": "Mihin",
+          "value": "Neste Markkinointi Oy (Y 1626490-8)"
+        },
+        {
+          "label": "Summa",
+          "value": "251 501,91 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Aineet, tarvikkeet ja tavarat"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "vayla-kreate-ostolasku-2024",
+      "slug": "vayla-kreate-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Väylävirasto → Kreate Oy, noin 235 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: Alueet ja väylät. Toimittajan Y 0168716-6.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: Väylävirasto → Kreate Oy. Summa 234 523,22 €. Kategoria: Alueet ja väylät.",
+      "actors": [
+        "Väylävirasto",
+        "Kreate Oy"
+      ],
+      "y_tunnus": "0168716-6",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Väylävirasto"
+        },
+        {
+          "label": "Mihin",
+          "value": "Kreate Oy (Y 0168716-6)"
+        },
+        {
+          "label": "Summa",
+          "value": "234 523,22 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Alueet ja väylät"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "keha-posti-messaging-ostolasku-2024",
+      "slug": "keha-posti-messaging-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus → Posti Messaging Oy, noin 222 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2876876-7.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus → Posti Messaging Oy. Summa 221 933,97 €. Kategoria: Hallinnolliset palvelut.",
+      "actors": [
+        "ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus",
+        "Posti Messaging Oy"
+      ],
+      "y_tunnus": "2876876-7",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus"
+        },
+        {
+          "label": "Mihin",
+          "value": "Posti Messaging Oy (Y 2876876-7)"
+        },
+        {
+          "label": "Summa",
+          "value": "221 933,97 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Hallinnolliset palvelut"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "tem-helsingin-yliopisto-ostolasku-2024",
+      "slug": "tem-helsingin-yliopisto-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Työ- ja elinkeinoministeriö → Helsingin Yliopisto, noin 187 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: Asiantuntija- ja toimistopalvelut. Toimittajan Y 0313471-7.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: Työ- ja elinkeinoministeriö → Helsingin Yliopisto. Summa 187 451,61 €. Kategoria: Asiantuntija- ja toimistopalvelut.",
+      "actors": [
+        "Työ- ja elinkeinoministeriö",
+        "Helsingin Yliopisto"
+      ],
+      "y_tunnus": "0313471-7",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Työ- ja elinkeinoministeriö"
+        },
+        {
+          "label": "Mihin",
+          "value": "Helsingin Yliopisto (Y 0313471-7)"
+        },
+        {
+          "label": "Summa",
+          "value": "187 451,61 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Asiantuntija- ja toimistopalvelut"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "migri-hemcare-ostolasku-2024",
+      "slug": "migri-hemcare-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Maahanmuuttovirasto → Hemcare Oy, noin 161 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2542363-2.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: Maahanmuuttovirasto → Hemcare Oy. Summa 160 558,50 €. Kategoria: Hallinnolliset palvelut.",
+      "actors": [
+        "Maahanmuuttovirasto",
+        "Hemcare Oy"
+      ],
+      "y_tunnus": "2542363-2",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Maahanmuuttovirasto"
+        },
+        {
+          "label": "Mihin",
+          "value": "Hemcare Oy (Y 2542363-2)"
+        },
+        {
+          "label": "Summa",
+          "value": "160 558,50 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "Hallinnolliset palvelut"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "valtori-hiq-ostolasku-2024",
+      "slug": "valtori-hiq-ostolasku",
+      "found_at": "2026-08-21",
+      "kind": "raha",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Valtion tieto- ja viestintätekniikkakeskus Valtori → HiQ Public Oy, noin 130 000 € (2024)",
+      "teaser": "Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 2237459-9.",
+      "summary": "Vuoden 2024 ostolaskuaineistosta irtoaa maksu: Valtion tieto- ja viestintätekniikkakeskus Valtori → HiQ Public Oy. Summa 130 000,00 €. Kategoria: ICT-hankinnat (tavarat, palvelut ja ohjelmistot).",
+      "actors": [
+        "Valtion tieto- ja viestintätekniikkakeskus Valtori",
+        "HiQ Public Oy"
+      ],
+      "y_tunnus": "2237459-9",
+      "facts": [
+        {
+          "label": "Vuosi",
+          "value": "2024"
+        },
+        {
+          "label": "Mistä",
+          "value": "Valtion tieto- ja viestintätekniikkakeskus Valtori"
+        },
+        {
+          "label": "Mihin",
+          "value": "HiQ Public Oy (Y 2237459-9)"
+        },
+        {
+          "label": "Summa",
+          "value": "130 000,00 €"
+        },
+        {
+          "label": "Kategoria",
+          "value": "ICT-hankinnat (tavarat, palvelut ja ohjelmistot)"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "hilma-outlier-2021-088873",
+      "slug": "hilma-outlier-2021088873",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Turun kaupunki: Kupittaan kärjen kumppanuushanke",
+      "teaser": "Arvioitu arvo noin 214.8× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2021-088873 (Turun kaupunki). Arvioitu arvo 191 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 889 195,00 € (n=69). Suhde mediaaniin noin 214.8×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Turun kaupunki"
+      ],
+      "y_tunnus": "0204819-8",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-088873"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Turun kaupunki (Y 0204819-8)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "191 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "889 195,00 € (n=69)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 214.8×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-088873",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088873/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-134804",
+      "slug": "hilma-outlier-2023134804",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Verohallinto: OSALLISTUMISPYYNTÖ: Verohallinnon pilvipalveluiden kumppanuus",
+      "teaser": "Arvioitu arvo noin 153.85× CPV-mediaania (n=105). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-134804 (Verohallinto). Arvioitu arvo 100 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 650 000,00 € (n=105). Suhde mediaaniin noin 153.85×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Verohallinto"
+      ],
+      "y_tunnus": "0245458-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-134804"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Verohallinto (Y 0245458-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "100 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "650 000,00 € (n=105)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 153.85×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-134804",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-134804/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2022-097256",
+      "slug": "hilma-outlier-2022097256",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Espoon kaupunki: Ikääntyneiden tehostetun palveluasumisen hankinta",
+      "teaser": "Arvioitu arvo noin 79.55× CPV-mediaania (n=78). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2022-097256 (Espoon kaupunki). Arvioitu arvo 350 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 4 400 000,00 € (n=78). Suhde mediaaniin noin 79.55×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Espoon kaupunki"
+      ],
+      "y_tunnus": "0101263-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-097256"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Espoon kaupunki (Y 0101263-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "350 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "4 400 000,00 € (n=78)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 79.55×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-097256",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-097256/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2020-060898",
+      "slug": "hilma-outlier-2020060898",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Tuomi Logistiikka Oy: Tuomi Logistiikka Oy:n logistiikkapalvelut",
+      "teaser": "Arvioitu arvo noin 125.0× CPV-mediaania (n=35). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2020-060898 (Tuomi Logistiikka Oy). Arvioitu arvo 30 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 240 000,00 € (n=35). Suhde mediaaniin noin 125.0×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Tuomi Logistiikka Oy"
+      ],
+      "y_tunnus": "2722581-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-060898"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Tuomi Logistiikka Oy (Y 2722581-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "30 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "240 000,00 € (n=35)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 125.0×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-060898",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-060898/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2020-050393",
+      "slug": "hilma-outlier-2020050393",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Pirkanmaan sairaanhoitopiirin kuntayhtymä: Uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä",
+      "teaser": "Arvioitu arvo noin 134.95× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2020-050393 (Pirkanmaan sairaanhoitopiirin kuntayhtymä). Arvioitu arvo 120 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 889 195,00 € (n=69). Suhde mediaaniin noin 134.95×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Pirkanmaan sairaanhoitopiirin kuntayhtymä"
+      ],
+      "y_tunnus": "0826597-8",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-050393"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pirkanmaan sairaanhoitopiirin kuntayhtymä (Y 0826597-8)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "120 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "889 195,00 € (n=69)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 134.95×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-050393",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-050393/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_h0.json#h1.outliers"
+    },
+    {
+      "id": "tampere-hiedanranta-hinta-puuttuu",
+      "slug": "tampere-hiedanranta-hinta-puuttuu",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Tampere: Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa",
+      "teaser": "Päätös 309843. Euromäärää tai määrää ei ole päätöstekstissä.",
+      "summary": "Tamperen päätös 309843: Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyötilaus. Päätöstekstissä ei näy euromäärää eikä määrää. Merkitään auki.",
+      "actors": [
+        "Tamperen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tamperen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "309843"
+        },
+        {
+          "label": "Aihe",
+          "value": "Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyötilaus"
+        },
+        {
+          "label": "Hinta / määrä",
+          "value": "Ei näy päätöksessä"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Euromäärää tai määrää ei ole päätöstekstissä."
+      ],
+      "sources": [
+        {
+          "label": "Tampere · päätös 309843",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/309843/13020",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_peitoaukko"
+    },
+    {
+      "id": "tampere-markkinointi-2026-hinta-puuttuu",
+      "slug": "tampere-markkinointi-2026-hinta-puuttuu",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Tampere: Markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa",
+      "teaser": "Päätös 490338. Euromäärää tai määrää ei ole päätöstekstissä.",
+      "summary": "Tamperen päätös 490338: Markkinointipalveluiden hankinta 2/2026. Päätöstekstissä ei näy euromäärää eikä määrää. Merkitään auki.",
+      "actors": [
+        "Tamperen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tamperen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "490338"
+        },
+        {
+          "label": "Aihe",
+          "value": "Markkinointipalveluiden hankinta 2/2026"
+        },
+        {
+          "label": "Hinta / määrä",
+          "value": "Ei näy päätöksessä"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Euromäärää tai määrää ei ole päätöstekstissä."
+      ],
+      "sources": [
+        {
+          "label": "Tampere · päätös 490338",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/490338/13031",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_peitoaukko"
+    },
+    {
+      "id": "um-gronberg-toimittaja-y-puuttuu",
+      "slug": "um-gronberg-toimittaja-y-puuttuu",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Ulkoministeriö → Grönberg Paula ja Robert, noin 4 900 €: toimittajan Y-tunnus puuttuu",
+      "teaser": "Ostolaskurivillä ostaja näkyy nimellä, toimittajan Y-tunnus puuttuu.",
+      "summary": "Vuoden 2024 Tutkihankintoja-aineistossa Ulkoministeriön maksu Grönberg Paula ja Robert -nimelle (noin 4 902 €). Toimittajan Y-tunnus puuttuu riviltä.",
+      "actors": [
+        "Ulkoministeriö",
+        "Grönberg Paula ja Robert"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tutkihankintoja (vuoden 2024 ostolaskuaineisto)"
+        },
+        {
+          "label": "Mistä",
+          "value": "Ulkoministeriö"
+        },
+        {
+          "label": "Mihin",
+          "value": "Grönberg Paula ja Robert"
+        },
+        {
+          "label": "Summa",
+          "value": "4 902,14 €"
+        },
+        {
+          "label": "Toimittajan Y-tunnus",
+          "value": "Puuttuu tällä rivillä"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Toimittajan Y-tunnus ei ole tällä rivillä."
+      ],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_peitoaukko"
+    },
+    {
+      "id": "hilma-haku-finanssivalvonta-tyhja",
+      "slug": "hilma-haku-finanssivalvonta-tyhja",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Hilma: haku “Finanssivalvonta” ei tuottanut ilmoituksia",
+      "teaser": "Organisaationimellä haettiin Hilmaan. Osumia ei tullut.",
+      "summary": "Seed-haku Hilmaan nimellä “Finanssivalvonta” ei tuottanut ilmoituksia. Haku tehtiin; jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Finanssivalvonta"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Hakusana",
+          "value": "Finanssivalvonta"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt hankintailmoituksia."
+      ],
+      "sources": [
+        {
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito.html",
+          "kind": "Tyhjä haku"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/fail_data.json#examples"
+    },
+    {
+      "id": "hilma-haku-hus-yhtyma-tyhja",
+      "slug": "hilma-haku-hus-yhtyma-tyhja",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Hilma: haku “HUS-yhtymä” ei tuottanut ilmoituksia",
+      "teaser": "Organisaationimellä haettiin Hilmaan. Osumia ei tullut.",
+      "summary": "Seed-haku Hilmaan nimellä “HUS-yhtymä” ei tuottanut ilmoituksia. Haku tehtiin; jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "HUS-yhtymä"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Hakusana",
+          "value": "HUS-yhtymä"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt hankintailmoituksia."
+      ],
+      "sources": [
+        {
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito.html",
+          "kind": "Tyhjä haku"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/fail_data.json#examples"
+    },
+    {
+      "id": "helsinki-verotietokysely-1629",
+      "slug": "helsinki-verotietokysely",
+      "found_at": "2026-08-21",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: verotietokyselyjen automatisointi, 1 629 €/kk",
+      "teaser": "Päätöksessä yksikköhinta 1 629 €/kk. Toimittaja ei näy tässä otoksessa.",
+      "summary": "Helsingin päätös: verotietokyselyjen automatisoinnin hankinta. Yksikköhinta 1629.0 €/kk.",
+      "actors": [
+        "Helsingin kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Aihe",
+          "value": "Verotietokyselyjen automatisoinnin hankinta"
+        },
+        {
+          "label": "Yksikköhinta",
+          "value": "1629.0 €/kk"
+        }
+      ],
+      "gaps": [
+        "Toimittaja ei näy tässä otoksessa."
+      ],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked"
+    },
     {
       "id": "verohallinto-it-outlier-2023-126101",
       "slug": "verohallinto-it-hankinta-verrokki",
