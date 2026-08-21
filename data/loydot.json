@@ -1,7 +1,50 @@
 {
-  "generated_at": "2026-08-20T16:00:00+03:00",
-  "note": "Hylly: jalostetuista otoksista. Ei tuomiota. Kertyy lisää, kun uusia löytöjä nostetaan.",
+  "generated_at": "2026-08-21T12:00:00+03:00",
+  "note": "Hylly: jalostetuista otoksista. Kategoriat Raha, Hankinta, Ketju, Puuttuva tieto. Poikkeama-leima (Pieni/Selvä) vain kun verrokki n≥10. Ei tuomiota. Ei värihälytyksiä.",
   "findings": [
+    {
+      "id": "hilma-arvo-nolla-esimerkki-2021",
+      "slug": "hilma-arvo-puuttuu-esimerkki",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "title": "Hilma: hankintailmoitus ilman arvioitua arvoa (esimerkki)",
+      "teaser": "Julkisessa ilmoituksessa estimated_value on 0. Puuttuva tieto merkitään auki, ei arvata summaa.",
+      "summary": "Hilma-otoksessa suuri osa ilmoituksista tulee ilman käyttökelpoista hinta-arviota. Tämä kortti on tyyppiesimerkki: ilmoitus on julkinen, mutta arvo puuttuu aineistosta. Ei väitettä väärinkäytöstä: merkitään mitä ei voi päätellä.",
+      "actors": [
+        "Kainuun sosiaali- ja terveydenhuollon kuntayhtymä"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-088776"
+        },
+        {
+          "label": "Arvioitu arvo aineistossa",
+          "value": "0 (puuttuu / ei käyttökelpoinen)"
+        },
+        {
+          "label": "Aihe",
+          "value": "MRI-sydänohjelmisto (listauksen mukaan)"
+        }
+      ],
+      "gaps": [
+        "Arvioitua hankinnan arvoa ei ole käyttökelpoisena tässä ilmoituksessa."
+      ],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-088776",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "JALOSTUS_RISTIINARVIOINTI.md#peito-hilma"
+    },
     {
       "id": "valtori-crayon-ostolasku-2024",
       "slug": "valtori-crayon-ostolasku",
@@ -47,7 +90,8 @@
           "kind": "Tutkihankintoja"
         }
       ],
-      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
+      "comparison": null
     },
     {
       "id": "vayla-nrc-ostolasku-2024",
@@ -98,7 +142,8 @@
           "kind": "Tutkihankintoja"
         }
       ],
-      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
+      "comparison": null
     },
     {
       "id": "tampere-joukkoliikenne-vertailu-2024",
@@ -145,7 +190,8 @@
           "kind": "Tampere päätös"
         }
       ],
-      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked"
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
+      "comparison": null
     },
     {
       "id": "migri-spr-ostolasku-2024",
@@ -192,7 +238,8 @@
           "kind": "Tutkihankintoja"
         }
       ],
-      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
+      "comparison": null
     },
     {
       "id": "helsinki-puite-maankaytto-2024",
@@ -234,7 +281,8 @@
           "kind": "Helsinki päätös"
         }
       ],
-      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked"
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
+      "comparison": null
     },
     {
       "id": "mao-748-2025-hankinta",
@@ -275,7 +323,8 @@
           "kind": "Finlex"
         }
       ],
-      "jalostus_ref": "data/raw/markkinaoikeus/decisions_2025_limit150.jsonl"
+      "jalostus_ref": "data/raw/markkinaoikeus/decisions_2025_limit150.jsonl",
+      "comparison": null
     },
     {
       "id": "senaatti-ketju-1503388-4",
@@ -321,7 +370,8 @@
           "kind": "Virasto"
         }
       ],
-      "jalostus_ref": "data/jalostus/demo_nayte.json#kortti_1_entiteettiketju"
+      "jalostus_ref": "data/jalostus/demo_nayte.json#kortti_1_entiteettiketju",
+      "comparison": null
     },
     {
       "id": "helsinki-varte-vuokra-2023",
@@ -364,7 +414,8 @@
           "kind": "Helsinki päätös"
         }
       ],
-      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked"
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
+      "comparison": null
     },
     {
       "id": "helsinki-villa-granvik-suorahankinta",
@@ -406,7 +457,8 @@
           "kind": "Helsinki päätös"
         }
       ],
-      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked"
+      "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
+      "comparison": null
     }
   ]
 }
