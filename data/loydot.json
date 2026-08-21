@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T14:00:00+03:00",
+  "generated_at": "2026-08-21T14:10:00+03:00",
   "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10).",
   "findings": [
     {
@@ -65,8 +65,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Kainuun sote: hankintailmoitus ilman arvioitua arvoa",
-      "teaser": "Hilma-ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.",
+      "title": "Kainuun sote: MRI-ilmoitus, arvioitu arvo puuttuu",
+      "teaser": "Hilma-ilmoitus 2021-088776. Arvioitua hankinnan arvoa ei ole ilmoituksessa.",
       "summary": "Hilma-ilmoitus 2021-088776 (Kainuun sosiaali- ja terveydenhuollon kuntayhtymä): MRI-laitteen sydänohjelmisto. Aineistossa arvioitu arvo ei ole käyttökelpoinen. Kortti merkitsee aukon; jos arvo myöhemmin löytyy, kortti päivittyy.",
       "actors": [
         "Kainuun sosiaali- ja terveydenhuollon kuntayhtymä"
@@ -114,8 +114,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Tampere: esteettömyyskartoituksen päätöksessä ei irtoa hintaa",
-      "teaser": "Kunnan päätöstekstistä ei poimittu määrää eikä summaa. Puuttuva tieto merkitään auki.",
+      "title": "Tampere: esteettömyyskartoitus, hinta ei irtoa päätöksestä",
+      "teaser": "Päätös 490336. Tekstistä ei poimittu euromäärää eikä määrää.",
       "summary": "Tampereen päätös 490336 (esteettömyyskartoituksen hankinta). Jalostus ei saanut tekstistä määrää eikä euromäärää. Ei väitettä peittelystä: merkitään mitä tästä päätöksestä ei voi vielä päätellä.",
       "actors": [
         "Tampereen kaupunki"
@@ -163,8 +163,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Hilma-haku “Eduskunnan kanslia” ei tuottanut ilmoituksia",
-      "teaser": "Haku tehtiin Hilmaan. Osumia ei tullut. Tyhjä tulos on havainto, ei virheilmoitus.",
+      "title": "Hilma: haku “Eduskunnan kanslia” ei tuottanut ilmoituksia",
+      "teaser": "Organisaationimellä haettiin Hilmaan. Osumia ei tullut.",
       "summary": "Seed-haku Hilmaan organisaationimellä “Eduskunnan kanslia” palautti tyhjän tuloksen. Haku tehtiin; ilmoituksia ei irronnut tällä haulla. Jos myöhemmin löytyy, kortti päivittyy.",
       "actors": [
         "Eduskunnan kanslia"
@@ -208,8 +208,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Väylävirasto: hankintailmoitus ilman arvioitua arvoa",
-      "teaser": "Hilma-ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.",
+      "title": "Väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu",
+      "teaser": "Hilma-ilmoitus 2020-044126 (Oulu–Kokkola). Arvioitua hankinnan arvoa ei ole ilmoituksessa.",
       "summary": "Hilma-ilmoitus 2020-044126 (Väylävirasto): Oulun ja Kokkolan turvalaitejärjestelmien uusiminen. Aineistossa arvioitu arvo on 0 / ei käyttökelpoinen. Kortti merkitsee aukon; jos arvo myöhemmin löytyy, kortti päivittyy.",
       "actors": [
         "Väylävirasto"
@@ -257,8 +257,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Ostolaskussa ostajan Y-tunnus puuttuu",
-      "teaser": "Ostolaskurivillä toimittajan Y-tunnus on, ostajan Y-tunnus ei. Ostajaa ei voi tunnistaa tällä rivillä.",
+      "title": "Valtori → Crayon Oy, noin 783 000 €: ostajan Y-tunnus puuttuu",
+      "teaser": "Valtorin maksu Crayonille näkyy ostolaskuaineistossa. Toimittajan Y-tunnus on, ostajan Y-tunnus puuttuu riviltä.",
       "summary": "Vuoden 2024 Tutkihankintoja-aineistossa Valtorin maksu Crayon Oy:lle sisältää toimittajan Y-tunnuksen, mutta ostajan Y-tunnus puuttuu riviltä. Puuttuva tieto merkitään auki. Sama rivi on myös Raha-korttina (summa).",
       "actors": [
         "Valtion tieto- ja viestintätekniikkakeskus Valtori",
@@ -308,7 +308,7 @@
       "gap_status": "auki",
       "updates": [],
       "title": "Järvenpää: haku “kamera” ei tuottanut päätöksiä",
-      "teaser": "Haku tehtiin kunnan päätösaineistoon. Osumia ei tullut. Tyhjä tulos on havainto, ei virheilmoitus.",
+      "teaser": "Haku kunnan päätösaineistoon. Osumia ei tullut.",
       "summary": "Haku Järvenpään kunnan päätöksistä hakusanalla “kamera” ei tuottanut osumia. Haku tehtiin; julkisesta aineistosta ei irronnut päätöksiä tällä haulla. Jos myöhemmin löytyy, kortti päivittyy.",
       "actors": [
         "Järvenpään kaupunki"
