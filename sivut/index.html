@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Tietosivut · AitoData</title>
+<title>Mallinäkymät · AitoData</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,21 +17,21 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../index.html">Aito<span>Data</span></a>
-<nav class="site">
-    <a href="../index.html">Etusivu</a>
+  <span class="badge">Esikatselu</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
     <a href="../sivut/loydot/index.html">Löydöt</a>
-    <a href="../sivut/index.html" class="active">Tietosivut</a>
-    <a href="../esimerkki.html">Esimerkki</a>
-    <a href="../kaiva.html">Kaiva syvemmälle</a>
-    <a href="../perusteet.html">Perusteet</a>
+    <a href="../sivut/peito.html">Puuttuva tieto</a>
+    <a href="../kaiva.html">Tutki lisää</a>
+    <a href="../nain-luet.html" class="active">Näin luet</a>
     <a href="../tietoa.html">Info</a>
   </nav>
-<span class="badge">Esikatselu</span>
 </div></div>
 <div class="wrap">
 <header class="page-head">
-<h1>Tietosivut</h1>
-<p>Tämän sivun tilalle tulee kevyt käyttöliittymä, jolla julkista tietoa voi etsiä eri keinoin — esim. toimija, aihe tai näkymätyyppi. Alla kolme kiinteää demosivua samasta otoksesta. Ne eivät ole koko palvelu.</p>
+<p class="section-label">Vanha Tietosivut-osoite</p>
+<h1>Mallinäkymät</h1>
+<p>Lukuohjeet ja polut ovat sivulla <a href="../nain-luet.html">Näin luet</a>. Alla samat demot kuin ennen.</p>
 </header>
 <div class="steps">
 <article class="step">
@@ -48,21 +48,19 @@
 </article>
 <article class="step">
 <div class="n">3 · Puuttuva tieto</div>
-<h3>Mitä aineistosta ei löydy</h3>
-<p>Hilman puuttuva hinta-arvio, tyhjät haut ja Peittomuistio (PDF).</p>
-<p><a class="btn" href="peito.html">Avaa puuttuva tieto</a></p>
+<h3>Kooste ja raportti</h3>
+<p>Tilastot ja kooste: erillinen sivu Puuttuva tieto.</p>
+<p><a class="btn" href="peito.html">Avaa kooste</a></p>
 </article>
 </div>
-<div class="disclaimer">
-Esikatselu rajoitetusta otoksesta. Sivusto ei kata koko Suomea. Lukuohje: <a href="../esimerkki.html">esimerkkisivu</a>.
-</div>
 <div class="hero-actions" style="margin-top:1.5rem">
-<a class="btn ghost" href="../esimerkki.html">Lukuohje</a>
-<a class="btn ghost" href="../index.html">Etusivulle</a>
+<a class="btn" href="../nain-luet.html">Näin luet →</a>
+<a class="btn ghost" href="loydot/index.html">Löydöt</a>
 </div>
 </div>
 <footer>
 <p><a class="wordmark" href="../index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-<p>Esikatselu · 2026-08-14T07:52:18.755057+00:00 · rajoitettu otos</p>
 </footer>
-</body></html>
+<script src="../assets/nav.js" defer></script>
+</body>
+</html>

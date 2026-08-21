@@ -17,16 +17,15 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="index.html">Aito<span>Data</span></a>
-  <nav class="site">
-    <a href="index.html">Etusivu</a>
+  <span class="badge">Esikatselu</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
     <a href="sivut/loydot/index.html">Löydöt</a>
-    <a href="sivut/index.html">Tietosivut</a>
-    <a href="esimerkki.html">Esimerkki</a>
-    <a href="kaiva.html">Kaiva syvemmälle</a>
-    <a href="perusteet.html">Perusteet</a>
+    <a href="sivut/peito.html">Puuttuva tieto</a>
+    <a href="kaiva.html">Tutki lisää</a>
+    <a href="nain-luet.html">Näin luet</a>
     <a href="tietoa.html" class="active">Info</a>
   </nav>
-  <span class="badge">Esikatselu</span>
 </div></div>
 
 <div class="wrap">
@@ -116,5 +115,6 @@
   <p><a class="wordmark" href="index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
   <p>Esikatselu, ei tuotantopalvelu.</p>
 </footer>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>

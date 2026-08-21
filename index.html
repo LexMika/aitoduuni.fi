@@ -17,16 +17,15 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="index.html">Aito<span>Data</span></a>
-  <nav class="site">
-    <a href="index.html" class="active">Etusivu</a>
+  <span class="badge">Esikatselu</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
     <a href="sivut/loydot/index.html">Löydöt</a>
-    <a href="sivut/index.html">Tietosivut</a>
-    <a href="esimerkki.html">Esimerkki</a>
-    <a href="kaiva.html">Kaiva syvemmälle</a>
-    <a href="perusteet.html">Perusteet</a>
+    <a href="sivut/peito.html">Puuttuva tieto</a>
+    <a href="kaiva.html">Tutki lisää</a>
+    <a href="nain-luet.html">Näin luet</a>
     <a href="tietoa.html">Info</a>
   </nav>
-  <span class="badge">Esikatselu</span>
 </div></div>
 
 <div class="wrap">
@@ -36,7 +35,7 @@
     <p class="lead">Näet julkisia päätöksiä ja rahaa faktoina, lähteineen. Emme sano, onko jokin oikein tai väärin. Sen päättää lukija. Jokaisen väitteen voi avata alkuperäisestä lähteestä.</p>
     <div class="hero-actions">
       <a class="btn" href="sivut/loydot/index.html">Katso löydöt</a>
-      <a class="btn ghost" href="esimerkki.html">Katso esimerkki</a>
+      <a class="btn ghost" href="nain-luet.html">Näin luet</a>
       <a class="btn ghost" href="tietoa.html">Mikä AitoData on</a>
     </div>
     <div class="hooks">
@@ -50,27 +49,28 @@
   <section class="section" id="tuoreimmat">
     <p class="section-label">Tuoreimmat löydöt</p>
     <h2>Mitä on jo avattu</h2>
-    <p class="intro">Jalostettuja otoksia julkisista lähteistä. Lista kasvaa, kun uusia löytöjä nostetaan hyllyyn.</p>
+    <p class="intro">Poimintoja julkisista lähteistä. Lista kasvaa, kun uusia löytöjä julkaistaan.</p>
     <div class="find-list find-teaser">
       <article class="find-item">
         <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time> · Puuttuva tieto</p>
-        <h3><a href="sivut/loydot/hilma-arvo-puuttuu-esimerkki.html">Hilma: hankintailmoitus ilman arvioitua arvoa (esimerkki)</a></h3>
-        <p>Julkisessa ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.</p>
+        <h3><a href="sivut/loydot/vayla-hilma-arvo-puuttuu.html">Väylävirasto: hankintailmoitus ilman arvioitua arvoa</a></h3>
+        <p>Hilma-ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.</p>
       </article>
       <article class="find-item">
-        <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time> · Raha</p>
-        <h3><a href="sivut/loydot/valtori-crayon-ostolasku.html">Valtori → Crayon Oy, noin 783 000 € (2024)</a></h3>
-        <p>Tutkihankintoja-ostolasku: ICT-hankinnat. Toimittajan Y 2096054-3. Ostajan Y-tunnus puuttuu.</p>
+        <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time> · Puuttuva tieto</p>
+        <h3><a href="sivut/loydot/ostaja-y-puuttuu-ostolaskussa.html">Ostolaskussa ostajan Y-tunnus puuttuu</a></h3>
+        <p>Ostolaskurivillä toimittajan Y-tunnus on, ostajan Y-tunnus ei. Ostajaa ei voi tunnistaa tällä rivillä.</p>
       </article>
       <article class="find-item">
-        <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time> · Raha</p>
-        <h3><a href="sivut/loydot/vayla-nrc-ostolasku.html">Väylävirasto → NRC Group Finland Oy, noin 493 000 € (2024)</a></h3>
-        <p>Tutkihankintoja-ostolasku: rakentaminen. Toimittajan Y 1007822-3. Ostajan Y-tunnus puuttuu.</p>
+        <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time> · Puuttuva tieto</p>
+        <h3><a href="sivut/loydot/jarvenpaa-kamera-haku-tyhja.html">Järvenpää: haku “kamera” ei tuottanut päätöksiä</a></h3>
+        <p>Haku tehtiin kunnan päätösaineistoon. Osumia ei tullut. Tyhjä tulos on havainto, ei virheilmoitus.</p>
       </article>
     </div>
     <div class="hero-actions" style="margin-top:1.1rem">
       <a class="btn" href="sivut/loydot/index.html">Kaikki löydöt →</a>
-      <a class="btn ghost" href="sivut/index.html">Mallitietosivut</a>
+      <a class="btn ghost" href="sivut/peito.html">Puuttuva tieto (kooste)</a>
+      <a class="btn ghost" href="nain-luet.html">Näin luet</a>
     </div>
   </section>
 
@@ -81,18 +81,18 @@
     <div class="steps">
       <article class="step">
         <div class="n">1</div>
-        <h3>Esimerkki</h3>
-        <p>Näin tietosivua luetaan. Ohjeet ja demodata samalla sivulla.</p>
+        <h3>Löydöt</h3>
+        <p>Kasvava lista poiminnoista. Etusivulla kolme tuoreinta.</p>
       </article>
       <article class="step">
         <div class="n">2</div>
-        <h3>Löydöt</h3>
-        <p>Kasvava lista jalostetuista otoksista. Etusivulla kolme tuoreinta; kaikki listassa.</p>
+        <h3>Puuttuva tieto</h3>
+        <p>Kooste ja raportti: mitä aineistosta ei saa ulos. Yksittäiset aukot myös Löydöissä.</p>
       </article>
       <article class="step">
         <div class="n">3</div>
-        <h3>Kaiva syvemmälle</h3>
-        <p>Avaimet, joilla voit jatkaa etsintää itse alkuperäisistä lähteistä.</p>
+        <h3>Näin luet</h3>
+        <p>Esimerkki, Tutki lisää ja perusteet: yksi ovi lukemiseen.</p>
       </article>
     </div>
   </section>
@@ -128,40 +128,16 @@
   </section>
 
   <section class="section">
-    <p class="section-label">Tietosivut</p>
-    <h2>Kolme demosivua</h2>
-    <p class="intro">Kiinteät esimerkit samasta otoksesta. Tämän listan tilalle tulee myöhemmin kevyt käyttöliittymä, jolla tietoa voi etsiä eri keinoin.</p>
-    <div class="steps">
-      <article class="step">
-        <div class="n">Ketju</div>
-        <h3>Sama toimija monessa lähteessä</h3>
-        <p>Y-tunnus, lähdelajit ja rahavirtaesimerkki.</p>
-        <p><a href="sivut/ketju.html">Avaa ketju →</a></p>
-      </article>
-      <article class="step">
-        <div class="n">Verrokki</div>
-        <h3>Sama aihe, eri päätökset</h3>
-        <p>€/yksikkö taulukossa. Ei väitettä, että hinta on väärä.</p>
-        <p><a href="sivut/verrokki.html">Avaa verrokki →</a></p>
-      </article>
-      <article class="step">
-        <div class="n">Puuttuva tieto</div>
-        <h3>Mitä ei löydy</h3>
-        <p>Hilman puuttuva hinta-arvio ja tyhjät haut.</p>
-        <p><a href="sivut/peito.html">Avaa puuttuva tieto →</a></p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <p class="section-label">Nosto</p>
+    <p class="section-label">Lukuohje</p>
+    <h2>Näin luet</h2>
+    <p class="intro">Esimerkki, Tutki lisää ja perusteet sekä mallinäkymät (ketju / verrokki) samasta ovesta.</p>
     <div class="spotlight">
-      <h3>Esimerkkitietosivu: Jyväskylä · lumensyvyys</h3>
-      <p>Kaksi julkista päätöstä samasta aiheesta. Menettelyt, summat ja lähteet esillä. Ohjeet osioiden alla.</p>
+      <h3>Aloita lukemisesta</h3>
+      <p>Yksi sivu alusta loppuun, tai hyppää suoraan perusteisiin. Demot eivät teeskentele tuoreita löytöjä.</p>
       <div class="actions">
-        <a class="btn" href="esimerkki.html">Avaa esimerkki</a>
-        <a class="btn ghost" href="sivut/index.html">Kaikki tietosivut</a>
-        <a class="btn ghost" href="kaiva.html">Kaiva syvemmälle</a>
+        <a class="btn" href="nain-luet.html">Avaa Näin luet</a>
+        <a class="btn ghost" href="esimerkki.html">Suoraan esimerkkiin</a>
+        <a class="btn ghost" href="sivut/peito.html">Puuttuva tieto</a>
       </div>
     </div>
   </section>
@@ -175,5 +151,6 @@
   <p><a class="wordmark" href="index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
   <p>Julkinen data, faktat ja lähde. Tulkinta on lukijalla.</p>
 </footer>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>

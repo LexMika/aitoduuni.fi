@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Kaiva syvemmälle · AitoData</title>
+<title>Tutki lisää · AitoData</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,22 +17,21 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="index.html">Aito<span>Data</span></a>
-  <nav class="site">
-    <a href="index.html">Etusivu</a>
+  <span class="badge">Esikatselu</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
     <a href="sivut/loydot/index.html">Löydöt</a>
-    <a href="sivut/index.html">Tietosivut</a>
-    <a href="esimerkki.html">Esimerkki</a>
-    <a href="kaiva.html" class="active">Kaiva syvemmälle</a>
-    <a href="perusteet.html">Perusteet</a>
+    <a href="sivut/peito.html">Puuttuva tieto</a>
+    <a href="kaiva.html" class="active">Tutki lisää</a>
+    <a href="nain-luet.html">Näin luet</a>
     <a href="tietoa.html">Info</a>
   </nav>
-  <span class="badge">Esikatselu</span>
 </div></div>
 
 <div class="wrap">
   <header class="page-head">
-    <h1>Kaiva syvemmälle</h1>
-    <p>Tietosivu näyttää tiivistelmän. Tällä sivulla on avaimet, joilla voit jatkaa etsintää itse alkuperäisistä lähteistä.</p>
+    <h1>Tutki lisää</h1>
+    <p>Löytö näyttää tiivistelmän. Täällä on avaimet, joilla jatkat etsintää itse alkuperäisistä lähteistä.</p>
   </header>
 
   <div class="callout">
@@ -97,19 +96,20 @@
   </section>
 
   <div class="disclaimer">
-    Avaimet ja reitti, ei valmista johtopäätöstä. Sisältö täydentyy testauksen mukaan.
+    Avaimet ja reitti, ei valmista johtopäätöstä. Sisältö täydentyy ajan kanssa.
   </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
     <a class="btn" href="esimerkki.html">Katso esimerkki</a>
-    <a class="btn ghost" href="sivut/index.html">Avaa tietosivut</a>
+    <a class="btn ghost" href="nain-luet.html">Näin luet</a>
     <a class="btn ghost" href="tietoa.html">Mikä AitoData on</a>
   </div>
 </div>
 
 <footer>
   <p><a class="wordmark" href="index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-  <p>Kaiva syvemmälle</p>
+  <p>Tutki lisää</p>
 </footer>
+<script src="assets/nav.js" defer></script>
 </body>
 </html>

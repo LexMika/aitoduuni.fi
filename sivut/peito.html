@@ -17,16 +17,15 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../index.html">Aito<span>Data</span></a>
-<nav class="site">
-    <a href="../index.html">Etusivu</a>
+  <span class="badge">Esikatselu</span>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav">
     <a href="../sivut/loydot/index.html">Löydöt</a>
-    <a href="../sivut/index.html" class="active">Tietosivut</a>
-    <a href="../esimerkki.html">Esimerkki</a>
-    <a href="../kaiva.html">Kaiva syvemmälle</a>
-    <a href="../perusteet.html">Perusteet</a>
+    <a href="../sivut/peito.html" class="active">Puuttuva tieto</a>
+    <a href="../kaiva.html">Tutki lisää</a>
+    <a href="../nain-luet.html">Näin luet</a>
     <a href="../tietoa.html">Info</a>
   </nav>
-<span class="badge">Esikatselu</span>
 </div></div>
 <div class="wrap">
 <header class="page-head">
@@ -34,10 +33,10 @@
 <p>Puuttuva kenttä ja tyhjä haku ovat havaintoja. Ne kertovat, mitä julkaistusta aineistosta ei vielä saa ulos.</p>
 </header>
 <div class="guide-row">
-<div class="callout"><strong>Näin luet tämän sivun</strong><ul><li>Katso tiivistelmästä puuttuvan tiedon osuus ja tyhjien hakujen määrä.</li><li>Kokonaiskuva näyttää missä hinta-arvio löytyy ja missä se puuttuu.</li><li>Puuttuva tieto ei ole epäilys yksittäisestä toimijasta.</li><li>Käytä tätä tietääksesi, mitä ei vielä voi päätellä.</li></ul><p><a href="../kaiva.html">Kaiva syvemmälle →</a></p></div>
+<div class="callout"><strong>Näin luet tämän sivun</strong><ul><li>Katso tiivistelmästä puuttuvan tiedon osuus ja tyhjien hakujen määrä.</li><li>Kokonaiskuva näyttää missä hinta-arvio löytyy ja missä se puuttuu.</li><li>Puuttuva tieto ei ole epäilys yksittäisestä toimijasta.</li><li>Käytä tätä tietääksesi, mitä ei vielä voi päätellä.</li></ul><p><a href="../kaiva.html">Tutki lisää →</a></p></div>
 <section class="panel">
 <h2>Tiivistelmä</h2>
-<div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma — hankintailmoitukset (otos)</div></div>
+<div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma: hankintailmoitukset (otos)</div></div>
 <div class="fact-row"><div class="lbl">Ilmoituksia otoksessa</div><div class="val">12648</div></div>
 <div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">19.0 % (2404 kpl · hinta ilmoituksessa)</div></div>
 <div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">81.0 % (puuttuva tieto)</div></div>
@@ -64,32 +63,39 @@
 </svg>
 </div>
 </section>
+
 <section class="panel">
-<h2>Esimerkki puuttuvasta tiedosta</h2>
-<p>Tässä ilmoituksessa arvioitua hintaa ei ole. Aukko merkitään, ei arvata.</p>
-<a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/" target="_blank" rel="noopener noreferrer"><strong>Oulun ja Kokkolan turvalaitejärjestelmien uusiminen</strong><span class="k">Tyyppi</span><span class="v">Hilma — hankintailmoitus</span><span class="k">Kohde</span><span class="v">Väylävirasto · ilmoitus 2020-044126</span><span class="k">Arvioitu hinta</span><span class="v">ei ole</span><span class="k">Etsi sivulta</span><span class="v">ilmoitusnumero 2020-044126 · organisaatio “Väylävirasto” · tarkista ettei arvioitua hintaa ole ilmoitettu</span></a>
+<h2>Raportti</h2>
+<p>Koosteesta tehdään myöhemmin ladattava Peittomuistio (PDF): mitä mitattiin, mitä tuli, mistä, mitä ei väitetä. Nyt luvut tällä sivulla.</p>
+<p><a class="btn ghost" href="../assets/peittomuistio_esimerkki.html">Katso raportin mallipohja →</a>
+<a class="btn ghost" href="loydot/index.html">Puuttuvan tiedon löytökortit →</a></p>
+</section>
+<section class="panel">
+<h2>Tyyppiesimerkki (sama Löydöissä)</h2>
+<p>Tässä ilmoituksessa arvioitua hankinnan arvoa ei ole. Aukko merkitään auki. <a href="loydot/vayla-hilma-arvo-puuttuu.html">Avaa löytökortti →</a></p>
+<a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/" target="_blank" rel="noopener noreferrer"><strong>Oulun ja Kokkolan turvalaitejärjestelmien uusiminen</strong><span class="k">Tyyppi</span><span class="v">Hilma: hankintailmoitus</span><span class="k">Kohde</span><span class="v">Väylävirasto · ilmoitus 2020-044126</span><span class="k">Arvioitu hinta</span><span class="v">ei ole</span><span class="k">Etsi sivulta</span><span class="v">ilmoitusnumero 2020-044126 · organisaatio “Väylävirasto” · tarkista ettei arvioitua hintaa ole ilmoitettu</span></a>
 </section>
 <section class="panel">
 <h2>Mitä tämä tarkoittaa</h2>
 <p>Nämä eivät syytä ketään. Ne kertovat, mitä datasta <em>ei</em> vielä saa ulos.</p>
 <ul>
-<li><strong>Puuttuva tieto:</strong> odotettu kenttä puuttuu tai on nolla. Emme arvaa tilalle. Merkintä kertoo vain, että tästä ei voi vielä päätellä.</li>
+<li><strong>Puuttuva tieto:</strong> odotettu kenttä puuttuu tai on nolla. Tilalle ei keksiä lukua. Merkintä kertoo vain, että tästä ei voi vielä päätellä.</li>
 <li><strong>Hilma-otos:</strong> tässä otoksessa arvioitu hinta (euromäärä ilmoituksessa) löytyy noin 19 %:lla ilmoituksista. Lopuille 81 %:lle hintavertailua ei voi tehdä.</li>
 <li><strong>Tyhjä haku:</strong> kun jokin toimija tai aihe löytyy yhdestä aineistosta, haemme samaa asiaa muista rekistereistä samoilla sanoilla. Haku tehtiin lähteeseen; vastaus oli “ei tuloksia”. Tämä on havainto, ei virheraportti. Esim. haettiin Järvenpään päätöksistä sanalla “kamera”, eikä yhtään päätöstä tullut.</li>
 </ul></section>
-<section class="panel"><h2>Tyhjät haut lähteittäin</h2><p>Haku ilman osumia, lähteittäin. Yksittäinen esimerkki “Mitä tämä tarkoittaa” -osiossa.</p><table style="width:100%;border-collapse:collapse;font-size:0.95rem"><thead><tr><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Lähde</th><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Tyhjiä hakuja</th></tr></thead><tbody><tr><td>Kuntien päätökset, CloudNC (cloudnc)</td><td>31</td></tr><tr><td>Kuntien päätökset, KTWeb (ktweb)</td><td>10</td></tr><tr><td>Kuntien päätökset, Dynasty (dynasty)</td><td>9</td></tr><tr><td>Hilma — hankintailmoitukset</td><td>3</td></tr><tr><td>Lääketeollisuuden TOV-julkaisut (PIF)</td><td>3</td></tr><tr><td>Helsingin päätökset</td><td>2</td></tr><tr><td>Kilpailu- ja kuluttajavirasto (KKV)</td><td>1</td></tr><tr><td>Turun päätökset</td><td>1</td></tr></tbody></table></section>
+<section class="panel"><h2>Tyhjät haut lähteittäin</h2><p>Haku ilman osumia, lähteittäin. Yksittäinen esimerkki “Mitä tämä tarkoittaa” -osiossa.</p><table style="width:100%;border-collapse:collapse;font-size:0.95rem"><thead><tr><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Lähde</th><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Tyhjiä hakuja</th></tr></thead><tbody><tr><td>Kuntien päätökset (CloudNC)</td><td>31</td></tr><tr><td>Kuntien päätökset (KTWeb)</td><td>10</td></tr><tr><td>Kuntien päätökset (Dynasty)</td><td>9</td></tr><tr><td>Hilma: hankintailmoitukset</td><td>3</td></tr><tr><td>Lääketeollisuuden TOV-julkaisut (PIF)</td><td>3</td></tr><tr><td>Helsingin päätökset</td><td>2</td></tr><tr><td>Kilpailu- ja kuluttajavirasto (KKV)</td><td>1</td></tr><tr><td>Turun päätökset</td><td>1</td></tr></tbody></table></section>
 <section class="panel">
 <h2>Peittomuistio</h2>
 <p>Syvempi tiivistelmä puuttuvasta tiedosta: luvut, konkreettiset esimerkit ja rajaukset yhdessä PDF:ssä.</p>
-<div class="banner-note" style="margin:0.75rem 0;padding:0.75rem 0.9rem;border:1px solid rgba(245,158,11,0.45);border-radius:0.85rem;background:rgba(245,158,11,0.08);color:#fde68a;font-size:0.95rem"><strong>Esimerkki rajoitetusta otoksesta.</strong> Tämä PDF kuvaa nykyistä esikatseluaineistoa. Se ei kata koko Suomea. Kun aineisto laajenee, Peittomuistio päivittyy peiton mukaan.</div>
+<div class="banner-note" style="margin:0.75rem 0;padding:0.75rem 0.9rem;border:1px solid rgba(245,158,11,0.45);border-radius:0.85rem;background:rgba(245,158,11,0.08);color:#fde68a;font-size:0.95rem"><strong>Esikatseluaineisto.</strong> Tämä PDF kuvaa nykyistä otosta. Se ei kata koko Suomea. Kun aineisto laajenee, raportti päivittyy.</div>
 <p><a class="btn" href="../assets/peittomuistio_esimerkki.pdf" target="_blank" rel="noopener noreferrer">Avaa Peittomuistio (PDF) →</a></p>
 <p class="meta" style="margin-top:0.65rem;color:#94a3b8;font-size:0.9rem">Sisältää aineistorajauksen, peitto-%, tyhjät haut, kaksi esimerkkiä sekä mitä <em>ei</em> väitetä.</p>
 </section>
 <div class="disclaimer">
-Esikatselu rajoitetusta otoksesta. Sivusto ei kata koko Suomea.
+Esikatselu. Aineisto on otos, ei koko Suomi.
 </div>
 <div class="hero-actions" style="margin-top:1.5rem">
-<a class="btn ghost" href="index.html">Kaikki kolme</a>
+<a class="btn ghost" href="../nain-luet.html">Näin luet</a>
 <a class="btn ghost" href="ketju.html">Takaisin: ketju</a>
 </div>
 </div>
@@ -97,4 +103,5 @@ Esikatselu rajoitetusta otoksesta. Sivusto ei kata koko Suomea.
 <p><a class="wordmark" href="../index.html">Aito<span>Data</span></a> · Vallanvahtikoira</p>
 <p>Esikatselu · 2026-08-14T07:52:18.755057+00:00 · rajoitettu otos</p>
 </footer>
+<script src="../assets/nav.js" defer></script>
 </body></html>

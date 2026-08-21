@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-08-21T12:00:00+03:00",
-  "note": "Hylly: jalostetuista otoksista. Kategoriat Raha, Hankinta, Ketju, Puuttuva tieto. Poikkeama-leima (Pieni/Selvä) vain kun verrokki n≥10. Ei tuomiota. Ei värihälytyksiä.",
+  "generated_at": "2026-08-21T13:00:00+03:00",
+  "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10).",
   "findings": [
     {
-      "id": "hilma-arvo-nolla-esimerkki-2021",
-      "slug": "hilma-arvo-puuttuu-esimerkki",
+      "id": "vayla-hilma-arvo-puuttuu-2020-044126",
+      "slug": "vayla-hilma-arvo-puuttuu",
       "found_at": "2026-08-21",
       "kind": "peitto",
       "comparison": null,
-      "title": "Hilma: hankintailmoitus ilman arvioitua arvoa (esimerkki)",
-      "teaser": "Julkisessa ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.",
-      "summary": "Hilma-otoksessa suuri osa ilmoituksista tulee ilman käyttökelpoista hinta-arviota. Tämä kortti on tyyppiesimerkki: ilmoitus on julkinen, mutta arvioitu arvo puuttuu aineistosta. Ei väitettä väärinkäytöstä: merkitään mitä ei voi päätellä.",
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Väylävirasto: hankintailmoitus ilman arvioitua arvoa",
+      "teaser": "Hilma-ilmoituksessa arvioitu hankinnan arvo puuttuu. Summaa ei ole tässä ilmoituksessa.",
+      "summary": "Hilma-ilmoitus 2020-044126 (Väylävirasto): Oulun ja Kokkolan turvalaitejärjestelmien uusiminen. Aineistossa arvioitu arvo on 0 / ei käyttökelpoinen. Kortti merkitsee aukon; jos arvo myöhemmin löytyy, kortti päivittyy.",
       "actors": [
-        "Kainuun sosiaali- ja terveydenhuollon kuntayhtymä"
+        "Väylävirasto"
       ],
-      "y_tunnus": null,
+      "y_tunnus": "1010547-1",
       "facts": [
         {
           "label": "Lähde",
@@ -22,15 +24,19 @@
         },
         {
           "label": "Ilmoitus",
-          "value": "2021-088776"
+          "value": "2020-044126"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Väylävirasto (Y 1010547-1)"
         },
         {
           "label": "Arvioitu hankinnan arvo",
           "value": "Puuttuu (aineistossa ei käyttökelpoista lukua)"
         },
         {
-          "label": "Aihe",
-          "value": "MRI-sydänohjelmisto (listauksen mukaan)"
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
         }
       ],
       "gaps": [
@@ -38,12 +44,111 @@
       ],
       "sources": [
         {
-          "label": "Hilma · hankintailmoitus 2021-088776",
-          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+          "label": "Hilma · hankintailmoitus 2020-044126",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/",
           "kind": "Hilma"
         }
       ],
-      "jalostus_ref": "JALOSTUS_RISTIINARVIOINTI.md#peito-hilma"
+      "jalostus_ref": "data/jalostus/demo_nayte.json#kortti_4_peito_f.example"
+    },
+    {
+      "id": "th-ostaja-y-puuttuu-valtori-crayon",
+      "slug": "ostaja-y-puuttuu-ostolaskussa",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Ostolaskussa ostajan Y-tunnus puuttuu",
+      "teaser": "Ostolaskurivillä toimittajan Y-tunnus on, ostajan Y-tunnus ei. Ostajaa ei voi tunnistaa tällä rivillä.",
+      "summary": "Vuoden 2024 Tutkihankintoja-aineistossa Valtorin maksu Crayon Oy:lle sisältää toimittajan Y-tunnuksen, mutta ostajan Y-tunnus puuttuu riviltä. Puuttuva tieto merkitään auki. Sama rivi on myös Raha-korttina (summa).",
+      "actors": [
+        "Valtion tieto- ja viestintätekniikkakeskus Valtori",
+        "Crayon Oy"
+      ],
+      "y_tunnus": "2096054-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tutkihankintoja (vuoden 2024 ostolaskuaineisto)"
+        },
+        {
+          "label": "Toimittajan Y-tunnus",
+          "value": "2096054-3 (Crayon Oy)"
+        },
+        {
+          "label": "Ostajan Y-tunnus",
+          "value": "Puuttuu tällä rivillä"
+        },
+        {
+          "label": "Summa (sama rivi)",
+          "value": "782 563,11 €"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Ostajan Y-tunnus ei ole tällä rivillä."
+      ],
+      "sources": [
+        {
+          "label": "Tutkihankintoja · th_data_2024.csv",
+          "url": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+          "kind": "Tutkihankintoja"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked"
+    },
+    {
+      "id": "cloudnc-jarvenpaa-kamera-tyhja",
+      "slug": "jarvenpaa-kamera-haku-tyhja",
+      "found_at": "2026-08-21",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Järvenpää: haku “kamera” ei tuottanut päätöksiä",
+      "teaser": "Haku tehtiin kunnan päätösaineistoon. Osumia ei tullut. Tyhjä tulos on havainto, ei virheilmoitus.",
+      "summary": "Haku Järvenpään kunnan päätöksistä hakusanalla “kamera” ei tuottanut osumia. Haku tehtiin; julkisesta aineistosta ei irronnut päätöksiä tällä haulla. Jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Järvenpään kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Kunnan päätökset"
+        },
+        {
+          "label": "Paikkakunta",
+          "value": "Järvenpää"
+        },
+        {
+          "label": "Hakusana",
+          "value": "kamera"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt päätöksiä."
+      ],
+      "sources": [
+        {
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito.html",
+          "kind": "Tyhjä haku"
+        }
+      ],
+      "jalostus_ref": "data/jalostus/fail_data.json#examples"
     },
     {
       "id": "valtori-crayon-ostolasku-2024",
@@ -91,7 +196,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "vayla-nrc-ostolasku-2024",
@@ -143,7 +250,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "tampere-joukkoliikenne-vertailu-2024",
@@ -152,7 +261,7 @@
       "kind": "hankinta",
       "title": "Tampere: joukkoliikennevertailu, enintään 38 000 €",
       "teaser": "2 kpl · 19 000 €/kpl. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.",
-      "summary": "Tampereen CloudNC-päätös joukkoliikennejärjestelmän strategisen vertailun hankinnasta. Tekstissä 2 kappaletta, enintään 38 000 € → 19 000 €/kpl. Menettely: kilpailutus. Toimittajaa ei ole vielä tässä kortissa.",
+      "summary": "Tampereen kunnan päätös joukkoliikennejärjestelmän strategisen vertailun hankinnasta. Tekstissä 2 kappaletta, enintään 38 000 € → 19 000 €/kpl. Menettely: kilpailutus. Toimittajaa ei ole vielä tässä kortissa.",
       "actors": [
         "Tampereen kaupunki"
       ],
@@ -185,13 +294,15 @@
       ],
       "sources": [
         {
-          "label": "Tampere CloudNC · päätös 501279",
+          "label": "Tampereen päätös · päätös 501279",
           "url": "https://tampere.cloudnc.fi/fi-FI/content/501279/13031",
           "kind": "Tampere päätös"
         }
       ],
       "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "migri-spr-ostolasku-2024",
@@ -239,7 +350,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/raha_ketju.json#spend.examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "helsinki-puite-maankaytto-2024",
@@ -282,7 +395,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "mao-748-2025-hankinta",
@@ -324,7 +439,9 @@
         }
       ],
       "jalostus_ref": "data/raw/markkinaoikeus/decisions_2025_limit150.jsonl",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "senaatti-ketju-1503388-4",
@@ -371,7 +488,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/demo_nayte.json#kortti_1_entiteettiketju",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "helsinki-varte-vuokra-2023",
@@ -415,7 +534,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     },
     {
       "id": "helsinki-villa-granvik-suorahankinta",
@@ -458,7 +579,9 @@
         }
       ],
       "jalostus_ref": "data/jalostus/hankinta_c.json#examples_linked",
-      "comparison": null
+      "comparison": null,
+      "gap_status": null,
+      "updates": []
     }
   ]
 }
