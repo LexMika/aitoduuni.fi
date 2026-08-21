@@ -114,8 +114,8 @@
       "comparison": null,
       "gap_status": "auki",
       "updates": [],
-      "title": "Tampere: esteettömyyskartoitus, hinta ei irtoa päätöksestä",
-      "teaser": "Päätös 490336. Tekstistä ei poimittu euromäärää eikä määrää.",
+      "title": "Tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa",
+      "teaser": "Päätös 490336. Euromäärää tai määrää ei ole päätöstekstissä.",
       "summary": "Tampereen päätös 490336 (esteettömyyskartoituksen hankinta). Jalostus ei saanut tekstistä määrää eikä euromäärää. Ei väitettä peittelystä: merkitään mitä tästä päätöksestä ei voi vielä päätellä.",
       "actors": [
         "Tampereen kaupunki"
@@ -136,7 +136,7 @@
         },
         {
           "label": "Hinta / määrä tekstissä",
-          "value": "Ei poimittu"
+          "value": "Ei näy päätöksessä"
         },
         {
           "label": "Tila",
@@ -144,7 +144,7 @@
         }
       ],
       "gaps": [
-        "Euromäärää tai määrää ei irronnut päätöstekstistä."
+        "Euromäärää tai määrää ei ole päätöstekstissä."
       ],
       "sources": [
         {
