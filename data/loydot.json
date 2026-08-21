@@ -9,8 +9,8 @@
       "kind": "peitto",
       "comparison": null,
       "title": "Hilma: hankintailmoitus ilman arvioitua arvoa (esimerkki)",
-      "teaser": "Julkisessa ilmoituksessa estimated_value on 0. Puuttuva tieto merkitään auki, ei arvata summaa.",
-      "summary": "Hilma-otoksessa suuri osa ilmoituksista tulee ilman käyttökelpoista hinta-arviota. Tämä kortti on tyyppiesimerkki: ilmoitus on julkinen, mutta arvo puuttuu aineistosta. Ei väitettä väärinkäytöstä: merkitään mitä ei voi päätellä.",
+      "teaser": "Julkisessa ilmoituksessa arvioitu hankinnan arvo puuttuu. Puuttuva tieto merkitään auki, ei arvata summaa.",
+      "summary": "Hilma-otoksessa suuri osa ilmoituksista tulee ilman käyttökelpoista hinta-arviota. Tämä kortti on tyyppiesimerkki: ilmoitus on julkinen, mutta arvioitu arvo puuttuu aineistosta. Ei väitettä väärinkäytöstä: merkitään mitä ei voi päätellä.",
       "actors": [
         "Kainuun sosiaali- ja terveydenhuollon kuntayhtymä"
       ],
@@ -25,8 +25,8 @@
           "value": "2021-088776"
         },
         {
-          "label": "Arvioitu arvo aineistossa",
-          "value": "0 (puuttuu / ei käyttökelpoinen)"
+          "label": "Arvioitu hankinnan arvo",
+          "value": "Puuttuu (aineistossa ei käyttökelpoista lukua)"
         },
         {
           "label": "Aihe",
