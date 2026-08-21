@@ -1,4 +1,5 @@
-/* Löydöt-listan suodatin + haku (staattinen HTML). */
+/* Löydöt-listan suodatin + haku (staattinen HTML).
+   Osoiterivi: vain polku (ei ?q= / ?kind=). Suodatin muistissa; vanhat ?kind=/# luetaan kerran. */
 (function () {
   function init() {
     var list = document.getElementById("find-list");
@@ -10,27 +11,29 @@
 
     var kind = "";
     var q = "";
+    var allowed = { raha: 1, hankinta: 1, ketju: 1, peitto: 1 };
+    var shortKind = { r: "raha", h: "hankinta", k: "ketju", p: "peitto" };
 
-    function paramsFromUrl() {
+    function kindFromUrl() {
       try {
         var u = new URL(window.location.href);
-        return {
-          kind: (u.searchParams.get("kind") || "").trim().toLowerCase(),
-          q: (u.searchParams.get("q") || "").trim(),
-        };
-      } catch (e) {
-        return { kind: "", q: "" };
-      }
+        var k = (u.searchParams.get("kind") || u.searchParams.get("k") || "").trim().toLowerCase();
+        if (shortKind[k]) k = shortKind[k];
+        if (k && allowed[k]) return k;
+        var hash = (u.hash || "").replace(/^#/, "").trim().toLowerCase();
+        if (shortKind[hash]) hash = shortKind[hash];
+        if (hash && allowed[hash]) return hash;
+      } catch (e) {}
+      return "";
     }
 
-    function writeUrl() {
+    /** Pidä osoiterivi lyhyenä: /sivut/loydot/ ilman queryä tai hashia. */
+    function cleanUrl() {
       try {
-        var u = new URL(window.location.href);
-        if (kind) u.searchParams.set("kind", kind);
-        else u.searchParams.delete("kind");
-        if (q) u.searchParams.set("q", q);
-        else u.searchParams.delete("q");
-        history.replaceState(null, "", u.pathname + u.search + u.hash);
+        var path = window.location.pathname || "/";
+        if (window.location.search || window.location.hash) {
+          history.replaceState(null, "", path);
+        }
       } catch (e) {}
     }
 
@@ -48,7 +51,6 @@
       });
       countEl.innerHTML = "<strong>" + shown + "</strong> löytöä";
       if (emptyEl) emptyEl.hidden = shown !== 0;
-      writeUrl();
     }
 
     function setChipActive() {
@@ -63,6 +65,7 @@
         kind = (btn.getAttribute("data-kind") || "").toLowerCase();
         setChipActive();
         apply();
+        cleanUrl();
       });
     });
 
@@ -70,18 +73,14 @@
       qEl.addEventListener("input", function () {
         q = (qEl.value || "").trim();
         apply();
+        cleanUrl();
       });
     }
 
-    var fromUrl = paramsFromUrl();
-    var allowed = { raha: 1, hankinta: 1, ketju: 1, peitto: 1 };
-    if (fromUrl.kind && allowed[fromUrl.kind]) kind = fromUrl.kind;
-    if (fromUrl.q) {
-      q = fromUrl.q;
-      if (qEl) qEl.value = q;
-    }
+    kind = kindFromUrl();
     setChipActive();
     apply();
+    cleanUrl();
   }
 
   if (document.readyState === "loading") {
