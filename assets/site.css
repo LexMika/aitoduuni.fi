@@ -603,6 +603,22 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   text-decoration: underline;
 }
 
+.summary-kind-context {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+  max-width: 42rem;
+}
+.summary-kind-context a {
+  color: var(--blue-hot);
+  text-decoration: none;
+}
+.summary-kind-context a:hover,
+.summary-kind-context a:focus-visible {
+  text-decoration: underline;
+}
+
 .fact-row {
   display: grid;
   gap: 0.35rem 1rem;
