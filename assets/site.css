@@ -590,6 +590,19 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   margin-top: 0.45rem;
 }
 
+.summary-glossary-link {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+.summary-glossary-link a {
+  color: var(--blue-hot);
+  text-decoration: none;
+}
+.summary-glossary-link a:hover,
+.summary-glossary-link a:focus-visible {
+  text-decoration: underline;
+}
+
 .fact-row {
   display: grid;
   gap: 0.35rem 1rem;
