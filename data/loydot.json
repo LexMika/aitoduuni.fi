@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T15:20:00+03:00",
-  "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10).",
+  "generated_at": "2026-08-22T15:02:11+03:00",
+  "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10). Satakunta-otoksia lisätty 22.8.",
   "findings": [
     {
       "id": "hilma-outlier-2023-118330",
@@ -2727,6 +2727,1044 @@
       "comparison": null,
       "gap_status": null,
       "updates": []
+    },
+    {
+      "id": "hilma-satakunta-2023117222",
+      "slug": "eurajoki-monitoimihalli",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Eurajoen kunta: Eurajoen monitoimihalli",
+      "teaser": "Hilma · arvioitu arvo 8 100 000,00 €. Eurajoen monitoimihalli",
+      "summary": "Hilma-ilmoitus 2023-117222 (Eurajoen kunta). Arvioitu arvo 8 100 000,00 €. CPV: 45000000 Rakennustyöt. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Eurajoen kunta"
+      ],
+      "y_tunnus": "0132322-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-117222"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Eurajoen kunta (Y 0132322-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "8 100 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "45000000 Rakennustyöt"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-117222",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-117222/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2023126685",
+      "slug": "rauma-uotilan-koulu",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Rauman kaupunki: Uotilan puukoulun ja -päiväkodin hankinta",
+      "teaser": "Hilma · arvioitu arvo 24 322 000,00 €. Uotilan puukoulun ja -päiväkodin hankinta",
+      "summary": "Hilma-ilmoitus 2023-126685 (Rauman kaupunki). Arvioitu arvo 24 322 000,00 €. CPV: 45000000 Rakennustyöt. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Rauman kaupunki"
+      ],
+      "y_tunnus": "0138780-9",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-126685"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Rauman kaupunki (Y 0138780-9)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "24 322 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "45000000 Rakennustyöt"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-126685",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126685/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2022105185",
+      "slug": "sastamala-mouhijarvi-koulu",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Sastamalan kaupunki: Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala",
+      "teaser": "Hilma · arvioitu arvo 9 000 000,00 €. Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala",
+      "summary": "Hilma-ilmoitus 2022-105185 (Sastamalan kaupunki). Arvioitu arvo 9 000 000,00 €. CPV: 45000000 Rakennustyöt. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Sastamalan kaupunki"
+      ],
+      "y_tunnus": "0144411-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-105185"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Sastamalan kaupunki (Y 0144411-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "9 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "45000000 Rakennustyöt"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-105185",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-105185/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2021082525",
+      "slug": "kankaanpaa-valaistusverkko",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Kankaanpään kaupunki: Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank…",
+      "teaser": "Hilma · arvioitu arvo 8 500 000,00 €. Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank",
+      "summary": "Hilma-ilmoitus 2021-082525 (Kankaanpään kaupunki). Arvioitu arvo 8 500 000,00 €. CPV: 50232000 Katuvalot. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Kankaanpään kaupunki"
+      ],
+      "y_tunnus": "0133596-1",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-082525"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Kankaanpään kaupunki (Y 0133596-1)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "8 500 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "50232000 Katuvalot"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-082525",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-082525/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2022113232",
+      "slug": "sathya-elintarvikkeet-dps",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Satakunnan hyvinvointialue: Elintarvikkeet (DPS)",
+      "teaser": "Hilma · arvioitu arvo 9 000 000,00 €. Elintarvikkeet (DPS)",
+      "summary": "Hilma-ilmoitus 2022-113232 (Satakunnan hyvinvointialue). Arvioitu arvo 9 000 000,00 €. CPV: 15000000 Elintarvikkeet. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Satakunnan hyvinvointialue"
+      ],
+      "y_tunnus": "3221304-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-113232"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Satakunnan hyvinvointialue (Y 3221304-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "9 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "15000000 Elintarvikkeet"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-113232",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-113232/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2020058861",
+      "slug": "jamijarvi-koulu-kvr",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Jämijärven kunta: Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken…",
+      "teaser": "Hilma · arvioitu arvo 10 500 000,00 €. Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja r",
+      "summary": "Hilma-ilmoitus 2020-058861 (Jämijärven kunta). Arvioitu arvo 10 500 000,00 €. CPV: 45000000 Rakennustyöt. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Jämijärven kunta"
+      ],
+      "y_tunnus": "0133127-4",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-058861"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Jämijärven kunta (Y 0133127-4)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "10 500 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "45000000 Rakennustyöt"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-058861",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-058861/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2021066024",
+      "slug": "pori-perusturva-yhteistoiminta",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Pori · perusturvan yhteistoiminta-alue: Lastensuojelun avohuollon ja sosiaalihuollon palvelut",
+      "teaser": "Hilma · arvioitu arvo 13 500 000,00 €. Lastensuojelun avohuollon ja sosiaalihuollon palvelut",
+      "summary": "Hilma-ilmoitus 2021-066024 (Pori · perusturvan yhteistoiminta-alue). Arvioitu arvo 13 500 000,00 €. CPV: 85312000 Sosiaalityön avopalvelut. Julkinen hankintailmoitus — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Pori · perusturvan yhteistoiminta-alue"
+      ],
+      "y_tunnus": "0137323-9",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-066024"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pori · perusturvan yhteistoiminta-alue (Y 0137323-9)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "13 500 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "85312000 Sosiaalityön avopalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-066024",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-066024/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/search_*top25_pages2.jsonl#satakunta_harvest_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2019000230",
+      "slug": "pori-palveluasuminen",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Porin kaupunki: Ikääntyneiden tehostettu palveluasuminen Porin perusturvan yhteistoiminta-al…",
+      "teaser": "Satakunta · Hilma · 98 000 000,00 €. Ikääntyneiden tehostettu palveluasuminen Porin perusturvan yhteis",
+      "summary": "Hilma-ilmoitus 2019-000230 (Porin kaupunki). Arvioitu arvo 98 000 000,00 €. CPV: 85144000 Hoitokotipalvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Porin kaupunki"
+      ],
+      "y_tunnus": "0137323-9",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2019-000230"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Porin kaupunki (Y 0137323-9)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "98 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "85144000 Hoitokotipalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2019-000230",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2019-000230/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2022095903",
+      "slug": "eurajoki-elintarvike",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Eurajoen kunta: Eurajoen kunnan elintarvikehankinta 2022-2024",
+      "teaser": "Satakunta · Hilma · 3 075 000,00 €. Eurajoen kunnan elintarvikehankinta 2022-2024",
+      "summary": "Hilma-ilmoitus 2022-095903 (Eurajoen kunta). Arvioitu arvo 3 075 000,00 €. CPV: 15000000 Elintarvikkeet. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Eurajoen kunta"
+      ],
+      "y_tunnus": "0132322-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-095903"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Eurajoen kunta (Y 0132322-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "3 075 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "15000000 Elintarvikkeet"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-095903",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-095903/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2019026203",
+      "slug": "huittinen-uusi-koulu",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Huittisten kaupunki: Huittisten uusi koulu",
+      "teaser": "Satakunta · Hilma · 11 000 000,00 €. Huittisten uusi koulu",
+      "summary": "Hilma-ilmoitus 2019-026203 (Huittisten kaupunki). Arvioitu arvo 11 000 000,00 €. CPV: 45000000 Rakennustyöt. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Huittisten kaupunki"
+      ],
+      "y_tunnus": "0203762-4",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2019-026203"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Huittisten kaupunki (Y 0203762-4)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "11 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "45000000 Rakennustyöt"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2019-026203",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2019-026203/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2020053280",
+      "slug": "eura-kuljetukset",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Euran kunta: Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite…",
+      "teaser": "Satakunta · Hilma · 2 600 000,00 €. Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sek",
+      "summary": "Hilma-ilmoitus 2020-053280 (Euran kunta). Arvioitu arvo 2 600 000,00 €. CPV: 60000000 Kuljetuspalvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Euran kunta"
+      ],
+      "y_tunnus": "0132239-4",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-053280"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Euran kunta (Y 0132239-4)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "2 600 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "60000000 Kuljetuspalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-053280",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-053280/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2021077609",
+      "slug": "ulvila-vakuutukset",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Ulvilan kaupunki: Vakuutusten hankinta",
+      "teaser": "Satakunta · Hilma · 6 000 000,00 €. Vakuutusten hankinta",
+      "summary": "Hilma-ilmoitus 2021-077609 (Ulvilan kaupunki). Arvioitu arvo 6 000 000,00 €. CPV: 66000000 Rahoitus- ja vakuutuspalvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Ulvilan kaupunki"
+      ],
+      "y_tunnus": "0204910-7",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-077609"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Ulvilan kaupunki (Y 0204910-7)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "6 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "66000000 Rahoitus- ja vakuutuspalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-077609",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-077609/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2023132036",
+      "slug": "nakkila-yhtenaiskoulu",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Nakkilan kunta: Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut",
+      "teaser": "Satakunta · Hilma · 600 000,00 €. Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvont",
+      "summary": "Hilma-ilmoitus 2023-132036 (Nakkilan kunta). Arvioitu arvo 600 000,00 €. CPV: 71500000 Rakentamiseen liittyvät palvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Nakkilan kunta"
+      ],
+      "y_tunnus": "0135662-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-132036"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Nakkilan kunta (Y 0135662-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "600 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "71500000 Rakentamiseen liittyvät palvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-132036",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-132036/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2023125001",
+      "slug": "harjavalta-nakkila-sahko",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Harjavalta: Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpailutus",
+      "teaser": "Satakunta · Hilma · 1 100 000,00 €. Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpail",
+      "summary": "Hilma-ilmoitus 2023-125001 (Harjavalta). Arvioitu arvo 1 100 000,00 €. CPV: 09300000 Sähköenergia. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Harjavalta"
+      ],
+      "y_tunnus": "0132585-1",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-125001"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Harjavalta (Y 0132585-1)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "1 100 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "09300000 Sähköenergia"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-125001",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-125001/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2020042699",
+      "slug": "pomarkku-koulukuljetukset",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Pomarkun kunta: Pomarkun koulukuljetukset reitit 1 - 8",
+      "teaser": "Satakunta · Hilma · 1 000 000,00 €. Pomarkun koulukuljetukset reitit 1 - 8",
+      "summary": "Hilma-ilmoitus 2020-042699 (Pomarkun kunta). Arvioitu arvo 1 000 000,00 €. CPV: 60112000 Joukkoliikennepalvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Pomarkun kunta"
+      ],
+      "y_tunnus": "0136610-0",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-042699"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pomarkun kunta (Y 0136610-0)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "1 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "60112000 Joukkoliikennepalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-042699",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-042699/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2019019443",
+      "slug": "sakyla-tyoterveys",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Säkylän kunta: Työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa",
+      "teaser": "Satakunta · Hilma · 3 000 000,00 €. Työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa",
+      "summary": "Hilma-ilmoitus 2019-019443 (Säkylän kunta). Arvioitu arvo 3 000 000,00 €. CPV: 85141000 Sairaanhoitohenkilöstön palvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Säkylän kunta"
+      ],
+      "y_tunnus": "0139937-5",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2019-019443"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Säkylän kunta (Y 0139937-5)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "3 000 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "85141000 Sairaanhoitohenkilöstön palvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2019-019443",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2019-019443/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2021065350",
+      "slug": "merikarvia-silakan-lajittelu",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Merikarvian kunta: Silakan lajittelukone Krookkaan",
+      "teaser": "Satakunta · Hilma · 80 000,00 €. Silakan lajittelukone Krookkaan",
+      "summary": "Hilma-ilmoitus 2021-065350 (Merikarvian kunta). Arvioitu arvo 80 000,00 €. CPV: 30132300 Lajittelijat. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Merikarvian kunta"
+      ],
+      "y_tunnus": "0135202-4",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-065350"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Merikarvian kunta (Y 0135202-4)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "80 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "30132300 Lajittelijat"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-065350",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-065350/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-satakunta-2022108870",
+      "slug": "karvia-talvikunnossapito",
+      "found_at": "2026-08-22",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Karvian kunta: Talvikunnossapito",
+      "teaser": "Satakunta · Hilma · 260 000,00 €. Talvikunnossapito",
+      "summary": "Hilma-ilmoitus 2022-108870 (Karvian kunta). Arvioitu arvo 260 000,00 €. CPV: 70000000 Kiinteistöpalvelut. Julkinen hankintailmoitus Satakunnasta — ei väitettä hankinnan oikeellisuudesta.",
+      "actors": [
+        "Karvian kunta"
+      ],
+      "y_tunnus": "0133735-0",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-108870"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Karvian kunta (Y 0133735-0)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "260 000,00 €"
+        },
+        {
+          "label": "CPV",
+          "value": "70000000 Kiinteistöpalvelut"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-108870",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-108870/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_harvest_r2_20260822"
+    },
+    {
+      "id": "hilma-haku-siikainen-tyhja",
+      "slug": "hilma-haku-siikainen-tyhja",
+      "found_at": "2026-08-22",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Hilma: haku “Siikaisen kunta” ei tuottanut ilmoituksia",
+      "teaser": "Satakunta · organisaationimellä haettiin Hilmaan. Osumia ei tullut.",
+      "summary": "Seed-haku Hilmaan nimellä “Siikaisen kunta” ei tuottanut ilmoituksia. Haku tehtiin; jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Siikaisen kunta"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Hakusana",
+          "value": "Siikaisen kunta"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt hankintailmoituksia."
+      ],
+      "sources": [
+        {
+          "label": "Hilma · toista haku",
+          "url": "https://www.hankintailmoitukset.fi/fi/",
+          "kind": "Hilma",
+          "target": "Hilma · haku “Siikaisen kunta”",
+          "find_hint_lines": [
+            "hankintailmoitukset.fi → Hae hankintoja → syötä “Siikaisen kunta”.",
+            "Odotettu tulos: ei osumia. Haku tehtiin — tämä on havainto, ei virhe."
+          ]
+        },
+        {
+          "label": "Puuttuva tieto · tyhjät haut (kooste)",
+          "url": "../../../sivut/peito/",
+          "kind": "Kooste",
+          "role": "human"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_empty_20260822"
+    },
+    {
+      "id": "hilma-haku-punkalaidun-tyhja",
+      "slug": "hilma-haku-punkalaidun-tyhja",
+      "found_at": "2026-08-22",
+      "kind": "peitto",
+      "comparison": null,
+      "gap_status": "auki",
+      "updates": [],
+      "title": "Hilma: haku “Punkalaidun kunta” ei tuottanut ilmoituksia",
+      "teaser": "Satakunta · organisaationimellä haettiin Hilmaan. Osumia ei tullut.",
+      "summary": "Seed-haku Hilmaan nimellä “Punkalaidun kunta” ei tuottanut ilmoituksia. Haku tehtiin; jos myöhemmin löytyy, kortti päivittyy.",
+      "actors": [
+        "Punkalaidun kunta"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Hakusana",
+          "value": "Punkalaidun kunta"
+        },
+        {
+          "label": "Tulos",
+          "value": "Ei osumia"
+        },
+        {
+          "label": "Alue",
+          "value": "Satakunta"
+        },
+        {
+          "label": "Tila",
+          "value": "Auki (ei vielä löytynyt)"
+        }
+      ],
+      "gaps": [
+        "Tällä haulla ei löytynyt hankintailmoituksia."
+      ],
+      "sources": [
+        {
+          "label": "Hilma · toista haku",
+          "url": "https://www.hankintailmoitukset.fi/fi/",
+          "kind": "Hilma",
+          "target": "Hilma · haku “Punkalaidun kunta”",
+          "find_hint_lines": [
+            "hankintailmoitukset.fi → Hae hankintoja → syötä “Punkalaidun kunta”.",
+            "Odotettu tulos: ei osumia. Haku tehtiin — tämä on havainto, ei virhe."
+          ]
+        },
+        {
+          "label": "Puuttuva tieto · tyhjät haut (kooste)",
+          "url": "../../../sivut/peito/",
+          "kind": "Kooste",
+          "role": "human"
+        }
+      ],
+      "jalostus_ref": "data/raw/hilma/#satakunta_empty_20260822"
     }
   ]
 }
