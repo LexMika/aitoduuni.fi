@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20260822e">
+<link rel="stylesheet" href="../../assets/site.css?v=20260822f">
 <link rel="icon" href="../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
@@ -44,13 +44,24 @@
   </ul>
 </div>
 <div class="find-tools" id="find-tools">
-  <p class="find-count" id="find-count" aria-live="polite"><strong>75</strong> löytöä</p>
+  <p class="find-count" id="find-count" aria-live="polite"><strong>84</strong> löytöä</p>
   <div class="find-chips" role="group" aria-label="Suodata kategorialla">
     <button type="button" class="find-chip is-active" data-kind="">Kaikki</button>
     <button type="button" class="find-chip" data-kind="raha">Raha</button>
     <button type="button" class="find-chip" data-kind="hankinta">Hankinta</button>
     <button type="button" class="find-chip" data-kind="ketju">Ketju</button>
     <button type="button" class="find-chip" data-kind="peitto">Puuttuva tieto</button>
+  </div>
+  <div class="find-sort-row">
+    <span class="find-sort-label" id="find-sort-label">Järjestä</span>
+    <div class="find-chips find-sort" role="group" aria-labelledby="find-sort-label">
+      <button type="button" class="find-chip find-sort-chip is-active" data-sort="newest">Uusin</button>
+      <button type="button" class="find-chip find-sort-chip" data-sort="oldest">Vanhin</button>
+      <button type="button" class="find-chip find-sort-chip" data-sort="largest">Isoin</button>
+      <button type="button" class="find-chip find-sort-chip" data-sort="smallest">Pienin</button>
+      <button type="button" class="find-chip find-sort-chip" data-sort="az">A–Ö</button>
+      <button type="button" class="find-chip find-sort-chip" data-sort="za">Ö–A</button>
+    </div>
   </div>
   <label class="find-search-label" for="find-q">Haku
     <input type="search" id="find-q" class="find-search" placeholder="Otsikko tai tiivistelmä…" autocomplete="off">
@@ -59,462 +70,600 @@
 <p class="find-empty" id="find-empty" hidden>Ei osumia tällä suodattimella.</p>
 <section class="find-list" id="find-list">
 
-<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen monitoimihalli hilma · arvioitu arvo 8 100 000,00 €. eurajoen monitoimihalli hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="eurajoki-monitoimihalli/">Eurajoen kunta: Eurajoen monitoimihalli</a></h3>
-  <p>Hilma · arvioitu arvo 8 100 000,00 €. Eurajoen monitoimihalli</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="rauman kaupunki: uotilan puukoulun ja -päiväkodin hankinta hilma · arvioitu arvo 24 322 000,00 €. uotilan puukoulun ja -päiväkodin hankinta hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="rauma-uotilan-koulu/">Rauman kaupunki: Uotilan puukoulun ja -päiväkodin hankinta</a></h3>
-  <p>Hilma · arvioitu arvo 24 322 000,00 €. Uotilan puukoulun ja -päiväkodin hankinta</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="sastamalan kaupunki: mouhijärven yhteiskoulu, uudisrakennus - sastamala hilma · arvioitu arvo 9 000 000,00 €. mouhijärven yhteiskoulu, uudisrakennus - sastamala hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="sastamala-mouhijarvi-koulu/">Sastamalan kaupunki: Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala</a></h3>
-  <p>Hilma · arvioitu arvo 9 000 000,00 €. Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="kankaanpään kaupunki: kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank… hilma · arvioitu arvo 8 500 000,00 €. kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="kankaanpaa-valaistusverkko/">Kankaanpään kaupunki: Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank…</a></h3>
-  <p>Hilma · arvioitu arvo 8 500 000,00 €. Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="satakunnan hyvinvointialue: elintarvikkeet (dps) hilma · arvioitu arvo 9 000 000,00 €. elintarvikkeet (dps) hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="sathya-elintarvikkeet-dps/">Satakunnan hyvinvointialue: Elintarvikkeet (DPS)</a></h3>
-  <p>Hilma · arvioitu arvo 9 000 000,00 €. Elintarvikkeet (DPS)</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="jämijärven kunta: jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken… hilma · arvioitu arvo 10 500 000,00 €. jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja r hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="jamijarvi-koulu-kvr/">Jämijärven kunta: Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken…</a></h3>
-  <p>Hilma · arvioitu arvo 10 500 000,00 €. Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja r</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="pori · perusturvan yhteistoiminta-alue: lastensuojelun avohuollon ja sosiaalihuollon palvelut hilma · arvioitu arvo 13 500 000,00 €. lastensuojelun avohuollon ja sosiaalihuollon palvelut hankinta">
-  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Hankinta</p>
-  <h3><a href="pori-perusturva-yhteistoiminta/">Pori · perusturvan yhteistoiminta-alue: Lastensuojelun avohuollon ja sosiaalihuollon palvelut</a></h3>
-  <p>Hilma · arvioitu arvo 13 500 000,00 €. Lastensuojelun avohuollon ja sosiaalihuollon palvelut</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="porin kaupunki: ikääntyneiden tehostettu palveluasuminen porin perusturvan yhteistoiminta-al… satakunta · hilma · 98 000 000,00 €. ikääntyneiden tehostettu palveluasuminen porin perusturvan yhteis hankinta">
+<article class="find-item" data-kind="hankinta" data-search="porin kaupunki: ikääntyneiden tehostettu palveluasuminen porin perusturvan yhteistoiminta-al… satakunta · hilma · 98 000 000,00 €. ikääntyneiden tehostettu palveluasuminen porin perusturvan yhteis hankinta"
+  data-found-at="2026-08-22" data-title="porin kaupunki: ikääntyneiden tehostettu palveluasuminen porin perusturvan yhteistoiminta-al…" data-value="98000000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
   <h3><a href="pori-palveluasuminen/">Porin kaupunki: Ikääntyneiden tehostettu palveluasuminen Porin perusturvan yhteistoiminta-al…</a></h3>
   <p>Satakunta · Hilma · 98 000 000,00 €. Ikääntyneiden tehostettu palveluasuminen Porin perusturvan yhteis</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen kunnan elintarvikehankinta 2022-2024 satakunta · hilma · 3 075 000,00 €. eurajoen kunnan elintarvikehankinta 2022-2024 hankinta">
+<article class="find-item" data-kind="hankinta" data-search="satakunnan hyvinvointialue: tietopyyntö/markkinakartoitus: vammaisten asumispalvelut satakunta · hilma · 45 000 000,00 €. tietopyyntö/markkinakartoitus: vammaisten asumispalvelut hankinta"
+  data-found-at="2026-08-22" data-title="satakunnan hyvinvointialue: tietopyyntö/markkinakartoitus: vammaisten asumispalvelut" data-value="45000000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="eurajoki-elintarvike/">Eurajoen kunta: Eurajoen kunnan elintarvikehankinta 2022-2024</a></h3>
-  <p>Satakunta · Hilma · 3 075 000,00 €. Eurajoen kunnan elintarvikehankinta 2022-2024</p>
+  <h3><a href="sathya-asumispalvelut/">Satakunnan hyvinvointialue: Tietopyyntö/Markkinakartoitus: Vammaisten asumispalvelut</a></h3>
+  <p>Satakunta · Hilma · 45 000 000,00 €. Tietopyyntö/Markkinakartoitus: Vammaisten asumispalvelut</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="huittisten kaupunki: huittisten uusi koulu satakunta · hilma · 11 000 000,00 €. huittisten uusi koulu hankinta">
+<article class="find-item" data-kind="hankinta" data-search="porin kaupunki: isomäen palloiluhallihanke satakunta · hilma · 25 000 000,00 €. isomäen palloiluhallihanke hankinta"
+  data-found-at="2026-08-22" data-title="porin kaupunki: isomäen palloiluhallihanke" data-value="25000000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="pori-isomaen-palloiluhalli/">Porin kaupunki: Isomäen palloiluhallihanke</a></h3>
+  <p>Satakunta · Hilma · 25 000 000,00 €. Isomäen palloiluhallihanke</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="rauman kaupunki: uotilan puukoulun ja -päiväkodin hankinta hilma · arvioitu arvo 24 322 000,00 €. uotilan puukoulun ja -päiväkodin hankinta hankinta"
+  data-found-at="2026-08-22" data-title="rauman kaupunki: uotilan puukoulun ja -päiväkodin hankinta" data-value="24322000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="rauma-uotilan-koulu/">Rauman kaupunki: Uotilan puukoulun ja -päiväkodin hankinta</a></h3>
+  <p>Hilma · arvioitu arvo 24 322 000,00 €. Uotilan puukoulun ja -päiväkodin hankinta</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="pori · perusturvan yhteistoiminta-alue: lastensuojelun avohuollon ja sosiaalihuollon palvelut hilma · arvioitu arvo 13 500 000,00 €. lastensuojelun avohuollon ja sosiaalihuollon palvelut hankinta"
+  data-found-at="2026-08-22" data-title="pori · perusturvan yhteistoiminta-alue: lastensuojelun avohuollon ja sosiaalihuollon palvelut" data-value="13500000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="pori-perusturva-yhteistoiminta/">Pori · perusturvan yhteistoiminta-alue: Lastensuojelun avohuollon ja sosiaalihuollon palvelut</a></h3>
+  <p>Hilma · arvioitu arvo 13 500 000,00 €. Lastensuojelun avohuollon ja sosiaalihuollon palvelut</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="porin kaupunki: vähärauman koulun rakentaminen satakunta · hilma · 11 800 000,00 €. vähärauman koulun rakentaminen hankinta"
+  data-found-at="2026-08-22" data-title="porin kaupunki: vähärauman koulun rakentaminen" data-value="11800000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="pori-vaharamaa-koulu/">Porin kaupunki: Vähärauman koulun rakentaminen</a></h3>
+  <p>Satakunta · Hilma · 11 800 000,00 €. Vähärauman koulun rakentaminen</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="satakunnan hyvinvointialue: kotihoidon ateriapalvelut satakunta · hilma · 11 500 000,00 €. kotihoidon ateriapalvelut hankinta"
+  data-found-at="2026-08-22" data-title="satakunnan hyvinvointialue: kotihoidon ateriapalvelut" data-value="11500000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="sathya-kotihoito-ateria/">Satakunnan hyvinvointialue: Kotihoidon ateriapalvelut</a></h3>
+  <p>Satakunta · Hilma · 11 500 000,00 €. Kotihoidon ateriapalvelut</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="huittisten kaupunki: huittisten uusi koulu satakunta · hilma · 11 000 000,00 €. huittisten uusi koulu hankinta"
+  data-found-at="2026-08-22" data-title="huittisten kaupunki: huittisten uusi koulu" data-value="11000000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
   <h3><a href="huittinen-uusi-koulu/">Huittisten kaupunki: Huittisten uusi koulu</a></h3>
   <p>Satakunta · Hilma · 11 000 000,00 €. Huittisten uusi koulu</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="euran kunta: vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite… satakunta · hilma · 2 600 000,00 €. vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sek hankinta">
+<article class="find-item" data-kind="hankinta" data-search="jämijärven kunta: jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken… hilma · arvioitu arvo 10 500 000,00 €. jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja r hankinta"
+  data-found-at="2026-08-22" data-title="jämijärven kunta: jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken…" data-value="10500000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="eura-kuljetukset/">Euran kunta: Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite…</a></h3>
-  <p>Satakunta · Hilma · 2 600 000,00 €. Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sek</p>
+  <h3><a href="jamijarvi-koulu-kvr/">Jämijärven kunta: Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja raken…</a></h3>
+  <p>Hilma · arvioitu arvo 10 500 000,00 €. Jämijärven kunnan sivistystoimen koulun ja päiväkodin suunnittelu ja r</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="ulvilan kaupunki: vakuutusten hankinta satakunta · hilma · 6 000 000,00 €. vakuutusten hankinta hankinta">
+<article class="find-item" data-kind="hankinta" data-search="sastamalan kaupunki: koulukuljetukset, sastamala satakunta · hilma · 10 000 000,00 €. koulukuljetukset, sastamala hankinta"
+  data-found-at="2026-08-22" data-title="sastamalan kaupunki: koulukuljetukset, sastamala" data-value="10000000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="sastamala-koulukuljetukset/">Sastamalan kaupunki: Koulukuljetukset, Sastamala</a></h3>
+  <p>Satakunta · Hilma · 10 000 000,00 €. Koulukuljetukset, Sastamala</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="sastamalan kaupunki: mouhijärven yhteiskoulu, uudisrakennus - sastamala hilma · arvioitu arvo 9 000 000,00 €. mouhijärven yhteiskoulu, uudisrakennus - sastamala hankinta"
+  data-found-at="2026-08-22" data-title="sastamalan kaupunki: mouhijärven yhteiskoulu, uudisrakennus - sastamala" data-value="9000000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="sastamala-mouhijarvi-koulu/">Sastamalan kaupunki: Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala</a></h3>
+  <p>Hilma · arvioitu arvo 9 000 000,00 €. Mouhijärven Yhteiskoulu, uudisrakennus - Sastamala</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="satakunnan hyvinvointialue: elintarvikkeet (dps) hilma · arvioitu arvo 9 000 000,00 €. elintarvikkeet (dps) hankinta"
+  data-found-at="2026-08-22" data-title="satakunnan hyvinvointialue: elintarvikkeet (dps)" data-value="9000000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="sathya-elintarvikkeet-dps/">Satakunnan hyvinvointialue: Elintarvikkeet (DPS)</a></h3>
+  <p>Hilma · arvioitu arvo 9 000 000,00 €. Elintarvikkeet (DPS)</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="kankaanpään kaupunki: kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank… hilma · arvioitu arvo 8 500 000,00 €. kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank hankinta"
+  data-found-at="2026-08-22" data-title="kankaanpään kaupunki: kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank…" data-value="8500000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="kankaanpaa-valaistusverkko/">Kankaanpään kaupunki: Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank…</a></h3>
+  <p>Hilma · arvioitu arvo 8 500 000,00 €. Kankaanpään kaupungin valaistusverkon myynti ja valaistuspalvelun hank</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen monitoimihalli hilma · arvioitu arvo 8 100 000,00 €. eurajoen monitoimihalli hankinta"
+  data-found-at="2026-08-22" data-title="eurajoen kunta: eurajoen monitoimihalli" data-value="8100000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="eurajoki-monitoimihalli/">Eurajoen kunta: Eurajoen monitoimihalli</a></h3>
+  <p>Hilma · arvioitu arvo 8 100 000,00 €. Eurajoen monitoimihalli</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="ulvilan kaupunki: vakuutusten hankinta satakunta · hilma · 6 000 000,00 €. vakuutusten hankinta hankinta"
+  data-found-at="2026-08-22" data-title="ulvilan kaupunki: vakuutusten hankinta" data-value="6000000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
   <h3><a href="ulvila-vakuutukset/">Ulvilan kaupunki: Vakuutusten hankinta</a></h3>
   <p>Satakunta · Hilma · 6 000 000,00 €. Vakuutusten hankinta</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="nakkilan kunta: nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut satakunta · hilma · 600 000,00 €. nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvont hankinta">
+<article class="find-item" data-kind="hankinta" data-search="euran kunta: eura kerrostalo as oy pronssikartano satakunta · hilma · 5 500 000,00 €. eura kerrostalo as oy pronssikartano hankinta"
+  data-found-at="2026-08-22" data-title="euran kunta: eura kerrostalo as oy pronssikartano" data-value="5500000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="nakkila-yhtenaiskoulu/">Nakkilan kunta: Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut</a></h3>
-  <p>Satakunta · Hilma · 600 000,00 €. Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvont</p>
+  <h3><a href="eura-pronssikartano/">Euran kunta: Eura kerrostalo As Oy Pronssikartano</a></h3>
+  <p>Satakunta · Hilma · 5 500 000,00 €. Eura kerrostalo As Oy Pronssikartano</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="harjavalta: harjavallan kaupungin ja nakkilan kunnan sähkön hankinnan kilpailutus satakunta · hilma · 1 100 000,00 €. harjavallan kaupungin ja nakkilan kunnan sähkön hankinnan kilpail hankinta">
+<article class="find-item" data-kind="hankinta" data-search="porin kaupunki: päällystysurakka vuosina 2021 - 2022 + mahdollinen 1 optiovuosi satakunta · hilma · 5 500 000,00 €. päällystysurakka vuosina 2021 - 2022 + mahdollinen 1 optiovuosi hankinta"
+  data-found-at="2026-08-22" data-title="porin kaupunki: päällystysurakka vuosina 2021 - 2022 + mahdollinen 1 optiovuosi" data-value="5500000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="harjavalta-nakkila-sahko/">Harjavalta: Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpailutus</a></h3>
-  <p>Satakunta · Hilma · 1 100 000,00 €. Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpail</p>
+  <h3><a href="pori-paallystysurakka/">Porin kaupunki: Päällystysurakka vuosina 2021 - 2022 + mahdollinen 1 optiovuosi</a></h3>
+  <p>Satakunta · Hilma · 5 500 000,00 €. Päällystysurakka vuosina 2021 - 2022 + mahdollinen 1 optiovuosi</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="pomarkun kunta: pomarkun koulukuljetukset reitit 1 - 8 satakunta · hilma · 1 000 000,00 €. pomarkun koulukuljetukset reitit 1 - 8 hankinta">
+<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen kunnan elintarvikehankinta 2022-2024 satakunta · hilma · 3 075 000,00 €. eurajoen kunnan elintarvikehankinta 2022-2024 hankinta"
+  data-found-at="2026-08-22" data-title="eurajoen kunta: eurajoen kunnan elintarvikehankinta 2022-2024" data-value="3075000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="pomarkku-koulukuljetukset/">Pomarkun kunta: Pomarkun koulukuljetukset reitit 1 - 8</a></h3>
-  <p>Satakunta · Hilma · 1 000 000,00 €. Pomarkun koulukuljetukset reitit 1 - 8</p>
+  <h3><a href="eurajoki-elintarvike/">Eurajoen kunta: Eurajoen kunnan elintarvikehankinta 2022-2024</a></h3>
+  <p>Satakunta · Hilma · 3 075 000,00 €. Eurajoen kunnan elintarvikehankinta 2022-2024</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="säkylän kunta: työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa satakunta · hilma · 3 000 000,00 €. työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa hankinta">
+<article class="find-item" data-kind="hankinta" data-search="säkylän kunta: työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa satakunta · hilma · 3 000 000,00 €. työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa hankinta"
+  data-found-at="2026-08-22" data-title="säkylän kunta: työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa" data-value="3000000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
   <h3><a href="sakyla-tyoterveys/">Säkylän kunta: Työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa</a></h3>
   <p>Satakunta · Hilma · 3 000 000,00 €. Työterveyspalvelujen kehittävä kumppanuus ja liiketoimintakauppa</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="merikarvian kunta: silakan lajittelukone krookkaan satakunta · hilma · 80 000,00 €. silakan lajittelukone krookkaan hankinta">
+<article class="find-item" data-kind="hankinta" data-search="euran kunta: vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite… satakunta · hilma · 2 600 000,00 €. vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sek hankinta"
+  data-found-at="2026-08-22" data-title="euran kunta: vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite…" data-value="2600000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
-  <h3><a href="merikarvia-silakan-lajittelu/">Merikarvian kunta: Silakan lajittelukone Krookkaan</a></h3>
-  <p>Satakunta · Hilma · 80 000,00 €. Silakan lajittelukone Krookkaan</p>
+  <h3><a href="eura-kuljetukset/">Euran kunta: Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sekä muut määrite…</a></h3>
+  <p>Satakunta · Hilma · 2 600 000,00 €. Vammaispalvelulain ja sosiaalihuoltolain mukaiset kuljetukset sek</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="karvian kunta: talvikunnossapito satakunta · hilma · 260 000,00 €. talvikunnossapito hankinta">
+<article class="find-item" data-kind="hankinta" data-search="harjavalta: harjavallan kaupungin ja nakkilan kunnan sähkön hankinnan kilpailutus satakunta · hilma · 1 100 000,00 €. harjavallan kaupungin ja nakkilan kunnan sähkön hankinnan kilpail hankinta"
+  data-found-at="2026-08-22" data-title="harjavalta: harjavallan kaupungin ja nakkilan kunnan sähkön hankinnan kilpailutus" data-value="1100000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="harjavalta-nakkila-sahko/">Harjavalta: Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpailutus</a></h3>
+  <p>Satakunta · Hilma · 1 100 000,00 €. Harjavallan kaupungin ja Nakkilan kunnan sähkön hankinnan kilpail</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="pomarkun kunta: pomarkun koulukuljetukset reitit 1 - 8 satakunta · hilma · 1 000 000,00 €. pomarkun koulukuljetukset reitit 1 - 8 hankinta"
+  data-found-at="2026-08-22" data-title="pomarkun kunta: pomarkun koulukuljetukset reitit 1 - 8" data-value="1000000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="pomarkku-koulukuljetukset/">Pomarkun kunta: Pomarkun koulukuljetukset reitit 1 - 8</a></h3>
+  <p>Satakunta · Hilma · 1 000 000,00 €. Pomarkun koulukuljetukset reitit 1 - 8</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen kunnan alueurakka 2021-2023 satakunta · hilma · 900 000,00 €. eurajoen kunnan alueurakka 2021-2023 hankinta"
+  data-found-at="2026-08-22" data-title="eurajoen kunta: eurajoen kunnan alueurakka 2021-2023" data-value="900000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="eurajoki-alueurakka/">Eurajoen kunta: Eurajoen kunnan alueurakka 2021-2023</a></h3>
+  <p>Satakunta · Hilma · 900 000,00 €. Eurajoen kunnan alueurakka 2021-2023</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="nakkilan kunta: nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut satakunta · hilma · 600 000,00 €. nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvont hankinta"
+  data-found-at="2026-08-22" data-title="nakkilan kunta: nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut" data-value="600000.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="nakkila-yhtenaiskoulu/">Nakkilan kunta: Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvontapalvelut</a></h3>
+  <p>Satakunta · Hilma · 600 000,00 €. Nakkilan uusi yhtenäiskoulu, johtamis-, rakennuttamis- ja valvont</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="karvian kunta: talvikunnossapito satakunta · hilma · 260 000,00 €. talvikunnossapito hankinta"
+  data-found-at="2026-08-22" data-title="karvian kunta: talvikunnossapito" data-value="260000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Hankinta</p>
   <h3><a href="karvia-talvikunnossapito/">Karvian kunta: Talvikunnossapito</a></h3>
   <p>Satakunta · Hilma · 260 000,00 €. Talvikunnossapito</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “siikaisen kunta” ei tuottanut ilmoituksia satakunta · organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
+<article class="find-item" data-kind="hankinta" data-search="merikarvian kunta: silakan lajittelukone krookkaan satakunta · hilma · 80 000,00 €. silakan lajittelukone krookkaan hankinta"
+  data-found-at="2026-08-22" data-title="merikarvian kunta: silakan lajittelukone krookkaan" data-value="80000.0">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
-    · Puuttuva tieto</p>
-  <h3><a href="hilma-haku-siikainen-tyhja/">Hilma: haku “Siikaisen kunta” ei tuottanut ilmoituksia</a></h3>
-  <p>Satakunta · organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
+    · Hankinta</p>
+  <h3><a href="merikarvia-silakan-lajittelu/">Merikarvian kunta: Silakan lajittelukone Krookkaan</a></h3>
+  <p>Satakunta · Hilma · 80 000,00 €. Silakan lajittelukone Krookkaan</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “punkalaidun kunta” ei tuottanut ilmoituksia satakunta · organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
+<article class="find-item" data-kind="hankinta" data-search="eurajoen kunta: eurajoen monitoimihallin suunnitteluhanke - lviaj-suunnittelu satakunta · hilma · 0,00 €. eurajoen monitoimihallin suunnitteluhanke - lviaj-suunnittelu hankinta"
+  data-found-at="2026-08-22" data-title="eurajoen kunta: eurajoen monitoimihallin suunnitteluhanke - lviaj-suunnittelu" data-value="0.0">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
+    · Hankinta</p>
+  <h3><a href="eurajoki-monitoimihalli-suunnittelu/">Eurajoen kunta: Eurajoen monitoimihallin suunnitteluhanke - LVIAJ-suunnittelu</a></h3>
+  <p>Satakunta · Hilma · 0,00 €. Eurajoen monitoimihallin suunnitteluhanke - LVIAJ-suunnittelu</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “punkalaidun kunta” ei tuottanut ilmoituksia satakunta · organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-22" data-title="hilma: haku “punkalaidun kunta” ei tuottanut ilmoituksia">
   <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Puuttuva tieto</p>
   <h3><a href="hilma-haku-punkalaidun-tyhja/">Hilma: haku “Punkalaidun kunta” ei tuottanut ilmoituksia</a></h3>
   <p>Satakunta · organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="geologian tutkimuskeskus: johtamisen ja kehittämisen konsultointi 2021-2025 (dps) arvioitu arvo noin 260.87× cpv-mediaania (n=14). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2023118330/">Geologian tutkimuskeskus: Johtamisen ja kehittämisen konsultointi 2021-2025 (DPS)</a></h3>
-  <p>Arvioitu arvo noin 260.87× CPV-mediaania (n=14). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="pohjois-pohjanmaan hyvinvointialue: etälääketieteellisen tuen keskuksen täydentävien lääkäripalveluiden… arvioitu arvo noin 94.44× cpv-mediaania (n=10). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2022115731/">Pohjois-Pohjanmaan hyvinvointialue: Etälääketieteellisen tuen keskuksen täydentävien lääkäripalveluiden…</a></h3>
-  <p>Arvioitu arvo noin 94.44× CPV-mediaania (n=10). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="verohallinto: johdon konsultointipalvelut arvioitu arvo noin 81.16× cpv-mediaania (n=14). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2021062047/">Verohallinto: Johdon konsultointipalvelut</a></h3>
-  <p>Arvioitu arvo noin 81.16× CPV-mediaania (n=14). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="espoon kaupunki, kaupunkitekniikan keskus: espoon kaupunkitekniikan konsulttipalveluiden puitesopimus 2021-2024 arvioitu arvo noin 68.13× cpv-mediaania (n=83). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2020052035/">Espoon kaupunki, Kaupunkitekniikan keskus: Espoon kaupunkitekniikan konsulttipalveluiden puitesopimus 2021-2024</a></h3>
-  <p>Arvioitu arvo noin 68.13× CPV-mediaania (n=83). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="kokkolan urheilupuisto oy karleby idrottspark ab: kokkolan urheilupuistoallianssin suunnittelun ja toteutuksen hankinta arvioitu arvo noin 56.78× cpv-mediaania (n=83). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2021087478/">Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab: Kokkolan Urheilupuistoallianssin suunnittelun ja toteutuksen hankinta</a></h3>
-  <p>Arvioitu arvo noin 56.78× CPV-mediaania (n=83). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="pohjois-savon hyvinvointialue: 20220039, kuvansiirtojärjestelmän päivitys arvioitu arvo noin 54.94× cpv-mediaania (n=68). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2023129685/">Pohjois-Savon hyvinvointialue: 20220039, Kuvansiirtojärjestelmän päivitys</a></h3>
-  <p>Arvioitu arvo noin 54.94× CPV-mediaania (n=68). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="keski-suomen hyvinvointialue: ikääntyneiden ympärivuorokautinen palveluasuminen arvioitu arvo noin 45.45× cpv-mediaania (n=86). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2023126299/">Keski-Suomen hyvinvointialue: Ikääntyneiden ympärivuorokautinen palveluasuminen</a></h3>
-  <p>Arvioitu arvo noin 45.45× CPV-mediaania (n=86). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="länsi-uudenmaan hyvinvointialue: henkilöajoneuvojen hankinta arvioitu arvo noin 45.45× cpv-mediaania (n=15). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2023133182/">Länsi-Uudenmaan hyvinvointialue: Henkilöajoneuvojen hankinta</a></h3>
-  <p>Arvioitu arvo noin 45.45× CPV-mediaania (n=15). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → suomen punainen risti, noin 632 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 0142236-0. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="migri-spr-keskus-ostolasku/">Maahanmuuttovirasto → Suomen Punainen Risti, noin 632 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 0142236-0.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="työllisyys, kehittämis- ja hallintokeskus → mpv-infrarakenne oy, noin 218 000 € (2024) tutkihankintoja-ostolasku: alueet ja väylät. toimittajan y 2292956-6. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="keha-mpv-infrarakenne-ostolasku/">Työllisyys, kehittämis- ja hallintokeskus → MPV-INFRARAKENNE OY, noin 218 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Alueet ja väylät. Toimittajan Y 2292956-6.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → kotokunta oy, noin 121 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2763855-7. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="migri-kotokunta-ostolasku/">Maahanmuuttovirasto → Kotokunta Oy, noin 121 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2763855-7.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="työllisyys, kehittämis- ja hallintokeskus → terranor oy, noin 110 000 € (2024) tutkihankintoja-ostolasku: rakentaminen. toimittajan y 3007636-4. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="keha-terranor-ostolasku/">Työllisyys, kehittämis- ja hallintokeskus → Terranor Oy, noin 110 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Rakentaminen. Toimittajan Y 3007636-4.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="digi- ja väestötietovirasto → reaktor innovations oy, noin 105 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 1629284-5. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="dvv-reaktor-ostolasku/">Digi- ja väestötietovirasto → Reaktor Innovations Oy, noin 105 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 1629284-5.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="oikeusrekisterikeskus → accenture oy, noin 75 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 0718166-8. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="ork-accenture-ostolasku/">Oikeusrekisterikeskus → Accenture Oy, noin 75 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 0718166-8.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="sosiaali- ja terveysalan lupa- ja valvontavirasto → solita oy, noin 72 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 2905040-7. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="valvira-solita-ostolasku/">Sosiaali- ja terveysalan lupa- ja valvontavirasto → Solita Oy, noin 72 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 2905040-7.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="digi- ja väestötietovirasto → loihde advance oy, noin 57 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 1645592-3. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="dvv-loihde-ostolasku/">Digi- ja väestötietovirasto → Loihde Advance Oy, noin 57 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 1645592-3.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="tampere: markkinointipalveluiden hankinta 1/2026, päätöksessä ei näy hintaa päätös 484077. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “siikaisen kunta” ei tuottanut ilmoituksia satakunta · organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-22" data-title="hilma: haku “siikaisen kunta” ei tuottanut ilmoituksia">
+  <p class="find-meta"><time datetime="2026-08-22">2026-08-22</time>
     · Puuttuva tieto</p>
-  <h3><a href="tampere-markkinointi-1-2026-hinta-puuttuu/">Tampere: Markkinointipalveluiden hankinta 1/2026, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 484077. Euromäärää tai määrää ei ole päätöstekstissä.</p>
+  <h3><a href="hilma-haku-siikainen-tyhja/">Hilma: haku “Siikaisen kunta” ei tuottanut ilmoituksia</a></h3>
+  <p>Satakunta · organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="tampere: joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpid…, päätöksessä ei näy hintaa päätös 457352. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="tampere-pysakkinaytot-hinta-puuttuu/">Tampere: Joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpid…, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 457352. Euromäärää tai määrää ei ole päätöstekstissä.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="helsinki: kaupunkiympäristölautakunnan alaisten viranomaisten ajall…, päätöksessä ei näy hintaa päätös 45ecb98e-8aa1-4531-88c6-4f22ec8f25f7. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="helsinki-kaupunkiymparisto-hinta-puuttuu/">Helsinki: Kaupunkiympäristölautakunnan alaisten viranomaisten ajall…, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 45ECB98E-8AA1-4531-88C6-4F22EC8F25F7. Euromäärää tai määrää ei ole päätöstekstissä.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="helsinki: caverion suomi oy, liiketilan vuokraus, 1 054,62 € päätöksessä hinta 1054.62 €. toimittaja caverion suomi oy. hankinta">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta</p>
-  <h3><a href="helsinki-caverion-vuokra/">Helsinki: Caverion Suomi Oy, liiketilan vuokraus, 1 054,62 €</a></h3>
-  <p>Päätöksessä hinta 1054.62 €. Toimittaja Caverion Suomi Oy.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “etelä-pohjanmaan elinvoimakeskus” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="hilma-haku-etela-pohjanmaa-elinvoima-tyhja/">Hilma: haku “Etelä-Pohjanmaan elinvoimakeskus” ei tuottanut ilmoituksia</a></h3>
-  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “korkein oikeus” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="hilma-haku-korkein-oikeus-tyhja/">Hilma: haku “Korkein oikeus” ei tuottanut ilmoituksia</a></h3>
-  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="väylävirasto → neste markkinointi oy, noin 252 000 € (2024) tutkihankintoja-ostolasku: aineet, tarvikkeet ja tavarat. toimittajan y 1626490-8. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="vayla-neste-ostolasku/">Väylävirasto → Neste Markkinointi Oy, noin 252 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Aineet, tarvikkeet ja tavarat. Toimittajan Y 1626490-8.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="väylävirasto → kreate oy, noin 235 000 € (2024) tutkihankintoja-ostolasku: alueet ja väylät. toimittajan y 0168716-6. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="vayla-kreate-ostolasku/">Väylävirasto → Kreate Oy, noin 235 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Alueet ja väylät. Toimittajan Y 0168716-6.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="ely-keskusten ja te-toimistojen kehittämis- ja hallintokeskus → posti messaging oy, noin 222 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2876876-7. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="keha-posti-messaging-ostolasku/">ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus → Posti Messaging Oy, noin 222 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2876876-7.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="työ- ja elinkeinoministeriö → helsingin yliopisto, noin 187 000 € (2024) tutkihankintoja-ostolasku: asiantuntija- ja toimistopalvelut. toimittajan y 0313471-7. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="tem-helsingin-yliopisto-ostolasku/">Työ- ja elinkeinoministeriö → Helsingin Yliopisto, noin 187 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Asiantuntija- ja toimistopalvelut. Toimittajan Y 0313471-7.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → hemcare oy, noin 161 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2542363-2. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="migri-hemcare-ostolasku/">Maahanmuuttovirasto → Hemcare Oy, noin 161 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2542363-2.</p>
-</article>
-<article class="find-item" data-kind="raha" data-search="valtion tieto- ja viestintätekniikkakeskus valtori → hiq public oy, noin 130 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 2237459-9. raha">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Raha</p>
-  <h3><a href="valtori-hiq-ostolasku/">Valtion tieto- ja viestintätekniikkakeskus Valtori → HiQ Public Oy, noin 130 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 2237459-9.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="turun kaupunki: kupittaan kärjen kumppanuushanke arvioitu arvo noin 214.8× cpv-mediaania (n=69). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2021088873/">Turun kaupunki: Kupittaan kärjen kumppanuushanke</a></h3>
-  <p>Arvioitu arvo noin 214.8× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="verohallinto: osallistumispyyntö: verohallinnon pilvipalveluiden kumppanuus arvioitu arvo noin 153.85× cpv-mediaania (n=105). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2023134804/">Verohallinto: OSALLISTUMISPYYNTÖ: Verohallinnon pilvipalveluiden kumppanuus</a></h3>
-  <p>Arvioitu arvo noin 153.85× CPV-mediaania (n=105). Selvä poikkeama verrokkiin nähden.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="espoon kaupunki: ikääntyneiden tehostetun palveluasumisen hankinta arvioitu arvo noin 79.55× cpv-mediaania (n=78). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
+<article class="find-item" data-kind="hankinta" data-search="espoon kaupunki: ikääntyneiden tehostetun palveluasumisen hankinta arvioitu arvo noin 79.55× cpv-mediaania (n=78). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="espoon kaupunki: ikääntyneiden tehostetun palveluasumisen hankinta" data-value="350000000.0">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Hankinta · Selvä poikkeama</p>
   <h3><a href="hilma-outlier-2022097256/">Espoon kaupunki: Ikääntyneiden tehostetun palveluasumisen hankinta</a></h3>
   <p>Arvioitu arvo noin 79.55× CPV-mediaania (n=78). Selvä poikkeama verrokkiin nähden.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="tuomi logistiikka oy: tuomi logistiikka oy:n logistiikkapalvelut arvioitu arvo noin 125.0× cpv-mediaania (n=35). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
+<article class="find-item" data-kind="hankinta" data-search="keski-suomen hyvinvointialue: ikääntyneiden ympärivuorokautinen palveluasuminen arvioitu arvo noin 45.45× cpv-mediaania (n=86). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="keski-suomen hyvinvointialue: ikääntyneiden ympärivuorokautinen palveluasuminen" data-value="200000000.0">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2020060898/">Tuomi Logistiikka Oy: Tuomi Logistiikka Oy:n logistiikkapalvelut</a></h3>
-  <p>Arvioitu arvo noin 125.0× CPV-mediaania (n=35). Selvä poikkeama verrokkiin nähden.</p>
+  <h3><a href="hilma-outlier-2023126299/">Keski-Suomen hyvinvointialue: Ikääntyneiden ympärivuorokautinen palveluasuminen</a></h3>
+  <p>Arvioitu arvo noin 45.45× CPV-mediaania (n=86). Selvä poikkeama verrokkiin nähden.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="pirkanmaan sairaanhoitopiirin kuntayhtymä: uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä arvioitu arvo noin 134.95× cpv-mediaania (n=69). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
+<article class="find-item" data-kind="hankinta" data-search="turun kaupunki: kupittaan kärjen kumppanuushanke arvioitu arvo noin 214.8× cpv-mediaania (n=69). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="turun kaupunki: kupittaan kärjen kumppanuushanke" data-value="191000000.0">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Hankinta · Selvä poikkeama</p>
-  <h3><a href="hilma-outlier-2020050393/">Pirkanmaan sairaanhoitopiirin kuntayhtymä: Uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä</a></h3>
-  <p>Arvioitu arvo noin 134.95× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.</p>
+  <h3><a href="hilma-outlier-2021088873/">Turun kaupunki: Kupittaan kärjen kumppanuushanke</a></h3>
+  <p>Arvioitu arvo noin 214.8× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="tampere: hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa päätös 309843. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="tampere-hiedanranta-hinta-puuttuu/">Tampere: Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 309843. Euromäärää tai määrää ei ole päätöstekstissä.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="tampere: markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa päätös 490338. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="tampere-markkinointi-2026-hinta-puuttuu/">Tampere: Markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 490338. Euromäärää tai määrää ei ole päätöstekstissä.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="ulkoministeriö → grönberg paula ja robert, noin 4 900 €: toimittajan y-tunnus puuttuu ostolaskurivillä ostaja näkyy nimellä, toimittajan y-tunnus puuttuu. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="um-gronberg-toimittaja-y-puuttuu/">Ulkoministeriö → Grönberg Paula ja Robert, noin 4 900 €: toimittajan Y-tunnus puuttuu</a></h3>
-  <p>Ostolaskurivillä ostaja näkyy nimellä, toimittajan Y-tunnus puuttuu.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “finanssivalvonta” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="hilma-haku-finanssivalvonta-tyhja/">Hilma: haku “Finanssivalvonta” ei tuottanut ilmoituksia</a></h3>
-  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
-</article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “hus-yhtymä” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Puuttuva tieto</p>
-  <h3><a href="hilma-haku-hus-yhtyma-tyhja/">Hilma: haku “HUS-yhtymä” ei tuottanut ilmoituksia</a></h3>
-  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="helsinki: verotietokyselyjen automatisointi, 1 629 €/kk päätöksessä yksikköhinta 1 629 €/kk. toimittaja ei näy tässä otoksessa. hankinta">
-  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
-    · Hankinta</p>
-  <h3><a href="helsinki-verotietokysely/">Helsinki: verotietokyselyjen automatisointi, 1 629 €/kk</a></h3>
-  <p>Päätöksessä yksikköhinta 1 629 €/kk. Toimittaja ei näy tässä otoksessa.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="verohallinto: it-asiantuntijapalvelut, arvio noin 150 m€ hilma-ilmoituksen arvioitu arvo on noin 231× saman cpv-ryhmän mediaania (n=95). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama">
+<article class="find-item" data-kind="hankinta" data-search="verohallinto: it-asiantuntijapalvelut, arvio noin 150 m€ hilma-ilmoituksen arvioitu arvo on noin 231× saman cpv-ryhmän mediaania (n=95). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="verohallinto: it-asiantuntijapalvelut, arvio noin 150 m€" data-value="150000000.0">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Hankinta · Selvä poikkeama</p>
   <h3><a href="verohallinto-it-hankinta-verrokki/">Verohallinto: IT-asiantuntijapalvelut, arvio noin 150 M€</a></h3>
   <p>Hilma-ilmoituksen arvioitu arvo on noin 231× saman CPV-ryhmän mediaania (n=95). Selvä poikkeama verrokkiin nähden.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="kainuun sote: mri-ilmoitus, arvioitu arvo puuttuu hilma-ilmoitus 2021-088776. arvioitua hankinnan arvoa ei ole ilmoituksessa. puuttuva tieto">
+<article class="find-item" data-kind="hankinta" data-search="pirkanmaan sairaanhoitopiirin kuntayhtymä: uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä arvioitu arvo noin 134.95× cpv-mediaania (n=69). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="pirkanmaan sairaanhoitopiirin kuntayhtymä: uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä" data-value="120000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2020050393/">Pirkanmaan sairaanhoitopiirin kuntayhtymä: Uudistamisohjelman rakennuttamisen ja suunnittelun konsulttiryhmä</a></h3>
+  <p>Arvioitu arvo noin 134.95× CPV-mediaania (n=69). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="verohallinto: osallistumispyyntö: verohallinnon pilvipalveluiden kumppanuus arvioitu arvo noin 153.85× cpv-mediaania (n=105). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="verohallinto: osallistumispyyntö: verohallinnon pilvipalveluiden kumppanuus" data-value="100000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2023134804/">Verohallinto: OSALLISTUMISPYYNTÖ: Verohallinnon pilvipalveluiden kumppanuus</a></h3>
+  <p>Arvioitu arvo noin 153.85× CPV-mediaania (n=105). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="geologian tutkimuskeskus: johtamisen ja kehittämisen konsultointi 2021-2025 (dps) arvioitu arvo noin 260.87× cpv-mediaania (n=14). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="geologian tutkimuskeskus: johtamisen ja kehittämisen konsultointi 2021-2025 (dps)" data-value="90000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2023118330/">Geologian tutkimuskeskus: Johtamisen ja kehittämisen konsultointi 2021-2025 (DPS)</a></h3>
+  <p>Arvioitu arvo noin 260.87× CPV-mediaania (n=14). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="espoon kaupunki, kaupunkitekniikan keskus: espoon kaupunkitekniikan konsulttipalveluiden puitesopimus 2021-2024 arvioitu arvo noin 68.13× cpv-mediaania (n=83). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="espoon kaupunki, kaupunkitekniikan keskus: espoon kaupunkitekniikan konsulttipalveluiden puitesopimus 2021-2024" data-value="60000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2020052035/">Espoon kaupunki, Kaupunkitekniikan keskus: Espoon kaupunkitekniikan konsulttipalveluiden puitesopimus 2021-2024</a></h3>
+  <p>Arvioitu arvo noin 68.13× CPV-mediaania (n=83). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="pohjois-savon hyvinvointialue: 20220039, kuvansiirtojärjestelmän päivitys arvioitu arvo noin 54.94× cpv-mediaania (n=68). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="pohjois-savon hyvinvointialue: 20220039, kuvansiirtojärjestelmän päivitys" data-value="59065817.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2023129685/">Pohjois-Savon hyvinvointialue: 20220039, Kuvansiirtojärjestelmän päivitys</a></h3>
+  <p>Arvioitu arvo noin 54.94× CPV-mediaania (n=68). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="kokkolan urheilupuisto oy karleby idrottspark ab: kokkolan urheilupuistoallianssin suunnittelun ja toteutuksen hankinta arvioitu arvo noin 56.78× cpv-mediaania (n=83). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="kokkolan urheilupuisto oy karleby idrottspark ab: kokkolan urheilupuistoallianssin suunnittelun ja toteutuksen hankinta" data-value="50000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2021087478/">Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab: Kokkolan Urheilupuistoallianssin suunnittelun ja toteutuksen hankinta</a></h3>
+  <p>Arvioitu arvo noin 56.78× CPV-mediaania (n=83). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="länsi-uudenmaan hyvinvointialue: henkilöajoneuvojen hankinta arvioitu arvo noin 45.45× cpv-mediaania (n=15). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="länsi-uudenmaan hyvinvointialue: henkilöajoneuvojen hankinta" data-value="50000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2023133182/">Länsi-Uudenmaan hyvinvointialue: Henkilöajoneuvojen hankinta</a></h3>
+  <p>Arvioitu arvo noin 45.45× CPV-mediaania (n=15). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="pohjois-pohjanmaan hyvinvointialue: etälääketieteellisen tuen keskuksen täydentävien lääkäripalveluiden… arvioitu arvo noin 94.44× cpv-mediaania (n=10). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="pohjois-pohjanmaan hyvinvointialue: etälääketieteellisen tuen keskuksen täydentävien lääkäripalveluiden…" data-value="42500000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2022115731/">Pohjois-Pohjanmaan hyvinvointialue: Etälääketieteellisen tuen keskuksen täydentävien lääkäripalveluiden…</a></h3>
+  <p>Arvioitu arvo noin 94.44× CPV-mediaania (n=10). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="tuomi logistiikka oy: tuomi logistiikka oy:n logistiikkapalvelut arvioitu arvo noin 125.0× cpv-mediaania (n=35). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="tuomi logistiikka oy: tuomi logistiikka oy:n logistiikkapalvelut" data-value="30000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2020060898/">Tuomi Logistiikka Oy: Tuomi Logistiikka Oy:n logistiikkapalvelut</a></h3>
+  <p>Arvioitu arvo noin 125.0× CPV-mediaania (n=35). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="verohallinto: johdon konsultointipalvelut arvioitu arvo noin 81.16× cpv-mediaania (n=14). selvä poikkeama verrokkiin nähden. hankinta · selvä poikkeama"
+  data-found-at="2026-08-21" data-title="verohallinto: johdon konsultointipalvelut" data-value="28000000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta · Selvä poikkeama</p>
+  <h3><a href="hilma-outlier-2021062047/">Verohallinto: Johdon konsultointipalvelut</a></h3>
+  <p>Arvioitu arvo noin 81.16× CPV-mediaania (n=14). Selvä poikkeama verrokkiin nähden.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → suomen punainen risti, noin 632 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 0142236-0. raha"
+  data-found-at="2026-08-21" data-title="maahanmuuttovirasto → suomen punainen risti, noin 632 000 € (2024)" data-value="632076.5">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="migri-spr-keskus-ostolasku/">Maahanmuuttovirasto → Suomen Punainen Risti, noin 632 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 0142236-0.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="väylävirasto → neste markkinointi oy, noin 252 000 € (2024) tutkihankintoja-ostolasku: aineet, tarvikkeet ja tavarat. toimittajan y 1626490-8. raha"
+  data-found-at="2026-08-21" data-title="väylävirasto → neste markkinointi oy, noin 252 000 € (2024)" data-value="251501.91">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="vayla-neste-ostolasku/">Väylävirasto → Neste Markkinointi Oy, noin 252 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Aineet, tarvikkeet ja tavarat. Toimittajan Y 1626490-8.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="väylävirasto → kreate oy, noin 235 000 € (2024) tutkihankintoja-ostolasku: alueet ja väylät. toimittajan y 0168716-6. raha"
+  data-found-at="2026-08-21" data-title="väylävirasto → kreate oy, noin 235 000 € (2024)" data-value="234523.22">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="vayla-kreate-ostolasku/">Väylävirasto → Kreate Oy, noin 235 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Alueet ja väylät. Toimittajan Y 0168716-6.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="ely-keskusten ja te-toimistojen kehittämis- ja hallintokeskus → posti messaging oy, noin 222 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2876876-7. raha"
+  data-found-at="2026-08-21" data-title="ely-keskusten ja te-toimistojen kehittämis- ja hallintokeskus → posti messaging oy, noin 222 000 € (2024)" data-value="221933.97">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="keha-posti-messaging-ostolasku/">ELY-keskusten ja TE-toimistojen kehittämis- ja hallintokeskus → Posti Messaging Oy, noin 222 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2876876-7.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="työllisyys, kehittämis- ja hallintokeskus → mpv-infrarakenne oy, noin 218 000 € (2024) tutkihankintoja-ostolasku: alueet ja väylät. toimittajan y 2292956-6. raha"
+  data-found-at="2026-08-21" data-title="työllisyys, kehittämis- ja hallintokeskus → mpv-infrarakenne oy, noin 218 000 € (2024)" data-value="218242.91">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="keha-mpv-infrarakenne-ostolasku/">Työllisyys, kehittämis- ja hallintokeskus → MPV-INFRARAKENNE OY, noin 218 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Alueet ja väylät. Toimittajan Y 2292956-6.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="työ- ja elinkeinoministeriö → helsingin yliopisto, noin 187 000 € (2024) tutkihankintoja-ostolasku: asiantuntija- ja toimistopalvelut. toimittajan y 0313471-7. raha"
+  data-found-at="2026-08-21" data-title="työ- ja elinkeinoministeriö → helsingin yliopisto, noin 187 000 € (2024)" data-value="187451.61">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="tem-helsingin-yliopisto-ostolasku/">Työ- ja elinkeinoministeriö → Helsingin Yliopisto, noin 187 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Asiantuntija- ja toimistopalvelut. Toimittajan Y 0313471-7.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → hemcare oy, noin 161 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2542363-2. raha"
+  data-found-at="2026-08-21" data-title="maahanmuuttovirasto → hemcare oy, noin 161 000 € (2024)" data-value="160558.5">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="migri-hemcare-ostolasku/">Maahanmuuttovirasto → Hemcare Oy, noin 161 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2542363-2.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="valtion tieto- ja viestintätekniikkakeskus valtori → hiq public oy, noin 130 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 2237459-9. raha"
+  data-found-at="2026-08-21" data-title="valtion tieto- ja viestintätekniikkakeskus valtori → hiq public oy, noin 130 000 € (2024)" data-value="130000.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="valtori-hiq-ostolasku/">Valtion tieto- ja viestintätekniikkakeskus Valtori → HiQ Public Oy, noin 130 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 2237459-9.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → kotokunta oy, noin 121 000 € (2024) tutkihankintoja-ostolasku: hallinnolliset palvelut. toimittajan y 2763855-7. raha"
+  data-found-at="2026-08-21" data-title="maahanmuuttovirasto → kotokunta oy, noin 121 000 € (2024)" data-value="120807.0">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="migri-kotokunta-ostolasku/">Maahanmuuttovirasto → Kotokunta Oy, noin 121 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Hallinnolliset palvelut. Toimittajan Y 2763855-7.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="työllisyys, kehittämis- ja hallintokeskus → terranor oy, noin 110 000 € (2024) tutkihankintoja-ostolasku: rakentaminen. toimittajan y 3007636-4. raha"
+  data-found-at="2026-08-21" data-title="työllisyys, kehittämis- ja hallintokeskus → terranor oy, noin 110 000 € (2024)" data-value="109859.21">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="keha-terranor-ostolasku/">Työllisyys, kehittämis- ja hallintokeskus → Terranor Oy, noin 110 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: Rakentaminen. Toimittajan Y 3007636-4.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="digi- ja väestötietovirasto → reaktor innovations oy, noin 105 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 1629284-5. raha"
+  data-found-at="2026-08-21" data-title="digi- ja väestötietovirasto → reaktor innovations oy, noin 105 000 € (2024)" data-value="104622.35">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="dvv-reaktor-ostolasku/">Digi- ja väestötietovirasto → Reaktor Innovations Oy, noin 105 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 1629284-5.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="oikeusrekisterikeskus → accenture oy, noin 75 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 0718166-8. raha"
+  data-found-at="2026-08-21" data-title="oikeusrekisterikeskus → accenture oy, noin 75 000 € (2024)" data-value="75116.14">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="ork-accenture-ostolasku/">Oikeusrekisterikeskus → Accenture Oy, noin 75 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 0718166-8.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="sosiaali- ja terveysalan lupa- ja valvontavirasto → solita oy, noin 72 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 2905040-7. raha"
+  data-found-at="2026-08-21" data-title="sosiaali- ja terveysalan lupa- ja valvontavirasto → solita oy, noin 72 000 € (2024)" data-value="72055.56">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="valvira-solita-ostolasku/">Sosiaali- ja terveysalan lupa- ja valvontavirasto → Solita Oy, noin 72 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 2905040-7.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="digi- ja väestötietovirasto → loihde advance oy, noin 57 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat (tavarat, palvelut ja ohjelmistot). toimittajan y 1645592-3. raha"
+  data-found-at="2026-08-21" data-title="digi- ja väestötietovirasto → loihde advance oy, noin 57 000 € (2024)" data-value="57198.16">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Raha</p>
+  <h3><a href="dvv-loihde-ostolasku/">Digi- ja väestötietovirasto → Loihde Advance Oy, noin 57 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat (tavarat, palvelut ja ohjelmistot). Toimittajan Y 1645592-3.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="ulkoministeriö → grönberg paula ja robert, noin 4 900 €: toimittajan y-tunnus puuttuu ostolaskurivillä ostaja näkyy nimellä, toimittajan y-tunnus puuttuu. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="ulkoministeriö → grönberg paula ja robert, noin 4 900 €: toimittajan y-tunnus puuttuu" data-value="4902.14">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
-  <h3><a href="kainuu-mri-arvo-puuttuu/">Kainuun sote: MRI-ilmoitus, arvioitu arvo puuttuu</a></h3>
-  <p>Hilma-ilmoitus 2021-088776. Arvioitua hankinnan arvoa ei ole ilmoituksessa.</p>
+  <h3><a href="um-gronberg-toimittaja-y-puuttuu/">Ulkoministeriö → Grönberg Paula ja Robert, noin 4 900 €: toimittajan Y-tunnus puuttuu</a></h3>
+  <p>Ostolaskurivillä ostaja näkyy nimellä, toimittajan Y-tunnus puuttuu.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa päätös 490336. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto">
+<article class="find-item" data-kind="hankinta" data-search="helsinki: caverion suomi oy, liiketilan vuokraus, 1 054,62 € päätöksessä hinta 1054.62 €. toimittaja caverion suomi oy. hankinta"
+  data-found-at="2026-08-21" data-title="helsinki: caverion suomi oy, liiketilan vuokraus, 1 054,62 €">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta</p>
+  <h3><a href="helsinki-caverion-vuokra/">Helsinki: Caverion Suomi Oy, liiketilan vuokraus, 1 054,62 €</a></h3>
+  <p>Päätöksessä hinta 1054.62 €. Toimittaja Caverion Suomi Oy.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="helsinki: kaupunkiympäristölautakunnan alaisten viranomaisten ajall…, päätöksessä ei näy hintaa päätös 45ecb98e-8aa1-4531-88c6-4f22ec8f25f7. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="helsinki: kaupunkiympäristölautakunnan alaisten viranomaisten ajall…, päätöksessä ei näy hintaa">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
-  <h3><a href="tampere-esteettomyys-hinta-puuttuu/">Tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa</a></h3>
-  <p>Päätös 490336. Euromäärää tai määrää ei ole päätöstekstissä.</p>
+  <h3><a href="helsinki-kaupunkiymparisto-hinta-puuttuu/">Helsinki: Kaupunkiympäristölautakunnan alaisten viranomaisten ajall…, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 45ECB98E-8AA1-4531-88C6-4F22EC8F25F7. Euromäärää tai määrää ei ole päätöstekstissä.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="hilma: haku “eduskunnan kanslia” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto">
+<article class="find-item" data-kind="hankinta" data-search="helsinki: verotietokyselyjen automatisointi, 1 629 €/kk päätöksessä yksikköhinta 1 629 €/kk. toimittaja ei näy tässä otoksessa. hankinta"
+  data-found-at="2026-08-21" data-title="helsinki: verotietokyselyjen automatisointi, 1 629 €/kk">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Hankinta</p>
+  <h3><a href="helsinki-verotietokysely/">Helsinki: verotietokyselyjen automatisointi, 1 629 €/kk</a></h3>
+  <p>Päätöksessä yksikköhinta 1 629 €/kk. Toimittaja ei näy tässä otoksessa.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “eduskunnan kanslia” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="hilma: haku “eduskunnan kanslia” ei tuottanut ilmoituksia">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
   <h3><a href="hilma-haku-eduskunnan-kanslia-tyhja/">Hilma: haku “Eduskunnan kanslia” ei tuottanut ilmoituksia</a></h3>
   <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu hilma-ilmoitus 2020-044126 (oulu–kokkola). arvioitua hankinnan arvoa ei ole ilmoituksessa. puuttuva tieto">
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “etelä-pohjanmaan elinvoimakeskus” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="hilma: haku “etelä-pohjanmaan elinvoimakeskus” ei tuottanut ilmoituksia">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
-  <h3><a href="vayla-hilma-arvo-puuttuu/">Väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu</a></h3>
-  <p>Hilma-ilmoitus 2020-044126 (Oulu–Kokkola). Arvioitua hankinnan arvoa ei ole ilmoituksessa.</p>
+  <h3><a href="hilma-haku-etela-pohjanmaa-elinvoima-tyhja/">Hilma: haku “Etelä-Pohjanmaan elinvoimakeskus” ei tuottanut ilmoituksia</a></h3>
+  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="valtori → crayon oy, noin 783 000 €: ostajan y-tunnus puuttuu valtorin maksu crayonille näkyy ostolaskuaineistossa. toimittajan y-tunnus on, ostajan y-tunnus puuttuu riviltä. puuttuva tieto">
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “finanssivalvonta” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="hilma: haku “finanssivalvonta” ei tuottanut ilmoituksia">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
-  <h3><a href="ostaja-y-puuttuu-ostolaskussa/">Valtori → Crayon Oy, noin 783 000 €: ostajan Y-tunnus puuttuu</a></h3>
-  <p>Valtorin maksu Crayonille näkyy ostolaskuaineistossa. Toimittajan Y-tunnus on, ostajan Y-tunnus puuttuu riviltä.</p>
+  <h3><a href="hilma-haku-finanssivalvonta-tyhja/">Hilma: haku “Finanssivalvonta” ei tuottanut ilmoituksia</a></h3>
+  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="peitto" data-search="järvenpää: haku “kamera” ei tuottanut päätöksiä haku kunnan päätösaineistoon. osumia ei tullut. puuttuva tieto">
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “hus-yhtymä” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="hilma: haku “hus-yhtymä” ei tuottanut ilmoituksia">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="hilma-haku-hus-yhtyma-tyhja/">Hilma: haku “HUS-yhtymä” ei tuottanut ilmoituksia</a></h3>
+  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="hilma: haku “korkein oikeus” ei tuottanut ilmoituksia organisaationimellä haettiin hilmaan. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="hilma: haku “korkein oikeus” ei tuottanut ilmoituksia">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="hilma-haku-korkein-oikeus-tyhja/">Hilma: haku “Korkein oikeus” ei tuottanut ilmoituksia</a></h3>
+  <p>Organisaationimellä haettiin Hilmaan. Osumia ei tullut.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="järvenpää: haku “kamera” ei tuottanut päätöksiä haku kunnan päätösaineistoon. osumia ei tullut. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="järvenpää: haku “kamera” ei tuottanut päätöksiä">
   <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
     · Puuttuva tieto</p>
   <h3><a href="jarvenpaa-kamera-haku-tyhja/">Järvenpää: haku “kamera” ei tuottanut päätöksiä</a></h3>
   <p>Haku kunnan päätösaineistoon. Osumia ei tullut.</p>
 </article>
-<article class="find-item" data-kind="raha" data-search="valtori → crayon oy, noin 783 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat. toimittajan y 2096054-3. ostajan y-tunnus puuttuu. raha">
-  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Raha</p>
-  <h3><a href="valtori-crayon-ostolasku/">Valtori → Crayon Oy, noin 783 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: ICT-hankinnat. Toimittajan Y 2096054-3. Ostajan Y-tunnus puuttuu.</p>
+<article class="find-item" data-kind="peitto" data-search="kainuun sote: mri-ilmoitus, arvioitu arvo puuttuu hilma-ilmoitus 2021-088776. arvioitua hankinnan arvoa ei ole ilmoituksessa. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="kainuun sote: mri-ilmoitus, arvioitu arvo puuttuu">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="kainuu-mri-arvo-puuttuu/">Kainuun sote: MRI-ilmoitus, arvioitu arvo puuttuu</a></h3>
+  <p>Hilma-ilmoitus 2021-088776. Arvioitua hankinnan arvoa ei ole ilmoituksessa.</p>
 </article>
-<article class="find-item" data-kind="raha" data-search="väylävirasto → nrc group finland oy, noin 493 000 € (2024) tutkihankintoja-ostolasku: rakentaminen. toimittajan y 1007822-3. ostajan y-tunnus puuttuu. raha">
-  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Raha</p>
-  <h3><a href="vayla-nrc-ostolasku/">Väylävirasto → NRC Group Finland Oy, noin 493 000 € (2024)</a></h3>
-  <p>Tutkihankintoja-ostolasku: rakentaminen. Toimittajan Y 1007822-3. Ostajan Y-tunnus puuttuu.</p>
+<article class="find-item" data-kind="peitto" data-search="tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa päätös 490336. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="tampere-esteettomyys-hinta-puuttuu/">Tampere: esteettömyyskartoitus, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 490336. Euromäärää tai määrää ei ole päätöstekstissä.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="tampere: joukkoliikennevertailu, enintään 38 000 € 2 kpl · 19 000 €/kpl. menettely: kilpailutus. toimittaja ei näy tässä otoksessa. hankinta">
-  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Hankinta</p>
-  <h3><a href="tampere-joukkoliikenne-vertailu/">Tampere: joukkoliikennevertailu, enintään 38 000 €</a></h3>
-  <p>2 kpl · 19 000 €/kpl. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.</p>
+<article class="find-item" data-kind="peitto" data-search="tampere: hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa päätös 309843. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="tampere: hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="tampere-hiedanranta-hinta-puuttuu/">Tampere: Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyö…, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 309843. Euromäärää tai määrää ei ole päätöstekstissä.</p>
 </article>
-<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → suomen punainen risti länsi-suomen, noin 931 000 € (2024) tutkihankintoja-ostolaskuaineisto: hallinnolliset palvelut. toimittajan y 0209403-9. raha">
+<article class="find-item" data-kind="peitto" data-search="tampere: joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpid…, päätöksessä ei näy hintaa päätös 457352. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="tampere: joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpid…, päätöksessä ei näy hintaa">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="tampere-pysakkinaytot-hinta-puuttuu/">Tampere: Joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpid…, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 457352. Euromäärää tai määrää ei ole päätöstekstissä.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="tampere: markkinointipalveluiden hankinta 1/2026, päätöksessä ei näy hintaa päätös 484077. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="tampere: markkinointipalveluiden hankinta 1/2026, päätöksessä ei näy hintaa">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="tampere-markkinointi-1-2026-hinta-puuttuu/">Tampere: Markkinointipalveluiden hankinta 1/2026, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 484077. Euromäärää tai määrää ei ole päätöstekstissä.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="tampere: markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa päätös 490338. euromäärää tai määrää ei ole päätöstekstissä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="tampere: markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="tampere-markkinointi-2026-hinta-puuttuu/">Tampere: Markkinointipalveluiden hankinta 2/2026, päätöksessä ei näy hintaa</a></h3>
+  <p>Päätös 490338. Euromäärää tai määrää ei ole päätöstekstissä.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="valtori → crayon oy, noin 783 000 €: ostajan y-tunnus puuttuu valtorin maksu crayonille näkyy ostolaskuaineistossa. toimittajan y-tunnus on, ostajan y-tunnus puuttuu riviltä. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="valtori → crayon oy, noin 783 000 €: ostajan y-tunnus puuttuu">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="ostaja-y-puuttuu-ostolaskussa/">Valtori → Crayon Oy, noin 783 000 €: ostajan Y-tunnus puuttuu</a></h3>
+  <p>Valtorin maksu Crayonille näkyy ostolaskuaineistossa. Toimittajan Y-tunnus on, ostajan Y-tunnus puuttuu riviltä.</p>
+</article>
+<article class="find-item" data-kind="peitto" data-search="väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu hilma-ilmoitus 2020-044126 (oulu–kokkola). arvioitua hankinnan arvoa ei ole ilmoituksessa. puuttuva tieto"
+  data-found-at="2026-08-21" data-title="väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu">
+  <p class="find-meta"><time datetime="2026-08-21">2026-08-21</time>
+    · Puuttuva tieto</p>
+  <h3><a href="vayla-hilma-arvo-puuttuu/">Väylävirasto: turvalaiteilmoitus, arvioitu arvo puuttuu</a></h3>
+  <p>Hilma-ilmoitus 2020-044126 (Oulu–Kokkola). Arvioitua hankinnan arvoa ei ole ilmoituksessa.</p>
+</article>
+<article class="find-item" data-kind="raha" data-search="maahanmuuttovirasto → suomen punainen risti länsi-suomen, noin 931 000 € (2024) tutkihankintoja-ostolaskuaineisto: hallinnolliset palvelut. toimittajan y 0209403-9. raha"
+  data-found-at="2026-08-20" data-title="maahanmuuttovirasto → suomen punainen risti länsi-suomen, noin 931 000 € (2024)" data-value="930639.83">
   <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
     · Raha</p>
   <h3><a href="migri-spr-ostolasku/">Maahanmuuttovirasto → Suomen Punainen Risti Länsi-Suomen, noin 931 000 € (2024)</a></h3>
   <p>Tutkihankintoja-ostolaskuaineisto: hallinnolliset palvelut. Toimittajan Y 0209403-9.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 € rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. menettely: kilpailutus. toimittaja ei näy tässä otoksessa. hankinta">
+<article class="find-item" data-kind="raha" data-search="valtori → crayon oy, noin 783 000 € (2024) tutkihankintoja-ostolasku: ict-hankinnat. toimittajan y 2096054-3. ostajan y-tunnus puuttuu. raha"
+  data-found-at="2026-08-20" data-title="valtori → crayon oy, noin 783 000 € (2024)" data-value="782563.11">
   <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Hankinta</p>
-  <h3><a href="helsinki-puite-maankaytto/">Helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 €</a></h3>
-  <p>Rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.</p>
+    · Raha</p>
+  <h3><a href="valtori-crayon-ostolasku/">Valtori → Crayon Oy, noin 783 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: ICT-hankinnat. Toimittajan Y 2096054-3. Ostajan Y-tunnus puuttuu.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="mao:748/2025: julkinen hankinta, sopimuksen muutos ja suorahankinta markkinaoikeuden ratkaisu 19.12.2025. aiheet: hankintasopimuksen muutos, kilpailuttamisvelvollisuus, suorahankinta. hankinta">
+<article class="find-item" data-kind="raha" data-search="väylävirasto → nrc group finland oy, noin 493 000 € (2024) tutkihankintoja-ostolasku: rakentaminen. toimittajan y 1007822-3. ostajan y-tunnus puuttuu. raha"
+  data-found-at="2026-08-20" data-title="väylävirasto → nrc group finland oy, noin 493 000 € (2024)" data-value="493353.1">
   <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Hankinta</p>
-  <h3><a href="mao-748-2025/">MAO:748/2025: julkinen hankinta, sopimuksen muutos ja suorahankinta</a></h3>
-  <p>Markkinaoikeuden ratkaisu 19.12.2025. Aiheet: hankintasopimuksen muutos, kilpailuttamisvelvollisuus, suorahankinta.</p>
+    · Raha</p>
+  <h3><a href="vayla-nrc-ostolasku/">Väylävirasto → NRC Group Finland Oy, noin 493 000 € (2024)</a></h3>
+  <p>Tutkihankintoja-ostolasku: rakentaminen. Toimittajan Y 1007822-3. Ostajan Y-tunnus puuttuu.</p>
 </article>
-<article class="find-item" data-kind="ketju" data-search="senaatti-kiinteistöt samassa y-tunnuksessa useassa lähteessä y 1503388-4 esiintyy hilmassa, prh:ssa ja valtiokonttorin virastolistassa. ketju">
-  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
-    · Ketju</p>
-  <h3><a href="senaatti-ketju/">Senaatti-kiinteistöt samassa Y-tunnuksessa useassa lähteessä</a></h3>
-  <p>Y 1503388-4 esiintyy Hilmassa, PRH:ssa ja Valtiokonttorin virastolistassa.</p>
-</article>
-<article class="find-item" data-kind="hankinta" data-search="helsinki: maa-alueen vuokra varte oy:lle 459 €/kk naurunkuja, länsisatama. päätöksessä yksikköhinta 459 €/kk. toimittajan y-tunnus puuttuu vielä. hankinta">
+<article class="find-item" data-kind="hankinta" data-search="helsinki: maa-alueen vuokra varte oy:lle 459 €/kk naurunkuja, länsisatama. päätöksessä yksikköhinta 459 €/kk. toimittajan y-tunnus puuttuu vielä. hankinta"
+  data-found-at="2026-08-20" data-title="helsinki: maa-alueen vuokra varte oy:lle 459 €/kk">
   <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
     · Hankinta</p>
   <h3><a href="helsinki-varte-vuokra/">Helsinki: maa-alueen vuokra Varte Oy:lle 459 €/kk</a></h3>
   <p>Naurunkuja, Länsisatama. Päätöksessä yksikköhinta 459 €/kk. Toimittajan Y-tunnus puuttuu vielä.</p>
 </article>
-<article class="find-item" data-kind="hankinta" data-search="helsinki: villa granvik suorahankinta, enintään 500 000 € suojellun puutalon purku, siirto ja suunnittelu. menettely: suorahankinta. toimittaja ei näy tässä otoksessa. hankinta">
+<article class="find-item" data-kind="hankinta" data-search="helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 € rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. menettely: kilpailutus. toimittaja ei näy tässä otoksessa. hankinta"
+  data-found-at="2026-08-20" data-title="helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 €">
+  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
+    · Hankinta</p>
+  <h3><a href="helsinki-puite-maankaytto/">Helsinki: maankäytön puitejärjestelyn optiokausi, arvo 2 500 000 €</a></h3>
+  <p>Rakenne- ja kalliotekninen puite, optio 1.2.2024–31.1.2026. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="helsinki: villa granvik suorahankinta, enintään 500 000 € suojellun puutalon purku, siirto ja suunnittelu. menettely: suorahankinta. toimittaja ei näy tässä otoksessa. hankinta"
+  data-found-at="2026-08-20" data-title="helsinki: villa granvik suorahankinta, enintään 500 000 €">
   <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
     · Hankinta</p>
   <h3><a href="helsinki-villa-granvik/">Helsinki: Villa Granvik suorahankinta, enintään 500 000 €</a></h3>
   <p>Suojellun puutalon purku, siirto ja suunnittelu. Menettely: suorahankinta. Toimittaja ei näy tässä otoksessa.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="mao:748/2025: julkinen hankinta, sopimuksen muutos ja suorahankinta markkinaoikeuden ratkaisu 19.12.2025. aiheet: hankintasopimuksen muutos, kilpailuttamisvelvollisuus, suorahankinta. hankinta"
+  data-found-at="2026-08-20" data-title="mao:748/2025: julkinen hankinta, sopimuksen muutos ja suorahankinta">
+  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
+    · Hankinta</p>
+  <h3><a href="mao-748-2025/">MAO:748/2025: julkinen hankinta, sopimuksen muutos ja suorahankinta</a></h3>
+  <p>Markkinaoikeuden ratkaisu 19.12.2025. Aiheet: hankintasopimuksen muutos, kilpailuttamisvelvollisuus, suorahankinta.</p>
+</article>
+<article class="find-item" data-kind="ketju" data-search="senaatti-kiinteistöt samassa y-tunnuksessa useassa lähteessä y 1503388-4 esiintyy hilmassa, prh:ssa ja valtiokonttorin virastolistassa. ketju"
+  data-found-at="2026-08-20" data-title="senaatti-kiinteistöt samassa y-tunnuksessa useassa lähteessä">
+  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
+    · Ketju</p>
+  <h3><a href="senaatti-ketju/">Senaatti-kiinteistöt samassa Y-tunnuksessa useassa lähteessä</a></h3>
+  <p>Y 1503388-4 esiintyy Hilmassa, PRH:ssa ja Valtiokonttorin virastolistassa.</p>
+</article>
+<article class="find-item" data-kind="hankinta" data-search="tampere: joukkoliikennevertailu, enintään 38 000 € 2 kpl · 19 000 €/kpl. menettely: kilpailutus. toimittaja ei näy tässä otoksessa. hankinta"
+  data-found-at="2026-08-20" data-title="tampere: joukkoliikennevertailu, enintään 38 000 €">
+  <p class="find-meta"><time datetime="2026-08-20">2026-08-20</time>
+    · Hankinta</p>
+  <h3><a href="tampere-joukkoliikenne-vertailu/">Tampere: joukkoliikennevertailu, enintään 38 000 €</a></h3>
+  <p>2 kpl · 19 000 €/kpl. Menettely: kilpailutus. Toimittaja ei näy tässä otoksessa.</p>
 </article>
 </section>
 <div class="hero-actions" style="margin-top:1.5rem">
   <a class="btn ghost" href="../peito/">Puuttuva tieto</a>
   <a class="btn ghost" href="../../nain-luet/">Näin luet</a>
 </div>
-<script src="../../assets/loydot-list.js?v=20260822e" defer></script>
+<script src="../../assets/loydot-list.js?v=20260822f" defer></script>
 
 <div class="disclaimer">
 Esikatselu. Julkinen data, faktat ja lähde. Tulkinta on lukijalla.
@@ -522,8 +671,8 @@ Esikatselu. Julkinen data, faktat ja lähde. Tulkinta on lukijalla.
 </div>
 <footer>
 <p><a class="wordmark" href="../../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-<p>Löydöt · 2026-08-22T15:02:11+03:00</p>
+<p>Löydöt · 2026-08-22T15:11:45+03:00</p>
 </footer>
-<script src="../../assets/nav.js?v=20260822e" defer></script>
+<script src="../../assets/nav.js?v=20260822f" defer></script>
 </body>
 </html>
