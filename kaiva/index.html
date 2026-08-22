@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260821d">
+<link rel="stylesheet" href="../assets/site.css?v=20260822e">
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -30,79 +30,87 @@
 
 <div class="wrap">
   <header class="page-head">
+    <p class="section-label">Jatko-ohje</p>
     <h1>Tutki lisää</h1>
-    <p>Löytö näyttää tiivistelmän. Täällä on avaimet, joilla jatkat etsintää itse alkuperäisistä lähteistä.</p>
+    <p>Löytökortti näyttää tiivistelmän ja lähteet. Täällä on avaimet, joilla jatkat etsintää itse — samalla logiikalla kuin <a href="../esimerkki/">Esimerkki-sivulla</a> (oikea kortti hyllyltä).</p>
   </header>
 
-  <div class="callout">
-    <strong>Lyhyesti</strong>
+  <div class="callout callout-guide">
+    <strong>Ennen jatkoa</strong>
     <ul>
-      <li><a href="../esimerkki/">Esimerkki</a> kertoo, miten tietosivua luetaan.</li>
-      <li>Tämä sivu kertoo, mitä voit tehdä tiivistelmän jälkeen, myös jos tietoa ei löydy.</li>
+      <li><a href="../esimerkki/">Esimerkki</a> = Valtori → HiQ (Raha). Sama rakenne kaikilla korteilla: Tiivistelmä → Lähteet (<strong>Kohde</strong> + <strong>Etsi sivulta</strong>) → Kokonaiskuva.</li>
+      <li>Tutkihankintoja-korteilla on usein <strong>kaksi reittiä</strong>: A = CSV-aineisto, B = selaa palvelussa. B on usein helpompi.</li>
+      <li>Tämä sivu kertoo, mitä voit tehdä kortin lukemisen jälkeen — myös jos tietoa ei löydy.</li>
     </ul>
   </div>
 
   <section class="panel">
-    <h2>1. Mitä tietosivu jo antoi</h2>
-    <p>Poimi tiivistelmästä ja lähdekorteista nämä tiedot:</p>
+    <h2>1. Mitä kortti jo antoi</h2>
+    <p>Poimi tiivistelmästä ja lähdekorteista:</p>
     <ul>
-      <li><strong>Kuka:</strong> kunta, virasto tai muu päätöksentekijä.</li>
-      <li><strong>Kenelle:</strong> toimittaja tai saaja, ja Y-tunnus jos se on mukana.</li>
-      <li><strong>Mitä:</strong> aihe, menettely, hinta.</li>
-      <li><strong>Mistä:</strong> “Etsi sivulta” -ohje ja linkki alkuperäiseen.</li>
+      <li><strong>Mistä → mihin:</strong> ostaja / maksaja ja toimittaja tai saaja (Y-tunnus jos mukana).</li>
+      <li><strong>Summa, vuosi, kategoria</strong> — tai Hankinta-löydöissä arvio, CPV ja vertailu (<a href="../nain-luet/#vertailuluvut">CPV, n, ×</a>).</li>
+      <li><strong>Kohde:</strong> mikä rivi, ilmoitus tai päätös on kyseessä.</li>
+      <li><strong>Etsi sivulta:</strong> konkreettinen polku lähdesivulle. Avaa linkki ja tarkista.</li>
     </ul>
   </section>
 
   <section class="panel">
-    <h2>2. Esimerkkiketju: Jyväskylä · lumensyvyys</h2>
-    <p>Sama esimerkki kuin <a href="../esimerkki/">esimerkkisivulla</a>. Alla yksi mahdollinen jatkopolku. Se ei ole ainoa oikea.</p>
+    <h2>2. Esimerkkiketju: Valtori → HiQ Public Oy</h2>
+    <p>Sama tapaus kuin <a href="../esimerkki/">Esimerkkisivulla</a> ja <a href="../sivut/loydot/valtori-hiq-ostolasku/">Löydöt-hyllyllä</a>. Alla yksi mahdollinen jatkopolku — ei ainoa oikea.</p>
     <ol>
-      <li>Avaa tiivistelmä: kaksi toimittajaa (4D Optimi Oy, Snower Oy), menettelyt ja hinnat.</li>
-      <li>Ota Y-tunnukset lähdekorteista (esim. Y 2725698-9 ja Y 3296848-9). Tarkista yritystiedot avoimesta yrityshausta, esimerkiksi YTJ:stä: nimi, Y-tunnus, onko yritys toiminnassa.</li>
-      <li>Etsi samalla Y-tunnuksella tai nimellä muita hankintoja tai päätöksiä. Onko tämä poikkeus vai toistuva kuvio?</li>
-      <li>Vertaa menettelyjä: toinen päätös mainitsee suorahankinnan. Mitä toinen sanoo kilpailutuksesta?</li>
-      <li>Kirjaa mitä <em>ei</em> löytynyt (tarjousten määrä, vertailuhinnat, perustelut). Puuttuva tieto kuuluu kuvaan.</li>
+      <li>Avaa tiivistelmä: Valtori → HiQ Public Oy, 130 000 €, ICT-hankinnat, vuosi 2024.</li>
+      <li>Avaa lähde <strong>B</strong> (tutkihankintoja.fi → Toimittajat → HiQ Public Oy). Vaihda aikaväliksi <strong>1.1.2024–31.12.2024</strong>. Vertaa summa ja kategoria kortin kanssa.</li>
+      <li>Ota Y-tunnus <strong>Y 2237459-9</strong> lähdekortista. Tarkista PRH/YTJ: virallinen nimi ja status.</li>
+      <li>Etsi samalla Y-tunnuksella muita maksuja Tutkihankintoja-aineistosta (lähde A / CSV) tai palvelussa. Onko 130 000 € poikkeus vai osa isompaa kuvaa?</li>
+      <li>Etsi samalla ostajalla (Valtori) muita toimittajia samassa kategoriassa. Mitä vertailukohtia löytyy?</li>
+      <li>Kirjaa mitä <em>ei</em> löytynyt (sopimusluonnos, kilpailutusasiakirjat, perustelut). Puuttuva tieto kuuluu kuvaan — katso myös <a href="../sivut/peito/">Puuttuva tieto</a> -kooste.</li>
     </ol>
     <p>Ketju päättyy aina lähteeseen, ei meidän tulkintaan.</p>
   </section>
 
   <section class="panel">
     <h2>3. Kysymyksiä itsellesi</h2>
-    <p>Näihin et saa valmista vastausta meiltä. Ne auttavat jatkamaan:</p>
+    <p>Valmista vastausta emme anna. Nämä auttavat jatkamaan — riippuu kortin tyypistä (Raha, Hankinta, Ketju, Puuttuva):</p>
     <ul>
-      <li>Onko sama toimittaja muualla, samassa kunnassa tai muissa kunnissa?</li>
-      <li>Onko menettely (esim. suorahankinta) poikkeava tähän aiheeseen?</li>
-      <li>Ovatko hintayksiköt edes vertailukelpoisia?</li>
-      <li>Mitä päätöksestä tai rekistereistä puuttuu?</li>
-      <li>Riittääkö tämä omaan pohdintaan tai mediaan, vai tarvitaanko vielä yksi lähde?</li>
+      <li>Onko sama toimittaja tai ostaja muualla, samassa organisaatiossa tai muissa?</li>
+      <li>Hankinta: onko arvo poikkeava verrokkiin (× mediaaniin) — tarkista Hilma-lähde itse.</li>
+      <li>Ketju: esiintyykö sama Y-tunnus kaikissa lähdekorteissa samalla tavalla?</li>
+      <li>Vertailevatko hintayksiköt tai kategoriat edes toisiaan?</li>
+      <li>Mitä päätöksestä, ilmoituksesta tai rekisteristä puuttuu?</li>
+      <li>Riittääkö tämä omaan pohdintaan, vai tarvitaanko vielä yksi lähde?</li>
     </ul>
   </section>
 
   <section class="panel">
     <h2>4. Jos tietoa ei löydy: tietopyyntö</h2>
-    <p>Jos julkisessa verkossa ei ole tarpeeksi aineistoa, voit pyytää tietoa viranomaiselta. Tätä kutsutaan usein <strong>tietopyynnöksi</strong>. Se on yksi tapa jatkaa etsintää, kun linkki on tyhjä tai asiakirjaa ei ole julkaistu.</p>
+    <p>Jos julkisessa verkossa ei ole tarpeeksi aineistoa, voit pyytää tietoa viranomaiselta (<strong>tietopyyntö</strong>). Se on yksi tapa jatkaa, kun linkki on tyhjä tai asiakirjaa ei ole julkaistu.</p>
     <ul>
-      <li><strong>Kenelle:</strong> yleensä sille kunnalle, virastolle tai muulle toimijalle, jota asia koskee (kirjaamo / tiedonsaanti).</li>
-      <li><strong>Mitä pyytää:</strong> nimeä asiakirja tai asia mahdollisimman tarkasti (päätös, hankinta, päivämäärä, diaarinumero jos tiedossa). Kerro myös, missä muodossa toivot vastausta.</li>
-      <li><strong>Mihin vedota:</strong> Suomessa viranomaisen asiakirjojen julkisuutta säätelee julkisuuslaki. Lyhyt tausta: <a href="../perusteet/">Mihin tämä perustuu</a> · <a href="https://www.finlex.fi/fi/laki/ajantasa/1999/19990621" target="_blank" rel="noopener noreferrer">Julkisuuslaki Finlexissä →</a>.</li>
-      <li><strong>Vastaus voi olla:</strong> asiakirja, osittainen luovutus, salassapito, maksu tai “ei löydy”. Kirjaa tulos. Sekin on havainto.</li>
+      <li><strong>Kenelle:</strong> sille kunnalle, virastolle tai muulle toimijalle, jota asia koskee (kirjaamo / tiedonsaanti).</li>
+      <li><strong>Mitä pyytää:</strong> nimeä asiakirja tai asia tarkasti (päätös, hankinta, päivämäärä, diaarinumero jos tiedossa).</li>
+      <li><strong>Mihin vedota:</strong> julkisuuslaki. Tausta: <a href="../perusteet/">Mihin tämä perustuu</a> · <a href="https://www.finlex.fi/fi/laki/ajantasa/1999/19990621" target="_blank" rel="noopener noreferrer">Julkisuuslaki Finlexissä →</a>.</li>
+      <li><strong>Vastaus voi olla:</strong> asiakirja, osittainen luovutus, salassapito, maksu tai “ei löydy”. Kirjaa tulos — sekin on havainto.</li>
     </ul>
-    <p>Tämä ei ole juridista neuvontaa. Se on käytännön seuraava askel, kun aineistoa ei ole netissä.</p>
+    <p>Tämä ei ole juridista neuvontaa. Käytännön askel, kun aineistoa ei ole netissä.</p>
   </section>
 
   <section class="panel">
-    <h2>5. Mitä seuraavaksi</h2>
-    <p>Tänne kertyy ajan kanssa lisää konkreettisia reittejä (minne avata, mitä etsiä) ja uusia esimerkkejä. Nyt tärkeintä on avaimet, kysymykset ja tietopyyntö tarvittaessa.</p>
+    <h2>5. Minne seuraavaksi</h2>
+    <ul>
+      <li><a href="../sivut/loydot/">Löydöt</a> — 55 korttia, suodata kategorialla.</li>
+      <li><a href="../nain-luet/#esimerkit-hyllylta">Esimerkit hyllyltä</a> — Raha, Hankinta, Ketju, Puuttuva.</li>
+      <li><a href="../nain-luet/#vertailuluvut">CPV, n ja ×</a> — jos tiivistelmässä on vertailulukuja.</li>
+    </ul>
   </section>
 
   <div class="disclaimer">
-    Avaimet ja reitti, ei valmista johtopäätöstä. Sisältö täydentyy ajan kanssa.
+    Avaimet ja reitti, ei valmista johtopäätöstä. Avaa lähde ja tarkista itse.
   </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
     <a class="btn" href="../esimerkki/">Katso esimerkki</a>
+    <a class="btn ghost" href="../sivut/loydot/">Löydöt</a>
     <a class="btn ghost" href="../nain-luet/">Näin luet</a>
-    <a class="btn ghost" href="../tietoa/">Mikä AitoData on</a>
   </div>
 </div>
 
@@ -110,6 +118,6 @@
   <p><a class="wordmark" href="../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
   <p>Tutki lisää</p>
 </footer>
-<script src="../assets/nav.js?v=20260821d" defer></script>
+<script src="../assets/nav.js?v=20260822e" defer></script>
 </body>
 </html>
