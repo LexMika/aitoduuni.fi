@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260822c">
+<link rel="stylesheet" href="../assets/site.css?v=20260822d">
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -124,8 +124,8 @@
   <div class="find-list path-list">
     <a class="find-item path-card" href="../esimerkki/">
       <p class="find-meta">1 · Esimerkki</p>
-      <h3>Yksi sivu alusta loppuun</h3>
-      <p>Tiivistelmä → lähteet → kokonaiskuva. Parasta, jos et ole vielä avannut yhtään löytöä.</p>
+      <h3>Oikea kortti hyllyltä</h3>
+      <p>Valtori → HiQ (Raha). Sama rakenne kaikilla: Tiivistelmä → Lähteet (Kohde + Etsi) → Kokonaiskuva.</p>
     </a>
     <a class="find-item path-card" href="../kaiva/">
       <p class="find-meta">2 · Tutki lisää</p>
@@ -153,29 +153,35 @@
     </div>
   </div>
 
-  <div class="quiet-block">
+  <div class="quiet-block" id="esimerkit-hyllylta">
     <div class="page-head">
-      <p class="section-label">Mallinäkymät</p>
-      <h2>Näin yksi tapaus voi näyttää</h2>
-      <p>Mallisivuja samasta otoksesta. Eivät ole Löytöjen aitoja kortteja.</p>
+      <p class="section-label">Esimerkit hyllyltä</p>
+      <h2>Yksi kortti per kategoria</h2>
+      <p>Oikeita Löytöjä — sama UI kuin hyllyllä. Kooste puuttuvasta tiedosta: <a href="../sivut/peito/">Puuttuva tieto</a>.</p>
     </div>
     <div class="steps">
-      <a class="step step-link" href="../sivut/ketju/">
+      <a class="step step-link" href="../sivut/loydot/valtori-hiq-ostolasku/">
+        <div class="n">Raha</div>
+        <h3>Tutkihankintoja · kaksi reittiä (A+B)</h3>
+        <p>CSV-aineisto + selaa palvelussa. Sama kortti myös Esimerkki-sivulla kommentein.</p>
+      </a>
+      <a class="step step-link" href="../sivut/loydot/hilma-outlier-2021062047/">
+        <div class="n">Hankinta</div>
+        <h3>Hilma · poikkeama verrokkiin</h3>
+        <p>CPV, n ja × tiivistelmässä — selitys osiossa Sanasto yllä.</p>
+      </a>
+      <a class="step step-link" href="../sivut/loydot/senaatti-ketju/">
         <div class="n">Ketju</div>
-        <h3>Sama toimija monessa lähteessä</h3>
-        <p>Y-tunnus, lähteet, rahavirtaesimerkki.</p>
+        <h3>Sama Y-tunnus useassa lähteessä</h3>
+        <p>Hilma, PRH, virastoluettelo. Ei väitettä väärinkäytöstä.</p>
       </a>
-      <a class="step step-link" href="../sivut/verrokki/">
-        <div class="n">Verrokki</div>
-        <h3>Sama aihe, eri päätökset</h3>
-        <p>€/yksikkö taulukossa. Ei väitettä että hinta on väärä.</p>
-      </a>
-      <a class="step step-link" href="../sivut/peito/">
-        <div class="n">Huom</div>
-        <h3>Puuttuva tieto on oma sivu</h3>
-        <p>Kooste ja raportti eivät ole täällä. Ne ovat sivulla Puuttuva tieto.</p>
+      <a class="step step-link" href="../sivut/loydot/hilma-haku-korkein-oikeus-tyhja/">
+        <div class="n">Puuttuva</div>
+        <h3>Tyhjä haku · toista + kooste</h3>
+        <p>Hilma-haku ei tuottanut osumia. B-linkki Puuttuva tieto -koosteeseen.</p>
       </a>
     </div>
+    <p class="vedos-note" style="margin-top:1rem">Vanhat demo-sivut (<a href="../sivut/ketju/">ketju</a>, <a href="../sivut/verrokki/">verrokki</a>) ovat rajoitetusta otoksesta — älä vertaa niihin hyllyä.</p>
   </div>
 
   <div class="hero-actions" style="margin-top:2rem">
@@ -192,6 +198,6 @@
   <p><a class="wordmark" href="../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
   <p>Näin luet</p>
 </footer>
-<script src="../assets/nav.js?v=20260822c" defer></script>
+<script src="../assets/nav.js?v=20260822d" defer></script>
 </body>
 </html>
