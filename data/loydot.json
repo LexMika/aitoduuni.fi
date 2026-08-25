@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-08-24T20:07:54+0300",
-  "note": "Poimintoja julkisista lähteistä. Kategoriat: Raha, Hankinta, Ketju, Puuttuva tieto. Puuttuvan tiedon kortit ovat yksittäisiä aukkoja (voivat päivittyä). Kooste: Puuttuva tieto -sivu. Poikkeama-leima vain kun verrokkeja on tarpeeksi (vähintään 10). Satakunta-otoksia lisätty 22.8. Hylly 24.8.: vain rawiin varmistetut 47 korttia (parkki data/jalostus/loydot_parkki_20260824.json).",
+  "note": "Poimintoja julkisista lähteistä. Raha, hankinta, ketju ja puuttuva tieto. Poikkeama merkitään vain, kun vertailukohtia on tarpeeksi.",
   "findings": [
     {
       "id": "hilma-haku-etela-pohjanmaa-elinvoima-tyhja",
