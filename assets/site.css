@@ -710,6 +710,122 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   font-size: 0.92rem;
 }
 
+.virhe-ilmoitus {
+  margin-top: 1.25rem;
+}
+.virhe-ilmoitus .virhe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  max-width: 36rem;
+  margin-top: 0.75rem;
+}
+.virhe-ilmoitus label {
+  color: #e2e8f0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+.virhe-ilmoitus textarea,
+.virhe-ilmoitus input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.85rem;
+  border: 1px solid #334155;
+  background: rgba(2, 6, 23, 0.65);
+  color: #f8fafc;
+  font: inherit;
+  resize: vertical;
+}
+.virhe-ilmoitus textarea:focus,
+.virhe-ilmoitus input[type="email"]:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.55);
+  outline-offset: 1px;
+  border-color: #2563eb;
+}
+.virhe-ilmoitus .virhe-gotcha {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.virhe-ilmoitus .virhe-meta {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.virhe-ilmoitus button.btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+.virhe-ilmoitus button.btn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.virhe-ilmoitus .virhe-status {
+  min-height: 1.2rem;
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: #6ee7b7;
+}
+.virhe-ilmoitus .virhe-status.err {
+  color: #fca5a5;
+}
+
+.virhe-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(2, 6, 23, 0.78);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.virhe-overlay.open {
+  display: flex;
+}
+.virhe-modal {
+  width: min(28rem, 100%);
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: 1.2rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+.virhe-modal h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.virhe-modal .virhe-lead {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.virhe-modal .virhe-summary {
+  margin: 0 0 1rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 0.85rem;
+  border: 1px solid #334155;
+  background: rgba(2, 6, 23, 0.55);
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.virhe-modal .btn {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
 .graph-block {
   margin: 1.5rem 0 0;
   padding: 1.2rem 1.15rem 1.35rem;

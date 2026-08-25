@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../../assets/site.css?v=20260822f">
+<link rel="stylesheet" href="../../../assets/site.css?v=20260825c">
 <link rel="icon" href="../../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
@@ -71,13 +71,51 @@
 </div>
 
 <div class="disclaimer">
-Julkinen lähde. Faktat tiivistetty — tulkinta lukijalla.
+Julkinen lähde. Faktat tiivistetty. Tulkinta lukijalla. Jos jokin kortissa ei täsmää lähteeseen, ilmoita alla. Korjaamme.
 </div>
+
+<section class="panel virhe-ilmoitus" id="virhe">
+  <h2>Ilmoita virhe</h2>
+  <p>Jos tiivistelmä tai fakta ei täsmää alkuperäiseen lähteeseen, kerro se tähän. Korjaamme.</p>
+  <form id="virhe-form" class="virhe-form" action="https://formspree.io/f/mjgpwgnw" method="POST">
+    <input type="hidden" name="_subject" value="AitoData virheilmoitus: hilma-outlier-2020060898">
+    <input type="hidden" name="kortti" value="hilma-outlier-2020060898">
+    <input type="hidden" name="kortti_id" value="hilma-outlier-2020-060898">
+    <input type="hidden" name="kanava" value="virheilmoitus">
+    <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
+    <label for="virhe-viesti">Mikä on väärin?</label>
+    <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
+      placeholder="Esim. Arvioitu arvo kortilla X, Hilmassa lukee Y."></textarea>
+    <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
+    <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
+      placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
+    <label for="virhe-email">Sähköposti vastaukseen (valinnainen)</label>
+    <input id="virhe-email" type="email" name="email" maxlength="120"
+      placeholder="nimi@esimerkki.fi" autocomplete="email">
+    <div class="hero-actions" style="margin-top:1rem">
+      <button type="submit" class="btn">Lähetä ilmoitus</button>
+    </div>
+    <p id="virhe-status" class="virhe-status" aria-live="polite"></p>
+  </form>
+</section>
+
 </div>
+
+<div class="virhe-overlay" id="virhe-overlay" role="dialog" aria-modal="true"
+  aria-labelledby="virhe-title" aria-hidden="true">
+  <div class="virhe-modal">
+    <h2 id="virhe-title">Ilmoitus lähetetty</h2>
+    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos kortti on väärin.</p>
+    <div class="virhe-summary" id="virhe-summary"></div>
+    <button type="button" class="btn" id="virhe-close">Sulje</button>
+  </div>
+</div>
+
 <footer>
 <p><a class="wordmark" href="../../../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
 <p>Löydöt · 2026-08-25T10:16:26+03:00</p>
 </footer>
-<script src="../../../assets/nav.js?v=20260822f" defer></script>
+<script src="../../../assets/nav.js?v=20260825c" defer></script>
+<script src="../../../assets/virhe-ilmoitus.js?v=20260825c" defer></script>
 </body>
 </html>
