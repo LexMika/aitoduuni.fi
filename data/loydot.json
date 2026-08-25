@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T20:07:54+0300",
+  "generated_at": "2026-08-25T10:16:26+03:00",
   "note": "Poimintoja julkisista lähteistä. Raha, hankinta, ketju ja puuttuva tieto. Poikkeama merkitään vain, kun vertailukohtia on tarpeeksi.",
   "findings": [
     {
@@ -2412,6 +2412,1135 @@
         }
       ],
       "jalostus_ref": "/home/lex/Cursor projektit/vallanvahtikoira/data/jalostus/b2b_test_20260824/h0_latest.json#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2020-050393",
+      "slug": "hilma-outlier-2020050393",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Pirkanmaan sairaanhoitopiirin kuntayhtymä: Uudistamisohjelman rakennuttamisen ja suunnittelu…",
+      "teaser": "Arvioitu arvo noin 127.66× CPV-mediaania (n=99). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2020-050393 (Pirkanmaan sairaanhoitopiirin kuntayhtymä). Arvioitu arvo 120 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 940 000,00 € (n=99). Suhde mediaaniin noin 127.66×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Pirkanmaan sairaanhoitopiirin kuntayhtymä"
+      ],
+      "y_tunnus": "0826597-8",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-050393"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pirkanmaan sairaanhoitopiirin kuntayhtymä (Y 0826597-8)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "120 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "940 000,00 € (n=99)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 127.66×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-050393",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-050393/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2020-052035",
+      "slug": "hilma-outlier-2020052035",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Espoon kaupunki, Kaupunkitekniikan keskus: Espoon kaupunkitekniikan konsulttipalveluiden pui…",
+      "teaser": "Arvioitu arvo noin 63.83× CPV-mediaania (n=99). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2020-052035 (Espoon kaupunki, Kaupunkitekniikan keskus). Arvioitu arvo 60 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 940 000,00 € (n=99). Suhde mediaaniin noin 63.83×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Espoon kaupunki, Kaupunkitekniikan keskus"
+      ],
+      "y_tunnus": "0101263-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-052035"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Espoon kaupunki, Kaupunkitekniikan keskus (Y 0101263-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "60 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "940 000,00 € (n=99)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 63.83×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-052035",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-052035/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2020-060898",
+      "slug": "hilma-outlier-2020060898",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Tuomi Logistiikka Oy: Tuomi Logistiikka Oy:n logistiikkapalvelut",
+      "teaser": "Arvioitu arvo noin 25.0× CPV-mediaania (n=65). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2020-060898 (Tuomi Logistiikka Oy). Arvioitu arvo 30 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 1 200 000,00 € (n=65). Suhde mediaaniin noin 25.0×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Tuomi Logistiikka Oy"
+      ],
+      "y_tunnus": "2722581-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2020-060898"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Tuomi Logistiikka Oy (Y 2722581-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "30 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "1 200 000,00 € (n=65)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 25.0×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2020-060898",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-060898/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2021-062047",
+      "slug": "hilma-outlier-2021062047",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Verohallinto: Johdon konsultointipalvelut",
+      "teaser": "Arvioitu arvo noin 11.67× CPV-mediaania (n=11). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2021-062047 (Verohallinto). Arvioitu arvo 28 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 2 400 000,00 € (n=11). Suhde mediaaniin noin 11.67×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Verohallinto"
+      ],
+      "y_tunnus": "0245458-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-062047"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Verohallinto (Y 0245458-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "28 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "2 400 000,00 € (n=11)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 11.67×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-062047",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-062047/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2021-087478",
+      "slug": "hilma-outlier-2021087478",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab: Kokkolan Urheilupuistoallianssin suunnitte…",
+      "teaser": "Arvioitu arvo noin 53.19× CPV-mediaania (n=99). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2021-087478 (Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab). Arvioitu arvo 50 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 940 000,00 € (n=99). Suhde mediaaniin noin 53.19×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab"
+      ],
+      "y_tunnus": "3178449-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-087478"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Kokkolan Urheilupuisto Oy Karleby Idrottspark Ab (Y 3178449-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "50 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "940 000,00 € (n=99)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 53.19×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-087478",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-087478/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2021-088873",
+      "slug": "hilma-outlier-2021088873",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Turun kaupunki: Kupittaan kärjen kumppanuushanke",
+      "teaser": "Arvioitu arvo noin 203.19× CPV-mediaania (n=99). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2021-088873 (Turun kaupunki). Arvioitu arvo 191 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 940 000,00 € (n=99). Suhde mediaaniin noin 203.19×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Turun kaupunki"
+      ],
+      "y_tunnus": "0204819-8",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2021-088873"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Turun kaupunki (Y 0204819-8)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "191 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "940 000,00 € (n=99)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 203.19×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2021-088873",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088873/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2022-097256",
+      "slug": "hilma-outlier-2022097256",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Espoon kaupunki: Ikääntyneiden tehostetun palveluasumisen hankinta",
+      "teaser": "Arvioitu arvo noin 122.72× CPV-mediaania (n=101). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2022-097256 (Espoon kaupunki). Arvioitu arvo 350 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 2 852 000,00 € (n=101). Suhde mediaaniin noin 122.72×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Espoon kaupunki"
+      ],
+      "y_tunnus": "0101263-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-097256"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Espoon kaupunki (Y 0101263-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "350 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "2 852 000,00 € (n=101)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 122.72×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-097256",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-097256/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2022-115731",
+      "slug": "hilma-outlier-2022115731",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Pohjois-Pohjanmaan hyvinvointialue: Etälääketieteellisen tuen keskuksen täydentävien lääkäri…",
+      "teaser": "Arvioitu arvo noin 29.93× CPV-mediaania (n=19). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2022-115731 (Pohjois-Pohjanmaan hyvinvointialue). Arvioitu arvo 42 500 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 1 420 000,00 € (n=19). Suhde mediaaniin noin 29.93×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Pohjois-Pohjanmaan hyvinvointialue"
+      ],
+      "y_tunnus": "3221326-2",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2022-115731"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pohjois-Pohjanmaan hyvinvointialue (Y 3221326-2)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "42 500 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "1 420 000,00 € (n=19)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 29.93×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2022-115731",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-115731/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-118330",
+      "slug": "hilma-outlier-2023118330",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Geologian tutkimuskeskus: Johtamisen ja kehittämisen konsultointi 2021-2025 (DPS)",
+      "teaser": "Arvioitu arvo noin 37.5× CPV-mediaania (n=11). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-118330 (Geologian tutkimuskeskus). Arvioitu arvo 90 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 2 400 000,00 € (n=11). Suhde mediaaniin noin 37.5×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Geologian tutkimuskeskus"
+      ],
+      "y_tunnus": "0244680-7",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-118330"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Geologian tutkimuskeskus (Y 0244680-7)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "90 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "2 400 000,00 € (n=11)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 37.5×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-118330",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-118330/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "verohallinto-it-outlier-2023-126101",
+      "slug": "verohallinto-it-hankinta-verrokki",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Verohallinto: IT-asiantuntijapalvelujen hankinta",
+      "teaser": "Arvioitu arvo noin 240.0× CPV-mediaania (n=132). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-126101 (Verohallinto). Arvioitu arvo 150 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 625 000,00 € (n=132). Suhde mediaaniin noin 240.0×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Verohallinto"
+      ],
+      "y_tunnus": "0245458-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-126101"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Verohallinto (Y 0245458-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "150 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "625 000,00 € (n=132)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 240.0×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-126101",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126101/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-126299",
+      "slug": "hilma-outlier-2023126299",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Keski-Suomen hyvinvointialue: Ikääntyneiden ympärivuorokautinen palveluasuminen",
+      "teaser": "Arvioitu arvo noin 70.13× CPV-mediaania (n=101). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-126299 (Keski-Suomen hyvinvointialue). Arvioitu arvo 200 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 2 852 000,00 € (n=101). Suhde mediaaniin noin 70.13×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Keski-Suomen hyvinvointialue"
+      ],
+      "y_tunnus": "3221318-2",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-126299"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Keski-Suomen hyvinvointialue (Y 3221318-2)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "200 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "2 852 000,00 € (n=101)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 70.13×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-126299",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126299/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-129685",
+      "slug": "hilma-outlier-2023129685",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Pohjois-Savon hyvinvointialue: 20220039, Kuvansiirtojärjestelmän päivitys",
+      "teaser": "Arvioitu arvo noin 76.71× CPV-mediaania (n=93). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-129685 (Pohjois-Savon hyvinvointialue). Arvioitu arvo 59 065 817,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 770 000,00 € (n=93). Suhde mediaaniin noin 76.71×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Pohjois-Savon hyvinvointialue"
+      ],
+      "y_tunnus": "3221316-6",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-129685"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Pohjois-Savon hyvinvointialue (Y 3221316-6)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "59 065 817,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "770 000,00 € (n=93)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 76.71×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-129685",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-129685/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-133182",
+      "slug": "hilma-outlier-2023133182",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Länsi-Uudenmaan hyvinvointialue: Henkilöajoneuvojen hankinta",
+      "teaser": "Arvioitu arvo noin 27.96× CPV-mediaania (n=16). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-133182 (Länsi-Uudenmaan hyvinvointialue). Arvioitu arvo 50 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 1 788 000,00 € (n=16). Suhde mediaaniin noin 27.96×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Länsi-Uudenmaan hyvinvointialue"
+      ],
+      "y_tunnus": "3221347-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-133182"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Länsi-Uudenmaan hyvinvointialue (Y 3221347-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "50 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "1 788 000,00 € (n=16)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 27.96×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-133182",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-133182/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "hilma-outlier-2023-134804",
+      "slug": "hilma-outlier-2023134804",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": "selva",
+      "gap_status": null,
+      "updates": [],
+      "title": "Verohallinto: OSALLISTUMISPYYNTÖ: Verohallinnon pilvipalveluiden kumppanuus",
+      "teaser": "Arvioitu arvo noin 160.0× CPV-mediaania (n=132). Selvä poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-134804 (Verohallinto). Arvioitu arvo 100 000 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 625 000,00 € (n=132). Suhde mediaaniin noin 160.0×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Verohallinto"
+      ],
+      "y_tunnus": "0245458-3",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Hilma"
+        },
+        {
+          "label": "Ilmoitus",
+          "value": "2023-134804"
+        },
+        {
+          "label": "Organisaatio",
+          "value": "Verohallinto (Y 0245458-3)"
+        },
+        {
+          "label": "Arvioitu arvo",
+          "value": "100 000 000,00 €"
+        },
+        {
+          "label": "CPV-mediaani (otos)",
+          "value": "625 000,00 € (n=132)"
+        },
+        {
+          "label": "Suhde mediaaniin",
+          "value": "noin 160.0×"
+        },
+        {
+          "label": "Poikkeama",
+          "value": "Selvä poikkeama"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Hilma · hankintailmoitus 2023-134804",
+          "url": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-134804/",
+          "kind": "Hilma"
+        }
+      ],
+      "jalostus_ref": "None#h1.outliers"
+    },
+    {
+      "id": "tampere-esteettomyys-2026",
+      "slug": "tampere-esteettomyys",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Tampere: esteettömyyskartoitus, 56 000,00 €",
+      "teaser": "Päätöksessä summa 56 000,00 €.",
+      "summary": "Tampereen päätös 490336: esteettömyyskartoitus. Päätöstekstissä summa 56 000,00 €. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Tampereen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tampereen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "490336"
+        },
+        {
+          "label": "Aihe",
+          "value": "esteettömyyskartoitus"
+        },
+        {
+          "label": "Summa",
+          "value": "56 000,00 €"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tampere · päätös 490336",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/490336/13031",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/cloudnc_paatokset/"
+    },
+    {
+      "id": "tampere-markkinointi-1-2026",
+      "slug": "tampere-markkinointi-1-2026",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Tampere: markkinointipalvelut 1/2026, 34 560,00 €",
+      "teaser": "Päätöksessä summa 34 560,00 €.",
+      "summary": "Tampereen päätös 484077: markkinointipalvelut 1/2026. Päätöstekstissä summa 34 560,00 €. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Tampereen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tampereen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "484077"
+        },
+        {
+          "label": "Aihe",
+          "value": "markkinointipalvelut 1/2026"
+        },
+        {
+          "label": "Summa",
+          "value": "34 560,00 €"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tampere · päätös 484077",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/484077/13031",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/cloudnc_paatokset/"
+    },
+    {
+      "id": "tampere-markkinointi-2-2026",
+      "slug": "tampere-markkinointi-2-2026",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Tampere: markkinointipalvelut 2/2026, 13 920,00 €",
+      "teaser": "Päätöksessä summa 13 920,00 €.",
+      "summary": "Tampereen päätös 490338: markkinointipalvelut 2/2026. Päätöstekstissä summa 13 920,00 €. Ei väitettä että hankinta on väärä.",
+      "actors": [
+        "Tampereen kaupunki"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Tampereen päätökset"
+        },
+        {
+          "label": "Päätös",
+          "value": "490338"
+        },
+        {
+          "label": "Aihe",
+          "value": "markkinointipalvelut 2/2026"
+        },
+        {
+          "label": "Summa",
+          "value": "13 920,00 €"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Tampere · päätös 490338",
+          "url": "https://tampere.cloudnc.fi/fi-FI/content/490338/13031",
+          "kind": "Kunnan päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/cloudnc_paatokset/"
+    },
+    {
+      "id": "helsinki-caverion-vuokra",
+      "slug": "helsinki-caverion-vuokra",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: Caverion Suomi Oy, liiketilan vuokra 1 054,62 €/kk",
+      "teaser": "Vuokra 1 054,62 € kuukaudessa (sis. alv). Länsisatamankatu 23.",
+      "summary": "Helsingin päätös: Caverion Suomi Oy vuokraa noin 40,5 m² liiketilan Länsisatamankatu 23:sta. Verollinen vuokra 1 054,62 euroa kuukaudessa.",
+      "actors": [
+        "Helsingin kaupunki",
+        "Caverion Suomi Oy"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Aihe",
+          "value": "liiketilan vuokraus, Länsisatamankatu 23"
+        },
+        {
+          "label": "Vuokra",
+          "value": "1 054,62 €/kk (sis. alv)"
+        },
+        {
+          "label": "Toimittaja",
+          "value": "Caverion Suomi Oy"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2017-001122?paatos=98f16f92-9faa-4bd1-8c50-eb3af08da03c",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/helsinki_paatokset/"
+    },
+    {
+      "id": "helsinki-varte-vuokra-2023",
+      "slug": "helsinki-varte-vuokra",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: maa-alueen vuokra Varte Oy:lle 459 €/kk",
+      "teaser": "Naurunkuja, Länsisatama. Vuokra 459 €/kk. Y-tunnus 0974176-1.",
+      "summary": "Helsingin päätös: Varte Oy vuokraa noin 540 m² alueen työmaatukikohdaksi 19.6.2023–30.4.2025. Vuokra 459 euroa kuukaudessa. Y-tunnus 0974176-1.",
+      "actors": [
+        "Helsingin kaupunki",
+        "Varte Oy"
+      ],
+      "y_tunnus": "0974176-1",
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Aihe",
+          "value": "maa-alueen vuokra (työmaatukikohta)"
+        },
+        {
+          "label": "Vuokra",
+          "value": "459 €/kk"
+        },
+        {
+          "label": "Toimittaja",
+          "value": "Varte Oy (Y 0974176-1)"
+        },
+        {
+          "label": "Jakso",
+          "value": "19.6.2023–30.4.2025"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2023-013526?paatos=ba12f394-f34a-4611-b641-cd840ef5065d",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/helsinki_paatokset/"
+    },
+    {
+      "id": "helsinki-puite-maankaytto-2024",
+      "slug": "helsinki-puite-maankaytto",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: maankäytön puite, optiokausi, enimmäisarvo 2 500 000 €",
+      "teaser": "Optio 1.2.2024–31.1.2026. Osa-alue 1 enimmäisarvo 2 500 000 €. Useita toimittajia.",
+      "summary": "Helsingin päätös jatkaa maankäytön yleissuunnittelun rakenne- ja kallioteknisiä puitesopimuksia optiokaudelle 1.2.2024–31.1.2026. Osa-alueen 1 enimmäisarvo 2 500 000 euroa (alv 0 %). Toimittajia mm. AFRY, Sitowise, Rockplan, A-Insinöörit, Sweco.",
+      "actors": [
+        "Helsingin kaupunki",
+        "AFRY Finland Oy",
+        "Sitowise Oy",
+        "Sweco Finland Oy"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Optiokausi",
+          "value": "1.2.2024–31.1.2026"
+        },
+        {
+          "label": "Enimmäisarvo",
+          "value": "2 500 000 € (osa-alue 1, alv 0 %)"
+        },
+        {
+          "label": "Toimittajat",
+          "value": "AFRY, Sitowise, Rockplan, A-Insinöörit, Sweco (osa-alueittain)"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2023-012551?paatos=3455127c-2536-4b57-aa1c-067b8b00c0a0",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/helsinki_paatokset/"
+    },
+    {
+      "id": "helsinki-verotietokysely-1629",
+      "slug": "helsinki-verotietokysely",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: verotietokyselyjen automatisointi, 1 629 €/kk",
+      "teaser": "CGI Suomi Oy. Toteutus 31 073 €, ylläpito 1 629 €/kk, katto 109 265 €.",
+      "summary": "Helsingin päätös hankkia verotietokyselyjen automatisointi CGI Suomi Oy:ltä. Toteutus 31 073 euroa, ylläpito 1 629 euroa kuukaudessa, katto 109 265 euroa ilman alv:a. Suorahankinta.",
+      "actors": [
+        "Helsingin kaupunki",
+        "CGI Suomi Oy"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Toimittaja",
+          "value": "CGI Suomi Oy"
+        },
+        {
+          "label": "Toteutus",
+          "value": "31 073 €"
+        },
+        {
+          "label": "Ylläpito",
+          "value": "1 629 €/kk"
+        },
+        {
+          "label": "Katto",
+          "value": "109 265 € (alv 0 %)"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/helsinki_paatokset/"
+    },
+    {
+      "id": "helsinki-villa-granvik-suorahankinta",
+      "slug": "helsinki-villa-granvik",
+      "found_at": "2026-08-25",
+      "kind": "hankinta",
+      "comparison": null,
+      "gap_status": null,
+      "updates": [],
+      "title": "Helsinki: Villa Granvik, suunnittelu Livady Oy 59 000 €",
+      "teaser": "Kattohinta 59 000 € (alv 0 %). Livady Oy. Suorahankinta.",
+      "summary": "Helsingin päätös hyväksyä Livady Oy:n kattohintatarjous 59 000 euroa (alv 0 %) Villa Granvikin suunnitteluun: suojellun puutalon siirto ja rakennuslupa. Suorahankinta.",
+      "actors": [
+        "Helsingin kaupunki",
+        "Livady Oy"
+      ],
+      "y_tunnus": null,
+      "facts": [
+        {
+          "label": "Lähde",
+          "value": "Helsingin päätökset"
+        },
+        {
+          "label": "Toimittaja",
+          "value": "Livady Oy"
+        },
+        {
+          "label": "Kattohinta",
+          "value": "59 000 € (alv 0 %)"
+        },
+        {
+          "label": "Menettely",
+          "value": "suorahankinta"
+        }
+      ],
+      "gaps": [],
+      "sources": [
+        {
+          "label": "Helsinki paatokset.hel.fi",
+          "url": "https://paatokset.hel.fi/fi/asia/hel-2023-013878?paatos=5f5c878f-ca46-49de-9024-f62e90136188",
+          "kind": "Helsinki päätös"
+        }
+      ],
+      "jalostus_ref": "data/raw/helsinki_paatokset/"
     }
   ]
 }
