@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:26:40+03:00",
+  "generated_at": "2026-08-26T15:12:35+03:00",
   "note": "Poimintoja julkisista lähteistä. Raha, hankinta, ketju ja puuttuva tieto. Poikkeama merkitään vain, kun vertailukohtia on tarpeeksi.",
   "findings": [
     {
@@ -2033,12 +2033,17 @@
       "slug": "hilma-outlier-2023124400",
       "found_at": "2026-08-24",
       "kind": "hankinta",
-      "comparison": "selva",
+      "comparison": "pieni",
       "gap_status": null,
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-08-26",
+          "note": "CPV n/× päivitetty nykyrawiin (JAL5 drift): n=10→61, 4.42×→2.1×, selvä→pieni."
+        }
+      ],
       "title": "Huittisten kaupunki: Ostoliikenne",
-      "teaser": "Arvioitu arvo noin 4.42× CPV-mediaania (n=10). Selvä poikkeama verrokkiin nähden.",
-      "summary": "Hilma-ilmoitus 2023-124400 (Huittisten kaupunki). Arvioitu arvo 2 100 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 475 000,00 € (n=10). Suhde mediaaniin noin 4.42×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "teaser": "Arvioitu arvo noin 2.1× CPV-mediaania (n=61). Pieni poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-124400 (Huittisten kaupunki). Arvioitu arvo 2 100 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 1 000 000,00 € (n=61). Suhde mediaaniin noin 2.1×. Merkitään Pieneksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
       "actors": [
         "Huittisten kaupunki"
       ],
@@ -2062,15 +2067,15 @@
         },
         {
           "label": "CPV-mediaani (otos)",
-          "value": "475 000,00 € (n=10)"
+          "value": "1 000 000,00 € (n=61)"
         },
         {
           "label": "Suhde mediaaniin",
-          "value": "noin 4.42×"
+          "value": "noin 2.1×"
         },
         {
           "label": "Poikkeama",
-          "value": "Selvä poikkeama"
+          "value": "Pieni poikkeama"
         }
       ],
       "gaps": [],
@@ -2088,12 +2093,17 @@
       "slug": "hilma-outlier-2023123479",
       "found_at": "2026-08-24",
       "kind": "hankinta",
-      "comparison": "selva",
+      "comparison": "pieni",
       "gap_status": null,
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-08-26",
+          "note": "CPV n/× päivitetty nykyrawiin (JAL5 drift): n=10→61, 4.42×→2.1×, selvä→pieni."
+        }
+      ],
       "title": "Huittisten kaupunki: Ostoliikenne",
-      "teaser": "Arvioitu arvo noin 4.42× CPV-mediaania (n=10). Selvä poikkeama verrokkiin nähden.",
-      "summary": "Hilma-ilmoitus 2023-123479 (Huittisten kaupunki). Arvioitu arvo 2 100 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 475 000,00 € (n=10). Suhde mediaaniin noin 4.42×. Merkitään Selväksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
+      "teaser": "Arvioitu arvo noin 2.1× CPV-mediaania (n=61). Pieni poikkeama verrokkiin nähden.",
+      "summary": "Hilma-ilmoitus 2023-123479 (Huittisten kaupunki). Arvioitu arvo 2 100 000,00 €. Saman CPV-ryhmän mediaani tässä otoksessa 1 000 000,00 € (n=61). Suhde mediaaniin noin 2.1×. Merkitään Pieneksi poikkeamaksi. Ei väitettä että hankinta on väärä.",
       "actors": [
         "Huittisten kaupunki"
       ],
@@ -2117,15 +2127,15 @@
         },
         {
           "label": "CPV-mediaani (otos)",
-          "value": "475 000,00 € (n=10)"
+          "value": "1 000 000,00 € (n=61)"
         },
         {
           "label": "Suhde mediaaniin",
-          "value": "noin 4.42×"
+          "value": "noin 2.1×"
         },
         {
           "label": "Poikkeama",
-          "value": "Selvä poikkeama"
+          "value": "Pieni poikkeama"
         }
       ],
       "gaps": [],
