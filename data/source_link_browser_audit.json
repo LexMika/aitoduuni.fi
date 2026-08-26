@@ -1,0 +1,507 @@
+{
+  "generated_at": "2026-08-22T10:13:52.175939+03:00",
+  "note": "Playwright Chromium headless, fi-FI, 2.5s post-load wait.",
+  "total_unique_urls": 34,
+  "summary_by_source_kind": {
+    "Finlex": {
+      "OK": 1
+    },
+    "Helsinki päätös": {
+      "OK": 5
+    },
+    "Hilma": {
+      "LIKELY_HOMEPAGE": 17
+    },
+    "Kunnan päätös": {
+      "OK": 1,
+      "REDIRECT": 5
+    },
+    "Markkinaoikeus": {
+      "OK": 1
+    },
+    "PRH": {
+      "OK": 1
+    },
+    "Tampere päätös": {
+      "REDIRECT": 1
+    },
+    "Tutkihankintoja": {
+      "BROWSER_FAIL": 1
+    },
+    "Virasto": {
+      "BROWSER_FAIL": 1
+    }
+  },
+  "results": [
+    {
+      "url_initial": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4",
+      "source_kinds": [
+        "PRH"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4",
+      "title": "",
+      "body_snippet": "{\"totalResults\":1,\"companies\":[{\"businessId\":{\"value\":\"1503388-4\",\"registrationDate\":\"1998-11-30\",\"source\":\"3\"},\"names\":[{\"name\":\"Senaatti-kiinteistöt\",\"type\":\"1\",\"registrationDate\":\"2001-03-01\",\"version\":1,\"source\":\"1\"},{\"name\":\"Valtion kiinteistölaitos\",\"type\":\"1\",\"registrationDate\":\"1999-02-11\",\"endDate\":\"2001-02-28\",\"version\":2,\"source\":\"1\"},{\"name\":\"Senatfastigheter\",\"type\":\"2\",\"registrationDate\":\"2001-03-01\",\"version\":1,\"source\":\"1\"}],\"mainBusinessLine\":{\"type\":\"87999\",\"descriptions\":[{\"la",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv",
+      "source_kinds": [
+        "Tutkihankintoja"
+      ],
+      "used_count": 19,
+      "ok": false,
+      "status": "BROWSER_FAIL",
+      "reason": "Page.goto: Download is starting\nCall log:\n  - navigating to \"https://avoindata.suomi.fi/data/dataset/ba96a638-67bf-4747-b084-c78ccfe052e9/resource/d4d0df6f-70f0-48da-b5c6-c8fb7398d528/download/th_data_2024.csv\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url_initial": "https://cdn.valtiokonttori.fi/wordpress/2025/12/Liite_2_Yhdistelmaluettelo.xlsx",
+      "source_kinds": [
+        "Virasto"
+      ],
+      "used_count": 1,
+      "ok": false,
+      "status": "BROWSER_FAIL",
+      "reason": "Page.goto: Download is starting\nCall log:\n  - navigating to \"https://cdn.valtiokonttori.fi/wordpress/2025/12/Liite_2_Yhdistelmaluettelo.xlsx\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/45ecb98e-8aa1-4531-88c6-4f22ec8f25f7",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/45ecb98e-8aa1-4531-88c6-4f22ec8f25f7",
+      "title": "Kaupunkiympäristölautakunnan alaisten viranomaisten ajalla 26.10. - 1.11.2023 tekemien päätösten seuraaminen – Kaupunkiympäristölautakunta | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+      "title": "Verotietokyselyjen automatisoinnin hankinta | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2017-001122?paatos=98f16f92-9faa-4bd1-8c50-eb3af08da03c",
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2017-001122?paatos=98f16f92-9faa-4bd1-8c50-eb3af08da03c",
+      "title": "Caverion Suomi Oy, liiketilan vuokraus osoitteesta Länsisatamankatu 23 | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-012551?paatos=3455127c-2536-4b57-aa1c-067b8b00c0a0",
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-012551?paatos=3455127c-2536-4b57-aa1c-067b8b00c0a0",
+      "title": "Hankinta, Maankäytön yleissuunnittelun rakenne- ja kallioteknisen puitejärjestelyn jatkaminen optiokaudelle 1.2.2024-31.1.2026 | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-013526?paatos=ba12f394-f34a-4611-b641-cd840ef5065d",
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-013526?paatos=ba12f394-f34a-4611-b641-cd840ef5065d",
+      "title": "Vuokraus, maa-alue, Naurunkuja, Länsisatama, Varte Oy | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-013878?paatos=5f5c878f-ca46-49de-9024-f62e90136188",
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-013878?paatos=5f5c878f-ca46-49de-9024-f62e90136188",
+      "title": "Hankinta, Villa Granvik, pääsuunnittelu ja projektisuunnittelu, kaupunkiympäristön toimiala | Päätökset | Helsingin kaupunki",
+      "body_snippet": "Hyppää pääsisältöön Helsingin kaupunki (Linkki johtaa ulkoiseen palveluun) Ajankohtaista (Linkki johtaa ulkoiseen palveluun) Helsinki lähelläsi (Linkki johtaa ulkoiseen palveluun) Avoimet työpaikat (Linkki johtaa ulkoiseen palveluun) Osallistu (Linkki johtaa ulkoiseen palveluun) Asioi verkossa (Linkki johtaa ulkoiseen palveluun) Anna palautetta (Linkki johtaa ulkoiseen palveluun) Päätökset Suomi Svenska English Etsi päätöksiä Päätöksenteko Kokouskalenteri Kuulutukset ja ilmoitukset Tietoa päätök",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/309843/13020",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Asemakaavapaumlaumlllikkouml_Kaupunkiympaumlristoumln_palvelualue/Hiedanrannan_kaupunkikuvallilsen_vision_(309843)",
+      "title": "Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyötilaus | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Asemakaavapäällikkö, Kaupunkiympäristön palvelualue > Hiedanrannan kaupunkikuvallilsen vision hankinta, lisätyötilaus Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukkoliiken",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/457352/13031",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Joukkoliikenteen_akkukayttoisten_pysakki(457352)",
+      "title": "Joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpidon hankinta | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Joukkoliikennejohtaja, Kaupunkiympäristön palvelualue > Joukkoliikenteen akkukäyttöisten pysäkkinäyttöjen ylläpidon hankinta Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukk",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/484077/13031",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Markkinointipalveluiden_hankinta_12026(484077)",
+      "title": "Markkinointipalveluiden hankinta 1/2026 | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Joukkoliikennejohtaja, Kaupunkiympäristön palvelualue > Markkinointipalveluiden hankinta 1/2026 Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukkoliikennelautakunta sekä alue",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/490336/13031",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Esteettomyyskartoituksen_hankinta(490336)",
+      "title": "Esteettömyyskartoituksen hankinta | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Joukkoliikennejohtaja, Kaupunkiympäristön palvelualue > Esteettömyyskartoituksen hankinta Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukkoliikennelautakunta sekä alueelline",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/490338/13031",
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Markkinointipalveluiden_hankinta_22026(490338)",
+      "title": "Markkinointipalveluiden hankinta 2/2026 | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Joukkoliikennejohtaja, Kaupunkiympäristön palvelualue > Markkinointipalveluiden hankinta 2/2026 Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukkoliikennelautakunta sekä alue",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/501279/13031",
+      "source_kinds": [
+        "Tampere päätös"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Joukkoliikennejarjestelman_strategisen_v(501279)",
+      "title": "Joukkoliikennejärjestelmän strategisen vertailun hankinta | Tampere esityslistat ja pöytäkirjat",
+      "body_snippet": "Hyppää sisältöön Etsi sivustolta Etusivu Toimielimet Viranhaltijat Kuuntele  Etusivu > Viranhaltijat > Joukkoliikennejohtaja, Kaupunkiympäristön palvelualue > Joukkoliikennejärjestelmän strategisen vertailun hankinta Aluejohtaja Etelä Aluejohtaja Itä Apulaispormestari, elinvoima- ja osaamislautakunta sekä asunto- ja kiinteistölautakunta Apulaispormestari, kasvatus- ja opetuslautakunta sekä kulttuuri- ja vapaa-aikalautakunta Apulaispormestari, yhdyskuntalautakunta, kaupunkiseudun joukkoliikennela",
+      "redirected": true
+    },
+    {
+      "url_initial": "https://www.finlex.fi/fi/oikeuskaytanto/markkinaoikeus/2025/748",
+      "source_kinds": [
+        "Finlex"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.finlex.fi/fi/oikeuskaytanto/markkinaoikeus/2025/748",
+      "title": "MAO:748/2025 | 19.12.2025 | Markkinaoikeus | Finlex",
+      "body_snippet": "Siirry sisältöön Hae kaikista aineistoista Hae Suomeksi Etusivu Lainsäädäntö Oikeuskäytäntö Viranomaiset Valtiosopimukset Hallituksen esitykset Avoin data MARKKINAOIKEUS 19.12.2025 Finlex Oikeuskäytäntö Markkinaoikeus 2025 19.12.2025 Markkinaoikeus Markkinaoikeuden ja aiemman markkinatuomioistuimen ratkaisuja vuodesta 1979 Sisällysluettelo Napsauta palauttaksesi sisällysluettelon Supista kaikki Laajenna kaikki Asian tausta Asian käsittely markkinaoikeudessa Valitus Vaatimukset Perustelut Vastine",
+      "redirected": false
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2020-044126"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-050393/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2020-050393"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-052035/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2020-052035"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-060898/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2020-060898"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-062047/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2021-062047"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-087478/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2021-087478"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2021-088776"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088873/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2021-088873"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088931/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2021-088931"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-097256/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2022-097256"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-115731/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2022-115731"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-118330/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-118330"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126101/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-126101"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126299/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-126299"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-129685/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-129685"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-133182/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-133182"
+    },
+    {
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-134804/",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.hankintailmoitukset.fi/fi/",
+      "title": "Hilma - Etusivu",
+      "body_snippet": "Siirry suoraan sisältöön. Julkiset hankinnat Etusivu Ohjeet Hae hankintoja FI Kirjaudu Rekisteröidy Tutustu julkisten hankintojen mahdollisuuksiin!  Hae Tiedotteet  Kaikki tiedotteet   22.12.2022 Tietoa kansallisista eForms-ilmoituksista  Sivua päivitetty 7.8.2025  Kansallisista hankinnoista ilmoittaminen muuttuu vuonna 2025. Ensimmäisenä käyttöön otetaan eForms-muotoinen hankintailmoitus, jälki-ilmoitus ja markkinakartoitusilmoitus.  Lue lisää »  16.6.2026 Valtiokonttori ohjeistaa: ilmoita sid",
+      "redirected": true,
+      "hilma_class": "LIKELY_HOMEPAGE",
+      "hilma_notice_expected": "2023-134804"
+    },
+    {
+      "url_initial": "https://www.markkinaoikeus.fi/ratkaisut/ratkaisujen-arkisto/mao748-2025/",
+      "source_kinds": [
+        "Markkinaoikeus"
+      ],
+      "used_count": 1,
+      "ok": true,
+      "http_status": 200,
+      "url_final": "https://www.markkinaoikeus.fi/ratkaisut/ratkaisujen-arkisto/mao748-2025/",
+      "title": "MAO:748/​2025 - Markkinaoikeus",
+      "body_snippet": "Tuomioistuimet.fi Siirry sisältöön Hae sivustolta Yhteystiedot Suomi Etusivu Ajankohtaista Asiointi markkinaoikeudessa Ratkaisut Vireillä olevat hankinta-asiat Tietoa meistä Etusivu Ratkaisut MAO:748/​2025 MAO:748/​2025 Asianomaiset  Visma Aquila Oy > Etelä-Savon hyvinvointialue  Asiasanat  julkinen hankinta – hankintasopimuksen muutos – kilpailuttamisvelvollisuus – suorahankinta  Diaarinumero(t):  76/2025  Antopäivä:  19.12.2025  Käsiteltävät asiat  Hankinta-asiat  Asian tausta  Etelä-Savon sos",
+      "redirected": false
+    }
+  ]
+}

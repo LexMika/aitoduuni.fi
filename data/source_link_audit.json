@@ -1,0 +1,781 @@
+{
+  "generated_at": "2026-08-22T10:06:38.499015+03:00",
+  "note": "HTTP probe only. Hilma SPA redirect may not appear here.",
+  "total_unique_urls": 34,
+  "summary_by_source_kind": {
+    "Finlex": {
+      "OK": 1
+    },
+    "Helsinki päätös": {
+      "OK": 5
+    },
+    "Hilma": {
+      "OK_SPA_RISK": 17
+    },
+    "Kunnan päätös": {
+      "OK": 1,
+      "REDIRECT": 5
+    },
+    "Markkinaoikeus": {
+      "OK": 1
+    },
+    "PRH": {
+      "OK": 1
+    },
+    "Tampere päätös": {
+      "REDIRECT": 1
+    },
+    "Tutkihankintoja": {
+      "CURL_FAIL": 1
+    },
+    "Virasto": {
+      "OK": 1
+    }
+  },
+  "results": [
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4",
+      "url_final": "https://avoindata.prh.fi/opendata-ytj-api/v3/companies?businessId=1503388-4",
+      "redirect": false,
+      "bytes": 3833,
+      "spa_note": null,
+      "source_kinds": [
+        "PRH"
+      ],
+      "used_in": [
+        {
+          "slug": "senaatti-ketju",
+          "source_kind": "PRH",
+          "label": "PRH / YTJ"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": false,
+      "status": "CURL_FAIL",
+      "reason": "curl: (28) Operation timed out after 10943 milliseconds with 3969231 out of 807203834 bytes received",
+      "source_kinds": [
+        "Tutkihankintoja"
+      ],
+      "used_in": [
+        {
+          "slug": "migri-spr-keskus-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "keha-mpv-infrarakenne-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "migri-kotokunta-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "keha-terranor-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "dvv-reaktor-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "ork-accenture-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "valvira-solita-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        },
+        {
+          "slug": "dvv-loihde-ostolasku",
+          "source_kind": "Tutkihankintoja",
+          "label": "Tutkihankintoja · th_data_2024.csv"
+        }
+      ],
+      "used_count": 19
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://cdn.valtiokonttori.fi/wordpress/2025/12/Liite_2_Yhdistelmaluettelo.xlsx",
+      "url_final": "https://cdn.valtiokonttori.fi/wordpress/2025/12/Liite_2_Yhdistelmaluettelo.xlsx",
+      "redirect": false,
+      "bytes": 114467,
+      "spa_note": null,
+      "source_kinds": [
+        "Virasto"
+      ],
+      "used_in": [
+        {
+          "slug": "senaatti-ketju",
+          "source_kind": "Virasto",
+          "label": "Valtiokonttori · virastoluettelo"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/45ecb98e-8aa1-4531-88c6-4f22ec8f25f7",
+      "url_final": "https://paatokset.hel.fi/fi/asia/45ecb98e-8aa1-4531-88c6-4f22ec8f25f7",
+      "redirect": false,
+      "bytes": 91697,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-kaupunkiymparisto-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Helsinki · päätös 45ECB98E-8AA1-4531-88C6-4F22EC8F25F7"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2017-000682?paatos=aa98cf37-1f2f-cc29-8578-59eed6600006",
+      "redirect": false,
+      "bytes": 101008,
+      "spa_note": null,
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-verotietokysely",
+          "source_kind": "Helsinki päätös",
+          "label": "Helsinki paatokset.hel.fi"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2017-001122?paatos=98f16f92-9faa-4bd1-8c50-eb3af08da03c",
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2017-001122?paatos=98f16f92-9faa-4bd1-8c50-eb3af08da03c",
+      "redirect": false,
+      "bytes": 89320,
+      "spa_note": null,
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-caverion-vuokra",
+          "source_kind": "Helsinki päätös",
+          "label": "Helsinki paatokset.hel.fi"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-012551?paatos=3455127c-2536-4b57-aa1c-067b8b00c0a0",
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-012551?paatos=3455127c-2536-4b57-aa1c-067b8b00c0a0",
+      "redirect": false,
+      "bytes": 101904,
+      "spa_note": null,
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-puite-maankaytto",
+          "source_kind": "Helsinki päätös",
+          "label": "Helsinki paatokset.hel.fi"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-013526?paatos=ba12f394-f34a-4611-b641-cd840ef5065d",
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-013526?paatos=ba12f394-f34a-4611-b641-cd840ef5065d",
+      "redirect": false,
+      "bytes": 94025,
+      "spa_note": null,
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-varte-vuokra",
+          "source_kind": "Helsinki päätös",
+          "label": "Helsinki paatokset.hel.fi"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://paatokset.hel.fi/fi/asia/hel-2023-013878?paatos=5f5c878f-ca46-49de-9024-f62e90136188",
+      "url_final": "https://paatokset.hel.fi/fi/asia/hel-2023-013878?paatos=5f5c878f-ca46-49de-9024-f62e90136188",
+      "redirect": false,
+      "bytes": 97077,
+      "spa_note": null,
+      "source_kinds": [
+        "Helsinki päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "helsinki-villa-granvik",
+          "source_kind": "Helsinki päätös",
+          "label": "Helsinki paatokset.hel.fi"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/309843/13020",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Asemakaavapaumlaumlllikkouml_Kaupunkiympaumlristoumln_palvelualue/Hiedanrannan_kaupunkikuvallilsen_vision_(309843)",
+      "redirect": true,
+      "bytes": 233950,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-hiedanranta-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Tampere · päätös 309843"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/457352/13031",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Joukkoliikenteen_akkukayttoisten_pysakki(457352)",
+      "redirect": true,
+      "bytes": 241454,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-pysakkinaytot-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Tampere · päätös 457352"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/484077/13031",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Markkinointipalveluiden_hankinta_12026(484077)",
+      "redirect": true,
+      "bytes": 237995,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-markkinointi-1-2026-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Tampere · päätös 484077"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/490336/13031",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Esteettomyyskartoituksen_hankinta(490336)",
+      "redirect": true,
+      "bytes": 238928,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-esteettomyys-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Tampere · päätös 490336"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/490338/13031",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Markkinointipalveluiden_hankinta_22026(490338)",
+      "redirect": true,
+      "bytes": 237136,
+      "spa_note": null,
+      "source_kinds": [
+        "Kunnan päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-markkinointi-2026-hinta-puuttuu",
+          "source_kind": "Kunnan päätös",
+          "label": "Tampere · päätös 490338"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "REDIRECT",
+      "http_code": 200,
+      "url_initial": "https://tampere.cloudnc.fi/fi-FI/content/501279/13031",
+      "url_final": "https://tampere.cloudnc.fi/fi-FI/Viranhaltijat/Joukkoliikennejohtaja_Kaupunkiympaumlristoumln_palvelualue/Joukkoliikennejarjestelman_strategisen_v(501279)",
+      "redirect": true,
+      "bytes": 244317,
+      "spa_note": null,
+      "source_kinds": [
+        "Tampere päätös"
+      ],
+      "used_in": [
+        {
+          "slug": "tampere-joukkoliikenne-vertailu",
+          "source_kind": "Tampere päätös",
+          "label": "Tampereen päätös · päätös 501279"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://www.finlex.fi/fi/oikeuskaytanto/markkinaoikeus/2025/748",
+      "url_final": "https://www.finlex.fi/fi/oikeuskaytanto/markkinaoikeus/2025/748",
+      "redirect": false,
+      "bytes": 267438,
+      "spa_note": null,
+      "source_kinds": [
+        "Finlex"
+      ],
+      "used_in": [
+        {
+          "slug": "mao-748-2025",
+          "source_kind": "Finlex",
+          "label": "Finlex · MAO:748/2025"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-044126/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "vayla-hilma-arvo-puuttuu",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2020-044126"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-050393/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-050393/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2020050393",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2020-050393"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-052035/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-052035/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2020052035",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2020-052035"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-060898/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2020-060898/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2020060898",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2020-060898"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-062047/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-062047/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2021062047",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2021-062047"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-087478/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-087478/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2021087478",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2021-087478"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "kainuu-mri-arvo-puuttuu",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2021-088776"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088873/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088873/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2021088873",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2021-088873"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088931/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088931/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "senaatti-ketju",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-097256/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-097256/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2022097256",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2022-097256"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-115731/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2022-115731/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2022115731",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2022-115731"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-118330/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-118330/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2023118330",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-118330"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126101/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126101/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "verohallinto-it-hankinta-verrokki",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-126101"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126299/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-126299/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2023126299",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-126299"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-129685/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-129685/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2023129685",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-129685"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-133182/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-133182/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2023133182",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-133182"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK_SPA_RISK",
+      "http_code": 200,
+      "url_initial": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-134804/",
+      "url_final": "https://www.hankintailmoitukset.fi/fi/public/procurement/2023-134804/",
+      "redirect": false,
+      "bytes": 9684,
+      "spa_note": "Hilma-SPA: suora URL voi selaimessa ohjata etusivulle. Polku: hae ilmoitusnumerolla.",
+      "source_kinds": [
+        "Hilma"
+      ],
+      "used_in": [
+        {
+          "slug": "hilma-outlier-2023134804",
+          "source_kind": "Hilma",
+          "label": "Hilma · hankintailmoitus 2023-134804"
+        }
+      ],
+      "used_count": 1
+    },
+    {
+      "ok": true,
+      "status": "OK",
+      "http_code": 200,
+      "url_initial": "https://www.markkinaoikeus.fi/ratkaisut/ratkaisujen-arkisto/mao748-2025/",
+      "url_final": "https://www.markkinaoikeus.fi/ratkaisut/ratkaisujen-arkisto/mao748-2025/",
+      "redirect": false,
+      "bytes": 131171,
+      "spa_note": null,
+      "source_kinds": [
+        "Markkinaoikeus"
+      ],
+      "used_in": [
+        {
+          "slug": "mao-748-2025",
+          "source_kind": "Markkinaoikeus",
+          "label": "Markkinaoikeus · MAO:748/2025"
+        }
+      ],
+      "used_count": 1
+    }
+  ]
+}
