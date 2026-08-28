@@ -1001,6 +1001,9 @@ footer {
 }
 footer .wordmark { font-size: 1rem; }
 footer a { color: var(--blue-hot); }
+footer .legal-links { font-size: 0.82rem; margin: 0.35rem 0; }
+footer .legal-links a { text-decoration: none; }
+footer .legal-links a:hover { text-decoration: underline; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(12px); }
