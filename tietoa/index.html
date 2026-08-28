@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260821d">
+<link rel="stylesheet" href="../assets/site.css?v=20260828b">
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -19,11 +19,12 @@
   <a class="wordmark" href="../">Aito<span>Data</span></a>
   <span class="badge">Esikatselu</span>
   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-  <nav class="site" id="site-nav">
+<nav class="site" id="site-nav">
     <a href="../sivut/loydot/">Löydöt</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../kaiva/">Tutki lisää</a>
     <a href="../nain-luet/">Näin luet</a>
+    <a href="../perusteet/">Perusteet</a>
     <a href="../tietoa/" class="active">Info</a>
   </nav>
 </div></div>
@@ -31,6 +32,7 @@
 <div class="wrap">
   <header class="page-head">
     <h1>Mikä AitoData on</h1>
+    <p class="intro-lead">Tämä sivu kertoo mitä teemme, mitä emme väitä, ja miten voit tarkistaa lähteen.</p>
     <p>Virallinen nimi on <strong>AitoData</strong>. Kansanomainen työnimi on <strong>Vallanvahtikoira</strong> (“AitoDatan Vallanvahtikoira”).</p>
     <p style="margin-top:0.75rem">Kaivamme Suomen julkisista lähteistä tietoa, yhdistämme saman toimijan jäljet ja julkaisemme ne niin, että jokainen väite on tarkistettavissa. Näytämme mitä aineisto näyttää. Emme sano, onko jokin oikein tai väärin.</p>
   </header>
@@ -60,6 +62,7 @@
       <li><strong>Muuta julkista:</strong> päätökset, sidonnaisuudet, lobbausaineistot ym. lain sallimissa rajoissa, sitä mukaa kun aineisto laajenee.</li>
     </ul>
     <p>Kaivamme laajasti julkisista lähteistä, myös yksittäisiä hankintoja: hinta ja kilpailutus suhteessa verrokkeihin, kun data riittää.</p>
+    <p>Näytämme vain jo julkiseksi avattua aineistoa (esim. Hilma-ilmoitukset, rekisterit). Emme vuoda salaisuuksia emmekä kaiva yksityiselämää.</p>
   </section>
 
   <section class="panel">
@@ -68,11 +71,11 @@
       <li><strong>Helppo lukutapa:</strong> tiivistelmä, lähteet, kokonaiskuva (<a href="../esimerkki/">katso esimerkki</a>).</li>
       <li><strong>Lähdeketju auki:</strong> URL, mitä tarkistaa, mistä löytyy.</li>
       <li><strong>Faktat ensin:</strong> emme väitä oletuksena, että jokin on väärin.</li>
-      <li><strong>Perusteet näkyviin:</strong> <a href="../perusteet/">mihin tämä perustuu</a>.</li>
+      <li><strong>Laki ja avoimuus (syvempi):</strong> <a href="../perusteet/">mihin tämä perustuu</a>.</li>
     </ul>
   </section>
 
-  <section class="panel">
+  <section class="panel" id="mita-emme-tee">
     <h2>Mitä emme tee</h2>
     <p><strong>Me emme…</strong></p>
     <ul>
@@ -100,13 +103,23 @@
     <p>Tämä on esikatselu, ei vielä valmis palvelu. Tiedonkeruu toimii jo. Julkaisusivuja rakennetaan niin, että kansalainen ja media saavat niistä selvän.</p>
   </section>
 
+  <section class="panel" id="palaute-tietosuoja">
+    <h2>Palaute, korjaukset ja tietosuoja</h2>
+    <ul>
+      <li><strong>Virhe kortissa:</strong> jokaisen löytökortin lopussa on lomake — kerro mikä ei täsmää lähteeseen. Korjaamme.</li>
+      <li><strong>Julkinen aineisto:</strong> emme myy dataa. Näytämme tiivistelmän ja linkin alkuperäiseen julkiseen lähteeseen.</li>
+      <li><strong>Lomake:</strong> voit jättää vapaaehtoisen sähköpostin vastausta varten. Sitä käytetään vain virheilmoituksen käsittelyyn.</li>
+      <li><strong>Yhteys:</strong> hanketta kehittää Mika Metsänen (AitoData). Virheilmoitus kortilla on nopein tapa tavoittaa.</li>
+    </ul>
+  </section>
+
   <div class="disclaimer">
     Esikatselu, ei vielä tuotantopalvelu. Sisältö tarkentuu palautteen mukaan.
   </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
     <a class="btn" href="../esimerkki/">Katso esimerkki</a>
-    <a class="btn ghost" href="../perusteet/">Mihin tämä perustuu</a>
+    <a class="btn ghost" href="../perusteet/">Mihin laki nojaa</a>
     <a class="btn ghost" href="../">Etusivulle</a>
   </div>
 </div>

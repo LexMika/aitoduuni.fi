@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260821d">
+<link rel="stylesheet" href="../assets/site.css?v=20260828c">
 <link rel="icon" href="../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -19,11 +19,12 @@
   <a class="wordmark" href="../">Aito<span>Data</span></a>
   <span class="badge">Esikatselu</span>
   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-  <nav class="site" id="site-nav">
+<nav class="site" id="site-nav">
     <a href="../sivut/loydot/">Löydöt</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../kaiva/">Tutki lisää</a>
-    <a href="../nain-luet/" class="active">Näin luet</a>
+    <a href="../nain-luet/">Näin luet</a>
+    <a href="../perusteet/" class="active">Perusteet</a>
     <a href="../tietoa/">Info</a>
   </nav>
 </div></div>
@@ -37,6 +38,8 @@
   <div class="callout">
     <strong>Tärkeää</strong>
     <p style="margin:0.5rem 0 0">Tämä ei ole juridista neuvontaa eikä syyte. Lait ja kansainväliset sopimukset ovat <em>pelisääntöjä ja mittareita</em>: mitä lupauksia avoimuudesta on olemassa. Tulkinta on lukijalla.</p>
+    <p style="margin:0.75rem 0 0">Tämä sivu = lainsäädäntö ja avoimuuskehykset. Palvelun toimintatavat: <a href="../tietoa/">Info</a>.</p>
+    <p style="margin:0.75rem 0 0">Luonnollisen henkilön nimi voi esiintyä julkisessa päätöksessä tai ilmoituksessa. Emme kaiva yksityiselämää. Sivuston lomakkeet ja tietosuoja: <a href="../tietoa/#palaute-tietosuoja">Info</a>.</p>
   </div>
 
   <section class="panel">
@@ -54,6 +57,19 @@
         <br><a href="https://www.finlex.fi/fi/laki/ajantasa/2016/20161397" target="_blank" rel="noopener noreferrer">Finlex →</a>
       </li>
       <li>
+        <strong>Laki julkisten hankintojen ilmoittamisesta (348/2007).</strong>
+        Hankintojen ilmoittaminen (Hilma, TED): mitä tietoja kilpailutuksesta julkaistaan ja milloin.
+        Siksi löytökorteissa näkyvät ilmoitusnumero, arvioitu arvo, menettely ja ostaja — ne ovat jo ilmoitettuja tietoja, eivät AitoDatan tulkintaa.
+        <br><a href="https://www.finlex.fi/fi/laki/ajantasa/2007/20070348" target="_blank" rel="noopener noreferrer">Finlex →</a>
+        · <a href="https://www.hankintailmoitukset.fi/" target="_blank" rel="noopener noreferrer">Hankintailmoitukset.fi →</a>
+      </li>
+      <li>
+        <strong>Kauppa- ja yhteisötiedot (PRH).</strong>
+        Y-tunnus, yritys- ja yhteisön nimi sekä rekisteritiedot ovat julkista aineistoa.
+        Kun kortissa näkyy ostaja tai toimija, se nojaa tähän — emme paljasta yrityksen sisäistä dataa, vaan jo julkiseen rekisteriin tai ilmoitukseen merkittyä tietoa.
+        <br><a href="https://www.prh.fi/fi/index/ytj.html" target="_blank" rel="noopener noreferrer">Yritys- ja yhteisötietojärjestelmä →</a>
+      </li>
+      <li>
         <strong>Tiedonhallintalaki (906/2019).</strong>
         Viranomaisten tietoaineistojen hallinta ja saatavuus. Tausta sille, miksi tiedon pitäisi olla käytännössä auki, ei vain paperilla tai PDF:nä piilossa.
         <br><a href="https://www.finlex.fi/fi/laki/ajantasa/2019/20190906" target="_blank" rel="noopener noreferrer">Finlex →</a>
@@ -65,6 +81,17 @@
       </li>
     </ul>
     <p>Kooste kansallisista velvoitteista: <a href="https://avoindata.suomi.fi/fi/toimintamalli/2-lainsaadanto-ja-velvoitteet" target="_blank" rel="noopener noreferrer">avoindata.suomi.fi →</a></p>
+  </section>
+
+  <section class="panel">
+    <h2>Julkiset lähteet käytännössä</h2>
+    <p>AitoData ei yhdistä lähteitä salaisesti. Tyypillinen ketju:</p>
+    <ul>
+      <li><strong>Hankinta:</strong> Hilma-ilmoitus (348/2007, hankintalaki) → linkki alkuperäiseen ilmoitukseen.</li>
+      <li><strong>Toimija:</strong> Y-tunnus ja nimi PRH:stä tai ilmoituksesta → sama tunnus eri lähteissä.</li>
+      <li><strong>Päätös / raha:</strong> kunnan tai viranomaisen julkinen asiakirja tai avoin rekisteri, kun aineisto on saatavilla.</li>
+    </ul>
+    <p>Jos lähde puuttuu, se merkitään — emme täytä aukkoa arvaamalla.</p>
   </section>
 
   <section class="panel">
@@ -93,6 +120,12 @@
         Tietyille aineistoille odotetaan helpompaa saatavuutta (mm. rajapinnat ja massalataus). Ei kata kaikkea, siksi myös “tietoa ei löytynyt” on kiinnostavaa.
         <br><a href="https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32023R0138" target="_blank" rel="noopener noreferrer">EUR-Lex →</a>
       </li>
+      <li>
+        <strong>Open Contracting Data Standard (OCDS).</strong>
+        Kansainvälinen avoin muoto hankintatiedolle (ilmoitus, sopimus, maksu).
+        Emme väitä noudattavamme standardia virallisesti; se kuvaa, mitä avoimessa hankintadatassa yleensä pidetään tärkeänä.
+        <br><a href="https://standard.open-contracting.org/" target="_blank" rel="noopener noreferrer">Open Contracting →</a>
+      </li>
     </ul>
   </section>
 
@@ -115,15 +148,9 @@
   </section>
 
   <section class="panel">
-    <h2>Miten tämä näkyy AitoDatassa</h2>
-    <p>Siksi <a href="../esimerkki/">esimerkkisivulla</a> näkyy esimerkiksi suorahankinta ja hinta: ne ovat hankintalain kenttiä, eivät meidän mielipide. Sama logiikka pätee muihin tietosivuihin.</p>
-    <ul>
-      <li><strong>Faktat ja lähde:</strong> jokainen väite on avattavissa alkuperäiseen.</li>
-      <li><strong>Ei valmista tuomiota:</strong> näytämme menettelyn, summan ja linkin; emme sano “tämä on väärin”.</li>
-      <li><strong>EU ja maailma ovat mittareita:</strong> eivät juridinen päätös yksittäisestä tilanteesta.</li>
-      <li><strong>Puuttuva tieto on myös tieto:</strong> jos jotain ei löydy, sekin merkitään.</li>
-      <li><strong>Sama sääntö kaikille:</strong> ei puoluekantaa, ei valikoivaa listaa.</li>
-    </ul>
+    <h2>Käytännön toteutus</h2>
+    <p>Mitä julkaisemme, mitä emme väitä, ja miten voit tarkistaa faktat: <a href="../tietoa/#mita-emme-tee">Info → Mitä emme tee</a>.</p>
+    <p>Yksittäinen löytökortti: tiivistelmä, vertailuluvut (kun data riittää) ja linkki alkuperäiseen lähteeseen — esim. <a href="../esimerkki/">esimerkkikortti</a>.</p>
   </section>
 
   <div class="disclaimer">
@@ -131,9 +158,9 @@
   </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
-    <a class="btn" href="../esimerkki/">Katso esimerkki</a>
-    <a class="btn ghost" href="../kaiva/">Kaiva syvemmälle</a>
-    <a class="btn ghost" href="../tietoa/">Mikä AitoData on</a>
+    <a class="btn" href="../tietoa/">Mikä AitoData on</a>
+    <a class="btn ghost" href="../esimerkki/">Katso esimerkki</a>
+    <a class="btn ghost" href="../kaiva/">Tutki lisää</a>
   </div>
 </div>
 

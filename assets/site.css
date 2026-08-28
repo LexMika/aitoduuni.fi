@@ -136,6 +136,21 @@ nav.site a {
 }
 nav.site a:hover,
 nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
+nav.site a.nav-secondary {
+  color: rgba(148, 163, 184, 0.72);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+}
+nav.site a.nav-secondary:hover,
+nav.site a.nav-secondary.active { color: rgba(226, 232, 240, 0.92); }
+nav.site .nav-sep {
+  display: none;
+  width: 1px;
+  height: 1rem;
+  margin: 0 0.15rem;
+  background: rgba(51, 65, 85, 0.9);
+  align-self: center;
+}
 
 .badge {
   font-size: 0.65rem;
@@ -167,6 +182,7 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   }
   nav.site a:hover,
   nav.site a.active { background: transparent; }
+  nav.site .nav-sep { display: inline-block; }
   .badge { margin-left: 0; }
   .topbar-inner .nav-toggle + nav.site { margin-left: 0; }
   .topbar-inner { flex-wrap: nowrap; }
