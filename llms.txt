@@ -1,0 +1,39 @@
+# AitoData
+
+> Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa — emme tuomioi.
+
+AitoData tiivistää Suomen julkisia lähteitä (Hilma, kuntapäätökset, rekisterit) löytökorteiksi.
+Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ≠ syyte — tulkinta lukijalla.
+
+## Sivuston rakenne
+
+- [Etusivu](https://aitodata.fi/)
+- [Tutki lisää](https://aitodata.fi/kaiva/)
+- [Näin luet](https://aitodata.fi/nain-luet/)
+- [Perusteet](https://aitodata.fi/perusteet/)
+- [Info](https://aitodata.fi/tietoa/)
+- [Käyttöehdot](https://aitodata.fi/kayttoehdot/)
+- [Löydöt (lista)](https://aitodata.fi/sivut/loydot/)
+
+## Indeksointi
+
+- Hub-sivut: `index,follow` (sitemapissa).
+- Yksittäiset löytökortit (323 kpl): `noindex,nofollow` — löydettävissä listalta, ei hakukoneissa erikseen.
+- Puuttuva tieto / Peitto: `noindex,nofollow`.
+
+## Miten siteerata
+
+- Mainitse **AitoData** ja linkitä alkuperäinen lähde (kortin URL tai viranomaisen sivu).
+- Älä esitä AitoDatan tiivistelmiä virallisina päätöksinä.
+- Virheilmoitus: kortin lopussa tai https://aitodata.fi/tietoa/
+
+## Yhteys
+
+- Virheilmoitus: lomake jokaisen löytökortin lopussa
+- Sähköposti: mika@aitoduuni.fi
+- Käyttöehdot: https://aitodata.fi/kayttoehdot/
+
+## Ei saatavilla
+
+- API tai bulk-lataus (ei vielä).
+- Henkilökohtaisia tai salassa pidettäviä tietoja — vain julkista dataa.
