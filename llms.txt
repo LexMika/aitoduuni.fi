@@ -1,9 +1,9 @@
 # AitoData
 
-> Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa — emme tuomioi.
+> Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse.
 
 AitoData tiivistää Suomen julkisia lähteitä (Hilma, kuntapäätökset, rekisterit) löytökorteiksi.
-Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ≠ syyte — tulkinta lukijalla.
+Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ei ole syyte: tulkinta on lukijalla.
 
 ## Sivuston rakenne
 
@@ -18,7 +18,7 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ≠ syyte — t
 ## Indeksointi
 
 - Hub-sivut: `index,follow` (sitemapissa).
-- Yksittäiset löytökortit (323 kpl): `noindex,nofollow` — löydettävissä listalta, ei hakukoneissa erikseen.
+- Yksittäiset löytökortit (323 kpl): `noindex,nofollow` (löydettävissä listalta, ei hakukoneissa erikseen).
 - Puuttuva tieto / Peitto: `noindex,nofollow`.
 
 ## Miten siteerata
@@ -36,4 +36,4 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ≠ syyte — t
 ## Ei saatavilla
 
 - API tai bulk-lataus (ei vielä).
-- Henkilökohtaisia tai salassa pidettäviä tietoja — vain julkista dataa.
+- Henkilökohtaisia tai salassa pidettäviä tietoja: vain julkista dataa.
