@@ -15,6 +15,12 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ei ole syyte: t
 - [Käyttöehdot](https://aitodata.fi/kayttoehdot/)
 - [Löydöt (lista)](https://aitodata.fi/sivut/loydot/)
 
+## Miten hakea
+
+- Käytä aina kansion osoitetta, vinoviiva lopussa: https://aitodata.fi/tietoa/ (ei /tietoa eikä /tietoa.html).
+- Löytökortti: https://aitodata.fi/sivut/loydot/ ja https://aitodata.fi/sivut/loydot/<slug>/
+- Sivu on staattista HTML:ää. Älä jää “Siirry”-tynkään; se ei ole sisältö.
+
 ## Indeksointi
 
 - Hub-sivut: `index,follow` (sitemapissa).
