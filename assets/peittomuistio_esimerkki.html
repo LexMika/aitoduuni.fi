@@ -31,7 +31,7 @@
   .banner strong { color: #92400e; }
   table { width: 100%; border-collapse: collapse; margin: 0.4rem 0 0.6rem; font-size: 9.5pt; }
   th, td { text-align: left; padding: 0.28rem 0.4rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
-  th { color: #334155; width: 38%; font-weight: 600; }
+  th { color: #334155; width: 42%; font-weight: 600; }
   .box {
     border: 1px solid #e2e8f0;
     border-radius: 6px;
@@ -55,26 +55,27 @@
 
 <p class="brand">Aito<span>Data</span> · Vallanvahtikoira</p>
 <h1>Peittomuistio</h1>
-<p class="meta">Syvätiivistelmä puuttuvasta tiedosta · otos 25.8.2026</p>
+<p class="meta">Syvätiivistelmä puuttuvasta tiedosta · otos 9.9.2026</p>
 
 <div class="banner">
-  <strong>Esikatseluaineisto.</strong>
-  Tämä muistio kuvaa nykyistä otosta. Se ei kata koko Suomea.
-  Kun aineisto laajenee, Peittomuistio päivittyy peiton mukaan.
+  <strong>Otos, ei koko Suomi.</strong>
+  Tämä muistio kuvaa nykyistä aineistoa.
+  Kun aineisto laajenee, Peittomuistio päivittyy.
 </div>
 
 <h2>1. Aineisto ja rajaus</h2>
 <table>
-  <tr><th>Päiväys</th><td>25.8.2026</td></tr>
-  <tr><th>Aineisto A</th><td>Hilma: hankintailmoitukset (otos, 25 450 ilmoitusta)</td></tr>
-  <tr><th>Aineisto B</th><td>Haut ilman osumia useasta julkisesta lähteestä (224 tyhjää hakua, 12 lähdettä)</td></tr>
-  <tr><th>Julkinen hylly</th><td>69 löytökorttia, joista 9 aiheesta puuttuva tieto (https://aitodata.fi/sivut/loydot/)</td></tr>
+  <tr><th>Päiväys</th><td>9.9.2026</td></tr>
+  <tr><th>Aineisto A</th><td>Hilma: hankintailmoitukset (uniikit ilmoitukset, 57 082 kpl)</td></tr>
+  <tr><th>Aineisto B</th><td>Haut ilman osumia useasta julkisesta lähteestä (276 tyhjää hakua, 14 lähdettä)</td></tr>
+  <tr><th>Julkinen hylly</th><td>2 709 löytökorttia, joista 8 aiheesta puuttuva tieto (https://aitodata.fi/sivut/loydot/)</td></tr>
+  <tr><th>Sisar-sivu</th><td>Toimiiko lähde? (aukeaako lähde ylipäätään): https://aitodata.fi/sivut/toimiiko-lahde/</td></tr>
   <tr><th>Tarkoitus</th><td>Näyttää, mitä julkaistusta aineistosta <em>ei</em> vielä saa ulos. Ei tuomiota toimijasta.</td></tr>
 </table>
 
 <h2>2. Mitä mitattiin</h2>
 <ul>
-  <li><strong>Hilma:</strong> onko hankintailmoituksessa arvioitu hinta?</li>
+  <li><strong>Hilma:</strong> onko hankintailmoituksessa arvioitu hinta (euromäärä)?</li>
   <li><strong>Tyhjä haku:</strong> kun jokin toimija tai aihe löytyy yhdestä aineistosta, haettiinko samaa asiaa muista rekistereistä samoilla sanoilla, ja oliko vastaus “ei osumia”?</li>
 </ul>
 <p>Kysymys ei ole “kuka piilottaa”, vaan: <em>riittääkö julkaistu aineisto päätelmään?</em></p>
@@ -82,12 +83,13 @@
 
 <h2>3. Mitä tuli (luvut)</h2>
 <table>
-  <tr><th>Hilma-ilmoituksia otoksessa</th><td>25 450</td></tr>
-  <tr><th>Arvioitu hinta löytyy</th><td>18,4 % (4 675 kpl)</td></tr>
-  <tr><th>Arvioitua hintaa ei ole</th><td>81,6 % (<span class="no">puuttuva tieto</span>)</td></tr>
-  <tr><th>Haut ilman osumia</th><td>224</td></tr>
-  <tr><th>Lähteitä, joissa tyhjä tulos</th><td>12</td></tr>
+  <tr><th>Hilma-ilmoituksia (uniikit)</th><td>57 082</td></tr>
+  <tr><th>Arvioitu hinta löytyy</th><td>18,6 % (10 606 kpl)</td></tr>
+  <tr><th>Arvioitua hintaa ei ole</th><td>81,4 % (<span class="no">puuttuva tieto</span>, 46 476 kpl)</td></tr>
+  <tr><th>Haut ilman osumia</th><td>276</td></tr>
+  <tr><th>Lähteitä, joissa tyhjä tulos</th><td>14</td></tr>
 </table>
+<p class="meta">Vertailu elokuuhun 2026: otos on kasvanut (aiemmin noin 25 450 ilmoitusta). Hinta-arvion osuus on pysynyt samassa suuruusluokassa (noin 18–19 %).</p>
 
 <h2>4. Esimerkit</h2>
 
@@ -112,22 +114,31 @@
   <p>Kun jokin toimija tai aihe löytyy yhdestä aineistosta, haemme samaa asiaa muista rekistereistä samoilla sanoilla.</p>
   <p>Esimerkki: haettiin Järvenpään päätöksistä sanalla “kamera”. Yhtään päätöstä ei tullut.</p>
   <p>Löytökortti:
-    <a href="https://aitodata.fi/sivut/loydot/jarvenpaa-kamera-haku-tyhja/"
-       target="_blank" rel="noopener noreferrer">aitodata.fi · jarvenpaa-kamera-haku-tyhja</a>
+    <a href="https://aitodata.fi/sivut/loydot/cloudnc-jarvenpaa-kamera-tyhja/"
+       target="_blank" rel="noopener noreferrer">aitodata.fi · cloudnc-jarvenpaa-kamera-tyhja</a>
   </p>
   <p>Tyhjä tulos on havainto (haku tehtiin), ei virheraportti.</p>
+</div>
+
+<h3>4.3 Vanhentunut tyhjä (poistettu hyllystä)</h3>
+<div class="box">
+  <p>Haku “Eduskunnan kanslia” oli aiemmin merkitty tyhjäksi. Uudelleentarkistus 9.9.2026: Hilma palautti osumia.</p>
+  <p>Tämän vuoksi korttia ei pidetä live-hyllyssä. Tyhjä-havainto vanhenee, kun lähde täyttyy.</p>
 </div>
 
 <h2>5. Tyhjät haut lähteittäin</h2>
 <table>
   <tr><th>Yritysrekisteri (PRH / YTJ)</th><td>92</td></tr>
-  <tr><th>Hilma: hankintailmoitukset</th><td>58</td></tr>
-  <tr><th>Kuntien päätökset, CloudNC</th><td>41</td></tr>
-  <tr><th>Kuntien päätökset, KTWeb</th><td>12</td></tr>
-  <tr><th>Kuntien päätökset, Dynasty</th><td>9</td></tr>
-  <tr><th>Hilma: aluehaku</th><td>3</td></tr>
-  <tr><th>PIF (TOV)</th><td>3</td></tr>
-  <tr><th>Helsinki / KKV / MML / Turku / Tutkihankintoja</th><td>2 + 1 + 1 + 1 + 1</td></tr>
+  <tr><th>Hilma: hankintailmoitukset</th><td>71</td></tr>
+  <tr><th>Kuntien päätökset, CloudNC</th><td>57</td></tr>
+  <tr><th>Kuntien päätökset, KTWeb</th><td>13</td></tr>
+  <tr><th>Kuntien päätökset, Dynasty</th><td>10</td></tr>
+  <tr><th>PIF (TOV)</th><td>10</td></tr>
+  <tr><th>Korkein hallinto-oikeus (KHO)</th><td>8</td></tr>
+  <tr><th>Markkinaoikeus</th><td>4</td></tr>
+  <tr><th>Hilma: aluehaku / testiaineisto</th><td>3</td></tr>
+  <tr><th>Helsinki / KKV / Turku</th><td>2 + 2 + 2</td></tr>
+  <tr><th>MML / Tutkihankintoja</th><td>1 + 1</td></tr>
 </table>
 
 <h2>6. Mitä tämä <em>ei</em> väitä</h2>
@@ -135,11 +146,12 @@
   <li>Ei väitä, että joku toimija salaa tietoa tahallaan.</li>
   <li>Ei täytä aukkoja arvauksella (“hinta oli varmaan X”).</li>
   <li>Ei ole kattava indeksi koko Suomesta. Vain tämän otoksen peitto (kuinka suurelta osin tieto löytyy).</li>
+  <li>Ei korvaa sivua <em>Toimiiko lähde?</em>: se kertoo, aukeaako lähde ylipäätään.</li>
 </ul>
 
 <div class="foot">
   AitoData / Vallanvahtikoira · Peittomuistio · lähdeketju ·
-  Esikatselu · aineisto on otos · 25.8.2026.
+  aineisto on otos · 9.9.2026.
 </div>
 
 </body>
