@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="index,follow">
 <title>AitoData: julkinen tieto, lähteineen</title>
 <!-- aito-hub-meta:start -->
 <meta name="description" content="Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse.">
@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=20260822e">
+<link rel="stylesheet" href="assets/site.css?v=20260909f">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -69,6 +69,7 @@
       <span><i></i>Hankinnat &amp; verrokit</span>
       <span><i></i>Julkinen rahoitus</span>
       <span><i></i>Puuttuva tieto</span>
+      <span><i></i>Toimiiko lähde?</span>
     </div>
   </header>
 
@@ -76,9 +77,9 @@
     <strong>Ensimmäistä kertaa?</strong>
     <p>Katso <a href="esimerkki/">Esimerkki</a> (oikea kortti hyllyltä) · <a href="nain-luet/">Näin luet</a></p>
     <ul>
-      <li><strong>Tiivistelmä</strong> — faktat tiiviisti.</li>
-      <li><strong>Lähteet</strong> — Kohde + Etsi sivulta. Avaa ja tarkista alkuperäinen lähde.</li>
-      <li><strong>Kokonaiskuva</strong> — sama tieto kuvana (ei uutta tietoa).</li>
+      <li><strong>Tiivistelmä:</strong> faktat tiiviisti.</li>
+      <li><strong>Lähteet:</strong> Kohde + Etsi sivulta. Avaa ja tarkista alkuperäinen lähde.</li>
+      <li><strong>Kokonaiskuva:</strong> sama tieto kuvana (ei uutta tietoa).</li>
     </ul>
   </div>
 
@@ -105,7 +106,8 @@
     </div>
     <div class="hero-actions" style="margin-top:1.1rem">
       <a class="btn" href="sivut/loydot/">Kaikki löydöt →</a>
-      <a class="btn ghost" href="sivut/peito/">Puuttuva tieto (kooste)</a>
+      <a class="btn ghost" href="sivut/peito/">Puuttuva tieto</a>
+      <a class="btn ghost" href="sivut/toimiiko-lahde/">Toimiiko lähde?</a>
       <a class="btn ghost" href="nain-luet/">Näin luet</a>
     </div>
   </section>
@@ -114,7 +116,7 @@
     <p class="section-label">Miten tämä sivusto toimii</p>
     <h2>Lyhyt polku</h2>
     <p class="intro">Julkinen tieto on hajallaan. Me kokoamme siitä jälkiä, joita voi seurata. Aloita näin:</p>
-    <div class="steps">
+    <div class="steps steps-quad">
       <a class="step step-link" href="sivut/loydot/">
         <div class="n">1</div>
         <h3>Löydöt</h3>
@@ -123,10 +125,15 @@
       <a class="step step-link" href="sivut/peito/">
         <div class="n">2</div>
         <h3>Puuttuva tieto</h3>
-        <p>Kooste ja raportti: mitä aineistosta ei saa ulos. Yksittäiset aukot myös Löydöissä.</p>
+        <p>Reikä yhdessä ilmoituksessa tai haussa: hinta puuttuu, haku tyhjä.</p>
+      </a>
+      <a class="step step-link" href="sivut/toimiiko-lahde/">
+        <div class="n">3</div>
+        <h3>Toimiiko lähde?</h3>
+        <p>Aukeaako julkinen lähde ylipäätään ilman kirjautumista. Havaintoja, ei syytettä.</p>
       </a>
       <a class="step step-link" href="nain-luet/">
-        <div class="n">3</div>
+        <div class="n">4</div>
         <h3>Näin luet</h3>
         <p>Esimerkki, Tutki lisää ja perusteet: yksi ovi lukemiseen.</p>
       </a>
@@ -158,7 +165,7 @@
       <article class="step">
         <div class="n">4 · Puuttuva tieto</div>
         <h3>Mitä ei löydy</h3>
-        <p>Puuttuva hinta, tyhjä haku, rikkinäinen linkki. Puuttuva tieto merkitään näkyviin, jotta tiedät, mitä ei vielä voi päätellä.</p>
+        <p>Puuttuva hinta, tyhjä haku, rikkinäinen linkki. Puuttuva tieto merkitään näkyviin, jotta tiedät, mitä ei vielä voi päätellä. Lähteen kunto erikseen: <a href="sivut/toimiiko-lahde/">Toimiiko lähde?</a></p>
       </article>
     </div>
   </section>
@@ -174,6 +181,7 @@
         <a class="btn" href="nain-luet/">Avaa Näin luet</a>
         <a class="btn ghost" href="esimerkki/">Suoraan esimerkkiin</a>
         <a class="btn ghost" href="sivut/peito/">Puuttuva tieto</a>
+        <a class="btn ghost" href="sivut/toimiiko-lahde/">Toimiiko lähde?</a>
       </div>
     </div>
   </section>

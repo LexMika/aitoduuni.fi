@@ -1287,3 +1287,7 @@ body.page-toimiiko .deep-block .kind {
   padding: 0.18rem 0.45rem;
   border-radius: 0.35rem;
 }
+
+@media (min-width: 800px) {
+  .steps.steps-quad { grid-template-columns: repeat(2, 1fr); }
+}
