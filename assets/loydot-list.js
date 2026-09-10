@@ -271,6 +271,7 @@
     }
 
     chips.forEach(function (btn) {
+      if (btn.disabled || btn.getAttribute("aria-disabled") === "true") return;
       btn.addEventListener("click", function () {
         kind = (btn.getAttribute("data-kind") || "").toLowerCase();
         setChipActive();
