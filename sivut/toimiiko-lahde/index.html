@@ -84,7 +84,7 @@
 <li><span class="shelf-tag no">Ei aukea</span><span class="n">3</span><span class="n-label">lähdettä</span></li>
 </ul>
 </div></div>
-<div class="fact-row"><div class="lbl">Ei aukea, miksi</div><div class="val">Käyttö estetty 2 · Ei julkaistu avoimena 1</div></div>
+<div class="fact-row"><div class="lbl">Miksi ei aukea</div><div class="val">Käyttö estetty 2 · Ei julkaistu avoimena 1</div></div>
 <div class="fact-row"><div class="lbl">Syvemmin</div><div class="val">7 esimerkkiä · <a href="#syvemmin">siirry →</a></div></div>
 <div class="fact-row"><div class="lbl">Liittyy</div><div class="val"><a href="../peito/">Puuttuva tieto</a> (reiät yhdessä ilmoituksessa tai haussa)</div></div>
 </section>
@@ -127,12 +127,12 @@
 
 <section class="panel" id="hankala">
 <div class="shelf-head"><span class="shelf-tag hard">Hankala</span></div>
-<p>Lähde on olemassa, mutta käyttö takkuilee, osuu seinään tai vastaa epätasaisesti.</p>
+<p>Lähde on olemassa, mutta käyttö takkuilee, katkeaa tai vastaa epätasaisesti.</p>
 <ul class="shelf-list">
 <li id="hilma-vanha">
   <div>
     <a class="src" href="#syvemmin-hilma">Hilma: vanhempi haku<span class="src-go" aria-hidden="true"> →</span></a>
-    <p class="why">Kaksi eri hakua. Vanhempi ei kata tuoreita ilmoituksia. Jos listassa hypätään hyvin kauas, haku katkeaa.</p>
+    <p class="why">Kaksi eri hakua. Vanhempi ei kata tuoreita ilmoituksia. Jos listassa siirtyy kauas eteenpäin (monia sivuja), haku katkeaa.</p>
   </div>
   <span class="when">Havainto 4.–9.9.2026</span>
 </li>
@@ -153,7 +153,7 @@
 <li id="markkinaoikeus">
   <div>
     <a class="src" href="#syvemmin-mao">Markkinaoikeus: ratkaisuarkisto<span class="src-go" aria-hidden="true"> →</span></a>
-    <p class="why">Osa vuosista aukeaa, osa ei. Yksi vuosi voi olla tyhjä vaikka naapurivuodet toimivat.</p>
+    <p class="why">Osa vuosista aukeaa, osa ei. Yksi vuosi voi olla tyhjä vaikka edellinen ja seuraava vuosi aukeavat.</p>
   </div>
   <span class="when">Havainto 25.8.–7.9.2026</span>
 </li>
@@ -192,7 +192,7 @@
 <li id="prh-edunsaajat">
   <div>
     <a class="src" href="#syvemmin-prh-edunsaajat">PRH: edunsaajatiedot<span class="src-go" aria-hidden="true"> →</span></a>
-    <p class="why">Kuuluu tunnistautumisen taakse. Ei yritysten julkisessa haussa.</p>
+    <p class="why">Saatavilla vain kirjautumalla. Ei yritysten julkisessa haussa.</p>
     <span class="kind">Ei julkaistu avoimena</span>
   </div>
   <span class="when">Havainto 22.7.2026</span>
@@ -220,7 +220,7 @@
 </div>
 <p class="one-liner">Hankintailmoituksia haetaan kahdesta eri paikasta. Tuore aukeaa; vanhempi ei kata uusia ilmoituksia.</p>
 <div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Lukea hankintailmoituksia ilman kirjautumista (tuore haku ja vanhempi haku).</div></div>
-<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Tuore haku toimii. Vanhempi ei kata tuoreita ilmoituksia. Jos listassa hypätään hyvin kauas eteenpäin, palvelu hylkää pyynnön.</div></div>
+<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Tuore haku toimii. Vanhempi ei kata tuoreita ilmoituksia. Jos listassa siirtyy kauas eteenpäin (monia sivuja), palvelu katkaisee haun.</div></div>
 <div class="fact-row"><div class="lbl">Havainto</div><div class="val">4.–9.9.2026</div></div>
 <p class="kaytannossa"><strong>Käytännössä:</strong> “Hilma auki” ei kerro, kumpaa hakua käytettiin.</p>
 <p class="ei-vaiteta">Mitä ei väitetä: että Hilma olisi poistunut tai että jokin olisi laitonta.</p>
@@ -244,7 +244,7 @@
   <h3>CloudNC: haku tyhjä, sivusto elää</h3>
   <span class="shelf-tag hard">Hankala</span>
 </div>
-<p class="one-liner">Palvelu vastaa, mutta tuttu hakusana voi jättää tulokset tyhjiksi yhä uudestaan.</p>
+<p class="one-liner">Palvelu vastaa, mutta tuttu hakusana voi jättää tulokset tyhjiksi toistuvasti.</p>
 <div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Hakea päätöksiä sanoilla “hankinta” ja “palvelu” neljästä kaupungista (Tampere, Pori, Rovaniemi, Jyväskylä).</div></div>
 <div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Tyhjä tulos toistui kymmenissä kokeiluissa. Sivusto ei ole poissa: nämä haut eivät tuottaneet tuloksia.</div></div>
 <div class="fact-row"><div class="lbl">Havainto</div><div class="val">25.8.–7.9.2026</div></div>
@@ -322,7 +322,7 @@
 <footer>
   <p><a class="wordmark" href="../../">Aito<span>Data</span></a></p>
   <p class="legal-links"><a href="../../tietoa/">Info</a> · <a href="../../perusteet/">Perusteet</a> · <a href="../../kayttoehdot/">Käyttöehdot</a> · <a href="../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
-  <p>Toimiiko lähde? · julkinen tieto lähteineen.</p>
+  <p>Toimiiko lähde? · julkinen kehittyvä palvelu.</p>
 </footer>
 <script src="../../assets/nav.js?v=20260825d" defer></script>
 </body>
