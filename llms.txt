@@ -14,6 +14,7 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ei ole syyte: t
 - [Info](https://aitodata.fi/tietoa/)
 - [Käyttöehdot](https://aitodata.fi/kayttoehdot/)
 - [Löydöt (lista)](https://aitodata.fi/sivut/loydot/)
+- [Puuttuva tieto](https://aitodata.fi/sivut/peito/)
 - [Toimiiko lähde?](https://aitodata.fi/sivut/toimiiko-lahde/)
 
 ## Miten hakea
@@ -26,7 +27,7 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ei ole syyte: t
 
 - Hub-sivut: `index,follow` (sitemapissa).
 - Yksittäiset löytökortit (323 kpl): `noindex,nofollow` (löydettävissä listalta, ei hakukoneissa erikseen).
-- Puuttuva tieto / Peitto: `noindex,nofollow`.
+- Puuttuva tieto: `index,follow` (arvioitu hinta; otos).
 - Toimiiko lähde?: `index,follow` (otos, ei koko Suomi).
 
 ## Miten siteerata

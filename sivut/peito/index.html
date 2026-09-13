@@ -6,14 +6,14 @@
 <meta name="robots" content="index,follow">
 <title>Puuttuva tieto · AitoData</title>
 <!-- aito-hub-meta:start -->
-<meta name="description" content="Missä julkisesta aineistosta puuttuu hinta-arvio tai haku jää tyhjäksi. Havaintoja, ei syytöksiä.">
+<meta name="description" content="Missä julkisesta hankinta-aineistosta puuttuu arvioitu hinta. Havaintoja, ei syytöksiä.">
 <link rel="canonical" href="https://aitodata.fi/sivut/peito/">
 <link rel="alternate" type="text/plain" href="https://aitodata.fi/llms.txt" title="LLM site guide">
 <meta name="author" content="AitoData">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AitoData">
 <meta property="og:title" content="Puuttuva tieto · AitoData">
-<meta property="og:description" content="Missä julkisesta aineistosta puuttuu hinta-arvio tai haku jää tyhjäksi. Havaintoja, ei syytöksiä.">
+<meta property="og:description" content="Missä julkisesta hankinta-aineistosta puuttuu arvioitu hinta. Havaintoja, ei syytöksiä.">
 <meta property="og:url" content="https://aitodata.fi/sivut/peito/">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:image" content="https://aitodata.fi/assets/og-image.png">
@@ -22,29 +22,140 @@
 <meta property="og:image:alt" content="AitoData: julkinen tieto lähteineen">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Puuttuva tieto · AitoData">
-<meta name="twitter:description" content="Missä julkisesta aineistosta puuttuu hinta-arvio tai haku jää tyhjäksi. Havaintoja, ei syytöksiä.">
+<meta name="twitter:description" content="Missä julkisesta hankinta-aineistosta puuttuu arvioitu hinta. Havaintoja, ei syytöksiä.">
 <meta name="twitter:image" content="https://aitodata.fi/assets/og-image.png">
 <meta name="twitter:image:alt" content="AitoData: julkinen tieto lähteineen">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Puuttuva tieto · AitoData","description":"Missä julkisesta aineistosta puuttuu hinta-arvio tai haku jää tyhjäksi. Havaintoja, ei syytöksiä.","url":"https://aitodata.fi/sivut/peito/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Puuttuva tieto · AitoData","description":"Missä julkisesta hankinta-aineistosta puuttuu arvioitu hinta. Havaintoja, ei syytöksiä.","url":"https://aitodata.fi/sivut/peito/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/"}}</script>
 <!-- aito-hub-meta:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20260909f">
+<link rel="stylesheet" href="../../assets/site.css?v=20260913pub">
 <link rel="icon" href="../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <meta name="theme-color" content="#020617">
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
+<style>
+  .rule-box {
+    border: 1px solid #1e293b;
+    border-radius: 0.85rem;
+    padding: 0.85rem 0.95rem;
+    background: rgba(15,23,42,0.55);
+    margin: 0.75rem 0 0.2rem;
+  }
+  .rule-box ul { margin: 0.4rem 0 0 1.1rem; padding: 0; }
+  .compose-bars { margin: 0.85rem 0 0.4rem; }
+  .compose-row {
+    display: grid;
+    grid-template-columns: minmax(9rem, 11.5rem) 1fr auto;
+    gap: 0.55rem 0.75rem;
+    align-items: center;
+    margin: 0.45rem 0;
+    font-size: 0.92rem;
+  }
+  .compose-row .name { color: #e2e8f0; }
+  .compose-row .bar-track {
+    height: 0.7rem;
+    border-radius: 999px;
+    background: rgba(148,163,184,0.18);
+    overflow: hidden;
+  }
+  .compose-row .bar-fill { height: 100%; border-radius: 999px; background: #64748b; }
+  .compose-row .bar-fill.expect { background: #f59e0b; }
+  .compose-row .bar-fill.soft { background: #475569; }
+  .compose-row .pct { color: #94a3b8; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .compose-note { color: #94a3b8; font-size: 0.9rem; margin-top: 0.75rem; }
+  .two-lens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    margin: 0.85rem 0 0.2rem;
+  }
+  .lens {
+    border: 1px solid #1e293b;
+    border-radius: 0.85rem;
+    padding: 0.85rem 0.95rem;
+    background: rgba(15,23,42,0.55);
+  }
+  .lens h3 { margin: 0 0 0.45rem; font-size: 1rem; line-height: 1.35; font-weight: 600; }
+  .lens .big { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; margin: 0.15rem 0; }
+  .lens .means {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin: 0.55rem 0 0;
+    line-height: 1.4;
+  }
+  .lens .means strong { color: #e2e8f0; font-weight: 600; }
+  .lens.sharp { border-color: rgba(245,158,11,0.45); }
+  .year-bars { margin-top: 0.75rem; }
+  .year-row {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr 3.6rem;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.35rem 0;
+    font-size: 0.9rem;
+  }
+  .year-row .bar-track {
+    height: 0.55rem;
+    border-radius: 999px;
+    background: rgba(148,163,184,0.18);
+    overflow: hidden;
+  }
+  .year-row .bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #38bdf8;
+  }
+  .year-row .meta {
+    color: #e2e8f0;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    text-align: right;
+  }
+  .warn-box {
+    margin: 0.85rem 0 0;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid rgba(148,163,184,0.35);
+    border-radius: 0.85rem;
+    background: rgba(148,163,184,0.08);
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
+  .also-link {
+    margin: 1rem 0 0;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  .also-link a { font-weight: 500; }
+  .ex-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  @media (min-width: 860px) {
+    .ex-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    .two-lens { grid-template-columns: 1fr; }
+    .compose-row { grid-template-columns: 1fr; gap: 0.25rem; }
+  }
+</style>
 </head>
 <body>
+<!-- aito-noscript:start -->
+<noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
+<!-- aito-noscript:end -->
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../">Aito<span>Data</span></a>
   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
 <nav class="site" id="site-nav">
-    <a href="../../sivut/loydot/">Löydöt</a>
-    <a href="../../sivut/peito/" class="active">Puuttuva tieto</a>
-    <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../loydot/">Löydöt</a>
+    <a href="./" class="active">Puuttuva tieto</a>
+    <a href="../toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../../kaiva/">Tutki lisää</a>
     <a href="../../nain-luet/">Näin luet</a>
     <a href="../../perusteet/">Perusteet</a>
@@ -54,98 +165,153 @@
 <div class="wrap">
 <header class="page-head">
 <h1>Puuttuva tieto</h1>
-<p>Puuttuva kenttä ja tyhjä haku ovat havaintoja. Ne kertovat, mitä julkaistusta aineistosta ei vielä saa ulos. Jos kysymys on, aukeaako lähde ylipäätään: <a href="../toimiiko-lahde/">Toimiiko lähde?</a></p>
+<p>Puuttuva arvioitu hinta hankintailmoituksessa on havainto. Se kertoo, mitä julkaistusta aineistosta ei vielä saa ulos hintavertailuun.</p>
 </header>
+
 <div class="guide-row">
-<div class="callout"><strong>Näin luet tämän sivun</strong><ul><li>Katso tiivistelmästä hinta-arvion osuus ja tyhjien hakujen määrä.</li><li>Kokonaiskuva näyttää missä hinta-arvio löytyy ja missä se puuttuu.</li><li>Puuttuva tieto ei ole epäilys yksittäisestä toimijasta.</li><li>Käytä tätä tietääksesi, mitä ei vielä voi päätellä.</li><li>Lähteen kunto (aukeaako ylipäätään): <a href="../toimiiko-lahde/">Toimiiko lähde?</a></li></ul><p><a href="../toimiiko-lahde/">Toimiiko lähde? →</a></p></div>
+<div class="callout"><strong>Näin luet tämän sivun</strong><ul>
+<li>Iso prosentti kertoo, kuinka usein arvioitu hinta puuttuu. Se ei syytä ketään.</li>
+<li>Katso sitten mistä tuo joukko koostuu, ja miten tilanne muuttuu vuosittain.</li>
+<li>Arvioitu hinta ei ole sama asia kuin kaikki euromäärät ilmoituksessa.</li>
+</ul></div>
 <section class="panel">
 <h2>Tiivistelmä</h2>
 <div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">9.9.2026</div></div>
-<div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma: hankintailmoitukset (uniikit ilmoitukset)</div></div>
-<div class="fact-row"><div class="lbl">Ilmoituksia otoksessa</div><div class="val">57 082</div></div>
-<div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">18,6 % (10 606 kpl · hinta ilmoituksessa)</div></div>
-<div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">81,4 % (46 476 · puuttuva tieto)</div></div>
-<div class="fact-row"><div class="lbl">Haut ilman osumia</div><div class="val">276 · haku tehtiin, osumia ei tullut</div></div>
-<div class="fact-row"><div class="lbl">Lähteitä, joissa tyhjä tulos</div><div class="val">14</div></div>
-<div class="fact-row"><div class="lbl">Löydöissä (live)</div><div class="val">8 korttia aiheesta puuttuva tieto · hyllyssä 2 709 · <a href="../loydot/">löydöt</a></div></div>
-<div class="fact-row"><div class="lbl">Liittyy</div><div class="val"><a href="../toimiiko-lahde/">Toimiiko lähde?</a> (aukeaako lähde ylipäätään)</div></div>
+<div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma: hankintailmoitukset</div></div>
+<div class="fact-row"><div class="lbl">Ilmoituksia aineistossa</div><div class="val">57 082</div></div>
+<div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">18,6 % (10 606)</div></div>
+<div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">81,4 % (46 476)</div></div>
+<div class="fact-row"><div class="lbl">Raportti</div><div class="val"><a href="puuttuva-arvioitu-hinta.html">Puuttuva arvioitu hinta →</a></div></div>
 </section>
 </div>
-<section class="graph-block" id="kuva">
-<p class="section-label" style="margin-top:0">Sama tieto kuvana</p>
-<h2>Kokonaiskuva</h2>
-<p class="graph-lead">Löydetty ketju: Hilma → hinta-arvio 18,6 % → puuttuu 81,4 % → tyhjä haku.</p>
-<div class="graph-stage" role="img" aria-label="Virtauskuva: Hilma · hinta-arvio 18,6 prosenttia · puuttuu 81,4 prosenttia · tyhjä haku">
-<svg viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg">
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"></path></marker></defs>
-<g class="g-node" aria-label="Hilma"><rect class="g-hit actor" x="40" y="160" width="160" height="100" rx="14"></rect><text class="g-label" x="120" y="192">Hilma</text><text class="g-sub" x="120" y="214">57 082 ilmoitusta</text><text class="g-meta" x="120" y="234">aineisto</text></g>
-<path class="g-edge" d="M200 210 H220"></path>
-<text class="g-edge-label" x="210" y="196">kenttä</text>
-<path class="g-edge" d="M220 210 C260 210, 260 104, 480 104"></path>
-<g class="g-node" aria-label="Arvioitu hinta löytyy 18,6 prosenttia"><rect class="g-hit money" x="480" y="60" width="400" height="88" rx="14"></rect><text class="g-label" x="680" y="82">Arvioitu hinta löytyy</text><text class="g-sub" x="680" y="104">hinta ilmoituksessa</text><text class="g-amount" x="680" y="128">18,6 %</text></g>
-<path class="g-edge" d="M220 210 C260 210, 260 210, 480 210"></path>
-<g class="g-node" aria-label="Arvioitua hintaa ei ole 81,4 prosenttia"><rect class="g-hit doc" x="480" y="166" width="400" height="88" rx="14"></rect><text class="g-label" x="680" y="188">Arvioitua hintaa ei ole</text><text class="g-sub" x="680" y="210">puuttuva tieto</text><text class="g-amount" x="680" y="234">81,4 %</text></g>
-<path class="g-edge" d="M220 210 C260 210, 260 316, 480 316"></path>
-<g class="g-node" aria-label="Tyhjä haku: haku tehtiin, osumia ei tullut"><rect class="g-hit actor" x="480" y="272" width="400" height="88" rx="14"></rect><text class="g-label" x="680" y="308">Tyhjä haku</text><text class="g-sub" x="680" y="330">276 · ei osumia</text></g>
-</svg>
+
+<section class="panel" id="kysymykset">
+<h2>Kaksi kysymystä</h2>
+<p>Sama aineisto. Otsikko on kysymys, luku on vastaus.</p>
+<div class="two-lens">
+  <div class="lens">
+    <h3>Kuinka usein arvioitu hinta puuttuu kaikista ilmoituksista?</h3>
+    <p class="big">81,4 %</p>
+    <p class="means"><strong>Tarkoittaa:</strong> noin neljässä ilmoituksessa viidestä ei ole arvioitua hintaa.</p>
+  </div>
+  <div class="lens sharp">
+    <h3>Kuinka usein arvio löytyy, kun hankintaa kilpailutetaan?</h3>
+    <p class="big">noin 21 %</p>
+    <p class="means"><strong>Tarkoittaa:</strong> kilpailutuksessa arvio puuttuu noin neljässä tapauksessa viidestä. Silloin hintavertailua ei voi tehdä.</p>
+  </div>
 </div>
 </section>
 
-<section class="panel">
-<h2>Raportti</h2>
-<p>Samat luvut syvemmin: aineistorajaus, esimerkit ja mitä ei väitetä. Lataa Peittomuistio alta.</p>
-<p><a class="btn ghost" href="../../assets/peittomuistio_esimerkki.html">Katso raportin HTML →</a>
-<a class="btn ghost" href="../loydot/?q=puuttuva">Puuttuvan tiedon löytökortit →</a></p>
-</section>
-<section class="panel">
-<h2>Tyyppiesimerkki (sama Löydöissä)</h2>
-<p>Tässä ilmoituksessa arvioitua hankinnan arvoa ei ole. Aukko merkitään auki. <a href="../loydot/kainuu-mri-arvo-puuttuu/">Avaa löytökortti →</a></p>
-<a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2021-088776/" target="_blank" rel="noopener noreferrer"><strong>MRI-laitteen hankittava sydänohjelmisto</strong><span class="k">Tyyppi</span><span class="v">Hilma: hankintailmoitus</span><span class="k">Kohde</span><span class="v">Kainuun sosiaali- ja terveydenhuollon kuntayhtymä · ilmoitus 2021-088776</span><span class="k">Arvioitu hinta</span><span class="v">ei ole</span><span class="k">Etsi sivulta</span><span class="v">ilmoitusnumero 2021-088776 · organisaatio “Kainuun sosiaali- ja terveydenhuollon kuntayhtymä” · tarkista ettei arvioitua hintaa ole ilmoitettu</span></a>
-</section>
-<section class="panel">
-<h2>Mitä tämä tarkoittaa</h2>
-<p>Nämä eivät syytä ketään. Ne kertovat, mitä datasta <em>ei</em> vielä saa ulos.</p>
+<section class="panel" id="saanto">
+<h2>Milloin arviota odotetaan?</h2>
+<div class="rule-box">
+<p style="margin:0">Näin luemme ilmoitustyyppejä:</p>
 <ul>
-<li><strong>Puuttuva tieto:</strong> odotettu kenttä puuttuu tai on nolla. Tilalle ei keksiä lukua. Merkintä kertoo vain, että tästä ei voi vielä päätellä.</li>
-<li><strong>Hilma-otos:</strong> tässä otoksessa arvioitu hinta (euromäärä ilmoituksessa) löytyy noin 18,6 %:lla uniikeista ilmoituksista. Lopuille 81,4 %:lle hintavertailua ei voi tehdä.</li>
-<li><strong>Tyhjä haku:</strong> kun jokin toimija tai aihe löytyy yhdestä aineistosta, haemme samaa asiaa muista rekistereistä samoilla sanoilla. Haku tehtiin lähteeseen; vastaus oli “ei tuloksia”. Tämä on havainto, ei virheraportti. Esimerkki: haettiin Järvenpään päätöksistä sanalla “kamera”, eikä yhtään päätöstä tullut.</li>
-<li><strong>Vanhentunut tyhjä:</strong> tyhjä tulos voi myöhemmin täyttyä. Esimerkiksi “Eduskunnan kanslia” -haku oli aiemmin tyhjä, mutta 9.9.2026 Hilma palautti osumia. Sellainen kortti ei kuulu enää hyllyyn.</li>
-</ul></section>
-<section class="panel"><h2>Tyhjät haut lähteittäin</h2><p>Haku ilman osumia, lähteittäin (276 kpl · 14 lähdettä · tilanne 9.9.2026).</p><table style="width:100%;border-collapse:collapse;font-size:0.95rem"><thead><tr><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Lähde</th><th style="text-align:left;padding:0.4rem;border-bottom:1px solid #1e293b">Tyhjiä hakuja</th></tr></thead><tbody>
-<tr><td>Yritysrekisteri (PRH / YTJ)</td><td>92</td></tr>
-<tr><td>Hilma: hankintailmoitukset</td><td>71</td></tr>
-<tr><td>Kuntien päätökset (CloudNC)</td><td>57</td></tr>
-<tr><td>Kuntien päätökset (KTWeb)</td><td>13</td></tr>
-<tr><td>Kuntien päätökset (Dynasty)</td><td>10</td></tr>
-<tr><td>Lääketeollisuuden TOV-julkaisut (PIF)</td><td>10</td></tr>
-<tr><td>Korkein hallinto-oikeus (KHO)</td><td>8</td></tr>
-<tr><td>Markkinaoikeus</td><td>4</td></tr>
-<tr><td>Hilma: aluehaku / testiaineisto</td><td>3</td></tr>
-<tr><td>Helsingin päätökset</td><td>2</td></tr>
-<tr><td>Kilpailu- ja kuluttajavirasto (KKV)</td><td>2</td></tr>
-<tr><td>Turun päätökset</td><td>2</td></tr>
-<tr><td>Maanmittauslaitos (avoimet rajapinnat)</td><td>1</td></tr>
-<tr><td>Tutkihankintoja</td><td>1</td></tr>
-</tbody></table></section>
-<section class="panel">
-<h2>Peittomuistio</h2>
-<p>Syvempi tiivistelmä puuttuvasta tiedosta: luvut, konkreettiset esimerkit ja rajaukset yhdessä tiedostossa.</p>
-<div class="banner-note" style="margin:0.75rem 0;padding:0.75rem 0.9rem;border:1px solid rgba(245,158,11,0.45);border-radius:0.85rem;background:rgba(245,158,11,0.08);color:#fde68a;font-size:0.95rem"><strong>Otos, ei koko Suomi.</strong> Muistio kuvaa nykyistä aineistoa. Kun aineisto laajenee, raportti päivittyy.</div>
-<p><a class="btn" href="../../assets/peittomuistio_esimerkki.pdf" target="_blank" rel="noopener noreferrer">Avaa Peittomuistio (PDF) →</a>
-<a class="btn ghost" href="../../assets/peittomuistio_esimerkki.html">HTML-versio →</a></p>
-<p class="meta" style="margin-top:0.65rem;color:#94a3b8;font-size:0.9rem">Sisältää aineistorajauksen, osuudet, tyhjät haut, kaksi esimerkkiä sekä mitä <em>ei</em> väitetä. Päivitetty 9.9.2026.</p>
+<li><strong>Kilpailutusilmoitus:</strong> arvioitua hintaa usein odotetaan.</li>
+<li><strong>Ennakkoilmoitus tai muutos:</strong> arviota harvoin odotetaan.</li>
+<li><strong>Jälki-ilmoitus (sopimus):</strong> lopullinen euromäärä voi olla eri kohdassa kuin arvioitu hinta.</li>
+</ul>
+</div>
 </section>
+
+<section class="panel" id="kooste">
+<h2>Mistä 81,4 % koostuu?</h2>
+<p>Niistä ilmoituksista, joissa arvioitua hintaa ei ole, jakautuma tyypin mukaan:</p>
+<div class="compose-bars">
+  <div class="compose-row">
+    <div class="name">Kilpailutus</div>
+    <div class="bar-track"><div class="bar-fill expect" style="width:65.3%"></div></div>
+    <div class="pct">noin 65 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Jälki-ilmoitus</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:22.8%"></div></div>
+    <div class="pct">noin 23 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Ennakko</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:11.0%"></div></div>
+    <div class="pct">noin 11 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Muutos ja muu</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:1.0%"></div></div>
+    <div class="pct">noin 1 %</div>
+  </div>
+</div>
+<p class="compose-note">Oranssi: tyyppi, jossa arviota usein odotetaan. Harmaa: tyyppi, jossa arvio on harvinaisempi tai euromäärä voi olla muualla.</p>
+</section>
+
+<section class="panel" id="esimerkit">
+<h2>Esimerkkejä</h2>
+<p>Kolme ilmoitusta, joissa arvioitua hintaa ei ole.</p>
+<div class="ex-grid">
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2020-038225/" target="_blank" rel="noopener noreferrer">
+    <strong>Kilpailutus</strong>
+    <span class="k">Otsikko</span><span class="v">Alusöljyvahinkojen torjuntapalvelut avomeriolosuhteissa</span>
+    <span class="k">Ilmoitus</span><span class="v">2020-038225</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole</span>
+  </a>
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2022-110555/" target="_blank" rel="noopener noreferrer">
+    <strong>Jälki-ilmoitus</strong>
+    <span class="k">Otsikko</span><span class="v">Open Text Documentum: tuki, ylläpito ja lisälisenssit</span>
+    <span class="k">Ilmoitus</span><span class="v">2022-110555</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole (lopullinen euro voi olla muualla)</span>
+  </a>
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2019-019763/" target="_blank" rel="noopener noreferrer">
+    <strong>Ennakko</strong>
+    <span class="k">Otsikko</span><span class="v">Asiankäsittelyjärjestelmän ylläpito ja kehittäminen</span>
+    <span class="k">Ilmoitus</span><span class="v">2019-019763</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole (ennakossa harvinainen)</span>
+  </a>
+</div>
+</section>
+
+<section class="panel" id="euro">
+<h2>Euro voi olla muualla</h2>
+<div class="warn-box">
+  Arvioitu hinta ei ole sama asia kuin kaikki euromäärät.
+  Ilmoituksessa voi olla lopullinen arvo, erien summia tai euroja tekstissä, vaikka arvioitua hintaa ei ole merkitty.
+  Merkitsemme auki vain sen hinta-arvion, jota tämä sivu mittaa. Emme väitä, että missään ei olisi euroa.
+</div>
+</section>
+
+<section class="panel" id="aikajana">
+<h2>Arvioitu hinta puuttuu, prosenttia ilmoituksista vuosittain</h2>
+<p>Mitä pidempi palkki, sitä useammin arvio puuttui sinä vuonna.</p>
+<div class="year-bars" role="img" aria-label="Arvioitu hinta puuttuu prosentteina ilmoituksista, vuosittain">
+  <div class="year-row"><div>2019</div><div class="bar-track"><div class="bar-fill" style="width:90.4%"></div></div><div class="meta">90,4 %</div></div>
+  <div class="year-row"><div>2020</div><div class="bar-track"><div class="bar-fill" style="width:80.1%"></div></div><div class="meta">80,1 %</div></div>
+  <div class="year-row"><div>2021</div><div class="bar-track"><div class="bar-fill" style="width:79.5%"></div></div><div class="meta">79,5 %</div></div>
+  <div class="year-row"><div>2022</div><div class="bar-track"><div class="bar-fill" style="width:77.9%"></div></div><div class="meta">77,9 %</div></div>
+  <div class="year-row"><div>2023</div><div class="bar-track"><div class="bar-fill" style="width:78.1%"></div></div><div class="meta">78,1 %</div></div>
+  <div class="year-row"><div>2024</div><div class="bar-track"><div class="bar-fill" style="width:74.0%"></div></div><div class="meta">74,0 %</div></div>
+  <div class="year-row"><div>2026</div><div class="bar-track"><div class="bar-fill" style="width:63.7%"></div></div><div class="meta">63,7 %</div></div>
+</div>
+<p class="compose-note">
+  Palkki kertoo, kuinka suuressa osassa ilmoituksia arvioitu hinta puuttuu.
+  Mitä lyhyempi palkki, sitä harvemmin arvio puuttui sinä vuonna.
+  Puuttuminen on vähentynyt, mutta kilpailutuksissa arvio puuttuu yhä usein. Vuotta 2025 ei ole tässä aineistossa.
+</p>
+</section>
+
+<section class="panel" id="raportti">
+<h2>Raportti</h2>
+<p>Samat luvut syvemmin: rajaus, esimerkit ja mitä emme väitä.</p>
+<p><a class="btn" href="puuttuva-arvioitu-hinta.html">Avaa: Puuttuva arvioitu hinta →</a></p>
+<p class="also-link">Tämä sivu kertoo arvioidusta hinnasta. Jos haluat nähdä, aukeavatko rekisterit ja milloin haku jää tyhjäksi: <a href="../toimiiko-lahde/">Katso myös lähteiden kunto →</a></p>
+</section>
+
 <div class="disclaimer">
-Aineisto on otos, ei koko Suomi. Luvut päivittyvät kun keruu ja tarkastus etenevät.
+Aineisto on otos, ei koko Suomi. Luvut päivittyvät kun keruu etenee.
 </div>
 <div class="hero-actions" style="margin-top:1.5rem">
-<a class="btn ghost" href="../toimiiko-lahde/">Toimiiko lähde?</a>
-<a class="btn ghost" href="../../nain-luet/">Näin luet</a>
 <a class="btn ghost" href="../loydot/">Löydöt</a>
+<a class="btn ghost" href="../../nain-luet/">Näin luet</a>
 </div>
 </div>
 <footer>
-  <p><a class="wordmark" href="../../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
+  <p><a class="wordmark" href="../../">Aito<span>Data</span></a></p>
   <p class="legal-links"><a href="../../tietoa/">Info</a> · <a href="../../perusteet/">Perusteet</a> · <a href="../../kayttoehdot/">Käyttöehdot</a> · <a href="../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Puuttuva tieto · julkinen kehittyvä palvelu.</p>
 </footer>
