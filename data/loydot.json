@@ -1387,20 +1387,9 @@
       ],
       "sources": [
         {
-          "label": "Hilma · toista haku",
-          "url": "https://www.hankintailmoitukset.fi/fi/",
-          "kind": "Hilma",
-          "target": "Hilma · haku “Siikaisen kunta”",
-          "find_hint_lines": [
-            "hankintailmoitukset.fi → Hae hankintoja → syötä “Siikaisen kunta”.",
-            "Odotettu tulos: ei osumia. Haku tehtiin — tämä on havainto, ei virhe."
-          ]
-        },
-        {
-          "label": "Puuttuva tieto · tyhjät haut (kooste)",
-          "url": "../../../sivut/peito/",
-          "kind": "Kooste",
-          "role": "human"
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito/",
+          "kind": "Tyhjä haku"
         }
       ],
       "jalostus_ref": "data/raw/hilma/#satakunta_empty_20260822"
@@ -1447,20 +1436,9 @@
       ],
       "sources": [
         {
-          "label": "Hilma · toista haku",
-          "url": "https://www.hankintailmoitukset.fi/fi/",
-          "kind": "Hilma",
-          "target": "Hilma · haku “Punkalaidun kunta”",
-          "find_hint_lines": [
-            "hankintailmoitukset.fi → Hae hankintoja → syötä “Punkalaidun kunta”.",
-            "Odotettu tulos: ei osumia. Haku tehtiin — tämä on havainto, ei virhe."
-          ]
-        },
-        {
-          "label": "Puuttuva tieto · tyhjät haut (kooste)",
-          "url": "../../../sivut/peito/",
-          "kind": "Kooste",
-          "role": "human"
+          "label": "Kooste: Puuttuva tieto (tyhjät haut)",
+          "url": "../peito/",
+          "kind": "Tyhjä haku"
         }
       ],
       "jalostus_ref": "data/raw/hilma/#satakunta_empty_20260822"
