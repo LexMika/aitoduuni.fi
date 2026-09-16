@@ -1303,3 +1303,51 @@ body.page-toimiiko .deep-block .kind {
 @media (min-width: 800px) {
   .steps.steps-quad { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* —— Toimiiko historia (viikkotarkistus) —— */
+body.page-toimiiko .hist-box .hist-lead {
+  margin: 0 0 0.75rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+body.page-toimiiko .hist-week {
+  margin: 0 0 0.5rem;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid #38bdf8;
+  background: #0f172a;
+  border-radius: 0 6px 6px 0;
+}
+body.page-toimiiko .hist-week .when-line {
+  color: #e2e8f0;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+}
+body.page-toimiiko .hist-moves {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.page-toimiiko .hist-moves li {
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+body.page-toimiiko .hist-moves .move-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.45rem;
+  margin: 0 0 0.25rem;
+}
+body.page-toimiiko .hist-moves .arrow { color: #64748b; }
+body.page-toimiiko .hist-moves .src-name { font-weight: 600; color: #f1f5f9; }
+body.page-toimiiko .hist-moves .why {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+body.page-toimiiko .hist-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  color: #64748b;
+}
