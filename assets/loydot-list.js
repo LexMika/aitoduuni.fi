@@ -65,10 +65,17 @@
     }
 
     function dateKey(el) {
-      return el.getAttribute("data-found-at") || "";
+      return el.getAttribute("data-event-at") || "";
+    }
+
+    function hasDate(el) {
+      return !!dateKey(el);
     }
 
     function compareNewest(a, b) {
+      var ha = hasDate(a);
+      var hb = hasDate(b);
+      if (ha !== hb) return ha ? -1 : 1;
       var da = dateKey(a);
       var db = dateKey(b);
       if (da !== db) return db.localeCompare(da);
@@ -79,6 +86,9 @@
     }
 
     function compareOldest(a, b) {
+      var ha = hasDate(a);
+      var hb = hasDate(b);
+      if (ha !== hb) return ha ? -1 : 1;
       var da = dateKey(a);
       var db = dateKey(b);
       if (da !== db) return da.localeCompare(db);
