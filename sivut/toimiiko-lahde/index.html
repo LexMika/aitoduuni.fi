@@ -27,14 +27,25 @@
 <meta name="twitter:image:alt" content="AitoData: julkinen tieto lähteineen">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Toimiiko lähde? · AitoData","description":"Havaintoja siitä, mitkä julkiset lähteet aukeavat ilman kirjautumista, mitkä ovat hankalia ja mitkä eivät.","url":"https://aitodata.fi/sivut/toimiiko-lahde/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/","description":"Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse."}}</script>
 <!-- aito-hub-meta:end -->
-<link rel="stylesheet" href="../../assets/site.css?v=20260916a">
+<link rel="stylesheet" href="../../assets/site.css?v=20260925a">
 <link rel="icon" href="../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <meta name="theme-color" content="#020617">
+
+<style id="toimiiko-hist">
+.hist-list{list-style:none;margin:0.75rem 0 0;padding:0}
+.hist-list li{display:grid;grid-template-columns:6.5rem 1fr;gap:0.5rem 0.75rem;padding:0.45rem 0;border-bottom:1px solid #1e293b;font-size:0.95rem;color:#e2e8f0}
+.hist-list .d{color:#94a3b8;font-variant-numeric:tabular-nums}
+.hist-list .t{color:#e2e8f0}
+</style>
+
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body class="page-toimiiko">
+<!-- aito-noscript:start -->
+<noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
+<!-- aito-noscript:end -->
 <!-- aito-noscript:start -->
 <noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
 <!-- aito-noscript:end -->
@@ -70,13 +81,13 @@
 </div>
 <section class="panel">
 <h2>Tiivistelmä</h2>
-<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">16.9.2026</div></div>
+<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">25.9.2026</div></div>
 <div class="fact-row"><div class="lbl">Kysymys</div><div class="val">Saako tiedot ulos ilman kirjautumista tai erillistä sopimusta?</div></div>
-<div class="fact-row"><div class="lbl">Otos</div><div class="val">12 lähdettä (ei koko Suomi)</div></div>
+<div class="fact-row"><div class="lbl">Otos</div><div class="val">13 lähdettä (ei koko Suomi)</div></div>
 <div class="fact-row"><div class="lbl">Hyllyt</div><div class="val">
 <ul class="shelf-counts">
 <li><span class="shelf-tag ok">Toimii</span><span class="n">4</span><span class="n-label">lähdettä</span></li>
-<li><span class="shelf-tag hard">Hankala</span><span class="n">5</span><span class="n-label">lähdettä</span></li>
+<li><span class="shelf-tag hard">Hankala</span><span class="n">6</span><span class="n-label">lähdettä</span></li>
 <li><span class="shelf-tag no">Ei aukea</span><span class="n">3</span><span class="n-label">lähdettä</span></li>
 </ul>
 </div></div>
@@ -130,12 +141,21 @@
   </div>
   <span class="when">Havainto 4.–9.9.2026</span>
 </li>
+
+<li id="hilma-vanha-ilmoitus">
+  <div>
+    <a class="src" href="#syvemmin-hilma-historia">Hilma: vanha ilmoitus ei aukea selaimessa<span class="src-go" aria-hidden="true"> →</span></a>
+    <p class="why">Suora linkki ja sanahaku eivät avaa vanhempaa ilmoitusta. Arkisto ei pelasta. EU-ilmoitus voi silti löytyä TED:stä; kansalliselle on <a href="../peili/">Ilmoitusote</a>.</p>
+  </div>
+  <span class="when">Havainto 17.9.2026</span>
+</li>
+
 <li id="tutkihankintoja">
   <div>
     <a class="src" href="#syvemmin-tutki">Tutkihankintoja<span class="src-go" aria-hidden="true"> →</span></a>
-    <p class="why">Avoimen aineiston lataus kaatuu ajoittain. Tiedostossa ei näy kaikkia kuntia (esimerkiksi Satakunnan kunnat: ei osumia laajassa aineistossa).</p>
+    <p class="why">Avoimen aineiston lataus kaatuu ajoittain. Alueita puuttuu (esimerkiksi Satakunnan kunnat). 25.9. ostolaskuaineiston lataus aukeaa, mutta tiedostossa on vain otsikkorivi: rivit puuttuvat.</p>
   </div>
-  <span class="when">Havainto 14.8.–24.8.2026</span>
+  <span class="when">Havainto 14.8.–25.9.2026</span>
 </li>
 <li id="cloudnc">
   <div>
@@ -224,23 +244,23 @@
   <h3>Hilma: vanha ilmoitus ei aukea selaimessa</h3>
   <span class="shelf-tag hard">Hankala</span>
 </div>
-<p class="one-liner">Vanhempi hankintailmoitus: suora linkki ja sanahaku eivät avaa ilmoitusta. Arkisto ei pelasta. EU-ilmoitus voi silti löytyä TED:stä.</p>
-<div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Avata viisi vanhempaa Hilma-ilmoitusta kortilta (suora linkki, sanahaku, Wayback, archive.today, OpenTender, TED). Kontrollina yksi Helsingin päätös.</div></div>
-<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Hilma vie etusivulle tai nollaan osumaan. Wayback: sivua ei ole tallennettu. OpenTender ja archive.today eivät auttaneet näissä testeissä. Kun ilmoituksella on EU-julkaisunumero, TED avaa luettavan sivun ja PDF:n. Pelkkä kansallinen ilmoitus: TED:tä ei ole. Helsingin päätöslinkki toimi suoraan.</div></div>
-<div class="fact-row"><div class="lbl">Havainto</div><div class="val">17.9.2026 · case HILMA-HIST1</div></div>
-<p class="kaytannossa"><strong>Käytännössä:</strong> uudemmat ilmoitukset voivat aueta paremmin; vanhat Löydöt tarvitsevat silti toimivan tarkistusoven (TED tai rehellinen merkintä + ilmoitusote).</p>
+<p class="one-liner">Vanhempi hankintailmoitus: suora linkki ja sanahaku eivät avaa ilmoitusta. Arkisto ei pelasta. EU-ilmoitus voi silti löytyä TED:stä; kansalliselle on Ilmoitusote.</p>
+<div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Avata vanhempia Hilma-ilmoituksia kortilta (suora linkki, sanahaku, Wayback, archive.today, OpenTender, TED). Lisäksi kaikki 18 kansallista ilman EU-julkaisua. Kontrollina Helsingin päätös.</div></div>
+<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Hilma vie etusivulle tai nollaan osumaan. Wayback: sivua ei ole tallennettu. OpenTender ja archive.today eivät auttaneet. Kun ilmoituksella on EU-julkaisunumero, TED avaa luettavan sivun ja PDF:n (Löydöissä noin 2675 tällaista). Pelkkä kansallinen ilmoitus: TED:tä ei ole; 18 kortilla lukulinkki on <a href="../peili/">Ilmoitusote</a>. Helsingin päätöslinkki toimi suoraan.</div></div>
+<div class="fact-row"><div class="lbl">Havainto</div><div class="val">17.9.2026</div></div>
+<p class="kaytannossa"><strong>Käytännössä:</strong> uudemmat ilmoitukset voivat aueta paremmin. Vanhat Löydöt: ensin TED jos EU-julkaisu löytyy, muuten Ilmoitusote. Esimerkit: <a href="../loydot/eurajoki-monitoimihalli/">Eurajoki monitoimi</a> (TED), <a href="../loydot/eurajoki-monitoimihalli-suunnittelu/">Eurajoki suunnittelu</a> (Ilmoitusote). Hilman oma sivu ei ole luotettava ovi näille.</p>
 </div>
 
 <div class="deep-block" id="syvemmin-tutki">
 <div class="deep-top">
-  <h3>Tutkihankintoja: lataus ja puuttuva alue</h3>
+  <h3>Tutkihankintoja: lataus, puuttuva alue ja tyhjä tiedosto</h3>
   <span class="shelf-tag hard">Hankala</span>
 </div>
-<p class="one-liner">Palvelu voi olla “auki”, mutta alue jota etsit ei ole mukana aineistossa.</p>
-<div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Ladata avointa aineistoa ja etsiä Satakunnan kuntia isosta tiedostosta.</div></div>
-<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Lataus kaatuu ajoittain. Kun tiedosto aukeaa, Satakunnan kuntia käytiin läpi noin 3,5 miljoonasta rivistä: osumia ei löytynyt.</div></div>
-<div class="fact-row"><div class="lbl">Havainto</div><div class="val">14.8.–24.8.2026</div></div>
-<p class="kaytannossa"><strong>Käytännössä:</strong> “auki” ei tarkoita että sinun alueesi olisi mukana. Liittyy myös <a href="../peito/">puuttuvaan tietoon</a>.</p>
+<p class="one-liner">Palvelu voi olla “auki”, mutta alue jota etsit ei ole mukana. Joskus lataus aukeaa, mutta rivit puuttuvat.</p>
+<div class="fact-row"><div class="lbl">Mitä yritettiin</div><div class="val">Ladata avointa ostolaskuaineistoa ja etsiä Satakunnan kuntia isosta tiedostosta. 25.9. sama lataus uudestaan.</div></div>
+<div class="fact-row"><div class="lbl">Mitä tuli</div><div class="val">Lataus kaatuu ajoittain. Kun tiedosto aiemmin aukesi, Satakunnan kuntia käytiin läpi noin 3,5 miljoonasta rivistä: osumia ei löytynyt. 25.9. lataus vastasi, mutta tiedostossa oli vain otsikkorivi (ei yhtään ostolaskuriviä).</div></div>
+<div class="fact-row"><div class="lbl">Havainto</div><div class="val">14.8.–24.8.2026 · täydennys 25.9.2026</div></div>
+<p class="kaytannossa"><strong>Käytännössä:</strong> “auki” ei tarkoita että sinun alueesi olisi mukana, eikä että tiedostossa on rivejä. Liittyy myös <a href="../peito/">puuttuvaan tietoon</a>.</p>
 </div>
 
 <div class="deep-block" id="syvemmin-cloudnc">
@@ -319,30 +339,39 @@
 </section>
 
 <section class="panel hist-box" id="historia">
-<h2>Lyhyt historia</h2>
-<p class="hist-lead">Viikkotarkistusten jälki. Alla vain vaihtuneet; jos mitään ei vaihtunut, se mainitaan lyhyesti.</p>
+<h2>Havaintojen jälki</h2>
+<p class="hist-lead">Milloin lähteitä on kokeiltu ja mitä ne vastasivat. Uusin ensin. Tämä ei ole koko Suomi, vaan meidän otoksemme.</p>
+<div class="hist-week">
+  <p class="when-line">25.9.2026</p>
+  <p class="hist-note" style="margin:0">Tutkihankintoja: ostolaskuaineiston lataus aukeaa, mutta tiedostossa on vain otsikkorivi. Ks. Syvemmin.</p>
+</div>
 <div class="hist-week">
   <p class="when-line">17.9.2026</p>
-  <p class="hist-note" style="margin:0">Hilma: vanha ilmoitus ei aukea selaimessa (HILMA-HIST1). EU-numero → TED; kansallinen → ei HTML-ovea. Ks. Syvemmin.</p>
+  <p class="hist-note" style="margin:0">Hilma: vanha ilmoitus ei aukea selaimessa. EU-julkaisu → TED (Löydöissä noin 2675); kansallinen → Ilmoitusote (18). Hilman oma sivu ei riitä näille.</p>
 </div>
-<div class="hist-week">
-  <p class="when-line">16.9.2026</p>
-  <p class="hist-note" style="margin:0">Viikkotarkistus aloitettu. Seuraava vertailu ensi viikolla.</p>
-</div>
-<p class="hist-note">Lisää yksityiskohtia Lähteiden kunto -raportissa.</p>
+<ul class="hist-list" aria-label="Aikaisemmat havainnot">
+  <li><span class="d">16.9.2026</span><span class="t">Viikkotarkistus aloitettu (lähtötilanne hyllyille).</span></li>
+  <li><span class="d">7.–9.9.2026</span><span class="t">Hilma tuore + TED + EU-avoimuus · ensimmäinen julkaistu otos (Toimii 4 · Hankala 5 · Ei aukea 3).</span></li>
+  <li><span class="d">4.–9.9.2026</span><span class="t">Hilma: vanhempi haku ei kata tuoreita; kauas listassa eteneminen katkaisee haun.</span></li>
+  <li><span class="d">25.8.–7.9.2026</span><span class="t">CloudNC: tuttu haku tyhjä. Markkinaoikeus: vuosi-haut epätasaisia. KKV hankinnat aukeavat.</span></li>
+  <li><span class="d">14.8.–24.8.2026</span><span class="t">Tutkihankintoja: lataus takkuilee · Satakunnan kuntia ei löytynyt isosta aineistosta.</span></li>
+  <li><span class="d">18.8.2026</span><span class="t">PRH: julkinen yrityshaku aukeaa (nimi ja yritysnumero).</span></li>
+  <li><span class="d">22.7.2026</span><span class="t">Ensimmäiset “ei aukea” -havainnot: verovelka, PRH edunsaajat, kuntien kartat.</span></li>
+</ul>
+<p class="hist-note">Pidempi jälki: <a href="lahteiden-kunto.html#historia">Lähteiden kunto → Havaintojen jälki</a>.</p>
 </section>
 
 <section class="panel" id="tyhjat-haut">
 <h2>Haut ilman osumia</h2>
 <p>Haut ilman osumia syntyy näin: jokin toimija tai aihe löytyy yhdestä aineistosta, ja haemme samaa asiaa toisesta rekisteristä samoilla sanoilla. Vastaus on “ei tuloksia”.</p>
 <p>Esimerkki: Järvenpään päätökset + “kamera” → ei osumia.</p>
-<p>Tässä aineistossa sellaisia hakuja on 276 (14 lähdettä). Tyhjä tulos voi myöhemmin täyttyä.</p>
+<p>Tässä aineistossa sellaisia hakuja on 334 (15 lähdettä). Tyhjä tulos voi myöhemmin täyttyä.</p>
 <p>Syvemmin Lähteiden kunto -raportissa.</p>
 </section>
 
 <section class="panel">
 <h2>Raportti</h2>
-<p>Koko sivun syvempi versio: lähteiden kunto (toimii / hankala / ei aukea) ja haut ilman osumia.</p>
+<p>Syvempi versio: hyllyt, tyhjät haut ja pidempi havaintojen jälki.</p>
 <p><a class="btn" href="lahteiden-kunto.html">Avaa: Lähteiden kunto →</a></p>
 </section>
 
@@ -354,7 +383,7 @@
 </section>
 
 <div class="disclaimer">
-Aineisto on otos, ei koko Suomi. Päivitetty 16.9.2026.
+Aineisto on otos, ei koko Suomi. Päivitetty 25.9.2026.
 </div>
 </div>
 
