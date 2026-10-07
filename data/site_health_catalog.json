@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "note": "Toimiiko-otos 7.10.2026 — oviprobe vahvisti hyllyt 9/6/3. Peito unique 66883 / 20,3 %.",
+  "baseline_date": "2026-09-09",
+  "updated": "2026-10-07",
+  "empty_searches": {
+    "count": 334,
+    "sources": 15
+  },
+  "sources": [
+    {
+      "id": "hilma-tuore",
+      "label": "Hilma: tuoreet hankintailmoitukset",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "prh-ytj",
+      "label": "PRH: yritystiedot (julkinen haku)",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "ted",
+      "label": "TED: EU-hankintailmoitukset",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "kkv-hankinta",
+      "label": "KKV: hankintojen valvonta",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "valtiokonttori",
+      "label": "Valtiokonttori: virastot",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "avoimuus-fi",
+      "label": "Avoimuusrekisteri (Suomi)",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "pif",
+      "label": "Lääketeollisuuden avoimuusilmoitukset (PIF)",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "tyosuojelu",
+      "label": "Työsuojelu: toimivalta-aineisto",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "varke",
+      "label": "Varke (entinen ARA): avustuslistat",
+      "shelf": "ok",
+      "deep": null
+    },
+    {
+      "id": "hilma-vanha",
+      "label": "Hilma: vanhempi haku",
+      "shelf": "hard",
+      "deep": "syvemmin-hilma"
+    },
+    {
+      "id": "hilma-vanha-ilmoitus",
+      "label": "Hilma: vanha ilmoitus ei aukea selaimessa",
+      "shelf": "hard",
+      "deep": "syvemmin-hilma-historia"
+    },
+    {
+      "id": "tutkihankintoja",
+      "label": "Tutkihankintoja",
+      "shelf": "hard",
+      "deep": "syvemmin-tutki"
+    },
+    {
+      "id": "cloudnc",
+      "label": "Kuntapäätökset (CloudNC)",
+      "shelf": "hard",
+      "deep": "syvemmin-cloudnc"
+    },
+    {
+      "id": "markkinaoikeus",
+      "label": "Markkinaoikeus: ratkaisuarkisto",
+      "shelf": "hard",
+      "deep": "syvemmin-mao"
+    },
+    {
+      "id": "eu-avoimuus",
+      "label": "EU:n avoimuusrekisteri",
+      "shelf": "hard",
+      "deep": "syvemmin-eu"
+    },
+    {
+      "id": "verovelka",
+      "label": "Verovelkarekisteri (YTJ-tietopalvelu)",
+      "shelf": "no",
+      "deep": "syvemmin-verovelka",
+      "kind": "Käyttö estetty"
+    },
+    {
+      "id": "prh-edunsaajat",
+      "label": "PRH: edunsaajatiedot",
+      "shelf": "no",
+      "deep": "syvemmin-prh-edunsaajat",
+      "kind": "Ei julkaistu avoimena"
+    },
+    {
+      "id": "kunta-wfs",
+      "label": "Kuntien kartta-aineistot (esimerkkejä)",
+      "shelf": "no",
+      "deep": "syvemmin-kartat",
+      "kind": "Käyttö estetty"
+    }
+  ],
+  "peito": {
+    "unique": 66883,
+    "has_pct": 20.3,
+    "has_n": 13575,
+    "miss_pct": 79.7,
+    "miss_n": 53308,
+    "compete_has_pct_approx": 21.1
+  }
+}
