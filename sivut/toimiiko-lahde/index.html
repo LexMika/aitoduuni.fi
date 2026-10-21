@@ -41,6 +41,25 @@
 </style>
 
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
+
+<style id="site-health-hist">
+  .hist-box .hist-lead { margin: 0 0 0.75rem; color: #94a3b8; font-size: 0.95rem; }
+  .hist-week {
+    margin: 0 0 0.5rem; padding: 0.7rem 0.85rem;
+    border-left: 3px solid #38bdf8; background: #0f172a; border-radius: 0 6px 6px 0;
+  }
+  .hist-week .when-line { color: #e2e8f0; font-weight: 600; margin: 0 0 0.65rem; }
+  .hist-moves { list-style: none; margin: 0; padding: 0; }
+  .hist-moves li { margin: 0.55rem 0 0; font-size: 0.95rem; color: #e2e8f0; }
+  .hist-moves .move-line {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.45rem; margin: 0 0 0.25rem;
+  }
+  .hist-moves .arrow { color: #64748b; }
+  .hist-moves .src-name { font-weight: 600; color: #f1f5f9; }
+  .hist-moves .why { margin: 0; color: #94a3b8; font-size: 0.9rem; }
+  .hist-note { margin: 0.75rem 0 0; font-size: 0.88rem; color: #64748b; }
+</style>
+
 </head>
 <body class="page-toimiiko">
 <!-- aito-noscript:start -->
@@ -78,7 +97,7 @@
 </div>
 <section class="panel">
 <h2>Tiivistelmä</h2>
-<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">7.10.2026</div></div>
+<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">21.10.2026</div></div>
 <div class="fact-row"><div class="lbl">Kysymys</div><div class="val">Saako tiedot ulos ilman kirjautumista tai erillistä sopimusta?</div></div>
 <div class="fact-row"><div class="lbl">Otos</div><div class="val">21 lähdettä (ei koko Suomi)</div></div>
 <div class="fact-row"><div class="lbl">Hyllyt</div><div class="val">
@@ -101,28 +120,28 @@
     <span class="src">Hilma: tuoreet hankintailmoitukset</span>
     <p class="why">Uusi haku aukeaa. Vanhempi haku on eri asia (alla hankalissa). 7.10. tarkistus: tuore eform-haku antoi rivejä (osa ovista epätasainen).</p>
   </div>
-  <span class="when">Havainto aiemmin · vahvistus 7.10.2026</span>
+  <span class="when">Havainto aiemmin · vahvistus 21.10.2026</span>
 </li>
 <li id="prh-ytj">
   <div>
     <span class="src">PRH: yritystiedot (julkinen haku)</span>
     <p class="why">Nimi ja yritysnumero löytyvät. Tiedot yrityksen edunsaajista eivät kuulu tähän (alla). 7.10. nimi- ja yritysnumerohaku toimivat.</p>
   </div>
-  <span class="when">Havainto aiemmin · vahvistus 7.10.2026</span>
+  <span class="when">Havainto aiemmin · vahvistus 21.10.2026</span>
 </li>
 <li id="ted">
   <div>
     <span class="src">TED: EU-hankintailmoitukset</span>
     <p class="why">Haku toimii avoimesti. Tiedot saa ulos ilman kirjautumista. 7.10. tarkistus toimi (yksi kulma failasi, pääovi OK).</p>
   </div>
-  <span class="when">Havainto aiemmin · vahvistus 7.10.2026</span>
+  <span class="when">Havainto aiemmin · vahvistus 21.10.2026</span>
 </li>
 <li id="kkv-hankinta">
   <div>
     <span class="src">KKV: hankintojen valvonta</span>
     <p class="why">Hankintoja koskeva osio aukeaa. Kaikkia aiheita ei ole samalla tavalla saatavilla. 7.10. lista ja sisältö antoivat rivejä.</p>
   </div>
-  <span class="when">Havainto aiemmin · vahvistus 7.10.2026</span>
+  <span class="when">Havainto aiemmin · vahvistus 21.10.2026</span>
 </li>
 <li id="valtiokonttori">
   <div>
@@ -164,21 +183,21 @@
     <span class="src">KHO: päätösarkisto</span>
     <p class="why">Päätöslista aukeaa ilman kirjautumista. Haku (esim. hankinta) palauttaa rivejä, ei tyhjää kuorta.</p>
   </div>
-  <span class="when">Havainto 7.10.2026</span>
+  <span class="when">Havainto 7.10.2026 · vahvistus 21.10.2026</span>
 </li>
 <li id="kuntatalous">
   <div>
     <span class="src">Kuntatalous: organisaatiot ja aineistot</span>
     <p class="why">Organisaatiolista ja aineistot aukeavat. Riveillä on tunnisteita ja latausosoitteita, ei pelkkää HTML-kehystä.</p>
   </div>
-  <span class="when">Havainto 7.10.2026</span>
+  <span class="when">Havainto 7.10.2026 · vahvistus 21.10.2026</span>
 </li>
 <li id="eduskunta">
   <div>
     <span class="src">Eduskunta: avoin data</span>
     <p class="why">Kansanedustajat ja äänestykset aukeavat avoimesta rajapinnasta. Rivejä tulee ulos ilman tunnusta.</p>
   </div>
-  <span class="when">Havainto 7.10.2026</span>
+  <span class="when">Havainto 7.10.2026 · vahvistus 21.10.2026</span>
 </li>
 </ul>
 </section>
@@ -192,7 +211,7 @@
     <a class="src" href="#syvemmin-hilma">Hilma: vanhempi haku<span class="src-go" aria-hidden="true"> →</span></a>
     <p class="why">Kaksi eri hakua. Vanhempi ei kata tuoreita ilmoituksia. 7.10. lista antoi vielä rivejä kauempanakin listassa; Hankala säilyy.</p>
   </div>
-  <span class="when">Havainto 4.–9.9. · täydennys 7.10.2026</span>
+  <span class="when">Havainto 4.–9.9. · täydennys 21.10.2026</span>
 </li>
 <li id="hilma-vanha-ilmoitus">
   <div>
@@ -390,31 +409,15 @@
 </section>
 
 <section class="panel hist-box" id="historia">
-<h2>Havaintojen jälki</h2>
-<p class="hist-lead">Milloin lähteitä on kokeiltu ja mitä ne vastasivat. Uusin ensin. Tämä ei ole koko Suomi, vaan meidän otoksemme.</p>
+<h2>Lyhyt historia</h2>
+<p class="hist-lead">Viikkotarkistusten jälki. Alla vain vaihtuneet; ennallaan mainitaan lyhyesti.</p>
 <div class="hist-week">
-  <p class="when-line">7.10.2026</p>
-  <p class="hist-note" style="margin:0"><strong>Levennys otokseen 21.</strong> Toimii-hyllyyn kolme uutta: KHO päätösarkisto, kuntatalous (organisaatiot/aineistot), Eduskunnan avoin data. Substance-tarkistus 9/9: kaikista tuli rivejä (ei pelkkä “sivu auki”). Hyllyt: Toimii 12 · Hankala 6 · Ei aukea 3. Aiemmin samana päivänä oviprobe 18 ovea (OK 13 · FAIL 3 · SKIP 2) piti hyllyt 9/6/3 ennen levennystä; Puuttuva tieto unique 66 883 / 20,3 %.</p>
+  <p class="when-line">21.10.2026 ← 7.10.2026</p>
+  <p class="hist-note" style="margin:0">Hyllyt ennallaan.</p>
 </div>
-<div class="hist-week">
-  <p class="when-line">25.9.2026</p>
-  <p class="hist-note" style="margin:0">Tarkistus 18 lähteelle. Toimii-hyllyyn viisi uutta: Valtiokonttori, Avoimuusrekisteri (Suomi), lääketeollisuuden avoimuusilmoitukset (PIF), Työsuojelu, Varke. Hilma, PRH ja TED vahvistuivat. Tutkihankintoja edelleen hankala. Verovelka: sivu auki, haku kiinni. CloudNC, Markkinaoikeus ja EU-rekisteri: tavallinen haku antoi rivejä, Hankala säilyy (epätasaista). Aiemmin samana päivänä: Tutkihankintoja-ostolaskutiedosto otsikolla ilman rivejä.</p>
-</div>
-<div class="hist-week">
-  <p class="when-line">17.9.2026</p>
-  <p class="hist-note" style="margin:0">Hilma: vanha ilmoitus ei aukea selaimessa. EU-julkaisu → TED (Löydöissä noin 2675); kansallinen → Ilmoitusote (18). Hilman oma sivu ei riitä näille.</p>
-</div>
-<ul class="hist-list" aria-label="Aikaisemmat havainnot">
-  <li><span class="d">16.9.2026</span><span class="t">Viikkotarkistus aloitettu (lähtötilanne hyllyille).</span></li>
-  <li><span class="d">7.–9.9.2026</span><span class="t">Hilma tuore + TED + EU-avoimuus · ensimmäinen julkaistu otos (Toimii 4 · Hankala 5 · Ei aukea 3).</span></li>
-  <li><span class="d">4.–9.9.2026</span><span class="t">Hilma: vanhempi haku ei kata tuoreita; kauas listassa eteneminen katkaisee haun.</span></li>
-  <li><span class="d">25.8.–7.9.2026</span><span class="t">CloudNC: tuttu haku tyhjä. Markkinaoikeus: vuosi-haut epätasaisia. KKV hankinnat aukeavat.</span></li>
-  <li><span class="d">14.8.–24.8.2026</span><span class="t">Tutkihankintoja: lataus takkuilee · Satakunnan kuntia ei löytynyt isosta aineistosta.</span></li>
-  <li><span class="d">18.8.2026</span><span class="t">PRH: julkinen yrityshaku aukeaa (nimi ja yritysnumero).</span></li>
-  <li><span class="d">22.7.2026</span><span class="t">Ensimmäiset “ei aukea” -havainnot: verovelka, PRH edunsaajat, kuntien kartat.</span></li>
-</ul>
-<p class="hist-note">Pidempi jälki: <a href="lahteiden-kunto.html#historia">Lähteiden kunto → Havaintojen jälki</a>.</p>
+<p class="hist-note">Täysi jälki Lähteiden kunto -raportissa. Max ~3 muutosta sivulla; loput raportissa.</p>
 </section>
+
 
 <section class="panel" id="tyhjat-haut">
 <h2>Haut ilman osumia</h2>
@@ -438,8 +441,7 @@
 </section>
 
 <div class="disclaimer">
-Aineisto on otos, ei koko Suomi. Päivitetty 7.10.2026.
-</div>
+Aineisto on otos, ei koko Suomi. Päivitetty 21.10.2026.</div>
 </div>
 
 <footer>
