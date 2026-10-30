@@ -582,8 +582,11 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
 }
 
 /* Löydöt-suhde (B+C) — numero ensin, yksi C-palkki, leimat tekstinä */
-.loydot-ratio {
+.loydot-suhde-block {
   margin: 1.25rem 0 1.4rem;
+}
+.loydot-ratio {
+  margin: 0;
   padding: 1.05rem 1.15rem 1.2rem;
   border: 1px solid var(--edge);
   border-radius: 1.1rem;
@@ -629,6 +632,58 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   color: #e2e8f0;
   line-height: 1.4;
 }
+.loydot-ratio-why {
+  margin: 0.85rem 0 0;
+  padding: 1rem 1.15rem 1.15rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  background: rgba(37, 99, 235, 0.12);
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.loydot-ratio-why-title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #bfdbfe;
+}
+.loydot-ratio-why ul {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem 1.1rem;
+  color: #93c5fd;
+  font-size: 0.95rem;
+}
+@media (min-width: 640px) {
+  .loydot-ratio-why ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.loydot-ratio-why li {
+  margin: 0;
+  padding: 0.65rem 0.75rem 0.65rem 1.35rem;
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 0.65rem;
+  line-height: 1.45;
+}
+.loydot-ratio-why li::before {
+  content: "";
+  position: absolute;
+  left: 0.65rem;
+  top: 1.05rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--blue-hot, #60a5fa);
+}
+.loydot-ratio-why a { color: #bfdbfe; font-weight: 600; }
+.loydot-ratio-why a:hover { color: #fff; }
 .loydot-ratio > .loydot-ratio-intro {
   margin: 0 0 0.95rem;
   color: var(--muted);

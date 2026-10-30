@@ -1,243 +1,327 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" lang="fi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
 <title>Näin luet · AitoData</title>
-<!-- aito-hub-meta:start -->
-<meta name="description" content="Lukuohje: miten AitoData-löydöt toimivat, vertailuluvut (n, ×) ja esimerkit hyllyltä.">
-<link rel="canonical" href="https://aitodata.fi/nain-luet/">
-<link rel="alternate" type="text/plain" href="https://aitodata.fi/llms.txt" title="LLM site guide">
-<meta name="author" content="AitoData">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AitoData">
-<meta property="og:title" content="Näin luet · AitoData">
-<meta property="og:description" content="Lukuohje: miten AitoData-löydöt toimivat, vertailuluvut (n, ×) ja esimerkit hyllyltä.">
-<meta property="og:url" content="https://aitodata.fi/nain-luet/">
-<meta property="og:locale" content="fi_FI">
-<meta property="og:image" content="https://aitodata.fi/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="AitoData: julkinen tieto lähteineen">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Näin luet · AitoData">
-<meta name="twitter:description" content="Lukuohje: miten AitoData-löydöt toimivat, vertailuluvut (n, ×) ja esimerkit hyllyltä.">
-<meta name="twitter:image" content="https://aitodata.fi/assets/og-image.png">
-<meta name="twitter:image:alt" content="AitoData: julkinen tieto lähteineen">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Näin luet · AitoData","description":"Lukuohje: miten AitoData-löydöt toimivat, vertailuluvut (n, ×) ja esimerkit hyllyltä.","url":"https://aitodata.fi/nain-luet/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/","description":"Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse."}}</script>
-<!-- aito-hub-meta:end -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260922b">
-<link rel="icon" href="../assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<meta name="theme-color" content="#020617">
 <style>
-  /* Näin luet · polkukortit */
-  .vedos-note {
-    margin: 1rem 0 0;
-    padding: 0.75rem 1rem;
-    border: 1px dashed rgba(96, 165, 250, 0.45);
-    border-radius: 0.75rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-    max-width: 40rem;
-  }
-  .path-list { margin-top: 0.5rem; }
-  a.path-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.15s ease;
-  }
-  a.path-card:hover,
-  a.path-card:focus-visible {
-    border-color: rgba(96, 165, 250, 0.45);
-    outline: none;
-  }
-  a.path-card:focus-visible {
-    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.35);
-  }
-  a.path-card .find-meta {
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-size: 0.72rem;
-    color: var(--muted);
-  }
-  a.path-card h3 {
-    margin: 0.15rem 0 0.35rem;
-    font-size: 1.05rem;
-    line-height: 1.35;
-    color: #fff;
-  }
-  a.path-card h3::after {
-    content: " →";
-    color: var(--blue-hot);
-    font-weight: 500;
-  }
-  a.path-card:hover h3,
-  a.path-card:focus-visible h3 { color: var(--blue-hot); }
-  a.path-card > p:last-child {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-  .quiet-block {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--edge);
-  }
-  .quiet-block .page-head { padding-top: 0.5rem; }
-  .quiet-block .page-head h2 {
-    margin: 0 0 0.4rem;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #fff;
-  }
-  a.step-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.15s ease;
-  }
-  a.step-link:hover,
-  a.step-link:focus-visible {
-    border-color: rgba(96, 165, 250, 0.45);
-    outline: none;
-  }
-  a.step-link:focus-visible {
-    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.35);
-  }
-  a.step-link h3 { color: #fff; }
-  a.step-link:hover h3,
-  a.step-link:focus-visible h3 { color: var(--blue-hot); }
-  a.step-link h3::after {
-    content: " →";
-    color: var(--blue-hot);
-    font-weight: 500;
-  }
+:root {
+  --bg:#020617; --bg-2:#0b1224; --card:rgba(15,23,42,.72); --edge:#1e293b;
+  --text:#f1f5f9; --muted:#94a3b8; --blue:#2563eb; --blue-hot:#60a5fa;
+  --blue-dim:rgba(37,99,235,.14); --ok:#6ee7b7;
+  --font:"IBM Plex Sans",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--font);font-size:1.05rem;line-height:1.65;
+background:radial-gradient(1200px 500px at 12% -10%,rgba(37,99,235,.28),transparent 55%),linear-gradient(180deg,var(--bg),var(--bg-2) 48%,#020617)}
+a{color:var(--blue-hot);text-decoration:none}
+a:hover{color:#93c5fd}
+.banner{background:#14532d;color:#bbf7d0;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem}
+.topbar{position:sticky;top:0;z-index:30;border-bottom:1px solid rgba(30,41,59,.9);background:rgba(2,6,23,.86);backdrop-filter:blur(10px)}
+.topbar-inner{max-width:72rem;margin:0 auto;padding:.95rem 1.25rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.wordmark{font-size:1.2rem;font-weight:800;letter-spacing:-.04em;color:#fff;margin-right:auto}
+.wordmark span{color:var(--blue-hot);font-weight:500}
+.site-nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem}
+.site-nav a{color:var(--muted);font-size:.95rem;font-weight:500;padding:.2rem 0;border-bottom:2px solid transparent}
+.site-nav a:hover{color:var(--text)}
+.site-nav a.active{color:#fff;border-bottom-color:var(--blue-hot)}
+.wrap{max-width:72rem;margin:0 auto;padding:1.75rem 1.25rem 4rem}
+.section-label{margin:0 0 .35rem;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+h1{margin:0 0 .65rem;font-size:clamp(1.75rem,3.5vw,2.2rem);font-weight:700;letter-spacing:-.03em;line-height:1.2}
+.lead{margin:0 0 1.25rem;color:var(--muted);max-width:40rem}
+.callout{
+  margin:0 0 1.25rem;padding:.95rem 1.1rem;border-radius:1rem;
+  border:1px solid rgba(37,99,235,.28);background:var(--blue-dim);color:#93c5fd;font-size:.98rem;
+}
+.callout strong{color:#bfdbfe;font-weight:600}
+.callout ul{margin:.6rem 0 0;padding:0 0 0 1.1rem}
+.callout li{margin:.35rem 0}
+.dept-label{margin:0 0 .45rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.dept-pills{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 1.1rem}
+.dept-pills button{
+  appearance:none;border:1px solid var(--edge);background:rgba(15,23,42,.55);
+  color:var(--muted);font:inherit;font-size:.88rem;font-weight:600;
+  padding:.45rem .85rem;border-radius:.45rem;cursor:pointer;
+}
+.dept-pills button:hover{color:var(--text);background:rgba(37,99,235,.08)}
+.dept-pills button.is-on{
+  color:#fff;background:rgba(37,99,235,.2);border-color:rgba(37,99,235,.45);
+}
+.dept-pills button:focus-visible{outline:2px solid rgba(37,99,235,.65);outline-offset:2px}
+.panel{
+  display:none;margin:0 0 1.75rem;padding:1.15rem 1.2rem 1.3rem;
+  border:1px solid var(--edge);border-radius:.75rem;background:var(--card);
+}
+.panel.is-open{display:block}
+.panel h2{margin:0 0 .55rem;font-size:1.25rem;font-weight:700;letter-spacing:-.02em;color:#fff}
+.panel .blurb{margin:0 0 .85rem;color:var(--muted)}
+.panel .rules{margin:0 0 1rem;padding:0 0 0 1.1rem;color:#cbd5e1}
+.panel .rules li{margin:.35rem 0}
+.example{
+  margin:0;padding:.95rem 1.05rem;border-radius:.65rem;
+  border:1px solid rgba(37,99,235,.35);background:rgba(37,99,235,.1);
+}
+.example .ex-k{margin:0 0 .3rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+.example h3{margin:0 0 .35rem;font-size:1.05rem;color:#fff}
+.example p{margin:0 0 .75rem;color:var(--muted);font-size:.95rem}
+.example a.cta{
+  display:inline-block;font-weight:700;color:#fff;
+  padding:.55rem .9rem;border-radius:.45rem;
+  background:rgba(37,99,235,.22);border:1px solid rgba(37,99,235,.45);
+}
+.example a.cta:hover{background:rgba(37,99,235,.35);color:#fff}
+.glossary{margin:1rem 0 0;padding-top:.9rem;border-top:1px solid var(--edge)}
+.glossary h3{margin:0 0 .5rem;font-size:.95rem;font-weight:700;color:#fff}
+.glossary p{margin:0 0 .55rem;color:var(--muted);font-size:.95rem}
+.glossary p:last-child{margin-bottom:0}
+.quiet{margin-top:2.25rem;padding-top:1.5rem;border-top:1px solid var(--edge)}
+.quiet h2{margin:0 0 .45rem;font-size:1.1rem;font-weight:600;color:#fff}
+.quiet p{margin:0 0 .85rem;color:var(--muted)}
+.path-row{display:grid;gap:.65rem}
+@media (min-width:640px){.path-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.path-row a{
+  display:block;padding:.9rem 1rem;border:1px solid var(--edge);border-radius:.65rem;
+  background:rgba(15,23,42,.55);color:inherit;
+}
+.path-row a:hover{border-color:rgba(37,99,235,.45)}
+.path-row .k{margin:0 0 .2rem;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.path-row h3{margin:0 0 .25rem;font-size:1rem;color:#fff}
+.path-row p{margin:0;font-size:.92rem;color:var(--muted)}
+.actions{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.65rem}
+.btn{
+  display:inline-block;padding:.65rem 1.05rem;border-radius:.5rem;font-weight:700;color:#fff;
+  background:rgba(37,99,235,.28);border:1px solid rgba(37,99,235,.5);
+}
+.btn:hover{background:rgba(37,99,235,.4);color:#fff}
+.btn.ghost{background:transparent;color:var(--muted);border-color:var(--edge);font-weight:600}
+.btn.ghost:hover{color:var(--text);border-color:#475569}
+.site-foot{max-width:72rem;margin:2rem auto 0;padding:1.25rem 1.25rem 2.5rem;border-top:1px solid var(--edge);font-size:.88rem;color:var(--muted)}
+.site-foot a{color:var(--muted)}
+.site-foot a:hover{color:var(--blue-hot)}
+@media (max-width:520px){
+  .wrap{padding:1.15rem .9rem 3rem}
+  .topbar-inner{padding:.75rem .9rem}
+  .site-nav{gap:.25rem .75rem}
+  .site-nav a{font-size:.88rem}
+  .dept-pills button{font-size:.82rem;padding:.4rem .7rem}
+  .panel{padding:1rem .95rem 1.15rem}
+  .example a.cta{display:block;text-align:center}
+}
+/* Ilman JS: näytä kaikki paneelit */
+html.no-js .panel{display:block;margin-bottom:1rem}
+html.no-js .dept-pills{display:none}
 </style>
-<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
-<!-- aito-noscript:start -->
-<noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
-<!-- aito-noscript:end -->
+<script>document.documentElement.classList.remove('no-js');</script>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
-<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav class="site" id="site-nav">
-    <a href="../sivut/loydot/">Löydöt</a>
+  <nav class="site-nav" aria-label="Päävalikko">
+    <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../kaiva/">Tutki lisää</a>
-    <a href="../nain-luet/" class="active">Näin luet</a>
+    <a href="./" class="active">Näin luet</a>
     <a href="../perusteet/">Perusteet</a>
-    <a href="../tietoa/">Info</a>
   </nav>
 </div></div>
 
 <div class="wrap">
-  <header class="page-head">
-    <p class="section-label">Lukuohje</p>
-    <h1>Näin luet</h1>
-    <p>Julkinen tieto, lähteineen. Emme sano, onko jokin oikein tai väärin. Valitse alta, mistä aloitat.</p>
-      </header>
+  <p class="section-label">Lukuohje</p>
+  <h1>Näin luet</h1>
+  <p class="lead">Valitse osasto. Saat lyhyet lukusäännöt ja yhden oikean esimerkin. Emme sano, onko jokin oikein tai väärin.</p>
 
-  <p class="section-label">Aloita tästä</p>
-  <div class="find-list path-list">
-    <a class="find-item path-card" href="../esimerkki/">
-      <p class="find-meta">1 · Esimerkki</p>
-      <h3>Oikea kortti hyllyltä</h3>
-      <p>Eurajoen monitoimihalli (Hankinta). Sama rakenne kaikilla: Tiivistelmä → Lähteet (Kohde + Etsi) → Kokonaiskuva.</p>
-    </a>
-    <a class="find-item path-card" href="../kaiva/">
-      <p class="find-meta">2 · Tutki lisää</p>
-      <h3>Miten jatkat kortin jälkeen</h3>
-      <p>Avaimet, kysymykset ja tietopyyntö: sama Eurajoki-esimerkki kuin Esimerkki-sivulla.</p>
-    </a>
-      <a class="find-item path-card" href="../tietoa/#miten-kortti-syntyy">
-      <p class="find-meta">3 · Info</p>
-      <h3>Mikä AitoData on</h3>
-      <p>Mitä teemme, miten kortti syntyy (myös hankinnan lukusäännöt), miten tarkistat lähteen.</p>
-    </a>
-    <a class="find-item path-card" href="../perusteet/">
-      <p class="find-meta">4 · Perusteet</p>
-      <h3>Mihin laki nojaa</h3>
-      <p>Lainsäädäntö ja avoimuuskehykset (Finlex, EU). Syvempi tausta skeptikolle tai medialle.</p>
-    </a>
+  <div class="callout">
+    <strong>Mitä tämä sivu tekee</strong>
+    <ul>
+      <li>Kertoo, <em>miten</em> eri listoja ja kortteja luetaan</li>
+      <li>Ei ole toinen hylly: yksi esimerkki per osasto riittää</li>
+      <li>Rahavirrat ja Löydöt näyttävät eri kortilta. Siksi eri ohjeet</li>
+    </ul>
   </div>
 
-  <div class="quiet-block" id="vertailuluvut">
-    <div class="page-head">
-      <p class="section-label">Sanasto</p>
-      <h2>Vertailuluvut tiivistelmässä</h2>
-      <p>Jotkut Hankinta-löydöt vertaavat Hilma-ilmoituksen arvoa muihin saman ryhmän ilmoituksiin. Näitä näet tiivistelmässä. Merkkaussäännöt (1,4× / 4×): <a href="../tietoa/#miten-kortti-syntyy">Miten kortti syntyy</a>.</p>
-      <p>Löydöt-listalla on myös suhde kerättyyn hankinta-aineistoon: suurin osa ei nouse listalle. Luvut: <a href="../sivut/loydot/#loydot-suhde">Löydöt → suhde</a>.</p>
+  <p class="dept-label" id="osastot">Osasto</p>
+  <div class="dept-pills" role="tablist" aria-label="Osastot">
+    <button type="button" role="tab" id="tab-vaalituki" aria-controls="panel-vaalituki" data-dept="vaalituki" class="is-on" aria-selected="true">Vaalituki</button>
+    <button type="button" role="tab" id="tab-puolue" aria-controls="panel-puolue" data-dept="puolue" aria-selected="false">Puoluerahoitus</button>
+    <button type="button" role="tab" id="tab-loydot" aria-controls="panel-loydot" data-dept="loydot" aria-selected="false">Löydöt / hankinta</button>
+    <button type="button" role="tab" id="tab-puuttuva" aria-controls="panel-puuttuva" data-dept="puuttuva" aria-selected="false">Puuttuva</button>
+    <button type="button" role="tab" id="tab-toimiiko" aria-controls="panel-toimiiko" data-dept="toimiiko" aria-selected="false">Toimiiko</button>
+  </div>
+
+  <section class="panel is-open" role="tabpanel" id="panel-vaalituki" aria-labelledby="tab-vaalituki" data-dept="vaalituki">
+    <h2>Vaalituki</h2>
+    <p class="blurb">Kuka antoi rahaa ehdokkaalle (eduskuntavaalit). Näet tukijan, ehdokkaan, summan ja linkin ilmoitukseen.</p>
+    <ul class="rules">
+      <li><strong>Ehdokas ← tukijat:</strong> kenelle annettiin ja keiltä tuki tuli</li>
+      <li><strong>Tukija → ehdokkaat:</strong> kuka antoi ja kenelle (usein organisaatio Y-tunnuksella)</li>
+      <li><strong>Haku ja napit:</strong> nimellä, suunnalla tai puolueella · järjestys euro ↓</li>
+      <li>Nimi kuten ilmoituksessa. Emme arvioi, onko tuki sopiva</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Katri Kulmuni · ehdokaskortti</h3>
+      <p>Vaalituki-kortti: yhteissumma, vaalit ja suurimmat tukijat. Listasta aukeavat kaikki tukijat.</p>
+      <a class="cta" href="../rahavirrat/kortti-ehdokas-katri-kulmuni/">Avaa esimerkki →</a>
+      &nbsp; <a href="../rahavirrat/vaalituki/">Vaalituki-lista</a>
     </div>
-    <div class="callout callout-guide">
-      <p><strong>CPV</strong>: hankintojen tuoteluokka. Samankaltaiset hankinnat ryhmitellään, jotta arvoja voi verrata.</p>
-      <p><strong>n</strong>: montako muuta ilmoitusta samasta CPV-ryhmästä laskettiin mukaan vertailuun. Esim. n=95 → mediaani perustuu 95 ilmoitukseen. Pienempi n → vertailu on karkeampi.</p>
-      <p><strong>Mediaani</strong>: keskimmäinen arvo: puolet ilmoituksista alle, puolet yli.</p>
-      <p><strong>× mediaaniin</strong>: kuinka monta kertaa tämän ilmoituksen arvo on suurempi kuin ryhmän mediaani (esim. 231×). Merkki tutkia, ei tuomio. Avaa lähde ja tarkista.</p>
+    <div class="glossary">
+      <h3>Sanasto (vaalituki)</h3>
+      <p><strong>Tukija</strong>: kuka antoi rahaa. Organisaatiolla voi olla Y-tunnus; yksityishenkilöllä ei.</p>
+      <p><strong>Ehdokas</strong>: kenelle tuki ilmoitettiin. Kortilla näet vaalit ja suurimmat tukijat.</p>
+      <p><strong>Y-tunnus</strong>: yrityksen tai yhdistyksen tunniste. Puuttuva Y organisaatiolla on merkitty listassa.</p>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-puolue" aria-labelledby="tab-puolue" data-dept="puolue" hidden>
+    <h2>Puoluerahoitus</h2>
+    <p class="blurb">Kuka antoi rahaa puolueelle tai sen yhdistykselle. Näet tukijan, ilmoittajan, summan ja linkin ilmoitukseen.</p>
+    <ul class="rules">
+      <li><strong>Ilmoittaja</strong> on se, joka on jättänyt ilmoituksen (puolue tai yhdistys)</li>
+      <li><strong>Tukija</strong> on se, jolta raha tuli ilmoituksen mukaan</li>
+      <li>Kortilla: yhteensä, vuodet ja suurimmat tukijat · listasta kaikki rivit</li>
+      <li>Ei väitettä sidonnaisuudesta. Avaa lähde</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Vihreä liitto r.p. · ilmoittajakortti</h3>
+      <p>Puoluerahoituskortti: Y-tunnus, summat vuosittain ja suurimmat tukijat.</p>
+      <a class="cta" href="../rahavirrat/kortti-ilmoittaja-vihrea-liitto-r-p/">Avaa esimerkki →</a>
+      &nbsp; <a href="../rahavirrat/puoluerahoitus/">Puoluerahoitus-lista</a>
+    </div>
+    <div class="glossary">
+      <h3>Sanasto (puoluerahoitus)</h3>
+      <p><strong>Ilmoittaja</strong>: puolue tai sen yhdistys, joka on ilmoittanut saamansa tuen.</p>
+      <p><strong>Tukija</strong>: kuka antoi. Sama logiikka kuin vaalituessa (org / henkilö).</p>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-loydot" aria-labelledby="tab-loydot" data-dept="loydot" hidden>
+    <h2>Löydöt / hankinta</h2>
+    <p class="blurb">Emme listaa kaikkia julkisia ostoja. Poimimme hankintoja, joissa summa erottuu samanlaisista. Useimmat ilmoitukset jäävät pois.</p>
+    <ul class="rules">
+      <li>Kortin järjestys: <strong>Tiivistelmä → Lähteet → Kokonaiskuva</strong></li>
+      <li>Poikkeama = luku poikkeaa saman ryhmän vertailusta. Ei tuomio hankinnasta</li>
+      <li>Avaa lähde (Hilma / päätös) ja tarkista itse</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Eurajoki · monitoimihalli</h3>
+      <p>Hankinta-kortti hyllyltä. Sama rakenne kuin muilla Löydöillä.</p>
+      <a class="cta" href="../sivut/loydot/eurajoki-monitoimihalli/">Avaa esimerkki →</a>
+      &nbsp; <a href="../sivut/loydot/">Löydöt-lista</a>
+      &nbsp; <a href="../sivut/loydot/hilma-outlier-2021084940/">Hilma-poikkeama (CPV)</a>
+    </div>
+    <div class="glossary">
+      <h3>Sanasto (hankinta)</h3>
+      <p><strong>CPV</strong>: hankintojen tuoteluokka. Samankaltaiset hankinnat ryhmitellään vertailua varten.</p>
+      <p><strong>n</strong>: montako muuta ilmoitusta samasta CPV-ryhmästä laskettiin mukaan. Pienempi n → karkeampi vertailu.</p>
+      <p><strong>× mediaaniin</strong>: kuinka monta kertaa ilmoituksen arvo on suurempi kuin ryhmän mediaani. Merkki tutkia, ei tuomio.</p>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-puuttuva" aria-labelledby="tab-puuttuva" data-dept="puuttuva" hidden>
+    <h2>Puuttuva tieto</h2>
+    <p class="blurb">Missä julkinen aineisto ei riitä: arvioitu hinta, tyhjä haku tai kenttä puuttuu. Tämä ei ole “löytö” samalla tavalla kuin hankinta-poikkeama.</p>
+    <ul class="rules">
+      <li>Lue, <strong>mikä</strong> puuttuu ja mistä lähteestä sitä haettiin</li>
+      <li>Tyhjä haku ≠ todiste, että asiaa ei ole. Se tarkoittaa: tämä haku ei tuottanut osumia</li>
+      <li>Jatka tarvittaessa tietopyynnöllä (Tutki lisää)</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Puuttuva tieto · kooste</h3>
+      <p>Live-sivu: missä aineisto jättää aukon.</p>
+      <a class="cta" href="../sivut/peito/">Avaa Puuttuva tieto →</a>
+      &nbsp; <a href="../sivut/loydot/hilma-haku-korkein-oikeus-tyhja/">Tyhjä Hilma-haku</a>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-toimiiko" aria-labelledby="tab-toimiiko" data-dept="toimiiko" hidden>
+    <h2>Toimiiko lähde?</h2>
+    <p class="blurb">Lähteen kunto: aukeaako, palauttiko haku osumia, onko rajapinta vastannut. Auttaa erottamaan “ei dataa” ja “lähde jumissa”.</p>
+    <ul class="rules">
+      <li>Katso, onko lähde vastannut vai onko haku tyhjä toistuvasti</li>
+      <li>Käytä tätä, kun Löydöt tai Puuttuva tuntuu oudolta</li>
+      <li>Ei korvaa itse ilmoitusta: palaa aina lähteeseen</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Toimiiko lähde? · live</h3>
+      <p>Kooste lähteiden vastauksista ja tyhjistä hauista.</p>
+      <a class="cta" href="../sivut/toimiiko-lahde/">Avaa Toimiiko lähde? →</a>
+    </div>
+  </section>
+
+  <div class="quiet">
+    <p class="section-label">Tausta ja jatko</p>
+    <h2>Jos tarvitset taustaa tai jatkoa</h2>
+    <p>Osasto yllä valitsee esimerkin. Nämä kolme auttavat, kun kortti on auki tai haluat taustan.</p>
+    <div class="path-row">
+      <a href="../kaiva/">
+        <p class="k">Tutki lisää</p>
+        <h3>Miten jatkat kortin jälkeen</h3>
+        <p>Avaimet, kysymykset ja tietopyyntö.</p>
+      </a>
+      <a href="../tietoa/#miten-kortti-syntyy">
+        <p class="k">Info</p>
+        <h3>Mikä AitoData on</h3>
+        <p>Miten kortti syntyy ja miten tarkistat lähteen.</p>
+      </a>
+      <a href="../perusteet/">
+        <p class="k">Perusteet</p>
+        <h3>Mihin laki nojaa</h3>
+        <p>Lainsäädäntö ja avoimuuskehykset.</p>
+      </a>
     </div>
   </div>
 
-  <div class="quiet-block" id="esimerkit-hyllylta">
-    <div class="page-head">
-      <p class="section-label">Esimerkit hyllyltä</p>
-      <h2>Yksi kortti per kategoria</h2>
-      <p>Oikeita Löytöjä: sama näkymä kuin hyllyllä. Nyt hyllyllä on Hankinta-, Ketju- ja Puuttuva-kortteja (Raha tulee kun aineistoa on). Arvioitu hinta: <a href="../sivut/peito/">Puuttuva tieto</a>. Lähteen kunto ja tyhjät haut: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>.</p>
-    </div>
-    <div class="steps">
-      <a class="step step-link" href="../sivut/loydot/eurajoki-monitoimihalli/">
-        <div class="n">Hankinta</div>
-        <h3>Eurajoki · monitoimihalli</h3>
-        <p>Sama kortti kuin Esimerkki-sivulla. Tiivistelmä → Lähteet → Kokonaiskuva.</p>
-      </a>
-      <a class="step step-link" href="../sivut/loydot/tampere-joukkoliikenne-vertailu/">
-        <div class="n">Hankinta €</div>
-        <h3>Tampere · joukkoliikennevertailu</h3>
-        <p>Kunnan päätös, jossa euromäärä on tekstissä.</p>
-      </a>
-      <a class="step step-link" href="../sivut/loydot/hilma-outlier-2021084940/">
-        <div class="n">Hankinta</div>
-        <h3>Hilma · poikkeama verrokkiin</h3>
-        <p>CPV, n ja × tiivistelmässä. Selitys osiossa Sanasto yllä.</p>
-      </a>
-      <a class="step step-link" href="../sivut/loydot/senaatti-ketju/">
-        <div class="n">Ketju</div>
-        <h3>Sama Y-tunnus useassa lähteessä</h3>
-        <p>Hilma, PRH, virastoluettelo. Ei väitettä väärinkäytöstä.</p>
-      </a>
-      <a class="step step-link" href="../sivut/loydot/hilma-haku-korkein-oikeus-tyhja/">
-        <div class="n">Puuttuva</div>
-        <h3>Tyhjä haku · toista + kooste</h3>
-        <p>Hilma-haku ei tuottanut osumia. B-linkki Toimiiko lähde? -sivulle (haut ilman osumia).</p>
-      </a>
-    </div>
-    <p class="vedos-note" style="margin-top:1rem">Vanhat demo-sivut (<a href="../sivut/ketju/">ketju</a>, <a href="../sivut/verrokki/">verrokki</a>) ovat rajoitetusta otoksesta. Älä vertaa niihin hyllyä.</p>
-  </div>
-
-    <div class="hero-actions" style="margin-top:2rem">
-    <a class="btn" href="../sivut/loydot/">Siirry löytöihin</a>
-    <a class="btn ghost" href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
-    <a class="btn ghost" href="../">Takaisin etusivulle</a>
-  </div>
-
-  <div class="disclaimer">
-    Julkinen data, faktat ja lähde. Tulkinta on lukijalla.
+  <div class="actions">
+    <a class="btn" href="../rahavirrat/">Rahavirrat</a>
+    <a class="btn ghost" href="../rahavirrat/">Rahavirrat</a>
   </div>
 </div>
 
-<footer>
-  <p><a class="wordmark" href="../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-  <p class="legal-links"><a href="../tietoa/">Info</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
-  <p>Näin luet · julkinen kehittyvä palvelu.</p>
+<footer class="site-foot">
+  <p class="legal-links"><a href="../tietoa/">Tietoa</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
 </footer>
-<script src="../assets/nav.js?v=20260822d" defer></script>
+
+<script>
+(function () {
+  var pills = document.querySelectorAll(".dept-pills button");
+  var panels = document.querySelectorAll(".panel");
+  var valid = { vaalituki:1, puolue:1, loydot:1, puuttuva:1, toimiiko:1 };
+
+  function show(dept) {
+    if (!valid[dept]) dept = "vaalituki";
+    pills.forEach(function (btn) {
+      var on = btn.getAttribute("data-dept") === dept;
+      btn.classList.toggle("is-on", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    panels.forEach(function (panel) {
+      var on = panel.getAttribute("data-dept") === dept;
+      panel.classList.toggle("is-open", on);
+      if (on) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "");
+    });
+    if (history.replaceState) {
+      history.replaceState(null, "", "#" + dept);
+    } else {
+      location.hash = dept;
+    }
+  }
+
+  pills.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      show(btn.getAttribute("data-dept"));
+    });
+  });
+
+  var hash = (location.hash || "").replace(/^#/, "");
+  show(hash || "vaalituki");
+})();
+</script>
 </body>
 </html>

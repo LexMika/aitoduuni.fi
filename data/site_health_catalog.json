@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "note": "Toimiiko-otos 7.10.2026 — oviprobe vahvisti hyllyt 9/6/3. Peito unique 66883 / 20,3 %.",
+  "note": "Toimiiko-otos 21 · hyllyt 12/6/3 · varmistettu 30.10.2026 (probe; hyllyt ennallaan).",
   "baseline_date": "2026-09-09",
-  "updated": "2026-10-07",
+  "updated": "2026-10-30",
   "empty_searches": {
     "count": 334,
     "sources": 15
@@ -118,14 +118,35 @@
       "shelf": "no",
       "deep": "syvemmin-kartat",
       "kind": "Käyttö estetty"
+    },
+    {
+      "id": "kho",
+      "label": "KHO: päätösarkisto",
+      "shelf": "ok"
+    },
+    {
+      "id": "kuntatalous",
+      "label": "Kuntatalous: organisaatiot ja aineistot",
+      "shelf": "ok"
+    },
+    {
+      "id": "eduskunta",
+      "label": "Eduskunta: avoin data",
+      "shelf": "ok"
     }
   ],
   "peito": {
-    "unique": 66883,
-    "has_pct": 20.3,
-    "has_n": 13575,
-    "miss_pct": 79.7,
-    "miss_n": 53308,
-    "compete_has_pct_approx": 21.1
+    "unique": 68940,
+    "has_pct": 20.8,
+    "has_n": 14339,
+    "miss_pct": 79.2,
+    "miss_n": 54601,
+    "compete_has_pct_approx": 21
+  },
+  "otos": 21,
+  "by_shelf": {
+    "ok": 12,
+    "hard": 6,
+    "no": 3
   }
 }

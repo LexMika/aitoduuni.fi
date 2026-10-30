@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahavirrat · AitoData</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+ --bg:#020617; --bg-2:#0b1224; --card:rgba(15,23,42,.72); --edge:#1e293b;
+ --text:#f1f5f9; --muted:#94a3b8; --blue:#2563eb; --blue-hot:#60a5fa;
+ --blue-dim:rgba(37,99,235,.14); --ok:#6ee7b7;
+ --font:"IBM Plex Sans",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--font);font-size:1.05rem;line-height:1.65;
+background:radial-gradient(1200px 500px at 12% -10%,rgba(37,99,235,.28),transparent 55%),linear-gradient(180deg,var(--bg),var(--bg-2) 48%,#020617)}
+a{color:var(--blue-hot);text-decoration:none}a:hover{color:#93c5fd}
+.banner{background:#14532d;color:#bbf7d0;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem}
+.topbar{position:sticky;top:0;z-index:30;border-bottom:1px solid rgba(30,41,59,.9);background:rgba(2,6,23,.86);backdrop-filter:blur(10px)}
+.topbar-inner{max-width:72rem;margin:0 auto;padding:.95rem 1.25rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.wordmark{font-size:1.2rem;font-weight:800;letter-spacing:-.04em;color:#fff;margin-right:auto}
+.wordmark span{color:var(--blue-hot);font-weight:500}
+.site-nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem}
+.site-nav a{color:var(--muted);font-size:.95rem;font-weight:500;padding:.2rem 0;border-bottom:2px solid transparent}
+.site-nav a:hover{color:var(--text)}
+.site-nav a.active{color:#fff;border-bottom-color:var(--blue-hot)}
+.wrap{max-width:72rem;margin:0 auto;padding:1.75rem 1.25rem 4rem}
+.section-label{margin:0 0 .35rem;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+h1{margin:0 0 .65rem;font-size:clamp(1.75rem,3.5vw,2.2rem);font-weight:700;letter-spacing:-.03em;line-height:1.2}
+.lead{margin:0 0 1.1rem;color:var(--muted)}
+.doors{display:grid;gap:.85rem;margin:0;padding:0;list-style:none}
+.door{display:block;border:1px solid var(--edge);border-radius:.75rem;background:var(--card);padding:1.1rem 1.15rem 1.15rem;transition:border-color .15s,background .15s}
+.door:hover{border-color:rgba(37,99,235,.5);background:rgba(15,23,42,.9)}
+.door:focus-visible{outline:2px solid rgba(37,99,235,.65);outline-offset:2px}
+.door-kicker{margin:0 0 .35rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+.door h2{margin:0 0 .45rem;font-size:1.2rem;font-weight:700;letter-spacing:-.02em;color:#fff}
+.door p{margin:0 0 .85rem;color:var(--muted);font-size:.98rem}
+.door .cta{font-size:.95rem;font-weight:600;color:var(--blue-hot)}
+.door:hover .cta{color:#93c5fd}
+@media (max-width:520px){
+ .wrap{padding:1.15rem .9rem 3rem}
+ .topbar-inner{padding:.75rem .9rem}
+ .site-nav{gap:.25rem .75rem}
+ .site-nav a{font-size:.88rem}
+ h1{font-size:clamp(1.45rem,7vw,1.9rem)}
+ .door{padding:1rem .95rem}
+}
+
+.callout {
+  margin: 0 0 1.25rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  background: var(--blue-dim, rgba(37, 99, 235, 0.14));
+  color: #93c5fd;
+  font-size: 0.98rem;
+}
+.callout strong { color: #bfdbfe; font-weight: 600; }
+.callout ul {
+  margin: 0.6rem 0 0;
+  padding: 0 0 0 1.1rem;
+}
+.callout li { margin: 0.35rem 0; }
+
+.site-foot{max-width:72rem;margin:2rem auto 0;padding:1.25rem 1.25rem 2.5rem;border-top:1px solid var(--edge);font-size:.88rem;color:var(--muted)}
+.site-foot a{color:var(--muted)}
+.site-foot a:hover{color:var(--blue-hot)}
+.legal-links{margin:0}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+  <a class="wordmark" href="../">Aito<span>Data</span></a>
+  <nav class="site-nav" aria-label="Päävalikko">
+    <a href="./" class="active">Rahavirrat</a>
+    <a href="../sivut/peito/">Puuttuva tieto</a>
+    <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../kaiva/">Tutki lisää</a>
+    <a href="../nain-luet/">Näin luet</a>
+    <a href="../perusteet/">Perusteet</a>
+  </nav>
+</div></div>
+<div class="wrap">
+ <p class="section-label">Rahavirrat</p>
+ <h1>Valitse, mitä haluat katsoa</h1>
+  <p class="lead">Julkista rahaa, lähteineen. Valitse alta, mistä aloitat.</p>
+  <div class="callout"><strong>Näin luet tämän sivun</strong>
+    <ul>
+      <li><strong>Vaalituki:</strong> kuka antoi rahaa ehdokkaalle (eduskuntavaalit)</li>
+      <li><strong>Puoluerahoitus:</strong> kuka antoi rahaa puolueelle tai sen yhdistykselle</li>
+      <li><strong>Löydöt:</strong> poimintoja, joissa summa erottuu samanlaisista (useimmiten hankinta)</li>
+    </ul>
+  </div>
+
+ <ul class="doors" aria-label="Rahavirta-listat">
+ <li>
+ <a class="door" href="./vaalituki/">
+        <h2>Vaalituki</h2>
+ <p>Kuka antoi rahaa ehdokkaalle eduskuntavaaleissa? Näet tukijan, ehdokkaan, summan ja linkin ilmoitukseen. Voit hakea nimellä.</p>
+ <span class="cta">Avaa vaalituki-lista →</span>
+ </a>
+ </li>
+ <li>
+ <a class="door" href="./puoluerahoitus/">
+        <h2>Puoluerahoitus</h2>
+        <p>Kuka antoi rahaa puolueelle tai sen yhdistykselle? Näet tukijan, ilmoittajan, summan ja linkin ilmoitukseen.</p>
+ <span class="cta">Avaa puoluerahoitus-lista →</span>
+ </a>
+ </li>
+ <li>
+ <a class="door" href="../sivut/loydot/">
+        <h2>Löydöt</h2>
+ <p>Emme listaa kaikkia julkisia ostoja. Poimimme tapauksia, joissa summa erottuu samanlaisista. Useimmat ilmoitukset jäävät pois. Avaa lähde.</p>
+ <span class="cta">Avaa Löydöt-lista →</span>
+ </a>
+ </li>
+ </ul>
+</div>
+
+<footer class="site-foot">
+  <p class="legal-links"><a href="https://aitodata.fi/tietoa/">Tietoa</a> · <a href="https://aitodata.fi/perusteet/">Perusteet</a> · <a href="https://aitodata.fi/kayttoehdot/">Käyttöehdot</a> · <a href="https://aitodata.fi/tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
+</footer>
+</body>
+</html>

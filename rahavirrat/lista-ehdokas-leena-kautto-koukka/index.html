@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leena Kautto-Koukka · kaikki tukijat · AitoData</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+ --bg:#020617; --bg-2:#0b1224; --card:rgba(15,23,42,.78); --edge:#1e293b;
+ --text:#f1f5f9; --muted:#94a3b8; --blue-hot:#60a5fa; --ok:#6ee7b7; --warn:#fbbf24;
+ --font:"IBM Plex Sans",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);font-family:var(--font);font-size:1.02rem;line-height:1.55;
+background:radial-gradient(1000px 480px at 10% -8%,rgba(37,99,235,.26),transparent 55%),linear-gradient(180deg,var(--bg),var(--bg-2) 50%,#020617)}
+a{color:var(--blue-hot)}
+.banner{background:#1e3a5f;color:#bfdbfe;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem}
+.wrap{max-width:72rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+.back{font-size:.9rem;color:var(--muted)}
+h1{margin:.75rem 0 .4rem;font-size:clamp(1.45rem,3vw,1.9rem);letter-spacing:-.03em;line-height:1.2}
+.lead{color:var(--muted);margin:0 0 1.25rem}
+.layer{margin:0 0 .5rem;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ok)}
+.kind{margin:0 0 .35rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-hot)}
+.caveat{margin:.75rem 0 1.25rem;font-size:.88rem;color:var(--muted);border-left:3px solid var(--warn);padding-left:.75rem}
+.source{margin:.85rem 0 0;padding-top:.85rem;border-top:1px solid var(--edge);font-size:.88rem;color:var(--muted)}
+.meta-bar{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin:0 0 1.25rem;padding:.85rem 1rem;border:1px solid var(--edge);border-radius:.6rem;background:rgba(15,23,42,.6);font-size:.92rem}
+.meta-bar strong{color:var(--ok);font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:.55rem .4rem;border-bottom:1px solid var(--edge)}
+th{color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--ok);font-weight:600;white-space:nowrap}
+td.gap{color:var(--warn)}
+td a{color:var(--blue-hot);text-decoration:none;font-weight:600}
+td a:hover{color:#93c5fd;text-decoration:underline}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:.12rem .4rem;border-radius:.3rem;background:rgba(148,163,184,.14);color:var(--muted);margin-left:.35rem;vertical-align:middle}
+.badge.org{background:rgba(96,165,250,.14);color:var(--blue-hot)}
+.badge.private{background:rgba(110,231,183,.12);color:var(--ok)}
+.badge.org-gap{background:rgba(251,191,36,.12);color:var(--warn)}
+.badge.laina{background:rgba(148,163,184,.12);color:var(--muted)}
+tr:hover td{background:rgba(37,99,235,.08)}
+
+.topbar{position:sticky;top:0;z-index:30;border-bottom:1px solid rgba(30,41,59,.9);background:rgba(2,6,23,.86);backdrop-filter:blur(10px)}
+.topbar-inner{max-width:72rem;margin:0 auto;padding:.95rem 1.25rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.wordmark{font-size:1.2rem;font-weight:800;letter-spacing:-.04em;color:#fff;margin-right:auto;text-decoration:none}
+.wordmark span{color:var(--blue-hot,#60a5fa);font-weight:500}
+.site-nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem}
+.site-nav a{color:var(--muted,#94a3b8);font-size:.95rem;font-weight:500;padding:.2rem 0;border-bottom:2px solid transparent;text-decoration:none}
+.site-nav a:hover{color:var(--text,#f1f5f9)}
+.site-nav a.active{color:#fff;border-bottom-color:var(--blue-hot,#60a5fa)}
+.shelves{display:flex;flex-wrap:wrap;gap:.5rem;max-width:72rem;margin:0 auto;padding:.85rem 1.25rem 0}
+.shelves a.shelf{appearance:none;border:1px solid transparent;background:transparent;color:var(--muted,#94a3b8);font:inherit;font-size:.95rem;font-weight:600;padding:.55rem .95rem;border-radius:.55rem;cursor:pointer;text-decoration:none}
+.shelves a.shelf:hover{color:var(--text,#f1f5f9);background:rgba(37,99,235,.08)}
+.shelves a.shelf.is-active{color:#fff;background:rgba(37,99,235,.14);border-color:rgba(37,99,235,.4)}
+
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+  <a class="wordmark" href="../../">Aito<span>Data</span></a>
+  <nav class="site-nav" aria-label="Päävalikko">
+    <a href="../" class="active">Rahavirrat</a>
+    <a href="../../sivut/peito/">Puuttuva tieto</a>
+    <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../../kaiva/">Tutki lisää</a>
+    <a href="../../nain-luet/">Näin luet</a>
+    <a href="../../perusteet/">Perusteet</a>
+  </nav>
+</div></div>
+<div class="wrap">
+<p class="back"><a href="../kortti-ehdokas-leena-kautto-koukka/">← Ehdokaskortti</a> · <a href="../vaalituki/">Hylly</a></p>
+<p class="eyebrow">Lista</p>
+<p class="kind">Vaalituki · ehdokas ← tukijat</p>
+<h1>Leena Kautto-Koukka</h1>
+<p class="lead">Kaikki rahoitusrivit tälle saajanimelle Eduskuntavaalit 2023 -aineistossa. Org+Y → tukijalista. Y-tunnus koskee organisaatioita.</p>
+<div class="meta-bar">
+ <span>Puolue <strong>SDP</strong></span>
+ <span>Keski-Suomen vaalipiiri</span>
+ <span>Rivejä <strong>3</strong></span>
+ <span>Yhteensä <strong>10 000,00 €</strong></span>
+</div>
+<p class="caveat">Järjestys = summa laskevasti. Yksityishenkilöllä ei ole Y-tunnusta — se ei ole puuttuvaa tietoa.</p>
+<table>
+ <thead><tr><th>#</th><th>Tukija</th><th>Y</th><th style="text-align:right">Euro</th></tr></thead>
+ <tbody><tr><td>1</td><td><a href="../lista-tukija-laukaan-sosialidemokraattinen-kunnallisjarjesto-r-y/">Laukaan Sosialidemokraattinen Kunnallisjärjestö r.y.</a><span class="badge org">Organisaatio</span></td><td>0754176-6</td><td class="num">7 000,00 €</td></tr><tr><td>2</td><td><a href="../lista-tukija-jyvasseudun-palkansaajademarit-ry/">Jyvässeudun palkansaajademarit ry</a><span class="badge org">Organisaatio</span></td><td>1610354-9</td><td class="num">2 000,00 €</td></tr><tr><td>3</td><td><a href="../lista-tukija-leppaveden-sosialidemokraatit-ry/">Leppäveden Sosialidemokraatit ry</a><span class="badge org">Organisaatio</span></td><td>3034247-4</td><td class="num">1 000,00 €</td></tr></tbody>
+</table>
+<p class="source"><a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja/eduskuntavaalit2023/RAHOITUSRIVIT_E_VI_eduskuntavaalit2023.csv?dl=20231019_104538">Lähde: VTV EK rahoitusrivit CSV</a></p>
+</div>
+</body>
+</html>

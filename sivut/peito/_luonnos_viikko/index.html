@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Puuttuva tieto · luonnos · AitoData</title>
+<meta name="description" content="Missä julkisesta hankinta-aineistosta puuttuu arvioitu hinta. Havaintoja, ei syytöksiä.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/site.css?v=20260913pub">
+<link rel="icon" href="../../../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<meta name="theme-color" content="#020617">
+<style>
+  .rule-box {
+    border: 1px solid #1e293b;
+    border-radius: 0.85rem;
+    padding: 0.85rem 0.95rem;
+    background: rgba(15,23,42,0.55);
+    margin: 0.75rem 0 0.2rem;
+  }
+  .rule-box ul { margin: 0.4rem 0 0 1.1rem; padding: 0; }
+  .compose-bars { margin: 0.85rem 0 0.4rem; }
+  .compose-row {
+    display: grid;
+    grid-template-columns: minmax(9rem, 11.5rem) 1fr auto;
+    gap: 0.55rem 0.75rem;
+    align-items: center;
+    margin: 0.45rem 0;
+    font-size: 0.92rem;
+  }
+  .compose-row .name { color: #e2e8f0; }
+  .compose-row .bar-track {
+    height: 0.7rem;
+    border-radius: 999px;
+    background: rgba(148,163,184,0.18);
+    overflow: hidden;
+  }
+  .compose-row .bar-fill { height: 100%; border-radius: 999px; background: #64748b; }
+  .compose-row .bar-fill.expect { background: #f59e0b; }
+  .compose-row .bar-fill.soft { background: #475569; }
+  .compose-row .pct { color: #94a3b8; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .compose-note { color: #94a3b8; font-size: 0.9rem; margin-top: 0.75rem; }
+  .two-lens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    margin: 0.85rem 0 0.2rem;
+  }
+  .lens {
+    border: 1px solid #1e293b;
+    border-radius: 0.85rem;
+    padding: 0.85rem 0.95rem;
+    background: rgba(15,23,42,0.55);
+  }
+  .lens h3 { margin: 0 0 0.45rem; font-size: 1rem; line-height: 1.35; font-weight: 600; }
+  .lens .big { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; margin: 0.15rem 0; }
+  .lens .means {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin: 0.55rem 0 0;
+    line-height: 1.4;
+  }
+  .lens .means strong { color: #e2e8f0; font-weight: 600; }
+  .lens.sharp { border-color: rgba(245,158,11,0.45); }
+  .year-bars { margin-top: 0.75rem; }
+  .year-row {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr 3.6rem;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.35rem 0;
+    font-size: 0.9rem;
+  }
+  .year-row .bar-track {
+    height: 0.55rem;
+    border-radius: 999px;
+    background: rgba(148,163,184,0.18);
+    overflow: hidden;
+  }
+  .year-row .bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: #38bdf8;
+  }
+  .year-row .meta {
+    color: #e2e8f0;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    text-align: right;
+  }
+  .warn-box {
+    margin: 0.85rem 0 0;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid rgba(148,163,184,0.35);
+    border-radius: 0.85rem;
+    background: rgba(148,163,184,0.08);
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
+  .also-link {
+    margin: 1rem 0 0;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  .also-link a { font-weight: 500; }
+  .ex-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  @media (min-width: 860px) {
+    .ex-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    .two-lens { grid-template-columns: 1fr; }
+    .compose-row { grid-template-columns: 1fr; gap: 0.25rem; }
+  }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<a class="wordmark" href="../../../">Aito<span>Data</span></a>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav class="site" id="site-nav">
+    <a href="../../loydot/">Löydöt</a>
+    <a href="./" class="active">Puuttuva tieto</a>
+    <a href="../../toimiiko-lahde/_julkaisu/">Toimiiko lähde?</a>
+    <a href="../../../kaiva/">Tutki lisää</a>
+    <a href="../../../nain-luet/">Näin luet</a>
+    <a href="../../../perusteet/">Perusteet</a>
+    <a href="../../../tietoa/">Info</a>
+  </nav>
+</div></div>
+<div class="wrap">
+<header class="page-head">
+<h1>Puuttuva tieto</h1>
+<p>Puuttuva arvioitu hinta hankintailmoituksessa on havainto. Se kertoo, mitä julkaistusta aineistosta ei vielä saa ulos hintavertailuun.</p>
+</header>
+<p class="draft-banner" style="margin:0 0 1rem;padding:0.55rem 0.75rem;border:1px dashed #64748b;border-radius:6px;background:#0f172a;color:#94a3b8;font-size:0.9rem"><strong style="color:#e2e8f0">Luonnos</strong> — viikkoputki 25.9.2026. Ei live. Lex-tarkistus ennen Pages-pushia.</p>
+
+<div class="guide-row">
+<div class="callout"><strong>Näin luet tämän sivun</strong><ul>
+<li>Iso prosentti kertoo, kuinka usein arvioitu hinta puuttuu. Se ei syytä ketään.</li>
+<li>Katso sitten mistä tuo joukko koostuu, ja miten tilanne muuttuu vuosittain.</li>
+<li>Arvioitu hinta ei ole sama asia kuin kaikki euromäärät ilmoituksessa.</li>
+</ul></div>
+<section class="panel">
+<h2>Tiivistelmä</h2>
+<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">25.9.2026</div></div>
+<div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma: hankintailmoitukset</div></div>
+<div class="fact-row"><div class="lbl">Ilmoituksia aineistossa</div><div class="val">64 643</div></div>
+<div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">20,1 % (12 966)</div></div>
+<div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">79,9 % (51 677)</div></div>
+<div class="fact-row"><div class="lbl">Raportti</div><div class="val"><a href="puuttuva-arvioitu-hinta.html">Puuttuva arvioitu hinta →</a></div></div>
+</section>
+</div>
+
+<section class="panel" id="kysymykset">
+<h2>Kaksi kysymystä</h2>
+<p>Sama aineisto. Otsikko on kysymys, luku on vastaus.</p>
+<div class="two-lens">
+  <div class="lens">
+    <h3>Kuinka usein arvioitu hinta puuttuu kaikista ilmoituksista?</h3>
+    <p class="big">79,9 %</p>
+    <p class="means"><strong>Tarkoittaa:</strong> noin neljässä ilmoituksessa viidestä ei ole arvioitua hintaa.</p>
+  </div>
+  <div class="lens sharp">
+    <h3>Kuinka usein arvio löytyy, kun hankintaa kilpailutetaan?</h3>
+    <p class="big">noin 21 %</p>
+    <p class="means"><strong>Tarkoittaa:</strong> kilpailutuksessa arvio puuttuu noin neljässä tapauksessa viidestä. Silloin hintavertailua ei voi tehdä.</p>
+  </div>
+</div>
+</section>
+
+<section class="panel" id="saanto">
+<h2>Milloin arviota odotetaan?</h2>
+<div class="rule-box">
+<p style="margin:0">Näin luemme ilmoitustyyppejä:</p>
+<ul>
+<li><strong>Kilpailutusilmoitus:</strong> arvioitua hintaa usein odotetaan.</li>
+<li><strong>Ennakkoilmoitus tai muutos:</strong> arviota harvoin odotetaan.</li>
+<li><strong>Jälki-ilmoitus (sopimus):</strong> lopullinen euromäärä voi olla eri kohdassa kuin arvioitu hinta.</li>
+</ul>
+</div>
+</section>
+
+<section class="panel" id="kooste">
+<h2>Mistä 79,9 % koostuu?</h2>
+<p>Niistä ilmoituksista, joissa arvioitua hintaa ei ole, jakautuma tyypin mukaan:</p>
+<div class="compose-bars">
+  <div class="compose-row">
+    <div class="name">Kilpailutus</div>
+    <div class="bar-track"><div class="bar-fill expect" style="width:65.1%"></div></div>
+    <div class="pct">noin 65 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Jälki-ilmoitus</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:22.9%"></div></div>
+    <div class="pct">noin 23 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Ennakko</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:11.2%"></div></div>
+    <div class="pct">noin 11 %</div>
+  </div>
+  <div class="compose-row">
+    <div class="name">Muutos ja muu</div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:0.9%"></div></div>
+    <div class="pct">noin 1 %</div>
+  </div>
+</div>
+<p class="compose-note">Oranssi: tyyppi, jossa arviota usein odotetaan. Harmaa: tyyppi, jossa arvio on harvinaisempi tai euromäärä voi olla muualla.</p>
+</section>
+
+<section class="panel" id="esimerkit">
+<h2>Esimerkkejä</h2>
+<p>Kolme ilmoitusta, joissa arvioitua hintaa ei ole.</p>
+<div class="ex-grid">
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2020-038225/" target="_blank" rel="noopener noreferrer">
+    <strong>Kilpailutus</strong>
+    <span class="k">Otsikko</span><span class="v">Alusöljyvahinkojen torjuntapalvelut avomeriolosuhteissa</span>
+    <span class="k">Ilmoitus</span><span class="v">2020-038225</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole</span>
+  </a>
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2022-110555/" target="_blank" rel="noopener noreferrer">
+    <strong>Jälki-ilmoitus</strong>
+    <span class="k">Otsikko</span><span class="v">Open Text Documentum: tuki, ylläpito ja lisälisenssit</span>
+    <span class="k">Ilmoitus</span><span class="v">2022-110555</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole (lopullinen euro voi olla muualla)</span>
+  </a>
+  <a class="source-card" href="https://www.hankintailmoitukset.fi/fi/public/procurement/2019-019763/" target="_blank" rel="noopener noreferrer">
+    <strong>Ennakko</strong>
+    <span class="k">Otsikko</span><span class="v">Asiankäsittelyjärjestelmän ylläpito ja kehittäminen</span>
+    <span class="k">Ilmoitus</span><span class="v">2019-019763</span>
+    <span class="k">Arvioitu hinta</span><span class="v">ei ole (ennakossa harvinainen)</span>
+  </a>
+</div>
+</section>
+
+<section class="panel" id="euro">
+<h2>Euro voi olla muualla</h2>
+<div class="warn-box">
+  Arvioitu hinta ei ole sama asia kuin kaikki euromäärät.
+  Ilmoituksessa voi olla lopullinen arvo, erien summia tai euroja tekstissä, vaikka arvioitua hintaa ei ole merkitty.
+  Merkitsemme auki vain sen arvioidun hinnan, jota tämä sivu mittaa. Ilmoituksessa voi silti olla muita hintoja.
+</div>
+</section>
+
+<section class="panel" id="aikajana">
+<h2>Arvioitu hinta puuttuu, prosenttia ilmoituksista vuosittain</h2>
+<p>Mitä pidempi palkki, sitä useammin arvio puuttui sinä vuonna.</p>
+<div class="year-bars" role="img" aria-label="Arvioitu hinta puuttuu prosentteina ilmoituksista, vuosittain">
+  <div class="year-row"><div>2019</div><div class="bar-track"><div class="bar-fill" style="width:90.5%"></div></div><div class="meta">90,5 %</div></div>
+  <div class="year-row"><div>2020</div><div class="bar-track"><div class="bar-fill" style="width:80.1%"></div></div><div class="meta">80,1 %</div></div>
+  <div class="year-row"><div>2021</div><div class="bar-track"><div class="bar-fill" style="width:79.5%"></div></div><div class="meta">79,5 %</div></div>
+  <div class="year-row"><div>2022</div><div class="bar-track"><div class="bar-fill" style="width:77.9%"></div></div><div class="meta">77,9 %</div></div>
+  <div class="year-row"><div>2023</div><div class="bar-track"><div class="bar-fill" style="width:78.1%"></div></div><div class="meta">78,1 %</div></div>
+  <div class="year-row"><div>2024</div><div class="bar-track"><div class="bar-fill" style="width:73.9%"></div></div><div class="meta">73,9 %</div></div>
+  <div class="year-row"><div>2026</div><div class="bar-track"><div class="bar-fill" style="width:65.3%"></div></div><div class="meta">65,3 %</div></div>
+</div>
+<p class="compose-note">
+  Palkki kertoo, kuinka suuressa osassa ilmoituksia arvioitu hinta puuttuu.
+  Mitä lyhyempi palkki, sitä harvemmin arvio puuttui sinä vuonna.
+  Puuttuminen on vähentynyt, mutta kilpailutuksissa arvio puuttuu yhä usein. Vuotta 2025 ei ole tässä aineistossa.
+</p>
+</section>
+
+<section class="panel" id="raportti">
+<h2>Raportti</h2>
+<p>Samat luvut syvemmin: rajaus, esimerkit ja mitä emme väitä.</p>
+<p><a class="btn" href="puuttuva-arvioitu-hinta.html">Avaa: Puuttuva arvioitu hinta →</a></p>
+<p class="also-link">Tämä sivu kertoo arvioidusta hinnasta. Jos haluat nähdä, aukeavatko rekisterit ja milloin haku jää tyhjäksi: <a href="../../toimiiko-lahde/_julkaisu/">Katso myös lähteiden kunto →</a></p>
+</section>
+
+<div class="disclaimer">
+Aineisto on otos, ei koko Suomi. Luvut päivittyvät kun keruu etenee.
+</div>
+<div class="hero-actions" style="margin-top:1.5rem">
+<a class="btn ghost" href="../../loydot/">Löydöt</a>
+<a class="btn ghost" href="../../../nain-luet/">Näin luet</a>
+</div>
+</div>
+<footer>
+  <p><a class="wordmark" href="../../../">Aito<span>Data</span></a></p>
+  <p class="legal-links"><a href="../../../tietoa/">Info</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
+  <p>Puuttuva tieto · julkinen kehittyvä palvelu.</p>
+</footer>
+<script src="../../../assets/nav.js?v=20260825d" defer></script>
+</body>
+</html>

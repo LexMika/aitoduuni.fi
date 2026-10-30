@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-10-30T09:30:37.140850+00:00",
+  "sources": [
+    "/home/nurkkakone/projektit/cursor-projektit/vallanvahtikoira/data/raw/hilma",
+    "/home/nurkkakone/projektit/cursor-projektit/vallanvahtikoira/data/raw/hilma_eform_stream"
+  ],
+  "unique": 68940,
+  "has_value": 14339,
+  "has_pct": 20.8,
+  "miss": 54601,
+  "miss_pct": 79.2,
+  "compete_has_pct": 21.4,
+  "compose_miss_share": {
+    "Kilpailutus": 64.5,
+    "Jälki-ilmoitus": 23.0,
+    "Ennakko": 11.7,
+    "Muutos ja muu": 0.7
+  },
+  "by_main_type": {
+    "ContractNotices": {
+      "n": 44746,
+      "share_of_all_pct": 64.9,
+      "has": 9592,
+      "has_pct_within": 21.4,
+      "miss": 35154,
+      "miss_pct_within": 78.6,
+      "share_of_miss_pct": 64.4
+    },
+    "ContractAwardNotices": {
+      "n": 16581,
+      "share_of_all_pct": 24.1,
+      "has": 4012,
+      "has_pct_within": 24.2,
+      "miss": 12569,
+      "miss_pct_within": 75.8,
+      "share_of_miss_pct": 23.0
+    },
+    "PriorInformationNotices": {
+      "n": 6989,
+      "share_of_all_pct": 10.1,
+      "has": 591,
+      "has_pct_within": 8.5,
+      "miss": 6398,
+      "miss_pct_within": 91.5,
+      "share_of_miss_pct": 11.7
+    },
+    "Modification": {
+      "n": 381,
+      "share_of_all_pct": 0.6,
+      "has": 2,
+      "has_pct_within": 0.5,
+      "miss": 379,
+      "miss_pct_within": 99.5,
+      "share_of_miss_pct": 0.7
+    },
+    "ProcurementPlan": {
+      "n": 161,
+      "share_of_all_pct": 0.2,
+      "has": 140,
+      "has_pct_within": 87.0,
+      "miss": 21,
+      "miss_pct_within": 13.0,
+      "share_of_miss_pct": 0.0
+    },
+    "NationalNotices": {
+      "n": 80,
+      "share_of_all_pct": 0.1,
+      "has": 0,
+      "has_pct_within": 0.0,
+      "miss": 80,
+      "miss_pct_within": 100.0,
+      "share_of_miss_pct": 0.1
+    },
+    "2300": {
+      "n": 1,
+      "share_of_all_pct": 0.0,
+      "has": 1,
+      "has_pct_within": 100.0,
+      "miss": 0,
+      "miss_pct_within": 0.0,
+      "share_of_miss_pct": 0.0
+    },
+    "Tuntematon": {
+      "n": 1,
+      "share_of_all_pct": 0.0,
+      "has": 1,
+      "has_pct_within": 100.0,
+      "miss": 0,
+      "miss_pct_within": 0.0,
+      "share_of_miss_pct": 0.0
+    }
+  },
+  "years_all": {
+    "2017": {
+      "n": 2,
+      "has_pct": 100.0,
+      "miss_pct": 0.0
+    },
+    "2018": {
+      "n": 2716,
+      "has_pct": 11.0,
+      "miss_pct": 89.0
+    },
+    "2019": {
+      "n": 9858,
+      "has_pct": 9.6,
+      "miss_pct": 90.4
+    },
+    "2020": {
+      "n": 12021,
+      "has_pct": 19.9,
+      "miss_pct": 80.1
+    },
+    "2021": {
+      "n": 12225,
+      "has_pct": 20.5,
+      "miss_pct": 79.5
+    },
+    "2022": {
+      "n": 12209,
+      "has_pct": 22.1,
+      "miss_pct": 77.9
+    },
+    "2023": {
+      "n": 8050,
+      "has_pct": 21.9,
+      "miss_pct": 78.1
+    },
+    "2024": {
+      "n": 4612,
+      "has_pct": 26.9,
+      "miss_pct": 73.1
+    },
+    "2026": {
+      "n": 7246,
+      "has_pct": 34.4,
+      "miss_pct": 65.6
+    }
+  }
+}

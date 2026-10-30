@@ -1,156 +1,377 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
 <title>Tutki lisää · AitoData</title>
-<!-- aito-hub-meta:start -->
-<meta name="description" content="Tutki lisää: avaimet, kysymykset ja tietopyyntö julkisiin lähteisiin. Jatka löytökortista tähän.">
-<link rel="canonical" href="https://aitodata.fi/kaiva/">
-<link rel="alternate" type="text/plain" href="https://aitodata.fi/llms.txt" title="LLM site guide">
-<meta name="author" content="AitoData">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AitoData">
-<meta property="og:title" content="Tutki lisää · AitoData">
-<meta property="og:description" content="Tutki lisää: avaimet, kysymykset ja tietopyyntö julkisiin lähteisiin. Jatka löytökortista tähän.">
-<meta property="og:url" content="https://aitodata.fi/kaiva/">
-<meta property="og:locale" content="fi_FI">
-<meta property="og:image" content="https://aitodata.fi/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="AitoData: julkinen tieto lähteineen">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tutki lisää · AitoData">
-<meta name="twitter:description" content="Tutki lisää: avaimet, kysymykset ja tietopyyntö julkisiin lähteisiin. Jatka löytökortista tähän.">
-<meta name="twitter:image" content="https://aitodata.fi/assets/og-image.png">
-<meta name="twitter:image:alt" content="AitoData: julkinen tieto lähteineen">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Tutki lisää · AitoData","description":"Tutki lisää: avaimet, kysymykset ja tietopyyntö julkisiin lähteisiin. Jatka löytökortista tähän.","url":"https://aitodata.fi/kaiva/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/","description":"Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse."}}</script>
-<!-- aito-hub-meta:end -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=20260922b">
-<link rel="icon" href="../assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<meta name="theme-color" content="#020617">
-<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
+<style>
+:root {
+  --bg:#020617; --bg-2:#0b1224; --card:rgba(15,23,42,.72); --edge:#1e293b;
+  --text:#f1f5f9; --muted:#94a3b8; --blue:#2563eb; --blue-hot:#60a5fa;
+  --blue-dim:rgba(37,99,235,.14); --ok:#6ee7b7;
+  --font:"IBM Plex Sans",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--font);font-size:1.05rem;line-height:1.65;
+background:radial-gradient(1200px 500px at 12% -10%,rgba(37,99,235,.28),transparent 55%),linear-gradient(180deg,var(--bg),var(--bg-2) 48%,#020617)}
+a{color:var(--blue-hot);text-decoration:none}
+a:hover{color:#93c5fd}
+.banner{background:#14532d;color:#bbf7d0;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem}
+.topbar{position:sticky;top:0;z-index:30;border-bottom:1px solid rgba(30,41,59,.9);background:rgba(2,6,23,.86);backdrop-filter:blur(10px)}
+.topbar-inner{max-width:72rem;margin:0 auto;padding:.95rem 1.25rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.wordmark{font-size:1.2rem;font-weight:800;letter-spacing:-.04em;color:#fff;margin-right:auto}
+.wordmark span{color:var(--blue-hot);font-weight:500}
+.site-nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem}
+.site-nav a{color:var(--muted);font-size:.95rem;font-weight:500;padding:.2rem 0;border-bottom:2px solid transparent}
+.site-nav a:hover{color:var(--text)}
+.site-nav a.active{color:#fff;border-bottom-color:var(--blue-hot)}
+.wrap{max-width:72rem;margin:0 auto;padding:1.75rem 1.25rem 4rem}
+.section-label{margin:0 0 .35rem;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+h1{margin:0 0 .65rem;font-size:clamp(1.75rem,3.5vw,2.2rem);font-weight:700;letter-spacing:-.03em;line-height:1.2}
+.lead{margin:0 0 1.25rem;color:var(--muted);max-width:40rem}
+.callout{
+  margin:0 0 1.25rem;padding:.95rem 1.1rem;border-radius:1rem;
+  border:1px solid rgba(37,99,235,.28);background:var(--blue-dim);color:#93c5fd;font-size:.98rem;
+}
+.callout strong{color:#bfdbfe;font-weight:600}
+.callout ul{margin:.6rem 0 0;padding:0 0 0 1.1rem}
+.callout li{margin:.35rem 0}
+.dept-label{margin:0 0 .45rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.dept-pills{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 1.1rem}
+.dept-pills button{
+  appearance:none;border:1px solid var(--edge);background:rgba(15,23,42,.55);
+  color:var(--muted);font:inherit;font-size:.88rem;font-weight:600;
+  padding:.45rem .85rem;border-radius:.45rem;cursor:pointer;
+}
+.dept-pills button:hover{color:var(--text);background:rgba(37,99,235,.08)}
+.dept-pills button.is-on{
+  color:#fff;background:rgba(37,99,235,.2);border-color:rgba(37,99,235,.45);
+}
+.dept-pills button:focus-visible{outline:2px solid rgba(37,99,235,.65);outline-offset:2px}
+.panel{
+  display:none;margin:0 0 1.75rem;padding:1.15rem 1.2rem 1.3rem;
+  border:1px solid var(--edge);border-radius:.75rem;background:var(--card);
+}
+.panel.is-open{display:block}
+.panel h2{margin:0 0 .55rem;font-size:1.25rem;font-weight:700;letter-spacing:-.02em;color:#fff}
+.panel .blurb{margin:0 0 .85rem;color:var(--muted)}
+.block{margin:0 0 1.05rem}
+.block:last-child{margin-bottom:0}
+.block h3{
+  margin:0 0 .45rem;font-size:.78rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--blue-hot);
+}
+.block ul,.block ol{margin:0;padding:0 0 0 1.1rem;color:#cbd5e1}
+.block li{margin:.35rem 0}
+.block p{margin:0;color:var(--muted);font-size:.95rem}
+.example{
+  margin:1rem 0 0;padding:.95rem 1.05rem;border-radius:.65rem;
+  border:1px solid rgba(37,99,235,.35);background:rgba(37,99,235,.1);
+}
+.example .ex-k{margin:0 0 .3rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-hot)}
+.example h3{margin:0 0 .35rem;font-size:1.05rem;color:#fff;text-transform:none;letter-spacing:-.01em;font-weight:700}
+.example p{margin:0 0 .75rem;color:var(--muted);font-size:.95rem}
+.example a.cta{
+  display:inline-block;font-weight:700;color:#fff;
+  padding:.55rem .9rem;border-radius:.45rem;
+  background:rgba(37,99,235,.22);border:1px solid rgba(37,99,235,.45);
+}
+.example a.cta:hover{background:rgba(37,99,235,.35);color:#fff}
+.foot-note{
+  margin:1rem 0 0;padding-top:.9rem;border-top:1px solid var(--edge);
+  font-size:.95rem;color:var(--muted);
+}
+.quiet{margin-top:2.25rem;padding-top:1.5rem;border-top:1px solid var(--edge)}
+.quiet h2{margin:0 0 .45rem;font-size:1.1rem;font-weight:600;color:#fff}
+.quiet p{margin:0 0 .85rem;color:var(--muted)}
+.quiet ul{margin:0;padding:0 0 0 1.1rem;color:#cbd5e1}
+.quiet li{margin:.4rem 0}
+.actions{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.65rem}
+.btn{
+  display:inline-block;padding:.65rem 1.05rem;border-radius:.5rem;font-weight:700;color:#fff;
+  background:rgba(37,99,235,.28);border:1px solid rgba(37,99,235,.5);
+}
+.btn:hover{background:rgba(37,99,235,.4);color:#fff}
+.btn.ghost{background:transparent;color:var(--muted);border-color:var(--edge);font-weight:600}
+.btn.ghost:hover{color:var(--text);border-color:#475569}
+.site-foot{max-width:72rem;margin:2rem auto 0;padding:1.25rem 1.25rem 2.5rem;border-top:1px solid var(--edge);font-size:.88rem;color:var(--muted)}
+.site-foot a{color:var(--muted)}
+.site-foot a:hover{color:var(--blue-hot)}
+@media (max-width:520px){
+  .wrap{padding:1.15rem .9rem 3rem}
+  .topbar-inner{padding:.75rem .9rem}
+  .site-nav{gap:.25rem .75rem}
+  .site-nav a{font-size:.88rem}
+  .dept-pills button{font-size:.82rem;padding:.4rem .7rem}
+  .panel{padding:1rem .95rem 1.15rem}
+  .example a.cta{display:block;text-align:center}
+}
+html.no-js .panel{display:block;margin-bottom:1rem}
+html.no-js .dept-pills{display:none}
+</style>
 </head>
 <body>
-<!-- aito-noscript:start -->
-<noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
-<!-- aito-noscript:end -->
+<script>document.documentElement.classList.remove('no-js');</script>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
-<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav class="site" id="site-nav">
-    <a href="../sivut/loydot/">Löydöt</a>
+  <nav class="site-nav" aria-label="Päävalikko">
+    <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../kaiva/" class="active">Tutki lisää</a>
     <a href="../nain-luet/">Näin luet</a>
     <a href="../perusteet/">Perusteet</a>
-    <a href="../tietoa/">Info</a>
   </nav>
 </div></div>
 
 <div class="wrap">
-  <header class="page-head">
-    <p class="section-label">Jatko-ohje</p>
-    <h1>Tutki lisää</h1>
-    <p>Löytökortti näyttää tiivistelmän ja lähteet. Täällä on avaimet, joilla jatkat etsintää itse, samalla logiikalla kuin <a href="../esimerkki/">Esimerkki-sivulla</a> (oikea kortti hyllyltä).</p>
-  </header>
+  <p class="section-label">Jatko-ohje</p>
+  <h1>Tutki lisää</h1>
+  <p class="lead">Kortti on auki. Valitse osasto: mitä poimit, mistä haet seuraavaksi. Emme anna valmista johtopäätöstä.</p>
 
-  <div class="callout callout-guide">
-    <strong>Ennen jatkoa</strong>
+  <div class="callout">
+    <strong>Miten tämä eroaa Näin luet -sivusta</strong>
     <ul>
-      <li><a href="../esimerkki/">Esimerkki</a> = Eurajoen monitoimihalli (Hankinta). Sama rakenne kaikilla korteilla: Tiivistelmä → Lähteet (<strong>Kohde</strong> + <strong>Etsi sivulta</strong>) → Kokonaiskuva.</li>
-      <li>Tutkihankintoja-korteilla on usein <strong>kaksi reittiä</strong>: A = CSV-aineisto, B = selaa palvelussa. B on usein helpompi.</li>
-      <li>Tämä sivu kertoo, mitä voit tehdä kortin lukemisen jälkeen, myös jos tietoa ei löydy.</li>
+      <li><a href="../nain-luet/">Näin luet</a> = miten listaa ja korttia luetaan</li>
+      <li><strong>Tutki lisää</strong> = mitä teet kortin jälkeen: avaimet, lähteet, kysymykset</li>
+      <li>Sama osastovalinta, eri tehtävä</li>
     </ul>
   </div>
 
-  <section class="panel">
-    <h2>1. Mitä kortti jo antoi</h2>
-    <p>Poimi tiivistelmästä ja lähdekorteista:</p>
-    <ul>
-      <li><strong>Mistä → mihin:</strong> ostaja / maksaja ja toimittaja tai saaja (Y-tunnus jos mukana).</li>
-      <li><strong>Summa, vuosi, kategoria</strong>: tai Hankinta-löydöissä arvio, CPV ja vertailu (<a href="../nain-luet/#vertailuluvut">CPV, n, ×</a>).</li>
-      <li><strong>Kohde:</strong> mikä rivi, ilmoitus tai päätös on kyseessä.</li>
-      <li><strong>Etsi sivulta:</strong> konkreettinen polku lähdesivulle. Avaa linkki ja tarkista.</li>
-    </ul>
-  </section>
-
-  <section class="panel">
-    <h2>2. Esimerkkiketju: Eurajoen monitoimihalli (myös kun Hilma ei aukea)</h2>
-    <p>Sama tapaus kuin <a href="../esimerkki/">Esimerkkisivulla</a> ja <a href="../sivut/loydot/eurajoki-monitoimihalli/">Löydöt-hyllyllä</a>. Vanha hankintailmoitus on tässä tarkoituksella: Hilman käyttäjänäkymä ei aina avaa ilmoitusta. Alla yksi jatkopolku, ei ainoa oikea.</p>
-    <ol>
-      <li>Avaa tiivistelmä: Eurajoen kunta, ilmoitus <strong>2023-117222</strong>, arvioitu arvo 8&nbsp;100&nbsp;000&nbsp;€, CPV rakennustyöt.</li>
-      <li>Kokeile Hilmaa: suora linkki kortilta, tai haku ilmoitusnumerolla. Jos sivu vie etusivulle tai haku jää tyhjäksi, se on havainto, ei epäonnistuminen.</li>
-      <li>Katso kortin lähteet uudestaan. Tässä tapauksessa EU-kanavan ovi on <strong>TED</strong> (sama hankinta, luettava sivu ja PDF). Avaa se ja vertaa ostaja, kohde ja euromäärä.</li>
-      <li>Jos TED:iä ei ole (pelkkä kansallinen ilmoitus) eikä Hilma aukea: käytä <a href="../sivut/peili/">Ilmoitusotetta</a> tarkistusovena. Se näyttää saman aineiston, josta kortin tiedot on poimittu.</li>
-      <li>Kirjaa mitä <em>ei</em> löytynyt (sopimus, voittaja, perustelut). Lähteen kunto ja tyhjät haut: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>. Puuttuva kenttä ilmoituksessa: <a href="../sivut/peito/">Puuttuva tieto</a>.</li>
-      <li>Jos julkisessa verkossa ei ole tarpeeksi: jatka kohtaan 4 (tietopyyntö).</li>
-    </ol>
-    <p>Ketju päättyy aina lähteeseen tai rehelliseen merkintään “ei aukea / ei löytynyt”, ei meidän tulkintaan.</p>
-    <p><strong>Muut mahdolliset lähteet.</strong> Kunnan päätökset ja esityslistat · TED tai Ilmoitusote kortilla. (Joillain kunnilla hankinnat näkyvät myös omassa asiointipalvelussa: niistä voi joskus löytyä sama hanke. Esim. CloudNC, Cloudia, Tutkihankintoja.)</p>
-  </section>
-
-  <section class="panel">
-    <h2>3. Kysymyksiä itsellesi</h2>
-    <p>Valmista vastausta emme anna. Nämä auttavat jatkamaan. Riippuu kortin tyypistä (Hankinta, Ketju, Puuttuva; Raha kun aineistoa on):</p>
-    <ul>
-      <li>Onko sama toimittaja tai ostaja muualla, samassa organisaatiossa tai muissa?</li>
-      <li>Hankinta: onko arvo poikkeava verrokkiin (× mediaaniin). Tarkista lähde itse (esim. Hilma, TED, Ilmoitusote).</li>
-      <li>Ketju: esiintyykö sama Y-tunnus kaikissa lähdekorteissa samalla tavalla?</li>
-      <li>Vertailevatko hintayksiköt tai kategoriat edes toisiaan?</li>
-      <li>Mitä päätöksestä, ilmoituksesta tai rekisteristä puuttuu?</li>
-      <li>Riittääkö tämä omaan pohdintaan, vai tarvitaanko vielä yksi lähde?</li>
-    </ul>
-  </section>
-
-  <section class="panel">
-    <h2>4. Jos tietoa ei löydy: tietopyyntö</h2>
-    <p>Jos julkisessa verkossa ei ole tarpeeksi aineistoa, voit pyytää tietoa viranomaiselta (<strong>tietopyyntö</strong>). Se on yksi tapa jatkaa, kun linkki on tyhjä tai asiakirjaa ei ole julkaistu.</p>
-    <ul>
-      <li><strong>Kenelle:</strong> sille kunnalle, virastolle tai muulle toimijalle, jota asia koskee (kirjaamo / tiedonsaanti).</li>
-      <li><strong>Mitä pyytää:</strong> nimeä asiakirja tai asia tarkasti (päätös, hankinta, päivämäärä, diaarinumero jos tiedossa).</li>
-      <li><strong>Mihin vedota:</strong> julkisuuslaki. Käytännön rajat: <a href="../tietoa/#mita-emme-tee">Info</a> · laki: <a href="../perusteet/">Perusteet</a> · <a href="https://www.finlex.fi/fi/laki/ajantasa/1999/19990621" target="_blank" rel="noopener noreferrer">Julkisuuslaki Finlexissä →</a>.</li>
-      <li><strong>Vastaus voi olla:</strong> asiakirja, osittainen luovutus, salassapito, maksu tai “ei löydy”. Kirjaa tulos. Sekin on havainto.</li>
-    </ul>
-    <p>Tämä ei ole juridista neuvontaa. Käytännön askel, kun aineistoa ei ole netissä.</p>
-  </section>
-
-  <section class="panel">
-    <h2>5. Minne seuraavaksi</h2>
-    <ul>
-      <li><a href="../sivut/loydot/">Löydöt</a>: <span data-loydot-count>2730</span> korttia, suodata kategorialla.</li>
-      <li><a href="../sivut/peito/">Puuttuva tieto</a>: arvioitu hinta puuttuu ilmoituksesta.</li>
-      <li><a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>: aukeaako lähde, ja milloin haku jää tyhjäksi.</li>
-      <li><a href="../nain-luet/#esimerkit-hyllylta">Esimerkit hyllyltä</a>: Hankinta, Ketju, Puuttuva (Raha kun aineistoa on).</li>
-      <li><a href="../nain-luet/#vertailuluvut">CPV, n ja ×</a>: jos tiivistelmässä on vertailulukuja.</li>
-      <li><a href="../tietoa/#miten-kortti-syntyy">Miten kortti syntyy</a>: merkkaussäännöt ja prosessin avaus.</li>
-    </ul>
-  </section>
-
-  <div class="disclaimer">
-    Avaimet ja reitti, ei valmista johtopäätöstä. Avaa lähde ja tarkista itse.
+  <p class="dept-label" id="osastot">Osasto</p>
+  <div class="dept-pills" role="tablist" aria-label="Osastot">
+    <button type="button" role="tab" id="tab-vaalituki" aria-controls="panel-vaalituki" data-dept="vaalituki" class="is-on" aria-selected="true">Vaalituki</button>
+    <button type="button" role="tab" id="tab-puolue" aria-controls="panel-puolue" data-dept="puolue" aria-selected="false">Puoluerahoitus</button>
+    <button type="button" role="tab" id="tab-loydot" aria-controls="panel-loydot" data-dept="loydot" aria-selected="false">Löydöt / hankinta</button>
+    <button type="button" role="tab" id="tab-puuttuva" aria-controls="panel-puuttuva" data-dept="puuttuva" aria-selected="false">Puuttuva</button>
   </div>
 
-    <div class="hero-actions" style="margin-top:1.5rem">
-    <a class="btn" href="../esimerkki/">Katso esimerkki</a>
-    <a class="btn ghost" href="../sivut/loydot/">Löydöt</a>
-    <a class="btn ghost" href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
-    <a class="btn ghost" href="../nain-luet/">Näin luet</a>
+  <section class="panel is-open" role="tabpanel" id="panel-vaalituki" aria-labelledby="tab-vaalituki" data-dept="vaalituki">
+    <h2>Vaalituki · jatko lähteisiin</h2>
+    <p class="blurb">Ehdokaskortti tai tukijalista on auki. Poimi avaimet ja tarkista ilmoitus itse.</p>
+
+    <div class="block">
+      <h3>Mitä poimit kortilta</h3>
+      <ul>
+        <li><strong>Ehdokas</strong> ja puolue · <strong>tukija</strong> (nimi kuten ilmoituksessa)</li>
+        <li><strong>Summa</strong> ja vaali (esim. eduskuntavaalit 2023)</li>
+        <li><strong>Y-tunnus</strong>, jos tukija on organisaatio · merkitse jos Y puuttuu</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Avaa VTV:n ilmoituslinkki kortilta tai listalta. Vertaa nimi, summa ja vaali.</li>
+        <li>Listalta: sama tukija → muut ehdokkaat, tai sama ehdokas → muut tukijat.</li>
+        <li>Organisaatiotukija: Y-tunnuksella voit etsiä samaa nimeä muualta (PRH, muut ilmoitukset).</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko sama tukija monelle ehdokkaalle?</li>
+        <li>Onko tukija organisaatio vai yksityishenkilö?</li>
+        <li>Riittääkö ilmoitus, vai tarvitaanko vielä yksi lähde?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Aloituskortti</p>
+      <h3>Katri Kulmuni · ehdokaskortti</h3>
+      <p>Poimi tukijat ja summat, avaa lista ja tarkista VTV-linkki.</p>
+      <a class="cta" href="../rahavirrat/kortti-ehdokas-katri-kulmuni/">Avaa kortti →</a>
+      &nbsp; <a href="../nain-luet/#vaalituki">Näin luet · Vaalituki</a>
+    </div>
+
+    <p class="foot-note">Jos lähde ei aukea tai haku jää tyhjäksi: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a></p>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-puolue" aria-labelledby="tab-puolue" data-dept="puolue" hidden>
+    <h2>Puoluerahoitus · jatko lähteisiin</h2>
+    <p class="blurb">Ilmoittajakortti tai tukijalista on auki. Seuraa rahaa ilmoittajaan ja tukijaan.</p>
+
+    <div class="block">
+      <h3>Mitä poimit kortilta</h3>
+      <ul>
+        <li><strong>Ilmoittaja</strong> (puolue tai yhdistys) · <strong>Y-tunnus</strong> jos näkyy</li>
+        <li><strong>Tukija</strong>, summa, vuosi</li>
+        <li>Yhteensä / suurimmat tukijat → lista kaikista riveistä</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Avaa VTV:n puoluerahoitusilmoitus. Vertaa ilmoittaja, tukija ja summa.</li>
+        <li>Sama tukija: esiintyykö muilla ilmoittajilla samassa listassa?</li>
+        <li>Organisaatiotukija: Y-tunnus → sama tunniste muissa ilmoituksissa tai rekistereissä.</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko ilmoittaja puolue vai paikallisyhdistys?</li>
+        <li>Toistuuko sama tukija vuosittain?</li>
+        <li>Mitä ilmoitus ei kerro (käyttötarkoitus, vastike)?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Aloituskortti</p>
+      <h3>Vihreä liitto r.p. · ilmoittajakortti</h3>
+      <p>Poimi tukijat ja vuodet, avaa lista ja tarkista ilmoitus.</p>
+      <a class="cta" href="../rahavirrat/kortti-ilmoittaja-vihrea-liitto-r-p/">Avaa kortti →</a>
+      &nbsp; <a href="../nain-luet/#puolue">Näin luet · Puoluerahoitus</a>
+    </div>
+
+    <p class="foot-note">Jos lähde ei aukea: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a></p>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-loydot" aria-labelledby="tab-loydot" data-dept="loydot" hidden>
+    <h2>Löydöt / hankinta · jatko lähteisiin</h2>
+    <p class="blurb">Hankinta-kortti on auki. Tiivistelmä ei riitä: avaa lähde ja vertaa.</p>
+
+    <div class="block">
+      <h3>Mitä poimit kortilta</h3>
+      <ul>
+        <li><strong>Ostaja</strong> / hankintayksikkö · toimittaja tai kohde jos näkyy</li>
+        <li><strong>Summa</strong>, vuosi, ilmoitusnumero · CPV, n, × jos tiivistelmässä</li>
+        <li><strong>Kohde</strong> + <strong>Etsi sivulta</strong> -polku lähdekortilta</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Avaa Hilma-linkki tai haku ilmoitusnumerolla. Jos sivu vie etusivulle tai haku jää tyhjäksi, se on havainto.</li>
+        <li>Jos TED / EU-kanava on kortilla: avaa se ja vertaa ostaja, kohde, euro.</li>
+        <li>Jos Hilma ei aukea eikä TED:iä ole: <a href="../sivut/peili/">Ilmoitusote</a> (sama aineisto kuin kortilla).</li>
+        <li>Kunnan päätökset / esityslistat · joskus Cloudia / Tutkihankintoja.</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko × mediaaniin poikkeava? Tarkista lähde itse.</li>
+        <li>Vertailevatko yksiköt ja CPV edes toisiaan?</li>
+        <li>Mitä päätöksestä tai ilmoituksesta puuttuu (voittaja, sopimus)?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Jatkoketju (kun Hilma ei aukea)</p>
+      <h3>Eurajoki · monitoimihalli</h3>
+      <p>Ilmoitus 2023-117222 · kokeile Hilmaa → TED kortilta → tarvittaessa Ilmoitusote. Kirjaa mitä ei löytynyt.</p>
+      <a class="cta" href="../sivut/loydot/eurajoki-monitoimihalli/">Avaa kortti →</a>
+      &nbsp; <a href="../nain-luet/#loydot">Näin luet · Löydöt</a>
+      &nbsp; <a href="../nain-luet/#vertailuluvut">CPV, n, ×</a>
+    </div>
+
+    <p class="foot-note">Lähteen kunto: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> · puuttuva kenttä: <a href="../sivut/peito/">Puuttuva tieto</a></p>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-puuttuva" aria-labelledby="tab-puuttuva" data-dept="puuttuva" hidden>
+    <h2>Puuttuva · jatko, kun aineisto ei riitä</h2>
+    <p class="blurb">Näet aukon: arvioitu hinta puuttuu, haku on tyhjä tai kenttä ei ole ilmoituksessa. Jatka rehellisesti.</p>
+
+    <div class="block">
+      <h3>Mitä poimit</h3>
+      <ul>
+        <li><strong>Mikä</strong> puuttuu (kenttä, haku, dokumentti)</li>
+        <li><strong>Mistä</strong> haettiin (Hilma, kunta, muu)</li>
+        <li>Päivämäärä / hakulause jos merkitty</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Tarkista <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>: aukeaako lähde, toistuuko tyhjä haku.</li>
+        <li>Kokeile toista reittiä (toinen haku, TED, kunnan päätökset) jos kortti vihjaa siihen.</li>
+        <li>Jos julkisessa verkossa ei ole tarpeeksi: tietopyyntö (alla).</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko “ei osumia” sama kuin “asiaa ei ole”?</li>
+        <li>Onko lähde jumissa vai aineisto oikeasti ohut?</li>
+        <li>Riittääkö merkintä “ei löytynyt”, vai tarvitaanko asiakirjapyyntö?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Aloitus</p>
+      <h3>Puuttuva tieto · kooste</h3>
+      <p>Live-sivu aukoista. Esim. tyhjä Hilma-haku on oma korttinsa.</p>
+      <a class="cta" href="../sivut/peito/">Avaa Puuttuva tieto →</a>
+      &nbsp; <a href="../sivut/loydot/hilma-haku-korkein-oikeus-tyhja/">Tyhjä Hilma-haku</a>
+      &nbsp; <a href="../nain-luet/#puuttuva">Näin luet · Puuttuva</a>
+    </div>
+  </section>
+
+  <div class="quiet">
+    <p class="section-label">Yhteinen</p>
+    <h2>Jos tietoa ei löydy: tietopyyntö</h2>
+    <p>Kun julkisessa verkossa ei ole tarpeeksi. Yksi tapa jatkaa, ei ainoa.</p>
+    <ul>
+      <li><strong>Kenelle:</strong> kunta, virasto tai muu toimija, jota asia koskee (kirjaamo / tiedonsaanti).</li>
+      <li><strong>Mitä pyytää:</strong> nimeä asiakirja tai asia (päätös, hankinta, päivämäärä, diaari jos tiedossa).</li>
+      <li><strong>Mihin vedota:</strong> julkisuuslaki · <a href="../perusteet/">Perusteet</a> · <a href="../tietoa/#mita-emme-tee">Info</a></li>
+      <li><strong>Vastaus voi olla:</strong> asiakirja, osittainen luovutus, salassapito, maksu tai “ei löydy”. Kirjaa tulos.</li>
+    </ul>
+    <p>Ei juridista neuvontaa. Käytännön askel, kun aineistoa ei ole netissä. Rahoitusilmoituksissa tarvitaan harvemmin kuin hankinnoissa.</p>
+  </div>
+
+  <div class="actions">
+    <a class="btn" href="../nain-luet/">Näin luet</a>
+    <a class="btn ghost" href="../rahavirrat/">Rahavirrat</a>
+    <a class="btn ghost" href="../rahavirrat/">Rahavirrat</a>
   </div>
 </div>
 
-<footer>
-  <p><a class="wordmark" href="../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-  <p class="legal-links"><a href="../tietoa/">Info</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
-  <p>Tutki lisää · julkinen kehittyvä palvelu.</p>
+<footer class="site-foot">
+  <p class="legal-links"><a href="../tietoa/">Tietoa</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
 </footer>
-<script src="../assets/nav.js?v=20260822e" defer></script>
+
+<script>
+(function () {
+  var pills = document.querySelectorAll(".dept-pills button");
+  var panels = document.querySelectorAll(".panel");
+  var valid = { vaalituki:1, puolue:1, loydot:1, puuttuva:1 };
+
+  function show(dept) {
+    if (!valid[dept]) dept = "vaalituki";
+    pills.forEach(function (btn) {
+      var on = btn.getAttribute("data-dept") === dept;
+      btn.classList.toggle("is-on", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    panels.forEach(function (panel) {
+      var on = panel.getAttribute("data-dept") === dept;
+      panel.classList.toggle("is-open", on);
+      if (on) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "");
+    });
+    if (history.replaceState) history.replaceState(null, "", "#" + dept);
+    else location.hash = dept;
+  }
+
+  pills.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      show(btn.getAttribute("data-dept"));
+    });
+  });
+
+  var hash = (location.hash || "").replace(/^#/, "");
+  show(hash || "vaalituki");
+})();
+</script>
 </body>
 </html>
