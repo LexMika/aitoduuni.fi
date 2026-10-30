@@ -1,0 +1,213 @@
+{
+  "total": 2730,
+  "buckets": {
+    "EXTERNAL_TED": 2675,
+    "PEILI": 39,
+    "EMPTY_SEARCH": 6,
+    "EXTERNAL_HELSINKI": 5,
+    "EXTERNAL_CLOUDNC": 4,
+    "EXTERNAL_MAO": 1
+  },
+  "peili_n": 39,
+  "weak_n": 0,
+  "ok": true,
+  "peili": [
+    {
+      "slug": "kainuu-mri-arvo-puuttuu",
+      "bucket": "PEILI",
+      "title": "Kainuun sote: MRI-ilmoitus, arvioitu arvo puuttuu"
+    },
+    {
+      "slug": "eurajoki-monitoimihalli-suunnittelu",
+      "bucket": "PEILI",
+      "title": "Eurajoen kunta: Eurajoen monitoimihallin suunnitteluhanke - LVIAJ-suunnittelu"
+    },
+    {
+      "slug": "hilma-outlier-2023135467",
+      "bucket": "PEILI",
+      "title": "Länsi-Uudenmaan hyvinvointialue: Mielenterveys- ja päihdepalveluiden asumisen hankinta"
+    },
+    {
+      "slug": "hilma-outlier-2020061205",
+      "bucket": "PEILI",
+      "title": "Ministry for Foreign Affairs: Community-Led Accelerated WASH, Phase IV  (COWASH IV) in Ethio…"
+    },
+    {
+      "slug": "hilma-outlier-2023135344",
+      "bucket": "PEILI",
+      "title": "Pirkanmaan hyvinvointialue: Sammutus- ja säiliöpaloautot"
+    },
+    {
+      "slug": "hilma-outlier-2021062080",
+      "bucket": "PEILI",
+      "title": "Veikkaus Oy: Casino Tampere - Rakennusurakka, Tampereen kasinon rakennusurakka"
+    },
+    {
+      "slug": "hilma-outlier-2023135305",
+      "bucket": "PEILI",
+      "title": "Elinkeino-, liikenne- ja ympäristökeskus: Liikennejärjestelmän kehittämisen ja henkilöliiken…"
+    },
+    {
+      "slug": "hilma-outlier-2021075016",
+      "bucket": "PEILI",
+      "title": "Kivipuro Ry: Tammikoti, Muutos ja peruskorjaus"
+    },
+    {
+      "slug": "hilma-outlier-2021064219",
+      "bucket": "PEILI",
+      "title": "Ministry for Foreign Affairs: Community-Led Accelerated WASH, Phase IV  (COWASH IV) in Ethio…"
+    },
+    {
+      "slug": "hilma-outlier-2023135417",
+      "bucket": "PEILI",
+      "title": "Tampereen Tilapalvelut Oy: Ojalan päiväkoti ja koulu, vuokrahanke Tampere"
+    },
+    {
+      "slug": "hilma-outlier-2020046788",
+      "bucket": "PEILI",
+      "title": "HUS Kiinteistöt Oy: HUS Kellokosken kehittämiskonsultti"
+    },
+    {
+      "slug": "hilma-outlier-2021063846",
+      "bucket": "PEILI",
+      "title": "Ministry for Foreign Affairs: Community-Led Accelerated WASH, Phase IV  (COWASH IV) in Ethio…"
+    },
+    {
+      "slug": "hilma-outlier-2023123480",
+      "bucket": "PEILI",
+      "title": "Ulkoministeriö: Residenssin korjausurakka -Canberra"
+    },
+    {
+      "slug": "hilma-outlier-2023135298",
+      "bucket": "PEILI",
+      "title": "Helsingin kaupunki, kaupunkiympäristön toimiala: Hankesuunnittelu ja optio kokonaissuunnitte…"
+    },
+    {
+      "slug": "hilma-outlier-2020061077",
+      "bucket": "PEILI",
+      "title": "Muhoksen kunta: Kone- ja kuljetuspalvelut 2021 - 2025 dynaaminen hankintajärjestelmä"
+    },
+    {
+      "slug": "hilma-outlier-2022091445",
+      "bucket": "PEILI",
+      "title": "Porin kaupunki: Monialaisen tiimityötavan valmennus ja käyttöönottoprojekti"
+    },
+    {
+      "slug": "hilma-outlier-2023122227",
+      "bucket": "PEILI",
+      "title": "Ympäristöministeriö: Sustainable Built Environment (SBE) -asiantuntijatuki"
+    },
+    {
+      "slug": "hilma-outlier-2021075166",
+      "bucket": "PEILI",
+      "title": "Innovaatiorahoituskeskus Business Finland: Innovation Broker -asiantuntijakilpailutus"
+    },
+    {
+      "slug": "hilma-outlier-2019009416",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Toimistokalusteet  2019 - 2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2023128233",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: IT-konsultointi 2023-2028 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2019008317",
+      "bucket": "PEILI",
+      "title": "Kuntien Tiera Oy: ICT-laitteiden, -palveluiden ja -ohjelmistojen verkkokauppa"
+    },
+    {
+      "slug": "hilma-outlier-2022089723",
+      "bucket": "PEILI",
+      "title": "Kuntien Tiera Oy: Tiera verkkokauppa plus - ICT-laitteiden, -palveluiden ja -ohjelmistojen s…"
+    },
+    {
+      "slug": "hilma-outlier-2022102442",
+      "bucket": "PEILI",
+      "title": "Turun ja Kaarinan seurakuntayhtymä: Turun ja Kaarinan srky, luokka 1 jälki-ilmoitus, Tietoko…"
+    },
+    {
+      "slug": "hilma-outlier-2022105067",
+      "bucket": "PEILI",
+      "title": "Kouvolan seurakuntayhtymä: Tietokoneet 2021 - 2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2022105368",
+      "bucket": "PEILI",
+      "title": "Lahden seurakuntayhtymä: Lahden seurakuntayhtymä/Lahden IT-alue -Luokka1- Tietokoneet 2021-2…"
+    },
+    {
+      "slug": "hilma-outlier-2022108679",
+      "bucket": "PEILI",
+      "title": "Etelä-Karjalan koulutuskuntayhtymä: Tietokoneet 2021 - 2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2022095599",
+      "bucket": "PEILI",
+      "title": "Valtion ydinjätehuoltorahasto: Varainhoitopalvelu"
+    },
+    {
+      "slug": "hilma-outlier-2023124111",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Tietokoneet 2021 - 2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2021080868",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Tietokoneet 2021 - 2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2022113700",
+      "bucket": "PEILI",
+      "title": "Monetra Oulu Oy hankintapalvelut: Kauppakassipalvelut"
+    },
+    {
+      "slug": "hilma-outlier-2019012125",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Tietoliikennepalvelut 2019-2023 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2023125164",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Tietoliikennepalvelut 2019-2023 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2021083735",
+      "bucket": "PEILI",
+      "title": "Hansel Oy: Toimitilakalusteet 2021–2025 (DPS)"
+    },
+    {
+      "slug": "hilma-outlier-2021078109",
+      "bucket": "PEILI",
+      "title": "Turun kaupunki: Tiedepuiston kansihanke"
+    },
+    {
+      "slug": "hilma-outlier-2022103592",
+      "bucket": "PEILI",
+      "title": "Tampereen kaupunki: Ikäihmisten ympärivuorokautiset asumispalvelut"
+    },
+    {
+      "slug": "hilma-outlier-2021062187",
+      "bucket": "PEILI",
+      "title": "Pirkanmaan sairaanhoitopiiri: Lääkevalmisteiden ja niihin rinnastettavien tuotteiden hankint…"
+    },
+    {
+      "slug": "hilma-outlier-2022101845",
+      "bucket": "PEILI",
+      "title": "Elinkeino-, liikenne- ja ympäristökeskus: Kotoutumiskoulutuksen puitejärjestely pääkaupunkis…"
+    },
+    {
+      "slug": "hilma-outlier-2019002050",
+      "bucket": "PEILI",
+      "title": "Kuntien Tiera Oy: Oppimateriaalien Hankintakanava digitaalisille ja painetuille oppimateriaa…"
+    },
+    {
+      "slug": "hilma-outlier-2018026137",
+      "bucket": "PEILI",
+      "title": "Kuntien Tiera Oy: Oppimateriaalien Hankintakanava digitaalisille ja painetuille oppimateriaa…"
+    }
+  ],
+  "weak": [],
+  "policy": "external_first_then_peili"
+}

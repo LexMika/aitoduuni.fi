@@ -1,0 +1,617 @@
+{
+  "version": 1,
+  "updated": "2026-09-25",
+  "purpose": "Toimiiko multi-door probe — sama kysymys kuin sivulla, ei harvest-klooni. Raportti → luonnos → silmä → live. Ei auto-Pages.",
+  "page_baseline": {
+    "url": "https://aitodata.fi/sivut/toimiiko-lahde/",
+    "pages_sha": "a21c44417",
+    "site_health_catalog": "JULKAISU_ALUSTA/data/site_health_catalog.json",
+    "otos": 13
+  },
+  "rules": {
+    "sources": "15–18",
+    "doors_per_source": "2–4",
+    "cadence": "viikko + manuaali nyt",
+    "browser_budget": "Hilma deep-link max 1–2 korttia / ajo",
+    "exclude": [
+      "uudet CloudNC-kaupungit",
+      "MML-avain",
+      "Dynasty-massa",
+      "B2B-join"
+    ],
+    "door_roles": {
+      "primary": "Pääovi — miten normally haetaan",
+      "content": "Sisältö — rivit > 0 / ei pelkkä HTTP 200",
+      "angle": "Toinen kulma — vuosi/q/offset/vanha vs tuore",
+      "alt": "Vaihtoehtoinen ovi — vain jos sivulla väitetään (TED / Ilmoitusote / …)"
+    },
+    "pass_fail": "HIT/OK = odote täyttyy · MISS/HARD = aukeaa mutta tyhjä/katkee · FAIL/NO = estetty kuten sivulla · SKIP = ovessa ei ajettavaa"
+  },
+  "runner": {
+    "status": "katalogi valmis · smoke myöhemmin",
+    "venv": "vallanvahtikoira/.venv/bin/python",
+    "nurkka": "bash tools/nurkka_data.sh py -- …",
+    "out_json": "data/work/toimiiko_probe_report.json",
+    "out_md": "JULKAISU_ALUSTA/sivut/toimiiko-lahde/_luonnos/probe_report.md"
+  },
+  "sources": [
+    {
+      "id": "hilma-tuore",
+      "label": "Hilma: tuoreet hankintailmoitukset",
+      "shelf": "ok",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "eform-page1",
+          "role": "primary",
+          "method": "cli",
+          "mode": "hilma-eformnotices",
+          "args": {"pages": 1, "rows": 20},
+          "expect": "notices >= 1"
+        },
+        {
+          "id": "eform-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "hilma-eformnotices",
+          "args": {"pages": 1, "rows": 50},
+          "expect": "body_has_notice_fields (ei pelkkä 200)"
+        },
+        {
+          "id": "eform-min-published",
+          "role": "angle",
+          "method": "cli",
+          "mode": "hilma-eformnotices",
+          "args": {"pages": 1, "rows": 10, "min_published": "rolling_24m"},
+          "expect": "notices >= 1 tuoreella ikkunalla"
+        }
+      ]
+    },
+    {
+      "id": "prh-ytj",
+      "label": "PRH: yritystiedot (julkinen haku)",
+      "shelf": "ok",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "ytj-name",
+          "role": "primary",
+          "method": "cli",
+          "mode": "prh-ytj",
+          "args": {"name": "Nokia"},
+          "expect": "hits >= 1"
+        },
+        {
+          "id": "ytj-business-id",
+          "role": "content",
+          "method": "cli",
+          "mode": "prh-ytj",
+          "args": {"business_id": "0112038-9"},
+          "expect": "y_tunnus + name kentät täynnä"
+        },
+        {
+          "id": "ytj-second-q",
+          "role": "angle",
+          "method": "cli",
+          "mode": "prh-ytj",
+          "args": {"name": "Porin kaupunki"},
+          "expect": "hits >= 1"
+        }
+      ]
+    },
+    {
+      "id": "ted",
+      "label": "TED: EU-hankintailmoitukset",
+      "shelf": "ok",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "ted-search",
+          "role": "primary",
+          "method": "cli",
+          "mode": "ted-notices",
+          "args": {"rows": 10},
+          "expect": "notices >= 1"
+        },
+        {
+          "id": "ted-fields",
+          "role": "content",
+          "method": "cli",
+          "mode": "ted-notices",
+          "args": {"rows": 5},
+          "expect": "publication-number + title present"
+        },
+        {
+          "id": "ted-buyer-fi",
+          "role": "angle",
+          "method": "cli",
+          "mode": "ted-notices",
+          "args": {"q": "buyer FI", "rows": 5},
+          "expect": "notices >= 1 (FI-ostaja)"
+        }
+      ]
+    },
+    {
+      "id": "kkv-hankinta",
+      "label": "KKV: hankintojen valvonta",
+      "shelf": "ok",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "kkv-list",
+          "role": "primary",
+          "method": "cli",
+          "mode": "kkv-paatokset",
+          "args": {"pages": 1},
+          "expect": "items >= 1"
+        },
+        {
+          "id": "kkv-body",
+          "role": "content",
+          "method": "cli",
+          "mode": "kkv-paatokset",
+          "args": {"pages": 1},
+          "expect": "title/url ei tyhjä"
+        },
+        {
+          "id": "kkv-page2",
+          "role": "angle",
+          "method": "cli",
+          "mode": "kkv-paatokset",
+          "args": {"pages": 2},
+          "expect": "page2 ei kaadu (tai dokumentoi katkos)"
+        }
+      ]
+    },
+    {
+      "id": "hilma-vanha",
+      "label": "Hilma: vanhempi haku",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "notices-page1",
+          "role": "primary",
+          "method": "cli",
+          "mode": "hilma-notices",
+          "args": {"pages": 1, "rows": 20},
+          "expect": "list aukeaa (vanha API/ovi)"
+        },
+        {
+          "id": "notices-content",
+          "role": "content",
+          "method": "cli",
+          "mode": "hilma-notices",
+          "args": {"pages": 1, "rows": 20},
+          "expect": "rows >= 1"
+        },
+        {
+          "id": "notices-deep-offset",
+          "role": "angle",
+          "method": "cli",
+          "mode": "hilma-notices",
+          "args": {"start": 2000, "rows": 20, "pages": 1},
+          "expect": "dokumentoi: katkeaa TAI tyhjä (sivun Hankala-väite)"
+        }
+      ]
+    },
+    {
+      "id": "hilma-vanha-ilmoitus",
+      "label": "Hilma: vanha ilmoitus ei aukea selaimessa",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "deep-link-browser",
+          "role": "primary",
+          "method": "http",
+          "url_from": "loydot.json national card without TED (1 kortti)",
+          "expect": "HTML ei näytä ilmoitusta (MISS/HARD = sivun väite pitää)"
+        },
+        {
+          "id": "site-search",
+          "role": "content",
+          "method": "http",
+          "note": "sanahaku Hilma UI / search URL samalle notice-id:lle",
+          "expect": "ei avaa vanhaa ilmoitusta"
+        },
+        {
+          "id": "ted-alt",
+          "role": "alt",
+          "method": "cli",
+          "mode": "ted-notices",
+          "note": "jos kortilla OJS/TED — HIT; kansalliselle peili",
+          "expect": "TED HIT TAI peili-ovi dokumentoitu"
+        },
+        {
+          "id": "wayback-skip-budget",
+          "role": "angle",
+          "method": "http",
+          "note": "max 1 kortti · arkisto ei pelasta (HILMA-HIST1)",
+          "expect": "MISS tai ei notice-HTML"
+        }
+      ]
+    },
+    {
+      "id": "tutkihankintoja",
+      "label": "Tutkihankintoja",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "tutki-download",
+          "role": "primary",
+          "method": "cli",
+          "mode": "tutkihankintoja",
+          "args": {"dataset": "default_smoke"},
+          "expect": "HTTP aukeaa (ei WAF-blokki) TAI dokumentoi fail"
+        },
+        {
+          "id": "tutki-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "tutkihankintoja",
+          "note": "TH4: otsikkorivi ≠ data",
+          "expect": "data_rows > 0 · FAIL jos vain header"
+        },
+        {
+          "id": "tutki-satakunta",
+          "role": "angle",
+          "method": "cli",
+          "mode": "tutkihankintoja",
+          "args": {"region": "Satakunta"},
+          "expect": "0 rivit = PEITO (sivun väite) · ei false-green"
+        }
+      ]
+    },
+    {
+      "id": "cloudnc",
+      "label": "Kuntapäätökset (CloudNC)",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "cloudnc-host",
+          "role": "primary",
+          "method": "cli",
+          "mode": "cloudnc-paatokset",
+          "args": {"city": "pori", "pages": 1},
+          "expect": "host vastaa"
+        },
+        {
+          "id": "cloudnc-items",
+          "role": "content",
+          "method": "cli",
+          "mode": "cloudnc-paatokset",
+          "args": {"city": "pori", "pages": 1},
+          "expect": "items >= 1 TAI dokumentoi tyhjä haku"
+        },
+        {
+          "id": "cloudnc-q2",
+          "role": "angle",
+          "method": "cli",
+          "mode": "cloudnc-paatokset",
+          "args": {"city": "pori", "q": "hankinta"},
+          "expect": "ei false-green tyhjällä osumalla"
+        }
+      ]
+    },
+    {
+      "id": "markkinaoikeus",
+      "label": "Markkinaoikeus: ratkaisuarkisto",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "mao-list",
+          "role": "primary",
+          "method": "cli",
+          "mode": "markkinaoikeus",
+          "args": {"pages": 1},
+          "expect": "list aukeaa"
+        },
+        {
+          "id": "mao-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "markkinaoikeus",
+          "args": {"pages": 1},
+          "expect": "items >= 1"
+        },
+        {
+          "id": "mao-year",
+          "role": "angle",
+          "method": "cli",
+          "mode": "markkinaoikeus",
+          "args": {"year": "2018"},
+          "expect": "dokumentoi epätasaisuus jos tyhjä/katkee"
+        }
+      ]
+    },
+    {
+      "id": "eu-avoimuus",
+      "label": "EU:n avoimuusrekisteri",
+      "shelf": "hard",
+      "on_page": true,
+      "doors": [
+        {
+          "id": "eu-tr-search",
+          "role": "primary",
+          "method": "cli",
+          "mode": "eu-transparency-register",
+          "args": {"pages": 1},
+          "expect": "endpoint aukeaa"
+        },
+        {
+          "id": "eu-tr-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "eu-transparency-register",
+          "args": {"pages": 1},
+          "expect": "orgs >= 1"
+        },
+        {
+          "id": "eu-tr-q",
+          "role": "angle",
+          "method": "cli",
+          "mode": "eu-transparency-register",
+          "args": {"q": "Finland"},
+          "expect": "hits >= 1 TAI dokumentoi kitka"
+        }
+      ]
+    },
+    {
+      "id": "verovelka",
+      "label": "Verovelkarekisteri (YTJ-tietopalvelu)",
+      "shelf": "no",
+      "on_page": true,
+      "kind": "Käyttö estetty",
+      "doors": [
+        {
+          "id": "ytj-spa",
+          "role": "primary",
+          "method": "http",
+          "url": "https://tietopalvelu.ytj.fi/",
+          "expect": "sivu vastaa (SPA-kuori OK)"
+        },
+        {
+          "id": "ytj-api-anon",
+          "role": "content",
+          "method": "http",
+          "url": "https://tietopalvelu.ytj.fi/api/",
+          "expect": "401/login = NO pitää (T1) · ei false-green"
+        },
+        {
+          "id": "ckan-verovelka",
+          "role": "angle",
+          "method": "cli",
+          "mode": "ckan-search",
+          "args": {"q": "verovelka"},
+          "expect": "0 datasets = peitto/kitka edelleen"
+        }
+      ]
+    },
+    {
+      "id": "prh-edunsaajat",
+      "label": "PRH: edunsaajatiedot",
+      "shelf": "no",
+      "on_page": true,
+      "kind": "Ei julkaistu avoimena",
+      "doors": [
+        {
+          "id": "ytj-v3-no-ubo",
+          "role": "primary",
+          "method": "cli",
+          "mode": "prh-ytj",
+          "args": {"q": "0112038-9"},
+          "expect": "ei edunsaaja-kenttää julkisessa vastauksessa (Y1)"
+        },
+        {
+          "id": "open-data-miss",
+          "role": "content",
+          "method": "cli",
+          "mode": "ckan-search",
+          "args": {"q": "edunsaajat OR UBO"},
+          "expect": "ei bulk-open-datasetia"
+        }
+      ]
+    },
+    {
+      "id": "kunta-wfs",
+      "label": "Kuntien kartta-aineistot (esimerkkejä)",
+      "shelf": "no",
+      "on_page": true,
+      "kind": "Käyttö estetty",
+      "doors": [
+        {
+          "id": "wfs-caps",
+          "role": "primary",
+          "method": "cli",
+          "mode": "kuntalupa-wfs-probe",
+          "args": {"dataset": "kitka-alt"},
+          "expect": "Capabilities usein OK"
+        },
+        {
+          "id": "wfs-getfeature",
+          "role": "content",
+          "method": "cli",
+          "mode": "kuntalupa-wfs-probe",
+          "args": {"dataset": "kitka-alt"},
+          "expect": "GetFeature 401/tyhjä = CAPS≠DATA (sivun NO)"
+        },
+        {
+          "id": "wfs-slice-small",
+          "role": "angle",
+          "method": "cli",
+          "mode": "kuntalupa-wfs-probe",
+          "args": {"dataset": "karttatiimi"},
+          "expect": "pieni otos · ei massabrute"
+        }
+      ]
+    },
+    {
+      "id": "varke",
+      "label": "Varke (ex-ARA) avustukset",
+      "shelf": "candidate",
+      "on_page": false,
+      "doors": [
+        {
+          "id": "varke-index",
+          "role": "primary",
+          "method": "cli",
+          "mode": "varke-open-data",
+          "args": {"dataset": "index"},
+          "expect": "HTML-linkkejä >= 1"
+        },
+        {
+          "id": "varke-xlsx",
+          "role": "content",
+          "method": "cli",
+          "mode": "varke-open-data",
+          "args": {"dataset": "document"},
+          "expect": "XLSX rivit > 0"
+        },
+        {
+          "id": "varke-q",
+          "role": "angle",
+          "method": "cli",
+          "mode": "varke-open-data",
+          "args": {"dataset": "document", "q": "known-key"},
+          "expect": "document-key löytyy TAI dokumentoi miss"
+        }
+      ]
+    },
+    {
+      "id": "valtiokonttori",
+      "label": "Valtiokonttori: virastot",
+      "shelf": "candidate",
+      "on_page": false,
+      "doors": [
+        {
+          "id": "vk-list",
+          "role": "primary",
+          "method": "cli",
+          "mode": "valtiokonttori-virastot",
+          "expect": "lista aukeaa"
+        },
+        {
+          "id": "vk-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "valtiokonttori-virastot",
+          "expect": "virastot >= 1 + ytunnus-kenttä jos on"
+        },
+        {
+          "id": "vk-join-smoke",
+          "role": "angle",
+          "method": "cli",
+          "mode": "virasto-ytunnus-join",
+          "note": "kevyt smoke · ei B2B-join massaa",
+          "expect": "join ei kaadu · coverage raportoidaan"
+        }
+      ]
+    },
+    {
+      "id": "tyosuojelu",
+      "label": "Työsuojelu: avoin data",
+      "shelf": "candidate",
+      "on_page": false,
+      "doors": [
+        {
+          "id": "ts-toimivalta",
+          "role": "primary",
+          "method": "cli",
+          "mode": "tyosuojelu",
+          "args": {"dataset": "toimivalta"},
+          "expect": "dataset aukeaa"
+        },
+        {
+          "id": "ts-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "tyosuojelu",
+          "args": {"dataset": "toimivalta"},
+          "expect": "rows > 0"
+        },
+        {
+          "id": "ts-second-dataset",
+          "role": "angle",
+          "method": "cli",
+          "mode": "tyosuojelu",
+          "args": {"dataset": "list_or_alt"},
+          "expect": "toinen dataset TAI dokumentoi yksi-ovi"
+        }
+      ]
+    },
+    {
+      "id": "avoimuus-fi",
+      "label": "Avoimuusrekisteri (FI)",
+      "shelf": "candidate",
+      "on_page": false,
+      "doors": [
+        {
+          "id": "av-register",
+          "role": "primary",
+          "method": "cli",
+          "mode": "avoimuusrekisteri",
+          "args": {"dataset": "register"},
+          "expect": "register aukeaa"
+        },
+        {
+          "id": "av-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "avoimuusrekisteri",
+          "args": {"dataset": "register"},
+          "expect": "orgs/rows > 0"
+        },
+        {
+          "id": "av-core-no-dump",
+          "role": "angle",
+          "method": "cli",
+          "mode": "avoimuusrekisteri",
+          "args": {"dataset": "core"},
+          "note": "ei --include-activity-dump (kevyt)",
+          "expect": "core OK ilman massadumpia"
+        }
+      ]
+    },
+    {
+      "id": "pif",
+      "label": "PIF: disclosure / TOV",
+      "shelf": "candidate",
+      "on_page": false,
+      "doors": [
+        {
+          "id": "pif-index",
+          "role": "primary",
+          "method": "cli",
+          "mode": "pif-disclosure-index",
+          "expect": "index aukeaa"
+        },
+        {
+          "id": "pif-tov-rows",
+          "role": "content",
+          "method": "cli",
+          "mode": "pif-tov-rows",
+          "expect": "rows > 0"
+        },
+        {
+          "id": "pif-tov-meta",
+          "role": "angle",
+          "method": "cli",
+          "mode": "pif-disclosure-tov",
+          "note": "ilman --download-files",
+          "expect": "meta/lista OK · ei PDF-massaa"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "sources": 18,
+    "on_page": 13,
+    "candidates": 5,
+    "doors": 54,
+    "by_shelf": {"ok": 4, "hard": 6, "no": 3, "candidate": 5}
+  }
+}
