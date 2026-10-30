@@ -8,10 +8,13 @@ Jokainen väite linkitetty alkuperäiseen lähteeseen. Poikkeama ei ole syyte: t
 ## Sivuston rakenne
 
 - [Etusivu](https://aitodata.fi/)
+- [Rahavirrat](https://aitodata.fi/rahavirrat/)
+- [Vaalituki](https://aitodata.fi/rahavirrat/vaalituki/)
+- [Puoluerahoitus](https://aitodata.fi/rahavirrat/puoluerahoitus/)
 - [Tutki lisää](https://aitodata.fi/kaiva/)
 - [Näin luet](https://aitodata.fi/nain-luet/)
 - [Perusteet](https://aitodata.fi/perusteet/)
-- [Info](https://aitodata.fi/tietoa/)
+- [Tietoa](https://aitodata.fi/tietoa/)
 - [Käyttöehdot](https://aitodata.fi/kayttoehdot/)
 - [Löydöt (lista)](https://aitodata.fi/sivut/loydot/)
 - [Puuttuva tieto](https://aitodata.fi/sivut/peito/)
