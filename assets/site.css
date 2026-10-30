@@ -66,76 +66,8 @@ a:hover { color: #93c5fd; }
 .topbar-inner > .wordmark {
   margin-right: auto;
 }
-.nav-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0;
-  border: 1px solid rgba(37, 99, 235, 0.35);
-  border-radius: 0.55rem;
-  background: var(--blue-dim);
-  color: var(--blue-hot);
-  cursor: pointer;
-}
-.nav-toggle:hover,
-.nav-toggle:focus-visible {
-  border-color: rgba(96, 165, 250, 0.55);
-  outline: none;
-}
-.nav-toggle-bars,
-.nav-toggle-bars::before,
-.nav-toggle-bars::after {
-  display: block;
-  width: 1.05rem;
-  height: 2px;
-  background: currentColor;
-  border-radius: 1px;
-  position: relative;
-  transition: transform 0.15s ease, opacity 0.15s ease;
-}
-.nav-toggle-bars::before,
-.nav-toggle-bars::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-.nav-toggle-bars::before { top: -6px; }
-.nav-toggle-bars::after { top: 6px; }
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars {
-  background: transparent;
-}
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-nav.site {
-  display: none;
-  flex-direction: column;
-  gap: 0.15rem;
-  width: 100%;
-  padding: 0.35rem 0 0.15rem;
-  border-top: 1px solid rgba(30, 41, 59, 0.9);
-}
-nav.site.is-open { display: flex; }
-nav.site a {
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.7rem 0.35rem;
-  border-radius: 0.45rem;
-}
-nav.site a:hover,
-nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
+/* Legacy hamburger: hidden — same chrome as Rahavirrat site-nav everywhere */
+.nav-toggle { display: none !important; }
 
 .badge {
   font-size: 0.65rem;
@@ -158,57 +90,43 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   white-space: nowrap;
 }
 
-@media (min-width: 800px) {
-  .nav-toggle { display: none; }
-  nav.site {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-    gap: 0.35rem 1rem;
-    padding: 0;
-    border-top: 0;
-  }
-  nav.site a {
-    padding: 0;
-    border-radius: 0;
-  }
-  nav.site a:hover,
-  nav.site a.active { background: transparent; }
-  .badge { margin-left: 0; }
-  .topbar-inner .nav-toggle + nav.site { margin-left: 0; }
-  .topbar-inner { flex-wrap: nowrap; }
-  .topbar-inner .wordmark { flex: 0 0 auto; margin-right: 0; }
-  .topbar-inner nav.site { flex: 1 1 auto; justify-content: flex-end; }
-  .topbar-inner .badge { flex: 0 0 auto; }
-}
-
-/* Rahavirrat-hyllyt (Löydöt sama chrome kuin Vaalituki / Puoluerahoitus) */
+/* Canonical top nav (nav.site + .site-nav identical) */
+nav.site,
 .site-nav {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: flex-end;
   gap: 0.35rem 1rem;
+  width: auto;
+  padding: 0;
+  border-top: 0;
 }
+nav.site a,
 .site-nav a {
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 500;
   padding: 0.2rem 0;
   border-bottom: 2px solid transparent;
+  border-radius: 0;
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0;
+  background: transparent;
 }
-.site-nav a:hover { color: var(--text); }
+nav.site a:hover,
+.site-nav a:hover { color: var(--text); background: transparent; }
+nav.site a.active,
 .site-nav a.active {
   color: #fff;
   border-bottom-color: var(--blue-hot);
   background: transparent;
 }
-.topbar-inner .site-nav {
-  flex: 1 1 auto;
-  justify-content: flex-end;
-}
+.topbar-inner { flex-wrap: wrap; }
+.topbar-inner .wordmark { flex: 0 0 auto; margin-right: auto; }
+.topbar-inner .badge { flex: 0 0 auto; }
+
 .shelves {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +159,9 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
 }
 @media (max-width: 520px) {
   .shelves { padding: 0.65rem 0.9rem 0; }
+  nav.site a,
   .site-nav a { font-size: 0.88rem; }
+  .topbar-inner { padding: 0.75rem 0.9rem; }
 }
 
 .wrap {
