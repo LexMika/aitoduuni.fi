@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css?v=20261030k">
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030k">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030m">
 <link rel="icon" href="../../assets/favicon.ico" sizes="any">
 <meta name="theme-color" content="#020617">
 <style>
@@ -61,7 +61,8 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 <div class="banner-proto">Piilojulkaisu · 9 ketjua · ei navissa · ei hakukoneisiin · jaa vain linkillä · 30.10.2026</div>
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../">Aito<span>Data</span></a>
-<nav class="site-nav" aria-label="Päävalikko">
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
     <a href="../../rahavirrat/">Rahavirrat</a>
     <a href="../peito/">Puuttuva tieto</a>
     <a href="../toimiiko-lahde/">Toimiiko lähde?</a>
@@ -619,5 +620,6 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 <footer class="site-foot">
   <p class="legal-links"><a href="../../tietoa/">Tietoa</a> · <a href="../../kayttoehdot/">Käyttöehdot</a></p>
 </footer>
+<script src="../../assets/nav.js?v=20261030m" defer></script>
 </body>
 </html>

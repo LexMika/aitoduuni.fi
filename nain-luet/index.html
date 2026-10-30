@@ -112,14 +112,15 @@ h1{margin:0 0 .65rem;font-size:clamp(1.75rem,3.5vw,2.2rem);font-weight:700;lette
 html.no-js .panel{display:block;margin-bottom:1rem}
 html.no-js .dept-pills{display:none}
 </style>
-<link rel="stylesheet" href="../assets/nav-chrome.css?v=20261030h">
+<link rel="stylesheet" href="../assets/nav-chrome.css?v=20261030m">
 
 </head>
 <body>
 <script>document.documentElement.classList.remove('no-js');</script>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
     <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -325,5 +326,6 @@ html.no-js .dept-pills{display:none}
   show(hash || "vaalituki");
 })();
 </script>
+<script src="../assets/nav.js?v=20261030m" defer></script>
 </body>
 </html>

@@ -64,13 +64,14 @@ a:hover{color:#93c5fd}
 .shelves a.shelf.is-active{color:#fff;background:rgba(37,99,235,.14);border-color:rgba(37,99,235,.4)}
 
 </style>
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030h">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030m">
 
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
     <a href="../../rahavirrat/" class="active">Rahavirrat</a>
     <a href="../../sivut/peito/">Puuttuva tieto</a>
     <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -108,5 +109,6 @@ a:hover{color:#93c5fd}
  <p class="source">Lähde: VTV:n puoluerahoitusilmoitukset · esikatselu</p>
 </article>
 </div>
+<script src="../../assets/nav.js?v=20261030m" defer></script>
 </body>
 </html>

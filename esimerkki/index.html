@@ -7,7 +7,7 @@
 <meta http-equiv="refresh" content="0; url=../nain-luet/">
 <link rel="canonical" href="https://aitodata.fi/nain-luet/">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/nav-chrome.css?v=20261030h">
+<link rel="stylesheet" href="../assets/nav-chrome.css?v=20261030m">
 <style>
 :root {
   --bg:#020617; --bg-2:#0b1224; --card:rgba(15,23,42,.72); --edge:#1e293b;
@@ -41,7 +41,8 @@ h1{margin:0 0 .75rem;font-size:1.75rem;font-weight:700;letter-spacing:-.03em}
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
     <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -66,5 +67,6 @@ h1{margin:0 0 .75rem;font-size:1.75rem;font-weight:700;letter-spacing:-.03em}
   <p><a class="btn" href="../nain-luet/">Siirry Näin luet -sivulle →</a></p>
   <p class="note">Jos selaimesi ei siirry automaattisesti, käytä nappia.</p>
 </div>
+<script src="../assets/nav.js?v=20261030m" defer></script>
 </body>
 </html>
