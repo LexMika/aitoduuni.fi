@@ -1,3 +1,5 @@
+@import url("nav-chrome.css?v=20261030h");
+
 :root {
   --bg: #020617;
   --bg-2: #0b1224;
@@ -9,8 +11,9 @@
   --blue-hot: #60a5fa;
   --blue-dim: rgba(37, 99, 235, 0.14);
   --ok: #6ee7b7;
-  --font-display: "IBM Plex Sans", "Segoe UI", sans-serif;
-  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  /* Same stack as Rahavirrat chrome — no Segoe fork */
+  --font-display: "IBM Plex Sans", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -35,43 +38,11 @@ body {
 a { color: var(--blue-hot); }
 a:hover { color: #93c5fd; }
 
-.topbar {
-  position: sticky; top: 0; z-index: 30;
-  border-bottom: 1px solid rgba(30, 41, 59, 0.9);
-  background: rgba(2, 6, 23, 0.78);
-  backdrop-filter: blur(10px);
-}
-
-.topbar-inner {
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: 0.95rem 1.35rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem 1rem;
-  flex-wrap: wrap;
-}
-
-.wordmark {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: #fff;
-  text-decoration: none;
-}
-.wordmark span { color: var(--blue-hot); font-weight: 500; }
-
-.topbar-inner > .wordmark {
-  margin-right: auto;
-}
-/* Legacy hamburger: hidden — same chrome as Rahavirrat site-nav everywhere */
-.nav-toggle { display: none !important; }
+/* topbar / site-nav / shelves / wordmark → nav-chrome.css (shared) */
 
 .badge {
   font-size: 0.65rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--blue-hot);
@@ -88,80 +59,6 @@ a:hover { color: #93c5fd; }
   letter-spacing: 0.02em;
   color: rgba(226, 232, 240, 0.88);
   white-space: nowrap;
-}
-
-/* Canonical top nav (nav.site + .site-nav identical) */
-nav.site,
-.site-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-  justify-content: flex-end;
-  gap: 0.35rem 1rem;
-  width: auto;
-  padding: 0;
-  border-top: 0;
-}
-nav.site a,
-.site-nav a {
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.2rem 0;
-  border-bottom: 2px solid transparent;
-  border-radius: 0;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: 0;
-  background: transparent;
-}
-nav.site a:hover,
-.site-nav a:hover { color: var(--text); background: transparent; }
-nav.site a.active,
-.site-nav a.active {
-  color: #fff;
-  border-bottom-color: var(--blue-hot);
-  background: transparent;
-}
-.topbar-inner { flex-wrap: wrap; }
-.topbar-inner .wordmark { flex: 0 0 auto; margin-right: auto; }
-.topbar-inner .badge { flex: 0 0 auto; }
-
-.shelves {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: 0.85rem 1.25rem 0;
-}
-.shelves a.shelf {
-  appearance: none;
-  border: 1px solid transparent;
-  background: transparent;
-  color: var(--muted);
-  font: inherit;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.55rem 0.95rem;
-  border-radius: 0.55rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-.shelves a.shelf:hover {
-  color: var(--text);
-  background: rgba(37, 99, 235, 0.08);
-}
-.shelves a.shelf.is-active {
-  color: #fff;
-  background: rgba(37, 99, 235, 0.14);
-  border-color: rgba(37, 99, 235, 0.4);
-}
-@media (max-width: 520px) {
-  .shelves { padding: 0.65rem 0.9rem 0; }
-  nav.site a,
-  .site-nav a { font-size: 0.88rem; }
-  .topbar-inner { padding: 0.75rem 0.9rem; }
 }
 
 .wrap {

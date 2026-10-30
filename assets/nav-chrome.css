@@ -1,0 +1,132 @@
+/* Shared top chrome — same file for Rahavirrat (inline pages) and site.css hubs.
+   Do not fork these rules per page. */
+:root {
+  --nav-font: "IBM Plex Sans", sans-serif;
+  --nav-text: #f1f5f9;
+  --nav-muted: #94a3b8;
+  --nav-blue-hot: #60a5fa;
+  --nav-edge: #1e293b;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.9);
+  background: rgba(2, 6, 23, 0.86);
+  backdrop-filter: blur(10px);
+}
+
+.topbar-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.95rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-family: var(--nav-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-right: auto;
+  text-decoration: none;
+  font-synthesis: none;
+}
+.wordmark span {
+  color: var(--nav-blue-hot);
+  font-weight: 500;
+}
+
+.nav-toggle { display: none !important; }
+
+.site-nav,
+nav.site {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  gap: 0.35rem 1rem;
+  width: auto;
+  padding: 0;
+  border-top: 0;
+}
+
+.site-nav a,
+nav.site a {
+  font-family: var(--nav-font);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-synthesis: none;
+  color: var(--nav-muted);
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  background: transparent;
+  line-height: 1.55;
+}
+
+.site-nav a:hover,
+nav.site a:hover {
+  color: var(--nav-text);
+  background: transparent;
+}
+
+.site-nav a.active,
+nav.site a.active {
+  color: #fff;
+  border-bottom-color: var(--nav-blue-hot);
+  background: transparent;
+}
+
+.shelves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem 0;
+}
+
+.shelves a.shelf {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--nav-muted);
+  font-family: var(--nav-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-synthesis: none;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.shelves a.shelf:hover {
+  color: var(--nav-text);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.shelves a.shelf.is-active {
+  color: #fff;
+  background: rgba(37, 99, 235, 0.14);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+@media (max-width: 520px) {
+  .topbar-inner { padding: 0.75rem 0.9rem; }
+  .shelves { padding: 0.65rem 0.9rem 0; }
+  .site-nav { gap: 0.25rem 0.75rem; }
+  .site-nav a,
+  nav.site a { font-size: 0.88rem; }
+}
