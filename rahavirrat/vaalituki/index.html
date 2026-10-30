@@ -203,8 +203,13 @@ function render() {
  const rows = ITEMS.filter((it) => {
  if (filter !== "all" && it.kind !== filter) return false;
  if (party !== "all") {
+ // Puolue koskee vain ehdokkaita — tukija-orgilla ei ole puoluekenttää
+ if (it.kind === "tukija") {
+ if (filter !== "tukija") return false;
+ } else {
  const p = (it.puolue || "").toUpperCase();
  if (p !== party) return false;
+ }
  }
  if (!q) return true;
  return (it.search || "").includes(q) || (it.flow || "").toLowerCase().includes(q);
@@ -248,9 +253,23 @@ function wireGroup(sel, onPick) {
  });
  });
 }
+function setKind(v) {
+ filter = v;
+ document.querySelectorAll("#filt-kind button").forEach((b) => b.classList.toggle("is-on", b.dataset.f === v));
+}
+function setParty(v) {
+ party = v;
+ document.querySelectorAll("#filt-party button").forEach((b) => b.classList.toggle("is-on", b.dataset.p === v));
+}
 qEl.addEventListener("input", render);
-wireGroup("#filt-kind", (btn) => { filter = btn.dataset.f; });
-wireGroup("#filt-party", (btn) => { party = btn.dataset.p; });
+wireGroup("#filt-kind", (btn) => {
+ filter = btn.dataset.f;
+ if (filter === "tukija" && party !== "all") setParty("all");
+});
+wireGroup("#filt-party", (btn) => {
+ party = btn.dataset.p;
+ if (party !== "all" && filter === "tukija") setKind("ehdokas");
+});
 render();
 </script>
 
