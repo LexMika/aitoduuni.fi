@@ -169,16 +169,29 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
     padding: 0;
     border-top: 0;
   }
+  /* Desktop: sama lause-tyyli kuin Rahavirrat (ei CAPS-pinoa) */
   nav.site a {
-    padding: 0;
+    padding: 0.2rem 0;
     border-radius: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    border-bottom: 2px solid transparent;
   }
-  nav.site a:hover,
-  nav.site a.active { background: transparent; }
+  nav.site a:hover {
+    color: #fff;
+    background: transparent;
+  }
+  nav.site a.active {
+    color: #fff;
+    background: transparent;
+    border-bottom-color: var(--blue-hot);
+  }
   .badge { margin-left: 0; }
   .topbar-inner .nav-toggle + nav.site { margin-left: 0; }
   .topbar-inner { flex-wrap: nowrap; }
-  .topbar-inner .wordmark { flex: 0 0 auto; margin-right: 0; }
+  .topbar-inner .wordmark { flex: 0 0 auto; margin-right: auto; }
   .topbar-inner nav.site { flex: 1 1 auto; justify-content: flex-end; }
   .topbar-inner .badge { flex: 0 0 auto; }
 }
