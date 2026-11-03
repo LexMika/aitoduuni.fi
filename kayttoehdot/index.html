@@ -45,7 +45,7 @@
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
+<nav class="site" id="site-nav" aria-label="Päävalikko">
     <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -74,7 +74,7 @@
 
   <section class="panel">
     <h2>1. Palvelu</h2>
-    <p><strong>AitoData</strong> (työnimi Vallanvahtikoira) on julkinen, kehittyvä palvelu, joka tiivistää jo julkiseksi avattua tietoa ja linkittää alkuperäiseen lähteeseen. Palvelu tarjotaan <strong>sellaisenaan</strong>. Emme takaa, että jokainen kenttä on aina ajantasainen tai virheetön. Pyrimme kuitenkin korjaamaan ilmeiset virheet.</p>
+    <p><strong>AitoData</strong> (työnimi Vallanvahtikoira) on julkinen, kehittyvä palvelu, joka tiivistää jo julkiseksi avattua tietoa ja linkittää alkuperäiseen lähteeseen. Palveluun kuuluvat muun muassa <a href="../sivut/loydot/">Löydöt</a> (hankinnat), <a href="../rahavirrat/">Rahavirrat</a> (vaalituki ja puoluerahoitus), <a href="../sivut/ketjut/">Ketjut</a> sekä lähteen kuntoa ja puuttuvaa tietoa käsittelevät sivut. Palvelu tarjotaan <strong>sellaisenaan</strong>. Emme takaa, että jokainen kenttä on aina ajantasainen tai virheetön. Pyrimme kuitenkin korjaamaan ilmeiset virheet.</p>
     <p>Osa sivuista (esim. <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>) esittää rajattuja havaintoja päiväyksineen. Ne eivät kata koko Suomea eivätkä ole oikeudellinen arvio.</p>
   </section>
 
@@ -86,14 +86,16 @@
   </section>
 
   <section class="panel">
-    <h2>3. Tilastomerkit (×, CPV, “Selvä poikkeama”)</h2>
-    <p>Vertailuluvut kuvaavat, miten arvioitu arvo tai summa sijoittuu saman CPV-ryhmän muihin julkisiin ilmoituksiin. Ne ovat <strong>kuvailevia</strong>, ei tuomioita. Lukija tulkitsee merkityksen itse.</p>
-    <p>Selitys: <a href="../nain-luet/#vertailuluvut">Näin luet → Vertailuluvut</a>. Hyllyn caveat: poikkeama ei tarkoita että jotain on “tehty väärin”.</p>
+    <h2>3. Tilastomerkit ja tiivistelmät</h2>
+    <p><strong>Löydöt / hankinta:</strong> vertailuluvut (×, CPV, “Selvä poikkeama”) kuvaavat, miten arvioitu arvo sijoittuu saman CPV-ryhmän muihin julkisiin ilmoituksiin. Ne ovat <strong>kuvailevia</strong>, ei tuomioita.</p>
+    <p><strong>Rahavirrat (vaalituki / puoluerahoitus):</strong> näytämme ilmoitetun tukijan, saajan ja summan sellaisena kuin VTV:n julkinen aineisto ne antaa. Emme laske poikkeamakerrointa emmekä väitä sidonnaisuutta.</p>
+    <p><strong>Ketjut:</strong> sama Y-tunnus kahdessa julkisessa lähteessä. Yhdistelmä ei ole syyte.</p>
+    <p>Lukuohje: <a href="../nain-luet/">Näin luet</a> (osastot). Hyllyn caveat: poikkeama tai ketju ei tarkoita että jotain on “tehty väärin”.</p>
   </section>
 
   <section class="panel">
     <h2>4. Julkinen lähde ja nimet</h2>
-    <p>Näytämme tietoa, joka on jo julkisessa asiakirjassa, ilmoituksessa tai avoimessa rekisterissä (esim. Hilma, PRH). Emme kaiva yksityiselämää tai suljettua somea. Luonnollisen henkilön nimi voi esiintyä vain, jos se on jo julkisessa päätöksessä tai ilmoituksessa.</p>
+    <p>Näytämme tietoa, joka on jo julkisessa asiakirjassa, ilmoituksessa tai avoimessa rekisterissä (esim. Hilma, VTV vaali- ja puoluerahoitusaineistot, YTJ/PRH). Emme kaiva yksityiselämää tai suljettua somea. Luonnollisen henkilön nimi (esim. ehdokas) voi esiintyä vain, jos se on jo julkisessa ilmoituksessa tai päätöksessä.</p>
     <p>Lain tausta: <a href="../perusteet/">Perusteet</a>.</p>
   </section>
 
@@ -101,11 +103,11 @@
     <h2>5. Korjauspyyntö (ensisijainen reitti)</h2>
     <p>Jos kortin tiivistelmä, luku tai linkki ei täsmää alkuperäiseen lähteeseen:</p>
     <ul>
-      <li>Käytä sen löytökortin <strong>Ilmoita virhe</strong> -lomaketta (kortin lopussa).</li>
+      <li>Käytä kortin <strong>Ilmoita virhe</strong> -lomaketta (löytö- ja rahavirtakorttien lopussa), jos sellainen on.</li>
       <li>Kerro mikä on väärin ja mitä lähteessä lukee. Korjaamme todennetut virheet.</li>
       <li>Voit myös kirjoittaa: <a href="mailto:mika@aitoduuni.fi">mika@aitoduuni.fi</a> (viittaa korttiin tai URL:ään).</li>
     </ul>
-    <p>Jos virhe koskee muita sivuja (esim. <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> tai <a href="../sivut/peito/">Puuttuva tieto</a>), kirjoita samaan osoitteeseen ja liitä sivun osoite. Näillä sivuilla ei ole erillistä lomaketta.</p>
+    <p>Jos virhe koskee muita sivuja (esim. <a href="../sivut/ketjut/">Ketjut</a>, <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> tai <a href="../sivut/peito/">Puuttuva tieto</a>), kirjoita samaan osoitteeseen ja liitä sivun osoite. Näillä sivuilla ei ole erillistä lomaketta.</p>
     <p>Emme poista oikein siteerattua julkista tietoa pelkän erimielisyyden vuoksi. Jos lähde on julkisesti saatavilla ja tiivistelmä on oikein, julkaisu nojaa julkiseen aineistoon.</p>
   </section>
 
@@ -149,6 +151,6 @@
   <p class="legal-links"><a href="../tietoa/">Tietoa</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Käyttöehdot · julkinen kehittyvä palvelu.</p>
 </footer>
-<script src="../assets/nav.js?v=20261030m" defer></script>
+<script src="../assets/nav.js?v=20261103q" defer></script>
 </body>
 </html>

@@ -45,7 +45,7 @@
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
+<nav class="site" id="site-nav" aria-label="Päävalikko">
     <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -81,21 +81,21 @@
   <section class="panel">
     <h2>Mitä kaivamme</h2>
     <ul>
-      <li><strong>Toimijaketjut:</strong> sama yritys, virasto tai päätös eri lähteissä (esim. Y-tunnuksella). Jokainen lenkki saa linkin alkuperäiseen.</li>
-      <li><strong>Hankinnat:</strong> menettely (esim. suorahankinta), hinta ja verrokki, kun data riittää.</li>
-      <li><strong>Vaali- ja muu julkinen rahoitus:</strong> tukija, summa ja saaja, kun aineisto on auki.</li>
+      <li><strong>Hankinnat (Löydöt):</strong> menettely, ilmoituksen arvo ja verrokki, kun data riittää. Hylly: <a href="../sivut/loydot/">Löydöt</a>.</li>
+      <li><strong>Vaalituki:</strong> ehdokas, tukija, summa VTV:n julkisesta aineistosta. Lista: <a href="../rahavirrat/vaalituki/">Rahavirrat → Vaalituki</a>.</li>
+      <li><strong>Puoluerahoitus:</strong> ilmoittaja, tukija, summa VTV:n julkisista ilmoituksista. Lista: <a href="../rahavirrat/puoluerahoitus/">Rahavirrat → Puoluerahoitus</a>.</li>
+      <li><strong>Ketjut:</strong> sama Y-tunnus hankinnan voittajana ja vaalituen tukijana (ostaja → yritys → ehdokas). Hylly: <a href="../sivut/ketjut/">Ketjut</a>.</li>
       <li><strong>Puuttuva tieto:</strong> vajaa ilmoitus, etenkin arvioitu hinta. Aukko itsessään on havainto. Kooste: <a href="../sivut/peito/">Puuttuva tieto</a>.</li>
       <li><strong>Lähteen kunto:</strong> aukeaako julkinen lähde ilman kirjautumista, ja milloin haku jää tyhjäksi. Havaintoja: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a></li>
       <li><strong>Muuta julkista:</strong> päätökset, sidonnaisuudet, lobbausaineistot ym. lain sallimissa rajoissa, sitä mukaa kun aineisto laajenee.</li>
     </ul>
-    <p>Kaivamme laajasti julkisista lähteistä, myös yksittäisiä hankintoja: hinta ja kilpailutus suhteessa verrokkeihin, kun data riittää.</p>
-    <p>Näytämme vain jo julkiseksi avattua aineistoa (esim. Hilma-ilmoitukset, rekisterit). Emme vuoda salaisuuksia emmekä kaiva yksityiselämää.</p>
+    <p>Näytämme vain jo julkiseksi avattua aineistoa (Hilma, VTV vaali-/puoluerahoitus, YTJ ja muut avoimet rekisterit). Emme vuoda salaisuuksia emmekä kaiva yksityiselämää.</p>
   </section>
 
   <section class="panel">
     <h2>Miten julkaisemme</h2>
     <ul>
-      <li><strong>Helppo lukutapa:</strong> tiivistelmä, lähteet, kokonaiskuva (<a href="../esimerkki/">katso esimerkki</a>).</li>
+      <li><strong>Helppo lukutapa:</strong> tiivistelmä, lähteet, kokonaiskuva. Lukuohje: <a href="../nain-luet/">Näin luet</a>.</li>
       <li><strong>Lähdeketju auki:</strong> URL, mitä tarkistaa, mistä löytyy.</li>
       <li><strong>Faktat ensin:</strong> emme väitä oletuksena, että jokin on väärin.</li>
       <li><strong>Lähteen kunto:</strong> erillinen sivu <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> (aukeaako lähde; haut ilman osumia; havaintoja, ei syytettä).</li>
@@ -116,9 +116,9 @@
 
     <h3 style="margin-top:1.25rem;font-size:1.05rem">Neljä korttityyppiä</h3>
     <ul>
-      <li><strong>Hankinta:</strong> ilmoituksen arvoa verrataan saman hankintaluokan muihin ilmoituksiin. Käytämme lukusääntöä (alla). Poikkeama = luku erottuu verrokeista, ei tuomio hankinnasta.</li>
-      <li><strong>Raha:</strong> julkinen maksu tai tuki: kuka maksoi, kenelle, paljonko, mistä lähteestä. Ei poikkeamakerrointa; näytämme rivin sellaisena kuin lähde sen antaa.</li>
-      <li><strong>Ketju:</strong> sama tunniste (usein Y-tunnus) löytyy useasta lähteestä. Yhdistämme jäljet; emme pisteytä emmekä väitä väärinkäytöstä.</li>
+      <li><strong>Hankinta (Löydöt):</strong> ilmoituksen arvoa verrataan saman hankintaluokan muihin ilmoituksiin. Käytämme lukusääntöä (alla). Poikkeama = luku erottuu verrokeista, ei tuomio hankinnasta.</li>
+      <li><strong>Raha (Rahavirrat):</strong> vaalituki tai puoluerahoitus: kuka antoi, kenelle, paljonko, mistä VTV-lähteestä. Ei poikkeamakerrointa; näytämme rivin sellaisena kuin lähde sen antaa. Listat: <a href="../rahavirrat/">Rahavirrat</a>.</li>
+      <li><strong>Ketju:</strong> sama Y-tunnus hankinnassa ja vaalituessa. Yhdistämme jäljet; emme pisteytä emmekä väitä väärinkäytöstä. Hylly: <a href="../sivut/ketjut/">Ketjut</a>.</li>
       <li><strong>Puuttuva tieto:</strong> kenttää etsittiin ilmoituksesta (esim. arvioitu hinta), tulos vajaa. Aukko merkitään havainnoksi. Se ei ole syytös siitä, että jotain piilotetaan. Kooste: <a href="../sivut/peito/">Puuttuva tieto</a>.</li>
     </ul>
     <p>Tyhjä haku (haku tehtiin, osumia ei tullut) ja lähteen aukeaminen ilman kirjautumista: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> (haut ilman osumia sivun lopussa).</p>
@@ -133,7 +133,7 @@
       </ul>
       <p style="margin:0.65rem 0 0">Esimerkki: jos tyypillinen arvo luokassa on 2 miljoonaa euroa ja tämä ilmoitus 8 miljoonaa, suhde on noin 4× → merkitään Selväksi poikkeamaksi.</p>
       <p style="margin:0.65rem 0 0">Nämä luvut ovat meidän merkkaussääntömme, jotta hyllyä voi selata. Ne eivät ole lain määritelmä “liian isosta” hankinnasta.</p>
-      <p style="margin:0.65rem 0 0">Sanasto: <a href="../nain-luet/#vertailuluvut">CPV, n ja ×</a>. Esimerkkikortti: <a href="../esimerkki/">Eurajoen monitoimihalli</a>.</p>
+      <p style="margin:0.65rem 0 0">Sanasto ja osasto-ohjeet: <a href="../nain-luet/#loydot">Näin luet → Löydöt / hankinta</a>. Esimerkkikortti: <a href="../sivut/loydot/eurajoki-monitoimihalli/">Eurajoen monitoimihalli</a>.</p>
     </div>
 
     <p style="margin-top:1rem">Jos tiivistelmä ei täsmää alkuperäiseen lähteeseen, ilmoita kortin lomakkeella. Korjaamme. Laki ja avoimuus taustalla: <a href="../perusteet/">Perusteet</a>.</p>
@@ -149,7 +149,7 @@
       <li>täytä puuttuvia kenttiä arvauksella.</li>
       <li>ole kenenkään puolella: sama sääntö kaikelle julkiselle aineistolle.</li>
       <li>väitä, että <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> -havainto on oikeudellinen arvio siitä, onko lukitus laitonta.</li>
-      <li>ole vielä kattava kansallinen indeksi; tämä on esikatselu.</li>
+      <li>ole vielä kattava kansallinen indeksi; peitto kasvaa aineiston mukaan.</li>
     </ul>
   </section>
 
@@ -176,7 +176,7 @@
   <section class="panel" id="palaute-tietosuoja">
     <h2>Palaute, korjaukset ja tietosuoja</h2>
     <ul>
-      <li><strong>Virhe kortissa:</strong> jokaisen löytökortin lopussa on lomake: kerro mikä ei täsmää lähteeseen. Korjaamme.</li>
+      <li><strong>Virhe kortissa:</strong> löytö- ja rahavirtakorttien lopussa on lomake: kerro mikä ei täsmää lähteeseen. Korjaamme. Ketju-/hub-sivut: <a href="mailto:mika@aitoduuni.fi">mika@aitoduuni.fi</a> + URL.</li>
       <li><strong>Julkinen aineisto:</strong> emme myy dataa. Näytämme tiivistelmän ja linkin alkuperäiseen julkiseen lähteeseen.</li>
       <li><strong>Lomake:</strong> voit jättää vapaaehtoisen sähköpostin vastausta varten. Sitä käytetään vain virheilmoituksen käsittelyyn.</li>
       <li><strong>Yhteys:</strong> virheilmoitus kortilla on nopein tapa. Muu yhteys: <a href="mailto:mika@aitoduuni.fi">mika@aitoduuni.fi</a>.</li>
@@ -200,8 +200,8 @@
   </div>
 
   <div class="hero-actions" style="margin-top:1.5rem">
-    <a class="btn" href="../esimerkki/">Katso esimerkki</a>
-    <a class="btn ghost" href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a class="btn" href="../nain-luet/">Näin luet</a>
+    <a class="btn ghost" href="../rahavirrat/">Rahavirrat</a>
     <a class="btn ghost" href="../perusteet/">Mihin laki nojaa</a>
     <a class="btn ghost" href="../">Etusivulle</a>
   </div>
@@ -212,6 +212,6 @@
   <p class="legal-links"><a href="../tietoa/">Tietoa</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Info · julkinen kehittyvä palvelu.</p>
 </footer>
-<script src="../assets/nav.js?v=20261030m" defer></script>
+<script src="../assets/nav.js?v=20261103q" defer></script>
 </body>
 </html>

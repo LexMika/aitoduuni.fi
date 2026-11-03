@@ -45,7 +45,7 @@
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../">Aito<span>Data</span></a>
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
+<nav class="site" id="site-nav" aria-label="Päävalikko">
     <a href="../rahavirrat/">Rahavirrat</a>
     <a href="../sivut/peito/">Puuttuva tieto</a>
     <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -58,7 +58,7 @@
 <div class="wrap">
   <header class="page-head">
     <h1>Mihin tämä perustuu</h1>
-    <p>AitoData ei vedä asioita hatusta. Se näyttää julkisia faktoja ja lähteitä: asioita, joita avoimuuden ja hankintojen pelisäännöissä pidetään tärkeinä. Tämä sivu kertoo, millä pohjalla se tehdään.</p>
+    <p>AitoData ei vedä asioita hatusta. Se näyttää julkisia faktoja ja lähteitä: hankintoja, vaali- ja puoluerahoitusta sekä toimijaketjuja. Tämä sivu kertoo, millä pohjalla se tehdään.</p>
   </header>
 
   <div class="callout">
@@ -97,8 +97,15 @@
       </li>
       <li>
         <strong>Laki ehdokkaan vaalirahoituksesta (273/2009).</strong>
-        Ehdokkaan ilmoitusvelvollisuus ja julkiset vaalirahoitusaineistot. Vaalirahoitus- ja rahavirta-aineistoa rakennetaan vielä; se ei ole samalla tavalla näkyvissä kuin hankinnat.
+        Ehdokkaan ilmoitusvelvollisuus ja julkiset vaalirahoitusaineistot. Valtiontalouden tarkastusvirasto (VTV) julkaisee ilmoitukset; AitoDatan <a href="../rahavirrat/vaalituki/">Vaalituki</a>-lista tiivistää tukijan, ehdokkaan ja summan ja linkittää lähteeseen. Emme arvioi, onko tuki sopiva.
         <br><a href="https://www.finlex.fi/fi/lainsaadanto/2009/273" target="_blank" rel="noopener noreferrer">Finlex →</a>
+        · <a href="https://www.vaalirahoitusvalvonta.fi/" target="_blank" rel="noopener noreferrer">Vaali- ja puoluerahoitusvalvonta →</a>
+      </li>
+      <li>
+        <strong>Puoluelaki (10/1969), puoluerahoitusta koskevat säännökset.</strong>
+        Puolueen, puolueyhdistyksen ja lähiyhteisön ilmoitusvelvollisuus tuesta. VTV julkaisee ajantasaiset ilmoitukset; AitoDatan <a href="../rahavirrat/puoluerahoitus/">Puoluerahoitus</a>-lista tiivistää ilmoittajan, tukijan ja summan. Ei väitettä sidonnaisuudesta.
+        <br><a href="https://www.finlex.fi/fi/lainsaadanto/1969/10" target="_blank" rel="noopener noreferrer">Finlex →</a>
+        · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/puoluerahoitus/" target="_blank" rel="noopener noreferrer">VTV puoluerahoitus →</a>
       </li>
     </ul>
     <p>Kooste kansallisista velvoitteista: <a href="https://avoindata.suomi.fi/fi/toimintamalli/2-lainsaadanto-ja-velvoitteet" target="_blank" rel="noopener noreferrer">avoindata.suomi.fi →</a></p>
@@ -106,11 +113,13 @@
 
   <section class="panel">
     <h2>Julkiset lähteet käytännössä</h2>
-    <p>AitoData ei yhdistä lähteitä salaisesti. Tyypillinen ketju:</p>
+    <p>AitoData ei yhdistä lähteitä salaisesti. Tyypilliset ketjut:</p>
     <ul>
       <li><strong>Hankinta:</strong> Hilma-ilmoitus (hankintalaki 1397/2016; TED kun EU-säännöt edellyttävät) → linkki alkuperäiseen ilmoitukseen. Löydössä yleensä arvioitu arvo, ei oletuksena toteutunut hinta.</li>
-      <li><strong>Toimija:</strong> Y-tunnus ja nimi julkisesta YTJ-hausta / ilmoituksesta → sama tunnus eri lähteissä.</li>
-      <li><strong>Päätös / raha:</strong> kunnan tai viranomaisen julkinen asiakirja tai avoin rekisteri, kun aineisto on saatavilla.</li>
+      <li><strong>Vaalituki:</strong> VTV:n julkinen vaalirahoitusaineisto (laki 273/2009) → ehdokas, tukija, summa → <a href="../rahavirrat/vaalituki/">Rahavirrat → Vaalituki</a>.</li>
+      <li><strong>Puoluerahoitus:</strong> VTV:n julkiset puoluerahoitusilmoitukset (puoluelaki 10/1969) → ilmoittaja, tukija, summa → <a href="../rahavirrat/puoluerahoitus/">Rahavirrat → Puoluerahoitus</a>.</li>
+      <li><strong>Toimija / ketju:</strong> Y-tunnus YTJ:stä tai ilmoituksesta. Sama Y hankinnan voittajana ja vaalituen tukijana → <a href="../sivut/ketjut/">Ketjut</a> (ostaja → yritys → ehdokas). Liitos on tunniste, ei arvaus nimestä.</li>
+      <li><strong>Päätös / muu raha:</strong> kunnan tai viranomaisen julkinen asiakirja tai avoin rekisteri, kun aineisto on saatavilla.</li>
     </ul>
     <p>Jos lähde puuttuu tai ei aukea käytännössä, se merkitään. Emme täytä aukkoa arvaamalla. Käytännön havaintoja lähteiden aukeamisesta: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a></p>
   </section>
@@ -172,7 +181,7 @@
   <section class="panel">
     <h2>Käytännön toteutus</h2>
     <p>Mitä julkaisemme, mitä emme väitä, ja miten voit tarkistaa faktat: <a href="../tietoa/#mita-emme-tee">Info → Mitä emme tee</a>.</p>
-    <p>Yksittäinen löytökortti: tiivistelmä, vertailuluvut (kun data riittää) ja linkki alkuperäiseen lähteeseen, esim. <a href="../esimerkki/">esimerkkikortti</a>.</p>
+    <p>Lukuohje osastoittain (vaalituki, puoluerahoitus, löydöt, ketjut): <a href="../nain-luet/">Näin luet</a>. Esimerkkejä: <a href="../sivut/loydot/eurajoki-monitoimihalli/">hankintakortti</a> · <a href="../rahavirrat/kortti-ehdokas-katri-kulmuni/">vaalituen ehdokaskortti</a> · <a href="../sivut/ketjut/wihuri-oy/">ketjusivu</a>.</p>
     <p>Lähteen aukeaminen käytännössä (ei juridinen arvio): <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>.</p>
   </section>
 
@@ -193,6 +202,6 @@
   <p class="legal-links"><a href="../tietoa/">Tietoa</a> · <a href="../perusteet/">Perusteet</a> · <a href="../kayttoehdot/">Käyttöehdot</a> · <a href="../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Mihin tämä perustuu · julkinen kehittyvä palvelu.</p>
 </footer>
-<script src="../assets/nav.js?v=20261030m" defer></script>
+<script src="../assets/nav.js?v=20261103q" defer></script>
 </body>
 </html>
