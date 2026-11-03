@@ -6,14 +6,14 @@
 <meta name="robots" content="index,follow">
 <title>Näin luet · AitoData</title>
 <!-- aito-hub-meta:start -->
-<meta name="description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, puuttuva tieto ja lähteen kunto.">
+<meta name="description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, ketjut, puuttuva tieto ja lähteen kunto.">
 <link rel="canonical" href="https://aitodata.fi/nain-luet/">
 <link rel="alternate" type="text/plain" href="https://aitodata.fi/llms.txt" title="LLM site guide">
 <meta name="author" content="AitoData">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AitoData">
 <meta property="og:title" content="Näin luet · AitoData">
-<meta property="og:description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, puuttuva tieto ja lähteen kunto.">
+<meta property="og:description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, ketjut, puuttuva tieto ja lähteen kunto.">
 <meta property="og:url" content="https://aitodata.fi/nain-luet/">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:image" content="https://aitodata.fi/assets/og-image.png">
@@ -22,10 +22,10 @@
 <meta property="og:image:alt" content="AitoData: julkinen tieto lähteineen">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Näin luet · AitoData">
-<meta name="twitter:description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, puuttuva tieto ja lähteen kunto.">
+<meta name="twitter:description" content="Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, ketjut, puuttuva tieto ja lähteen kunto.">
 <meta name="twitter:image" content="https://aitodata.fi/assets/og-image.png">
 <meta name="twitter:image:alt" content="AitoData: julkinen tieto lähteineen">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Näin luet · AitoData","description":"Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, puuttuva tieto ja lähteen kunto.","url":"https://aitodata.fi/nain-luet/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/","description":"Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse."}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Näin luet · AitoData","description":"Lukuohje osastoittain: vaalituki, puoluerahoitus, löydöt/hankinta, ketjut, puuttuva tieto ja lähteen kunto.","url":"https://aitodata.fi/nain-luet/","inLanguage":"fi-FI","image":"https://aitodata.fi/assets/og-image.png","isPartOf":{"@type":"WebSite","name":"AitoData","url":"https://aitodata.fi/","description":"Julkinen tieto lähteineen: päätökset, hankinnat, rahoitus ja puuttuva data. Faktat tarkistettavissa. Emme tuomitse."}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -175,6 +175,7 @@ html.no-js .dept-pills{display:none}
     <button type="button" role="tab" id="tab-vaalituki" aria-controls="panel-vaalituki" data-dept="vaalituki" class="is-on" aria-selected="true">Vaalituki</button>
     <button type="button" role="tab" id="tab-puolue" aria-controls="panel-puolue" data-dept="puolue" aria-selected="false">Puoluerahoitus</button>
     <button type="button" role="tab" id="tab-loydot" aria-controls="panel-loydot" data-dept="loydot" aria-selected="false">Löydöt / hankinta</button>
+    <button type="button" role="tab" id="tab-ketjut" aria-controls="panel-ketjut" data-dept="ketjut" aria-selected="false">Ketjut</button>
     <button type="button" role="tab" id="tab-puuttuva" aria-controls="panel-puuttuva" data-dept="puuttuva" aria-selected="false">Puuttuva</button>
     <button type="button" role="tab" id="tab-toimiiko" aria-controls="panel-toimiiko" data-dept="toimiiko" aria-selected="false">Toimiiko</button>
   </div>
@@ -240,7 +241,6 @@ html.no-js .dept-pills{display:none}
       <p>Hankinta-kortti hyllyltä. Sama rakenne kuin muilla Löydöillä.</p>
       <a class="cta" href="../sivut/loydot/eurajoki-monitoimihalli/">Avaa esimerkki →</a>
       &nbsp; <a href="../sivut/loydot/">Löydöt-lista</a>
-      &nbsp; <a href="../sivut/ketjut/">Ketjut (ostaja → yritys → tuki)</a>
       &nbsp; <a href="../sivut/loydot/hilma-outlier-2021084940/">Hilma-poikkeama (CPV)</a>
     </div>
     <div class="glossary">
@@ -248,6 +248,31 @@ html.no-js .dept-pills{display:none}
       <p><strong>CPV</strong>: hankintojen tuoteluokka. Samankaltaiset hankinnat ryhmitellään vertailua varten.</p>
       <p><strong>n</strong>: montako muuta ilmoitusta samasta CPV-ryhmästä laskettiin mukaan. Pienempi n → karkeampi vertailu.</p>
       <p><strong>× mediaaniin</strong>: kuinka monta kertaa ilmoituksen arvo on suurempi kuin ryhmän mediaani. Merkki tutkia, ei tuomio.</p>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="panel-ketjut" aria-labelledby="tab-ketjut" data-dept="ketjut" hidden>
+    <h2>Ketjut</h2>
+    <p class="blurb">Sama yrityksen Y-tunnus kahdessa julkisessa lähteessä: julkinen ostaja maksaa yritykselle, ja yritys tukee ehdokasta. Emme arvaa yhteyttä nimistä.</p>
+    <ul class="rules">
+      <li>Lue vasemmalta oikealle: <strong>ostaja → yritys → ehdokas</strong></li>
+      <li>Liitos on Y-tunnus, ei sama sukunimi tai logo</li>
+      <li>Badge kertoo tyypin: <strong>Hilma ja vaalituki</strong> tai <strong>Ostolaskut ja vaalituki</strong></li>
+      <li>Ketju ei ole syyte. Avaa Hilma / YTJ / ehdokaskortti ja tarkista itse</li>
+    </ul>
+    <div class="example">
+      <p class="ex-k">Esimerkki</p>
+      <h3>Wihuri Oy · ketjusivu</h3>
+      <p>Hilma-ostajat, Y-tunnus ja vaalituki samalla rivillä. Hyllyllä lisää saman rakenteen ketjuja.</p>
+      <a class="cta" href="../sivut/ketjut/wihuri-oy/">Avaa esimerkki →</a>
+      &nbsp; <a href="../sivut/ketjut/">Ketjut-hylly</a>
+      &nbsp; <a href="../rahavirrat/">Rahavirrat</a>
+    </div>
+    <div class="glossary">
+      <h3>Sanasto (ketjut)</h3>
+      <p><strong>Y-tunnus</strong>: yrityksen tunniste. Sama koodi Hilmassa (voittaja) ja vaalituessa (tukija) on ketjun ydin.</p>
+      <p><strong>Ilmoituksen nro</strong>: Hilma-koodi (esim. 2026-059127). Hae Jälki-ilmoituksista, ei vain hankintailmoituksista.</p>
+      <p><strong>Vaalituki</strong>: ilmoitettu tuki ehdokkaalle. Linkki avaa Rahavirrat-kortin.</p>
     </div>
   </section>
 
@@ -321,7 +346,7 @@ html.no-js .dept-pills{display:none}
 (function () {
   var pills = document.querySelectorAll(".dept-pills button");
   var panels = document.querySelectorAll(".panel");
-  var valid = { vaalituki:1, puolue:1, loydot:1, puuttuva:1, toimiiko:1 };
+  var valid = { vaalituki:1, puolue:1, loydot:1, ketjut:1, puuttuva:1, toimiiko:1 };
 
   function show(dept) {
     if (!valid[dept]) dept = "vaalituki";
