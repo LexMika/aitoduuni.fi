@@ -4,40 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Live-proto: julkinen ostaja, yritys ja vaalituki samalla Y-tunnuksella. Rekisteritiedot vierekkäin.">
-<title>Ketjut · live-proto · AitoData</title>
+<meta name="description" content="Julkinen ostaja, yritys ja vaalituki samalla Y-tunnuksella. Rekisteritiedot vierekkäin.">
+<title>Ketjut · AitoData</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20261030k">
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030m">
+<link rel="stylesheet" href="../../assets/site.css?v=20261103m">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261103m">
 <link rel="icon" href="../../assets/favicon.ico" sizes="any">
 <meta name="theme-color" content="#020617">
 <style>
-.banner-proto{background:#713f12;color:#fde68a;text-align:center;font-size:.88rem;font-weight:600;padding:.5rem 1rem}
+
 .chain{border:1px solid var(--edge);border-radius:1rem;background:var(--card);padding:1.15rem 1.15rem 1rem;margin:0 0 1rem}
 .chain-head{display:grid;grid-template-columns:auto 1fr auto;gap:.85rem;align-items:start;margin-bottom:1rem}
 .num{width:2rem;height:2rem;border-radius:999px;display:grid;place-items:center;font-size:.85rem;font-weight:700;background:rgba(148,163,184,.12);color:#cbd5e1}
 .titles h2{margin:0;font-size:1.2rem;letter-spacing:-.02em}
 .y{margin:.25rem 0 0;color:var(--muted);font-size:.9rem}
 .y code{color:#e2e8f0;font-size:.88rem}
+.badge{display:inline-block;font-size:.72rem;font-weight:600;color:#fde68a;background:rgba(113,63,18,.55);border:1px solid rgba(253,230,138,.25);border-radius:.4rem;padding:.1rem .4rem;margin-left:.25rem}
 .totals{display:flex;gap:1rem;text-align:right}
 .totals div{display:flex;flex-direction:column;gap:.15rem;min-width:7rem}
 .totals span{font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .totals strong{font-size:.98rem;font-variant-numeric:tabular-nums}
 .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:.55rem;align-items:stretch;margin-bottom:.75rem}
-.node{border-radius:.85rem;padding:.85rem .9rem;border:1px solid var(--edge);background:rgba(2,6,23,.45);min-height:5rem;display:flex;flex-direction:column;justify-content:center;gap:.2rem}
-.node .role{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
-.node strong{font-size:.98rem;line-height:1.25;color:#fff}
-.node em{font-style:normal;color:var(--muted);font-size:.82rem}
-.node.buyer{border-color:rgba(96,165,250,.35)}.node.buyer .role{color:var(--blue-hot)}
-.node.org{border-color:rgba(251,191,36,.4);background:rgba(251,191,36,.07)}.node.org .role{color:#fbbf24}
-.node.cand{border-color:rgba(167,139,250,.4)}.node.cand .role{color:#c4b5fd}
+a.node{
+  border-radius:.85rem;padding:.85rem .9rem;border:1px solid var(--edge);background:rgba(2,6,23,.45);
+  min-height:5rem;display:flex;flex-direction:column;justify-content:center;gap:.2rem;
+  text-decoration:none;color:inherit;transition:border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+a.node:hover,a.node:focus-visible{
+  border-color:rgba(96,165,250,.55);background:rgba(37,99,235,.12);
+  box-shadow:0 0 0 1px rgba(96,165,250,.25);outline:none;
+}
+a.node .role{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+a.node strong{font-size:.98rem;line-height:1.25;color:#fff}
+a.node em{font-style:normal;color:var(--muted);font-size:.82rem}
+a.node .tap{font-size:.75rem;font-weight:600;color:#93c5fd;margin-top:.2rem}
+.copy-row{margin:.45rem 0 0;font-size:.82rem;color:#94a3b8}
+.copy-row code{color:#e2e8f0;font-size:.8rem;user-select:all}
+.cand-links a{color:#93c5fd;font-weight:600}
+.cand-links a:hover{color:#bfdbfe}
+a.node.buyer{border-color:rgba(96,165,250,.35)}
+a.node.buyer .role{color:var(--blue-hot)}
+a.node.org{border-color:rgba(251,191,36,.4);background:rgba(251,191,36,.07)}
+a.node.org .role{color:#fbbf24}
+a.node.org:hover,a.node.org:focus-visible{
+  border-color:rgba(251,191,36,.7);background:rgba(251,191,36,.14);
+  box-shadow:0 0 0 1px rgba(251,191,36,.3);
+}
+a.node.cand{border-color:rgba(167,139,250,.4)}
+a.node.cand .role{color:#c4b5fd}
+a.node.cand:hover,a.node.cand:focus-visible{
+  border-color:rgba(167,139,250,.7);background:rgba(167,139,250,.12);
+  box-shadow:0 0 0 1px rgba(167,139,250,.3);
+}
+a.node.cand .tap{color:#c4b5fd}
 .arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;color:#64748b;min-width:4.8rem;text-align:center}
 .arrow .amt{font-size:.8rem;font-weight:700;color:#e2e8f0;font-variant-numeric:tabular-nums;white-space:nowrap}
 .arrow .lbl{font-size:.65rem;text-transform:uppercase;letter-spacing:.04em}
 .arrow.vaali .amt{color:#ddd6fe}
-.chain-note{margin:.2rem 0 .7rem;padding:.65rem .8rem;border-radius:.65rem;border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.08);color:#fde68a;font-size:.9rem}
+.chain-kohde{margin:.15rem 0 .85rem;padding:0;border:0;background:transparent;color:var(--muted);font-size:.9rem;line-height:1.35}
+.chain-kohde .lbl{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;font-weight:600;color:#64748b;margin-bottom:.2rem}
+.chain-kohde .val{color:#cbd5e1}
 details{border-top:1px solid var(--edge);padding-top:.55rem}
 summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem}
@@ -47,6 +75,12 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 .money strong{font-variant-numeric:tabular-nums;white-space:nowrap;color:#f1f5f9}
 .meta,.sources{margin:.55rem 0 0;font-size:.8rem;color:#64748b}
 .sources a{color:var(--blue-hot)}
+.deep-cta{
+  margin:.9rem 0 0;padding:.7rem .85rem;border-radius:.65rem;
+  border:1px dashed rgba(148,163,184,.35);background:rgba(2,6,23,.35);font-size:.92rem;
+}
+.deep-cta a{font-weight:700;color:#93c5fd}
+.deep-cta .hint{display:block;margin-top:.3rem;color:var(--muted);font-size:.8rem}
 .method{margin:1.5rem 0 2rem}
 @media (max-width:820px){
   .flow{grid-template-columns:1fr}
@@ -55,14 +89,13 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
   .totals{grid-column:1/-1;justify-content:flex-start;text-align:left}
   .detail-grid{grid-template-columns:1fr}
 }
+
 </style>
 </head>
 <body>
-<div class="banner-proto">Piilojulkaisu · 9 ketjua · ei navissa · ei hakukoneisiin · jaa vain linkillä · 30.10.2026</div>
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../">Aito<span>Data</span></a>
-<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
+<nav class="site-nav" aria-label="Päävalikko">
     <a href="../../rahavirrat/">Rahavirrat</a>
     <a href="../peito/">Puuttuva tieto</a>
     <a href="../toimiiko-lahde/">Toimiiko lähde?</a>
@@ -75,15 +108,22 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 <header class="page-head">
 <p class="section-label">Ketjut</p>
 <h1>Ostaja, yritys, vaalituki</h1>
-<p class="lead">Sama yrityksen Y-tunnus kahdessa julkisessa lähteessä: julkinen ostaja maksaa yritykselle, ja yritys tukee ehdokasta. Ei arvailua nimistä.</p>
+<p class="lead">Sama yrityksen Y-tunnus kahdessa julkisessa lähteessä: julkinen ostaja maksaa yritykselle, ja yritys tukee ehdokasta. Emme arvaa yhteyttä nimistä.</p>
 </header>
 
 <div class="callout">
   <strong>Näin luet</strong>
   <ul>
-    <li>Vasemmalla ostaja, keskellä yritys, oikealla ehdokas.</li>
-    <li>Eurot ovat rekisterisummia tältä otokselta. Ne eivät todista motiivia.</li>
-    <li>Avaa “Ostajat, tuet ja lähteet” jos haluat rivit ja linkit.</li>
+    <li>Vasemmalla ostaja, keskellä yritys, oikealla ehdokas. Laatikoista pääsee lähteeseen tai ehdokkaan sivulle.</li>
+    <li><strong>Ostajat, tuet ja lähteet</strong> avaa rivit. Sieltä pääsee myös tarkempaan ketjusivuun.</li>
+    <li><strong>Hilma ja vaalituki</strong>: sama Y hankinnan voittajana ja vaalirahoituksen tukijana. <strong>Ostolaskut ja vaalituki</strong>: sama Y ostolaskuissa ja vaalituessa.</li>
+    <li>Euromäärät tulevat rekistereistä. Ne eivät kerro, miksi tuki annettiin.</li>
+  </ul>
+  <p style="margin:.85rem 0 0"><strong>Näin tarkistat</strong></p>
+  <ul>
+    <li>Kopioi Y-tunnus ja hae se YTJ:stä.</li>
+    <li>Kopioi ilmoituksen numero (esim. 2026-059127). Hilmassa ruksi <em>Jälki-ilmoitukset</em> ennen hakua.</li>
+    <li>Avaa ehdokkaan sivu ja katso, näkyykö tukija isommassa kuvassa.</li>
   </ul>
 </div>
 
@@ -92,124 +132,983 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
   <header class="chain-head">
     <span class="num" aria-hidden="true">1</span>
     <div class="titles">
-      <h2>Jukkola systems Oy</h2>
-      <p class="y">Y-tunnus <code>2091555-8</code></p>
+      <h2>Wihuri Oy</h2>
+      <p class="y">Y-tunnus <code>2557856-2</code> · <span class="badge">Hilma ja vaalituki</span></p>
     </div>
     <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>112 673 €</strong></div>
-      <div><span>Vaalituki</span><strong>5 041 €</strong></div>
+      <div><span>Hilma-ilmoituksia</span><strong>7 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>21 000 €</strong></div>
     </div>
   </header>
-  <div class="flow" aria-label="Ketju Jukkola systems Oy">
-    <div class="node buyer">
+  <div class="flow" aria-label="Ketju Wihuri Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
       <span class="role">Julkinen ostaja</span>
-      <strong>Stara-liikelaitos, Helsinki</strong>
-      <em>+1 muuta ostajaa</em>
-    </div>
+      <strong>Haminan kaupunki</strong>
+      <em>+5 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
     <div class="arrow" aria-hidden="true">
-      <span class="amt">112 673 €</span>
-      <span class="lbl">hankinta →</span>
+      <span class="amt">7 kpl</span>
+      <span class="lbl">voittaja →</span>
     </div>
-    <div class="node org">
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2557856-2">
       <span class="role">Yritys</span>
-      <strong>Jukkola systems Oy</strong>
-      <em>Y 2091555-8</em>
-    </div>
+      <strong>Wihuri Oy</strong>
+      <em>Y 2557856-2</em>
+      <span class="tap">YTJ →</span>
+    </a>
     <div class="arrow vaali" aria-hidden="true">
-      <span class="amt">5 041 €</span>
+      <span class="amt">21 000 €</span>
       <span class="lbl">vaalituki →</span>
     </div>
-    <div class="node cand">
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jetta-laakso/index.html">
       <span class="role">Ehdokas</span>
-      <strong>Janne Jukkola</strong>
-      <em>KOK</em>
-    </div>
+      <strong>Jetta Laakso</strong>
+      <em>SDP</em>
+      <em>+2 muuta</em>
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
   </div>
-  <p class="chain-note">Huom: ehdokkaan sukunimi esiintyy yrityksen nimessä. Tämä sivu ei väitä omistussuhdetta; tarkista tarvittaessa PRH:sta.</p>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Monitoimityökoneen hankinta katujen kunnossapitoon</span></p>
   <details>
     <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2557856-2</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-017731, 2024-018218, 2026-057002</code> · +4. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
     <div class="detail-grid">
       <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>67 864 €</strong></li><li><span>Työllisyys, kehittämis- ja hallintokeskus</span><strong>44 809 €</strong></li></ul>
-        <p class="meta">11 tiliöintiriviä · 2 ostajaa · jaksot 2023–2024</p>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Vantaan kaupunki · Monitoimityökoneen hankinta katujen kunnossapitoon<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-017731</code></span></span><strong>243 000 €</strong></li><li><span>Espoon kaupunki · Kunnossapitokaluston lisälaitteiden hankinta<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-018218</code></span></span><strong>1,8 M€</strong></li><li><span>Loviisan kaupunki · Kunnossapidon monitoimikone<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-057002</code></span></span><strong>voittaja</strong></li><li><span>Helsingin kaupunki · Elintarvikkeiden tukkuostot<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-059127</code></span></span><strong>13,0 M€</strong></li><li><span>Haminan kaupunki · Työkonehankinta, ympäristönhoitokone<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-060792</code></span></span><strong>voittaja</strong></li></ul><p class="meta">7 ilmoitusta · 6 ostajaa · top: Haminan kaupunki</p>
       </div>
       <div>
         <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Janne Jukkola · Eduskuntavaalit 2023 · KOK</span><strong>3 470 €</strong></li><li><span>Janne Jukkola · Aluevaalit 2022 · KOK</span><strong>1 571 €</strong></li></ul>
-        <p class="meta">2 tukiriviä · 1 ehdokasta</p>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jetta-laakso/index.html">Jetta Laakso</a><strong></strong></li><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-petri-honkonen/index.html">Petri Honkonen</a><strong></strong></li><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-alexander-stubb/index.html">Alexander Stubb</a><strong></strong></li></ul>
+        <p class="meta">3 ehdokasta · vaalit: Aluevaalit 2025, Europarlamenttivaalit 2024, Kuntavaalit 2025, Presidentinvaali 2024 · yht. 21 000 €</p>
       </div>
     </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
+    <p class="deep-cta">
+      <a href="wihuri-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
     </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
   </details>
 </article>
+
 <article class="chain" id="k2">
   <header class="chain-head">
     <span class="num" aria-hidden="true">2</span>
     <div class="titles">
-      <h2>Seepsula Oy</h2>
-      <p class="y">Y-tunnus <code>0687708-1</code></p>
+      <h2>United Imaginations Oy</h2>
+      <p class="y">Y-tunnus <code>3261019-6</code> · <span class="badge">Hilma ja vaalituki</span></p>
     </div>
     <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>1,6 M€</strong></div>
+      <div><span>Hilma-ilmoituksia</span><strong>2 kpl</strong></div>
       <div><span>Vaalituki</span><strong>10 000 €</strong></div>
     </div>
   </header>
-  <div class="flow" aria-label="Ketju Seepsula Oy">
-    <div class="node buyer">
+  <div class="flow" aria-label="Ketju United Imaginations Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
       <span class="role">Julkinen ostaja</span>
-      <strong>Stara-liikelaitos, Helsinki</strong>
+      <strong>Business Finland Oy</strong>
       <em>+1 muuta ostajaa</em>
-    </div>
+      <span class="tap">Hilma →</span>
+    </a>
     <div class="arrow" aria-hidden="true">
-      <span class="amt">1,6 M€</span>
-      <span class="lbl">hankinta →</span>
+      <span class="amt">2 kpl</span>
+      <span class="lbl">voittaja →</span>
     </div>
-    <div class="node org">
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 3261019-6">
       <span class="role">Yritys</span>
-      <strong>Seepsula Oy</strong>
-      <em>Y 0687708-1</em>
-    </div>
+      <strong>United Imaginations Oy</strong>
+      <em>Y 3261019-6</em>
+      <span class="tap">YTJ →</span>
+    </a>
     <div class="arrow vaali" aria-hidden="true">
       <span class="amt">10 000 €</span>
       <span class="lbl">vaalituki →</span>
     </div>
-    <div class="node cand">
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-pekka-haavisto/index.html">
       <span class="role">Ehdokas</span>
-      <strong>Pekka Toveri</strong>
-      <em>KOK</em>
-    </div>
+      <strong>Pekka Haavisto</strong>
+      <em>E10</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
   </div>
-  
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Luova markkinointitoimisto</span></p>
   <details>
     <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>3261019-6</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-016783, 2026-057954</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
     <div class="detail-grid">
       <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>1,6 M€</strong></li><li><span>Rikosseuraamuslaitos</span><strong>6 405 €</strong></li></ul>
-        <p class="meta">773 tiliöintiriviä · 2 ostajaa · jaksot 2023–2024</p>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Business Finland Oy · Luova markkinointitoimisto<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016783</code></span></span><strong>voittaja</strong></li><li><span>Seinäjoen kaupunki · Jälki-ilmoitus: 26062 Strategiset mainostoimistopalvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-057954</code></span></span><strong>200 000 €</strong></li></ul><p class="meta">2 ilmoitusta · 2 ostajaa · top: Business Finland Oy</p>
       </div>
       <div>
         <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Pekka Toveri · Europarlamenttivaalit 2024 · KOK</span><strong>10 000 €</strong></li></ul>
-        <p class="meta">1 tukiriviä · 1 ehdokasta</p>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-pekka-haavisto/index.html">Pekka Haavisto</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Presidentinvaali 2024 · yht. 10 000 €</p>
       </div>
     </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
+    <p class="deep-cta">
+      <a href="united-imaginations-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
     </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
   </details>
 </article>
+
 <article class="chain" id="k3">
   <header class="chain-head">
     <span class="num" aria-hidden="true">3</span>
     <div class="titles">
+      <h2>Rakennus K. Karhu Oy</h2>
+      <p class="y">Y-tunnus <code>1714948-5</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>2 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>5 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Rakennus K. Karhu Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Seinäjoen seurakunta</strong>
+      <em>+1 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">2 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 1714948-5">
+      <span class="role">Yritys</span>
+      <strong>Rakennus K. Karhu Oy</strong>
+      <em>Y 1714948-5</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">5 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-pasi-kivisaari/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Pasi Kivisaari</strong>
+      <em>KESK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">RAKENNUSURAKKA / LVI-URAKKA / SÄHKÖ-URAKKA / Seinäjoen seurakuntakeskus VAIHE 3 / PERUSKORJAUS ja MUUTOS.</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>1714948-5</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-016284, 2026-057859</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Seinäjoen seurakunta · RAKENNUSURAKKA / LVI-URAKKA / SÄHKÖ-URAKKA / Seinäjoen seurakuntakeskus VAIHE 3 / PERUSKORJAUS ja MUUTOS.<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016284</code></span></span><strong>voittaja</strong></li><li><span>Alavuden kaupunki · Vesitornin peruskorjaus, Alavus<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-057859</code></span></span><strong>334 000 €</strong></li></ul><p class="meta">2 ilmoitusta · 2 ostajaa · top: Seinäjoen seurakunta</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-pasi-kivisaari/index.html">Pasi Kivisaari</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Eduskuntavaalit 2023 · yht. 5 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="rakennus-k-karhu-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k4">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">4</span>
+    <div class="titles">
+      <h2>Maanrakennus E. Majava Oy</h2>
+      <p class="y">Y-tunnus <code>0504916-1</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>4 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Maanrakennus E. Majava Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Raahen kaupunki</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0504916-1">
+      <span class="role">Yritys</span>
+      <strong>Maanrakennus E. Majava Oy</strong>
+      <em>Y 0504916-1</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">4 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-hanna-leena-mattila/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Hanna-Leena Mattila</strong>
+      <em>KESK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Pattasten koulukeskuksen yläkoulurakennuksen purku-urakka</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0504916-1</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2026-057729</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Raahen kaupunki · Pattasten koulukeskuksen yläkoulurakennuksen purku-urakka<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-057729</code></span></span><strong>286 480 €</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Raahen kaupunki</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-hanna-leena-mattila/index.html">Hanna-Leena Mattila</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Eduskuntavaalit 2023 · yht. 4 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="maanrakennus-e-majava-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k5">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">5</span>
+    <div class="titles">
+      <h2>Cimson Koulutuspalvelut Oy</h2>
+      <p class="y">Y-tunnus <code>2189108-4</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>4 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>3 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Cimson Koulutuspalvelut Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Kansaneläkelaitos</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">4 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2189108-4">
+      <span class="role">Yritys</span>
+      <strong>Cimson Koulutuspalvelut Oy</strong>
+      <em>Y 2189108-4</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">3 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jouni-suonpaa/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Jouni Suonpää</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Työkokeilu ja työhönvalmennus, Etelä-Suomen yhteistyöalue</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2189108-4</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-016454, 2024-016456, 2024-016505</code> · +1. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Kansaneläkelaitos · Työkokeilu ja työhönvalmennus, Etelä-Suomen yhteistyöalue<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016454</code></span></span><strong>voittaja</strong></li><li><span>Kansaneläkelaitos · Työkokeilu ja työhönvalmennus, Itä-Suomen yhteistyöalue<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016456</code></span></span><strong>voittaja</strong></li><li><span>Kansaneläkelaitos · Työkokeilu ja työhönvalmennus, Pohjois-Suomen yhteistyöalue<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016505</code></span></span><strong>voittaja</strong></li><li><span>Kansaneläkelaitos · Työkokeilu ja työhönvalmennus, Sisä-Suomen yhteistyöalue<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016508</code></span></span><strong>voittaja</strong></li></ul><p class="meta">4 ilmoitusta · 1 ostajaa · top: Kansaneläkelaitos</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jouni-suonpaa/index.html">Jouni Suonpää</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Aluevaalit 2025, Kuntavaalit 2025 · yht. 3 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="cimson-koulutuspalvelut-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k6">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">6</span>
+    <div class="titles">
+      <h2>Lappset Group Oy</h2>
+      <p class="y">Y-tunnus <code>9126694-6</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>3 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Lappset Group Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Salon kaupunki</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 9126694-6">
+      <span class="role">Yritys</span>
+      <strong>Lappset Group Oy</strong>
+      <em>Y 9126694-6</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">3 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-henna-virkkunen/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Henna Virkkunen</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Puistojen ja kiinteistöjen pihojen ulkoleikkivälineiden hankinta</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>9126694-6</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2026-058205</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Salon kaupunki · Puistojen ja kiinteistöjen pihojen ulkoleikkivälineiden hankinta<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-058205</code></span></span><strong>1,1 M€</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Salon kaupunki</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-henna-virkkunen/index.html">Henna Virkkunen</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Europarlamenttivaalit 2024 · yht. 3 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="lappset-group-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k7">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">7</span>
+    <div class="titles">
+      <h2>Härmän Kuntoutus Oy</h2>
+      <p class="y">Y-tunnus <code>2005785-6</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>9 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>2 980 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Härmän Kuntoutus Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Folkpensionsanstalten</strong>
+      <em>+1 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">9 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2005785-6">
+      <span class="role">Yritys</span>
+      <strong>Härmän Kuntoutus Oy</strong>
+      <em>Y 2005785-6</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">2 980 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-janne-sankelo/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Janne Sankelo</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Anpassningsträning för barn med adhd, familjekurser för barn, tjänster på svenska</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2005785-6</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-014916, 2024-014924, 2024-014958</code> · +6. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Folkpensionsanstalten · Anpassningsträning för barn med adhd, familjekurser för barn, tjänster på svenska<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-014916</code></span></span><strong>voittaja</strong></li><li><span>Folkpensionsanstalten · Anpassningsträning för barn med med lindrigt eller medelsvårt autismspektrumtillstånd, familjekurser för barn,  tjänster på svenska<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-014924</code></span></span><strong>voittaja</strong></li><li><span>Folkpensionsanstalten · Oras-rehabiliteringskurser för vuxna<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-014958</code></span></span><strong>voittaja</strong></li><li><span>Folkpensionsanstalten · Silmu-rehabiliteringskurser för vuxna<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-014959</code></span></span><strong>voittaja</strong></li><li><span>Folkpensionsanstalten · Parkurs för närståendevårdare, tjänster på svenska<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-015800</code></span></span><strong>voittaja</strong></li></ul><p class="meta">9 ilmoitusta · 2 ostajaa · top: Folkpensionsanstalten</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-janne-sankelo/index.html">Janne Sankelo</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Eduskuntavaalit 2023 · yht. 2 980 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="harman-kuntoutus-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k8">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">8</span>
+    <div class="titles">
+      <h2>ST-Autokeskus Oy</h2>
+      <p class="y">Y-tunnus <code>2499620-1</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>2 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju ST-Autokeskus Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Sansia Oy</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2499620-1">
+      <span class="role">Yritys</span>
+      <strong>ST-Autokeskus Oy</strong>
+      <em>Y 2499620-1</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">2 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-pauli-kiuru/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Pauli Kiuru</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Käytetyt ajoneuvot Ammattiopisto Spesia Oy:lle</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2499620-1</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-015274</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Sansia Oy · Käytetyt ajoneuvot Ammattiopisto Spesia Oy:lle<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-015274</code></span></span><strong>voittaja</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Sansia Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-pauli-kiuru/index.html">Pauli Kiuru</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Eduskuntavaalit 2023 · yht. 2 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="st-autokeskus-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k9">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">9</span>
+    <div class="titles">
+      <h2>Porin Teollisuusputki Oy</h2>
+      <p class="y">Y-tunnus <code>0957128-0</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 900 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Porin Teollisuusputki Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Tampereen Energia Oy</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0957128-0">
+      <span class="role">Yritys</span>
+      <strong>Porin Teollisuusputki Oy</strong>
+      <em>Y 0957128-0</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 900 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-aleksi-olander/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Aleksi Olander</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">LLT45 Putkistourakka</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0957128-0</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-018185</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Tampereen Energia Oy · LLT45 Putkistourakka<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-018185</code></span></span><strong>1,6 M€</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Tampereen Energia Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-aleksi-olander/index.html">Aleksi Olander</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 1 900 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="porin-teollisuusputki-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k10">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">10</span>
+    <div class="titles">
+      <h2>Tukkutalo Heinonen Oy</h2>
+      <p class="y">Y-tunnus <code>0870891-9</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 690 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Tukkutalo Heinonen Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Etelä-Pohjanmaan hyvinvointialue</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0870891-9">
+      <span class="role">Yritys</span>
+      <strong>Tukkutalo Heinonen Oy</strong>
+      <em>Y 0870891-9</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 690 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-kimmo-heinonen/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Kimmo Heinonen</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Perunoiden hankinta kaudelle 1.12.2024 -30.11.2025</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0870891-9</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-018158</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Etelä-Pohjanmaan hyvinvointialue · Perunoiden hankinta kaudelle 1.12.2024 -30.11.2025<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-018158</code></span></span><strong>300 000 €</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Etelä-Pohjanmaan hyvinvointialue</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-kimmo-heinonen/index.html">Kimmo Heinonen</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 1 690 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="tukkutalo-heinonen-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k11">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">11</span>
+    <div class="titles">
+      <h2>TKU-Rakennus Oy</h2>
+      <p class="y">Y-tunnus <code>2375085-9</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 610 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju TKU-Rakennus Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Turun kaupunki</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2375085-9">
+      <span class="role">Yritys</span>
+      <strong>TKU-Rakennus Oy</strong>
+      <em>Y 2375085-9</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 610 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-petteri-orpo/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Petteri Orpo</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Lisätyöt, Artukaisten liikuntakeskus</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2375085-9</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2026-059009</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Turun kaupunki · Lisätyöt, Artukaisten liikuntakeskus<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-059009</code></span></span><strong>611 974 €</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: Turun kaupunki</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-petteri-orpo/index.html">Petteri Orpo</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Eduskuntavaalit 2023 · yht. 1 610 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="tku-rakennus-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k12">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">12</span>
+    <div class="titles">
+      <h2>Netox Oy</h2>
+      <p class="y">Y-tunnus <code>0721360-7</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>4 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 580 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Netox Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Certia Oy</strong>
+      <em>+3 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">4 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0721360-7">
+      <span class="role">Yritys</span>
+      <strong>Netox Oy</strong>
+      <em>Y 0721360-7</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 580 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Jarno Limnell</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Certian ICT-palvelut</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0721360-7</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-016775, 2024-016858, 2024-017358</code> · +1. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Certia Oy · Certian ICT-palvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016775</code></span></span><strong>voittaja</strong></li><li><span>Oy Apotti Ab · Perustietotekniikan kokonaispalvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016858</code></span></span><strong>2,8 M€</strong></li><li><span>Senaatti-kiinteistöt · Perustietotekniikkapalvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-017358</code></span></span><strong>7,6 M€</strong></li><li><span>Helsingin Asumisoikeus Oy · Digitaalinen työympäristö<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-059356</code></span></span><strong>1,0 M€</strong></li></ul><p class="meta">4 ilmoitusta · 4 ostajaa · top: Certia Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">Jarno Limnell</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 1 580 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="netox-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k13">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">13</span>
+    <div class="titles">
+      <h2>6g Nordic Oy</h2>
+      <p class="y">Y-tunnus <code>2900808-1</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>1 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 470 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju 6g Nordic Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>2M-IT Oy</strong>
+      
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2900808-1">
+      <span class="role">Yritys</span>
+      <strong>6g Nordic Oy</strong>
+      <em>Y 2900808-1</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 470 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Jarno Limnell</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Juniper-konesalikytkimet</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2900808-1</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2025-018846</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>2M-IT Oy · Juniper-konesalikytkimet<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2025-018846</code></span></span><strong>voittaja</strong></li></ul><p class="meta">1 ilmoitusta · 1 ostajaa · top: 2M-IT Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">Jarno Limnell</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 1 470 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="6g-nordic-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k14">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">14</span>
+    <div class="titles">
+      <h2>Cinia Oy</h2>
+      <p class="y">Y-tunnus <code>1465341-6</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>4 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>1 185 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Cinia Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Fintraffic Raide Oy</strong>
+      <em>+3 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">4 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 1465341-6">
+      <span class="role">Yritys</span>
+      <strong>Cinia Oy</strong>
+      <em>Y 1465341-6</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">1 185 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Jarno Limnell</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Kapasiteetinhallinnan kehitys 2024-2028 (2029)</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>1465341-6</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-016597, 2024-017078, 2024-018105</code> · +1. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Fintraffic Raide Oy · Kapasiteetinhallinnan kehitys 2024-2028 (2029)<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-016597</code></span></span><strong>voittaja</strong></li><li><span>Puolustusvoimien logistiikkalaitos · Tietoliikennelaitteet ja palvelut 2024 – 2028 MKR (6215/2024)<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-017078</code></span></span><strong>4,0 M€</strong></li><li><span>Sisäministeriö · Pelastustoimen Kivijalka-järjestelmän asiantuntijapalvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-018105</code></span></span><strong>1,2 M€</strong></li><li><span>Turun yliopisto · Turun yliopisto - Kuituvuokraus<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-149865</code></span></span><strong>voittaja</strong></li></ul><p class="meta">4 ilmoitusta · 4 ostajaa · top: Fintraffic Raide Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">Jarno Limnell</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 1 185 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="cinia-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k15">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">15</span>
+    <div class="titles">
+      <h2>Insta Advance Oy</h2>
+      <p class="y">Y-tunnus <code>1597850-3</code> · <span class="badge">Hilma ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Hilma-ilmoituksia</span><strong>2 kpl</strong></div>
+      <div><span>Vaalituki</span><strong>980 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Insta Advance Oy">
+    <a class="node buyer" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer" title="Hae ilmoituksen numerolla (esim. 2026-059127). Ruksi Jälki-ilmoitukset, älä vain hankintailmoituksia.">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Teknologian tutkimuskeskus VTT Oy</strong>
+      <em>+1 muuta ostajaa</em>
+      <span class="tap">Hilma →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">2 kpl</span>
+      <span class="lbl">voittaja →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 1597850-3">
+      <span class="role">Yritys</span>
+      <strong>Insta Advance Oy</strong>
+      <em>Y 1597850-3</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">980 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Jarno Limnell</strong>
+      <em>KOK</em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  <p class="chain-kohde"><span class="lbl">Hankinnan kohde</span><span class="val">Tietosuojakonsultoinnin ja tietosuojavastaavan palvelut</span></p>
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>1597850-3</code></p>
+    <p class="copy-row">Ilmoituksen numero (kopioi Hilmaan): <code>2024-015608, 2026-058456</code>. Haussa ruksi <strong>Jälki-ilmoitukset</strong>.</p>
+    <div class="detail-grid">
+      <div>
+        <h3>Hilma: ostaja → voittaja</h3>
+        <ul class="money"><li><span>Teknologian tutkimuskeskus VTT Oy · Tietosuojakonsultoinnin ja tietosuojavastaavan palvelut<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2024-015608</code></span></span><strong>voittaja</strong></li><li><span>Puolustusvoimien logistiikkalaitos · Safelink-salauslaitteiden hankinta<br><span class="meta" style="border:0;margin:0">ilmoituksen nro <code>2026-058456</code></span></span><strong>849 480 €</strong></li></ul><p class="meta">2 ilmoitusta · 2 ostajaa · top: Teknologian tutkimuskeskus VTT Oy</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-jarno-limnell/index.html">Jarno Limnell</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: Kuntavaalit 2025 · yht. 980 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="insta-advance-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k16">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">16</span>
+    <div class="titles">
       <h2>City-Air Oy</h2>
-      <p class="y">Y-tunnus <code>1045819-7</code></p>
+      <p class="y">Y-tunnus <code>1045819-7</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
     </div>
     <div class="totals" aria-label="Summat">
       <div><span>Ostot (Tutki 2023–24)</span><strong>2,9 M€</strong></div>
@@ -217,289 +1116,64 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
     </div>
   </header>
   <div class="flow" aria-label="Ketju City-Air Oy">
-    <div class="node buyer">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
       <span class="role">Julkinen ostaja</span>
       <strong>Stara-liikelaitos, Helsinki</strong>
       <em>+3 muuta ostajaa</em>
-    </div>
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
     <div class="arrow" aria-hidden="true">
       <span class="amt">2,9 M€</span>
       <span class="lbl">hankinta →</span>
     </div>
-    <div class="node org">
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 1045819-7">
       <span class="role">Yritys</span>
       <strong>City-Air Oy</strong>
       <em>Y 1045819-7</em>
-    </div>
+      <span class="tap">YTJ →</span>
+    </a>
     <div class="arrow vaali" aria-hidden="true">
       <span class="amt">6 000 €</span>
       <span class="lbl">vaalituki →</span>
     </div>
-    <div class="node cand">
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-marju-markkanen/index.html">
       <span class="role">Ehdokas</span>
       <strong>Marju Markkanen</strong>
-      <em>SDP</em>
-    </div>
+      <em></em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
   </div>
   
   <details>
     <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>1045819-7</code></p>
+    
     <div class="detail-grid">
       <div>
         <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>2,1 M€</strong></li><li><span>Sosiaali- Ja Terveystoimiala, Helsinki</span><strong>444 904 €</strong></li><li><span>Kaupunkiympäristön Toimiala, Helsinki</span><strong>272 791 €</strong></li></ul>
-        <p class="meta">356 tiliöintiriviä · 4 ostajaa · jaksot 2023–2024</p>
+        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>2,9 M€</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
       </div>
       <div>
         <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Marju Markkanen · Eduskuntavaalit 2023 · SDP</span><strong>6 000 €</strong></li></ul>
-        <p class="meta">1 tukiriviä · 1 ehdokasta</p>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-marju-markkanen/index.html">Marju Markkanen</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: — · yht. 6 000 €</p>
       </div>
     </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
+    <p class="deep-cta">
+      <a href="city-air-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
     </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
   </details>
 </article>
-<article class="chain" id="k4">
+
+<article class="chain" id="k17">
   <header class="chain-head">
-    <span class="num" aria-hidden="true">4</span>
-    <div class="titles">
-      <h2>Vilkmar Rakennus Oy</h2>
-      <p class="y">Y-tunnus <code>2539813-1</code></p>
-    </div>
-    <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>2,4 M€</strong></div>
-      <div><span>Vaalituki</span><strong>4 000 €</strong></div>
-    </div>
-  </header>
-  <div class="flow" aria-label="Ketju Vilkmar Rakennus Oy">
-    <div class="node buyer">
-      <span class="role">Julkinen ostaja</span>
-      <strong>Kaupunkiympäristön Toimiala, Helsinki</strong>
-      <em>pääostaja tällä jaksolla</em>
-    </div>
-    <div class="arrow" aria-hidden="true">
-      <span class="amt">2,4 M€</span>
-      <span class="lbl">hankinta →</span>
-    </div>
-    <div class="node org">
-      <span class="role">Yritys</span>
-      <strong>Vilkmar Rakennus Oy</strong>
-      <em>Y 2539813-1</em>
-    </div>
-    <div class="arrow vaali" aria-hidden="true">
-      <span class="amt">4 000 €</span>
-      <span class="lbl">vaalituki →</span>
-    </div>
-    <div class="node cand">
-      <span class="role">Ehdokas</span>
-      <strong>Marju Markkanen</strong>
-      <em>SDP</em>
-    </div>
-  </div>
-  
-  <details>
-    <summary>Ostajat, tuet ja lähteet</summary>
-    <div class="detail-grid">
-      <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Kaupunkiympäristön Toimiala, Helsinki</span><strong>2,4 M€</strong></li></ul>
-        <p class="meta">1058 tiliöintiriviä · 1 ostajaa · jaksot 2023–2024</p>
-      </div>
-      <div>
-        <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Marju Markkanen · Eduskuntavaalit 2023 · SDP</span><strong>4 000 €</strong></li></ul>
-        <p class="meta">1 tukiriviä · 1 ehdokasta</p>
-      </div>
-    </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
-    </p>
-  </details>
-</article>
-<article class="chain" id="k5">
-  <header class="chain-head">
-    <span class="num" aria-hidden="true">5</span>
-    <div class="titles">
-      <h2>KouMet Oy</h2>
-      <p class="y">Y-tunnus <code>2390024-7</code></p>
-    </div>
-    <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>1,4 M€</strong></div>
-      <div><span>Vaalituki</span><strong>5 854 €</strong></div>
-    </div>
-  </header>
-  <div class="flow" aria-label="Ketju KouMet Oy">
-    <div class="node buyer">
-      <span class="role">Julkinen ostaja</span>
-      <strong>Väylävirasto</strong>
-      <em>+2 muuta ostajaa</em>
-    </div>
-    <div class="arrow" aria-hidden="true">
-      <span class="amt">1,4 M€</span>
-      <span class="lbl">hankinta →</span>
-    </div>
-    <div class="node org">
-      <span class="role">Yritys</span>
-      <strong>KouMet Oy</strong>
-      <em>Y 2390024-7</em>
-    </div>
-    <div class="arrow vaali" aria-hidden="true">
-      <span class="amt">5 854 €</span>
-      <span class="lbl">vaalituki →</span>
-    </div>
-    <div class="node cand">
-      <span class="role">Ehdokas</span>
-      <strong>Petri Liljander</strong>
-      <em>KOK</em>
-    </div>
-  </div>
-  
-  <details>
-    <summary>Ostajat, tuet ja lähteet</summary>
-    <div class="detail-grid">
-      <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Väylävirasto</span><strong>1,3 M€</strong></li><li><span>Työllisyys, kehittämis- ja hallintokeskus</span><strong>127 505 €</strong></li><li><span>Maanmittauslaitos</span><strong>100 €</strong></li></ul>
-        <p class="meta">48 tiliöintiriviä · 3 ostajaa · jaksot 2023–2024</p>
-      </div>
-      <div>
-        <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Petri Liljander · Aluevaalit 2025 · KOK</span><strong>2 927 €</strong></li><li><span>Petri Liljander · Kuntavaalit 2025 · KOK</span><strong>2 927 €</strong></li></ul>
-        <p class="meta">2 tukiriviä · 1 ehdokasta</p>
-      </div>
-    </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
-    </p>
-  </details>
-</article>
-<article class="chain" id="k6">
-  <header class="chain-head">
-    <span class="num" aria-hidden="true">6</span>
-    <div class="titles">
-      <h2>Lappset Group Oy</h2>
-      <p class="y">Y-tunnus <code>9126694-6</code></p>
-    </div>
-    <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>1,6 M€</strong></div>
-      <div><span>Vaalituki</span><strong>3 000 €</strong></div>
-    </div>
-  </header>
-  <div class="flow" aria-label="Ketju Lappset Group Oy">
-    <div class="node buyer">
-      <span class="role">Julkinen ostaja</span>
-      <strong>Stara-liikelaitos, Helsinki</strong>
-      <em>+6 muuta ostajaa</em>
-    </div>
-    <div class="arrow" aria-hidden="true">
-      <span class="amt">1,6 M€</span>
-      <span class="lbl">hankinta →</span>
-    </div>
-    <div class="node org">
-      <span class="role">Yritys</span>
-      <strong>Lappset Group Oy</strong>
-      <em>Y 9126694-6</em>
-    </div>
-    <div class="arrow vaali" aria-hidden="true">
-      <span class="amt">3 000 €</span>
-      <span class="lbl">vaalituki →</span>
-    </div>
-    <div class="node cand">
-      <span class="role">Ehdokas</span>
-      <strong>Henna Virkkunen</strong>
-      <em>KOK</em>
-    </div>
-  </div>
-  
-  <details>
-    <summary>Ostajat, tuet ja lähteet</summary>
-    <div class="detail-grid">
-      <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>1,0 M€</strong></li><li><span>Kaupunkiympäristön Toimiala, Helsinki</span><strong>418 992 €</strong></li><li><span>Rikosseuraamuslaitos</span><strong>110 560 €</strong></li></ul>
-        <p class="meta">319 tiliöintiriviä · 7 ostajaa · jaksot 2023–2024</p>
-      </div>
-      <div>
-        <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Henna Virkkunen · Europarlamenttivaalit 2024 · KOK</span><strong>3 000 €</strong></li></ul>
-        <p class="meta">1 tukiriviä · 1 ehdokasta</p>
-      </div>
-    </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
-    </p>
-  </details>
-</article>
-<article class="chain" id="k7">
-  <header class="chain-head">
-    <span class="num" aria-hidden="true">7</span>
-    <div class="titles">
-      <h2>Cinia Oy</h2>
-      <p class="y">Y-tunnus <code>1465341-6</code></p>
-    </div>
-    <div class="totals" aria-label="Summat">
-      <div><span>Ostot (Tutki 2023–24)</span><strong>47,9 M€</strong></div>
-      <div><span>Vaalituki</span><strong>1 185 €</strong></div>
-    </div>
-  </header>
-  <div class="flow" aria-label="Ketju Cinia Oy">
-    <div class="node buyer">
-      <span class="role">Julkinen ostaja</span>
-      <strong>Hätäkeskuslaitos</strong>
-      <em>+14 muuta ostajaa</em>
-    </div>
-    <div class="arrow" aria-hidden="true">
-      <span class="amt">47,9 M€</span>
-      <span class="lbl">hankinta →</span>
-    </div>
-    <div class="node org">
-      <span class="role">Yritys</span>
-      <strong>Cinia Oy</strong>
-      <em>Y 1465341-6</em>
-    </div>
-    <div class="arrow vaali" aria-hidden="true">
-      <span class="amt">1 185 €</span>
-      <span class="lbl">vaalituki →</span>
-    </div>
-    <div class="node cand">
-      <span class="role">Ehdokas</span>
-      <strong>Jarno Limnell</strong>
-      <em>KOK</em>
-    </div>
-  </div>
-  
-  <details>
-    <summary>Ostajat, tuet ja lähteet</summary>
-    <div class="detail-grid">
-      <div>
-        <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Hätäkeskuslaitos</span><strong>26,3 M€</strong></li><li><span>Väylävirasto</span><strong>18,6 M€</strong></li><li><span>Liikenne- ja viestintävirasto</span><strong>1,7 M€</strong></li></ul>
-        <p class="meta">1189 tiliöintiriviä · 15 ostajaa · jaksot 2023–2024</p>
-      </div>
-      <div>
-        <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Jarno Limnell · Kuntavaalit 2025 · KOK</span><strong>1 185 €</strong></li></ul>
-        <p class="meta">1 tukiriviä · 1 ehdokasta</p>
-      </div>
-    </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
-    </p>
-  </details>
-</article>
-<article class="chain" id="k8">
-  <header class="chain-head">
-    <span class="num" aria-hidden="true">8</span>
+    <span class="num" aria-hidden="true">17</span>
     <div class="titles">
       <h2>Sähköliike SähköWaasa Oy</h2>
-      <p class="y">Y-tunnus <code>1844133-0</code></p>
+      <p class="y">Y-tunnus <code>1844133-0</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
     </div>
     <div class="totals" aria-label="Summat">
       <div><span>Ostot (Tutki 2023–24)</span><strong>2,5 M€</strong></div>
@@ -507,57 +1181,259 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
     </div>
   </header>
   <div class="flow" aria-label="Ketju Sähköliike SähköWaasa Oy">
-    <div class="node buyer">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
       <span class="role">Julkinen ostaja</span>
       <strong>Työllisyys, kehittämis- ja hallintokeskus</strong>
-      <em>pääostaja tällä jaksolla</em>
-    </div>
+      
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
     <div class="arrow" aria-hidden="true">
       <span class="amt">2,5 M€</span>
       <span class="lbl">hankinta →</span>
     </div>
-    <div class="node org">
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 1844133-0">
       <span class="role">Yritys</span>
       <strong>Sähköliike SähköWaasa Oy</strong>
       <em>Y 1844133-0</em>
-    </div>
+      <span class="tap">YTJ →</span>
+    </a>
     <div class="arrow vaali" aria-hidden="true">
       <span class="amt">3 200 €</span>
       <span class="lbl">vaalituki →</span>
     </div>
-    <div class="node cand">
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-janne-sankelo/index.html">
       <span class="role">Ehdokas</span>
       <strong>Janne Sankelo</strong>
-      <em>+1 muuta ehdokasta</em>
-    </div>
+      <em></em>
+      <em>+1 muuta</em>
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
   </div>
   
   <details>
     <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>1844133-0</code></p>
+    
     <div class="detail-grid">
       <div>
         <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Työllisyys, kehittämis- ja hallintokeskus</span><strong>2,5 M€</strong></li></ul>
-        <p class="meta">97 tiliöintiriviä · 1 ostajaa · jaksot 2023–2024</p>
+        <ul class="money"><li><span>Työllisyys, kehittämis- ja hallintokeskus</span><strong>2,5 M€</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
       </div>
       <div>
         <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Janne Sankelo · Eduskuntavaalit 2023 · KOK</span><strong>1 750 €</strong></li><li><span>Matti Knookala · Kuntavaalit 2025 · KOK</span><strong>1 450 €</strong></li></ul>
-        <p class="meta">2 tukiriviä · 2 ehdokasta</p>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-janne-sankelo/index.html">Janne Sankelo</a><strong></strong></li><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-matti-knookala/index.html">Matti Knookala</a><strong></strong></li></ul>
+        <p class="meta">2 ehdokasta · vaalit: — · yht. 3 200 €</p>
       </div>
     </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
+    <p class="deep-cta">
+      <a href="sahkoliike-sahkowaasa-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
     </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
   </details>
 </article>
-<article class="chain" id="k9">
+
+<article class="chain" id="k18">
   <header class="chain-head">
-    <span class="num" aria-hidden="true">9</span>
+    <span class="num" aria-hidden="true">18</span>
+    <div class="titles">
+      <h2>Vilkmar Rakennus Oy</h2>
+      <p class="y">Y-tunnus <code>2539813-1</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Ostot (Tutki 2023–24)</span><strong>2,4 M€</strong></div>
+      <div><span>Vaalituki</span><strong>4 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Vilkmar Rakennus Oy">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Kaupunkiympäristön Toimiala, Helsinki</strong>
+      
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">2,4 M€</span>
+      <span class="lbl">hankinta →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2539813-1">
+      <span class="role">Yritys</span>
+      <strong>Vilkmar Rakennus Oy</strong>
+      <em>Y 2539813-1</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">4 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-marju-markkanen/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Marju Markkanen</strong>
+      <em></em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2539813-1</code></p>
+    
+    <div class="detail-grid">
+      <div>
+        <h3>Tutkihankintoja: ostaja → yritys</h3>
+        <ul class="money"><li><span>Kaupunkiympäristön Toimiala, Helsinki</span><strong>2,4 M€</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-marju-markkanen/index.html">Marju Markkanen</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: — · yht. 4 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="vilkmar-rakennus-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Sama ketju yhdellä sivulla, hieman laajempana.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k19">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">19</span>
+    <div class="titles">
+      <h2>Seepsula Oy</h2>
+      <p class="y">Y-tunnus <code>0687708-1</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Ostot (Tutki 2023–24)</span><strong>1,6 M€</strong></div>
+      <div><span>Vaalituki</span><strong>10 000 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Seepsula Oy">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Stara-liikelaitos, Helsinki</strong>
+      <em>+1 muuta ostajaa</em>
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1,6 M€</span>
+      <span class="lbl">hankinta →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0687708-1">
+      <span class="role">Yritys</span>
+      <strong>Seepsula Oy</strong>
+      <em>Y 0687708-1</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">10 000 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-pekka-toveri/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Pekka Toveri</strong>
+      <em></em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0687708-1</code></p>
+    
+    <div class="detail-grid">
+      <div>
+        <h3>Tutkihankintoja: ostaja → yritys</h3>
+        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>1,6 M€</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-pekka-toveri/index.html">Pekka Toveri</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: — · yht. 10 000 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="seepsula-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k20">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">20</span>
+    <div class="titles">
+      <h2>KouMet Oy</h2>
+      <p class="y">Y-tunnus <code>2390024-7</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Ostot (Tutki 2023–24)</span><strong>1,4 M€</strong></div>
+      <div><span>Vaalituki</span><strong>5 854 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju KouMet Oy">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Väylävirasto</strong>
+      <em>+2 muuta ostajaa</em>
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">1,4 M€</span>
+      <span class="lbl">hankinta →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2390024-7">
+      <span class="role">Yritys</span>
+      <strong>KouMet Oy</strong>
+      <em>Y 2390024-7</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">5 854 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-petri-liljander/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Petri Liljander</strong>
+      <em></em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2390024-7</code></p>
+    
+    <div class="detail-grid">
+      <div>
+        <h3>Tutkihankintoja: ostaja → yritys</h3>
+        <ul class="money"><li><span>Väylävirasto</span><strong>1,4 M€</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-petri-liljander/index.html">Petri Liljander</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: — · yht. 5 854 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="koumet-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<article class="chain" id="k21">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">21</span>
     <div class="titles">
       <h2>Planmeca Oy</h2>
-      <p class="y">Y-tunnus <code>0112773-2</code></p>
+      <p class="y">Y-tunnus <code>0112773-2</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
     </div>
     <div class="totals" aria-label="Summat">
       <div><span>Ostot (Tutki 2023–24)</span><strong>122 670 €</strong></div>
@@ -565,61 +1441,128 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
     </div>
   </header>
   <div class="flow" aria-label="Ketju Planmeca Oy">
-    <div class="node buyer">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
       <span class="role">Julkinen ostaja</span>
       <strong>Oys-sairaalapalvelut Ja Ensih.</strong>
       <em>+2 muuta ostajaa</em>
-    </div>
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
     <div class="arrow" aria-hidden="true">
       <span class="amt">122 670 €</span>
       <span class="lbl">hankinta →</span>
     </div>
-    <div class="node org">
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 0112773-2">
       <span class="role">Yritys</span>
       <strong>Planmeca Oy</strong>
       <em>Y 0112773-2</em>
-    </div>
+      <span class="tap">YTJ →</span>
+    </a>
     <div class="arrow vaali" aria-hidden="true">
       <span class="amt">8 000 €</span>
       <span class="lbl">vaalituki →</span>
     </div>
-    <div class="node cand">
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-daniel-sazonov/index.html">
       <span class="role">Ehdokas</span>
       <strong>Daniel Sazonov</strong>
-      <em>+1 muuta ehdokasta</em>
-    </div>
+      <em></em>
+      <em>+1 muuta</em>
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
   </div>
   
   <details>
     <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>0112773-2</code></p>
+    
     <div class="detail-grid">
       <div>
         <h3>Tutkihankintoja: ostaja → yritys</h3>
-        <ul class="money"><li><span>Oys-sairaalapalvelut Ja Ensih.</span><strong>72 762 €</strong></li><li><span>Sairaalapalvelut</span><strong>46 508 €</strong></li><li><span>Kasvatuksen Ja Koulutuksen Toimiala, Helsinki</span><strong>3 400 €</strong></li></ul>
-        <p class="meta">32 tiliöintiriviä · 3 ostajaa · jaksot 2023–2024</p>
+        <ul class="money"><li><span>Oys-sairaalapalvelut Ja Ensih.</span><strong>122 670 €</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
       </div>
       <div>
         <h3>Vaalirahoitus: yritys → ehdokas</h3>
-        <ul class="money"><li><span>Henna Virkkunen · Europarlamenttivaalit 2024 · KOK</span><strong>5 000 €</strong></li><li><span>Daniel Sazonov · Kuntavaalit 2025 · KOK</span><strong>3 000 €</strong></li></ul>
-        <p class="meta">2 tukiriviä · 2 ehdokasta</p>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-daniel-sazonov/index.html">Daniel Sazonov</a><strong></strong></li><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-henna-virkkunen/index.html">Henna Virkkunen</a><strong></strong></li></ul>
+        <p class="meta">2 ehdokasta · vaalit: — · yht. 8 000 €</p>
       </div>
     </div>
-    <p class="sources">Lähteet:
-      <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja (avoindata.suomi.fi)</a> ·
-      <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>
+    <p class="deep-cta">
+      <a href="planmeca-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
     </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
   </details>
 </article>
 
-<section class="panel method" id="menetelma">
-<h2>Miten nämä on tehty</h2>
-<p>Poiminta: Tutkihankintoja-tiliöinnit (2023–2024) joissa toimittajalla on Y-tunnus, ristiin vaalirahoituksen tukiriveihin joissa tukijalla on sama Y. Tässä live-protossa on 9 yritysketjua (puolueet, liitot ja alle 1&nbsp;000&nbsp;€ ostot suodatettu pois).</p>
-<p>Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a>, <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a>.</p>
+<article class="chain" id="k22">
+  <header class="chain-head">
+    <span class="num" aria-hidden="true">22</span>
+    <div class="titles">
+      <h2>Jukkola systems Oy</h2>
+      <p class="y">Y-tunnus <code>2091555-8</code> · <span class="badge">Ostolaskut ja vaalituki</span></p>
+    </div>
+    <div class="totals" aria-label="Summat">
+      <div><span>Ostot (Tutki 2023–24)</span><strong>112 673 €</strong></div>
+      <div><span>Vaalituki</span><strong>5 041 €</strong></div>
+    </div>
+  </header>
+  <div class="flow" aria-label="Ketju Jukkola systems Oy">
+    <a class="node buyer" href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer" title="Avaa aineisto · etsi ostaja tai toimittaja">
+      <span class="role">Julkinen ostaja</span>
+      <strong>Stara-liikelaitos, Helsinki</strong>
+      <em>+1 muuta ostajaa</em>
+      <span class="tap">Tutkihankintoja →</span>
+    </a>
+    <div class="arrow" aria-hidden="true">
+      <span class="amt">112 673 €</span>
+      <span class="lbl">hankinta →</span>
+    </div>
+    <a class="node org" href="https://ytj.fi/" target="_blank" rel="noopener noreferrer" title="Hae Y-tunnuksella 2091555-8">
+      <span class="role">Yritys</span>
+      <strong>Jukkola systems Oy</strong>
+      <em>Y 2091555-8</em>
+      <span class="tap">YTJ →</span>
+    </a>
+    <div class="arrow vaali" aria-hidden="true">
+      <span class="amt">5 041 €</span>
+      <span class="lbl">vaalituki →</span>
+    </div>
+    <a class="node cand" href="../../rahavirrat/kortti-ehdokas-janne-jukkola/index.html">
+      <span class="role">Ehdokas</span>
+      <strong>Janne Jukkola</strong>
+      <em></em>
+      
+      <span class="tap">Rahavirrat-kortti →</span>
+    </a>
+  </div>
+  
+  <details>
+    <summary>Ostajat, tuet ja lähteet</summary>
+    <p class="copy-row">Y-tunnus (kopioi): <code>2091555-8</code></p>
+    
+    <div class="detail-grid">
+      <div>
+        <h3>Tutkihankintoja: ostaja → yritys</h3>
+        <ul class="money"><li><span>Stara-liikelaitos, Helsinki</span><strong>112 673 €</strong></li></ul><p class="meta">Tutkihankintoja-otos · Y-join vaaliin</p>
+      </div>
+      <div>
+        <h3>Vaalirahoitus: yritys → ehdokas</h3>
+        <ul class="money"><li class="cand-links"><a href="../../rahavirrat/kortti-ehdokas-janne-jukkola/index.html">Janne Jukkola</a><strong></strong></li></ul>
+        <p class="meta">1 ehdokasta · vaalit: — · yht. 5 041 €</p>
+      </div>
+    </div>
+    <p class="deep-cta">
+      <a href="jukkola-systems-oy/index.html">Avaa tarkempi ketjusivu →</a>
+      <span class="hint">Kaikki ostajat, ilmoitusnumerot ja linkit ehdokkaisiin.</span>
+    </p>
+    <p class="sources">Lähteet: <a href="https://avoindata.suomi.fi/data/fi/dataset/tutkihankintoja-data" target="_blank" rel="noopener noreferrer">Tutkihankintoja</a> · <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">Vaalirahoitusvalvonta</a></p>
+  </details>
+</article>
+
+<section class="method">
+  <h2>Miten ketju syntyy</h2>
+  <p>Yhdistävä tieto on Y-tunnus. Hilma: sopimuksen voittajat. Ostolaskut: Tutkihankintoja-aineisto. Vaalituki: Vaalirahoitusvalvonnan ilmoitukset.</p>
 </section>
 </div>
-<footer class="site-foot">
-  <p class="legal-links"><a href="../../tietoa/">Tietoa</a> · <a href="../../kayttoehdot/">Käyttöehdot</a></p>
-</footer>
-<script src="../../assets/nav.js?v=20261030m" defer></script>
+<script src="../../assets/nav.js" defer></script>
 </body>
 </html>
