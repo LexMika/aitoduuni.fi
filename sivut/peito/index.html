@@ -30,10 +30,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20261030h">
-<link rel="icon" href="../../assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
-<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../../../assets/site.css?v=20261106z">
+<link rel="icon" href="../../../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
 <meta name="theme-color" content="#020617">
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"6200f14f6a234fc387fba19cced4edf8"}'></script><!-- End Cloudflare Web Analytics -->
 <style>
@@ -144,25 +144,32 @@
     .compose-row { grid-template-columns: 1fr; gap: 0.25rem; }
   }
 </style>
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030m">
-
 </head>
 <body>
 <!-- aito-noscript:start -->
 <noscript><p class="noscript-note">Sivun sisältö on staattista HTML:ää. JavaScript vain nav-valikossa (mobiili). Teksti ja otsikot näkyvät ilman JS:ää.</p></noscript>
 <!-- aito-noscript:end -->
 <div class="topbar"><div class="topbar-inner">
-<a class="wordmark" href="../../">Aito<span>Data</span></a>
-<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
-    <a href="../../rahavirrat/">Rahavirrat</a>
-    <a href="../../sivut/peito/" class="active">Puuttuva tieto</a>
-    <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
-    <a href="../../kaiva/">Tutki lisää</a>
-    <a href="../../nain-luet/">Näin luet</a>
-    <a href="../../perusteet/">Perusteet</a>
+<a class="wordmark" href="../../../">Aito<span>Data</span></a>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav class="site" id="site-nav">
+    <a href="../../loydot/">Löydöt</a>
+    <a href="./" class="active">Puuttuva tieto</a>
+    <a href="../../toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../../../kaiva/">Tutki lisää</a>
+    <a href="../../../nain-luet/">Näin luet</a>
+    <a href="../../../perusteet/">Perusteet</a>
+    <a href="../../../tietoa/">Info</a>
   </nav>
 </div></div>
+<nav class="shelves" aria-label="Osastot">
+ <a class="shelf" href="../../rahavirrat/vaalituki/">Vaalituki</a>
+ <a class="shelf" href="../../rahavirrat/puoluerahoitus/">Puoluerahoitus</a>
+ <a class="shelf" href="../../sivut/loydot/">Löydöt</a>
+ <a class="shelf" href="../../sivut/ketjut/">Ketjut</a>
+ <a class="shelf is-active" href="../../sivut/peito/" aria-current="page">Puuttuva</a>
+ <a class="shelf" href="../../sivut/toimiiko-lahde/">Toimiiko</a>
+</nav>
 <div class="wrap">
 <header class="page-head">
 <h1>Puuttuva tieto</h1>
@@ -305,14 +312,12 @@
 <div class="disclaimer">
 Aineisto on otos, ei koko Suomi. Päivitetty 30.10.2026</div>
 <div class="hero-actions" style="margin-top:1.5rem">
-<a class="btn ghost" href="../../rahavirrat/">Löydöt</a>
+<a class="btn ghost" href="../../loydot/">Löydöt</a>
 <a class="btn ghost" href="../../../nain-luet/">Näin luet</a>
 </div>
 </div>
 <footer>
   <p><a class="wordmark" href="../../../">Aito<span>Data</span></a></p>
-  <p class="legal-links"><a href="../../../tietoa/">Tietoa</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
+  <p class="legal-links"><a href="../../../tietoa/">Info</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Puuttuva tieto · julkinen kehittyvä palvelu.</p>
-</footer><script src="../../assets/nav.js?v=20261030m" defer></script>
-</body>
-</html>
+</footer>

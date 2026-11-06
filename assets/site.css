@@ -42,6 +42,41 @@ a:hover { color: #93c5fd; }
   backdrop-filter: blur(10px);
 }
 
+/* Osasto-pillerit (Vaalituki / Löydöt / Ketjut / …) — sama kaikilla hyllyillä */
+.shelves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem 0;
+}
+.shelves a.shelf {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.shelves a.shelf:hover {
+  color: var(--text);
+  background: rgba(37, 99, 235, 0.08);
+}
+.shelves a.shelf.is-active {
+  color: #fff;
+  background: rgba(37, 99, 235, 0.14);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+@media (max-width: 520px) {
+  .shelves { padding: 0.65rem 0.9rem 0; }
+}
+
 .topbar-inner {
   max-width: 72rem;
   margin: 0 auto;
