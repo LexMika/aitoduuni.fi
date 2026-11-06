@@ -1,0 +1,1816 @@
+{
+  "updated_at": "2026-11-03T12:19:09.243617+00:00",
+  "criterion": "eform winner_y ∩ puoluerahoitus tukija-Y (± avoimuusrekisteri)",
+  "proto": "puolue-lobby-v1",
+  "winner_ys": 2606,
+  "puolue_tukija_ys": 388,
+  "register_ys": 1371,
+  "hilma_puolue_n": 16,
+  "hilma_puolue_lobby_n": 6,
+  "hilma_puolue_vaali_n": 2,
+  "hilma_lobby_only_n": 40,
+  "winners_path": "data/jalostus/ketju_eform_winners.jsonl",
+  "register_path": "data/raw/avoimuusrekisteri/register.jsonl",
+  "chains": [
+    {
+      "y": "1093863-3",
+      "org": "Suomen Terveystalo Oy",
+      "hilma_n": 14,
+      "top_buyer": "Kansaneläkelaitos",
+      "buyer_n": 8,
+      "buyers_top": [
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 6
+        },
+        {
+          "name": "Lapin hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Päijät-Hämeen hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Valtion tieto- ja viestintätekniikkakeskus Valtori",
+          "n": 1
+        },
+        {
+          "name": "Huittisten kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Työterveys Aalto Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Mammografiaseulontatutkimukset",
+        "Sopimusmuutos Työterveyshuollon palvelut",
+        "Digitaalinen asiointialusta ohjelmistopalveluna",
+        "Työterveys 2024 - 2030 DPS, sisäinen kilpailutus / Huittisten kaupunki",
+        "Työterveys Aallon henkilöstön työterveyspalvelut"
+      ],
+      "puolue_eur": 2000.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": true,
+      "lobby_name": "Suomen Terveystalo Oy",
+      "lobby_industry": "Muu terveyspalvelu",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0109862-8",
+      "org": "Kesko Oyj Kespro",
+      "hilma_n": 6,
+      "top_buyer": "Etelä-Pohjanmaan hyvinvointialue",
+      "buyer_n": 5,
+      "buyers_top": [
+        {
+          "name": "Etelä-Pohjanmaan hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Tuomi Logistiikka Oy",
+          "n": 1
+        },
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        },
+        {
+          "name": "HUS-yhtymä",
+          "n": 1
+        },
+        {
+          "name": "Kaarea Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Kalan hankinta",
+        "Pakastemarjojen hankinta",
+        "Elintarvikkeet: Tukkutuotteet ja valmisruoka",
+        "Tukkuelintarvikkeet",
+        "Virvoitusjuomat, kivennäisvedet sekä muut juomat (HUS 245-2025  Elintarvikehankintojen DPS:n sisäinen kilpailutus osa 3) UUSI"
+      ],
+      "puolue_eur": 2500.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": true,
+      "lobby_name": "Kesko Oyj",
+      "lobby_industry": "Yleistukkukauppa",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "1004536-8",
+      "org": "Kaiku Helsinki Oy",
+      "hilma_n": 1,
+      "top_buyer": "Veikkaus Oy",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Veikkaus Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Viestintäpalvelut 2024-2026 + optiot"
+      ],
+      "puolue_eur": 33770.0,
+      "puolue_rows": 3,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": true,
+      "lobby_name": "Kaiku Helsinki Oy",
+      "lobby_industry": "Muu muualla luokittelematon monenlainen koulutustoiminta",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0116323-1",
+      "org": "SOK - suoratoimitus",
+      "hilma_n": 1,
+      "top_buyer": "Sansia Oy",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lämmitysöljyt sekä asiakkaiden säiliöihin tankattavat polttonesteet, yhteishankinta"
+      ],
+      "puolue_eur": 11840.7,
+      "puolue_rows": 3,
+      "ilmoittajat": [
+        "Suomen Sosialidemokraattinen Puolue r.p.",
+        "Vihreä liitto r.p."
+      ],
+      "in_lobby": true,
+      "lobby_name": "Suomen Osuuskauppojen Keskuskunta",
+      "lobby_industry": "Yleistukkukauppa",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "1731321-4",
+      "org": "Tekir Oy",
+      "hilma_n": 1,
+      "top_buyer": "Veikkaus Oy",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Veikkaus Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Viestintäpalvelut 2024-2026 + optiot"
+      ],
+      "puolue_eur": 1945.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": true,
+      "lobby_name": "Rud Pedersen Finland Oy",
+      "lobby_industry": "Suhdetoiminta ja viestintä",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0209599-8",
+      "org": "Vaasan yliopisto",
+      "hilma_n": 1,
+      "top_buyer": "Teknologian tutkimuskeskus VTT Oy",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Teknologian tutkimuskeskus VTT Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Laboratorion käyttömaksu"
+      ],
+      "puolue_eur": 1800.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Pohjanmaan Kokoomus ry"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Vaasan Yliopisto",
+      "lobby_industry": "Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa",
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma, puolue ja lobbaus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "2557856-2",
+      "org": "Wihuri Oy Tekninen kauppa",
+      "hilma_n": 7,
+      "top_buyer": "Haminan kaupunki",
+      "buyer_n": 6,
+      "buyers_top": [
+        {
+          "name": "Haminan kaupunki",
+          "n": 2
+        },
+        {
+          "name": "Vantaan kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Espoon kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Loviisan kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Nakkilan kunta",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Monitoimityökoneen hankinta katujen kunnossapitoon",
+        "Kunnossapitokaluston lisälaitteiden hankinta",
+        "Kunnossapidon monitoimikone",
+        "Elintarvikkeiden tukkuostot",
+        "Työkonehankinta, ympäristönhoitokone"
+      ],
+      "puolue_eur": 43465.0,
+      "puolue_rows": 6,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p.",
+        "Kansallinen Kokoomus r.p."
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": true,
+      "vaali_eur": 21000.0,
+      "candidates": [
+        "Jetta Laakso",
+        "Petri Honkonen",
+        "Alexander Stubb"
+      ],
+      "badge": "Hilma, puolue ja vaalituki",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "2375085-9",
+      "org": "TKU-Rakennus Oy",
+      "hilma_n": 1,
+      "top_buyer": "Turun kaupunki",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Turun kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lisätyöt, Artukaisten liikuntakeskus"
+      ],
+      "puolue_eur": 6499.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Varsinais-Suomen Kansallissäätiö"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": true,
+      "vaali_eur": 1610.0,
+      "candidates": [
+        "Petteri Orpo"
+      ],
+      "badge": "Hilma, puolue ja vaalituki",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0107011-5",
+      "org": "Berner Oy Kuluttajaliiketoiminta",
+      "hilma_n": 15,
+      "top_buyer": "HUS-yhtymä",
+      "buyer_n": 9,
+      "buyers_top": [
+        {
+          "name": "HUS-yhtymä",
+          "n": 4
+        },
+        {
+          "name": "Tuomi Logistiikka Oy",
+          "n": 2
+        },
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Sansia Oy",
+          "n": 2
+        },
+        {
+          "name": "Kotkan kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Puolustusvoimien logistiikkalaitos",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Vuorisuola talvikausille 2024-2027",
+        "Lasten ja nuorten wc- ja hygienia-apuvälineet jatkokilpailutus",
+        "Nostimet ja hissit vammaispalvelun asiakkaille",
+        "Retkikeittimen polttoneste 2024-2028",
+        "Ortopediset olkapää- ja yläraajaimplantit"
+      ],
+      "puolue_eur": 5000.0,
+      "puolue_rows": 2,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p.",
+        "Kansallinen Kokoomus r.p."
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0186838-9",
+      "org": "Wiimax (Oulaisten Liikenne Oy)",
+      "hilma_n": 12,
+      "top_buyer": "Puolustusvoimat",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Puolustusvoimat",
+          "n": 7
+        },
+        {
+          "name": "Kajaanin kaupunki",
+          "n": 5
+        }
+      ],
+      "sample_titles": [
+        "Tilausajopalvelut 2021–2026, KAIPR SIIRTOAJO 19.10.2024 VUOSANKA, Diaari 9373",
+        "Tilausmatkakuljetus Kajaani-Joensuu- Kajaani 9. - 10.10.2024",
+        "Tilausmatkakuljetus Kajaani-Haapavesi-Isokyrö-Seinäjoki-Kajaani 30.1. - 1.2.2025",
+        "Tilausmatkakuljetus Kajaani - Hyrynsalmi (Ukkohalla) - Kajaani 10.10.2024",
+        "Tilausmatkakuljetus Kajaani - Kuopio - Kajaani 15.10.2024"
+      ],
+      "puolue_eur": 14936.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "1755463-2",
+      "org": "Attendo Pihka",
+      "hilma_n": 4,
+      "top_buyer": "Etelä-Karjalan hyvinvointialue",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Etelä-Karjalan hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Pohjois-Karjalan hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Savon hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Asiakaskohtainen ympärivuorokautisen palveluasumisen suorahankinta 20.9.2024 alkaen, Attendo Pihka",
+        "Ympärivuorokautinen palveluasuminen, Vammaisten asumispalvelut",
+        "Ikääntyneille suunnattu ympärivuorokautinen palveluasuminen",
+        "Lastensuojelun sijaishuolto"
+      ],
+      "puolue_eur": 1800.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Hämeen Kokoomus ry"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "2303024-5",
+      "org": "Pihlajalinna Terveys Oy",
+      "hilma_n": 3,
+      "top_buyer": "Etelä-Karjalan hyvinvointialue",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Etelä-Karjalan hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Karjalan hankintatoimi",
+          "n": 1
+        },
+        {
+          "name": "Pirkanmaan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lastensuojelun sijaishuolto",
+        "Työterveyshuollon palvelut Outokummun kaupungin ja Polvijärven kunnan työntekijöille",
+        "Jälki-ilmoitus: Lapsille kotiin annettavat sairaanhoitopalvelut"
+      ],
+      "puolue_eur": 4050.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Pirkanmaan Kansallissäätiö"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "2776089-4",
+      "org": "BDO Oy",
+      "hilma_n": 3,
+      "top_buyer": "Numera Palvelut Oy",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Numera Palvelut Oy",
+          "n": 1
+        },
+        {
+          "name": "Työ- ja elinkeinoministeriö",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Juridiset asiantuntijapalvelut",
+        "Työ- ja elinkeinoministeriö - Sisäisen tarkastuksen palvelut 2025 (00691) -  Sisäisen tarkastuksen ostopalvelujen hankinta",
+        "Johdon konsultointipalveluiden hankinta 2026-2027 (2028-2029)"
+      ],
+      "puolue_eur": 2980.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Suomen Keskusta r.p."
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0196430-3",
+      "org": "Hartela Oy",
+      "hilma_n": 1,
+      "top_buyer": "Kiinteistö Oy Turun monitoimitilat",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Kiinteistö Oy Turun monitoimitilat",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Turun kokoelmakeskus osallistumisvaihe"
+      ],
+      "puolue_eur": 25000.0,
+      "puolue_rows": 2,
+      "ilmoittajat": [
+        "Helsingin Kokoomus ry"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "0844210-2",
+      "org": "Avant Tecno Oy",
+      "hilma_n": 1,
+      "top_buyer": "Espoon kaupunki",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Espoon kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Pienkuormaajien hankinta"
+      ],
+      "puolue_eur": 15000.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Keskustan Pohjois-Pohjanmaan piiri ry"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    },
+    {
+      "y": "2672274-9",
+      "org": "Suomen Laiturikauppa Oy",
+      "hilma_n": 1,
+      "top_buyer": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Pohjoisrannan venesataman laituriponttoneiden peruskorjaus"
+      ],
+      "puolue_eur": 1500.0,
+      "puolue_rows": 1,
+      "ilmoittajat": [
+        "Varsinais-Suomen Kokoomus ry"
+      ],
+      "in_lobby": false,
+      "lobby_name": null,
+      "lobby_industry": null,
+      "also_vaali": false,
+      "vaali_eur": 0.0,
+      "candidates": [],
+      "badge": "Hilma ja puoluerahoitus",
+      "kind": "hilma_puolue"
+    }
+  ],
+  "lobby_only_sample": [
+    {
+      "y": "1927556-5",
+      "org": "SuomiSote-ryhmittymä (Beehealthy Oy, Mehiläinen Oy ja Mehiläinen Terveyspalvelut Oy)",
+      "hilma_n": 26,
+      "top_buyer": "Folkpensionsanstalten",
+      "buyer_n": 11,
+      "buyers_top": [
+        {
+          "name": "Folkpensionsanstalten",
+          "n": 11
+        },
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 6
+        },
+        {
+          "name": "Pohjois-Savon hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Työterveys Aalto Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lonkan ja polven tekonivelkirurgian toimenpiteet ostopalveluna",
+        "Työterveys Aallon työterveyshuollon alihankintapalvelut Keski-Suomen alueella",
+        "Työnohjaus, debriefing (ammatillinen jälkipuinti) ja työyhteisösovittelut"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Mehiläinen Oy",
+      "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0357502-9",
+      "org": "CGI Suomi Oy",
+      "hilma_n": 21,
+      "top_buyer": "Keski-Suomen hyvinvointialue",
+      "buyer_n": 19,
+      "buyers_top": [
+        {
+          "name": "Keski-Suomen hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Etelä-Savon hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Kouvolan Ammattiopisto Oy",
+          "n": 1
+        },
+        {
+          "name": "Päijät-Hämeen hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Kouvolan Ammattiopisto Oy:n taloushallinnon järjestelmäkokonaisuus",
+        "Syöpälääketilausohjelma Päijät-Hämeen hyvinvointialueelle",
+        "Osto- ja myyntilaskupalvelut"
+      ],
+      "in_lobby": true,
+      "lobby_name": "CGI Suomi Oy",
+      "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1962361-1",
+      "org": "Tietoevry Finland Oy",
+      "hilma_n": 16,
+      "top_buyer": "Keski-Suomen hyvinvointialue",
+      "buyer_n": 7,
+      "buyers_top": [
+        {
+          "name": "Keski-Suomen hyvinvointialue",
+          "n": 5
+        },
+        {
+          "name": "Etelä-Pohjanmaan hyvinvointialue",
+          "n": 4
+        },
+        {
+          "name": "Etelä-Savon hyvinvointialue",
+          "n": 3
+        },
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lifecare Camera -järjestelmän käytön laajennuksen suorahankinta",
+        "Gplus Teleopti Adapter lisenssit",
+        "Lifecare / Effica sosiaalihuolto - Kotihoidon uudistamisen toteutusprojekti"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Tieto Finland Oy",
+      "lobby_industry": "Laitteistokonsultointi ja käyttö- ja hallintapalvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2810844-3",
+      "org": "GRK Suomi Oy",
+      "hilma_n": 12,
+      "top_buyer": "Väylävirasto",
+      "buyer_n": 6,
+      "buyers_top": [
+        {
+          "name": "Väylävirasto",
+          "n": 4
+        },
+        {
+          "name": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "n": 3
+        },
+        {
+          "name": "Työllisyys-, kehittämis- ja hallintokeskus",
+          "n": 2
+        },
+        {
+          "name": "Fintraffic Raide Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Jätkäsaaren kannaksen silta ja Jätkäsaarenlaituri, projektinjohtourakka",
+        "Aleksis Kiven katu välillä Sturenkatu – Hämeentie, kokonaisurakka",
+        "Eteläisen Postipuiston maanrakennusurakka, kokonaisurakka"
+      ],
+      "in_lobby": true,
+      "lobby_name": "GRK Suomi Oy",
+      "lobby_industry": "Teiden ja moottoriteiden rakentaminen",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2630573-4",
+      "org": "Helen Oy",
+      "hilma_n": 11,
+      "top_buyer": "Järviseudun Koulutuskuntayhtymä",
+      "buyer_n": 11,
+      "buyers_top": [
+        {
+          "name": "Järviseudun Koulutuskuntayhtymä",
+          "n": 1
+        },
+        {
+          "name": "Vieremän kunta",
+          "n": 1
+        },
+        {
+          "name": "Lappeenrannan Seurakuntayhtymä",
+          "n": 1
+        },
+        {
+          "name": "Mäntsälän Jäähalli Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Sähköenergian hankinta"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Helen Oy",
+      "lobby_industry": "Sähkön ja kaukolämmön yhteistuotanto",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0922140-8",
+      "org": "Janssen-Cilag Oy, Johnson Johnson Finland",
+      "hilma_n": 9,
+      "top_buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+      "buyer_n": 5,
+      "buyers_top": [
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 3
+        },
+        {
+          "name": "HUS-yhtymä",
+          "n": 3
+        },
+        {
+          "name": "Terveyden ja hyvinvoinnin laitos",
+          "n": 1
+        },
+        {
+          "name": "HUS Group, the joint authority for Helsinki and Uusimaa",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Talvey (talketamabi) -lääkevalmisteiden valinta ajalle 1.1.-31.12.2025 + optiovuosi 2026 Pohjois-Pohjanmaan hyvinvointialueen lääkehankintarenkaalle",
+        "Ortopediset olkapää- ja yläraajaimplantit",
+        "Bedakiliinifumaraatti 100 mg"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Janssen-Cilag Oy",
+      "lobby_industry": "Lääkkeiden tukkukauppa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0116510-6",
+      "org": "Elisa Oyj",
+      "hilma_n": 8,
+      "top_buyer": "Hyria koulutus Oy",
+      "buyer_n": 8,
+      "buyers_top": [
+        {
+          "name": "Hyria koulutus Oy",
+          "n": 1
+        },
+        {
+          "name": "Puolustusvoimat",
+          "n": 1
+        },
+        {
+          "name": "Jyväskylän yliopisto",
+          "n": 1
+        },
+        {
+          "name": "2M-IT Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Hyria koulutus Oy:n puhe- ja tietoliikennepalvelut 2024",
+        "PVLTE450 VERKKOPALVELUT VUOSI 2025 JA OPTIOVUODET 2026-2028",
+        "Palomuuriratkaisu palveluineen"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Elisa Oyj",
+      "lobby_industry": "Langattoman verkon hallinta ja palvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0211034-2",
+      "org": "LähiTapiola Keskinäinen Vakuutusyhtiö",
+      "hilma_n": 7,
+      "top_buyer": "Kirkkopalvelut ry",
+      "buyer_n": 7,
+      "buyers_top": [
+        {
+          "name": "Kirkkopalvelut ry",
+          "n": 1
+        },
+        {
+          "name": "Jyväskylän Seudun Puhdistamo Oy",
+          "n": 1
+        },
+        {
+          "name": "Ylioppilaiden terveydenhoitosäätiö sr",
+          "n": 1
+        },
+        {
+          "name": "Kotkan Energia Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Henkilövakuutusten tarjouskilpailu, Kirkkopalvelut-konserni",
+        "Jyväskylän Seudun Puhdistamo Oy - vakuutusten kilpailutus",
+        "Ylioppilaiden Terveydenhoitosäätiö vakuutusturvan hankinta"
+      ],
+      "in_lobby": true,
+      "lobby_name": "LähiTapiola Keskinäinen Vakuutusyhtiö",
+      "lobby_industry": "Vahinkovakuutusyhtiöt",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1602149-8",
+      "org": "If Vahinkovakuutus Oyj, Suomen sivuliike",
+      "hilma_n": 7,
+      "top_buyer": "Ulvilan seurakunta",
+      "buyer_n": 7,
+      "buyers_top": [
+        {
+          "name": "Ulvilan seurakunta",
+          "n": 1
+        },
+        {
+          "name": "Yleisradio Oy",
+          "n": 1
+        },
+        {
+          "name": "Asentopuulaaki Oy",
+          "n": 1
+        },
+        {
+          "name": "Etelä-Karjalan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Vahinkovakuutukset Ulvilan seurakunnalle",
+        "Yleisradion vastuuvakuutukset ja niihin liittyvät palvelut",
+        "Vakuutusten hankinta"
+      ],
+      "in_lobby": true,
+      "lobby_name": "If Vahinkovakuutus Oyj, Suomen sivuliike",
+      "lobby_industry": "Vahinkovakuutusyhtiöt",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1801682-8",
+      "org": "Folkhälsan Välfärd Ab",
+      "hilma_n": 7,
+      "top_buyer": "Folkpensionsanstalten",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Folkpensionsanstalten",
+          "n": 7
+        }
+      ],
+      "sample_titles": [
+        "Anbudsförfrågan gällande talterapi för Egentliga Finland",
+        "Anbudsförfrågan gällande vattenterapi inom Österbotten och Mellersta Österbotten",
+        "Anbudsförfrågan gällande talterapi för Nyland"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Folkhälsan Välfärd Ab",
+      "lobby_industry": "Muut muualla luokittelemattomat sosiaalihuollon avopalvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2644028-2",
+      "org": "Visma Aquila Oy",
+      "hilma_n": 6,
+      "top_buyer": "Etelä-Savon hyvinvointialue",
+      "buyer_n": 4,
+      "buyers_top": [
+        {
+          "name": "Etelä-Savon hyvinvointialue",
+          "n": 3
+        },
+        {
+          "name": "Hyvinkään kaupunki",
+          "n": 1
+        },
+        {
+          "name": "CSC - Tieteen tietotekniikan keskus Oy",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Karjalan koulutuskuntayhtymä, Riveria",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Esi- ja perusopetuksen, lukiokoulutuksen sekä kuvataidekoulun opintohallintojärjestelmä SaaS-palveluna",
+        "Snowfox -tekoälypalvelun ja Approval -järjestelmän välisen integraation suorahankinta",
+        "Visma Personec F- ja Visma X-Sign -järjestelmien välisen integraation suorahankinta"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Visma Aquila Oy",
+      "lobby_industry": "Tietojenkäsittely, palvelintilan vuokraus ja niihin liittyvät palvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1897064-6",
+      "org": "GE Healthcare Finland Oy",
+      "hilma_n": 5,
+      "top_buyer": "Satakunnan hyvinvointialue",
+      "buyer_n": 4,
+      "buyers_top": [
+        {
+          "name": "Satakunnan hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Pirkanmaan hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        },
+        {
+          "name": "HUS-yhtymä",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Anestesiarespiraattorit / Jälki-ilmoitus",
+        "Sikiödiagnostiikan ja gynekologian ultraäänilaitteet (DPS)",
+        "C-kaari"
+      ],
+      "in_lobby": true,
+      "lobby_name": "GE Healthcare Finland Oy",
+      "lobby_industry": "Lääkintä- ja hammaslääkintäinstrumenttien ja -tarvikkeiden valmistus (pl. hammasproteesit)",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1071935-0",
+      "org": "Siemens Healthcare Oy",
+      "hilma_n": 5,
+      "top_buyer": "HUS-yhtymä",
+      "buyer_n": 5,
+      "buyers_top": [
+        {
+          "name": "HUS-yhtymä",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Helsingin yliopisto",
+          "n": 1
+        },
+        {
+          "name": "Varsinais-Suomen hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Läpivalaisulaitteisto, HUS Diagnostiikkakeskus, Peijaksen sairaala",
+        "Tietokonetomografialaitteet",
+        "Yliopistollisen eläinsairaalan tietokonetomografialaite"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Siemens Healthcare Oy",
+      "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0201375-3",
+      "org": "Live-säätiö sr",
+      "hilma_n": 5,
+      "top_buyer": "Kansaneläkelaitos",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 4
+        },
+        {
+          "name": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Uudenmaan työhönvalmennuksen puitejärjestely 2024",
+        "Työkokeilu ja työhönvalmennus, Etelä-Suomen yhteistyöalue",
+        "Työkokeilu ja työhönvalmennus, Itä-Suomen yhteistyöalue"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Live-säätiö sr",
+      "lobby_industry": "Keskiasteen ammatillinen koulutus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1947409-7",
+      "org": "Roche Diagnostics Oy",
+      "hilma_n": 5,
+      "top_buyer": "Sansia Oy",
+      "buyer_n": 5,
+      "buyers_top": [
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Savon hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Varsinais-Suomen hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Servica Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Immunovärjäysautomaatti, Pohjois-Savon hyvinvointiyhtymä",
+        "Ventana BenchMark Ultra Plus ja BenchMark Special Stains -laitteiden käyttämien reagenssien ja kulutustarvikkeiden hankinta",
+        "KJ48/26 Ventana BenchMark ULTRA -immunovärjäysautomaatin laitekohtaiset reagenssit ja tarvikkeet"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Roche Diagnostics Oy",
+      "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1710128-9",
+      "org": "Gofore Oyj",
+      "hilma_n": 4,
+      "top_buyer": "Päijät-Hämeen hyvinvointialue",
+      "buyer_n": 4,
+      "buyers_top": [
+        {
+          "name": "Päijät-Hämeen hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Kansaneläkelaitos (Kela)",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Suomen ympäristökeskus",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Päijät-Hämeen hyvinvointialueen verkkosivu -uudistus",
+        "One Application Model",
+        "Digitaalisten kehittämishankkeiden asiantuntija- ja konsultointipalveluiden puitejärjestely"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Gofore Oyj",
+      "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "3160743-8",
+      "org": "Hoivatie Oy",
+      "hilma_n": 4,
+      "top_buyer": "Pohjois-Karjalan hyvinvointialue",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Pohjois-Karjalan hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Etelä-Savon hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Pohjois-Karjalan hyvinvointialueen lastensuojelun asiakaskohtaisen sijaishuollon suorahankinta, 11.10.2024 alkaen, KA/240050, Hoivatie Oy/Asemakylän yksikkö",
+        "Lastensuojelun sijaishuollon asiakaskohtainen suorahankinta, 11.10.2024  alkaen, KA/240050, Hoivatie Oy/Asemakylän yksikkö",
+        "Jälki-ilmoitus ammatillisen tukihenkilötoiminnan suorahankinnasta ajalla 1.7.-14.11.2026"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Hoivatie Oy",
+      "lobby_industry": "Lasten ja nuorten laitokset ja ammatillinen perhehoito",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0116297-6",
+      "org": "Valio oy",
+      "hilma_n": 4,
+      "top_buyer": "Jyväskylän kaupunki",
+      "buyer_n": 4,
+      "buyers_top": [
+        {
+          "name": "Jyväskylän kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Koulutuskeskus Salpaus -kuntayhtymä",
+          "n": 1
+        },
+        {
+          "name": "Luonnonvarakeskus",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "HANK Maito- ja maitotaloustuotteiden hankinta",
+        "Koulutuskeskus Salpauksen maitotaloustuotteiden hankinta vuosille 2024-2025",
+        "Tutkimushankkeiden ja virallisten lajikekokeiden nurmi- ja kokoviljanäytteiden NIR-analyysipalvelut"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Valio Oy",
+      "lobby_industry": "Maitotuotteiden valmistus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1654439-5",
+      "org": "Miltton Oy",
+      "hilma_n": 4,
+      "top_buyer": "Metropolia Ammattikorkeakoulu Oy",
+      "buyer_n": 4,
+      "buyers_top": [
+        {
+          "name": "Metropolia Ammattikorkeakoulu Oy",
+          "n": 1
+        },
+        {
+          "name": "Veikkaus Oy",
+          "n": 1
+        },
+        {
+          "name": "Yleisradio Oy",
+          "n": 1
+        },
+        {
+          "name": "Oikeusministeriö",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Vaikuttajaviestinnän kumppanin kilpailutus Metropolia Ammattikorkeakoululle",
+        "Viestintäpalvelut 2024-2026 + optiot",
+        "Viestinnän konsultointipalvelut puitejärjestely 2026 - 2030"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Miltton Oy",
+      "lobby_industry": "Suhdetoiminta ja viestintä",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "3008326-5",
+      "org": "AEL-Amiedu Oy",
+      "hilma_n": 3,
+      "top_buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "n": 2
+        },
+        {
+          "name": "Vantaan kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Pääkaupunkiseudun kotoutumiskoulutuksen palvelukokonaisuuden hankinta",
+        "Aikuisten maahanmuuttajien suomen kielen lähtötasoarviointi",
+        "Oppisopimuskoulutuksena järjestettävien johtamisen tutkintojen (3 tutkintoa) tutkintokoulutusten ja tutkinnon järjestämisten hankinta Vantaan ammattiopisto Vari"
+      ],
+      "in_lobby": true,
+      "lobby_name": "AEL-Amiedu Oy",
+      "lobby_industry": "Keskiasteen ammatillinen koulutus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0313471-7",
+      "org": "Helsingin yliopisto",
+      "hilma_n": 3,
+      "top_buyer": "HUS-yhtymä",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "HUS-yhtymä",
+          "n": 2
+        },
+        {
+          "name": "Luonnonvarakeskus",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Lääketieteellisten laboratorioiden palvelut",
+        "BIWE-hankkeen bakteeri- ja mikrobiyhteisöjen sekvensointipalvelun hankinta Luonnonvarakeskukselle"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Helsingin Yliopisto",
+      "lobby_industry": "Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0196826-7",
+      "org": "Keskinäinen Vakuutusyhtiö Fennia",
+      "hilma_n": 3,
+      "top_buyer": "Ylioppilaiden terveydenhoitosäätiö sr",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Ylioppilaiden terveydenhoitosäätiö sr",
+          "n": 1
+        },
+        {
+          "name": "Joensuun Kodit Oy",
+          "n": 1
+        },
+        {
+          "name": "VR-Yhtymä Oyj / VR-Group Plc",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Ylioppilaiden Terveydenhoitosäätiö vakuutusturvan hankinta",
+        "Vakuutusten hankinta Joensuun Kodit Oy",
+        "VR Group: Insurances and related services, framework agreement"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Keskinäinen Vakuutusyhtiö Fennia",
+      "lobby_industry": "Vahinkovakuutusyhtiöt",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "3283705-9",
+      "org": "EY Advisory Oy",
+      "hilma_n": 3,
+      "top_buyer": "Veikkaus Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Veikkaus Oy",
+          "n": 2
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Sisäisen tarkastuksen palvelut",
+        "Johdon konsultointipalveluiden hankinta 2026-2027 (2028-2029)",
+        "Advisory Services"
+      ],
+      "in_lobby": true,
+      "lobby_name": "EY Advisory Oy",
+      "lobby_industry": "Muu liikkeenjohdon konsultointi",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0592509-6",
+      "org": "DNA Oyj",
+      "hilma_n": 3,
+      "top_buyer": "Business Finland Oy",
+      "buyer_n": 3,
+      "buyers_top": [
+        {
+          "name": "Business Finland Oy",
+          "n": 1
+        },
+        {
+          "name": "Kiinteistö Oy Kajaanin Pietari",
+          "n": 1
+        },
+        {
+          "name": "Kankaanpään Asunnonhankinta Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Tietoliikennepalvelut - Porkkalankadun WLAN lähiverkko ja Internet liittymät",
+        "Kaapeli-TV ja laajakaistaliittymien hankinta",
+        "Kaapeli-tv- ja laajakaistaliittymät Kankaanpään Asunnonhankinta Oy:n kiinteistöille alkaen 1.10.2026 (tavoite)"
+      ],
+      "in_lobby": true,
+      "lobby_name": "DNA Oyj",
+      "lobby_industry": "Kiinteän puhelinverkon ja langattoman verkon hallinta ja palvelut sekä satelliittiviestintä",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1703777-4",
+      "org": "Bayer Oy",
+      "hilma_n": 3,
+      "top_buyer": "Varsinais-Suomen hyvinvointialue",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Varsinais-Suomen hyvinvointialue",
+          "n": 2
+        },
+        {
+          "name": "Kanta-Hämeen hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "HP203/26 Medrad automaattiruiskujen kulutustarvikkeet",
+        "Isotooppiyksikön toiminnassa käytettävät lääkeaineet, säteilylähteet ja kulutustarvikkeet"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Bayer Oy",
+      "lobby_industry": "Lääkkeiden ja muiden lääkevalmisteiden valmistus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1967543-8",
+      "org": "Visma Solutions Oy",
+      "hilma_n": 3,
+      "top_buyer": "Motiva Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Motiva Oy",
+          "n": 2
+        },
+        {
+          "name": "Salon Vuokratalot Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "TALOUSHALLINNON ULKOISTUSPALVELUT Osallistuminen",
+        "Taloushallintojärjestelmän hankinta Saas-palveluna.",
+        "PSA-JÄRJESTELMÄ ASIANTUNTIJAPALVELULIIKETOIMINNAN OHJAUKSEEN OSALLISTUMINEN"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Visma Solutions Oy",
+      "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1800395-5",
+      "org": "Atria Suomi Oy //Valio Oy",
+      "hilma_n": 2,
+      "top_buyer": "Sansia Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        },
+        {
+          "name": "Tuomi Logistiikka Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Elintarvikkeiden tukkutuotehankinnat, Savon koulutuskuntayhtymä",
+        "Liha, lihavalmisteet ja mustamakkara 2"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Atria Suomi Oy",
+      "lobby_industry": "Teurastus ja lihan säilyvyyskäsittely (pl. siipikarja)",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1712792-1",
+      "org": "Lindström Oy",
+      "hilma_n": 2,
+      "top_buyer": "Keski-Suomen hyvinvointialue",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Keski-Suomen hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Provina Tekstiilipalvelut – Textilservice Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Vuokrattavat potilas- ja liinavaatteet kokonaispalveluna",
+        "Työvaatepalvelut alihankintana, Provina"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Lindström Oy",
+      "lobby_industry": "Pesulapalvelut yrityksille",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2064886-7",
+      "org": "Axxell Utbildning Ab",
+      "hilma_n": 2,
+      "top_buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+      "buyer_n": 1,
+      "buyers_top": [
+        {
+          "name": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "n": 2
+        }
+      ],
+      "sample_titles": [
+        "Pääkaupunkiseudun kotoutumiskoulutuksen palvelukokonaisuuden hankinta",
+        "Aikuisten maahanmuuttajien suomen kielen lähtötasoarviointi"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Axxell Utbildning Ab",
+      "lobby_industry": "Keskiasteen ammatillinen koulutus",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0215281-7",
+      "org": "Kirkkopalvelut ry, Riippuvuustyön kehittämisyksikkö",
+      "hilma_n": 2,
+      "top_buyer": "Sansia Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        },
+        {
+          "name": "Etelä-Karjalan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Työnohjaus, debriefing (ammatillinen jälkipuinti) ja työyhteisösovittelut",
+        "Lastensuojelun sijaishuolto"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Kirkkopalvelut ry",
+      "lobby_industry": "Muualla luokittelemattomat muut järjestöt",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "3261019-6",
+      "org": "United Imaginations",
+      "hilma_n": 2,
+      "top_buyer": "Business Finland Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Business Finland Oy",
+          "n": 1
+        },
+        {
+          "name": "Seinäjoen kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Luova markkinointitoimisto",
+        "Jälki-ilmoitus: 26062 Strategiset mainostoimistopalvelut"
+      ],
+      "in_lobby": true,
+      "lobby_name": "United Imaginations Oy",
+      "lobby_industry": "Mainostoimistot",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1475607-9",
+      "org": "Telia Finland Oyj",
+      "hilma_n": 2,
+      "top_buyer": "Kanta-Hämeen hyvinvointialue",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Kanta-Hämeen hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Raaseporin kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Tietoliikennepalvelut sopimuksen määräaikainen jatkaminen",
+        "Uppdatering av internetanslutning (WAN-anslutning)"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Telia Finland Oyj",
+      "lobby_industry": "Langattoman verkon hallinta ja palvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2201275-8",
+      "org": "Ellun Kanat Oy",
+      "hilma_n": 2,
+      "top_buyer": "Elinkeino-, liikenne- ja ympäristökeskus",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Elinkeino-, liikenne- ja ympäristökeskus",
+          "n": 1
+        },
+        {
+          "name": "Veikkaus Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "JÄLKI-ILMOITUS: KEHA-keskus - Luokka 2 - Viestintä- ja markkinointipalvelut 2020-2026 (DPS) - Viestintäkampanja, TE2024 -uudistus.",
+        "Viestintäpalvelut 2024-2026 + optiot"
+      ],
+      "in_lobby": true,
+      "lobby_name": "ELLUN KANAT OY",
+      "lobby_industry": "Muu ammatillinen, tieteellinen ja tekninen toiminta",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0101072-9",
+      "org": "MSD Finland Oy",
+      "hilma_n": 2,
+      "top_buyer": "Terveyden ja hyvinvoinnin laitos",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Terveyden ja hyvinvoinnin laitos",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Ebola-rokote",
+        "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2025 + optiovuosi 2026"
+      ],
+      "in_lobby": true,
+      "lobby_name": "MSD Finland Oy",
+      "lobby_industry": "Lääkkeiden tukkukauppa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0350017-4",
+      "org": "NG Nordic Finland Oy",
+      "hilma_n": 2,
+      "top_buyer": "Kymenlaakson Jäte Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Kymenlaakson Jäte Oy",
+          "n": 1
+        },
+        {
+          "name": "Kiertokapula Oy",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Jälki-ilmoitus KYMENLAAKSON JÄTE OY:N JÄTEASEMIEN JA TOIMINTA-ALUEEN  SOPIMUSAPTEEKKIEN VAARALLISTEN JÄTTEIDEN SEKÄ  LYIJYAKKUJEN NOUTO JA KÄSITTELY",
+        "Ahveniston koulurakennusten purku"
+      ],
+      "in_lobby": true,
+      "lobby_name": "NG Nordic Finland Oy",
+      "lobby_industry": "Jätteen energiahyödyntäminen",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "2402870-2",
+      "org": "Oima Oy",
+      "hilma_n": 2,
+      "top_buyer": "Pohjois-Savon hyvinvointialue",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Pohjois-Savon hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Oima-palvelu ja PSHVA:n Oima-palvelun ympäristön siirto Pohjois-Savon Monetra Oy:ltä PSHVA:lle",
+        "Omaishoidon, perhehoidon ja henkilökohtaisen avun palkkioiden ja palkkojen hallinnan järjestelmä (JÄLKI-ILMOITUS)"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Oima Oy",
+      "lobby_industry": "Verkkohakuportaalien toiminta",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1078693-2",
+      "org": "Danske Bank A/S, Suomen sivuliike",
+      "hilma_n": 2,
+      "top_buyer": "Monetra Oy",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Monetra Oy",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Suorahankintailmoitus: Taloushallinnon sanomanvälitysoperaattoripalvelut",
+        "Konsernitili- ja maksuliikennepalvelut"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Danske Bank A/S, Suomen sivuliike",
+      "lobby_industry": "Muu pankkitoiminta",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "0498521-4",
+      "org": "Roche Oy",
+      "hilma_n": 2,
+      "top_buyer": "Terveyden ja hyvinvoinnin laitos",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Terveyden ja hyvinvoinnin laitos",
+          "n": 1
+        },
+        {
+          "name": "Pohjois-Pohjanmaan hyvinvointialue",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Baloxavir marboxil 40 mg tabletit",
+        "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2025 + optiovuosi 2026"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Roche Oy",
+      "lobby_industry": "Lääkkeiden tukkukauppa",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "3220764-7",
+      "org": "Epassi Finland Oy",
+      "hilma_n": 2,
+      "top_buyer": "Ilmatieteen laitos",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Ilmatieteen laitos",
+          "n": 1
+        },
+        {
+          "name": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Henkilöstöetujen maksuvälinepalvelu",
+        "Henkilöstöedun sähköinen maksuvälinepalvelu"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Epassi Finland Oy",
+      "lobby_industry": "Muualla luokittelematon muu liike-elämän tukipalvelutoiminta",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    },
+    {
+      "y": "1723156-9",
+      "org": "Mehiläinen Terveyspalvelut Oy",
+      "hilma_n": 2,
+      "top_buyer": "Etelä-Savon hyvinvointialue",
+      "buyer_n": 2,
+      "buyers_top": [
+        {
+          "name": "Etelä-Savon hyvinvointialue",
+          "n": 1
+        },
+        {
+          "name": "Turun kaupunki",
+          "n": 1
+        }
+      ],
+      "sample_titles": [
+        "Mielenterveyspalvelujen perusterveydenhuollon lääkäripalvelu Pieksämäelle ajalle 13.1.2025-2.2.2025",
+        "Ennakoiva mielen työhyvinvointivalmennus"
+      ],
+      "in_lobby": true,
+      "lobby_name": "Mehiläinen Terveyspalvelut Oy",
+      "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
+      "badge": "Hilma ja lobbaus",
+      "kind": "hilma_lobby"
+    }
+  ]
+}
