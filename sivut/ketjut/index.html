@@ -16,8 +16,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20261106k">
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261106k">
+<link rel="stylesheet" href="../../assets/site.css?v=20261106w">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261106w">
 <meta name="theme-color" content="#020617">
 <style>
 
@@ -106,8 +106,9 @@ summary{cursor:pointer;color:#cbd5e1;font-size:.92rem;user-select:none}
 .dept-pills button:hover{color:#fff;border-color:rgba(37,99,235,.45);background:rgba(37,99,235,.12)}
 .dept-pills button.is-on{color:#fff;border-color:rgba(37,99,235,.55);background:rgba(37,99,235,.22)}
 .dept-pills button:focus-visible{outline:2px solid rgba(37,99,235,.65);outline-offset:2px}
-.panel{display:none}
-.panel.is-open{display:block}
+/* Älä piilota .panel.virhe-ilmoitus — vain osasto-tabit */
+.panel[role="tabpanel"]{display:none}
+.panel[role="tabpanel"].is-open{display:block}
 .banner-proto{background:#713f12;color:#fef3c7;text-align:center;font-size:.85rem;font-weight:600;padding:.45rem 1rem}
 a.node.party{border-color:rgba(52,211,153,.4)}
 a.node.party .role{color:#6ee7b7}
@@ -125,7 +126,7 @@ a.node.lobby:hover,a.node.lobby:focus-visible{
 a.node.lobby .tap{color:#f9a8d4}
 .arrow.puolue .amt{color:#a7f3d0}
 .arrow.lobby .amt{color:#fbcfe8}
-html.no-js .panel{display:block;margin-bottom:1.5rem}
+html.no-js .panel[role="tabpanel"]{display:block;margin-bottom:1.5rem}
 html.no-js .dept-pills{display:none}
 
 </style>
@@ -5514,7 +5515,7 @@ html.no-js .dept-pills{display:none}
 <section class="method">
   <h2>Miten ketju syntyy</h2>
   <p>Yhdistävä tieto on Y-tunnus. Hilma: sopimuksen voittajat. Ostolaskut: Tutkihankintoja. Vaalituki ja puoluetuki: Vaalirahoitusvalvonta. Lobbaus: avoimuusrekisteri. Euromäärät tulevat rekistereistä; ne eivät kerro miksi tuki annettiin.</p>
-  <p><a href="../../nain-luet/#ketjut">Näin luet · Ketjut</a></p>
+  <p><a href="../../nain-luet/#ketjut">Näin luet · Ketjut</a> · <a href="#virhe">Ilmoita virhe →</a></p>
 </section>
 
 <section class="panel virhe-ilmoitus" id="virhe">
@@ -5553,7 +5554,7 @@ html.no-js .dept-pills{display:none}
   </div>
 </div>
 
-<script src="../../assets/virhe-ilmoitus.js?v=20261106v" defer></script>
+<script src="../../assets/virhe-ilmoitus.js?v=20261106w" defer></script>
 
 </div>
 <script>

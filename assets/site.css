@@ -1005,14 +1005,32 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
 }
 
 .virhe-ilmoitus {
-  margin-top: 1.25rem;
+  margin: 1.25rem auto 0;
+  max-width: 36rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.virhe-ilmoitus h2 {
+  text-align: center;
+}
+.virhe-ilmoitus > p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .virhe-ilmoitus .virhe-form {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
-  max-width: 36rem;
+  max-width: none;
+  width: 100%;
   margin-top: 0.75rem;
+}
+.virhe-ilmoitus .hero-actions {
+  justify-content: center;
+}
+.virhe-ilmoitus .virhe-status {
+  text-align: center;
 }
 .virhe-ilmoitus label {
   color: #e2e8f0;
