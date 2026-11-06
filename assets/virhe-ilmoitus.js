@@ -4,6 +4,27 @@
   const form = document.getElementById("virhe-form");
   if (!form) return;
 
+  // Hylly-/info-linkki: /ilmoita-virhe/?ref=ketjut&osasto=ketjut
+  (function applyQueryRef() {
+    try {
+      const q = new URLSearchParams(window.location.search || "");
+      const ref = String(q.get("ref") || "").trim().slice(0, 160);
+      const osasto = String(q.get("osasto") || "").trim().slice(0, 80);
+      if (ref) {
+        const kortti = form.querySelector('[name="kortti"]');
+        const korttiId = form.querySelector('[name="kortti_id"]');
+        const subj = form.querySelector('[name="_subject"]');
+        if (kortti) kortti.value = ref;
+        if (korttiId) korttiId.value = ref;
+        if (subj) subj.value = "AitoData virheilmoitus: " + ref;
+      }
+      if (osasto) {
+        const o = form.querySelector('[name="osasto"]');
+        if (o) o.value = osasto;
+      }
+    } catch (_) {}
+  })();
+
   const btn = form.querySelector('button[type="submit"]');
   const status = document.getElementById("virhe-status");
   const overlay = document.getElementById("virhe-overlay");

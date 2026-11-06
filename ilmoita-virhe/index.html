@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Ilmoita virhe · AitoData</title>
+<meta name="description" content="Ilmoita virheestä AitoDatan tiivistelmässä tai faktassa. Sama kanava kuin korttien lomakkeissa.">
+<link rel="canonical" href="https://aitodata.fi/ilmoita-virhe/">
+<meta property="og:title" content="Ilmoita virhe · AitoData">
+<meta property="og:description" content="Ilmoita virheestä AitoDatan tiivistelmässä tai faktassa.">
+<meta property="og:url" content="https://aitodata.fi/ilmoita-virhe/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css?v=20261106y">
+<link rel="stylesheet" href="../assets/nav-chrome.css?v=20261106y">
+<meta name="theme-color" content="#020617">
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+  <a class="wordmark" href="../">Aito<span>Data</span></a>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+  <nav class="site" id="site-nav" aria-label="Päävalikko">
+    <a href="../rahavirrat/">Rahavirrat</a>
+    <a href="../sivut/peito/">Puuttuva tieto</a>
+    <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../kaiva/">Tutki lisää</a>
+    <a href="../nain-luet/">Näin luet</a>
+    <a href="../perusteet/">Perusteet</a>
+  </nav>
+</div></div>
+<div class="wrap">
+  <p class="back"><a href="../">← Etusivu</a></p>
+  <header class="page-head">
+    <p class="section-label">Palaute</p>
+    <h1>Ilmoita virhe</h1>
+    <p class="lead">Käytä tätä sivua hyllyiltä ja ohjesivuilta. Korttien syväsivuilla lomake on suoraan kortin alla.</p>
+  </header>
+
+<section class="panel virhe-ilmoitus" id="virhe">
+  <h2>Ilmoita virhe</h2>
+  <p>Kerro mikä tiivistelmässä tai faktassa ei täsmää lähteeseen. Jos tulit hyllyltä, osasto täyttyy automaattisesti linkistä.</p>
+  <form id="virhe-form" class="virhe-form" action="https://formspree.io/f/mjgpwgnw" method="POST">
+    <input type="hidden" name="_subject" value="AitoData virheilmoitus: yleinen">
+    <input type="hidden" name="kortti" value="yleinen">
+    <input type="hidden" name="kortti_id" value="yleinen">
+    <input type="hidden" name="osasto" value="yleinen">
+    <input type="hidden" name="kanava" value="virheilmoitus">
+    <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
+    <label for="virhe-viesti">Mikä on väärin?</label>
+    <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
+      placeholder="Esim. Summa kortilla X, lähteessä lukee Y."></textarea>
+    <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
+    <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
+      placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
+    <label for="virhe-email">Sähköposti vastaukseen (valinnainen)</label>
+    <input id="virhe-email" type="email" name="email" maxlength="120"
+      placeholder="nimi@esimerkki.fi" autocomplete="email">
+    <div class="hero-actions" style="margin-top:1rem">
+      <button type="submit" class="btn">Lähetä ilmoitus</button>
+    </div>
+    <p id="virhe-status" class="virhe-status" aria-live="polite"></p>
+  </form>
+</section>
+
+<div class="virhe-overlay" id="virhe-overlay" role="dialog" aria-modal="true"
+  aria-labelledby="virhe-title" aria-hidden="true">
+  <div class="virhe-modal">
+    <h2 id="virhe-title">Ilmoitus lähetetty</h2>
+    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos tieto on väärin.</p>
+    <div class="virhe-summary" id="virhe-summary"></div>
+    <button type="button" class="btn" id="virhe-close">Sulje</button>
+  </div>
+</div>
+
+<script src="../assets/virhe-ilmoitus.js?v=20261106y" defer></script>
+
+</div>
+<script src="../assets/nav.js" defer></script>
+</body>
+</html>
