@@ -62,14 +62,13 @@ a:hover{color:#93c5fd}
 .shelves a.shelf.is-active{color:#fff;background:rgba(37,99,235,.14);border-color:rgba(37,99,235,.4)}
 
 </style>
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030m">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030h">
 
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../../">Aito<span>Data</span></a>
-  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Päävalikko">
+  <nav class="site-nav" aria-label="Päävalikko">
     <a href="../../rahavirrat/" class="active">Rahavirrat</a>
     <a href="../../sivut/peito/">Puuttuva tieto</a>
     <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -118,6 +117,88 @@ a:hover{color:#93c5fd}
  <p class="source">Lähde: VTV:n rahoitusilmoitukset · esikatselu</p>
 </article>
 </div>
-<script src="../../assets/nav.js?v=20261030m" defer></script>
+<style>
+
+.virhe-ilmoitus{margin:1.5rem 0 0;padding:1.15rem 1.2rem;border:1px solid #1e293b;border-radius:1rem;background:rgba(15,23,42,.78)}
+.virhe-ilmoitus h2{margin:0 0 .5rem;font-size:1.1rem}
+.virhe-ilmoitus>p{margin:0 0 1rem;color:#94a3b8;font-size:.92rem;max-width:40rem}
+.virhe-ilmoitus .virhe-form{display:flex;flex-direction:column;gap:.55rem;max-width:36rem}
+.virhe-ilmoitus label{font-size:.85rem;font-weight:600;color:#cbd5e1}
+.virhe-ilmoitus textarea,.virhe-ilmoitus input[type="email"]{
+  width:100%;padding:.65rem .75rem;border-radius:.5rem;border:1px solid #334155;
+  background:rgba(2,6,23,.55);color:#f1f5f9;font:inherit;resize:vertical
+}
+.virhe-ilmoitus textarea:focus,.virhe-ilmoitus input[type="email"]:focus{
+  outline:2px solid rgba(96,165,250,.55);outline-offset:1px;border-color:rgba(96,165,250,.45)
+}
+.virhe-ilmoitus .virhe-gotcha{position:absolute;left:-9999px;height:0;width:0;overflow:hidden}
+.virhe-ilmoitus .hero-actions{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center}
+.virhe-ilmoitus button.btn{
+  appearance:none;cursor:pointer;padding:.65rem 1.1rem;border-radius:.5rem;font:inherit;font-weight:700;
+  border:1px solid rgba(37,99,235,.45);background:rgba(37,99,235,.22);color:#fff
+}
+.virhe-ilmoitus button.btn:disabled{opacity:.6;cursor:wait}
+.virhe-ilmoitus .virhe-status{min-height:1.25rem;font-size:.88rem;color:#94a3b8;margin:.35rem 0 0}
+.virhe-ilmoitus .virhe-status.err{color:#fca5a5}
+.virhe-overlay{
+  position:fixed;inset:0;display:none;align-items:center;justify-content:center;
+  background:rgba(2,6,23,.72);z-index:80;padding:1rem
+}
+.virhe-overlay.open{display:flex}
+.virhe-modal{
+  width:min(28rem,100%);padding:1.25rem 1.3rem;border-radius:1rem;border:1px solid #334155;
+  background:#0f172a;color:#f1f5f9;box-shadow:0 20px 50px rgba(0,0,0,.45)
+}
+.virhe-modal h2{margin:0 0 .5rem;font-size:1.15rem}
+.virhe-lead{margin:0 0 .85rem;color:#94a3b8;font-size:.92rem}
+.virhe-summary{
+  margin:0 0 1rem;padding:.75rem .85rem;border-radius:.55rem;background:rgba(2,6,23,.55);
+  border:1px solid #1e293b;font-size:.88rem;white-space:pre-wrap;color:#cbd5e1
+}
+.virhe-modal .btn{
+  appearance:none;cursor:pointer;padding:.55rem 1rem;border-radius:.5rem;font:inherit;font-weight:700;
+  border:1px solid rgba(37,99,235,.45);background:rgba(37,99,235,.22);color:#fff
+}
+
+</style>
+
+<section class="panel virhe-ilmoitus" id="virhe">
+  <h2>Ilmoita virhe</h2>
+  <p>Jos tiivistelmä, summa tai linkki ei täsmää VTV:n ilmoitukseen, kerro se tähän. Korjaamme.</p>
+  <form id="virhe-form" class="virhe-form" action="https://formspree.io/f/mjgpwgnw" method="POST">
+    <input type="hidden" name="_subject" value="AitoData virheilmoitus: rahavirrat/kortti-ehdokas-harri-pikkarainen">
+    <input type="hidden" name="kortti" value="rahavirrat/kortti-ehdokas-harri-pikkarainen">
+    <input type="hidden" name="kortti_id" value="kortti-ehdokas-harri-pikkarainen">
+    <input type="hidden" name="osasto" value="rahavirrat">
+    <input type="hidden" name="tyyppi" value="ehdokas">
+    <input type="hidden" name="kanava" value="virheilmoitus">
+    <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
+    <label for="virhe-viesti">Mikä on väärin?</label>
+    <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
+      placeholder="Esim. Summa kortilla X, lähteessä lukee Y."></textarea>
+    <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
+    <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
+      placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
+    <label for="virhe-email">Sähköposti vastaukseen (valinnainen)</label>
+    <input id="virhe-email" type="email" name="email" maxlength="120"
+      placeholder="nimi@esimerkki.fi" autocomplete="email">
+    <div class="hero-actions" style="margin-top:1rem">
+      <button type="submit" class="btn">Lähetä ilmoitus</button>
+    </div>
+    <p id="virhe-status" class="virhe-status" aria-live="polite"></p>
+  </form>
+</section>
+
+<div class="virhe-overlay" id="virhe-overlay" role="dialog" aria-modal="true"
+  aria-labelledby="virhe-title" aria-hidden="true">
+  <div class="virhe-modal">
+    <h2 id="virhe-title">Ilmoitus lähetetty</h2>
+    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos tieto on väärin.</p>
+    <div class="virhe-summary" id="virhe-summary"></div>
+    <button type="button" class="btn" id="virhe-close">Sulje</button>
+  </div>
+</div>
+
+<script src="../../assets/virhe-ilmoitus.js?v=20261106v" defer></script>
 </body>
 </html>

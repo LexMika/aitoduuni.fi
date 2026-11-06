@@ -5516,6 +5516,45 @@ html.no-js .dept-pills{display:none}
   <p>Yhdistävä tieto on Y-tunnus. Hilma: sopimuksen voittajat. Ostolaskut: Tutkihankintoja. Vaalituki ja puoluetuki: Vaalirahoitusvalvonta. Lobbaus: avoimuusrekisteri. Euromäärät tulevat rekistereistä; ne eivät kerro miksi tuki annettiin.</p>
   <p><a href="../../nain-luet/#ketjut">Näin luet · Ketjut</a></p>
 </section>
+
+<section class="panel virhe-ilmoitus" id="virhe">
+  <h2>Ilmoita virhe</h2>
+  <p>Jos hyllyn tiivistelmä tai ketju ei täsmää lähteeseen, kerro se tähän. Yksittäisen yrityksen syväsivulla on oma lomake.</p>
+  <form id="virhe-form" class="virhe-form" action="https://formspree.io/f/mjgpwgnw" method="POST">
+    <input type="hidden" name="_subject" value="AitoData virheilmoitus: ketjut/hylly">
+    <input type="hidden" name="kortti" value="ketjut/hylly">
+    <input type="hidden" name="kortti_id" value="ketjut/hylly">
+    <input type="hidden" name="osasto" value="ketjut">
+    <input type="hidden" name="kanava" value="virheilmoitus">
+    <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
+    <label for="virhe-viesti">Mikä on väärin?</label>
+    <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
+      placeholder="Esim. Summa kortilla X, lähteessä lukee Y."></textarea>
+    <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
+    <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
+      placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
+    <label for="virhe-email">Sähköposti vastaukseen (valinnainen)</label>
+    <input id="virhe-email" type="email" name="email" maxlength="120"
+      placeholder="nimi@esimerkki.fi" autocomplete="email">
+    <div class="hero-actions" style="margin-top:1rem">
+      <button type="submit" class="btn">Lähetä ilmoitus</button>
+    </div>
+    <p id="virhe-status" class="virhe-status" aria-live="polite"></p>
+  </form>
+</section>
+
+<div class="virhe-overlay" id="virhe-overlay" role="dialog" aria-modal="true"
+  aria-labelledby="virhe-title" aria-hidden="true">
+  <div class="virhe-modal">
+    <h2 id="virhe-title">Ilmoitus lähetetty</h2>
+    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos tieto on väärin.</p>
+    <div class="virhe-summary" id="virhe-summary"></div>
+    <button type="button" class="btn" id="virhe-close">Sulje</button>
+  </div>
+</div>
+
+<script src="../../assets/virhe-ilmoitus.js?v=20261106v" defer></script>
+
 </div>
 <script>
 (function () {
