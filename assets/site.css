@@ -824,6 +824,44 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   line-height: 1.45;
 }
 
+.loydot-suhde-block .loydot-ratio {
+  margin-bottom: 0.75rem;
+}
+.loydot-ratio-why {
+  margin: 0 0 1.4rem;
+  padding: 1.05rem 1.15rem 1.15rem;
+  border: 1px solid var(--edge);
+  border-radius: 1.1rem;
+  background: rgba(15, 23, 42, 0.55);
+}
+.loydot-ratio-why-title {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1.35;
+}
+.loydot-ratio-why ul {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 42rem;
+}
+.loydot-ratio-why li {
+  margin: 0.4rem 0;
+}
+.loydot-ratio-why a {
+  color: #93c5fd;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(147, 197, 253, 0.35);
+}
+.loydot-ratio-why a:hover {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.45);
+}
+
 .loydot-ratio-home {
   margin: 0.55rem 0 0.85rem;
   font-size: 0.92rem;
