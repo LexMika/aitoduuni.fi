@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../../assets/site.css?v=20260922b">
+<link rel="stylesheet" href="../../../assets/site.css?v=20261107a">
 <link rel="icon" href="../../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
@@ -18,16 +18,21 @@
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../../">Aito<span>Data</span></a>
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav class="site" id="site-nav">
-    <a href="../../../sivut/loydot/" class="active">Löydöt</a>
+<nav class="site" id="site-nav" aria-label="Päävalikko">
+    <a href="../../../rahavirrat/" class="active">Rahavirrat</a>
     <a href="../../../sivut/peito/">Puuttuva tieto</a>
     <a href="../../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../../../kaiva/">Tutki lisää</a>
     <a href="../../../nain-luet/">Näin luet</a>
     <a href="../../../perusteet/">Perusteet</a>
-    <a href="../../../tietoa/">Info</a>
   </nav>
 </div></div>
+<nav class="shelves" aria-label="Rahavirrat-hyllyt">
+ <a class="shelf" href="../../../rahavirrat/vaalituki/">Vaalituki</a>
+ <a class="shelf" href="../../../rahavirrat/puoluerahoitus/">Puoluerahoitus</a>
+ <a class="shelf is-active" href="../../../sivut/loydot/" aria-current="page">Löydöt</a>
+ <a class="shelf" href="../../../sivut/ketjut/">Ketjut</a>
+</nav>
 <div class="wrap">
 
 <header class="page-head">
@@ -84,11 +89,12 @@ Julkinen lähde. Faktat tiivistetty. Tulkinta lukijalla. Jos jokin kortissa ei t
     <input type="hidden" name="_subject" value="AitoData virheilmoitus: hilma-outlier-2026060158">
     <input type="hidden" name="kortti" value="hilma-outlier-2026060158">
     <input type="hidden" name="kortti_id" value="hilma-outlier-2026-060158">
+    <input type="hidden" name="osasto" value="loydot">
     <input type="hidden" name="kanava" value="virheilmoitus">
     <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
     <label for="virhe-viesti">Mikä on väärin?</label>
     <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
-      placeholder="Esim. Arvioitu arvo kortilla X, Hilmassa lukee Y."></textarea>
+      placeholder="Esim. Summa kortilla X, lähteessä lukee Y."></textarea>
     <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
     <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
       placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
@@ -108,18 +114,18 @@ Julkinen lähde. Faktat tiivistetty. Tulkinta lukijalla. Jos jokin kortissa ei t
   aria-labelledby="virhe-title" aria-hidden="true">
   <div class="virhe-modal">
     <h2 id="virhe-title">Ilmoitus lähetetty</h2>
-    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos kortti on väärin.</p>
+    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos tieto on väärin.</p>
     <div class="virhe-summary" id="virhe-summary"></div>
     <button type="button" class="btn" id="virhe-close">Sulje</button>
   </div>
 </div>
 
 <footer>
-<p><a class="wordmark" href="../../../">Aito<span>Data</span></a> · Vallanvahtikoira</p>
-<p class="legal-links"><a href="../../../tietoa/">Info</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
-<p>Löydöt · 2026-11-07T12:27:31+03:00</p>
+<p><a class="wordmark" href="../../../">Aito<span>Data</span></a></p>
+<p class="legal-links"><a href="../../../tietoa/">Tietoa</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
+<p>Löydöt · 7.11.2026</p>
 </footer>
-<script src="../../../assets/nav.js?v=20260922b" defer></script>
-<script src="../../../assets/virhe-ilmoitus.js?v=20260922b" defer></script>
+<script src="../../../assets/nav.js?v=20261107a" defer></script>
+<script src="../../../assets/virhe-ilmoitus.js?v=20261107a" defer></script>
 </body>
 </html>

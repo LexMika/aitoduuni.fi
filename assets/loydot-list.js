@@ -1,6 +1,6 @@
-/* Löydöt-listan suodatin, haku, järjestys ja sivutus (staattinen HTML).
-   Osoiterivi: vain polku (ei ?q= / ?kind=). Suodatin muistissa; vanhat ?kind=/# luetaan kerran.
-   Sivutus: 50 / sivu · nollautuu kun kind / haku / järjestys vaihtuu. */
+/* Löydöt-lista: haku, järjestys ja sivutus (staattinen HTML).
+   Ei kind-suodatinta — peitto/ketju/raha omilla hyllyillään.
+   Osoiterivi: vain polku (ei ?q= / ?kind=). Sivutus: 50 / sivu. */
 (function () {
   var PAGE_SIZE = 50;
 
@@ -9,7 +9,6 @@
     var countEl = document.getElementById("find-count");
     var emptyEl = document.getElementById("find-empty");
     var qEl = document.getElementById("find-q");
-    var chips = document.querySelectorAll(".find-chip:not(.find-sort-chip)");
     var sortChips = document.querySelectorAll(".find-sort-chip");
     if (!list || !countEl) return;
 
@@ -23,25 +22,9 @@
       list.insertAdjacentElement("afterend", pagerEl);
     }
 
-    var kind = "";
     var q = "";
     var sort = "newest";
     var page = 1;
-    var allowed = { raha: 1, hankinta: 1, ketju: 1, peitto: 1 };
-    var shortKind = { r: "raha", h: "hankinta", k: "ketju", p: "peitto" };
-
-    function kindFromUrl() {
-      try {
-        var u = new URL(window.location.href);
-        var k = (u.searchParams.get("kind") || u.searchParams.get("k") || "").trim().toLowerCase();
-        if (shortKind[k]) k = shortKind[k];
-        if (k && allowed[k]) return k;
-        var hash = (u.hash || "").replace(/^#/, "").trim().toLowerCase();
-        if (shortKind[hash]) hash = shortKind[hash];
-        if (hash && allowed[hash]) return hash;
-      } catch (e) {}
-      return "";
-    }
 
     /** Pidä osoiterivi lyhyenä: /sivut/loydot/ ilman queryä tai hashia. */
     function cleanUrl() {
@@ -144,10 +127,8 @@
       var items = Array.prototype.slice.call(list.querySelectorAll(".find-item"));
       var qLower = q.toLowerCase();
       return items.filter(function (el) {
-        var okKind = !kind || el.getAttribute("data-kind") === kind;
         var blob = (el.getAttribute("data-search") || "").toLowerCase();
-        var okQ = !qLower || blob.indexOf(qLower) !== -1;
-        return okKind && okQ;
+        return !qLower || blob.indexOf(qLower) !== -1;
       });
     }
 
@@ -186,7 +167,6 @@
         ariaLabel: "Edellinen sivu",
       });
 
-      // Ikkuna sivunumeroista (max ~7)
       var windowSize = 7;
       var start = Math.max(1, page - Math.floor(windowSize / 2));
       var end = Math.min(totalPages, start + windowSize - 1);
@@ -266,29 +246,12 @@
       apply();
     }
 
-    function setChipActive() {
-      chips.forEach(function (btn) {
-        var k = (btn.getAttribute("data-kind") || "").toLowerCase();
-        btn.classList.toggle("is-active", k === kind);
-      });
-    }
-
     function setSortActive() {
       sortChips.forEach(function (btn) {
         var s = (btn.getAttribute("data-sort") || "").toLowerCase();
         btn.classList.toggle("is-active", s === sort);
       });
     }
-
-    chips.forEach(function (btn) {
-      if (btn.disabled || btn.getAttribute("aria-disabled") === "true") return;
-      btn.addEventListener("click", function () {
-        kind = (btn.getAttribute("data-kind") || "").toLowerCase();
-        setChipActive();
-        resetPageAndApply();
-        cleanUrl();
-      });
-    });
 
     sortChips.forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -308,8 +271,6 @@
       });
     }
 
-    kind = kindFromUrl();
-    setChipActive();
     setSortActive();
     reorderList();
     apply();
