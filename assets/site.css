@@ -828,11 +828,12 @@ nav.site a.active { color: #fff; background: rgba(37, 99, 235, 0.12); }
   margin-bottom: 0.75rem;
 }
 .loydot-ratio-why {
+  display: block;
   margin: 0 0 1.4rem;
   padding: 1.05rem 1.15rem 1.15rem;
-  border: 1px solid var(--edge);
+  border: 1px solid rgba(37, 99, 235, 0.28);
   border-radius: 1.1rem;
-  background: rgba(15, 23, 42, 0.55);
+  background: var(--blue-dim);
 }
 .loydot-ratio-why-title {
   margin: 0 0 0.55rem;
