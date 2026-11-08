@@ -60,12 +60,15 @@ tr:hover td{background:rgba(37,99,235,.08)}
 .shelves a.shelf.is-active{color:#fff;background:rgba(37,99,235,.14);border-color:rgba(37,99,235,.4)}
 
 </style>
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261108m">
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
-    <a href="../" class="active">Rahavirrat</a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+
+  <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+    <a href="../../rahavirrat/" class="active">Rahavirrat</a>
     <a href="../../sivut/peito/">Puuttuva tieto</a>
     <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../../kaiva/">Tutki lisää</a>
@@ -92,5 +95,6 @@ tr:hover td{background:rgba(37,99,235,.08)}
 </table></div>
 <p class="source"><a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html">Lähde: VTV EK rahoitusrivit CSV</a></p>
 </div>
+<script src="../../assets/nav.js?v=20261108m" defer></script>
 </body>
 </html>

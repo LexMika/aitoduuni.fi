@@ -105,13 +105,15 @@ a.open.secondary{display:inline-block;margin:.35rem 1rem .15rem;font-size:.82rem
 .virhe-cta a.btn:hover{background:rgba(37,99,235,.35);color:#fff}
 
 </style>
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261030h">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261108m">
 
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+
+  <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
     <a href="../../rahavirrat/" class="active">Rahavirrat</a>
     <a href="../../sivut/peito/">Puuttuva tieto</a>
     <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
@@ -261,5 +263,6 @@ render();
 <footer class="site-foot">
   <p class="legal-links"><a href="https://aitodata.fi/tietoa/">Tietoa</a> · <a href="https://aitodata.fi/perusteet/">Perusteet</a> · <a href="https://aitodata.fi/kayttoehdot/">Käyttöehdot</a> · <a href="https://aitodata.fi/tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
 </footer>
+<script src="../../assets/nav.js?v=20261108m" defer></script>
 </body>
 </html>

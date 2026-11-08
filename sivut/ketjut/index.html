@@ -16,8 +16,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/site.css?v=20261106z">
-<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261106z">
+<link rel="stylesheet" href="../../assets/site.css?v=20261108m">
+<link rel="stylesheet" href="../../assets/nav-chrome.css?v=20261108m">
 <meta name="theme-color" content="#020617">
 <style>
 
@@ -134,10 +134,12 @@ html.no-js .dept-pills{display:none}
 <body>
 <div class="topbar"><div class="topbar-inner">
   <a class="wordmark" href="../../">Aito<span>Data</span></a>
-  <nav class="site-nav" aria-label="Päävalikko">
-    <a href="../../rahavirrat/">Rahavirrat</a>
-    <a href="../peito/">Puuttuva tieto</a>
-    <a href="../toimiiko-lahde/">Toimiiko lähde?</a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+
+  <nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+    <a href="../../rahavirrat/" class="active">Rahavirrat</a>
+    <a href="../../sivut/peito/">Puuttuva tieto</a>
+    <a href="../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../../kaiva/">Tutki lisää</a>
     <a href="../../nain-luet/">Näin luet</a>
     <a href="../../perusteet/">Perusteet</a>
@@ -5571,6 +5573,6 @@ html.no-js .dept-pills{display:none}
   show(hash || "ehdokas");
 })();
 </script>
-<script src="../../assets/nav.js" defer></script>
+<script src="../../assets/nav.js?v=20261108m" defer></script>
 </body>
 </html>
