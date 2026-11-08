@@ -151,7 +151,9 @@ html.no-js .dept-pills{display:none}
     <button type="button" role="tab" id="tab-vaalituki" aria-controls="panel-vaalituki" data-dept="vaalituki" class="is-on" aria-selected="true">Vaalituki</button>
     <button type="button" role="tab" id="tab-puolue" aria-controls="panel-puolue" data-dept="puolue" aria-selected="false">Puoluerahoitus</button>
     <button type="button" role="tab" id="tab-loydot" aria-controls="panel-loydot" data-dept="loydot" aria-selected="false">Löydöt / hankinta</button>
+    <button type="button" role="tab" id="tab-ketjut" aria-controls="panel-ketjut" data-dept="ketjut" aria-selected="false">Ketjut</button>
     <button type="button" role="tab" id="tab-puuttuva" aria-controls="panel-puuttuva" data-dept="puuttuva" aria-selected="false">Puuttuva</button>
+    <button type="button" role="tab" id="tab-toimiiko" aria-controls="panel-toimiiko" data-dept="toimiiko" aria-selected="false">Toimiiko</button>
   </div>
 
   <section class="panel is-open" role="tabpanel" id="panel-vaalituki" aria-labelledby="tab-vaalituki" data-dept="vaalituki">
@@ -282,6 +284,49 @@ html.no-js .dept-pills{display:none}
     <p class="foot-note">Lähteen kunto: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a> · puuttuva kenttä: <a href="../sivut/peito/">Puuttuva tieto</a></p>
   </section>
 
+  <section class="panel" role="tabpanel" id="panel-ketjut" aria-labelledby="tab-ketjut" data-dept="ketjut" hidden>
+    <h2>Ketjut · jatko lähteisiin</h2>
+    <p class="blurb">Ketjusivu on auki. Sama Y-tunnus kahdessa julkisessa paikassa. Seuraa ostajasta yritykseen ja jatkoon.</p>
+
+    <div class="block">
+      <h3>Mitä poimit kortilta</h3>
+      <ul>
+        <li><strong>Ostaja</strong> · <strong>yritys</strong> (Y-tunnus) · <strong>jatko</strong> (ehdokas, ilmoittaja tai avoimuusrekisteri)</li>
+        <li>Badge / osasto: ehdokas, puolue tai lobbaus</li>
+        <li>Summat ja päivämäärät, jos näkyvät; linkit molempiin lähteisiin</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Avaa hankinnan lähde (Hilma / ilmoitus). Vertaa ostaja, yritys, Y.</li>
+        <li>Avaa jatko: vaalituki- tai puoluerahoituskortti, tai avoimuusrekisterin merkintä.</li>
+        <li>Sama Y muualla: <a href="../sivut/ketjut/">Ketjut-hylly</a> · <a href="../rahavirrat/">Rahavirrat</a>.</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko liitos vain sama Y-tunnus, ei arvaus nimestä?</li>
+        <li>Toistuuko sama ostaja tai yritys useassa ketjussa?</li>
+        <li>Mitä lähde ei kerro (sopimus, käyttötarkoitus, ajankohta)?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Aloituskortti</p>
+      <h3>Wihuri Oy · ehdokasketju</h3>
+      <p>Poimi ostajat ja Y, avaa vaalituki-jatko ja tarkista molemmat lähteet.</p>
+      <a class="cta" href="../sivut/ketjut/wihuri-oy/">Avaa kortti →</a>
+      &nbsp; <a href="../nain-luet/#ketjut">Näin luet · Ketjut</a>
+      &nbsp; <a href="../sivut/ketjut/">Ketjut-hylly</a>
+    </div>
+
+    <p class="foot-note">Jos lähde ei aukea: <a href="../sivut/toimiiko-lahde/">Toimiiko lähde?</a></p>
+  </section>
+
   <section class="panel" role="tabpanel" id="panel-puuttuva" aria-labelledby="tab-puuttuva" data-dept="puuttuva" hidden>
     <h2>Puuttuva · jatko, kun aineisto ei riitä</h2>
     <p class="blurb">Näet aukon: arvioitu hinta puuttuu, haku on tyhjä tai kenttä ei ole ilmoituksessa. Jatka rehellisesti.</p>
@@ -323,6 +368,46 @@ html.no-js .dept-pills{display:none}
     </div>
   </section>
 
+  <section class="panel" role="tabpanel" id="panel-toimiiko" aria-labelledby="tab-toimiiko" data-dept="toimiiko" hidden>
+    <h2>Toimiiko lähde? · jatko havaintoon</h2>
+    <p class="blurb">Lähteen kunto on auki. Erota “ei dataa” ja “lähde ei vastaa”. Palaa aina itse ilmoitukseen, kun se aukeaa.</p>
+
+    <div class="block">
+      <h3>Mitä poimit</h3>
+      <ul>
+        <li>Aukeiko lähde ilman kirjautumista</li>
+        <li>Palauttiko haku osumia vai jäikö tyhjäksi</li>
+        <li>Milloin tarkistus tehtiin (jos merkitty)</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Mistä haet seuraavaksi</h3>
+      <ol>
+        <li>Toista sama haku / avaa sama linkki. Kirjaa tulos.</li>
+        <li>Kokeile toista reittiä (ilmoitusnumero, TED, kunnan päätökset), jos kortti vihjaa siihen.</li>
+        <li>Jos aineisto on oikeasti ohut: <a href="../sivut/peito/">Puuttuva tieto</a> tai tietopyyntö (alla).</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3>Kysymyksiä itsellesi</h3>
+      <ul>
+        <li>Onko lähde jumissa vai puuttuuko tieto aineistosta?</li>
+        <li>Toistuuko tyhjä haku eri päivinä?</li>
+        <li>Riittääkö havainto “ei aukea”, vai tarvitaanko toinen kanava?</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <p class="ex-k">Aloitus</p>
+      <h3>Toimiiko lähde? · live</h3>
+      <p>Kooste lähteiden vastauksista ja tyhjistä hauista.</p>
+      <a class="cta" href="../sivut/toimiiko-lahde/">Avaa Toimiiko lähde? →</a>
+      &nbsp; <a href="../nain-luet/#toimiiko">Näin luet · Toimiiko</a>
+    </div>
+  </section>
+
   <div class="quiet">
     <p class="section-label">Yhteinen</p>
     <h2>Jos tietoa ei löydy: tietopyyntö</h2>
@@ -349,7 +434,7 @@ html.no-js .dept-pills{display:none}
 (function () {
   var pills = document.querySelectorAll(".dept-pills button");
   var panels = document.querySelectorAll(".panel");
-  var valid = { vaalituki:1, puolue:1, loydot:1, puuttuva:1 };
+  var valid = { vaalituki:1, puolue:1, loydot:1, ketjut:1, puuttuva:1, toimiiko:1 };
 
   function show(dept) {
     if (!valid[dept]) dept = "vaalituki";
