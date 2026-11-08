@@ -1,10 +1,8 @@
 /* AitoData top nav — mobile hamburger */
 (function () {
   function init() {
-    var toggle = document.querySelector(".topbar-inner > .nav-toggle, .nav-toggle");
-    var nav =
-      document.getElementById("site-nav") ||
-      document.querySelector(".topbar-inner > .site-nav, .topbar-inner > nav.site");
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("site-nav");
     if (!toggle || !nav) return;
 
     function setOpen(open) {
