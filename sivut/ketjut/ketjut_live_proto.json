@@ -1,6 +1,6 @@
 {
   "n": 23,
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "criterion": "eform winner_y ∩ vaali tukija-Y (+ Tutki-only legacy)",
   "model": "shelf+node-links+deep",
   "n_eform": 16,
@@ -12,7 +12,32 @@
       "org": "Wihuri Oy",
       "top_buyer": "Haminan kaupunki",
       "buyer_n": 6,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Haminan kaupunki",
+          "n": 2
+        },
+        {
+          "name": "Vantaan kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Espoon kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Loviisan kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Helsingin kaupunki",
+          "n": 1
+        },
+        {
+          "name": "Nakkilan kunta",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 21000.0,
       "candidates": [
@@ -31,8 +56,66 @@
         "Kunnossapidon monitoimikone"
       ],
       "notice_n": 7,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-017731",
+        "2024-018218",
+        "2026-057002",
+        "2026-059127",
+        "2026-060792",
+        "2026-060799",
+        "2026-060803"
+      ],
+      "awards": [
+        {
+          "buyer": "Vantaan kaupunki",
+          "title": "Monitoimityökoneen hankinta katujen kunnossapitoon",
+          "notice_id": "EF-17731",
+          "notice_number": "2024-017731",
+          "awarded_value_eur": 243000.0
+        },
+        {
+          "buyer": "Espoon kaupunki",
+          "title": "Kunnossapitokaluston lisälaitteiden hankinta",
+          "notice_id": "EF-18218",
+          "notice_number": "2024-018218",
+          "awarded_value_eur": 1750000.0
+        },
+        {
+          "buyer": "Loviisan kaupunki",
+          "title": "Kunnossapidon monitoimikone",
+          "notice_id": "EF-57002",
+          "notice_number": "2026-057002",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Elintarvikkeiden tukkuostot",
+          "notice_id": "EF-59127",
+          "notice_number": "2026-059127",
+          "awarded_value_eur": 13000000.0
+        },
+        {
+          "buyer": "Haminan kaupunki",
+          "title": "Työkonehankinta, ympäristönhoitokone",
+          "notice_id": "EF-60792",
+          "notice_number": "2026-060792",
+          "awarded_value_eur": 146000.0
+        },
+        {
+          "buyer": "Haminan kaupunki",
+          "title": "Työkonehankinta, ympäristönhoitokone",
+          "notice_id": "EF-60799",
+          "notice_number": "2026-060799",
+          "awarded_value_eur": 112000.0
+        },
+        {
+          "buyer": "Nakkilan kunta",
+          "title": "Pyöräkuormaajan hankinta",
+          "notice_id": "EF-60803",
+          "notice_number": "2026-060803",
+          "awarded_value_eur": 137000.0
+        }
+      ],
       "elections": [
         "Aluevaalit 2025",
         "Europarlamenttivaalit 2024",
@@ -46,7 +129,12 @@
       "org": "Sinituote Oy",
       "top_buyer": "Kansaneläkelaitos",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 11000.0,
       "candidates": [
@@ -60,8 +148,18 @@
         "Vuoden 2027 äitiyspakkauksen tuotteiden hankinta"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2026-061197"
+      ],
+      "awards": [
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Vuoden 2027 äitiyspakkauksen tuotteiden hankinta",
+          "notice_id": "EF-61197",
+          "notice_number": "2026-061197",
+          "awarded_value_eur": null
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023",
         "Aluevaalit 2022"
@@ -73,7 +171,16 @@
       "org": "United Imaginations Oy",
       "top_buyer": "Business Finland Oy",
       "buyer_n": 2,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Business Finland Oy",
+          "n": 1
+        },
+        {
+          "name": "Seinäjoen kaupunki",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 10000.0,
       "candidates": [
@@ -87,8 +194,26 @@
         "Jälki-ilmoitus: 26062 Strategiset mainostoimistopalvelut"
       ],
       "notice_n": 2,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-016783",
+        "2026-057954"
+      ],
+      "awards": [
+        {
+          "buyer": "Business Finland Oy",
+          "title": "Luova markkinointitoimisto",
+          "notice_id": "EF-16783",
+          "notice_number": "2024-016783",
+          "awarded_value_eur": 7000000.0
+        },
+        {
+          "buyer": "Seinäjoen kaupunki",
+          "title": "Jälki-ilmoitus: 26062 Strategiset mainostoimistopalvelut",
+          "notice_id": "EF-57954",
+          "notice_number": "2026-057954",
+          "awarded_value_eur": 200000.0
+        }
+      ],
       "elections": [
         "Presidentinvaali 2024"
       ]
@@ -99,7 +224,16 @@
       "org": "Rakennus K. Karhu Oy",
       "top_buyer": "Seinäjoen seurakunta",
       "buyer_n": 2,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Seinäjoen seurakunta",
+          "n": 1
+        },
+        {
+          "name": "Alavuden kaupunki",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 5000.0,
       "candidates": [
@@ -113,8 +247,26 @@
         "Vesitornin peruskorjaus, Alavus"
       ],
       "notice_n": 2,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-016284",
+        "2026-057859"
+      ],
+      "awards": [
+        {
+          "buyer": "Seinäjoen seurakunta",
+          "title": "RAKENNUSURAKKA / LVI-URAKKA / SÄHKÖ-URAKKA / Seinäjoen seurakuntakeskus VAIHE 3 / PERUSKORJAUS ja MUUTOS.",
+          "notice_id": "EF-16284",
+          "notice_number": "2024-016284",
+          "awarded_value_eur": 4560590.0
+        },
+        {
+          "buyer": "Alavuden kaupunki",
+          "title": "Vesitornin peruskorjaus, Alavus",
+          "notice_id": "EF-57859",
+          "notice_number": "2026-057859",
+          "awarded_value_eur": 334000.0
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023"
       ]
@@ -125,7 +277,12 @@
       "org": "Maanrakennus E. Majava Oy",
       "top_buyer": "Raahen kaupunki",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Raahen kaupunki",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 4000.0,
       "candidates": [
@@ -138,8 +295,18 @@
         "Pattasten koulukeskuksen yläkoulurakennuksen purku-urakka"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2026-057729"
+      ],
+      "awards": [
+        {
+          "buyer": "Raahen kaupunki",
+          "title": "Pattasten koulukeskuksen yläkoulurakennuksen purku-urakka",
+          "notice_id": "EF-57729",
+          "notice_number": "2026-057729",
+          "awarded_value_eur": 286480.0
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023"
       ]
@@ -150,7 +317,12 @@
       "org": "Cimson Koulutuspalvelut Oy",
       "top_buyer": "Kansaneläkelaitos",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 4
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 3000.0,
       "candidates": [
@@ -165,8 +337,42 @@
         "Työkokeilu ja työhönvalmennus, Pohjois-Suomen yhteistyöalue"
       ],
       "notice_n": 4,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-016454",
+        "2024-016456",
+        "2024-016505",
+        "2024-016508"
+      ],
+      "awards": [
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Etelä-Suomen yhteistyöalue",
+          "notice_id": "EF-16454",
+          "notice_number": "2024-016454",
+          "awarded_value_eur": 24800000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Itä-Suomen yhteistyöalue",
+          "notice_id": "EF-16456",
+          "notice_number": "2024-016456",
+          "awarded_value_eur": 2480000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Pohjois-Suomen yhteistyöalue",
+          "notice_id": "EF-16505",
+          "notice_number": "2024-016505",
+          "awarded_value_eur": 18800000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Sisä-Suomen yhteistyöalue",
+          "notice_id": "EF-16508",
+          "notice_number": "2024-016508",
+          "awarded_value_eur": 19200000.0
+        }
+      ],
       "elections": [
         "Aluevaalit 2025",
         "Kuntavaalit 2025"
@@ -178,7 +384,12 @@
       "org": "Lappset Group Oy",
       "top_buyer": "Salon kaupunki",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Salon kaupunki",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 3000.0,
       "candidates": [
@@ -191,8 +402,18 @@
         "Puistojen ja kiinteistöjen pihojen ulkoleikkivälineiden hankinta"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2026-058205"
+      ],
+      "awards": [
+        {
+          "buyer": "Salon kaupunki",
+          "title": "Puistojen ja kiinteistöjen pihojen ulkoleikkivälineiden hankinta",
+          "notice_id": "EF-58205",
+          "notice_number": "2026-058205",
+          "awarded_value_eur": 1100000.0
+        }
+      ],
       "elections": [
         "Europarlamenttivaalit 2024"
       ]
@@ -203,7 +424,16 @@
       "org": "Härmän Kuntoutus Oy",
       "top_buyer": "Folkpensionsanstalten",
       "buyer_n": 2,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Folkpensionsanstalten",
+          "n": 7
+        },
+        {
+          "name": "Kansaneläkelaitos",
+          "n": 2
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 2980.0,
       "candidates": [
@@ -218,8 +448,82 @@
         "Oras-rehabiliteringskurser för vuxna"
       ],
       "notice_n": 9,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-014916",
+        "2024-014924",
+        "2024-014958",
+        "2024-014959",
+        "2024-015800",
+        "2024-016439",
+        "2024-016492",
+        "2024-016494",
+        "2026-060120"
+      ],
+      "awards": [
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anpassningsträning för barn med adhd, familjekurser för barn, tjänster på svenska",
+          "notice_id": "EF-14916",
+          "notice_number": "2024-014916",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anpassningsträning för barn med med lindrigt eller medelsvårt autismspektrumtillstånd, familjekurser för barn,  tjänster på svenska",
+          "notice_id": "EF-14924",
+          "notice_number": "2024-014924",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Oras-rehabiliteringskurser för vuxna",
+          "notice_id": "EF-14958",
+          "notice_number": "2024-014958",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Silmu-rehabiliteringskurser för vuxna",
+          "notice_id": "EF-14959",
+          "notice_number": "2024-014959",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Parkurs för närståendevårdare, tjänster på svenska",
+          "notice_id": "EF-15800",
+          "notice_number": "2024-015800",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Omaishoitajan parikurssi",
+          "notice_id": "EF-16439",
+          "notice_number": "2024-016439",
+          "awarded_value_eur": 15300000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Länsi-Suomen yhteistyöalue",
+          "notice_id": "EF-16492",
+          "notice_number": "2024-016492",
+          "awarded_value_eur": 1640000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Arbetsprövning och arbetsträning på svenska",
+          "notice_id": "EF-16494",
+          "notice_number": "2024-016494",
+          "awarded_value_eur": 360000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande vattenterapi inom Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60120",
+          "notice_number": "2026-060120",
+          "awarded_value_eur": 1100000.0
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023"
       ]
@@ -230,7 +534,12 @@
       "org": "ST-Autokeskus Oy",
       "top_buyer": "Sansia Oy",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Sansia Oy",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 2000.0,
       "candidates": [
@@ -243,8 +552,18 @@
         "Käytetyt ajoneuvot Ammattiopisto Spesia Oy:lle"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-015274"
+      ],
+      "awards": [
+        {
+          "buyer": "Sansia Oy",
+          "title": "Käytetyt ajoneuvot Ammattiopisto Spesia Oy:lle",
+          "notice_id": "EF-15274",
+          "notice_number": "2024-015274",
+          "awarded_value_eur": null
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023"
       ]
@@ -255,7 +574,12 @@
       "org": "Porin Teollisuusputki Oy",
       "top_buyer": "Tampereen Energia Oy",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Tampereen Energia Oy",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1900.0,
       "candidates": [
@@ -268,8 +592,18 @@
         "LLT45 Putkistourakka"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-018185"
+      ],
+      "awards": [
+        {
+          "buyer": "Tampereen Energia Oy",
+          "title": "LLT45 Putkistourakka",
+          "notice_id": "EF-18185",
+          "notice_number": "2024-018185",
+          "awarded_value_eur": 1550517.86
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]
@@ -280,7 +614,12 @@
       "org": "Tukkutalo Heinonen Oy",
       "top_buyer": "Etelä-Pohjanmaan hyvinvointialue",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Etelä-Pohjanmaan hyvinvointialue",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1690.49,
       "candidates": [
@@ -293,8 +632,18 @@
         "Perunoiden hankinta kaudelle 1.12.2024 -30.11.2025"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-018158"
+      ],
+      "awards": [
+        {
+          "buyer": "Etelä-Pohjanmaan hyvinvointialue",
+          "title": "Perunoiden hankinta kaudelle 1.12.2024 -30.11.2025",
+          "notice_id": "EF-18158",
+          "notice_number": "2024-018158",
+          "awarded_value_eur": 300000.0
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]
@@ -305,7 +654,12 @@
       "org": "TKU-Rakennus Oy",
       "top_buyer": "Turun kaupunki",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Turun kaupunki",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1610.0,
       "candidates": [
@@ -318,8 +672,18 @@
         "Lisätyöt, Artukaisten liikuntakeskus"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2026-059009"
+      ],
+      "awards": [
+        {
+          "buyer": "Turun kaupunki",
+          "title": "Lisätyöt, Artukaisten liikuntakeskus",
+          "notice_id": "EF-59009",
+          "notice_number": "2026-059009",
+          "awarded_value_eur": 611974.0
+        }
+      ],
       "elections": [
         "Eduskuntavaalit 2023"
       ]
@@ -330,7 +694,24 @@
       "org": "Netox Oy",
       "top_buyer": "Certia Oy",
       "buyer_n": 4,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Certia Oy",
+          "n": 1
+        },
+        {
+          "name": "Oy Apotti Ab",
+          "n": 1
+        },
+        {
+          "name": "Senaatti-kiinteistöt",
+          "n": 1
+        },
+        {
+          "name": "Helsingin Asumisoikeus Oy",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1580.0,
       "candidates": [
@@ -345,8 +726,42 @@
         "Perustietotekniikkapalvelut"
       ],
       "notice_n": 4,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-016775",
+        "2024-016858",
+        "2024-017358",
+        "2026-059356"
+      ],
+      "awards": [
+        {
+          "buyer": "Certia Oy",
+          "title": "Certian ICT-palvelut",
+          "notice_id": "EF-16775",
+          "notice_number": "2024-016775",
+          "awarded_value_eur": 2000000.0
+        },
+        {
+          "buyer": "Oy Apotti Ab",
+          "title": "Perustietotekniikan kokonaispalvelut",
+          "notice_id": "EF-16858",
+          "notice_number": "2024-016858",
+          "awarded_value_eur": 2800000.0
+        },
+        {
+          "buyer": "Senaatti-kiinteistöt",
+          "title": "Perustietotekniikkapalvelut",
+          "notice_id": "EF-17358",
+          "notice_number": "2024-017358",
+          "awarded_value_eur": 7602272.0
+        },
+        {
+          "buyer": "Helsingin Asumisoikeus Oy",
+          "title": "Digitaalinen työympäristö",
+          "notice_id": "EF-59356",
+          "notice_number": "2026-059356",
+          "awarded_value_eur": 1034116.54
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]
@@ -357,7 +772,12 @@
       "org": "6g Nordic Oy",
       "top_buyer": "2M-IT Oy",
       "buyer_n": 1,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "2M-IT Oy",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1470.0,
       "candidates": [
@@ -370,8 +790,18 @@
         "Juniper-konesalikytkimet"
       ],
       "notice_n": 1,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2025-018846"
+      ],
+      "awards": [
+        {
+          "buyer": "2M-IT Oy",
+          "title": "Juniper-konesalikytkimet",
+          "notice_id": "EF-18846",
+          "notice_number": "2025-018846",
+          "awarded_value_eur": null
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]
@@ -382,7 +812,24 @@
       "org": "Cinia Oy",
       "top_buyer": "Fintraffic Raide Oy",
       "buyer_n": 4,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Fintraffic Raide Oy",
+          "n": 1
+        },
+        {
+          "name": "Puolustusvoimien logistiikkalaitos",
+          "n": 1
+        },
+        {
+          "name": "Sisäministeriö",
+          "n": 1
+        },
+        {
+          "name": "Turun yliopisto",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 1185.0,
       "candidates": [
@@ -397,8 +844,42 @@
         "Pelastustoimen Kivijalka-järjestelmän asiantuntijapalvelut"
       ],
       "notice_n": 4,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-016597",
+        "2024-017078",
+        "2024-018105",
+        "2024-149865"
+      ],
+      "awards": [
+        {
+          "buyer": "Fintraffic Raide Oy",
+          "title": "Kapasiteetinhallinnan kehitys 2024-2028 (2029)",
+          "notice_id": "EF-16597",
+          "notice_number": "2024-016597",
+          "awarded_value_eur": 3500000.0
+        },
+        {
+          "buyer": "Puolustusvoimien logistiikkalaitos",
+          "title": "Tietoliikennelaitteet ja palvelut 2024 – 2028 MKR (6215/2024)",
+          "notice_id": "EF-17078",
+          "notice_number": "2024-017078",
+          "awarded_value_eur": 4000000.0
+        },
+        {
+          "buyer": "Sisäministeriö",
+          "title": "Pelastustoimen Kivijalka-järjestelmän asiantuntijapalvelut",
+          "notice_id": "EF-18105",
+          "notice_number": "2024-018105",
+          "awarded_value_eur": 1181000.0
+        },
+        {
+          "buyer": "Turun yliopisto",
+          "title": "Turun yliopisto - Kuituvuokraus",
+          "notice_id": "OLD-149865",
+          "notice_number": "2024-149865",
+          "awarded_value_eur": null
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]
@@ -409,7 +890,16 @@
       "org": "Insta Advance Oy",
       "top_buyer": "Teknologian tutkimuskeskus VTT Oy",
       "buyer_n": 2,
-      "buyers_top": [],
+      "buyers_top": [
+        {
+          "name": "Teknologian tutkimuskeskus VTT Oy",
+          "n": 1
+        },
+        {
+          "name": "Puolustusvoimien logistiikkalaitos",
+          "n": 1
+        }
+      ],
       "spend_eur": null,
       "vaali_eur": 980.0,
       "candidates": [
@@ -423,8 +913,26 @@
         "Safelink-salauslaitteiden hankinta"
       ],
       "notice_n": 2,
-      "notice_ids": [],
-      "awards": [],
+      "notice_ids": [
+        "2024-015608",
+        "2026-058456"
+      ],
+      "awards": [
+        {
+          "buyer": "Teknologian tutkimuskeskus VTT Oy",
+          "title": "Tietosuojakonsultoinnin ja tietosuojavastaavan palvelut",
+          "notice_id": "EF-15608",
+          "notice_number": "2024-015608",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Puolustusvoimien logistiikkalaitos",
+          "title": "Safelink-salauslaitteiden hankinta",
+          "notice_id": "EF-58456",
+          "notice_number": "2026-058456",
+          "awarded_value_eur": 849480.0
+        }
+      ],
       "elections": [
         "Kuntavaalit 2025"
       ]

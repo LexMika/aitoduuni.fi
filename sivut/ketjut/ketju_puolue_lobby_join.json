@@ -63,7 +63,108 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-014849",
+        "2024-016682",
+        "2024-017774",
+        "2024-018417",
+        "2024-018506",
+        "2024-018545",
+        "2024-018622",
+        "2024-018642",
+        "2026-060589",
+        "2026-060641",
+        "2026-060734",
+        "2026-060846"
+      ],
+      "awards": [
+        {
+          "buyer": "Päijät-Hämeen hyvinvointialue",
+          "title": "Mammografiaseulontatutkimukset",
+          "notice_id": "EF-14849",
+          "notice_number": "2024-014849",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Valtion tieto- ja viestintätekniikkakeskus Valtori",
+          "title": "Sopimusmuutos Työterveyshuollon palvelut",
+          "notice_id": "EF-16682",
+          "notice_number": "2024-016682",
+          "awarded_value_eur": 5249000.0
+        },
+        {
+          "buyer": "Lapin hyvinvointialue",
+          "title": "Digitaalinen asiointialusta ohjelmistopalveluna",
+          "notice_id": "EF-17774",
+          "notice_number": "2024-017774",
+          "awarded_value_eur": 1850000.0
+        },
+        {
+          "buyer": "Huittisten kaupunki",
+          "title": "Työterveys 2024 - 2030 DPS, sisäinen kilpailutus / Huittisten kaupunki",
+          "notice_id": "EF-18417",
+          "notice_number": "2024-018417",
+          "awarded_value_eur": 1500000.0
+        },
+        {
+          "buyer": "Työterveys Aalto Oy",
+          "title": "Työterveys Aallon henkilöstön työterveyspalvelut",
+          "notice_id": "EF-18506",
+          "notice_number": "2024-018506",
+          "awarded_value_eur": 68609.0
+        },
+        {
+          "buyer": "Lapin hyvinvointialue",
+          "title": "Lapin hyvinvointialueen työterveyshuollon palvelujen hankinta",
+          "notice_id": "EF-18545",
+          "notice_number": "2024-018545",
+          "awarded_value_eur": 2708000.0
+        },
+        {
+          "buyer": "Helsingin Seudun Liikenne -kuntayhtymä",
+          "title": "HSL:n työterveyspalvelut",
+          "notice_id": "EF-18622",
+          "notice_number": "2024-018622",
+          "awarded_value_eur": 2000000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "HUS 018-2024 HUS Työterveyden lääkäripalvelut",
+          "notice_id": "EF-18642",
+          "notice_number": "2024-018642",
+          "awarded_value_eur": 2880000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Ammatillinen kuntoutusselvitys, Etelä-Suomen yhteistyöalue",
+          "notice_id": "EF-60589",
+          "notice_number": "2026-060589",
+          "awarded_value_eur": 29850000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Itä-Suomen yhteistyöalueen allasterapian tarjouspyyntö",
+          "notice_id": "EF-60641",
+          "notice_number": "2026-060641",
+          "awarded_value_eur": 9800000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Ammatillinen kuntoutusselvitys, Itä-Suomen yhteistyöalue",
+          "notice_id": "EF-60734",
+          "notice_number": "2026-060734",
+          "awarded_value_eur": 21600000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Itä-Suomen yhteistyöalueen neuropsykologisen kuntoutuksen tarjouspyyntö",
+          "notice_id": "EF-60846",
+          "notice_number": "2026-060846",
+          "awarded_value_eur": 10800000.0
+        }
+      ],
+      "notice_n": 16
     },
     {
       "y": "0109862-8",
@@ -112,7 +213,60 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-016552",
+        "2024-018280",
+        "2024-018303",
+        "2026-057582",
+        "2026-058896",
+        "2026-059652"
+      ],
+      "awards": [
+        {
+          "buyer": "Tuomi Logistiikka Oy",
+          "title": "Kalan hankinta",
+          "notice_id": "EF-16552",
+          "notice_number": "2024-016552",
+          "awarded_value_eur": 4000000.0
+        },
+        {
+          "buyer": "Etelä-Pohjanmaan hyvinvointialue",
+          "title": "Pakastemarjojen hankinta",
+          "notice_id": "EF-18280",
+          "notice_number": "2024-018280",
+          "awarded_value_eur": 990000.0
+        },
+        {
+          "buyer": "Etelä-Pohjanmaan hyvinvointialue",
+          "title": "Elintarvikkeet: Tukkutuotteet ja valmisruoka",
+          "notice_id": "EF-18303",
+          "notice_number": "2024-018303",
+          "awarded_value_eur": 20500000.0
+        },
+        {
+          "buyer": "Sansia Oy",
+          "title": "Tukkuelintarvikkeet",
+          "notice_id": "EF-57582",
+          "notice_number": "2026-057582",
+          "awarded_value_eur": 19000000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Virvoitusjuomat, kivennäisvedet sekä muut juomat (HUS 245-2025  Elintarvikehankintojen DPS:n sisäinen kilpailutus osa 3) UUSI",
+          "notice_id": "EF-58896",
+          "notice_number": "2026-058896",
+          "awarded_value_eur": 240000.0
+        },
+        {
+          "buyer": "Kaarea Oy",
+          "title": "Kertakäyttövälineet ja rasiapakkauslaitteet",
+          "notice_id": "EF-59652",
+          "notice_number": "2026-059652",
+          "awarded_value_eur": 1600000.0
+        }
+      ],
+      "notice_n": 6
     },
     {
       "y": "1004536-8",
@@ -141,7 +295,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-018168"
+      ],
+      "awards": [
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Viestintäpalvelut 2024-2026 + optiot",
+          "notice_id": "EF-18168",
+          "notice_number": "2024-018168",
+          "awarded_value_eur": 1035857.0
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "0116323-1",
@@ -171,7 +338,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2026-056892"
+      ],
+      "awards": [
+        {
+          "buyer": "Sansia Oy",
+          "title": "Lämmitysöljyt sekä asiakkaiden säiliöihin tankattavat polttonesteet, yhteishankinta",
+          "notice_id": "EF-56892",
+          "notice_number": "2026-056892",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "1731321-4",
@@ -200,7 +380,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-018168"
+      ],
+      "awards": [
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Viestintäpalvelut 2024-2026 + optiot",
+          "notice_id": "EF-18168",
+          "notice_number": "2024-018168",
+          "awarded_value_eur": 1035857.0
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "0209599-8",
@@ -229,7 +422,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-016868"
+      ],
+      "awards": [
+        {
+          "buyer": "Teknologian tutkimuskeskus VTT Oy",
+          "title": "Laboratorion käyttömaksu",
+          "notice_id": "EF-16868",
+          "notice_number": "2024-016868",
+          "awarded_value_eur": 600000.0
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "2557856-2",
@@ -287,7 +493,68 @@
         "Alexander Stubb"
       ],
       "badge": "Hilma, puolue ja vaalituki",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-017731",
+        "2024-018218",
+        "2026-057002",
+        "2026-059127",
+        "2026-060792",
+        "2026-060799",
+        "2026-060803"
+      ],
+      "awards": [
+        {
+          "buyer": "Vantaan kaupunki",
+          "title": "Monitoimityökoneen hankinta katujen kunnossapitoon",
+          "notice_id": "EF-17731",
+          "notice_number": "2024-017731",
+          "awarded_value_eur": 243000.0
+        },
+        {
+          "buyer": "Espoon kaupunki",
+          "title": "Kunnossapitokaluston lisälaitteiden hankinta",
+          "notice_id": "EF-18218",
+          "notice_number": "2024-018218",
+          "awarded_value_eur": 1750000.0
+        },
+        {
+          "buyer": "Loviisan kaupunki",
+          "title": "Kunnossapidon monitoimikone",
+          "notice_id": "EF-57002",
+          "notice_number": "2026-057002",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Elintarvikkeiden tukkuostot",
+          "notice_id": "EF-59127",
+          "notice_number": "2026-059127",
+          "awarded_value_eur": 13000000.0
+        },
+        {
+          "buyer": "Haminan kaupunki",
+          "title": "Työkonehankinta, ympäristönhoitokone",
+          "notice_id": "EF-60792",
+          "notice_number": "2026-060792",
+          "awarded_value_eur": 146000.0
+        },
+        {
+          "buyer": "Haminan kaupunki",
+          "title": "Työkonehankinta, ympäristönhoitokone",
+          "notice_id": "EF-60799",
+          "notice_number": "2026-060799",
+          "awarded_value_eur": 112000.0
+        },
+        {
+          "buyer": "Nakkilan kunta",
+          "title": "Pyöräkuormaajan hankinta",
+          "notice_id": "EF-60803",
+          "notice_number": "2026-060803",
+          "awarded_value_eur": 137000.0
+        }
+      ],
+      "notice_n": 7
     },
     {
       "y": "2375085-9",
@@ -318,7 +585,20 @@
         "Petteri Orpo"
       ],
       "badge": "Hilma, puolue ja vaalituki",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2026-059009"
+      ],
+      "awards": [
+        {
+          "buyer": "Turun kaupunki",
+          "title": "Lisätyöt, Artukaisten liikuntakeskus",
+          "notice_id": "EF-59009",
+          "notice_number": "2026-059009",
+          "awarded_value_eur": 611974.0
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "0107011-5",
@@ -372,7 +652,108 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-014787",
+        "2024-015391",
+        "2024-015939",
+        "2024-016049",
+        "2024-016948",
+        "2024-017276",
+        "2024-017317",
+        "2024-017853",
+        "2024-018192",
+        "2026-057013",
+        "2026-057395",
+        "2026-057814"
+      ],
+      "awards": [
+        {
+          "buyer": "Kotkan kaupunki",
+          "title": "Vuorisuola talvikausille 2024-2027",
+          "notice_id": "EF-14787",
+          "notice_number": "2024-014787",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Lasten ja nuorten wc- ja hygienia-apuvälineet jatkokilpailutus",
+          "notice_id": "EF-15391",
+          "notice_number": "2024-015391",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Tuomi Logistiikka Oy",
+          "title": "Nostimet ja hissit vammaispalvelun asiakkaille",
+          "notice_id": "EF-15939",
+          "notice_number": "2024-015939",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Puolustusvoimien logistiikkalaitos",
+          "title": "Retkikeittimen polttoneste 2024-2028",
+          "notice_id": "EF-16049",
+          "notice_number": "2024-016049",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Ortopediset olkapää- ja yläraajaimplantit",
+          "notice_id": "EF-16948",
+          "notice_number": "2024-016948",
+          "awarded_value_eur": 6400000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Erityisjäteastiat",
+          "notice_id": "EF-17276",
+          "notice_number": "2024-017276",
+          "awarded_value_eur": 1293000.0
+        },
+        {
+          "buyer": "Sansia Oy",
+          "title": "Gynekologiset tarvikkeet",
+          "notice_id": "EF-17317",
+          "notice_number": "2024-017317",
+          "awarded_value_eur": 2045000.0
+        },
+        {
+          "buyer": "Helsingin yliopisto",
+          "title": "Akustinen korkean suorituskyvyn nesteannostelija",
+          "notice_id": "EF-17853",
+          "notice_number": "2024-017853",
+          "awarded_value_eur": 316358.0
+        },
+        {
+          "buyer": "Helsingin kaupungin sosiaali-, terveys- ja pelastustoimiala",
+          "title": "Sähkösäätöiset sängyt ja yöpöydät",
+          "notice_id": "EF-18192",
+          "notice_number": "2024-018192",
+          "awarded_value_eur": 1700000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Sisäinen kilpailutus (DPS) / Sormiproteesit",
+          "notice_id": "EF-57395",
+          "notice_number": "2026-057395",
+          "awarded_value_eur": 210000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Kudosfuusio- ja diatermiakokonaisuus (instrumentit, laitteet, generaattorit, tarvikkeet)",
+          "notice_id": "EF-57814",
+          "notice_number": "2026-057814",
+          "awarded_value_eur": 25000000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Suolihuuhtelulaitteet järjestelmät ja anaalitamponit",
+          "notice_id": "EF-58335",
+          "notice_number": "2026-058335",
+          "awarded_value_eur": 1200000.0
+        }
+      ],
+      "notice_n": 16
     },
     {
       "y": "0186838-9",
@@ -409,7 +790,108 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-014962",
+        "2024-015568",
+        "2024-015586",
+        "2024-015588",
+        "2024-015590",
+        "2024-017136",
+        "2024-017366",
+        "2024-017367",
+        "2026-059164",
+        "2026-059169",
+        "2026-060384",
+        "2026-060902"
+      ],
+      "awards": [
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2026, KAIPR SIIRTOAJO 19.10.2024 VUOSANKA, Diaari 9373",
+          "notice_id": "EF-14962",
+          "notice_number": "2024-014962",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kajaanin kaupunki",
+          "title": "Tilausmatkakuljetus Kajaani-Joensuu- Kajaani 9. - 10.10.2024",
+          "notice_id": "EF-15568",
+          "notice_number": "2024-015568",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kajaanin kaupunki",
+          "title": "Tilausmatkakuljetus Kajaani-Haapavesi-Isokyrö-Seinäjoki-Kajaani 30.1. - 1.2.2025",
+          "notice_id": "EF-15586",
+          "notice_number": "2024-015586",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kajaanin kaupunki",
+          "title": "Tilausmatkakuljetus Kajaani - Hyrynsalmi (Ukkohalla) - Kajaani 10.10.2024",
+          "notice_id": "EF-15588",
+          "notice_number": "2024-015588",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kajaanin kaupunki",
+          "title": "Tilausmatkakuljetus Kajaani - Kuopio - Kajaani 15.10.2024",
+          "notice_id": "EF-15590",
+          "notice_number": "2024-015590",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kajaanin kaupunki",
+          "title": "Tilausmatkakuljetus Kajaani 26.11.2024",
+          "notice_id": "EF-17136",
+          "notice_number": "2024-017136",
+          "awarded_value_eur": 350.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2026, KAIPR Lomakuljetus 4B Kajaani - Vaasa, Diaari 9361",
+          "notice_id": "EF-17366",
+          "notice_number": "2024-017366",
+          "awarded_value_eur": 165000.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2026, KAIPR Lomakuljetus 5B Kajaani - Kauhajoki, Diaari 9362",
+          "notice_id": "EF-17367",
+          "notice_number": "2024-017367",
+          "awarded_value_eur": 280000.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2030, KAIPR Lomakuljetus 4A Kajaani - Vaasa, Diaari 11795",
+          "notice_id": "EF-59164",
+          "notice_number": "2026-059164",
+          "awarded_value_eur": 280000.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2030, KAIPR Lomakuljetus 4B Kajaani - Vaasa, Diaari 11720",
+          "notice_id": "EF-59169",
+          "notice_number": "2026-059169",
+          "awarded_value_eur": 170000.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2030, KARPR Harjoitus Lohtaja - Vekaranjärvi 19.11.2026, Diaari 12073",
+          "notice_id": "EF-60384",
+          "notice_number": "2026-060384",
+          "awarded_value_eur": 6773.0
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "Tilausajopalvelut 2021–2030, KARPR Harjoitus Sarriojärvi - Vekaranjärvi 19.11.2026, Diaari 12091",
+          "notice_id": "EF-60902",
+          "notice_number": "2026-060902",
+          "awarded_value_eur": 4748.0
+        }
+      ],
+      "notice_n": 14
     },
     {
       "y": "1755463-2",
@@ -449,7 +931,44 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-015093",
+        "2024-016603",
+        "2024-017667",
+        "2024-018070"
+      ],
+      "awards": [
+        {
+          "buyer": "Pohjois-Karjalan hyvinvointialue",
+          "title": "Asiakaskohtainen ympärivuorokautisen palveluasumisen suorahankinta 20.9.2024 alkaen, Attendo Pihka",
+          "notice_id": "EF-15093",
+          "notice_number": "2024-015093",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Pohjois-Savon hyvinvointialue",
+          "title": "Ympärivuorokautinen palveluasuminen, Vammaisten asumispalvelut",
+          "notice_id": "EF-16603",
+          "notice_number": "2024-016603",
+          "awarded_value_eur": 4675679.0
+        },
+        {
+          "buyer": "Etelä-Karjalan hyvinvointialue",
+          "title": "Ikääntyneille suunnattu ympärivuorokautinen palveluasuminen",
+          "notice_id": "EF-17667",
+          "notice_number": "2024-017667",
+          "awarded_value_eur": 120000000.0
+        },
+        {
+          "buyer": "Etelä-Karjalan hyvinvointialue",
+          "title": "Lastensuojelun sijaishuolto",
+          "notice_id": "EF-18070",
+          "notice_number": "2024-018070",
+          "awarded_value_eur": 16000000.0
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "2303024-5",
@@ -488,7 +1007,36 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2024-018070",
+        "2024-018424",
+        "2024-018638"
+      ],
+      "awards": [
+        {
+          "buyer": "Etelä-Karjalan hyvinvointialue",
+          "title": "Lastensuojelun sijaishuolto",
+          "notice_id": "EF-18070",
+          "notice_number": "2024-018070",
+          "awarded_value_eur": 16000000.0
+        },
+        {
+          "buyer": "Pohjois-Karjalan hankintatoimi",
+          "title": "Työterveyshuollon palvelut Outokummun kaupungin ja Polvijärven kunnan työntekijöille",
+          "notice_id": "EF-18424",
+          "notice_number": "2024-018424",
+          "awarded_value_eur": 680000.0
+        },
+        {
+          "buyer": "Pirkanmaan hyvinvointialue",
+          "title": "Jälki-ilmoitus: Lapsille kotiin annettavat sairaanhoitopalvelut",
+          "notice_id": "EF-18638",
+          "notice_number": "2024-018638",
+          "awarded_value_eur": 4800000.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "2776089-4",
@@ -527,7 +1075,44 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2025-018714",
+        "2026-057358",
+        "2026-057900",
+        "2026-061122"
+      ],
+      "awards": [
+        {
+          "buyer": "Numera Palvelut Oy",
+          "title": "Juridiset asiantuntijapalvelut",
+          "notice_id": "EF-18714",
+          "notice_number": "2025-018714",
+          "awarded_value_eur": 15501000.0
+        },
+        {
+          "buyer": "Työ- ja elinkeinoministeriö",
+          "title": "Työ- ja elinkeinoministeriö - Sisäisen tarkastuksen palvelut 2025 (00691) -  Sisäisen tarkastuksen ostopalvelujen hankinta",
+          "notice_id": "EF-57358",
+          "notice_number": "2026-057358",
+          "awarded_value_eur": 200000.0
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Johdon konsultointipalveluiden hankinta 2026-2027 (2028-2029)",
+          "notice_id": "EF-57900",
+          "notice_number": "2026-057900",
+          "awarded_value_eur": 10000000.0
+        },
+        {
+          "buyer": "Oikeusrekisterikeskus",
+          "title": "Hallinnon kehittämisen palveluiden kilpailutus",
+          "notice_id": "EF-61122",
+          "notice_number": "2026-061122",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "0196430-3",
@@ -556,7 +1141,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2026-057394"
+      ],
+      "awards": [
+        {
+          "buyer": "Kiinteistö Oy Turun monitoimitilat",
+          "title": "Turun kokoelmakeskus osallistumisvaihe",
+          "notice_id": "EF-57394",
+          "notice_number": "2026-057394",
+          "awarded_value_eur": 34991370.0
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "0844210-2",
@@ -585,7 +1183,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2025-018811"
+      ],
+      "awards": [
+        {
+          "buyer": "Espoon kaupunki",
+          "title": "Pienkuormaajien hankinta",
+          "notice_id": "EF-18811",
+          "notice_number": "2025-018811",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 1
     },
     {
       "y": "2672274-9",
@@ -614,7 +1225,20 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma ja puoluerahoitus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "notice_ids": [
+        "2026-060306"
+      ],
+      "awards": [
+        {
+          "buyer": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "title": "Pohjoisrannan venesataman laituriponttoneiden peruskorjaus",
+          "notice_id": "EF-60306",
+          "notice_number": "2026-060306",
+          "awarded_value_eur": 487031.57
+        }
+      ],
+      "notice_n": 1
     }
   ],
   "lobby_only_sample": [
@@ -651,7 +1275,108 @@
       "lobby_name": "Mehiläinen Oy",
       "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015165",
+        "2024-015950",
+        "2024-016290",
+        "2024-016724",
+        "2024-018286",
+        "2024-018642",
+        "2026-059597",
+        "2026-060027",
+        "2026-060092",
+        "2026-060103",
+        "2026-060120",
+        "2026-060130"
+      ],
+      "awards": [
+        {
+          "buyer": "Pohjois-Savon hyvinvointialue",
+          "title": "Lonkan ja polven tekonivelkirurgian toimenpiteet ostopalveluna",
+          "notice_id": "EF-15165",
+          "notice_number": "2024-015165",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Työterveys Aalto Oy",
+          "title": "Työterveys Aallon työterveyshuollon alihankintapalvelut Keski-Suomen alueella",
+          "notice_id": "EF-15950",
+          "notice_number": "2024-015950",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Sansia Oy",
+          "title": "Työnohjaus, debriefing (ammatillinen jälkipuinti) ja työyhteisösovittelut",
+          "notice_id": "EF-16290",
+          "notice_number": "2024-016290",
+          "awarded_value_eur": 3200000.0
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Vammaisten henkilöiden asumisen tuen palveluiden suorahankinta Keski-Suomen alueella",
+          "notice_id": "EF-16724",
+          "notice_number": "2024-016724",
+          "awarded_value_eur": 2300000.0
+        },
+        {
+          "buyer": "Länsi-Uudenmaan hyvinvointialue",
+          "title": "Jälki-ilmoitus: Digitaalisen asiointialustan hankinta",
+          "notice_id": "EF-18286",
+          "notice_number": "2024-018286",
+          "awarded_value_eur": 10000000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "HUS 018-2024 HUS Työterveyden lääkäripalvelut",
+          "notice_id": "EF-18642",
+          "notice_number": "2024-018642",
+          "awarded_value_eur": 2880000.0
+        },
+        {
+          "buyer": "Live-säätiö sr",
+          "title": "Työterveyshuollon palveluiden hankinta - jälki-ilmoitus",
+          "notice_id": "EF-59597",
+          "notice_number": "2026-059597",
+          "awarded_value_eur": 1081639.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande talterapi för Egentliga Finland",
+          "notice_id": "EF-60027",
+          "notice_number": "2026-060027",
+          "awarded_value_eur": 2050000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Pohjois-Suomen yhteistyöalueen neuropsykologisen kuntoutuksen tarjouspyyntö",
+          "notice_id": "EF-60092",
+          "notice_number": "2026-060092",
+          "awarded_value_eur": 5400000.0
+        },
+        {
+          "buyer": "Turun kaupunki",
+          "title": "Ennakoiva mielen työhyvinvointivalmennus",
+          "notice_id": "EF-60103",
+          "notice_number": "2026-060103",
+          "awarded_value_eur": 1000000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande vattenterapi inom Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60120",
+          "notice_number": "2026-060120",
+          "awarded_value_eur": 1100000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande vattenterapi för Egentliga Finland",
+          "notice_id": "EF-60130",
+          "notice_number": "2026-060130",
+          "awarded_value_eur": 90000.0
+        }
+      ],
+      "notice_n": 29
     },
     {
       "y": "0357502-9",
@@ -686,7 +1411,108 @@
       "lobby_name": "CGI Suomi Oy",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-004425",
+        "2024-015036",
+        "2024-015387",
+        "2024-015899",
+        "2024-016597",
+        "2024-017363",
+        "2024-017688",
+        "2024-018109",
+        "2024-018320",
+        "2024-151396",
+        "2024-151472",
+        "2024-151598"
+      ],
+      "awards": [
+        {
+          "buyer": "Kouvolan Ammattiopisto Oy",
+          "title": "Kouvolan Ammattiopisto Oy:n taloushallinnon järjestelmäkokonaisuus",
+          "notice_id": "EF-15036",
+          "notice_number": "2024-015036",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Päijät-Hämeen hyvinvointialue",
+          "title": "Syöpälääketilausohjelma Päijät-Hämeen hyvinvointialueelle",
+          "notice_id": "EF-15387",
+          "notice_number": "2024-015387",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kirkon keskusrahasto",
+          "title": "Osto- ja myyntilaskupalvelut",
+          "notice_id": "EF-15899",
+          "notice_number": "2024-015899",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Fintraffic Raide Oy",
+          "title": "Kapasiteetinhallinnan kehitys 2024-2028 (2029)",
+          "notice_id": "EF-16597",
+          "notice_number": "2024-016597",
+          "awarded_value_eur": 3500000.0
+        },
+        {
+          "buyer": "Monetra Oy",
+          "title": "Suorahankintailmoitus: Taloushallinnon sanomanvälitysoperaattoripalvelut",
+          "notice_id": "EF-17363",
+          "notice_number": "2024-017363",
+          "awarded_value_eur": 2900000.0
+        },
+        {
+          "buyer": "Oikeusrekisterikeskus",
+          "title": "Uljas-ulosottojärjestelmän ylläpito ja kehitys - muutosilmoitus",
+          "notice_id": "EF-17688",
+          "notice_number": "2024-017688",
+          "awarded_value_eur": 3850000.0
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Titania-työvuorosuunnitteluohjelman versiopäivitys CGI Suomi Oy:ltä",
+          "notice_id": "EF-18109",
+          "notice_number": "2024-018109",
+          "awarded_value_eur": 2200000.0
+        },
+        {
+          "buyer": "Työllisyysrahasto",
+          "title": "TWIN-salkunhallintajärjestelmä",
+          "notice_id": "EF-18320",
+          "notice_number": "2024-018320",
+          "awarded_value_eur": 245000.0
+        },
+        {
+          "buyer": "Elenia Oy",
+          "title": "Sopimusmuutos koskien toiminnanohjausjärjestelmän hankintaa",
+          "notice_id": "EF-4425",
+          "notice_number": "2024-004425",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Otsikko (suomi): Päätös hankintasopimuksen muuttamisesta, Webmarela- järjestelmän käyttöympäristöjen yhdistäminen ja UDI-toiminnallisuuden  käyttöönotto, 2026 -",
+          "notice_id": "EF-57396",
+          "notice_number": "2026-057396",
+          "awarded_value_eur": 264188.32
+        },
+        {
+          "buyer": "Helsingin kaupungin palvelukeskusliikelaitos",
+          "title": "Sopimusmuutos Aromi-järjestelmään",
+          "notice_id": "EF-58078",
+          "notice_number": "2026-058078",
+          "awarded_value_eur": 83000.0
+        },
+        {
+          "buyer": "Business Finland Oy",
+          "title": "Valmennuspalvelut DIGI",
+          "notice_id": "EF-58117",
+          "notice_number": "2026-058117",
+          "awarded_value_eur": 344000.0
+        }
+      ],
+      "notice_n": 21
     },
     {
       "y": "1962361-1",
@@ -721,7 +1547,108 @@
       "lobby_name": "Tieto Finland Oy",
       "lobby_industry": "Laitteistokonsultointi ja käyttö- ja hallintapalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014844",
+        "2024-017315",
+        "2024-017325",
+        "2024-018519",
+        "2024-150012",
+        "2024-150874",
+        "2025-018793",
+        "2026-057015",
+        "2026-058517",
+        "2026-058866",
+        "2026-058878",
+        "2026-059184"
+      ],
+      "awards": [
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Lifecare Camera -järjestelmän käytön laajennuksen suorahankinta",
+          "notice_id": "EF-14844",
+          "notice_number": "2024-014844",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Gplus Teleopti Adapter lisenssit",
+          "notice_id": "EF-17315",
+          "notice_number": "2024-017315",
+          "awarded_value_eur": 202980.0
+        },
+        {
+          "buyer": "Päijät-Hämeen hyvinvointialue",
+          "title": "Lifecare / Effica sosiaalihuolto - Kotihoidon uudistamisen toteutusprojekti",
+          "notice_id": "EF-17325",
+          "notice_number": "2024-017325",
+          "awarded_value_eur": 737400.0
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Hankintasopimuksen muuttaminen: Lifecare MP6 -versiopäivityksen suorahankinta potilastietojärjestelmään",
+          "notice_id": "EF-18519",
+          "notice_number": "2024-018519",
+          "awarded_value_eur": 132800.0
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Hankintasopimuksen muuttaminen: Lifecare MP6 -versiopäivityksen suorahankinta potilastietojärjestelmään",
+          "notice_id": "EF-18793",
+          "notice_number": "2025-018793",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Rinnakkaisliittymisen lisäpiirre Lifecare Sosiaalihuoltoon Tieto Finland Oy:ltä",
+          "notice_id": "EF-57015",
+          "notice_number": "2026-057015",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Liikenne- ja viestintävirasto",
+          "title": "MSBI-asiantuntijapalvelut, jälki-ilmoitus",
+          "notice_id": "EF-58517",
+          "notice_number": "2026-058517",
+          "awarded_value_eur": 6000000.0
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Lifecare Sosiaalihuollon Fakta-kotihoitoraportointi Tieto Finland  Oy:ltä",
+          "notice_id": "EF-58866",
+          "notice_number": "2026-058866",
+          "awarded_value_eur": 170470.0
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Sosiaalipalveluiden lainsäädännön toteuttava asiakastietojärjestelmä",
+          "notice_id": "EF-58878",
+          "notice_number": "2026-058878",
+          "awarded_value_eur": 4940000.0
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Rinnakkaisliittymisen lisäpiirre Lifecare Sosiaalihuoltoon Tieto Finland Oy:ltä",
+          "notice_id": "EF-59184",
+          "notice_number": "2026-059184",
+          "awarded_value_eur": 340000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "ESH jonotietojen siirto Lifecaresta Eskoon",
+          "notice_id": "EF-60912",
+          "notice_number": "2026-060912",
+          "awarded_value_eur": 66700.0
+        },
+        {
+          "buyer": "Etelä-Pohjanmaan hyvinvointialue",
+          "title": "Kansallisten hankintojen suorahankintailmoitus/ Tietopoiminnat aiempien organisaatioiden potilastietojärjestelmistä (Effica)",
+          "notice_id": "OLD-150012",
+          "notice_number": "2024-150012",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 16
     },
     {
       "y": "2810844-3",
@@ -756,7 +1683,108 @@
       "lobby_name": "GRK Suomi Oy",
       "lobby_industry": "Teiden ja moottoriteiden rakentaminen",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015208",
+        "2024-015394",
+        "2024-016066",
+        "2024-016407",
+        "2024-016586",
+        "2024-016662",
+        "2024-017550",
+        "2024-018034",
+        "2024-018402",
+        "2026-056969",
+        "2026-058291",
+        "2026-059128"
+      ],
+      "awards": [
+        {
+          "buyer": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "title": "Jätkäsaaren kannaksen silta ja Jätkäsaarenlaituri, projektinjohtourakka",
+          "notice_id": "EF-15208",
+          "notice_number": "2024-015208",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "title": "Aleksis Kiven katu välillä Sturenkatu – Hämeentie, kokonaisurakka",
+          "notice_id": "EF-15394",
+          "notice_number": "2024-015394",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin kaupunki, kaupunkiympäristön toimiala",
+          "title": "Eteläisen Postipuiston maanrakennusurakka, kokonaisurakka",
+          "notice_id": "EF-16066",
+          "notice_number": "2024-016066",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Väylävirasto",
+          "title": "EKA kaapelireittiurakka",
+          "notice_id": "EF-16407",
+          "notice_number": "2024-016407",
+          "awarded_value_eur": 1927275.0
+        },
+        {
+          "buyer": "Fintraffic Raide Oy",
+          "title": "Kameravalvontapalvelu",
+          "notice_id": "EF-16586",
+          "notice_number": "2024-016586",
+          "awarded_value_eur": 8000000.0
+        },
+        {
+          "buyer": "Vantaan kaupunki",
+          "title": "Vantaan Ratikan allianssihanke, rakentaja",
+          "notice_id": "EF-16662",
+          "notice_number": "2024-016662",
+          "awarded_value_eur": 550000000.0
+        },
+        {
+          "buyer": "Väylävirasto",
+          "title": "Lappeenrannan liikennepaikan ratasuunnittelu, RaS",
+          "notice_id": "EF-17550",
+          "notice_number": "2024-017550",
+          "awarded_value_eur": 404000.0
+        },
+        {
+          "buyer": "Väylävirasto",
+          "title": "Radan sähköliittymien hallinnan asiantuntijapalvelut",
+          "notice_id": "EF-18034",
+          "notice_number": "2024-018034",
+          "awarded_value_eur": 479040.0
+        },
+        {
+          "buyer": "Väylävirasto",
+          "title": "Vt 4 Leivonmäen pohjoispuolella, Joutsa, ST-urakka",
+          "notice_id": "EF-18402",
+          "notice_number": "2024-018402",
+          "awarded_value_eur": 8088000.0
+        },
+        {
+          "buyer": "Työllisyys-, kehittämis- ja hallintokeskus",
+          "title": "Mt 4081 parantaminen välillä Sudensalmi - Vehkataipale ja Mt 14748 Ylijärventien parantaminen koerakenne osuuksilla Lappeenranta, Taipalsaari, KU",
+          "notice_id": "EF-56969",
+          "notice_number": "2026-056969",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Työllisyys-, kehittämis- ja hallintokeskus",
+          "title": "Vt21 parantaminen Tengeliönjoen siltojen kohdalla, Ylitornio, KU",
+          "notice_id": "EF-58291",
+          "notice_number": "2026-058291",
+          "awarded_value_eur": 7846000.0
+        },
+        {
+          "buyer": "HSY Helsingin seudun ympäristöpalvelut -kuntayhtymä",
+          "title": "Ämmässuon asfaltoinnit ja infrajärjestelyt 2026 TP 35-26",
+          "notice_id": "EF-59128",
+          "notice_number": "2026-059128",
+          "awarded_value_eur": 989502.0
+        }
+      ],
+      "notice_n": 12
     },
     {
       "y": "2630573-4",
@@ -789,7 +1817,100 @@
       "lobby_name": "Helen Oy",
       "lobby_industry": "Sähkön ja kaukolämmön yhteistuotanto",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015185",
+        "2024-015381",
+        "2024-015389",
+        "2024-016150",
+        "2024-016217",
+        "2024-016574",
+        "2024-016715",
+        "2024-016836",
+        "2024-017748",
+        "2024-018093",
+        "2026-057684"
+      ],
+      "awards": [
+        {
+          "buyer": "Järviseudun Koulutuskuntayhtymä",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-15185",
+          "notice_number": "2024-015185",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Vieremän kunta",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-15381",
+          "notice_number": "2024-015381",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Lappeenrannan Seurakuntayhtymä",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-15389",
+          "notice_number": "2024-015389",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Mäntsälän Jäähalli Oy",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-16150",
+          "notice_number": "2024-016150",
+          "awarded_value_eur": 299413.0
+        },
+        {
+          "buyer": "Orimattilan kaupunki",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-16217",
+          "notice_number": "2024-016217",
+          "awarded_value_eur": 2174000.0
+        },
+        {
+          "buyer": "Sastamalan kaupunki",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-16574",
+          "notice_number": "2024-016574",
+          "awarded_value_eur": 3326000.0
+        },
+        {
+          "buyer": "Karkkilan kaupunki",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-16715",
+          "notice_number": "2024-016715",
+          "awarded_value_eur": 1277000.0
+        },
+        {
+          "buyer": "Parkanon kaupunki",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-16836",
+          "notice_number": "2024-016836",
+          "awarded_value_eur": 1157830.0
+        },
+        {
+          "buyer": "Vimpelin kunta",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-17748",
+          "notice_number": "2024-017748",
+          "awarded_value_eur": 649800.0
+        },
+        {
+          "buyer": "Kouvolan seurakuntayhtymä",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-18093",
+          "notice_number": "2024-018093",
+          "awarded_value_eur": 684000.0
+        },
+        {
+          "buyer": "Helsingin kaupungin asunnot Oy",
+          "title": "Sähköenergian hankinta",
+          "notice_id": "EF-57684",
+          "notice_number": "2026-057684",
+          "awarded_value_eur": 20876000.0
+        }
+      ],
+      "notice_n": 11
     },
     {
       "y": "0922140-8",
@@ -824,7 +1945,100 @@
       "lobby_name": "Janssen-Cilag Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015654",
+        "2024-016948",
+        "2024-017032",
+        "2024-017044",
+        "2024-017329",
+        "2024-017457",
+        "2024-018125",
+        "2024-018274",
+        "2026-057013",
+        "2026-057814",
+        "2026-060783"
+      ],
+      "awards": [
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Talvey (talketamabi) -lääkevalmisteiden valinta ajalle 1.1.-31.12.2025 + optiovuosi 2026 Pohjois-Pohjanmaan hyvinvointialueen lääkehankintarenkaalle",
+          "notice_id": "EF-15654",
+          "notice_number": "2024-015654",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Ortopediset olkapää- ja yläraajaimplantit",
+          "notice_id": "EF-16948",
+          "notice_number": "2024-016948",
+          "awarded_value_eur": 6400000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Talvey (talketamabi) -lääkevalmisteiden valinta ajalle 1.1.-31.12.2025 + optiovuosi 2026 Pohjois-Pohjanmaan hyvinvointialueen lääkehankintarenkaalle",
+          "notice_id": "EF-17032",
+          "notice_number": "2024-017032",
+          "awarded_value_eur": 1.0
+        },
+        {
+          "buyer": "Terveyden ja hyvinvoinnin laitos",
+          "title": "Bedakiliinifumaraatti 100 mg",
+          "notice_id": "EF-17044",
+          "notice_number": "2024-017044",
+          "awarded_value_eur": 3711088.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Troakaaret ja troakaarisetit",
+          "notice_id": "EF-17329",
+          "notice_number": "2024-017329",
+          "awarded_value_eur": 3600000.0
+        },
+        {
+          "buyer": "HUS Group, the joint authority for Helsinki and Uusimaa",
+          "title": "Talketamabivalmisteen (Talvey) hankinta",
+          "notice_id": "EF-17457",
+          "notice_number": "2024-017457",
+          "awarded_value_eur": 260000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2025 + optiovuosi 2026",
+          "notice_id": "EF-18125",
+          "notice_number": "2024-018125",
+          "awarded_value_eur": 28000000.0
+        },
+        {
+          "buyer": "Varsinais-Suomen hyvinvointialue",
+          "title": "TP9/24EU Ommelaineet (005)",
+          "notice_id": "EF-18274",
+          "notice_number": "2024-018274",
+          "awarded_value_eur": 5100000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Kudosfuusio- ja diatermiakokonaisuus (instrumentit, laitteet, generaattorit, tarvikkeet)",
+          "notice_id": "EF-57814",
+          "notice_number": "2026-057814",
+          "awarded_value_eur": 25000000.0
+        },
+        {
+          "buyer": "SK Hankintapalvelut Oy",
+          "title": "Jälki-ilmoitus: KARDIOLOGIAN SEKÄ SYDÄN- JA RINTAELINKIRURGIAN TARVIKKEITA JA PALVELUJA KOSKEVA PUITEJÄRJESTELY",
+          "notice_id": "EF-57013",
+          "notice_number": "2026-057013",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2027 + optiovuosi 2028 Pohjois-Pohjanmaan hyvinvointialueelle",
+          "notice_id": "EF-60783",
+          "notice_number": "2026-060783",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 11
     },
     {
       "y": "0116510-6",
@@ -859,7 +2073,76 @@
       "lobby_name": "Elisa Oyj",
       "lobby_industry": "Langattoman verkon hallinta ja palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014705",
+        "2024-017963",
+        "2024-018500",
+        "2024-018604",
+        "2024-151046",
+        "2026-057539",
+        "2026-059630",
+        "2026-060499"
+      ],
+      "awards": [
+        {
+          "buyer": "Hyria koulutus Oy",
+          "title": "Hyria koulutus Oy:n puhe- ja tietoliikennepalvelut 2024",
+          "notice_id": "EF-14705",
+          "notice_number": "2024-014705",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Puolustusvoimat",
+          "title": "PVLTE450 VERKKOPALVELUT VUOSI 2025 JA OPTIOVUODET 2026-2028",
+          "notice_id": "EF-17963",
+          "notice_number": "2024-017963",
+          "awarded_value_eur": 4220800.0
+        },
+        {
+          "buyer": "Jyväskylän yliopisto",
+          "title": "Palomuuriratkaisu palveluineen",
+          "notice_id": "EF-18500",
+          "notice_number": "2024-018500",
+          "awarded_value_eur": 246575.0
+        },
+        {
+          "buyer": "2M-IT Oy",
+          "title": "Kuituyhteydet (musta kuitu)",
+          "notice_id": "EF-18604",
+          "notice_number": "2024-018604",
+          "awarded_value_eur": 550000.0
+        },
+        {
+          "buyer": "Haminan kaupunki",
+          "title": "Haminan kaupungin tietoliikenne- ja palomuuripalvelut",
+          "notice_id": "EF-57539",
+          "notice_number": "2026-057539",
+          "awarded_value_eur": 995853.0
+        },
+        {
+          "buyer": "Espoon seudun koulutuskuntayhtymä Omnia",
+          "title": "Tietoliikennepalveluiden hankinta",
+          "notice_id": "EF-59630",
+          "notice_number": "2026-059630",
+          "awarded_value_eur": 2604744.0
+        },
+        {
+          "buyer": "Kanta-Hämeen hyvinvointialue",
+          "title": "Perustietotekniikkapalveluiden hankinta",
+          "notice_id": "EF-60499",
+          "notice_number": "2026-060499",
+          "awarded_value_eur": 20539668.0
+        },
+        {
+          "buyer": "Kiinteistö Oy Liperin vuokratalot",
+          "title": "Taloyhtiölaajakaista- ja KaapeliTVpalvelut",
+          "notice_id": "OLD-151046",
+          "notice_number": "2024-151046",
+          "awarded_value_eur": 59647.0
+        }
+      ],
+      "notice_n": 8
     },
     {
       "y": "0211034-2",
@@ -894,7 +2177,68 @@
       "lobby_name": "LähiTapiola Keskinäinen Vakuutusyhtiö",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-013407",
+        "2024-017006",
+        "2024-017489",
+        "2024-018411",
+        "2025-018760",
+        "2025-018833",
+        "2026-059066"
+      ],
+      "awards": [
+        {
+          "buyer": "Kirkkopalvelut ry",
+          "title": "Henkilövakuutusten tarjouskilpailu, Kirkkopalvelut-konserni",
+          "notice_id": "EF-13407",
+          "notice_number": "2024-013407",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Jyväskylän Seudun Puhdistamo Oy",
+          "title": "Jyväskylän Seudun Puhdistamo Oy - vakuutusten kilpailutus",
+          "notice_id": "EF-17006",
+          "notice_number": "2024-017006",
+          "awarded_value_eur": 24709.0
+        },
+        {
+          "buyer": "Ylioppilaiden terveydenhoitosäätiö sr",
+          "title": "Ylioppilaiden Terveydenhoitosäätiö vakuutusturvan hankinta",
+          "notice_id": "EF-17489",
+          "notice_number": "2024-017489",
+          "awarded_value_eur": 879000.0
+        },
+        {
+          "buyer": "Kotkan Energia Oy",
+          "title": "Omaisuus-ja keskeytysvakuutusten hankinta",
+          "notice_id": "EF-18411",
+          "notice_number": "2024-018411",
+          "awarded_value_eur": 863200.0
+        },
+        {
+          "buyer": "Turun Ylioppilaskyläsäätiö",
+          "title": "TURUN YLIOPPILASKYLÄSÄÄTIÖ - KIINTEISTÖVAKUUTUKSET",
+          "notice_id": "EF-18760",
+          "notice_number": "2025-018760",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Tampereen Kaupunkiliikenne Oy",
+          "title": "Vakuutusten hankinta Tampereen Kaupunkiliikenne Oy",
+          "notice_id": "EF-18833",
+          "notice_number": "2025-018833",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "SRO Suomen Riskienhallintaosakeyhtiö",
+          "title": "Vakuutusten hankinta",
+          "notice_id": "EF-59066",
+          "notice_number": "2026-059066",
+          "awarded_value_eur": 63490.0
+        }
+      ],
+      "notice_n": 7
     },
     {
       "y": "1602149-8",
@@ -929,7 +2273,68 @@
       "lobby_name": "If Vahinkovakuutus Oyj, Suomen sivuliike",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014848",
+        "2025-018728",
+        "2026-057502",
+        "2026-058454",
+        "2026-059066",
+        "2026-059081",
+        "2026-060378"
+      ],
+      "awards": [
+        {
+          "buyer": "Ulvilan seurakunta",
+          "title": "Vahinkovakuutukset Ulvilan seurakunnalle",
+          "notice_id": "EF-14848",
+          "notice_number": "2024-014848",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Yleisradio Oy",
+          "title": "Yleisradion vastuuvakuutukset ja niihin liittyvät palvelut",
+          "notice_id": "EF-18728",
+          "notice_number": "2025-018728",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Asentopuulaaki Oy",
+          "title": "Vakuutusten hankinta",
+          "notice_id": "EF-57502",
+          "notice_number": "2026-057502",
+          "awarded_value_eur": 341224.0
+        },
+        {
+          "buyer": "Etelä-Karjalan hyvinvointialue",
+          "title": "Etelä-Karjalan hyvinvointialueen vahinkovakuutusten kilpailutus",
+          "notice_id": "EF-58454",
+          "notice_number": "2026-058454",
+          "awarded_value_eur": 3670208.0
+        },
+        {
+          "buyer": "SRO Suomen Riskienhallintaosakeyhtiö",
+          "title": "Vakuutusten hankinta",
+          "notice_id": "EF-59066",
+          "notice_number": "2026-059066",
+          "awarded_value_eur": 63490.0
+        },
+        {
+          "buyer": "Harjun Oppimiskeskus Oy",
+          "title": "Harjun Oppimiskeskus Oy - Vakuutusten hankinta",
+          "notice_id": "EF-59081",
+          "notice_number": "2026-059081",
+          "awarded_value_eur": 369040.0
+        },
+        {
+          "buyer": "VR-Yhtymä Oyj / VR-Group Plc",
+          "title": "VR Group: Insurances and related services, framework agreement",
+          "notice_id": "EF-60378",
+          "notice_number": "2026-060378",
+          "awarded_value_eur": 30000000.0
+        }
+      ],
+      "notice_n": 7
     },
     {
       "y": "1801682-8",
@@ -952,7 +2357,76 @@
       "lobby_name": "Folkhälsan Välfärd Ab",
       "lobby_industry": "Muut muualla luokittelemattomat sosiaalihuollon avopalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2026-060027",
+        "2026-060120",
+        "2026-060158",
+        "2026-060212",
+        "2026-060659",
+        "2026-060784",
+        "2026-060797",
+        "2026-061198"
+      ],
+      "awards": [
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande talterapi för Egentliga Finland",
+          "notice_id": "EF-60027",
+          "notice_number": "2026-060027",
+          "awarded_value_eur": 2050000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande vattenterapi inom Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60120",
+          "notice_number": "2026-060120",
+          "awarded_value_eur": 1100000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande talterapi för Nyland",
+          "notice_id": "EF-60158",
+          "notice_number": "2026-060158",
+          "awarded_value_eur": 9870000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan gällande talterapi för Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60212",
+          "notice_number": "2026-060212",
+          "awarded_value_eur": 9420000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan för fysioterapi inom Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60659",
+          "notice_number": "2026-060659",
+          "awarded_value_eur": 6400000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan för ergoterapi inom Österbotten och Mellersta Österbotten",
+          "notice_id": "EF-60784",
+          "notice_number": "2026-060784",
+          "awarded_value_eur": 3200000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan för ergoterapi inom Egentliga Finland",
+          "notice_id": "EF-60797",
+          "notice_number": "2026-060797",
+          "awarded_value_eur": 1900000.0
+        },
+        {
+          "buyer": "Folkpensionsanstalten",
+          "title": "Anbudsförfrågan för ergoterapi inom Nyland",
+          "notice_id": "EF-61198",
+          "notice_number": "2026-061198",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 8
     },
     {
       "y": "2644028-2",
@@ -987,7 +2461,68 @@
       "lobby_name": "Visma Aquila Oy",
       "lobby_industry": "Tietojenkäsittely, palvelintilan vuokraus ja niihin liittyvät palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014890",
+        "2024-015733",
+        "2024-016883",
+        "2025-018792",
+        "2026-056825",
+        "2026-057742",
+        "2026-061218"
+      ],
+      "awards": [
+        {
+          "buyer": "Hyvinkään kaupunki",
+          "title": "Esi- ja perusopetuksen, lukiokoulutuksen sekä kuvataidekoulun opintohallintojärjestelmä SaaS-palveluna",
+          "notice_id": "EF-14890",
+          "notice_number": "2024-014890",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Snowfox -tekoälypalvelun ja Approval -järjestelmän välisen integraation suorahankinta",
+          "notice_id": "EF-15733",
+          "notice_number": "2024-015733",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Visma Personec F- ja Visma X-Sign -järjestelmien välisen integraation suorahankinta",
+          "notice_id": "EF-16883",
+          "notice_number": "2024-016883",
+          "awarded_value_eur": 49000.0
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Visma Personec F- ja Visma X-Sign -järjestelmien välisen integraation suorahankinta",
+          "notice_id": "EF-18792",
+          "notice_number": "2025-018792",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "CSC - Tieteen tietotekniikan keskus Oy",
+          "title": "CSC:n Kirjanpito- ja matkalaskujärjestelmä",
+          "notice_id": "EF-56825",
+          "notice_number": "2026-056825",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Pohjois-Karjalan koulutuskuntayhtymä, Riveria",
+          "title": "Ammatillisen koulutuksen toiminnanohjausjärjestelmän yhteiskehittämishanke",
+          "notice_id": "EF-57742",
+          "notice_number": "2026-057742",
+          "awarded_value_eur": 2000000.0
+        },
+        {
+          "buyer": "Kurikan kaupunki",
+          "title": "Työajan seuranta- ja suunnittelujärjestelmän suorahankinta",
+          "notice_id": "EF-61218",
+          "notice_number": "2026-061218",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 7
     },
     {
       "y": "1897064-6",
@@ -1022,7 +2557,60 @@
       "lobby_name": "GE Healthcare Finland Oy",
       "lobby_industry": "Lääkintä- ja hammaslääkintäinstrumenttien ja -tarvikkeiden valmistus (pl. hammasproteesit)",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014740",
+        "2024-016133",
+        "2024-017251",
+        "2024-017462",
+        "2026-057013",
+        "2026-057173"
+      ],
+      "awards": [
+        {
+          "buyer": "Pirkanmaan hyvinvointialue",
+          "title": "Anestesiarespiraattorit / Jälki-ilmoitus",
+          "notice_id": "EF-14740",
+          "notice_number": "2024-014740",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Sansia Oy",
+          "title": "Sikiödiagnostiikan ja gynekologian ultraäänilaitteet (DPS)",
+          "notice_id": "EF-16133",
+          "notice_number": "2024-016133",
+          "awarded_value_eur": 600000.0
+        },
+        {
+          "buyer": "Satakunnan hyvinvointialue",
+          "title": "C-kaari",
+          "notice_id": "EF-17251",
+          "notice_number": "2024-017251",
+          "awarded_value_eur": 350700.0
+        },
+        {
+          "buyer": "Satakunnan hyvinvointialue",
+          "title": "Anestesiatyöasema",
+          "notice_id": "EF-17462",
+          "notice_number": "2024-017462",
+          "awarded_value_eur": 110978.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Anestesiakoneet",
+          "notice_id": "EF-57173",
+          "notice_number": "2026-057173",
+          "awarded_value_eur": 6000000.0
+        },
+        {
+          "buyer": "SK Hankintapalvelut Oy",
+          "title": "Jälki-ilmoitus: KARDIOLOGIAN SEKÄ SYDÄN- JA RINTAELINKIRURGIAN TARVIKKEITA JA PALVELUJA KOSKEVA PUITEJÄRJESTELY",
+          "notice_id": "EF-57013",
+          "notice_number": "2026-057013",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 6
     },
     {
       "y": "1071935-0",
@@ -1057,7 +2645,52 @@
       "lobby_name": "Siemens Healthcare Oy",
       "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015783",
+        "2024-151966",
+        "2026-056756",
+        "2026-059691",
+        "2026-060686"
+      ],
+      "awards": [
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Läpivalaisulaitteisto, HUS Diagnostiikkakeskus, Peijaksen sairaala",
+          "notice_id": "EF-15783",
+          "notice_number": "2024-015783",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Tietokonetomografialaitteet",
+          "notice_id": "EF-56756",
+          "notice_number": "2026-056756",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin yliopisto",
+          "title": "Yliopistollisen eläinsairaalan tietokonetomografialaite",
+          "notice_id": "EF-59691",
+          "notice_number": "2026-059691",
+          "awarded_value_eur": 659900.0
+        },
+        {
+          "buyer": "Varsinais-Suomen hyvinvointialue",
+          "title": "HP249/26 1,5 T magneettikuvausohjattu toimenpidejärjestelmä",
+          "notice_id": "EF-60686",
+          "notice_number": "2026-060686",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Deep Resolve Pro Package",
+          "notice_id": "OLD-151966",
+          "notice_number": "2024-151966",
+          "awarded_value_eur": 82000.0
+        }
+      ],
+      "notice_n": 5
     },
     {
       "y": "0201375-3",
@@ -1084,7 +2717,52 @@
       "lobby_name": "Live-säätiö sr",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016189",
+        "2024-016454",
+        "2024-016456",
+        "2024-016505",
+        "2024-016508"
+      ],
+      "awards": [
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "title": "Uudenmaan työhönvalmennuksen puitejärjestely 2024",
+          "notice_id": "EF-16189",
+          "notice_number": "2024-016189",
+          "awarded_value_eur": 39600000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Etelä-Suomen yhteistyöalue",
+          "notice_id": "EF-16454",
+          "notice_number": "2024-016454",
+          "awarded_value_eur": 24800000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Itä-Suomen yhteistyöalue",
+          "notice_id": "EF-16456",
+          "notice_number": "2024-016456",
+          "awarded_value_eur": 2480000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Pohjois-Suomen yhteistyöalue",
+          "notice_id": "EF-16505",
+          "notice_number": "2024-016505",
+          "awarded_value_eur": 18800000.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Työkokeilu ja työhönvalmennus, Sisä-Suomen yhteistyöalue",
+          "notice_id": "EF-16508",
+          "notice_number": "2024-016508",
+          "awarded_value_eur": 19200000.0
+        }
+      ],
+      "notice_n": 5
     },
     {
       "y": "1947409-7",
@@ -1119,7 +2797,52 @@
       "lobby_name": "Roche Diagnostics Oy",
       "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-018003",
+        "2026-057617",
+        "2026-057735",
+        "2026-057844",
+        "2026-160662"
+      ],
+      "awards": [
+        {
+          "buyer": "Sansia Oy",
+          "title": "Immunovärjäysautomaatti, Pohjois-Savon hyvinvointiyhtymä",
+          "notice_id": "EF-18003",
+          "notice_number": "2024-018003",
+          "awarded_value_eur": 367920.0
+        },
+        {
+          "buyer": "Pohjois-Savon hyvinvointialue",
+          "title": "Ventana BenchMark Ultra Plus ja BenchMark Special Stains -laitteiden käyttämien reagenssien ja kulutustarvikkeiden hankinta",
+          "notice_id": "EF-57617",
+          "notice_number": "2026-057617",
+          "awarded_value_eur": 2944000.0
+        },
+        {
+          "buyer": "Varsinais-Suomen hyvinvointialue",
+          "title": "KJ48/26 Ventana BenchMark ULTRA -immunovärjäysautomaatin laitekohtaiset reagenssit ja tarvikkeet",
+          "notice_id": "EF-57735",
+          "notice_number": "2026-057735",
+          "awarded_value_eur": 2400000.0
+        },
+        {
+          "buyer": "Servica Oy",
+          "title": "Letkulliset ja letkuttomat hybridipumput ja glukoosisensorit jatkuvaan ajantasaiseen sensorointiin",
+          "notice_id": "EF-57844",
+          "notice_number": "2026-057844",
+          "awarded_value_eur": 30000000.0
+        },
+        {
+          "buyer": "Satakunnan hyvinvointialue",
+          "title": "Immunoautomaattien huoltosopimuksen hankinta",
+          "notice_id": "OLD-160662",
+          "notice_number": "2026-160662",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 5
     },
     {
       "y": "1710128-9",
@@ -1154,7 +2877,44 @@
       "lobby_name": "Gofore Oyj",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015112",
+        "2024-015174",
+        "2024-018052",
+        "2024-151913"
+      ],
+      "awards": [
+        {
+          "buyer": "Päijät-Hämeen hyvinvointialue",
+          "title": "Päijät-Hämeen hyvinvointialueen verkkosivu -uudistus",
+          "notice_id": "EF-15112",
+          "notice_number": "2024-015112",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kansaneläkelaitos (Kela)",
+          "title": "One Application Model",
+          "notice_id": "EF-15174",
+          "notice_number": "2024-015174",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Digitaalisten kehittämishankkeiden asiantuntija- ja konsultointipalveluiden puitejärjestely",
+          "notice_id": "EF-18052",
+          "notice_number": "2024-018052",
+          "awarded_value_eur": 55000000.0
+        },
+        {
+          "buyer": "Suomen ympäristökeskus",
+          "title": "Palvelunhallinnan ja asiakkuudenhallinnan ratkaisu. Microsoft Dynamics 365, Customer Service -tuote sekä Marketing Attachment -tuote ja näiden käyttöönottoproje",
+          "notice_id": "OLD-151913",
+          "notice_number": "2024-151913",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "3160743-8",
@@ -1185,7 +2945,44 @@
       "lobby_name": "Hoivatie Oy",
       "lobby_industry": "Lasten ja nuorten laitokset ja ammatillinen perhehoito",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016012",
+        "2024-017046",
+        "2026-059282",
+        "2026-060891"
+      ],
+      "awards": [
+        {
+          "buyer": "Pohjois-Karjalan hyvinvointialue",
+          "title": "Pohjois-Karjalan hyvinvointialueen lastensuojelun asiakaskohtaisen sijaishuollon suorahankinta, 11.10.2024 alkaen, KA/240050, Hoivatie Oy/Asemakylän yksikkö",
+          "notice_id": "EF-16012",
+          "notice_number": "2024-016012",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Pohjois-Karjalan hyvinvointialue",
+          "title": "Lastensuojelun sijaishuollon asiakaskohtainen suorahankinta, 11.10.2024  alkaen, KA/240050, Hoivatie Oy/Asemakylän yksikkö",
+          "notice_id": "EF-17046",
+          "notice_number": "2024-017046",
+          "awarded_value_eur": 1043900.0
+        },
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Jälki-ilmoitus ammatillisen tukihenkilötoiminnan suorahankinnasta ajalla 1.7.-14.11.2026",
+          "notice_id": "EF-59282",
+          "notice_number": "2026-059282",
+          "awarded_value_eur": 2760.0
+        },
+        {
+          "buyer": "Kansaneläkelaitos",
+          "title": "Ammatillinen kuntoutusselvitys, Pohjois-Suomen yhteistyöalue",
+          "notice_id": "EF-60891",
+          "notice_number": "2026-060891",
+          "awarded_value_eur": 13800000.0
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "0116297-6",
@@ -1220,7 +3017,44 @@
       "lobby_name": "Valio Oy",
       "lobby_industry": "Maitotuotteiden valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016340",
+        "2024-016363",
+        "2024-016840",
+        "2026-059127"
+      ],
+      "awards": [
+        {
+          "buyer": "Jyväskylän kaupunki",
+          "title": "HANK Maito- ja maitotaloustuotteiden hankinta",
+          "notice_id": "EF-16340",
+          "notice_number": "2024-016340",
+          "awarded_value_eur": 5400000.0
+        },
+        {
+          "buyer": "Koulutuskeskus Salpaus -kuntayhtymä",
+          "title": "Koulutuskeskus Salpauksen maitotaloustuotteiden hankinta vuosille 2024-2025",
+          "notice_id": "EF-16363",
+          "notice_number": "2024-016363",
+          "awarded_value_eur": 800000.0
+        },
+        {
+          "buyer": "Luonnonvarakeskus",
+          "title": "Tutkimushankkeiden ja virallisten lajikekokeiden nurmi- ja kokoviljanäytteiden NIR-analyysipalvelut",
+          "notice_id": "EF-16840",
+          "notice_number": "2024-016840",
+          "awarded_value_eur": 145000.0
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Elintarvikkeiden tukkuostot",
+          "notice_id": "EF-59127",
+          "notice_number": "2026-059127",
+          "awarded_value_eur": 13000000.0
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "1654439-5",
@@ -1255,7 +3089,60 @@
       "lobby_name": "Miltton Oy",
       "lobby_industry": "Suhdetoiminta ja viestintä",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017242",
+        "2024-018168",
+        "2026-057629",
+        "2026-060189",
+        "2026-061146",
+        "2026-061447"
+      ],
+      "awards": [
+        {
+          "buyer": "Metropolia Ammattikorkeakoulu Oy",
+          "title": "Vaikuttajaviestinnän kumppanin kilpailutus Metropolia Ammattikorkeakoululle",
+          "notice_id": "EF-17242",
+          "notice_number": "2024-017242",
+          "awarded_value_eur": 400000.0
+        },
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Viestintäpalvelut 2024-2026 + optiot",
+          "notice_id": "EF-18168",
+          "notice_number": "2024-018168",
+          "awarded_value_eur": 1035857.0
+        },
+        {
+          "buyer": "Yleisradio Oy",
+          "title": "Viestinnän konsultointipalvelut puitejärjestely 2026 - 2030",
+          "notice_id": "EF-57629",
+          "notice_number": "2026-057629",
+          "awarded_value_eur": 200000.0
+        },
+        {
+          "buyer": "Oikeusministeriö",
+          "title": "[Oikeusministeriö] - Viestintä- ja markkinointipalvelut 2025 (00697) - [Nuoriso- ja jengirikollisuutta torjuvaan toimenpideohjelmaan liittyvä viestintäkampanja]",
+          "notice_id": "EF-60189",
+          "notice_number": "2026-060189",
+          "awarded_value_eur": 145000.0
+        },
+        {
+          "buyer": "Hämeenlinnan kaupunki",
+          "title": "Viestintä- ja markkinointipalveluiden puitejärjestely",
+          "notice_id": "EF-61146",
+          "notice_number": "2026-061146",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Liikenteenohjausyhtiö Fintraffic Oy",
+          "title": "Liikenteenohjausyhtiö Fintraffic Oy - Viestintä- ja markkinointipalvelut 2025 (00697) - Strategisen kumppanin hankinta",
+          "notice_id": "EF-61447",
+          "notice_number": "2026-061447",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 6
     },
     {
       "y": "3008326-5",
@@ -1282,7 +3169,36 @@
       "lobby_name": "AEL-Amiedu Oy",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016160",
+        "2024-016164",
+        "2024-017388"
+      ],
+      "awards": [
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "title": "Pääkaupunkiseudun kotoutumiskoulutuksen palvelukokonaisuuden hankinta",
+          "notice_id": "EF-16160",
+          "notice_number": "2024-016160",
+          "awarded_value_eur": 150000000.0
+        },
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "title": "Aikuisten maahanmuuttajien suomen kielen lähtötasoarviointi",
+          "notice_id": "EF-16164",
+          "notice_number": "2024-016164",
+          "awarded_value_eur": 6500000.0
+        },
+        {
+          "buyer": "Vantaan kaupunki",
+          "title": "Oppisopimuskoulutuksena järjestettävien johtamisen tutkintojen (3 tutkintoa) tutkintokoulutusten ja tutkinnon järjestämisten hankinta Vantaan ammattiopisto Vari",
+          "notice_id": "EF-17388",
+          "notice_number": "2024-017388",
+          "awarded_value_eur": 4596000.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "0313471-7",
@@ -1308,7 +3224,36 @@
       "lobby_name": "Helsingin Yliopisto",
       "lobby_industry": "Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016643",
+        "2024-017097",
+        "2024-017898"
+      ],
+      "awards": [
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Lääketieteellisten laboratorioiden palvelut",
+          "notice_id": "EF-16643",
+          "notice_number": "2024-016643",
+          "awarded_value_eur": 904912.0
+        },
+        {
+          "buyer": "Luonnonvarakeskus",
+          "title": "BIWE-hankkeen bakteeri- ja mikrobiyhteisöjen sekvensointipalvelun hankinta Luonnonvarakeskukselle",
+          "notice_id": "EF-17097",
+          "notice_number": "2024-017097",
+          "awarded_value_eur": 300000.0
+        },
+        {
+          "buyer": "HUS-yhtymä",
+          "title": "Lääketieteellisten laboratorioiden palvelut",
+          "notice_id": "EF-17898",
+          "notice_number": "2024-017898",
+          "awarded_value_eur": 904912.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "0196826-7",
@@ -1339,7 +3284,36 @@
       "lobby_name": "Keskinäinen Vakuutusyhtiö Fennia",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017489",
+        "2025-018834",
+        "2026-060378"
+      ],
+      "awards": [
+        {
+          "buyer": "Ylioppilaiden terveydenhoitosäätiö sr",
+          "title": "Ylioppilaiden Terveydenhoitosäätiö vakuutusturvan hankinta",
+          "notice_id": "EF-17489",
+          "notice_number": "2024-017489",
+          "awarded_value_eur": 879000.0
+        },
+        {
+          "buyer": "Joensuun Kodit Oy",
+          "title": "Vakuutusten hankinta Joensuun Kodit Oy",
+          "notice_id": "EF-18834",
+          "notice_number": "2025-018834",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "VR-Yhtymä Oyj / VR-Group Plc",
+          "title": "VR Group: Insurances and related services, framework agreement",
+          "notice_id": "EF-60378",
+          "notice_number": "2026-060378",
+          "awarded_value_eur": 30000000.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "3283705-9",
@@ -1366,7 +3340,36 @@
       "lobby_name": "EY Advisory Oy",
       "lobby_industry": "Muu liikkeenjohdon konsultointi",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-018620",
+        "2026-057900",
+        "2026-059928"
+      ],
+      "awards": [
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Sisäisen tarkastuksen palvelut",
+          "notice_id": "EF-18620",
+          "notice_number": "2024-018620",
+          "awarded_value_eur": 645000.0
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Johdon konsultointipalveluiden hankinta 2026-2027 (2028-2029)",
+          "notice_id": "EF-57900",
+          "notice_number": "2026-057900",
+          "awarded_value_eur": 10000000.0
+        },
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Advisory Services",
+          "notice_id": "EF-59928",
+          "notice_number": "2026-059928",
+          "awarded_value_eur": 1992000.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "0592509-6",
@@ -1397,7 +3400,44 @@
       "lobby_name": "DNA Oyj",
       "lobby_industry": "Kiinteän puhelinverkon ja langattoman verkon hallinta ja palvelut sekä satelliittiviestintä",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2026-057106",
+        "2026-058974",
+        "2026-059458",
+        "2026-061329"
+      ],
+      "awards": [
+        {
+          "buyer": "Business Finland Oy",
+          "title": "Tietoliikennepalvelut - Porkkalankadun WLAN lähiverkko ja Internet liittymät",
+          "notice_id": "EF-57106",
+          "notice_number": "2026-057106",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kiinteistö Oy Kajaanin Pietari",
+          "title": "Kaapeli-TV ja laajakaistaliittymien hankinta",
+          "notice_id": "EF-58974",
+          "notice_number": "2026-058974",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kankaanpään Asunnonhankinta Oy",
+          "title": "Kaapeli-tv- ja laajakaistaliittymät Kankaanpään Asunnonhankinta Oy:n kiinteistöille alkaen 1.10.2026 (tavoite)",
+          "notice_id": "EF-59458",
+          "notice_number": "2026-059458",
+          "awarded_value_eur": 40000.0
+        },
+        {
+          "buyer": "Vantaan kaupunki",
+          "title": "Tietoliikennelaitteet",
+          "notice_id": "EF-61329",
+          "notice_number": "2026-061329",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "1703777-4",
@@ -1423,7 +3463,44 @@
       "lobby_name": "Bayer Oy",
       "lobby_industry": "Lääkkeiden ja muiden lääkevalmisteiden valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2026-057784",
+        "2026-059166",
+        "2026-059619",
+        "2026-061279"
+      ],
+      "awards": [
+        {
+          "buyer": "Varsinais-Suomen hyvinvointialue",
+          "title": "HP203/26 Medrad automaattiruiskujen kulutustarvikkeet",
+          "notice_id": "EF-57784",
+          "notice_number": "2026-057784",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Kanta-Hämeen hyvinvointialue",
+          "title": "Isotooppiyksikön toiminnassa käytettävät lääkeaineet, säteilylähteet ja kulutustarvikkeet",
+          "notice_id": "EF-59166",
+          "notice_number": "2026-059166",
+          "awarded_value_eur": 57200000.0
+        },
+        {
+          "buyer": "Varsinais-Suomen hyvinvointialue",
+          "title": "HP203/26 Medrad automaattiruiskujen kulutustarvikkeet",
+          "notice_id": "EF-59619",
+          "notice_number": "2026-059619",
+          "awarded_value_eur": 630000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Aflibersepti -valmisteet (S01LA05) hankintakaudelle 1.1.-31.12.2027",
+          "notice_id": "EF-61279",
+          "notice_number": "2026-061279",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "1967543-8",
@@ -1450,7 +3527,36 @@
       "lobby_name": "Visma Solutions Oy",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2026-059074",
+        "2026-059355",
+        "2026-059853"
+      ],
+      "awards": [
+        {
+          "buyer": "Motiva Oy",
+          "title": "TALOUSHALLINNON ULKOISTUSPALVELUT Osallistuminen",
+          "notice_id": "EF-59074",
+          "notice_number": "2026-059074",
+          "awarded_value_eur": 198000.0
+        },
+        {
+          "buyer": "Salon Vuokratalot Oy",
+          "title": "Taloushallintojärjestelmän hankinta Saas-palveluna.",
+          "notice_id": "EF-59355",
+          "notice_number": "2026-059355",
+          "awarded_value_eur": 99200.0
+        },
+        {
+          "buyer": "Motiva Oy",
+          "title": "PSA-JÄRJESTELMÄ ASIANTUNTIJAPALVELULIIKETOIMINNAN OHJAUKSEEN OSALLISTUMINEN",
+          "notice_id": "EF-59853",
+          "notice_number": "2026-059853",
+          "awarded_value_eur": 118870.0
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "1800395-5",
@@ -1476,7 +3582,28 @@
       "lobby_name": "Atria Suomi Oy",
       "lobby_industry": "Teurastus ja lihan säilyvyyskäsittely (pl. siipikarja)",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-014956",
+        "2024-015464"
+      ],
+      "awards": [
+        {
+          "buyer": "Sansia Oy",
+          "title": "Elintarvikkeiden tukkutuotehankinnat, Savon koulutuskuntayhtymä",
+          "notice_id": "EF-14956",
+          "notice_number": "2024-014956",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Tuomi Logistiikka Oy",
+          "title": "Liha, lihavalmisteet ja mustamakkara 2",
+          "notice_id": "EF-15464",
+          "notice_number": "2024-015464",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "1712792-1",
@@ -1502,7 +3629,28 @@
       "lobby_name": "Lindström Oy",
       "lobby_industry": "Pesulapalvelut yrityksille",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-015366",
+        "2024-017103"
+      ],
+      "awards": [
+        {
+          "buyer": "Keski-Suomen hyvinvointialue",
+          "title": "Vuokrattavat potilas- ja liinavaatteet kokonaispalveluna",
+          "notice_id": "EF-15366",
+          "notice_number": "2024-015366",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Provina Tekstiilipalvelut – Textilservice Oy",
+          "title": "Työvaatepalvelut alihankintana, Provina",
+          "notice_id": "EF-17103",
+          "notice_number": "2024-017103",
+          "awarded_value_eur": 4500000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "2064886-7",
@@ -1524,7 +3672,28 @@
       "lobby_name": "Axxell Utbildning Ab",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016160",
+        "2024-016164"
+      ],
+      "awards": [
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "title": "Pääkaupunkiseudun kotoutumiskoulutuksen palvelukokonaisuuden hankinta",
+          "notice_id": "EF-16160",
+          "notice_number": "2024-016160",
+          "awarded_value_eur": 150000000.0
+        },
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskusten sekä työ- ja elinkeinotoimistojen kehittämis- ja hallintokeskus",
+          "title": "Aikuisten maahanmuuttajien suomen kielen lähtötasoarviointi",
+          "notice_id": "EF-16164",
+          "notice_number": "2024-016164",
+          "awarded_value_eur": 6500000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "0215281-7",
@@ -1550,7 +3719,28 @@
       "lobby_name": "Kirkkopalvelut ry",
       "lobby_industry": "Muualla luokittelemattomat muut järjestöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016290",
+        "2024-018070"
+      ],
+      "awards": [
+        {
+          "buyer": "Sansia Oy",
+          "title": "Työnohjaus, debriefing (ammatillinen jälkipuinti) ja työyhteisösovittelut",
+          "notice_id": "EF-16290",
+          "notice_number": "2024-016290",
+          "awarded_value_eur": 3200000.0
+        },
+        {
+          "buyer": "Etelä-Karjalan hyvinvointialue",
+          "title": "Lastensuojelun sijaishuolto",
+          "notice_id": "EF-18070",
+          "notice_number": "2024-018070",
+          "awarded_value_eur": 16000000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "3261019-6",
@@ -1576,7 +3766,28 @@
       "lobby_name": "United Imaginations Oy",
       "lobby_industry": "Mainostoimistot",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016783",
+        "2026-057954"
+      ],
+      "awards": [
+        {
+          "buyer": "Business Finland Oy",
+          "title": "Luova markkinointitoimisto",
+          "notice_id": "EF-16783",
+          "notice_number": "2024-016783",
+          "awarded_value_eur": 7000000.0
+        },
+        {
+          "buyer": "Seinäjoen kaupunki",
+          "title": "Jälki-ilmoitus: 26062 Strategiset mainostoimistopalvelut",
+          "notice_id": "EF-57954",
+          "notice_number": "2026-057954",
+          "awarded_value_eur": 200000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "1475607-9",
@@ -1602,7 +3813,44 @@
       "lobby_name": "Telia Finland Oyj",
       "lobby_industry": "Langattoman verkon hallinta ja palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016912",
+        "2026-061148",
+        "2026-061449",
+        "2026-160626"
+      ],
+      "awards": [
+        {
+          "buyer": "Kanta-Hämeen hyvinvointialue",
+          "title": "Tietoliikennepalvelut sopimuksen määräaikainen jatkaminen",
+          "notice_id": "EF-16912",
+          "notice_number": "2024-016912",
+          "awarded_value_eur": 1333000.0
+        },
+        {
+          "buyer": "Raaseporin kaupunki",
+          "title": "Uppdatering av internetanslutning (WAN-anslutning)",
+          "notice_id": "OLD-160626",
+          "notice_number": "2026-160626",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Espoon kaupunki",
+          "title": "Puhetietoliikennepalveluiden hankinta",
+          "notice_id": "EF-61148",
+          "notice_number": "2026-061148",
+          "awarded_value_eur": null
+        },
+        {
+          "buyer": "Oy Apotti Ab",
+          "title": "SMS gateway- ja tekstiviestipalvelu",
+          "notice_id": "EF-61449",
+          "notice_number": "2026-061449",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 4
     },
     {
       "y": "2201275-8",
@@ -1628,7 +3876,28 @@
       "lobby_name": "ELLUN KANAT OY",
       "lobby_industry": "Muu ammatillinen, tieteellinen ja tekninen toiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-016916",
+        "2024-018168"
+      ],
+      "awards": [
+        {
+          "buyer": "Elinkeino-, liikenne- ja ympäristökeskus",
+          "title": "JÄLKI-ILMOITUS: KEHA-keskus - Luokka 2 - Viestintä- ja markkinointipalvelut 2020-2026 (DPS) - Viestintäkampanja, TE2024 -uudistus.",
+          "notice_id": "EF-16916",
+          "notice_number": "2024-016916",
+          "awarded_value_eur": 90500.0
+        },
+        {
+          "buyer": "Veikkaus Oy",
+          "title": "Viestintäpalvelut 2024-2026 + optiot",
+          "notice_id": "EF-18168",
+          "notice_number": "2024-018168",
+          "awarded_value_eur": 1035857.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "0101072-9",
@@ -1654,7 +3923,36 @@
       "lobby_name": "MSD Finland Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017111",
+        "2024-018125",
+        "2026-060783"
+      ],
+      "awards": [
+        {
+          "buyer": "Terveyden ja hyvinvoinnin laitos",
+          "title": "Ebola-rokote",
+          "notice_id": "EF-17111",
+          "notice_number": "2024-017111",
+          "awarded_value_eur": 2736000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2025 + optiovuosi 2026",
+          "notice_id": "EF-18125",
+          "notice_number": "2024-018125",
+          "awarded_value_eur": 28000000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2027 + optiovuosi 2028 Pohjois-Pohjanmaan hyvinvointialueelle",
+          "notice_id": "EF-60783",
+          "notice_number": "2026-060783",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "0350017-4",
@@ -1680,7 +3978,28 @@
       "lobby_name": "NG Nordic Finland Oy",
       "lobby_industry": "Jätteen energiahyödyntäminen",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017236",
+        "2026-057631"
+      ],
+      "awards": [
+        {
+          "buyer": "Kymenlaakson Jäte Oy",
+          "title": "Jälki-ilmoitus KYMENLAAKSON JÄTE OY:N JÄTEASEMIEN JA TOIMINTA-ALUEEN  SOPIMUSAPTEEKKIEN VAARALLISTEN JÄTTEIDEN SEKÄ  LYIJYAKKUJEN NOUTO JA KÄSITTELY",
+          "notice_id": "EF-17236",
+          "notice_number": "2024-017236",
+          "awarded_value_eur": 872668.0
+        },
+        {
+          "buyer": "Kiertokapula Oy",
+          "title": "Ahveniston koulurakennusten purku",
+          "notice_id": "EF-57631",
+          "notice_number": "2026-057631",
+          "awarded_value_eur": 338500.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "2402870-2",
@@ -1706,7 +4025,28 @@
       "lobby_name": "Oima Oy",
       "lobby_industry": "Verkkohakuportaalien toiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017303",
+        "2026-058852"
+      ],
+      "awards": [
+        {
+          "buyer": "Pohjois-Savon hyvinvointialue",
+          "title": "Oima-palvelu ja PSHVA:n Oima-palvelun ympäristön siirto Pohjois-Savon Monetra Oy:ltä PSHVA:lle",
+          "notice_id": "EF-17303",
+          "notice_number": "2024-017303",
+          "awarded_value_eur": 2635000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Omaishoidon, perhehoidon ja henkilökohtaisen avun palkkioiden ja palkkojen hallinnan järjestelmä (JÄLKI-ILMOITUS)",
+          "notice_id": "EF-58852",
+          "notice_number": "2026-058852",
+          "awarded_value_eur": 4000000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "1078693-2",
@@ -1732,7 +4072,28 @@
       "lobby_name": "Danske Bank A/S, Suomen sivuliike",
       "lobby_industry": "Muu pankkitoiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017363",
+        "2026-057567"
+      ],
+      "awards": [
+        {
+          "buyer": "Monetra Oy",
+          "title": "Suorahankintailmoitus: Taloushallinnon sanomanvälitysoperaattoripalvelut",
+          "notice_id": "EF-17363",
+          "notice_number": "2024-017363",
+          "awarded_value_eur": 2900000.0
+        },
+        {
+          "buyer": "Helsingin kaupunki",
+          "title": "Konsernitili- ja maksuliikennepalvelut",
+          "notice_id": "EF-57567",
+          "notice_number": "2026-057567",
+          "awarded_value_eur": 3000000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "0498521-4",
@@ -1758,7 +4119,36 @@
       "lobby_name": "Roche Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017525",
+        "2024-018125",
+        "2026-060783"
+      ],
+      "awards": [
+        {
+          "buyer": "Terveyden ja hyvinvoinnin laitos",
+          "title": "Baloxavir marboxil 40 mg tabletit",
+          "notice_id": "EF-17525",
+          "notice_number": "2024-017525",
+          "awarded_value_eur": 4120000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2025 + optiovuosi 2026",
+          "notice_id": "EF-18125",
+          "notice_number": "2024-018125",
+          "awarded_value_eur": 28000000.0
+        },
+        {
+          "buyer": "Pohjois-Pohjanmaan hyvinvointialue",
+          "title": "Monoklonaaliset vasta-aineet ajalle 1.1.-31.12.2027 + optiovuosi 2028 Pohjois-Pohjanmaan hyvinvointialueelle",
+          "notice_id": "EF-60783",
+          "notice_number": "2026-060783",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 3
     },
     {
       "y": "3220764-7",
@@ -1784,7 +4174,28 @@
       "lobby_name": "Epassi Finland Oy",
       "lobby_industry": "Muualla luokittelematon muu liike-elämän tukipalvelutoiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-017551",
+        "2024-017886"
+      ],
+      "awards": [
+        {
+          "buyer": "Ilmatieteen laitos",
+          "title": "Henkilöstöetujen maksuvälinepalvelu",
+          "notice_id": "EF-17551",
+          "notice_number": "2024-017551",
+          "awarded_value_eur": 210903.0
+        },
+        {
+          "buyer": "Lääkealan turvallisuus- ja kehittämiskeskus Fimea",
+          "title": "Henkilöstöedun sähköinen maksuvälinepalvelu",
+          "notice_id": "EF-17886",
+          "notice_number": "2024-017886",
+          "awarded_value_eur": 300000.0
+        }
+      ],
+      "notice_n": 2
     },
     {
       "y": "1723156-9",
@@ -1810,7 +4221,36 @@
       "lobby_name": "Mehiläinen Terveyspalvelut Oy",
       "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "notice_ids": [
+        "2024-018650",
+        "2025-018729",
+        "2026-060103"
+      ],
+      "awards": [
+        {
+          "buyer": "Etelä-Savon hyvinvointialue",
+          "title": "Mielenterveyspalvelujen perusterveydenhuollon lääkäripalvelu Pieksämäelle ajalle 13.1.2025-2.2.2025",
+          "notice_id": "EF-18650",
+          "notice_number": "2024-018650",
+          "awarded_value_eur": 25000.0
+        },
+        {
+          "buyer": "Turun kaupunki",
+          "title": "Ennakoiva mielen työhyvinvointivalmennus",
+          "notice_id": "EF-60103",
+          "notice_number": "2026-060103",
+          "awarded_value_eur": 1000000.0
+        },
+        {
+          "buyer": "Sansia Oy",
+          "title": "Psykologipalvelut, vammaispalvelujen vaativat erityispalvelut, Etelä-Savon hyvinvointialue",
+          "notice_id": "EF-18729",
+          "notice_number": "2025-018729",
+          "awarded_value_eur": null
+        }
+      ],
+      "notice_n": 3
     }
   ]
 }
