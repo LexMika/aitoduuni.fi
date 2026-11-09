@@ -1059,6 +1059,13 @@ a.find-item-link h3::after {
   color: #93c5fd;
   font-size: 0.98rem;
 }
+/* Etusivu: lyhyt ohjauslaatikko hero-n alla */
+#ensimmaista-kertaa {
+  text-align: center;
+}
+#ensimmaista-kertaa p {
+  margin: 0.5rem 0 0;
+}
 .callout ul {
   margin: 0.6rem 0 0;
   padding: 0 0 0 1.1rem;
