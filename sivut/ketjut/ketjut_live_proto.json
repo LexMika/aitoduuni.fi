@@ -189,7 +189,7 @@
         "Pekka Haavisto"
       ],
       "parties": [
-        "E10"
+        "VIHR"
       ],
       "sample_titles": [
         "Luova markkinointitoimisto",
@@ -950,7 +950,9 @@
       "candidates": [
         "Marju Markkanen"
       ],
-      "parties": [],
+      "parties": [
+        "SDP"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -967,7 +969,9 @@
         "Janne Sankelo",
         "Matti Knookala"
       ],
-      "parties": [],
+      "parties": [
+        "KOK"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -983,7 +987,9 @@
       "candidates": [
         "Marju Markkanen"
       ],
-      "parties": [],
+      "parties": [
+        "SDP"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -999,7 +1005,9 @@
       "candidates": [
         "Pekka Toveri"
       ],
-      "parties": [],
+      "parties": [
+        "KOK"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -1015,7 +1023,9 @@
       "candidates": [
         "Petri Liljander"
       ],
-      "parties": [],
+      "parties": [
+        "KOK"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -1032,7 +1042,9 @@
         "Daniel Sazonov",
         "Henna Virkkunen"
       ],
-      "parties": [],
+      "parties": [
+        "KOK"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
@@ -1048,7 +1060,9 @@
       "candidates": [
         "Janne Jukkola"
       ],
-      "parties": [],
+      "parties": [
+        "KOK"
+      ],
       "sample_titles": [],
       "notice_n": null,
       "elections": []
