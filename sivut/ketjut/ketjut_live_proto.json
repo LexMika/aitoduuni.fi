@@ -1,10 +1,12 @@
 {
   "n": 23,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "criterion": "eform winner_y ∩ vaali tukija-Y (+ Tutki-only legacy)",
-  "model": "shelf+node-links+deep",
+  "model": "shelf+node-links+deep+dept-pills",
   "n_eform": 16,
   "n_tutki_only": 7,
+  "n_puolue": 16,
+  "n_lobby_panel": 46,
   "chains": [
     {
       "source": "eform",
