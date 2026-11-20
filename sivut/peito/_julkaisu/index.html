@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../../assets/site.css?v=20260916a">
+<link rel="stylesheet" href="../../../assets/site.css?v=20261108m">
 <link rel="icon" href="../../../assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
@@ -144,6 +144,7 @@
     .compose-row { grid-template-columns: 1fr; gap: 0.25rem; }
   }
 </style>
+<link rel="stylesheet" href="../../../assets/nav-chrome.css?v=20261108m">
 </head>
 <body>
 <!-- aito-noscript:start -->
@@ -151,15 +152,14 @@
 <!-- aito-noscript:end -->
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../../">Aito<span>Data</span></a>
-  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
-<nav class="site" id="site-nav">
-    <a href="../../loydot/">Löydöt</a>
-    <a href="./" class="active">Puuttuva tieto</a>
-    <a href="../../toimiiko-lahde/">Toimiiko lähde?</a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+<nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+    <a href="../../../rahavirrat/">Rahavirrat</a>
+    <a href="../../../sivut/peito/" class="active">Puuttuva tieto</a>
+    <a href="../../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
     <a href="../../../kaiva/">Tutki lisää</a>
     <a href="../../../nain-luet/">Näin luet</a>
     <a href="../../../perusteet/">Perusteet</a>
-    <a href="../../../tietoa/">Info</a>
   </nav>
 </div></div>
 <div class="wrap">
@@ -175,11 +175,11 @@
 </ul></div>
 <section class="panel">
 <h2>Tiivistelmä</h2>
-<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">30.10.2026</div></div>
+<div class="fact-row"><div class="lbl">Päivitetty</div><div class="val">20.11.2026</div></div>
 <div class="fact-row"><div class="lbl">Aineisto</div><div class="val">Hilma: hankintailmoitukset</div></div>
-<div class="fact-row"><div class="lbl">Ilmoituksia aineistossa</div><div class="val">68 940</div></div>
-<div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">20.8 % (14 339)</div></div>
-<div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">79.2 % (54 601)</div></div>
+<div class="fact-row"><div class="lbl">Ilmoituksia aineistossa</div><div class="val">73 407</div></div>
+<div class="fact-row"><div class="lbl">Arvioitu hinta löytyy</div><div class="val">21,3 % (15 657)</div></div>
+<div class="fact-row"><div class="lbl">Arvioitua hintaa ei ole</div><div class="val">78,7 % (57 750)</div></div>
 <div class="fact-row"><div class="lbl">Raportti</div><div class="val"><a href="puuttuva-arvioitu-hinta.html">Puuttuva arvioitu hinta →</a></div></div>
 </section>
 </div>
@@ -190,12 +190,12 @@
 <div class="two-lens">
   <div class="lens">
     <h3>Kuinka usein arvioitu hinta puuttuu kaikista ilmoituksista?</h3>
-    <p class="big">79,2 %</p>
+    <p class="big">78,7 %</p>
     <p class="means"><strong>Tarkoittaa:</strong> noin neljässä ilmoituksessa viidestä ei ole arvioitua hintaa.</p>
   </div>
   <div class="lens sharp">
     <h3>Kuinka usein arvio löytyy, kun hankintaa kilpailutetaan?</h3>
-    <p class="big">noin 21 %</p>
+    <p class="big">noin 22 %</p>
     <p class="means"><strong>Tarkoittaa:</strong> kilpailutuksessa arvio puuttuu noin neljässä tapauksessa viidestä. Silloin hintavertailua ei voi tehdä.</p>
   </div>
 </div>
@@ -214,22 +214,22 @@
 </section>
 
 <section class="panel" id="kooste">
-<h2>Mistä 79,2 % koostuu?</h2>
+<h2>Mistä 78,7 % koostuu?</h2>
 <p>Niistä ilmoituksista, joissa arvioitua hintaa ei ole, jakautuma tyypin mukaan:</p>
 <div class="compose-bars">
   <div class="compose-row">
     <div class="name">Kilpailutus</div>
-    <div class="bar-track"><div class="bar-fill expect" style="width:64.5%"></div></div>
+    <div class="bar-track"><div class="bar-fill expect" style="width:63.7%"></div></div>
     <div class="pct">noin 64 %</div>
   </div>
   <div class="compose-row">
     <div class="name">Jälki-ilmoitus</div>
-    <div class="bar-track"><div class="bar-fill soft" style="width:23.0%"></div></div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:23.4%"></div></div>
     <div class="pct">noin 23 %</div>
   </div>
   <div class="compose-row">
     <div class="name">Ennakko</div>
-    <div class="bar-track"><div class="bar-fill soft" style="width:11.7%"></div></div>
+    <div class="bar-track"><div class="bar-fill soft" style="width:12.2%"></div></div>
     <div class="pct">noin 12 %</div>
   </div>
   <div class="compose-row">
@@ -284,13 +284,14 @@
   <div class="year-row"><div>2021</div><div class="bar-track"><div class="bar-fill" style="width:79.5%"></div></div><div class="meta">79,5 %</div></div>
   <div class="year-row"><div>2022</div><div class="bar-track"><div class="bar-fill" style="width:77.9%"></div></div><div class="meta">77,9 %</div></div>
   <div class="year-row"><div>2023</div><div class="bar-track"><div class="bar-fill" style="width:78.1%"></div></div><div class="meta">78,1 %</div></div>
-  <div class="year-row"><div>2024</div><div class="bar-track"><div class="bar-fill" style="width:73.1%"></div></div><div class="meta">73,1 %</div></div>
+  <div class="year-row"><div>2024</div><div class="bar-track"><div class="bar-fill" style="width:73.7%"></div></div><div class="meta">73,7 %</div></div>
+  <div class="year-row"><div>2025</div><div class="bar-track"><div class="bar-fill" style="width:68.3%"></div></div><div class="meta">68,3 %</div></div>
   <div class="year-row"><div>2026</div><div class="bar-track"><div class="bar-fill" style="width:65.6%"></div></div><div class="meta">65,6 %</div></div>
 </div>
 <p class="compose-note">
   Palkki kertoo, kuinka suuressa osassa ilmoituksia arvioitu hinta puuttuu.
   Mitä lyhyempi palkki, sitä harvemmin arvio puuttui sinä vuonna.
-  Puuttuminen on vähentynyt, mutta kilpailutuksissa arvio puuttuu yhä usein. Vuotta 2025 ei ole tässä aineistossa.
+  Puuttuminen on vähentynyt, mutta kilpailutuksissa arvio puuttuu yhä usein. Vuosi 2025 on mukana (pieni otos verrattuna aiempiin vuosiin).
 </p>
 </section>
 
@@ -302,7 +303,7 @@
 </section>
 
 <div class="disclaimer">
-Aineisto on otos, ei koko Suomi. Päivitetty 30.10.2026</div>
+Aineisto on otos, ei koko Suomi. Päivitetty 20.11.2026</div>
 <div class="hero-actions" style="margin-top:1.5rem">
 <a class="btn ghost" href="../../loydot/">Löydöt</a>
 <a class="btn ghost" href="../../../nain-luet/">Näin luet</a>
@@ -312,6 +313,5 @@ Aineisto on otos, ei koko Suomi. Päivitetty 30.10.2026</div>
   <p><a class="wordmark" href="../../../">Aito<span>Data</span></a></p>
   <p class="legal-links"><a href="../../../tietoa/">Info</a> · <a href="../../../perusteet/">Perusteet</a> · <a href="../../../kayttoehdot/">Käyttöehdot</a> · <a href="../../../tietoa/#palaute-tietosuoja">Tietosuoja</a></p>
   <p>Puuttuva tieto · julkinen kehittyvä palvelu.</p>
-</footer><script src="../../../assets/nav.js?v=20261030m" defer></script>
-</body>
-</html>
+</footer>
+<script src="../../../assets/nav.js?v=20261108m" defer></script>
