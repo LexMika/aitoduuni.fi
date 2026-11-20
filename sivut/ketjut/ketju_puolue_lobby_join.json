@@ -164,7 +164,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "SUO-25-1602-R"
     },
     {
       "y": "0109862-8",
@@ -266,7 +267,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "KES-25-2052-R"
     },
     {
       "y": "1004536-8",
@@ -308,7 +310,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "KAI-26-2734-R"
     },
     {
       "y": "0116323-1",
@@ -351,7 +354,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "SUO-26-2489-R"
     },
     {
       "y": "1731321-4",
@@ -393,7 +397,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "RUD-26-2800-R"
     },
     {
       "y": "0209599-8",
@@ -435,7 +440,8 @@
       "vaali_eur": 0.0,
       "candidates": [],
       "badge": "Hilma, puolue ja lobbaus",
-      "kind": "hilma_puolue"
+      "kind": "hilma_puolue",
+      "diary_number": "VAA-25-1817-R"
     },
     {
       "y": "2557856-2",
@@ -1491,7 +1497,8 @@
       "lobby_name": "Tieto Finland Oy",
       "lobby_industry": "Laitteistokonsultointi ja käyttö- ja hallintapalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "TIE-26-2608-R"
     },
     {
       "y": "1602149-8",
@@ -1627,7 +1634,8 @@
       "lobby_name": "If Vahinkovakuutus Oyj, Suomen sivuliike",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "IFV-24-744-R"
     },
     {
       "y": "0357502-9",
@@ -1763,7 +1771,8 @@
       "lobby_name": "CGI Suomi Oy",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "CGI-24-1042-R"
     },
     {
       "y": "1927556-5",
@@ -1899,7 +1908,8 @@
       "lobby_name": "Mehiläinen Oy",
       "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MEH-26-2740-R"
     },
     {
       "y": "2810844-3",
@@ -2035,7 +2045,8 @@
       "lobby_name": "GRK Suomi Oy",
       "lobby_industry": "Teiden ja moottoriteiden rakentaminen",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "GRK-25-1582-R"
     },
     {
       "y": "0922140-8",
@@ -2171,7 +2182,8 @@
       "lobby_name": "Janssen-Cilag Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "JAN-26-2747-R"
     },
     {
       "y": "2630573-4",
@@ -2297,7 +2309,8 @@
       "lobby_name": "Helen Oy",
       "lobby_industry": "Sähkön ja kaukolämmön yhteistuotanto",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "HEL-25-1769-R"
     },
     {
       "y": "1897064-6",
@@ -2417,7 +2430,8 @@
       "lobby_name": "GE Healthcare Finland Oy",
       "lobby_industry": "Lääkintä- ja hammaslääkintäinstrumenttien ja -tarvikkeiden valmistus (pl. hammasproteesit)",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "GEH-24-630-R"
     },
     {
       "y": "1801682-8",
@@ -2521,7 +2535,8 @@
       "lobby_name": "Folkhälsan Välfärd Ab",
       "lobby_industry": "Muut muualla luokittelemattomat sosiaalihuollon avopalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "FOL-24-881-R"
     },
     {
       "y": "0211034-2",
@@ -2625,7 +2640,8 @@
       "lobby_name": "LähiTapiola Keskinäinen Vakuutusyhtiö",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "LÄH-26-2323-R"
     },
     {
       "y": "0116510-6",
@@ -2729,7 +2745,8 @@
       "lobby_name": "Elisa Oyj",
       "lobby_industry": "Langattoman verkon hallinta ja palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "ELI-24-447-R"
     },
     {
       "y": "2644028-2",
@@ -2833,7 +2850,8 @@
       "lobby_name": "Visma Aquila Oy",
       "lobby_industry": "Tietojenkäsittely, palvelintilan vuokraus ja niihin liittyvät palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "VIS-25-1531-R"
     },
     {
       "y": "1723156-9",
@@ -2929,7 +2947,8 @@
       "lobby_name": "Mehiläinen Terveyspalvelut Oy",
       "lobby_industry": "Lääkäriasemat, yksityislääkärit ja vastaavat erikoislääkäripalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MEH-26-2750-R"
     },
     {
       "y": "1071935-0",
@@ -3017,7 +3036,8 @@
       "lobby_name": "Siemens Healthcare Oy",
       "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "SIE-26-2576-R"
     },
     {
       "y": "0116297-6",
@@ -3105,7 +3125,8 @@
       "lobby_name": "Valio Oy",
       "lobby_industry": "Maitotuotteiden valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "VAL-26-2204-R"
     },
     {
       "y": "1654439-5",
@@ -3193,7 +3214,8 @@
       "lobby_name": "Miltton Oy",
       "lobby_industry": "Suhdetoiminta ja viestintä",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MIL-24-498-R"
     },
     {
       "y": "1947409-7",
@@ -3281,7 +3303,8 @@
       "lobby_name": "Roche Diagnostics Oy",
       "lobby_industry": "Lääkinnällisten tuotteiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "ROC-26-2646-R"
     },
     {
       "y": "0201375-3",
@@ -3353,7 +3376,8 @@
       "lobby_name": "Live-säätiö sr",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "LIV-24-572-R"
     },
     {
       "y": "0196826-7",
@@ -3433,7 +3457,8 @@
       "lobby_name": "Keskinäinen Vakuutusyhtiö Fennia",
       "lobby_industry": "Vahinkovakuutusyhtiöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "KES-24-947-R"
     },
     {
       "y": "1948154-5",
@@ -3505,7 +3530,8 @@
       "lobby_name": "Validia Oy",
       "lobby_industry": "Vammaisten pois lukien kehitysvammaisten asumispalvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "VAL-26-2804-R"
     },
     {
       "y": "1710128-9",
@@ -3577,7 +3603,8 @@
       "lobby_name": "Gofore Oyj",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "GOF-26-2336-R"
     },
     {
       "y": "3160743-8",
@@ -3645,7 +3672,8 @@
       "lobby_name": "Hoivatie Oy",
       "lobby_industry": "Lasten ja nuorten laitokset ja ammatillinen perhehoito",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "HOI-24-1076-R"
     },
     {
       "y": "1475607-9",
@@ -3717,7 +3745,8 @@
       "lobby_name": "Telia Finland Oyj",
       "lobby_industry": "Langattoman verkon hallinta ja palvelut",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "TEL-24-715-R"
     },
     {
       "y": "0592509-6",
@@ -3789,7 +3818,8 @@
       "lobby_name": "DNA Oyj",
       "lobby_industry": "Kiinteän puhelinverkon ja langattoman verkon hallinta ja palvelut sekä satelliittiviestintä",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "DNA-26-2102-R"
     },
     {
       "y": "1703777-4",
@@ -3857,7 +3887,8 @@
       "lobby_name": "Bayer Oy",
       "lobby_industry": "Lääkkeiden ja muiden lääkevalmisteiden valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "BAY-25-1858-R"
     },
     {
       "y": "1712792-1",
@@ -3917,7 +3948,8 @@
       "lobby_name": "Lindström Oy",
       "lobby_industry": "Pesulapalvelut yrityksille",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "LIN-26-2544-R"
     },
     {
       "y": "3008326-5",
@@ -3973,7 +4005,8 @@
       "lobby_name": "AEL-Amiedu Oy",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "AEL-24-942-R"
     },
     {
       "y": "0215281-7",
@@ -4033,7 +4066,8 @@
       "lobby_name": "Kirkkopalvelut ry",
       "lobby_industry": "Muualla luokittelemattomat muut järjestöt",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "KIR-25-1998-R"
     },
     {
       "y": "0313471-7",
@@ -4088,7 +4122,8 @@
       "lobby_name": "Helsingin Yliopisto",
       "lobby_industry": "Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "HEL-24-1106-R"
     },
     {
       "y": "0101072-9",
@@ -4144,7 +4179,8 @@
       "lobby_name": "MSD Finland Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MSD-26-2825-R"
     },
     {
       "y": "1078693-2",
@@ -4204,7 +4240,8 @@
       "lobby_name": "Danske Bank A/S, Suomen sivuliike",
       "lobby_industry": "Muu pankkitoiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "DAN-26-2518-R"
     },
     {
       "y": "0498521-4",
@@ -4260,7 +4297,8 @@
       "lobby_name": "Roche Oy",
       "lobby_industry": "Lääkkeiden tukkukauppa",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "ROC-26-2351-R"
     },
     {
       "y": "3283705-9",
@@ -4316,7 +4354,8 @@
       "lobby_name": "EY Advisory Oy",
       "lobby_industry": "Muu liikkeenjohdon konsultointi",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "EYA-25-1676-R"
     },
     {
       "y": "0897464-3",
@@ -4376,7 +4415,8 @@
       "lobby_name": "Microsoft Oy",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MIC-24-142-R"
     },
     {
       "y": "1967543-8",
@@ -4432,7 +4472,8 @@
       "lobby_name": "Visma Solutions Oy",
       "lobby_industry": "Ohjelmistojen suunnittelu ja valmistus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "VIS-26-2717-R"
     },
     {
       "y": "1057825-2",
@@ -4479,7 +4520,8 @@
       "lobby_name": "Edenred Finland Oy",
       "lobby_industry": "Muualla luokittelematon muu liike-elämän tukipalvelutoiminta",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "EDE-26-2852-R"
     },
     {
       "y": "1800395-5",
@@ -4526,7 +4568,8 @@
       "lobby_name": "Atria Suomi Oy",
       "lobby_industry": "Teurastus ja lihan säilyvyyskäsittely (pl. siipikarja)",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "ATR-24-163-R"
     },
     {
       "y": "2064886-7",
@@ -4569,7 +4612,8 @@
       "lobby_name": "Axxell Utbildning Ab",
       "lobby_industry": "Keskiasteen ammatillinen koulutus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "AXX-25-1804-R"
     },
     {
       "y": "0711979-2",
@@ -4616,7 +4660,8 @@
       "lobby_name": "Menevä Oy",
       "lobby_industry": "Tieliikenteen muu kuin säännöllinen henkilökuljetus",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "MEN-26-2094-R"
     },
     {
       "y": "1970922-0",
@@ -4659,7 +4704,8 @@
       "lobby_name": "Sanoma Pro Oy",
       "lobby_industry": "Kirjojen kustantaminen",
       "badge": "Hilma ja lobbaus",
-      "kind": "hilma_lobby"
+      "kind": "hilma_lobby",
+      "diary_number": "SAN-24-667-R"
     }
   ]
 }
