@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Menevä Oy · ketju · AitoData</title>
+<link rel="canonical" href="https://aitodata.fi/sivut/ketjut/meneva-oy/">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../assets/site.css?v=20261108m">
+<link rel="stylesheet" href="../../../assets/nav-chrome.css?v=20261108m">
+<style>
+
+.block{border:1px solid var(--edge);border-radius:1rem;background:var(--card);padding:1.15rem 1.2rem;margin:0 0 1rem}
+.block h2{margin:0 0 .65rem;font-size:1.1rem}
+.facts{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin:0 0 .5rem;font-size:.95rem}
+.facts .lbl{color:var(--muted);margin-right:.3rem}
+.facts .val{font-weight:600}
+.facts .lane-focus{outline:1px solid rgba(96,165,250,.45);outline-offset:4px;border-radius:.35rem;padding:.15rem .25rem}
+.lane-badge{display:inline-block;margin:.45rem 0 0;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#93c5fd}
+.muted{color:var(--muted);font-size:.88rem}
+.firm-avaus{margin:.55rem 0 0;max-width:38rem}
+.firm-avaus p{margin:0;font-size:.95rem;line-height:1.5;color:#cbd5e1}
+
+.links-sec{margin:0 0 1rem}
+.sec-h{margin:0 0 .35rem;font-size:1rem;color:#e2e8f0}
+.sec-lead{margin:0 0 .75rem;font-size:.88rem;color:#94a3b8}
+.lgroup{border:1px solid rgba(56,189,248,.28);border-radius:.85rem;background:rgba(14,165,233,.07);padding:.9rem 1rem;margin:0 0 1rem}
+.lgroup[data-dir="hilma_to_vaali"]{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.06)}
+.lhead{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;align-items:start}
+.lhead .yr{font-weight:700;color:#7dd3fc;font-size:.95rem}
+.lgroup[data-dir="hilma_to_vaali"] .lhead .yr{color:#fbbf24}
+.lhead .role{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#94a3b8}
+.lhead strong{display:block;color:#fff;font-size:1rem;margin:.1rem 0}
+.lhead .what,.lhead .extra,.lhead .cand-note{display:block;font-size:.88rem;color:#cbd5e1}
+.lhead .cand-note{color:#94a3b8;font-size:.82rem;margin-top:.2rem}
+.then{margin:.65rem 0 .45rem;font-size:.86rem;font-weight:600;color:#7dd3fc}
+.lgroup[data-dir="hilma_to_vaali"] .then{color:#fbbf24}
+.hilma-list{list-style:none;margin:0;padding:0}
+.hilma-list li{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;padding:.45rem 0;border-top:1px solid rgba(148,163,184,.15)}
+.hilma-list li:first-child{border-top:1px solid rgba(148,163,184,.22)}
+.hilma-list .hy{font-weight:700;color:#7dd3fc;font-size:.9rem}
+.hilma-list .hy.va{color:#fbbf24}
+.hilma-list .hbody .role{font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#94a3b8}
+.hilma-list .hbody strong{display:block;color:#fff;font-size:.95rem}
+.hilma-list .what,.hilma-list .extra{display:block;font-size:.86rem;color:#cbd5e1}
+.hilma-list .extra{color:#94a3b8}
+.hilma-list .meta-line{display:block;font-size:.82rem;color:#94a3b8}
+.hilma-list .meta-line code{color:#fde68a;user-select:all}
+.hilma-list .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.raw-details{margin:.5rem 0 0;border-top:1px solid rgba(148,163,184,.2);padding-top:.65rem}
+.raw-details summary{cursor:pointer;color:#cbd5e1;font-size:.9rem;font-weight:600;user-select:none}
+.raw-details[open] summary{margin-bottom:.45rem}
+.raw-lead{margin:0 0 .65rem;font-size:.84rem;color:#94a3b8}
+.rawlist{list-style:none;margin:0;padding:0;border:1px solid rgba(148,163,184,.22);border-radius:.75rem;background:rgba(2,6,23,.35);overflow:hidden}
+.raw{display:grid;grid-template-columns:3.2rem 1fr;gap:.55rem;align-items:start;padding:.55rem .75rem;border-top:1px solid rgba(148,163,184,.12)}
+.raw:first-child{border-top:0}
+.raw .yr{font-weight:700;color:#e2e8f0;font-variant-numeric:tabular-nums}
+.raw .kchip{display:inline-block;margin:0 0 .25rem;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:.15rem .4rem;border-radius:.35rem;border:1px solid rgba(148,163,184,.35);color:#cbd5e1;white-space:nowrap}
+.raw.kind-hilma .kchip,.raw.kind-tutki .kchip{border-color:rgba(56,189,248,.45);color:#7dd3fc}
+.raw.kind-vaali_tukija .kchip,.raw.kind-vaali_election .kchip,.raw.kind-vaali_ketju .kchip{border-color:rgba(251,191,36,.45);color:#fbbf24}
+.raw.kind-vaali_saaja .kchip{border-color:rgba(167,139,250,.45);color:#c4b5fd}
+.raw.kind-puolue .kchip{border-color:rgba(52,211,153,.45);color:#6ee7b7}
+.raw.kind-lobby .kchip,.raw.kind-lobby_activity .kchip{border-color:rgba(244,114,182,.45);color:#f9a8d4}
+.raw .rbody strong{display:block;color:#fff;font-size:.92rem}
+.raw .what,.raw .extra{display:block;font-size:.84rem;color:#cbd5e1}
+.raw .extra{color:#94a3b8}
+.raw .meta-line{display:block;font-size:.8rem;color:#94a3b8;margin-top:.1rem}
+.raw .meta-line code{color:#fde68a;user-select:all}
+.raw .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.lead-sm{margin:0 0 .75rem;color:#94a3b8;font-size:.9rem}
+.empty{color:#fde68a}
+@media (max-width:640px){.raw{grid-template-columns:3rem 1fr}}
+
+.tgroup{border:1px solid rgba(251,146,60,.28);border-radius:.85rem;background:rgba(154,52,18,.08);padding:.9rem 1rem;margin:0 0 1rem}
+.thead{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;align-items:start}
+.thead .role{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#fdba74}
+.thead strong{display:block;color:#fff;font-size:1rem;margin:.1rem 0}
+.thead .what,.thead .extra,.thead .cand-note{display:block;font-size:.88rem;color:#cbd5e1}
+.thead .cand-note{color:#94a3b8;font-size:.82rem;margin-top:.2rem}
+.thead .yr{font-weight:700;color:#fdba74;font-size:.95rem}
+.then{margin:.65rem 0 .45rem;font-size:.86rem;font-weight:600;color:#fdba74}
+.hilma-list{list-style:none;margin:0;padding:0}
+.hilma-list li{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;padding:.45rem 0;border-top:1px solid rgba(148,163,184,.15)}
+.hilma-list li:first-child{border-top:1px solid rgba(148,163,184,.22)}
+.hilma-list .hy{font-weight:700;color:#7dd3fc;font-size:.9rem}
+.hilma-list .hbody strong{display:block;color:#fff;font-size:.95rem}
+.hilma-list .what{display:block;font-size:.86rem;color:#cbd5e1;margin:.1rem 0}
+.hilma-list .meta-line{display:block;font-size:.82rem;color:#94a3b8}
+.hilma-list .meta-line code{color:#fde68a;user-select:all}
+.hilma-list .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.empty{color:#fde68a}
+
+.deep-tier-bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.75rem 0}
+.deep-tier-btn{appearance:none;border:1px solid rgba(148,163,184,.35);background:rgba(2,6,23,.45);color:#e2e8f0;border-radius:.55rem;padding:.45rem .8rem;font:inherit;font-weight:600;cursor:pointer}
+.deep-tier-btn[aria-pressed="true"]{border-color:#38bdf8;background:rgba(56,189,248,.12);color:#7dd3fc}
+.deep-tier-btn.tight[aria-pressed="true"]{border-color:#fb923c;background:rgba(251,146,60,.12);color:#fdba74}
+.deep-panel[hidden]{display:none !important}
+.deep-nain{margin:.5rem 0 .85rem;font-size:.88rem;color:#cbd5e1;line-height:1.4}
+
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<a class="wordmark" href="../../../">Aito<span>Data</span></a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+
+<nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+    <a href="../../../rahavirrat/" class="active">Rahavirrat</a>
+    <a href="../../../sivut/peito/">Puuttuva tieto</a>
+    <a href="../../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../../../kaiva/">Tutki lisää</a>
+    <a href="../../../nain-luet/">Näin luet</a>
+    <a href="../../../perusteet/">Perusteet</a>
+  </nav>
+</div></div>
+<div class="wrap">
+<p class="muted"><a href="../index.html#k77">← Takaisin listakorttiin</a></p>
+<header class="page-head">
+<p class="section-label">Ketju · Y 0711979-2</p>
+<h1>Menevä Oy</h1>
+<div class="firm-avaus">
+  <p>Osakeyhtiö, kotipaikka Helsinki, rekisteröity 1988.</p>
+</div>
+<p class="lane-badge" id="lane-badge" hidden></p>
+<p class="lead" id="deep-lead"
+  data-lead-ehdokas="Julkisia merkintöjä hankinnassa."
+  data-lead-puolue="Julkisia merkintöjä hankinnassa."
+  data-lead-lobbaus="Sama yritysnumero hankinnassa ja avoimuusrekisterissä.">Julkisia merkintöjä hankinnassa.</p>
+</header>
+
+<section class="block">
+  <h2>Yhteenveto</h2>
+  <div class="facts" id="deep-facts">
+    <div><span class="lbl">Yritys</span><span class="val">Menevä Oy</span></div>
+    <div><span class="lbl">Y-tunnus</span><span class="val"><code>0711979-2</code></span></div>
+    <div><span class="lbl">Kotipaikka</span><span class="val">Helsinki</span></div>
+    <div><span class="lbl">TOL-päätoimiala</span><span class="val">Kutsuttaessa saatavilla oleva henkilökuljetus (49330)</span></div>
+    <div><span class="lbl">Toimialakuvaus</span><span class="val">harjoittaa taksi- ja joukkoliikennettä, taksitilausten välityspalvelua sekä tarjota taksiliikenteen harjoittamiseen liittyviä palveluita taksi- ja joukkoliikenneyrittäjille. Lisäksi yhtiö voi tarjota rahoitukseen ja investointeihin liittyviä palveluita, omistaa ja hallita kiin…</span></div>
+    <div><span class="lbl">Aputoiminimiä</span><span class="val">4</span></div>
+    <div><span class="lbl">Top ostaja</span><span class="val">HUS Group, the joint authority for Helsinki and Uusimaa</span></div>
+    
+    <div data-lane="lobbaus"><span class="lbl">Avoimuusrekisteri</span><span class="val">– · Tieliikenteen muu kuin säännöllinen henkilökuljetus</span></div>
+    
+    
+    
+    
+  </div>
+</section>
+
+
+<section class="block" id="yhteydet" aria-label="Yhteydet">
+  <h2>Yhteydet</h2>
+  <p class="deep-nain"><strong>Näin luet:</strong> Löyhä = kaikki ajassa.
+  Tiukka = tukija, sitten hankinta 1…2 vuoden sisällä.
+  Ehdokas = ilmoitettu tukikohde.</p>
+  <div class="deep-tier-bar" role="group" aria-label="Taso">
+    <button type="button" class="deep-tier-btn" id="btn-loose" aria-pressed="true">Löyhä · 2</button>
+    <button type="button" class="deep-tier-btn tight" id="btn-tight" aria-pressed="false" disabled title="Ei tiukkaa jonoa">Tiukka · 0</button>
+  </div>
+  <div id="panel-loose" class="deep-panel">
+    
+
+<section class="links-sec" aria-label="Yhteydet-listat">
+  <p class="sec-lead">Ei ajallista firma-tukija↔Hilma -yhteyttä tällä ketjulla.
+  Alla esiintymät raakadatana.</p>
+</section>
+<details class="raw-details" open>
+  <summary>Raakadata luettavana (2 riviä)</summary>
+  <p class="raw-lead">Esiintymät litteänä listana (vuosi · tyyppi · sisältö).</p>
+  <ul class="rawlist" aria-label="Raakadata">
+    
+<li class="raw kind-hilma">
+  <span class="yr">2024</span>
+  <div class="rbody">
+    <span class="kchip">Hilma</span>
+    <strong>HUS Group, the joint authority for Helsinki and Uusimaa</strong>
+    <span class="what">HUS Invataksipalvelut</span>
+    <span class="extra">Menevä Oy</span>
+    <span class="meta-line"><code>2024-016332</code> <span class="amt">219 000 €</span></span>
+  </div>
+</li>
+<li class="raw kind-hilma">
+  <span class="yr">2026</span>
+  <div class="rbody">
+    <span class="kchip">Hilma</span>
+    <strong>Mikkelin kaupunki</strong>
+    <span class="what">Jälki-ilmoitus Mikkelin kaupungin koulukuljetusten ostoliikennesopimukset 2027-2028 (optiot 2029 ja 2030)</span>
+    <span class="extra">Menevä Oy</span>
+    <span class="meta-line"><code>2026-061103</code> <span class="amt">9,5 M€</span></span>
+  </div>
+</li>
+  </ul>
+</details>
+  </div>
+  <div id="panel-tight" class="deep-panel" hidden>
+    <p class='empty'>Ei tiukkaa jonoa tällä säännöllä.</p>
+  </div>
+</section>
+
+
+
+<section class="block" id="miten">
+  <h2>Miten tämä on koottu</h2>
+  <p class="muted" style="margin:0">
+    Yritykset on yhdistetty yritysnumerolla (Y-tunnus), ei nimellä.
+    Näytämme saman yrityksen rivit kahdesta julkisesta lähteestä.
+  </p>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var L=document.getElementById('btn-loose'), T=document.getElementById('btn-tight');
+  var PL=document.getElementById('panel-loose'), PT=document.getElementById('panel-tight');
+  if(!L||!T||!PL||!PT) return;
+  function set(tier){
+    if(tier==='tight' && T.disabled) return;
+    var loose=tier==='loose';
+    L.setAttribute('aria-pressed', loose?'true':'false');
+    T.setAttribute('aria-pressed', loose?'false':'true');
+    PL.hidden=!loose; PT.hidden=loose;
+  }
+  L.onclick=function(){set('loose')};
+  T.onclick=function(){set('tight')};
+  var h=location.hash;
+  if(h==='#tiukka' || h==='#aikajono' || h==='#yhteydet'){
+    if(h==='#tiukka') set('tight');
+    var el=document.getElementById('yhteydet')||document.getElementById('aikajono');
+    if(el) el.scrollIntoView({behavior:'instant', block:'start'});
+  }
+})();
+</script>
+
+
+<script>
+(function () {
+  var ok = { ehdokas: 1, puolue: 1, lobbaus: 1 };
+  var labels = { ehdokas: "Ehdokas", puolue: "Puolue", lobbaus: "Lobbaus" };
+  var lane = (new URLSearchParams(location.search).get("lane") || "ehdokas").toLowerCase();
+  if (!ok[lane]) lane = "ehdokas";
+  var lead = document.getElementById("deep-lead");
+  if (lead) {
+    var t = lead.getAttribute("data-lead-" + lane);
+    if (t) lead.textContent = t;
+  }
+  var badge = document.getElementById("lane-badge");
+  if (badge) {
+    badge.hidden = false;
+    badge.textContent = "Katselutapa: " + labels[lane];
+  }
+  var facts = document.getElementById("deep-facts");
+  if (facts) {
+    var nodes = Array.prototype.slice.call(
+      facts.querySelectorAll('[data-lane="' + lane + '"]')
+    );
+    nodes.reverse().forEach(function (n) {
+      facts.insertBefore(n, facts.firstChild);
+      n.classList.add("lane-focus");
+    });
+  }
+  document.documentElement.setAttribute("data-lane", lane);
+})();
+</script>
+
+<script src="../../../assets/nav.js?v=20261108m" defer></script>
+</body>
+</html>

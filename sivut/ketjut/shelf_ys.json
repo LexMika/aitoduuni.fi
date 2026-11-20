@@ -1,0 +1,707 @@
+[
+  {
+    "y": "2557856-2",
+    "org": "Wihuri Oy",
+    "slug": "wihuri-oy",
+    "lanes": [
+      "ehdokas",
+      "puolue"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "0723086-1",
+    "org": "Sinituote Oy",
+    "slug": "sinituote-oy",
+    "lanes": [
+      "ehdokas",
+      "puolue"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "3261019-6",
+    "org": "United Imaginations Oy",
+    "slug": "united-imaginations-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "1714948-5",
+    "org": "Rakennus K. Karhu Oy",
+    "slug": "rakennus-k-karhu-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "0504916-1",
+    "org": "Maanrakennus E. Majava Oy",
+    "slug": "maanrakennus-e-majava-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "2189108-4",
+    "org": "Cimson Koulutuspalvelut Oy",
+    "slug": "cimson-koulutuspalvelut-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "9126694-6",
+    "org": "Lappset Group Oy",
+    "slug": "lappset-group-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "2005785-6",
+    "org": "Härmän Kuntoutus Oy",
+    "slug": "harman-kuntoutus-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "2499620-1",
+    "org": "ST-Autokeskus Oy",
+    "slug": "st-autokeskus-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "0957128-0",
+    "org": "Porin Teollisuusputki Oy",
+    "slug": "porin-teollisuusputki-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "0870891-9",
+    "org": "Tukkutalo Heinonen Oy",
+    "slug": "tukkutalo-heinonen-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "2375085-9",
+    "org": "TKU-Rakennus Oy",
+    "slug": "tku-rakennus-oy",
+    "lanes": [
+      "ehdokas",
+      "puolue"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "0721360-7",
+    "org": "Netox Oy",
+    "slug": "netox-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "2900808-1",
+    "org": "6g Nordic Oy",
+    "slug": "6g-nordic-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "1465341-6",
+    "org": "Cinia Oy",
+    "slug": "cinia-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "1597850-3",
+    "org": "Insta Advance Oy",
+    "slug": "insta-advance-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "eform"
+  },
+  {
+    "y": "1045819-7",
+    "org": "City-Air Oy",
+    "slug": "city-air-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "1844133-0",
+    "org": "Sähköliike SähköWaasa Oy",
+    "slug": "sahkoliike-sahkowaasa-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "2539813-1",
+    "org": "Vilkmar Rakennus Oy",
+    "slug": "vilkmar-rakennus-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "0687708-1",
+    "org": "Seepsula Oy",
+    "slug": "seepsula-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "2390024-7",
+    "org": "KouMet Oy",
+    "slug": "koumet-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "0112773-2",
+    "org": "Planmeca Oy",
+    "slug": "planmeca-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "2091555-8",
+    "org": "Jukkola systems Oy",
+    "slug": "jukkola-systems-oy",
+    "lanes": [
+      "ehdokas"
+    ],
+    "source": "tutki"
+  },
+  {
+    "y": "1093863-3",
+    "org": "Suomen Terveystalo Oy",
+    "slug": "suomen-terveystalo-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0109862-8",
+    "org": "Kesko Oyj Kespro",
+    "slug": "kesko-oyj-kespro",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1004536-8",
+    "org": "Kaiku Helsinki Oy",
+    "slug": "kaiku-helsinki-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0116323-1",
+    "org": "SOK - suoratoimitus",
+    "slug": "sok-suoratoimitus",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1731321-4",
+    "org": "Tekir Oy",
+    "slug": "tekir-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0209599-8",
+    "org": "Vaasan yliopisto",
+    "slug": "vaasan-yliopisto",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0186838-9",
+    "org": "Wiimax (Oulaisten Liikenne Oy)",
+    "slug": "wiimax-oulaisten-liikenne-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0107011-5",
+    "org": "Berner Oy Kuluttajaliiketoiminta",
+    "slug": "berner-oy-kuluttajaliiketoiminta",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2303024-5",
+    "org": "Pihlajalinna Terveys Oy",
+    "slug": "pihlajalinna-terveys-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2776089-4",
+    "org": "BDO Oy",
+    "slug": "bdo-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1755463-2",
+    "org": "Attendo Pihka",
+    "slug": "attendo-pihka",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2672274-9",
+    "org": "Suomen Laiturikauppa Oy",
+    "slug": "suomen-laiturikauppa-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0196430-3",
+    "org": "Hartela Oy",
+    "slug": "hartela-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0844210-2",
+    "org": "Avant Tecno Oy",
+    "slug": "avant-tecno-oy",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0201193-4",
+    "org": "Genelec",
+    "slug": "genelec",
+    "lanes": [
+      "puolue"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1962361-1",
+    "org": "Tietoevry Finland Oy",
+    "slug": "tietoevry-finland-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1602149-8",
+    "org": "If Vahinkovakuutus Oyj, Suomen sivuliike",
+    "slug": "if-vahinkovakuutus-oyj-suomen-sivuliike",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0357502-9",
+    "org": "CGI Suomi Oy",
+    "slug": "cgi-suomi-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1927556-5",
+    "org": "SuomiSote-ryhmittymä (Beehealthy Oy, Mehiläinen Oy ja Mehiläinen Terveyspalvelut Oy)",
+    "slug": "suomisote-ryhmittyma-beehealthy-oy-mehilainen-oy-ja-mehi",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2810844-3",
+    "org": "GRK Suomi Oy",
+    "slug": "grk-suomi-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0922140-8",
+    "org": "Janssen-Cilag Oy, Johnson Johnson Finland",
+    "slug": "janssen-cilag-oy-johnson-johnson-finland",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2630573-4",
+    "org": "Helen Oy",
+    "slug": "helen-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1897064-6",
+    "org": "GE Healthcare Finland Oy",
+    "slug": "ge-healthcare-finland-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1801682-8",
+    "org": "Folkhälsan Välfärd Ab",
+    "slug": "folkhalsan-valfard-ab",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0211034-2",
+    "org": "LähiTapiola Keskinäinen Vakuutusyhtiö",
+    "slug": "lahitapiola-keskinainen-vakuutusyhtio",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0116510-6",
+    "org": "Elisa Oyj",
+    "slug": "elisa-oyj",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2644028-2",
+    "org": "Visma Aquila Oy",
+    "slug": "visma-aquila-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1723156-9",
+    "org": "Mehiläinen Terveyspalvelut Oy",
+    "slug": "mehilainen-terveyspalvelut-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1071935-0",
+    "org": "Siemens Healthcare Oy",
+    "slug": "siemens-healthcare-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0116297-6",
+    "org": "Valio oy",
+    "slug": "valio-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1654439-5",
+    "org": "Miltton Oy",
+    "slug": "miltton-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1947409-7",
+    "org": "Roche Diagnostics Oy",
+    "slug": "roche-diagnostics-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0201375-3",
+    "org": "Live-säätiö sr",
+    "slug": "live-saatio-sr",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0196826-7",
+    "org": "Keskinäinen Vakuutusyhtiö Fennia",
+    "slug": "keskinainen-vakuutusyhtio-fennia",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1948154-5",
+    "org": "Validia Oy",
+    "slug": "validia-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1710128-9",
+    "org": "Gofore Oyj",
+    "slug": "gofore-oyj",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "3160743-8",
+    "org": "Hoivatie Oy",
+    "slug": "hoivatie-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1475607-9",
+    "org": "Telia Finland Oyj",
+    "slug": "telia-finland-oyj",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0592509-6",
+    "org": "DNA Oyj",
+    "slug": "dna-oyj",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1703777-4",
+    "org": "Bayer Oy",
+    "slug": "bayer-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1712792-1",
+    "org": "Lindström Oy",
+    "slug": "lindstrom-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "3008326-5",
+    "org": "AEL-Amiedu Oy",
+    "slug": "ael-amiedu-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0215281-7",
+    "org": "Kirkkopalvelut ry, Riippuvuustyön kehittämisyksikkö",
+    "slug": "kirkkopalvelut-ry-riippuvuustyon-kehittamisyksikko",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0313471-7",
+    "org": "Royal Victoria Infirmiary (GB654968777)",
+    "slug": "royal-victoria-infirmiary-gb654968777",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0101072-9",
+    "org": "MSD Finland Oy",
+    "slug": "msd-finland-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1078693-2",
+    "org": "Danske Bank A/S, Suomen sivuliike",
+    "slug": "danske-bank-a-s-suomen-sivuliike",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0498521-4",
+    "org": "Roche Oy",
+    "slug": "roche-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "3283705-9",
+    "org": "EY Advisory Oy",
+    "slug": "ey-advisory-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0897464-3",
+    "org": "Microsoft Oy",
+    "slug": "microsoft-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1967543-8",
+    "org": "Visma Solutions Oy",
+    "slug": "visma-solutions-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1057825-2",
+    "org": "Edenred Finland Oy",
+    "slug": "edenred-finland-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1800395-5",
+    "org": "Atria Suomi Oy",
+    "slug": "atria-suomi-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "2064886-7",
+    "org": "Axxell Utbildning Ab",
+    "slug": "axxell-utbildning-ab",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "0711979-2",
+    "org": "Menevä Oy",
+    "slug": "meneva-oy",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  },
+  {
+    "y": "1970922-0",
+    "org": "Skinija UAB (LT336186314)",
+    "slug": "skinija-uab-lt336186314",
+    "lanes": [
+      "lobbaus"
+    ],
+    "source": "hilma"
+  }
+]

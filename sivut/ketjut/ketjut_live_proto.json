@@ -1,11 +1,11 @@
 {
   "n": 23,
-  "updated": "2026-11-10",
-  "criterion": "eform winner_y ∩ vaali tukija-Y (+ Tutki-only legacy)",
+  "updated": "2026-11-20",
+  "criterion": "eform∩vaali + Tutki-only legacy (kaikki vahvat)",
   "model": "shelf+node-links+deep+dept-pills",
   "n_eform": 16,
   "n_tutki_only": 7,
-  "n_puolue": 16,
+  "n_puolue": 18,
   "n_lobby_panel": 46,
   "chains": [
     {

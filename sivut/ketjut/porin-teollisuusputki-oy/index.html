@@ -5,147 +5,299 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
 <title>Porin Teollisuusputki Oy · ketju · AitoData</title>
+<link rel="canonical" href="https://aitodata.fi/sivut/ketjut/porin-teollisuusputki-oy/">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../../assets/site.css?v=20261103m">
-<link rel="stylesheet" href="../../../assets/nav-chrome.css?v=20261103m">
-<meta name="theme-color" content="#020617">
+<link rel="stylesheet" href="../../../assets/site.css?v=20261108m">
+<link rel="stylesheet" href="../../../assets/nav-chrome.css?v=20261108m">
 <style>
+
 .block{border:1px solid var(--edge);border-radius:1rem;background:var(--card);padding:1.15rem 1.2rem;margin:0 0 1rem}
 .block h2{margin:0 0 .65rem;font-size:1.1rem}
-.facts{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin:0 0 1rem;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin:0 0 .5rem;font-size:.95rem}
 .facts .lbl{color:var(--muted);margin-right:.3rem}
 .facts .val{font-weight:600}
-.money{list-style:none;margin:0;padding:0}
-.money li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px solid rgba(148,163,184,.12);font-size:.92rem}
-.money strong{font-variant-numeric:tabular-nums;color:#f1f5f9;white-space:nowrap}
-.cand-links a{color:#93c5fd;font-weight:600}
+.facts .lane-focus{outline:1px solid rgba(96,165,250,.45);outline-offset:4px;border-radius:.35rem;padding:.15rem .25rem}
+.lane-badge{display:inline-block;margin:.45rem 0 0;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#93c5fd}
 .muted{color:var(--muted);font-size:.88rem}
-.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin:1rem 0 0}
-.cta-row a{display:inline-block;padding:.55rem .9rem;border-radius:.5rem;border:1px solid rgba(37,99,235,.45);background:rgba(37,99,235,.18);font-weight:700;color:#fff}
-.cta-row a.sec{background:transparent;border-color:var(--edge);color:#cbd5e1;font-weight:600}
-.flow-mini{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:.4rem;align-items:center;margin:0 0 1rem;font-size:.88rem;color:var(--muted)}
-.flow-mini strong{color:#e2e8f0}
-@media (max-width:720px){.flow-mini{grid-template-columns:1fr}}
+.firm-avaus{margin:.55rem 0 0;max-width:38rem}
+.firm-avaus p{margin:0;font-size:.95rem;line-height:1.5;color:#cbd5e1}
 
-.hilma-how{
-  margin:.65rem 0 .9rem;padding:.85rem 1rem;border-radius:.85rem;
-  border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.08);
-  color:#fde68a;font-size:.9rem;line-height:1.45;
-}
-.hilma-how strong{color:#fbbf24}
-.hilma-how ol{margin:.45rem 0 0;padding:0 0 0 1.2rem}
-.hilma-how li{margin:.28rem 0;color:#fde68a}
-.hilma-how code{color:#fff;user-select:all;font-size:.85rem}
-.hilma-how .why{margin:.55rem 0 0;font-size:.82rem;color:#fcd34d}
+.links-sec{margin:0 0 1rem}
+.sec-h{margin:0 0 .35rem;font-size:1rem;color:#e2e8f0}
+.sec-lead{margin:0 0 .75rem;font-size:.88rem;color:#94a3b8}
+.lgroup{border:1px solid rgba(56,189,248,.28);border-radius:.85rem;background:rgba(14,165,233,.07);padding:.9rem 1rem;margin:0 0 1rem}
+.lgroup[data-dir="hilma_to_vaali"]{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.06)}
+.lhead{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;align-items:start}
+.lhead .yr{font-weight:700;color:#7dd3fc;font-size:.95rem}
+.lgroup[data-dir="hilma_to_vaali"] .lhead .yr{color:#fbbf24}
+.lhead .role{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#94a3b8}
+.lhead strong{display:block;color:#fff;font-size:1rem;margin:.1rem 0}
+.lhead .what,.lhead .extra,.lhead .cand-note{display:block;font-size:.88rem;color:#cbd5e1}
+.lhead .cand-note{color:#94a3b8;font-size:.82rem;margin-top:.2rem}
+.then{margin:.65rem 0 .45rem;font-size:.86rem;font-weight:600;color:#7dd3fc}
+.lgroup[data-dir="hilma_to_vaali"] .then{color:#fbbf24}
+.hilma-list{list-style:none;margin:0;padding:0}
+.hilma-list li{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;padding:.45rem 0;border-top:1px solid rgba(148,163,184,.15)}
+.hilma-list li:first-child{border-top:1px solid rgba(148,163,184,.22)}
+.hilma-list .hy{font-weight:700;color:#7dd3fc;font-size:.9rem}
+.hilma-list .hy.va{color:#fbbf24}
+.hilma-list .hbody .role{font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#94a3b8}
+.hilma-list .hbody strong{display:block;color:#fff;font-size:.95rem}
+.hilma-list .what,.hilma-list .extra{display:block;font-size:.86rem;color:#cbd5e1}
+.hilma-list .extra{color:#94a3b8}
+.hilma-list .meta-line{display:block;font-size:.82rem;color:#94a3b8}
+.hilma-list .meta-line code{color:#fde68a;user-select:all}
+.hilma-list .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.raw-details{margin:.5rem 0 0;border-top:1px solid rgba(148,163,184,.2);padding-top:.65rem}
+.raw-details summary{cursor:pointer;color:#cbd5e1;font-size:.9rem;font-weight:600;user-select:none}
+.raw-details[open] summary{margin-bottom:.45rem}
+.raw-lead{margin:0 0 .65rem;font-size:.84rem;color:#94a3b8}
+.rawlist{list-style:none;margin:0;padding:0;border:1px solid rgba(148,163,184,.22);border-radius:.75rem;background:rgba(2,6,23,.35);overflow:hidden}
+.raw{display:grid;grid-template-columns:3.2rem 1fr;gap:.55rem;align-items:start;padding:.55rem .75rem;border-top:1px solid rgba(148,163,184,.12)}
+.raw:first-child{border-top:0}
+.raw .yr{font-weight:700;color:#e2e8f0;font-variant-numeric:tabular-nums}
+.raw .kchip{display:inline-block;margin:0 0 .25rem;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:.15rem .4rem;border-radius:.35rem;border:1px solid rgba(148,163,184,.35);color:#cbd5e1;white-space:nowrap}
+.raw.kind-hilma .kchip,.raw.kind-tutki .kchip{border-color:rgba(56,189,248,.45);color:#7dd3fc}
+.raw.kind-vaali_tukija .kchip,.raw.kind-vaali_election .kchip,.raw.kind-vaali_ketju .kchip{border-color:rgba(251,191,36,.45);color:#fbbf24}
+.raw.kind-vaali_saaja .kchip{border-color:rgba(167,139,250,.45);color:#c4b5fd}
+.raw.kind-puolue .kchip{border-color:rgba(52,211,153,.45);color:#6ee7b7}
+.raw.kind-lobby .kchip,.raw.kind-lobby_activity .kchip{border-color:rgba(244,114,182,.45);color:#f9a8d4}
+.raw .rbody strong{display:block;color:#fff;font-size:.92rem}
+.raw .what,.raw .extra{display:block;font-size:.84rem;color:#cbd5e1}
+.raw .extra{color:#94a3b8}
+.raw .meta-line{display:block;font-size:.8rem;color:#94a3b8;margin-top:.1rem}
+.raw .meta-line code{color:#fde68a;user-select:all}
+.raw .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.lead-sm{margin:0 0 .75rem;color:#94a3b8;font-size:.9rem}
+.empty{color:#fde68a}
+@media (max-width:640px){.raw{grid-template-columns:3rem 1fr}}
+
+.tgroup{border:1px solid rgba(251,146,60,.28);border-radius:.85rem;background:rgba(154,52,18,.08);padding:.9rem 1rem;margin:0 0 1rem}
+.thead{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;align-items:start}
+.thead .role{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#fdba74}
+.thead strong{display:block;color:#fff;font-size:1rem;margin:.1rem 0}
+.thead .what,.thead .extra,.thead .cand-note{display:block;font-size:.88rem;color:#cbd5e1}
+.thead .cand-note{color:#94a3b8;font-size:.82rem;margin-top:.2rem}
+.thead .yr{font-weight:700;color:#fdba74;font-size:.95rem}
+.then{margin:.65rem 0 .45rem;font-size:.86rem;font-weight:600;color:#fdba74}
+.hilma-list{list-style:none;margin:0;padding:0}
+.hilma-list li{display:grid;grid-template-columns:3.2rem 1fr;gap:.65rem;padding:.45rem 0;border-top:1px solid rgba(148,163,184,.15)}
+.hilma-list li:first-child{border-top:1px solid rgba(148,163,184,.22)}
+.hilma-list .hy{font-weight:700;color:#7dd3fc;font-size:.9rem}
+.hilma-list .hbody strong{display:block;color:#fff;font-size:.95rem}
+.hilma-list .what{display:block;font-size:.86rem;color:#cbd5e1;margin:.1rem 0}
+.hilma-list .meta-line{display:block;font-size:.82rem;color:#94a3b8}
+.hilma-list .meta-line code{color:#fde68a;user-select:all}
+.hilma-list .amt{color:#fde68a;font-weight:700;margin-left:.35rem}
+.empty{color:#fde68a}
+
+.deep-tier-bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.75rem 0}
+.deep-tier-btn{appearance:none;border:1px solid rgba(148,163,184,.35);background:rgba(2,6,23,.45);color:#e2e8f0;border-radius:.55rem;padding:.45rem .8rem;font:inherit;font-weight:600;cursor:pointer}
+.deep-tier-btn[aria-pressed="true"]{border-color:#38bdf8;background:rgba(56,189,248,.12);color:#7dd3fc}
+.deep-tier-btn.tight[aria-pressed="true"]{border-color:#fb923c;background:rgba(251,146,60,.12);color:#fdba74}
+.deep-panel[hidden]{display:none !important}
+.deep-nain{margin:.5rem 0 .85rem;font-size:.88rem;color:#cbd5e1;line-height:1.4}
 
 </style>
 </head>
 <body>
 <div class="topbar"><div class="topbar-inner">
 <a class="wordmark" href="../../../">Aito<span>Data</span></a>
-<nav class="site-nav" aria-label="Päävalikko">
-  <a href="../index.html">← Kaikki ketjut</a>
-  <a href="../../../rahavirrat/">Rahavirrat</a>
-</nav>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko"><span class="nav-toggle-bars" aria-hidden="true"></span></button>
+
+<nav class="site-nav" id="site-nav" aria-label="Päävalikko">
+    <a href="../../../rahavirrat/" class="active">Rahavirrat</a>
+    <a href="../../../sivut/peito/">Puuttuva tieto</a>
+    <a href="../../../sivut/toimiiko-lahde/">Toimiiko lähde?</a>
+    <a href="../../../kaiva/">Tutki lisää</a>
+    <a href="../../../nain-luet/">Näin luet</a>
+    <a href="../../../perusteet/">Perusteet</a>
+  </nav>
 </div></div>
 <div class="wrap">
-<p class="back muted"><a href="../index.html#k10">← Takaisin listakorttiin</a></p>
+<p class="muted"><a href="../index.html#k10">← Takaisin listakorttiin</a></p>
 <header class="page-head">
 <p class="section-label">Ketju · Y 0957128-0</p>
 <h1>Porin Teollisuusputki Oy</h1>
-<p class="lead">Sama yrityksen Y-tunnus julkisessa hankinnassa ja vaalirahoituksen tukijana. Sivu kokoaa rivit yhteen. Se ei väitä syytä tai motiivia.</p>
-</header>
-
-<div class="flow-mini" aria-hidden="true">
-  <span><strong>Ostajat</strong> (1)</span><span>→</span>
-  <span><strong>Porin Teollisuusputki Oy</strong></span><span>→</span>
-  <span><strong>Aleksi Olander</strong> · 1 900 €</span>
+<div class="firm-avaus">
+  <p>Osakeyhtiö, kotipaikka Pori, toimiala putkien, profiiliputkien ja niihin liittyvien tarvikkeiden valmistus teräksestä, rekisteröity 1993.</p>
 </div>
+<p class="lane-badge" id="lane-badge" hidden></p>
+<p class="lead" id="deep-lead"
+  data-lead-ehdokas="Sama yritysnumero hankinnassa ja vaalirahoituksessa."
+  data-lead-puolue="Sama yritysnumero hankinnassa ja vaalirahoituksessa."
+  data-lead-lobbaus="Julkisia merkintöjä hankinnassa.">Sama yritysnumero hankinnassa ja vaalirahoituksessa.</p>
+</header>
 
 <section class="block">
   <h2>Yhteenveto</h2>
-  <div class="facts">
+  <div class="facts" id="deep-facts">
     <div><span class="lbl">Yritys</span><span class="val">Porin Teollisuusputki Oy</span></div>
     <div><span class="lbl">Y-tunnus</span><span class="val"><code>0957128-0</code></span></div>
+    <div><span class="lbl">Kotipaikka</span><span class="val">Pori</span></div>
+    <div><span class="lbl">TOL-päätoimiala</span><span class="val">Putkien, profiiliputkien ja niihin liittyvien tarvikkeiden valmistus teräksestä (24200)</span></div>
+    <div><span class="lbl">Toimialakuvaus</span><span class="val">teollisuuden koneiden ja laitteiden rakentaminen ja asentaminen sekä suunnittelu, metallirakenteiden valmistus, asennus ja suunnittelu. Koneiden ja laitteiden vuokraus sekä konsultointipalvelut. Paine-astioiden ja putkistojen valmistus, asennus ja tarkastus. Yhtiö voi omistaa,…</span></div>
     <div><span class="lbl">Top ostaja</span><span class="val">Tampereen Energia Oy</span></div>
-    <div><span class="lbl">Vaalituki</span><span class="val">1 900 €</span></div>
-    <div><span class="lbl">Ehdokas</span><span class="val">Aleksi Olander</span></div>
-  </div>
-  <div class="cta-row">
-    <a href="../../../rahavirrat/kortti-ehdokas-aleksi-olander/index.html">Rahavirrat: Aleksi Olander →</a>
-    <a class="sec" href="https://tietopalvelu.ytj.fi/yritys/0957128-0" target="_blank" rel="noopener noreferrer">YTJ · 0957128-0 →</a>
-    <a class="sec" href="https://www.hankintailmoitukset.fi/fi/" target="_blank" rel="noopener noreferrer">Hilma →</a>
+    
+    
+    
+    <div data-lane="ehdokas"><span class="lbl">Vaalituki</span><span class="val">Ilmoitus ja ketju</span></div>
+    <div data-lane="ehdokas"><span class="lbl">Vaalituki</span><span class="val">1 900 €</span></div>
+    <div data-lane="ehdokas"><span class="lbl">Ehdokkaat</span><span class="val">Aleksi Olander</span></div>
   </div>
 </section>
 
-<section class="block">
-  <h2>Hilma: ostaja → voittaja</h2>
-  <ul class="money"><li><span>Tampereen Energia Oy · LLT45 Putkistourakka<br><span class="muted">ilmoituksen nro <code>2024-018185</code></span></span><strong>1,6 M€</strong></li></ul>
-  <p class="muted" style="margin:.75rem 0 0">Ilmoitusnrot (kopioi hakuun): <code>2024-018185</code></p>
-  <div class="hilma-how" role="note">
-  <strong>Näin avaat ilmoituksen Hilmassa</strong>
-  <ol>
-    <li>Kopioi ilmoitusnumero: <code>2024-018185</code></li>
-    <li>Avaa Hilma (nappi yllä / alla)</li>
-    <li>Ruksi <strong>Jälki-ilmoitukset</strong> · liitä numero · Hae</li>
-  </ol>
-  <p class="why">Suora linkki aukeaa usein vain etusivulle. Siksi haku numerolla.</p>
-</div>
+
+<section class="block" id="yhteydet" aria-label="Yhteydet">
+  <h2>Yhteydet</h2>
+  <p class="deep-nain"><strong>Näin luet:</strong> Löyhä = kaikki ajassa.
+  Tiukka = tukija, sitten hankinta 1…2 vuoden sisällä.
+  Ehdokas = ilmoitettu tukikohde.</p>
+  <div class="deep-tier-bar" role="group" aria-label="Taso">
+    <button type="button" class="deep-tier-btn" id="btn-loose" aria-pressed="true">Löyhä · 3</button>
+    <button type="button" class="deep-tier-btn tight" id="btn-tight" aria-pressed="false" disabled title="Ei tiukkaa jonoa">Tiukka · 0</button>
+  </div>
+  <div id="panel-loose" class="deep-panel">
+    
+
+<section class="links-sec" aria-label="Yhteydet-listat">
+  <p class="sec-lead">Sama yritys ajassa: tukijana, myöhemmin hankinnan voittajana.
+  Ehdokas = ilmoitettu tukikohde.</p>
+  
+<article class="lgroup" data-dir="hilma_to_vaali">
+  <header class="lhead">
+    <span class="yr">2024</span>
+    <div>
+      <span class="role">Saman Y:n Hilma-voitto</span>
+      <strong>Tampereen Energia Oy</strong>
+      <span class="what">Hilma 2024</span>
+      
+    </div>
+  </header>
+  <p class="then">Saman Y:n tukija-esiintymä myöhemmin (2025) · 1 riviä</p>
+  <ul class="hilma-list" aria-label="Tukija">
+    <li>
+  <span class="hy va">2025</span>
+  <div class="hbody">
+    <span class="role">Yritys tukijana</span>
+    <strong>Porin Teollisuusputki Oy</strong>
+    <span class="what">Kuntavaalit 2025</span>
+    <span class="extra">Aleksi Olander · KOK</span>
+    <strong class='amt'>1 900 €</strong>
+  </div>
+</li>
+  </ul>
+</article>
+</section>
+<details class="raw-details">
+  <summary>Raakadata luettavana (3 riviä)</summary>
+  <p class="raw-lead">Samat ilmoitukset litteänä listana. Ei yhteyskehystä: vain vuosi, tyyppi ja sisältö.</p>
+  <ul class="rawlist" aria-label="Raakadata">
+    
+<li class="raw kind-hilma">
+  <span class="yr">2024</span>
+  <div class="rbody">
+    <span class="kchip">Hilma</span>
+    <strong>Tampereen Energia Oy</strong>
+    <span class="what">LLT45 Putkistourakka</span>
+    <span class="extra">Porin Teollisuusputki Oy</span>
+    <span class="meta-line"><code>2024-018185</code> <span class="amt">1,6 M€</span></span>
+  </div>
+</li>
+<li class="raw kind-vaali_tukija">
+  <span class="yr">2025</span>
+  <div class="rbody">
+    <span class="kchip">Tukija</span>
+    <strong>Porin Teollisuusputki Oy</strong>
+    <span class="what">Kuntavaalit 2025</span>
+    <span class="extra">Aleksi Olander · KOK</span>
+    <span class="meta-line"><code>Vaalirahoitus</code> <span class="amt">1 900 €</span></span>
+  </div>
+</li>
+<li class="raw kind-vaali_ketju">
+  <span class="yr">2025</span>
+  <div class="rbody">
+    <span class="kchip">Vaalituki</span>
+    <strong>Porin Teollisuusputki Oy</strong>
+    <span class="what">Vaalituki (ketjun summa)</span>
+    <span class="extra">Aleksi Olander · sama tuki toisesta polusta</span>
+    <span class="meta-line"><code>ketju</code> <span class="amt">1 900 €</span></span>
+  </div>
+</li>
+  </ul>
+</details>
+  </div>
+  <div id="panel-tight" class="deep-panel" hidden>
+    <p class='empty'>Ei tiukkaa jonoa tällä säännöllä.</p>
+  </div>
 </section>
 
-<section class="block">
-  <h2>Vaalirahoitus: yritys → ehdokas</h2>
-  <ul class="money"><li class="cand-links"><a href="../../../rahavirrat/kortti-ehdokas-aleksi-olander/index.html">Aleksi Olander</a><strong></strong></li></ul>
-  <p class="muted" style="margin:.75rem 0 0">
-    Vaalit: Kuntavaalit 2025 ·
-    <a href="https://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahoitus/haetietoavaalirahoitusilmoituksista/tutkitietoaineistoja.html" target="_blank" rel="noopener noreferrer">VTV aineistot →</a>
+
+
+<section class="block" id="miten">
+  <h2>Miten tämä on koottu</h2>
+  <p class="muted" style="margin:0">
+    Yritykset on yhdistetty yritysnumerolla (Y-tunnus), ei nimellä.
+    Näytämme saman yrityksen rivit kahdesta julkisesta lähteestä.
   </p>
 </section>
 
-<section class="block">
-  <h2>Menetelmä</h2>
-  <p class="muted" style="margin:0">Yhdistävä tieto on Y-tunnus, ei nimi. Emme väitä, että hankinta ja vaalituki liittyvät toisiinsa. Näytämme vain saman yrityksen kahdessa julkisessa rekisterissä.</p>
-</section>
-
-<section class="panel virhe-ilmoitus" id="virhe">
-  <h2>Ilmoita virhe</h2>
-  <p>Jos tiivistelmä tai fakta ei täsmää alkuperäiseen lähteeseen, kerro se tähän. Korjaamme.</p>
-  <form id="virhe-form" class="virhe-form" action="https://formspree.io/f/mjgpwgnw" method="POST">
-    <input type="hidden" name="_subject" value="AitoData virheilmoitus: ketjut/porin-teollisuusputki-oy">
-    <input type="hidden" name="kortti" value="ketjut/porin-teollisuusputki-oy">
-    <input type="hidden" name="kortti_id" value="0957128-0">
-    <input type="hidden" name="osasto" value="ketjut">
-    <input type="hidden" name="kanava" value="virheilmoitus">
-    <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="virhe-gotcha" aria-hidden="true">
-    <label for="virhe-viesti">Mikä on väärin?</label>
-    <textarea id="virhe-viesti" name="viesti" rows="4" maxlength="2000" required
-      placeholder="Esim. Summa kortilla X, lähteessä lukee Y."></textarea>
-    <label for="virhe-lahde">Mitä lähteessä lukee? (valinnainen)</label>
-    <textarea id="virhe-lahde" name="lahde_sanoi" rows="2" maxlength="1000"
-      placeholder="Lyhyt lainaus tai kentän nimi lähteestä."></textarea>
-    <label for="virhe-email">Sähköposti vastaukseen (valinnainen)</label>
-    <input id="virhe-email" type="email" name="email" maxlength="120"
-      placeholder="nimi@esimerkki.fi" autocomplete="email">
-    <div class="hero-actions" style="margin-top:1rem">
-      <button type="submit" class="btn">Lähetä ilmoitus</button>
-    </div>
-    <p id="virhe-status" class="virhe-status" aria-live="polite"></p>
-  </form>
-</section>
-
-<div class="virhe-overlay" id="virhe-overlay" role="dialog" aria-modal="true"
-  aria-labelledby="virhe-title" aria-hidden="true">
-  <div class="virhe-modal">
-    <h2 id="virhe-title">Ilmoitus lähetetty</h2>
-    <p class="virhe-lead">Kiitos. Katsomme tämän ja korjaamme, jos tieto on väärin.</p>
-    <div class="virhe-summary" id="virhe-summary"></div>
-    <button type="button" class="btn" id="virhe-close">Sulje</button>
-  </div>
 </div>
 
-<script src="../../../assets/virhe-ilmoitus.js?v=20261106y" defer></script>
+<script>
+(function(){
+  var L=document.getElementById('btn-loose'), T=document.getElementById('btn-tight');
+  var PL=document.getElementById('panel-loose'), PT=document.getElementById('panel-tight');
+  if(!L||!T||!PL||!PT) return;
+  function set(tier){
+    if(tier==='tight' && T.disabled) return;
+    var loose=tier==='loose';
+    L.setAttribute('aria-pressed', loose?'true':'false');
+    T.setAttribute('aria-pressed', loose?'false':'true');
+    PL.hidden=!loose; PT.hidden=loose;
+  }
+  L.onclick=function(){set('loose')};
+  T.onclick=function(){set('tight')};
+  var h=location.hash;
+  if(h==='#tiukka' || h==='#aikajono' || h==='#yhteydet'){
+    if(h==='#tiukka') set('tight');
+    var el=document.getElementById('yhteydet')||document.getElementById('aikajono');
+    if(el) el.scrollIntoView({behavior:'instant', block:'start'});
+  }
+})();
+</script>
 
-</div>
-<script src="../../../assets/nav.js" defer></script>
+
+<script>
+(function () {
+  var ok = { ehdokas: 1, puolue: 1, lobbaus: 1 };
+  var labels = { ehdokas: "Ehdokas", puolue: "Puolue", lobbaus: "Lobbaus" };
+  var lane = (new URLSearchParams(location.search).get("lane") || "ehdokas").toLowerCase();
+  if (!ok[lane]) lane = "ehdokas";
+  var lead = document.getElementById("deep-lead");
+  if (lead) {
+    var t = lead.getAttribute("data-lead-" + lane);
+    if (t) lead.textContent = t;
+  }
+  var badge = document.getElementById("lane-badge");
+  if (badge) {
+    badge.hidden = false;
+    badge.textContent = "Katselutapa: " + labels[lane];
+  }
+  var facts = document.getElementById("deep-facts");
+  if (facts) {
+    var nodes = Array.prototype.slice.call(
+      facts.querySelectorAll('[data-lane="' + lane + '"]')
+    );
+    nodes.reverse().forEach(function (n) {
+      facts.insertBefore(n, facts.firstChild);
+      n.classList.add("lane-focus");
+    });
+  }
+  document.documentElement.setAttribute("data-lane", lane);
+})();
+</script>
+
+<script src="../../../assets/nav.js?v=20261108m" defer></script>
 </body>
 </html>
